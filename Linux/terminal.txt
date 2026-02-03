@@ -25,7 +25,7 @@ ls --> muestra los archivos y directorios que están dentro del directorio actua
 
 Las rutas relativas y absolutas se escriben un poco diferentes. Una ruta absoluta empieza con una barra "/", mientras que una ruta relativa no. Ejemplo, "cd lib" funciona en el directorio raíz, mientras que "cd /lib" funciona en cualquier directorio porque lib es un subdirectorio del directorio raíz.
 
-cuando usamos un punto hacemos referencia al directorio en el que nos encontramos, pero si usamos dos puntos ".." nos referimos al directorio anterior, ejemplo, "ls ." muestra los directorios y archivos en el directorio en el que nos encontramos, muentras que "ls .." muestra los directorios y archivos del directorio de más arriba.
+cuando usamos un punto hacemos referencia al directorio en el que nos encontramos, pero si usamos dos puntos ".." nos referimos al directorio anterior, ejemplo, "ls ." muestra los directorios y archivos en el directorio en el que nos encontramos, mientras que "ls .." muestra los directorios y archivos del directorio de más arriba.
 
 Cuando hacemos ls -l, puede que el nombre de algunos archivos empiece con un punto. Esto indicaría que son archivos ocultos.
 

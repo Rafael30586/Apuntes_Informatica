@@ -24,4 +24,4 @@ tmp: contiene archivos temporales que no serán persistidos entre booteos.
 
 ~: es el directorio home del usuario que estemos utilizando, por ejemplo, si estamos como usuario root entonces el directorio root es ~.
 
-media: es el directorio en donde se puede navegar por la memoria extraíble (cds, pendrives, etc). Acá los uaurios pueden acceder a los contenidos de las unidades de almacenamiento.
+media: es el directorio en donde se puede navegar por la memoria extraíble (cds, pendrives, etc). Acá los usuarios pueden acceder a los contenidos de las unidades de almacenamiento.

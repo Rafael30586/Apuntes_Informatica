@@ -36,3 +36,5 @@ Muchos de los comandos de CMD como cd o dir funcionan en Powershell.
 
 Powershell es un lenguaje de scripting basado en objetos. Todo en powershell es un objeto; permite que lidiar con los resultados de los comandos sea más fácil y eficiente. Provee acceso al framework .NET
 
+New-Item <nombre> --> creamos un archivo con el nombre que indiquemos.
+
