@@ -1,0 +1,306 @@
+uname --> muestra el nombre del sistema operativo
+A uname se le puede agregar otras opciones como -a, -s, -r, -v, -m, -n, ,-o ,-p para obtener información adicional.
+
+date --> muestra la fecha y la hora.
+
+En la terminal de Linux se pueden ver los siguientes datos mientras la utilizamos:
+usuario@máquina-huésped:directorio-actual$o#
+Ejemplo: root@d9ec6103599d:/lib#
+
+<nombre>=<valor> --> así creamos una variable según el nombre que indiquemos y le asignamos un valor que puede ser un número o una cadena de caracteres. 
+
+pwd --> muestra en donde estamos actualmente dentro del sistema de archivos de Linux.
+
+cd <directorio> --> es para entrar al directorio que indiquemos.
+
+cd .. --> nos lleva un directorio "hacia arriba".
+
+cd ../.. --> nos lleva dos directorios "hacia arriba".
+
+cd ~ --> entramos al directorio home que tiene varios archivos escondidos (podemos verlos con ls -a).
+
+cd - --> entramos al directorio en el que estábamos anteriormente.
+
+ls --> muestra los archivos y directorios que están dentro del directorio actual. Se le puede agregar la opción -l para ver más detalles de cada archivo o directorio, como por ejemplo, los permisos. Si  se le agrega -a, permite ver archivos escondidos.
+
+Las rutas relativas y absolutas se escriben un poco diferentes. Una ruta absoluta empieza con una barra "/", mientras que una ruta relativa no. Ejemplo, "cd lib" funciona en el directorio raíz, mientras que "cd /lib" funciona en cualquier directorio porque lib es un subdirectorio del directorio raíz.
+
+cuando usamos un punto hacemos referencia al directorio en el que nos encontramos, pero si usamos dos puntos ".." nos referimos al directorio anterior, ejemplo, "ls ." muestra los directorios y archivos en el directorio en el que nos encontramos, muentras que "ls .." muestra los directorios y archivos del directorio de más arriba.
+
+Cuando hacemos ls -l, puede que el nombre de algunos archivos empiece con un punto. Esto indicaría que son archivos ocultos.
+
+ls -i <archivo> --> muestra el número de inodo de un archivo.
+
+A las letras que acompañan al comando con un guión se les llama flags. En el ejemplo anterior "-i" sería la flag.
+
+ls | tee <archivo> --> copia la lista de archivos y directorios en un archivo que indiquemos.
+
+ln <archivo> <nombre> --> crea un enlace duro de un archivo con el nombre que loe indiquemos.
+
+ln -s <archivo> <nombre> --> crea un enlace simbólico de un archivo de acuerdo al nombre que le indiquemos.
+
+unlink <enlace>  --> elimina un enlace que le indiquemos.
+
+Cuando listamos los archivos y directorios con ls -l, podemos ver el dueño del archivo seguido del grupo que es dueño del archivo y un número que indica el tamaño del archivo.
+
+La tecla tab sirve para autocompletar, por ejemplo, cuando queremos entrar a un directorio utilizando cd, no hace falta que escribamos el nombre completo del directorio, bastará con que coloquemos las primeras letras y apretemos tab.
+
+file <archivo> --> muestra información sobre el archivo que le indiquemos.
+
+En Linux los archivos no necesitan extensión como .jpg, .txt, etc.
+
+less <archivo> --> muestra el contenido de un archivo. Podemos navegar con las flechas y salir con la letra "q":
+
+les -N <archvio> --> igual que les pero muestra el número de cada línea.
+
+En el directorio bin están los comandos que se pueden usar. Debemos hacer ls en dicho directorio.
+
+cat <archivo> --> sirve para ver el contenido de un archivo.
+
+cat <archivo> | wc --> muestra la cantidad de letras, palabras y líneas de una archivo.
+
+wc <archivo> --> otra forma de usar wc.
+
+cat <archivo> | grep <cadena> --> muestra las líneas dentro de una archivo que contengan la cadena de caracteres que indiquemos. En lugar de una cadena de caracteres podemos también usar una expresión regular.
+
+grep <cadena> <archivo> --> esta es otra forma de usar grep.
+
+grep -R <cadena> <directorio> --> muestra la presencia de la cadena que indiquemos en un directorio que elijamos.
+
+cat <archivo> | grep <cadena> > <archivo_nuevo> --> crea un nuevo archivo (archivo_nuevo) que va a contener las líneas encontradas en otro (archivo).
+
+cat <archivo> >> <archivo2> --> copia el contenido de un archivo en otro (archivo2) sin sobreescribir el archivo destino. Si el archivo destino no existe lo crea: 
+
+cat <nombre_de_ningún_archivo> 2> <archivo>  --> se produce un error y el mensaje de dicho error se copia en el archivo destino.
+
+cat --> la terminal entra en un modo especial en el que podemos escribir texto y este se imprime en pantalla al apretar enter. Salimosd de este mdodo con ctrl + d
+
+cat > <archivo> --> la terminal entra en un modo en el cual podemos escribir texto y al apretar enter dicho texto sobreescribe al archivo que indiquemos.
+
+cat >> <archivo> --> igual al anterior pero el texto se agrega sin sobreescribir el contenido del archivo.
+
+stdout o standard output --> es el lugar por defecto donde los programas imprimen la salida de datos (output).stdout es una "data stream". Con el símbolo ">" se redirije el output.
+
+stderr o standard error --> es un data stream usado para mensajes de error. Con "2>" re redirije el mensaje de error.
+
+stdin o standard input --> es un data stream del cual los programas pueden leer mientras se ejecutan. Es el lugar por defecto donde los programas leen la entrada de datos.
+
+cat < <archivo> --> muestra el contenido del archivo.
+
+cat <archivo> | sort --> muestra el contenido de un archivo ordenando las líneas por orden alfabético.
+
+cat <archivo> <archivo2> --> muestra el contenido de dos archivos.
+
+cat <archivo> | sort | uniq --> muestra las líneas de un archivo ordenadas y sin duplicados.
+
+cat <archivo> | sort | uniq -d --> muestra las líneas duplicadas de un archivo.
+
+cp <archivo> </ruta></nuevo_archivo> --> copia el contenido del archivo (archivo) en un nuevo archivo (nuevo_archivo). Podemos indicar la ruta en caso de que queramos que el nuevo archivo esté en otro directorio diferente, si no indicamos una ruta el archivo se creará en el directorio de trabajo.
+
+cp -R <directorio> <directorio2> --> copia un directorio dentro de otro. Aparentemente la "r" hace referencia a que es recursivo.
+
+cat <archivo> | grep <cadena> | wc -l --> muestra la cantidad de líneas que contienen la cadena dentro del archivo. En lugar de usar -l se puede escribir -w para contar la cantidad de palabras, -c para contar los bytes o -m para contar los caracteres.
+
+cat * --> muestra el contenido de todos los archivos del directorio en el que nos encontramos.
+
+find . -name "*<cadena>*" --> muestra el nombre de los archivos dentro del directorio y subdirectorios que contengan la cadena dentro del nombre. El punto indica que la búsqueda se realiza dentro del directorio. En ligar del punto se puede, por ejemplo, usar una barra "/" para realizar la búsqueda dentro de todo el sistema de archivos. Los asteriscos funcionan como comodines, podemos colocar uno solo al final o al comienzo para modificar la búsqueda, por ejemplo, si colocamos solo el asterisco al final de la cadena mostrará los nombres que empiecen con la cadena en su nombre. Se puede utilizar el pipe grep para filtrar los resultados.
+
+diff <archivo> <archivo2> --> compara dos archivos
+
+Cuando listamos todos los archivos y directorios con ls -l, podemos diferenciar los directorios de los archivos porque en los permisos los directorios empiezan con "d", los archivos con "-" y los enlaces simbólicos con "l".
+
+Explicación sobre enlaces duros y simbólicos en Linux: https://geekland.eu/que-son-para-que-sirven-enlaces-duros-y-simbolicos/
+
+Permisos: r 4 (read), w 2 (write), x 1 (execute)
+
+chmod <owner><group><others> <archivo> --> Sirve para modificar los permisos de un archivo, colocando números de acuerdo a si se quiere que los permisos sean de lectura, es escritura y/o ejecución. Ejemplos: chmod 777 <archivo> archivo permite lectura, ejecución y escritura para todos; chmod 755 <archivo> permite que el dueño haga lo que quiera, pero el grupo y otros no pueden escribir; chmod 644 <archivo> el dueño puede escribir y leer, el grupo y otros solo pueden leer. Aparentmente el usuario root puede hacer lo que quiere, independientemente de los permisos del archivo o directorio en cuestión.
+
+chmod u=<permisos>,g=<permisos>,o=<permisos> <archivo> --> esta es otra forma de usar chmod. Se usan las letras rwx en la parte de permisos según si se quiere otorgar permiso para leer, escribir o ejecutar respectivamente, ejemplo: chmod u=r,g=r,o=rwx <archivo> , en este caso el archivo puede ser leído por cualquier usuario y por el grupo, pero el dueño puede, además, ejecutarlo y editarlo.
+
+chmod -R u=<permisos>,g=<permisos>,o=<permisos> <directorio> --> modifica los permisos de un directorio y todo su contenido.
+
+chmod +x <archivo> --> cambia los permisos de un archivo permitiendo que grupos, usuario root y todos los demás puedan ejecutarlo.
+
+chmod +r <archivo> --> igual que el anterior pero para lectura de archivos.
+
+chmod +w <archivo> --> igual que el anterior pero para escritura de archivos.
+
+touch <nombre> --> crea un archivo vacío con el nombre indicado.
+
+mv <ruta> <ruta2> --> mueve el archivo de la ruta a la ruta2. También sirve para renombrar un archivo.
+
+rm <archivo> --> borra el archivo.
+
+El asterisco funciona como comodín, podemos, por ejemplo, borrar todos los archivos que empiecen con una secuencia de caracteres así: rm <secuencia>*. Este comodín se puede usar para otros comandos, no solamente para rm.
+
+rm -R <directorio> --> borra un directorio y todo su contenido.
+
+mkdir <nombre> --> crea un directorio con el nombre indicado. Podemos crear varios directorios de una vez si escribimos más nombres separados, ejemplo: mkdir <nombre> <nombre2> <nombre3>.
+
+history --> muestra los últimos comandos ejecutados. Si realizamos la siguiente asignación: HISTTIMEFOMRAT="%Y-%m-%d %T " , el comando "history" nos mostrará la fecha y horario en que se realizó cada comando. Podemos, si lo deseamos, realizar la asignación en el archivo ".bashrc" que está en el directorio "~" para que la variable tenga dicho valor cada vez que iniciemos.
+
+clear --> "limpia" la terminal.
+
+ctrl + l --> si se aprietan estas teclas da la sensación de limpiar la pantalla, saca de foco a los comandos y salidas mostradas hasta el momento.
+
+reset --> reinicia la Shell.
+
+df --> muestra el espacio en disco
+
+free --> muestra la memoria libre
+
+whoami --> muestra del nombre del usuario
+
+which <comando> --> muestra la ruta en la que se encuentra el ejecutable del comando.
+
+alias --> muestra los alias
+
+cat <archivo> | sort --> muestra el contenido de un archivo ordenando las líneas de acuerdo a un criterio
+
+wc <archivo> --> muestra la cantidad de líneas, palabras y caracteres del archivo (en ese orden).
+
+head <archivo> --> muestra las primeras diez líneas de un archivo.
+
+head -<número> <archivo> --> muestra las primeras líneas de un archivo de acuerdo al número que hayamos indicado.
+
+tail <archivo> --> muestra las últimas diez líneas del archivo.
+
+tail -<número> <archivo> --> muestra las últimas líneas de un archivo de acuerdo al número que hayamos indicado.
+
+echo <cadena> --> imprime en consola la cadena de texto que hayamos indicado.
+
+echo $((<operación>)) --> imprime el resultado de un cálculo que escribamos, ejemplo: echo $((2 * 2)).
+
+echo $(<variable_de_entorno>) --> imprime el valor de una variable de entorno que indiquemos.  
+
+echo \$5 --> normalmente no podemos imprimir el signo "$" acompañado de una cadena de caracteres porque identificaría a la cadena como una variable, por eso la barra "\" permite imprimir al signo "$" acompañado de la cadena. También sirve para imprimir el asterisco.
+
+echo $? --> muestra el código que le corresponde al comando anterior. Si el valor es distinto a cero significa que el comando anterior es un error.
+
+id --> muestra el id del usuario y otros datos.
+
+sudo --> permite ejecutar comandos como super usuario.
+
+chown <usuario> <archivo> --> cambia el dueño de un archivo según el usuario que le hayamos indicado. El dueño por defecto de un archivo o directorio es el usuario que lo creó. Hace falta ser super usuario.
+
+adduser <nombre> --> crea un nuevo usuario según el nombre que le indiquemos.
+
+su <usuario> --> cambia de usuario según le indiquemos.
+
+passwd <usuario> --> cambia la contraseña del usuario que indiquemos.
+
+addgroup <nombre> --> crea un grupo según el nombre que le indiquemos.
+
+delgroup <grupo> --> borra el grupo que indiquemos.
+
+usermod -aG <grupo> <usuario> --> le asigna un grupo a un usuario que elijamos. La "a" es por append y la "G" por group.
+
+groups <usuario> --> sirve para ver a qué grupos pertenece un usuario.
+
+gpasswd -d <usuario> <grupo> --> saca al usuario que indiquemos del grupo que indiquemos.
+
+ps --> muestra los procesos.
+
+ps x --> muestra todos los procesos en el sistema.
+
+ps aux --> muestra los procesos de todos los usuarios.
+
+top --> muestra una vista dinámica de los procesos. Con "ctrl + c" o "q" salimos.
+
+htop --> muy parecido a top´.
+
+jobs --> muestra los programas en ejecución.
+
+kill <número_de_proceso> --> cancela un programa en ejecución según el número que le indiquemos. El número puede verse con el comando Jobs.
+
+export <nombre>=<valor> --> define una variable de entorno de acuerdo al nombre y valor que elijamos.
+
+printenv --> imprime las variables de entorno.
+
+echo $<variable> --> imprime valor de una variable de entorno que indiquemos.
+
+unset <variable> --> borramos una variables que indiquemos.
+
+Hay algunas variables que forman parte integral de la Shell. Esto quiere decir que diferentes programas y partes del sistema las conocen y las usan. Una de ellas es PATH. Si no fuera por la variable PATH tendríamos que recordar el camino en el sistema de archivos de todos los ejecutables que queramos ejecutar en la Shell. En lugar hacer ls tendríamos escribir /bin/ls. La variable PATH es una lista de directorios en la cual la Shell va a buscar cuando tratamos de ejecutar un comando. Si escribimos ls la shell va a buscar en cada directorio listado en la variable PATH por un ejecutable llamado ls. Podemos hacer "export PATH=""" para vaciar el PATH si así lo deseamos para que cada vez que queramos ejecutar un comando debamos escribir la ruta completa (el PATH volverá a la normalidad si cerramos y abrimos el shell). Si queremos que la variable PATH cambie de manera permanente podemos modificar el archivo .bashrc que está en el directorio "~": escribimos export "$PATH:<ruta>" (la ruta pertenece al directorio que contiene archivos que queremos que se ejecuten sin la necesidad de escribir ruta la completa).   
+
+En la ruta /etc/environment se encuentra la variable PATH. Desde acá podemos modificarla.
+
+apt install <software> --> instala el software que le indiquemos para distribuciones de Debian. En algunos casos hay que escribir sudo al principio.
+
+apt remove <software> --> desinstala el software que le indiquemos. En ocasiones hay que escribir sudo al principio.
+
+yum install <software> --> instala el software que le indiquemos para distribuciones de Red Hat. En algunos casos hay que escribir sudo al principio.
+
+ping <dirección> --> envía paquetes a una dirección ip según la dirección que le indiquemos, por ejemplo, google.com.
+
+gzip <archivo> --> comprime el archivo que le indiquemos.
+
+gunzip <archivo> --> descomprime el archivo que le indiquemos.
+
+type <comando> --> nos da información sobre un comando que indiquemos.
+
+man <comando> --> muestra mucha información sobre un comando que le indiquemos.
+
+whatis <comando> --> muestra información de un comando en una línea.
+
+En Linux podemos ejecutar varios comandos de una sola vez separándolo por ";". Ejemplo: cd /usr; ls; cd -.
+
+Podemos crear archivos con formato .sh que contengan comandos de terminal. Podemos ejecutar estos archivos de la siguiente manera: ./<archivo>. Este archivo puede contener, por ejemplo, el comando ls /bin y ejecutará dicho comando al ser ejecutado el archivo.
+
+A veces ocurre que cuando descargamos un script para Linux debemos hacer chmod +x <archivo> para poder ejecutarlo. Esto le dará al usuario actual el permiso para ejecutar el archivo.
+
+El usuario root es un superusuario. Tiene acceso a todo en el sistema y puede hacer lo que quiera. Cuando utilizamos el comando "sudo" estamos haciendo las cosas como usuario root.
+
+sh --> se la conoce también como Bourne Shell. Es la Shell original de Linux. Es muy básica
+
+bash --> se la conoce también como Bourne again Shell. Es la Shell más popular en Linux. Está construida sobre sh pero también tiene características extra. 
+
+Dentro del directorio home, al que podemos entrar con "cd ~", existe un archivo escondido llamado .bashrc. Este archivo es de configuración y se ejecuta cada vez que abrimos la terminal. Podemos editarlo con nano si lo deseamos para agregar otros comandos que se ejecuten al abrir la terminal. Hay un archivo así en el directorio de cada usuario, y se ejecuta también cuando cambiamos de usuario.
+
+source ~/.bashrc --> ejecuta los comandos presentes en .bashrc sin la necesidad de reiniciar la terminal. Esto puede servir cuando editamos el archivo .bashrc y no queremos reiniciar la terminal.
+
+pushd <directorio> --> este comando envía al directorio en cuestión a una pila para ser recordad.
+
+popd --> trabaja junto con pushd. Nos lleva al directorio que estaba en la pila (es un directorio que es recordado gracias a pushd).
+
+Shebang: sirve para que un archivo se ejecute por un programa sin la necesidad de "invocar" a dicho programa en el momento de la ejecución. Ejemplo: #!/usr/bin/python3 , este shebang se escribe en la parte de arriba de un archivo de Python y podríamos ejecutar a dicho archivo simplemente escribiendo ./<archivo> si el archivo está en el directorio en el que estamos. 
+
+!! --> ejecuta el comando anterior. Podemos combinarlo con otros comandos, por ejemplo: sudo !!, en este caso le agrega sudo al comando anterior.
+
+!<número> --> ejecuta el comando que le corresponda al número que indiquemos. Dicho número podemos verlo con history.
+
+cmatrix --> no tiene un uso práctico, solo muestra una pantalla similar a la película matrix. Salimos de la pantalla con ctrl + c.
+
+ctrl + a --> cuando estamos escribiendo un comando, esta combinación lleva el cursor al principio.
+
+ctrl + e --> lleva el cursor al final del comando que estamos escribiendo.
+
+Para ejecutar varios comando de una sola vez podemos usar ";", por ejemplo: cat <archivo> ; cat <archivo_2>.
+
+&& --> funciona parecido al anterior, solo que el segundo comando se ejecuta si el primero no da error, ejemplo: cat <archivo> && cat <archivo_2> , si "archivo" no existe el segundo comando no se ejecuta. 
+
+usermod -aG sudo <usuario> --> permite que un usuario pertenezca al grupo sudo.
+
+groups --> nos dice a qué grupos pertenece el usuario actual. Podemos también hacer groups <usuario> para poder ver a qué grupo pertenece un usuario que elijamos.
+
+sudo <comando> --> permite que un usuario del grupo sudo ejecute comandos que normalmente puede ejecutar el usuario root.
+
+sudo visudo --> nos permite realizar cambios en el archivo sudoers que está en el directorio etc.
+
+sudo -l --> muestra los privilegios del usuario actual.
+
+cat /etc/passwd --> muestra los usuarios que hay en el sistema.
+
+ifconfig --> muestra datos relacionados a redes.
+
+ip -4 addr --> muestra la ip versión 4.
+
+curl <URL> --> realiza una solicitud de tipo get a la URL que indiquemo, por ejemplo, https://www.youtube.com
+
+curl -o <nombre_archivo> <URL> --> manda una solicitud del tipo get a la URL que indiquemos y guarda la respuesta en un archivo según el nombre que indiquemos.
+
+ping <dirección> --> envía paquetes a una dirección que indiquemos, por ejemplo, google.com
+
+
+
+

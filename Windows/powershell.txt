@@ -1,0 +1,38 @@
+./<archivo> --> ejecuta el archivo que indiquemos.
+
+Get-Help <comando> --> muestra información sobre un comando e indiquemos.
+
+Get-Process --> muestra todos los procesos.
+
+Get-Process <proceso> --> muestra el proceso que le indiquemos. Debemos indicarlo por nombre.
+
+Get-Service --> muestra todos los servicios indicando si están o no en ejecución.
+
+Stop-Process -Name <nombre_del_proceso> --> detiene un proceso. Debemos indicar el nombre.
+
+Stop-Process -Id <id_del_proceso> -Confirm -Passthru --> detiene un proceso. Debemos indicar el Id.
+
+Get-History --> muestra los comandos que hemos usado en la sesión.
+
+Clear-History --> elimina el historial de la sesión.
+
+<comando_con_salida> | Out-File -FilePath .\<nombre> --> crea un archivo que contiene la salida del comando ejecutado, por ejemplo Get-Process | Out-File -FilePath .\procesos.txt , así creamos un archivo llamado procesos.txt que contiene los procesos.
+
+Copy-Item "<ruta\archivo>" -Destination "<ruta>" --> copia un archivo a una ruta que indiquemos.
+
+Get-ChildItem <archivo> --> muestra datos sobre un archivo.
+
+Invoke-Item <archivo> --> ejecuta un archivo.
+
+Clear-Content <archivo> --> borrar el contenido de un archivo pero conservándolo.
+
+Set-Location <directorio> --> cambiamos de directorio (igual o similar a cd). 
+
+Get-ComputerInfo --> muestra información sobre la computadora.
+
+Move-Item -Path <ruta\archivo> -Destination <ruta\nuevo_nombre> --> mueve un archivo.
+
+Muchos de los comandos de CMD como cd o dir funcionan en Powershell.
+
+Powershell es un lenguaje de scripting basado en objetos. Todo en powershell es un objeto; permite que lidiar con los resultados de los comandos sea más fácil y eficiente. Provee acceso al framework .NET
+

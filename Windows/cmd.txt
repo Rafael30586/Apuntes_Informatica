@@ -1,0 +1,63 @@
+cd <directorio> --> cambia de directorio según le indiquemos.
+
+dir --> lista todos los archivos y subdirectorios del directorio en el que estamos.
+
+dir <ruta> --> lista los directorios y subdirectorios de la ruta que indiquemos.
+
+mkdir <nombre> --> crea un directorio con el nombre que indiquemos.
+
+rmdir <carpeta> --> borra una carpeta que le indiquemos. La carpeta debe estar vacía.
+
+move <archivo> <ruta> --> mueve un archivo a la ruta que le indiquemos.
+
+ren <archivo> <nombre_nuevo> --> renombra un archivo según el nombre que le indiquemos.
+
+cls --> limpia la terminal.
+
+exit --> cierra la terminal.
+
+<archivo> --> ejecuta el archivo que indiquemos.
+
+driverquery --> lista todos los drivers instalados.
+
+systeminfo --> muestra las especificaciones técnicas de la PC.
+
+set --> muestra las variables de entorno.
+
+title <palabras> --> cambia el título de la ventana de la terminal según le indiquemos.
+
+fc <archivo1> <archivo2> --> compara dos archivos que indiquemos.
+
+netstat -an --> muestra puertos abiertos, sus direcciones IP y estados.
+
+ping <direccioón_web> --> muestra la dirección IP de una web y el tiempo que toma transmitir datos y obtener una respuesta.
+
+color attr --> muestra los colores que es posible otorgarle a los caracteres de la terminal.
+
+color <caracter> --> podemos cambiarle el color de fuente a la terminal. Con color attr podemos ver las opciones.
+
+ipconfig --> muestra información sobre la dirección IP y conexiones.
+
+tree --> muestra los subdirectorios en forma de árbol.
+
+tree <ruta> --> muestra los subdirectorios del directorio que indiquemos.
+
+ver --> muestra la versión del sistema operativo.
+
+tasklist --> muestra la lista de procesos.
+
+taskkill /F /PID <número_de_proceso> --> detiene un proceso según el número que indiquemos.
+
+taskkill /F /IM <nombre_de_proceso> --> detiene un proceso según el nombre que indiquemos.
+
+date --> muestra y modifica la fecha actual.
+
+time --> muestra y modifica la hora.
+
+echo <cadena_de_caracteres> --> imprime en consola la cadena de caracteres que indiquemos.
+
+echo <caracteres> > <nombre> --> creamos un archivo con el nombre y contenido que indiquemos.
+
+type nul > <nombre> --> creamos un archivo con el nombre que le indiquemos.
+
+CMD es un entorno de scripting basado en texto, lo que hace que sea difícil lidiar con los resultados de los comandos.

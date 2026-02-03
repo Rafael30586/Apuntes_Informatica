@@ -1,0 +1,27 @@
+El sistema de archivos de Linux es una estructuras en forma de árbol, donde tenemos al directorio raíz, que se anota como una barra "/".
+
+Dentro del directorio home cada usuario tiene su propio directorio. Por ejemplo, si tenemos un usuario llamado Rafael, entonces tendremos un directorio llamado Rafael. También es el directorio donde se guardan los archivos personales. Se recomienda realizar las tareas de desarrollo dentro de este directorio. Este directorio es en donde estamos la mayor parte del tiempo. Muchos de los otros directorios son críticos para el sistema operativo u otros programas. Hay que tener mucho cuidado cuando trabajamos con otros directorios como /bin, /etc, /var, etc.
+
+bin: contiene archivos binarios o ejecutables que son esenciales para el sistema operativo.
+
+sbin: contiene ejecutables que solo deben ejecutarse por el usuario root, ejemplos: adduser y deluser.
+
+lib: archivos compartidos entre bin y sbin.
+
+usr: tiene archivos binarios no esenciales para el sistema operativo
+
+etc: contiene archivos de configuración que pueden ser modificados con editores de texto.
+
+boot: contiene los archivos necesarios para iniciare el sistema, como el propio kernel de Linux.
+
+dev: tiene drivers del hardware.
+
+opt: contiene software opcional con el cual rara vez interactuamos.
+
+var: contiene variables que se modifican a medida que utilizamos el sistema operativo.
+
+tmp: contiene archivos temporales que no serán persistidos entre booteos.
+
+~: es el directorio home del usuario que estemos utilizando, por ejemplo, si estamos como usuario root entonces el directorio root es ~.
+
+media: es el directorio en donde se puede navegar por la memoria extraíble (cds, pendrives, etc). Acá los uaurios pueden acceder a los contenidos de las unidades de almacenamiento.
