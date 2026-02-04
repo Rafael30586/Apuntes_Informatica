@@ -49,9 +49,9 @@ file <archivo> --> muestra información sobre el archivo que le indiquemos.
 
 En Linux los archivos no necesitan extensión como .jpg, .txt, etc.
 
-less <archivo> --> muestra el contenido de un archivo. Podemos navegar con las flechas y salir con la letra "q":
+less <archivo> --> muestra el contenido de un archivo. Podemos navegar con las flechas y salir con la letra "q".
 
-les -N <archvio> --> igual que les pero muestra el número de cada línea.
+les -N <archivo> --> igual que less pero muestra el número de cada línea.
 
 En el directorio bin están los comandos que se pueden usar. Debemos hacer ls en dicho directorio.
 
@@ -69,11 +69,11 @@ grep -R <cadena> <directorio> --> muestra la presencia de la cadena que indiquem
 
 cat <archivo> | grep <cadena> > <archivo_nuevo> --> crea un nuevo archivo (archivo_nuevo) que va a contener las líneas encontradas en otro (archivo).
 
-cat <archivo> >> <archivo2> --> copia el contenido de un archivo en otro (archivo2) sin sobreescribir el archivo destino. Si el archivo destino no existe lo crea: 
+cat <archivo> >> <archivo2> --> copia el contenido de un archivo en otro (archivo2) sin sobreescribir el archivo destino. Si el archivo destino no existe lo crea.
 
 cat <nombre_de_ningún_archivo> 2> <archivo>  --> se produce un error y el mensaje de dicho error se copia en el archivo destino.
 
-cat --> la terminal entra en un modo especial en el que podemos escribir texto y este se imprime en pantalla al apretar enter. Salimosd de este mdodo con ctrl + d
+cat --> la terminal entra en un modo especial en el que podemos escribir texto y este se imprime en pantalla al apretar enter. Salimos de este modo con ctrl + d
 
 cat > <archivo> --> la terminal entra en un modo en el cual podemos escribir texto y al apretar enter dicho texto sobreescribe al archivo que indiquemos.
 
@@ -97,7 +97,7 @@ cat <archivo> | sort | uniq -d --> muestra las líneas duplicadas de un archivo.
 
 cp <archivo> </ruta></nuevo_archivo> --> copia el contenido del archivo (archivo) en un nuevo archivo (nuevo_archivo). Podemos indicar la ruta en caso de que queramos que el nuevo archivo esté en otro directorio diferente, si no indicamos una ruta el archivo se creará en el directorio de trabajo.
 
-cp -R <directorio> <directorio2> --> copia un directorio dentro de otro. Aparentemente la "r" hace referencia a que es recursivo.
+cp -R <directorio> <directorio2> --> copia un directorio dentro de otro. Aparentemente la "R" hace referencia a que es recursivo.
 
 cat <archivo> | grep <cadena> | wc -l --> muestra la cantidad de líneas que contienen la cadena dentro del archivo. En lugar de usar -l se puede escribir -w para contar la cantidad de palabras, -c para contar los bytes o -m para contar los caracteres.
 

@@ -2,11 +2,27 @@ cd <directorio> --> cambia de directorio según le indiquemos.
 
 dir --> lista todos los archivos y subdirectorios del directorio en el que estamos.
 
+dir | find "<cadena>" --> filtra los resultados de dir según la cadena de texto que indiquemos.
+
+dir | findstr "<expresión_regular>" --> filtra los resultados de acuerdo a una expresión regula que coloquemos.
+
 dir <ruta> --> lista los directorios y subdirectorios de la ruta que indiquemos.
 
-mkdir <nombre> --> crea un directorio con el nombre que indiquemos.
+mkdir <nombre> --> crea un directorio con el nombre que indiquemos. Puede reemplazarse mkdir por rd.
 
-rmdir <carpeta> --> borra una carpeta que le indiquemos. La carpeta debe estar vacía.
+rmdir <carpeta> --> borra una carpeta que le indiquemos. La carpeta debe estar vacía. Puede reemplazarse rmdir por rd.
+
+rmdir /S <directorio> --> borra un directorio que contenga archivos.
+
+type nul > <nombre> --> creamos un archivo con el nombre que le indiquemos.
+
+copy null > <nombre> --> otra forma de crear un archivo.
+
+copy con <nombre> --> la terminal nos permite escribir para que el texto pase al archivo que indiquemos. Para dejar de escribir apretar ctrl + c. El nombre se le asigna a l nuevo archivo creado.
+
+del <archivo> --> borra una archivo que indiquemos.
+
+copy <archivo> <directorio> --> copia una archivo a una carpeta que indiquemos.
 
 move <archivo> <ruta> --> mueve un archivo a la ruta que le indiquemos.
 
@@ -58,6 +74,8 @@ echo <cadena_de_caracteres> --> imprime en consola la cadena de caracteres que i
 
 echo <caracteres> > <nombre> --> creamos un archivo con el nombre y contenido que indiquemos.
 
-type nul > <nombre> --> creamos un archivo con el nombre que le indiquemos.
-
 CMD es un entorno de scripting basado en texto, lo que hace que sea difícil lidiar con los resultados de los comandos.
+
+win + r--> atajo de teclado que permite abrir el cmd.
+
+win + x --> similar al anterior pero abre un menú distinto.
