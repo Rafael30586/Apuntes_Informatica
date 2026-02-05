@@ -1,5 +1,7 @@
 cd <directorio> --> cambia de directorio según le indiquemos.
 
+cd\ --> nos lleva al directorio raíz.
+
 dir --> lista todos los archivos y subdirectorios del directorio en el que estamos.
 
 dir | find "<cadena>" --> filtra los resultados de dir según la cadena de texto que indiquemos.
@@ -19,6 +21,8 @@ type nul > <nombre> --> creamos un archivo con el nombre que le indiquemos.
 copy null > <nombre> --> otra forma de crear un archivo.
 
 copy con <nombre> --> la terminal nos permite escribir para que el texto pase al archivo que indiquemos. Para dejar de escribir apretar ctrl + c. El nombre se le asigna a l nuevo archivo creado.
+
+xcopy <ruta> <rura2> --> copia los archivos de una carpeta a la carpeta que le indiquemos.
 
 del <archivo> --> borra una archivo que indiquemos.
 
@@ -79,3 +83,5 @@ CMD es un entorno de scripting basado en texto, lo que hace que sea difícil lid
 win + r--> atajo de teclado que permite abrir el cmd.
 
 win + x --> similar al anterior pero abre un menú distinto.
+
+<comando> /? --> nos muestra información sobre un comando que elijamos.

@@ -1,0 +1,13 @@
+git config --global user.name "<nombre>" --> configura el nombre de usuario de manera global.
+
+git config --global user.email "<email>" --> configura el email de manera global.
+
+git config --list --> muestra información como nombre de usuario, email, etc.
+
+git init --> inicializa un repositorio de git en la carpeta en la que estamos. Se crea una carpeta oculta .git en el directorio.
+
+git branch -m <nombre> --> podemos cambiarle el nombre a la rama main o master.
+
+git add <archivo> --> añade el archivo que indiquemos a la staged área.
+
+git rm --cached <archivo> --> quita un archivo del estado staged.
