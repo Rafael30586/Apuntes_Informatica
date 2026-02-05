@@ -10,4 +10,30 @@ git branch -m <nombre> --> podemos cambiarle el nombre a la rama main o master.
 
 git add <archivo> --> añade el archivo que indiquemos a la staged área.
 
-git rm --cached <archivo> --> quita un archivo del estado staged.
+git add . --> añade todos los archivos del directorio al staged área.
+
+git restore <archivo> --> devuelve un archivo a su estado anterior a ser modificado. Esto funciona cuando los archivos han sido modificados pero no están en el estado staged.
+
+git restore --staged <archivo> --> quita un archivo del estado staged.
+
+git commit -m "<mensaje>" --> realiza un commit con un mensaje que indiquemos.
+
+git rm <archivo> --> borra un archivo.
+
+git rm --cached <archivo> --> para de rastrear un archivo.
+
+git log --> muestra los commits relizados hasta ahora.
+
+git log --graph --> muestra los commits realizados hasta ahora de una manera más gráfica.
+
+git log --pretty=oneline --> muestra los commits de una manera más compacta.
+
+En la documentación de git se hace referencia al working tree y el index. Aparentemente el index son los archivos que están "commited". El working tree tiene que ver con los archivos dentro de la carpeta estén o no "commited". 
+
+working tree o working directory: es donde modificamos y editamos archivos. Los cambios no son rastreados hasta que los pasamos al estado stage.
+
+staging area o index: se usa git add para mover los archivos del working tree hasta el staging area. Esto crea una "fotografía" de los archivos que van a aparecer en el próximo commit.
+
+repositorio local o directorio de git: se usa git commit para guardar permanetemente la fotografía que está en el index en la historia del repositorio.
+
+git reset --> saca a los archivos del staging área.
