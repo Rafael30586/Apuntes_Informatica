@@ -1,0 +1,37 @@
+¿Qué es cloud computing? Es la práctica de usar una red de servidores remotos hospedados en internet para almacenar, gestionar y procesar datos, en lugar de hacerlo en una computadora personal o un servidor local.
+
+Evolución del hospedaje en la nube:
+- Servidor dedicado: una máquina física dedicada a un solo negocio. Corre una sola aplicación web. Es muy caro, requiere mucho mantenimiento y  es de alta seguridad.
+- Servidor privado virtual o VPS: Una máquina física dedicada a un solo negocio. La máquina física es virtualizada en sub máquinas. Corre múltiples aplicaciones web. Mejor utilización y aislamiento de recursos.
+- Hospedaje compartido o shared hosting: Una máquina física compartida por cientos de negocios. Muy barato, funcionalidad limitada y pobre aislamiento.
+- Hospedaje en la nube o cloud hosting: múltiples máquinas físicas que actúan como un solo sistema. El sistema es abstraído en múltiples servicios en la nube. Es flexible, escalable, seguro, altamente configurable y "cost-effective".
+
+Amazon: es una corporación multinacional americana con su sede en Seattle. Fue fundad en 1994 por Jeff Bezos y comenzó como un atienda en línea de libros y se expandió a otros productos.
+
+AWS: son los servicios de la nube de amazon. Fue lanzado en 2006.
+
+Simple Queue Service o SQS: fue el primer servicio de AWS lanzado al público.
+
+Simple Storage Service o S3: fue lanzado en marzo de 2006.
+
+Elastic Compute Cloud o EC2: lanzado en agosto de 2006.
+
+En 2010 se reportó que los sitios de web de "retail" de amazon.com migraron a AWS.
+
+En abril de 2003 Amazon empezó a ofrecer programas de certificación para ingenieros en computación.
+
+Proveedores de servicios en la nube (CSPs):
+- proveen múltiples servicios en la nube, decenas a centenas de servicios;
+- esos servicios en la nube pueden ser encadenados entre sí para crear arquitecturas en la nube;
+- esos servicios en la nube son accesibles vía una sola API unificada, por ejemplo, AWS API. 
+- esos servicios en la nube tienen  una oferta  de infraestructura como un servicio (IaaS).
+- esos servicios en la nube utilizan facturación medida basada en uso (por hora, por segundo, etc).
+- esos servicios tienen rico monitoreo integrado, ejemplo AWSCLoudTrail
+- esos servicios ofrecen automatización vía infraestructura como código (IaC) 
+Si una compañía ofrece múltiples servicios en la nube bajo un a misma interfaz de usuario pero no cumple con la mayoría de estos requisitos, estaríamos hablando de una plataforma en la nube o cloud platform, ejemplos: Twilio, HashiCorp, Databricks
+
+CPSs:
+- Top tier: AWS, Microsoft Azure, Google Cloud Platform, Alibaba Cloud.
+- Mid tier: IBM Cloud, Oracle Cloud, Huawei Cloud, Tencent Cloud.
+- Light Tier: Vultr, Digital ocean, Akamai Connected Cloud (Linode).
+- Private tier: OpenStack (Rackspace), Apache CloudStack, *Vmware vSphere.
