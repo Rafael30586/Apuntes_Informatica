@@ -35,3 +35,41 @@ CPSs:
 - Mid tier: IBM Cloud, Oracle Cloud, Huawei Cloud, Tencent Cloud.
 - Light Tier: Vultr, Digital ocean, Akamai Connected Cloud (Linode).
 - Private tier: OpenStack (Rackspace), Apache CloudStack, *Vmware vSphere.
+
+Un proveedor de servicios en la nube puede tener cientos de servicio en la nube que están agrupados en varios tipos de servicios. Los cuatro tipos de servicios cloud más comunes para infraestructura como un servicio (IaaS) serían:
+- computar: una computadora virtual en la que puede correr una aplicación, programas y código.
+- redes: podría ser una red virtual que defina concexiones de internet o aislamientos de red entre servicios o saliente al internet.
+- almacenamiento: podría ser un disco duro virtual que almacena archivos.
+- bases de datos: podría ser una base de datos virtual pata guardar datos de reportes o una base de datos para una aplicación web de propósito general.
+
+Evolución de la computación en la nube:
+- servidor dedicado: un servidor físico utilizado por un cliente.
+* tenés que adivinar la capacidad
+* se paga de más porque hay mucho que no se utiliza.
+* no se puede escalar verticalmente, hace falta una migración manual.
+* reemplazar un servidor es muy difícil.
+* estás limitado por el sistema operativo huésped.
+* múltiples aplicaciones pueden resultar en conflictos al compartir recursos.
+* tenés garantía de seguridad, privacidad y completa utilización de recursos subyacentes.
+- máquinas virtuales: 
+* se puede ejecutar varias máquinas virtuales en una sola máquina física.
+* el hypervisor es el software que permite ejecutar las MVs.
+* un servidor físico compartido por varios clientes.
+* se paga por una fracción del servidor. 
+* se paga de más por una máquina virtual porque hay espacio que está sin usar.
+* estanos limitados por el sistema operativo huésped.
+* varias aplicaciones en una misma máquina virtual pueden resultar en conflictos al compartir recursos.
+* es fácil exportar o importar imágenes para la migración.
+* es fácil de escalar vertical u horizontalmente.
+- contenedores: 
+* máquinas virtuales ejecutando varios contenedores.
+* Docker Daemon es el nombre de la capa de software que permite ejecutar múltiples contenedores.
+* se puede maximizar la utilización de la capacidad disponible lo cual es mejor para el teme del costo.
+* los contenedores comparten el mismo sistema operativo subyacente por lo que los contenedores son más eficientes que múltiples máquinas virtuales.
+- funciones: 
+* son MVs gestionadas ejecutando contenedores gestionados.
+* conocido como computación serverless
+* subís una pieza de código, elegís la cantidad de memoria y duración.
+* solo responsable por el código y los datos.
+* muy buen costo, solo pagás por el tiempo en el que el código está en ejecución, las MVs solo están en funcionamiento cuando hay código por ejecutar.
+
