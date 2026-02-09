@@ -63,3 +63,7 @@ git reflog --> es el historial completo de interacciones en nuestro working tree
 git tag <nombre> --> le otorga una etiqueta al commit actual.
 
 git checkout tags/<tag> --> nos lleva hasta el tag que indiquemos pero la cabeza se desprende de la rama master.
+
+git branch <nombre> --> crea una rama con el nombre que indiquemos.
+
+git switch <rama> --> cambia de rama.
