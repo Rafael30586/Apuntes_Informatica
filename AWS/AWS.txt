@@ -43,7 +43,8 @@ Un proveedor de servicios en la nube puede tener cientos de servicio en la nube 
 - bases de datos: podría ser una base de datos virtual pata guardar datos de reportes o una base de datos para una aplicación web de propósito general.
 
 Evolución de la computación en la nube:
-- servidor dedicado: un servidor físico utilizado por un cliente.
+- servidor dedicado:
+* un servidor físico utilizado por un cliente.
 * tenés que adivinar la capacidad
 * se paga de más porque hay mucho que no se utiliza.
 * no se puede escalar verticalmente, hace falta una migración manual.
@@ -73,3 +74,30 @@ Evolución de la computación en la nube:
 * solo responsable por el código y los datos.
 * muy buen costo, solo pagás por el tiempo en el que el código está en ejecución, las MVs solo están en funcionamiento cuando hay código por ejecutar.
 
+Tipos de computación en la nube:
+* SaaS o software as a service: es un producto gestionado por el proveedor de servicio. No nos preocupamos de como el servicio es mantenido. Funciona y se mantiene disponible. Ejemplos: Salesforce, Gmail, office 365. Diseñado para clientes.
+* PaaS o platform as a service: se enfoca en el despliegue y gestión de nuestras aplicaciones. No hay que preocuparse por configurar o entender el hardware o el S.O. Ejemplos: Heroku, Elastic beanstalk. Pensados para desarrolladores.
+* IaaS o infraestructure as a service: provee acceso a características de redes, computadoras y espacio para almacenar datos. No hay que preocuparse del personal IT, centros de datos y hardware. Ejemplos: Microsoft azure, AWS y Oracle cloud. Pensados para administradores.
+
+Modelos de despliegue en computación en la nube:
+* Public cloud: todo está construido sobre el proveedor de servicios en la nube. También conocido como cloud native o cloud first.
+* Private cloud: todo está construido sobre datacenters de la compañía. También conocido como on-premise. La nube podría ser OpenStack.
+* Híbrido: usa los dos anteriores. Hay una conexión (podría ser VPN) entre el datacenter y el VPC del CSP.
+* Cross-cloud: usa múltiples proveedores de la nube.
+
+Casos de uso de los modelos de despliegue en la nube:
+* Public cloud: compañías que están empezando ya o que son lo bastante pequeñas como para hacer el paso de VPS a CSP. Startups, ofrecimiento de SaaS,  nuevos proyectos y compañías. Ejemplo: Dropbox.
+* Híbrido: Organizaciones que empezaron con su propio datacenter. No pueden moverse completamente a cloud debido a esfuerzo de migración o cumplimiento de seguridad. Bancos, Fintech, grandes proveedores de servicios profesionales.
+* On-Premise: organizaciones que no pueden funcionar en cloud debido a cumplimiento de regulación estricto o por el tamaño de su organización. Sector público (gobierno), hospitales con información muy sensible, empresas de seguros.
+
+Beneficios para una empresa que migre a cloud:
+* Incrementar velocidad y agilidad.
+* Pay-as-you-go pricing: trade capital expense for variable expense.
+* Economy of scale: Benefit from massive economies of scale.
+* Alcance global en minutos.
+* Seguridad.
+* Confiabilidad: no hace falta gastar dinero en correr y mantener datacenters.
+* Alta disponibilidad.
+* Escalabilidad.
+* Elasticidad.
+* 
