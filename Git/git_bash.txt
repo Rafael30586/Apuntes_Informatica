@@ -67,3 +67,13 @@ git checkout tags/<tag> --> nos lleva hasta el tag que indiquemos pero la cabeza
 git branch <nombre> --> crea una rama con el nombre que indiquemos.
 
 git switch <rama> --> cambia de rama.
+
+Si realizamos cambios en un archivo de una rama sin hacer commit, git no nos dejará cambiar de rama a menos que hagamos el commit o que usemos git stash.
+
+git stash --> guarda cambios producidos en una rama sin hacer commit. 
+
+git stash list --> muestra los stash que hayamos hecho hasta ahora.
+
+git stash pop --> recupera los cambios que habíamos hecho con git stash.
+
+git stash drop --> borra el stash de la rama actual.
