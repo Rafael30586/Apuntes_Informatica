@@ -77,3 +77,5 @@ git stash list --> muestra los stash que hayamos hecho hasta ahora.
 git stash pop --> recupera los cambios que habíamos hecho con git stash.
 
 git stash drop --> borra el stash de la rama actual.
+
+git diff <rama> --> compara la rama que elijamos con la rama en la que estamos.

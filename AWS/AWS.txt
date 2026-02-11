@@ -138,3 +138,5 @@ Zonas de disponibilidad: son ubicaciones físicas para uno o más data centers.
 Un datacenter es un edificio que contiene cientas o miles de computadores.
 Los datacenters de una región están aislados entre sí (están en diferentes edificios), pero estarán lo suficientemente cerca como para que haya poca latencia (<10ms).
 Las zonas de disponibilidad están representadas por un código de región, seguido por una letra, ejemplo: us-east-1a.
+Una subred está asociada a una zona de disponibilidad.
+Nunca elegimos una zona de disponibilidad al lanzar recursos, lo que hacemos es elegir una subred que está asociada a una AZ (zona de disponibilidad).
