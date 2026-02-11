@@ -100,4 +100,41 @@ Beneficios para una empresa que migre a cloud:
 * Alta disponibilidad.
 * Escalabilidad.
 * Elasticidad.
-* 
+
+Seis ventajas del cloud:
+* Cambiá "capital expense" por "variable expense": Pagás on-demand lo que significa que pagás por lo que consumís por horas, por minutos o por segundos.
+* Beneficios de economías masivas de escalado: compartís el costo con otros clientes para ahorrar mucho. Cientos de miles de usuarios usando una fracción de un servidor.
+* No hace falta adivinar la capacidad: lanzar o destruir servicios cuando queramos en lugar de pagar por servidores sub utilizados.
+* Incrementar velocidad y agilidad: lanzar recursos en unos poco minutos con unos pocos clicks.
+* No hace falta gastar dinero en ejecutar y mantener datacenters: enfócate en tus propios clientes, desarrollando y configurando tus aplicaciones.
+* Volvete global en minutos: desplegá tu aplicación en múltiples regiones alrededor del mundo con unos pocos clicks. Se provee latencia más baja y una mejor experiencia para los clientes a un costo mínimo.
+
+
+¿Qué es la infraestructura global de AWS? es hardware y datacenters que están globalmente distribuidos y conectados entre sí para funcionar como un gran recurso para los clientes.
+La infraestructura global de AWS está hecha de los siguientes recursos:
+* 32 launched regions
+* 102 zonas de disponibilidad
+* 115 lugares de conexión directa
+* más de 550 puntos de presencia
+* 35 zonas locales
+* 29 wavelength zones
+Ejemplo: en la región de US oeste (Oregon) hay 4 zonas de disponibilidad. 
+
+Regiones: son ubicaciones que consisten en una o más zonas de disponibilidad.
+Cada región está físicamente aislada de las otras regiones en términos de ubicación, energía y suministro de agua. 
+La primera región fue US-East 1 (Northern Virginia). Casi todos los servicios se hacen disponibles primero en esta región.
+El costo de los servicios varían según la región.
+Al elegir una región hay cuatro factores a considerar:
+* Las regulaciones de la región.
+* El costo de los servicios de AWS en la región.
+* Qué servicios de AWS están disponibles. 
+* Cual es la latencia o distancia con respecto a los usuarios.
+No todos los servicios de AWS están disponibles en todas las regiones.
+
+Los servicios de AWS pueden ser globales o regionales.
+Los servicios globales operan a través de múltiples regiones y están fijados como globales. Ejemplos: Amazon S3, CloudFront, Route53, IAM. 
+
+Zonas de disponibilidad: son ubicaciones físicas para uno o más data centers.
+Un datacenter es un edificio que contiene cientas o miles de computadores.
+Los datacenters de una región están aislados entre sí (están en diferentes edificios), pero estarán lo suficientemente cerca como para que haya poca latencia (<10ms).
+Las zonas de disponibilidad están representadas por un código de región, seguido por una letra, ejemplo: us-east-1a.
