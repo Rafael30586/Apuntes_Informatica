@@ -140,3 +140,28 @@ Los datacenters de una región están aislados entre sí (están en diferentes e
 Las zonas de disponibilidad están representadas por un código de región, seguido por una letra, ejemplo: us-east-1a.
 Una subred está asociada a una zona de disponibilidad.
 Nunca elegimos una zona de disponibilidad al lanzar recursos, lo que hacemos es elegir una subred que está asociada a una AZ (zona de disponibilidad).
+Todas las AZs de una región están interconectadas por una fibra dedicada que provee alto rendimiento, con alto ancho de banda, baja latencia, etc.
+Todo el tráfico entre las AZs está encriptado.
+Las AZs están alejadas unos 100km la una de la otra.
+
+Dominio de fallas o fault domain: es una sección de una red que es vulnerable a daños si un dispositivo crítico o sistema falla. Su propósito es que si un fallo ocurre no irá en cascada fuera del dominio, limitando el daño posible.
+Se puede tener dominios de fallas anidados en otros dominios de fallas. 
+Un nivel de fallas o fault level es una colección de dominios de fallas.
+Una región AWS sería un nivel de fallas y un zona de disponibilidad sería un dominio de fallas.
+Cada región de Amazon está completamente aislada de otras regiones de Amazon. Esto produce la máxima estabilidad y tolerancia a fallos posible.
+Cada AZ está aislada, pero las AZs de una región están conectadas entre sí mediante enlaces de baja latencia.
+Cada AZ está diseñada como una zona de fallos independiente.
+
+Red global de AWS: representa la interconexión entre la infraestructura global de AWS. Comúnmente conocido como la columna vertebral de AWS. Puede pensárselo como una autopista, donde las cosas pueden moverse rápidamente entre datacenters.
+VPC endpoints: aseguran que los recursos permanezcan en la red de AWS y no lleguen hasta la internet pública.
+Edge locations: pueden funcionar como rampas o como vias de escape a la red global de AWS.
+AWS Global Accelerator y AWS S3 Transfer Acceleration: Usa Edge locations para alcanzar recursos de AWS en otras regiones atravesando rápidamente la red global de AWS.
+Amazon CloudFront (CDN): Usa Edge locations como una via de escape para proveer al Edge storage y computar cerca del usuario final. 
+
+Puntos de presencia o PoP: es una ubicación intermedia entre una región de AWS y el usuario final. Esta ubicación podría ser un datacenter o una colección de hardware.
+Para AWS un PoP es un datacenter poseído por AWS o un socio de confianza que es utilizado por servicios de AWS relacionados por envío de contenido o subida acelerada (expediated upload).
+Edge locations: son datacenters que guardan cache de los archivos más populares (páginas web, imágenes y videos) para que el envío a distancia a los usuarios finales se reduzca.
+Regional Edge locations: son datacenters que guardan caches mucho más grandes de archivos menos populares para reducir el costo y la tarifa de transferencia.
+
+Redes de tier 1: es una red que puede alcanzar cualquier otra red en internet sin comprar tránsito de IP o pagar por "peering".
+Las AZs de AWS están todas conectadas de manera redundante a múltiples proveedores de tránsito tier-1.
