@@ -85,3 +85,5 @@ win + r--> atajo de teclado que permite abrir el cmd.
 win + x --> similar al anterior pero abre un menú distinto.
 
 <comando> /? --> nos muestra información sobre un comando que elijamos.
+
+start <directorio> --> abre la carpeta que indiquemos.

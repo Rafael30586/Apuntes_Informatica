@@ -1,0 +1,7 @@
+alt + tab --> navega entre diferentes ventanas de aplicaciones abiertas.
+
+ctrl + tab --> navega entre diferentes pestañas de una aplicación abierta.
+
+f6 --> cambia entre secciones internas
+
+alt + space --> despliega menú para minimizar, maximizae, etc.
