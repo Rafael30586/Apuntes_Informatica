@@ -1,0 +1,86 @@
+Un CDN (Content Delivery Network o Red de Distribución de Contenido) es un sistema de servidores distribuidos geográficamente que trabajan juntos para entregar contenido web de forma más rápida y eficiente a los usuarios.
+
+¿Qué problema resuelve?
+
+Cuando visitas un sitio web, tu navegador solicita recursos como:
+
+* HTML
+
+* CSS
+
+* JavaScript
+
+* Imágenes
+
+* Videos
+
+Archivos descargables
+
+Si todos esos archivos estuvieran en un único servidor (por ejemplo, en EE. UU.) y tú accedes desde Argentina, la distancia física aumenta la latencia (tiempo de respuesta).
+
+Un CDN soluciona esto colocando copias del contenido en múltiples servidores alrededor del mundo.
+
+¿Cómo funciona?
+
+Un sitio web contrata un proveedor de CDN, por ejemplo:
+
+* Cloudflare
+
+* Akamai Technologies
+
+* Amazon Web Services
+
+El contenido del sitio se replica en muchos servidores distribuidos globalmente (llamados edge servers).
+
+Cuando un usuario accede al sitio, el CDN:
+
+Detecta su ubicación.
+
+Le entrega el contenido desde el servidor más cercano.
+
+Resultado:
+* Menor latencia
+* Mayor velocidad de carga
+* Menor carga en el servidor principal
+
+Ventajas principales
+1 Mayor velocidad
+
+El contenido se sirve desde el nodo más cercano al usuario.
+
+2 Mejor disponibilidad
+
+Si un servidor falla, otro puede responder.
+
+3 Protección contra ataques
+
+Muchos CDNs ayudan a mitigar ataques como:
+
+DDoS
+
+Bots maliciosos
+
+4 Escalabilidad
+
+Soportan grandes cantidades de tráfico (por ejemplo, cuando un sitio se vuelve viral).
+
+Ejemplo práctico
+
+Supongamos que tienes una aplicación web en un servidor en Brasil.
+Un usuario en España accede a tu app.
+
+Sin CDN --> el navegador viaja hasta Brasil.
+
+Con CDN --> obtiene imágenes y archivos estáticos desde un servidor en Europa.
+
+¿Qué tipo de contenido suele manejar un CDN?
+
+Principalmente contenido estático, como:
+
+* Imágenes
+
+* Videos
+
+* Archivos CSS/JS
+
+Aunque hoy en día también pueden manejar contenido dinámico.

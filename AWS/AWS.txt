@@ -134,7 +134,7 @@ No todos los servicios de AWS están disponibles en todas las regiones.
 Los servicios de AWS pueden ser globales o regionales.
 Los servicios globales operan a través de múltiples regiones y están fijados como globales. Ejemplos: Amazon S3, CloudFront, Route53, IAM. 
 
-Zonas de disponibilidad: son ubicaciones físicas para uno o más data centers.
+Zonas de disponibilidad (availability zones): son ubicaciones físicas para uno o más data centers.
 Un datacenter es un edificio que contiene cientas o miles de computadores.
 Los datacenters de una región están aislados entre sí (están en diferentes edificios), pero estarán lo suficientemente cerca como para que haya poca latencia (<10ms).
 Las zonas de disponibilidad están representadas por un código de región, seguido por una letra, ejemplo: us-east-1a.
@@ -158,10 +158,23 @@ Edge locations: pueden funcionar como rampas o como vias de escape a la red glob
 AWS Global Accelerator y AWS S3 Transfer Acceleration: Usa Edge locations para alcanzar recursos de AWS en otras regiones atravesando rápidamente la red global de AWS.
 Amazon CloudFront (CDN): Usa Edge locations como una via de escape para proveer al Edge storage y computar cerca del usuario final. 
 
-Puntos de presencia o PoP: es una ubicación intermedia entre una región de AWS y el usuario final. Esta ubicación podría ser un datacenter o una colección de hardware.
+Edge locations: son integrales a la infraestructura de AWS permitiendo el envío de contenido y aplicaciones con baja latencia y alto rendimiento. Funcionando como datacenters al borde de la red estas ubicaciones cachean contenido, procesan datos y traen los servicios cloud más cerca de los usuarios finales. Son datacenters estratégicamente posicionados alrededor del mundo diseñados para optimizar el envío de contenido y aplicaciones. Funcionan como puntos de presencia para los servicios de AWS permitiendo que los datos sean servidos desde la ubicación más cercana al usuario final lo cual reduce significativamente la latencia.
+
+https://www.geeksforgeeks.org/devops/aws-edge-locations/
+
+Puntos de presencia o PoP (points of presence): es una ubicación intermedia entre una región de AWS y el usuario final. Esta ubicación podría ser un datacenter o una colección de hardware.
 Para AWS un PoP es un datacenter poseído por AWS o un socio de confianza que es utilizado por servicios de AWS relacionados por envío de contenido o subida acelerada (expediated upload).
 Edge locations: son datacenters que guardan cache de los archivos más populares (páginas web, imágenes y videos) para que el envío a distancia a los usuarios finales se reduzca.
 Regional Edge locations: son datacenters que guardan caches mucho más grandes de archivos menos populares para reducir el costo y la tarifa de transferencia.
 
+https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/points-of-presence.html
+
 Redes de tier 1: es una red que puede alcanzar cualquier otra red en internet sin comprar tránsito de IP o pagar por "peering".
 Las AZs de AWS están todas conectadas de manera redundante a múltiples proveedores de tránsito tier-1.
+
+Servicios de AWS que usan PoPs para envío de contenido o subida acelerada:
+* Amazon CloudFront. Es un CDN. Apuntás tu sitio web a CloudFront para que encamine las solicitudes a la cache de la edge location más cercana.
+Te permite elegir un origen (como un servidor web) que será la fuente de lo cacheado.
+Cachea el contenido de lo que retorna el origen a varias edge locations alrededor del mundo.
+* Amazon S3 transfer acceleration: permite generar un URL especial que puede ser usada por usuarios finales para subir archivos a una edge location cercana. Una vez que un archivo es subido a una edge location, puede moverse mucho más rápido en la red de AWS para alcanzar S3.
+* AWS global accelerator: puede encontrar el camino óptimo desde un usuario a tus servidores web. Global accelerator son desplegados en edge locations para que puedas tráfico de usuario a una edge location en lugar de hacerlo directamente a tu aplicación web.
