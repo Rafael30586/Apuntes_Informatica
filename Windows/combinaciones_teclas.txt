@@ -4,4 +4,10 @@ ctrl + tab --> navega entre diferentes pestañas de una aplicación abierta.
 
 f6 --> cambia entre secciones internas
 
-alt + space --> despliega menú para minimizar, maximizae, etc.
+alt + space --> despliega menú para minimizar, maximizar etc.
+
+ctrl + t --> abre una nueva pestaña en el navegador mientras lo estamos usando.
+
+ctrl + w --> cierra la pestaña actual.
+
+ctrl + <número> --> abre la pestaña que corresponda al número que indiquemos.

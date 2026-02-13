@@ -81,3 +81,13 @@ git stash drop --> borra el stash de la rama actual.
 git diff <rama> --> compara la rama que elijamos con la rama en la que estamos.
 
 git branch -d <rama> --> borra una rama que indiquemos.
+
+git fetch --> descarga el historial de cambios sin descargar los cambios.
+
+git pull --> descarga el historial y los cambios.
+
+git clone <url> --> clona un repositorio remoto y lo deja en local.
+
+git push -u origin <rama> --> copia la rama en la que estamos trabajando en local en el repositorio remoto.
+
+git push --> guarda los cambios producidos en la rama del repositorio local en el remoto.
