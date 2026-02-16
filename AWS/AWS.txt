@@ -109,6 +109,9 @@ Seis ventajas del cloud:
 * No hace falta gastar dinero en ejecutar y mantener datacenters: enfócate en tus propios clientes, desarrollando y configurando tus aplicaciones.
 * Volvete global en minutos: desplegá tu aplicación en múltiples regiones alrededor del mundo con unos pocos clicks. Se provee latencia más baja y una mejor experiencia para los clientes a un costo mínimo.
 
+------------------------------------------------------------------------------------------------------
+Infraestructura Global De AWS
+------------------------------------------------------------------------------------------------------
 
 ¿Qué es la infraestructura global de AWS? es hardware y datacenters que están globalmente distribuidos y conectados entre sí para funcionar como un gran recurso para los clientes.
 La infraestructura global de AWS está hecha de los siguientes recursos:
@@ -116,7 +119,7 @@ La infraestructura global de AWS está hecha de los siguientes recursos:
 * 102 zonas de disponibilidad
 * 115 lugares de conexión directa
 * más de 550 puntos de presencia
-* 35 zonas locales
+* 35 zonas locales o Lcal zones
 * 29 wavelength zones
 Ejemplo: en la región de US oeste (Oregon) hay 4 zonas de disponibilidad. 
 
@@ -178,3 +181,31 @@ Te permite elegir un origen (como un servidor web) que será la fuente de lo cac
 Cachea el contenido de lo que retorna el origen a varias edge locations alrededor del mundo.
 * Amazon S3 transfer acceleration: permite generar un URL especial que puede ser usada por usuarios finales para subir archivos a una edge location cercana. Una vez que un archivo es subido a una edge location, puede moverse mucho más rápido en la red de AWS para alcanzar S3.
 * AWS global accelerator: puede encontrar el camino óptimo desde un usuario a tus servidores web. Global accelerator son desplegados en edge locations para que puedas tráfico de usuario a una edge location en lugar de hacerlo directamente a tu aplicación web.
+
+AWS direct connect
+Es una conexión privada/dedicada entre tu datacenter, oficina, co-ubicación y AWS.
+¿Qué es una co-ubicación o co-location? es un datacenter donde el equipamiento, el espacio y  el ancho de banda está disponible para alquiler para clientes minoristas.
+Tiene dos opciones de conexión de red muy rápidas:
+* Ancho de banda más bajo: 50MBps-500MBps
+* Ancho de banda más alto: 1GBps-10GBps
+Ayuda a reducir costos de red e incrementa el rendimiento del ancho de banda.
+Provee una experiencia de red más consistente que una típica conexión a internet (confiable y segura).
+
+Direct Connect Locations
+Son datacenters confiables asociados a los cuales podés establecer una conexión dedicada de alta velocidad y baja latencia desde tu "on-premise" a AWS.
+Tendrías que usar AWS direct connect para establecer una conexión.
+
+Local Zones
+Son datacenters ubicados cerca de áreas densamente pobladas para proveer rendimiento de muy baja latencia para esa área (milisegundos de un dígito de latencia como, por ejemplo 7ms).
+Los Angeles California fue la primera Local zone en ser desplegada.
+Solo algunos servicios específicos se han hecho disponibles:
+* Instancias tipo EC2 (T3, C5, R5, R5d, I3en, G4)
+* EBS (io1 y gp2)
+* Amazon FSx
+* Application Load Balancer
+* Amazon VPC
+El propósito de las Local zones es apoyar aplicaciones de alta demanda sensibles a latencias:
+* Medios y entretenimiento
+* Automatoizaciòn de diseño electrónico
+* Ad-tech
+* Machine learning
