@@ -34,6 +34,8 @@ Otras diferencias entre stack y heap
 * En la stack corremos riesgo de quedarnos cortos, meintras que en la heap el problema puede ser la fragmentación.
 * En la stack, la memoria asignada tiene un tamaño fijo, mientras que en la heap es posible la redimensión.
 
+Las variables globales en C++ no se guardan ni en la heap ni en la stack, se guardan en el data segmento segmento de datos. Las que se guardan en la stack son las locales.
+
 https://www.geeksforgeeks.org/dsa/stack-vs-heap-memory-allocation/
 
 
