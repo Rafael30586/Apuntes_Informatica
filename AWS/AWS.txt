@@ -209,3 +209,22 @@ El propósito de las Local zones es apoyar aplicaciones de alta demanda sensible
 * Automatoizaciòn de diseño electrónico
 * Ad-tech
 * Machine learning
+
+WaveLength zones
+Permiten "edge-computing" en redes 5G.
+Las aplicaciones tendrán ultra baja latencia.
+AWS se ha asociado con varias comapañìas para utilizar redes 5G (Verizon, Vodafone, SK telecom, etc).
+Creàs una subred atada a una weblength zone y luego podès lanzar máquinas virtuales al borde de las redes 5G objetivo.
+
+Data residency o residencia de datos
+Es la ubicación geográfica en donde residen los recursos de una organización o nube.
+Compliance boundaries o lìmites de cumplimiento: es un requerimiento legal por un gobierno u organización que describe a donde se les permite residir a los datos y recursos de la nube.
+Soberanìa de datos: es el control jurisdiccional o autoridad legal que puede ser afirmada sobre datos porque su ubicación física se encuentra en límites jurisdiccionales.
+Para cargas de traqbajo que necesitan cumplir con los lìmites de cumplimiento estrictamente definiendo la residencia de datos y recursos de la nube en AWS se puede usar:
+* AWS config es una política como servicio de código. Podès crear reglas para revisar continuamente la configuración de los recursos de AWS.
+* AWS outposts es un estante físico de servidores que podès poner en tu datacenter. Tus datos van a residir en donde resida fìsicamente tu outpost.
+* IAM policies  
+
+AWS puede utilizarse para el sector público u organizaciones desarrollando cargas de trabajo en la nube para el sector público.
+AWS logra esto por programas de cumplimiento regulatorio junto con controles de seguridad y gobernanza. 
+AWS tiene regiones especiales para regulaciones de Estados Unidos llamadas GovCloud. 
