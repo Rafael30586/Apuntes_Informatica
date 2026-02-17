@@ -228,3 +228,11 @@ Para cargas de traqbajo que necesitan cumplir con los lìmites de cumplimiento e
 AWS puede utilizarse para el sector público u organizaciones desarrollando cargas de trabajo en la nube para el sector público.
 AWS logra esto por programas de cumplimiento regulatorio junto con controles de seguridad y gobernanza. 
 AWS tiene regiones especiales para regulaciones de Estados Unidos llamadas GovCloud. 
+
+AWS China
+Està completamente aislado intencionalmente de AWS global para cumplir con las regulaciones de China. AWS està en su propio dominio: amazonaws.cn.
+Para poder operar en la región de AWS China necesitàs una "China Business License".
+No todos los servicios estàsn disponibles en China, por ejemplo: Route53.
+AWS tiene dos regiones en China: 
+* Ningxia CN-NorthWest-1, manejado por NSWCF
+* Beijing CN-North-1, manejado por SINNET
