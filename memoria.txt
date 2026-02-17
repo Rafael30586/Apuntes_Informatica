@@ -1,0 +1,39 @@
+Memoria stack y heap
+
+Stack: Asignación stack hace referencia al proceso de asignar memoria para variables locales y llamadas a funciones en la pila de llamadas. Ocurre automáticamente cuando una función es invocada y es liberada inmediatamente  cuando la función termina. Como la memoria es manejada por el sistema, es rápida y eficiente pero tiene espacio limitado en comparación con la asignación heap. Si el llamado de muchas funciones exceden la capacidad del stack, resulta en un error de stack overflow.
+¿Cómo funciona la asignación stack? 
+* La memoria es asignada a bloques consecutivos en la pila de llamadas.
+* El tamaño de la memoria requerido se sabe antes de la ejecución.
+* Cuando una función es llamada, sus variables locales son asignadas al stack.
+* Una vez que la función termina su ejecución, la memoria asignada es liberada automáticamente.
+* El programador no debe gestionar asignación y des-asignación.
+Características claves de la asignación stack:
+* La memoria está disponible solo cuando la función está en ejecución.
+* La desasignación automática ocurre cuando la función termina.
+* Si la memoria stack está llena ocurre un StackOverFlowError en java y una falla de segmentación en C++.
+* Es más segura que la memoria heap, ya que los datos pueden se5r accedidos solamente por el hilo dueño.
+* Es más rápida que la memoria heap debido a la gestión automática de memoria.
+
+Heap: La memoria heap es asignada dinámicamente durante le ejecución de un programa. No es liberada automáticamente cuando una función termina. En lugar de eso, requiere desasignación manual (C o C++) o recolector de basura (java) para reclamar la memoria no usada.
+Cuando un objeto es creado, se almacena en la memoria heap, mientras las referencias a estos objetos son almacenados en la memoria stack. La asignación heap es menos segura que la stack, porque los datos de la heap son accesibles por múltiples hilos, incrementando el riesgo de corrupción de datos y fugas de memoria si no se maneja adecuadamente.
+Categorías de memoria heap:
+* Young generation: Almacena nuevos objetos. Cuando este espacio está lleno, los objetos no usados son removidos por el recolector de basura, y los objetos sobrevivientes se van a la old generation.
+* Old generation: Almacena viejos objetos que ya no son frecuentemente usados. Estos objetos se quedan en la memoria a menos que se los elimine explícitamente.
+* Permanent generation: alamcena datos de la jvm, como clases en tiempo de ejecución y ,métodos de aplicación.
+Características clave de la asignación heap:
+* Si la memoria heap está llena, la jvm lanza un error java.lang.OutOfMEmoryError.
+* A diferencia de la memoria stack, la desasignación automática no ocurre; hace falta un recolector de basura para liberar la memoria no usada.
+* Es más lenta que la memoria stack debido a la asignación manual y recolección de basura.
+* Es menos segura ante hilos, ya que la memoria heap es compartida por todos los hilos.
+* Generalmente más grande en tamaño que la memoria stack.
+* La memoria heap persiste mientras la aplicación esté en ejecución.
+
+Otras diferencias entre stack y heap
+* En la stack la memoria es asignada en bloques consecutivos, mientras nque en la heap la memoria es asignada en orden aleatorio.
+* Es costo de uso es mayor en la memoria heap.
+* En la stack corremos riesgo de quedarnos cortos, meintras que en la heap el problema puede ser la fragmentación.
+* En la stack, la memoria asignada tiene un tamaño fijo, mientras que en la heap es posible la redimensión.
+
+https://www.geeksforgeeks.org/dsa/stack-vs-heap-memory-allocation/
+
+
