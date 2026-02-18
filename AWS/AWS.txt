@@ -268,3 +268,8 @@ Un cloud architect necesita entender los siguientes términos y factorizarlos en
 Un solutions architect necesita siempre considerar los siguinetes factores de negocio:
 * Seguridad: cuan segura es la solución.
 * Costo: cuanto va a costar.
+
+Alta disponibilidad
+Es la habilidad de que un servicio permanezca disponible asegurando que no hayan ningún punto de fallos y asegurar cierto nivel de desampeño.
+Asegurar tus cargas de trabajo a través de múltiples AZs asegura que si una o dos AZs dejan de estar disponibles, el servicio o aplicaciones permanezca disponible.
+Elastic Load Balancer: Un load balancer o balanceador de carga permite distribuir el tráfico a múltiples servidores en uno o más datacenter. Si un datacenter o servidor deja de estar disponible, el load balancer va a enrutar el tráfico solo a datacenters disponibles con servidores.
