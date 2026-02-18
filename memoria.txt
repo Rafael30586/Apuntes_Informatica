@@ -1,4 +1,6 @@
+------------------------------------------------------------------------------------------------------
 Memoria stack y heap
+------------------------------------------------------------------------------------------------------
 
 Stack: Asignación stack hace referencia al proceso de asignar memoria para variables locales y llamadas a funciones en la pila de llamadas. Ocurre automáticamente cuando una función es invocada y es liberada inmediatamente  cuando la función termina. Como la memoria es manejada por el sistema, es rápida y eficiente pero tiene espacio limitado en comparación con la asignación heap. Si el llamado de muchas funciones exceden la capacidad del stack, resulta en un error de stack overflow.
 ¿Cómo funciona la asignación stack? 
@@ -38,4 +40,24 @@ Las variables globales en C++ no se guardan ni en la heap ni en la stack, se gua
 
 https://www.geeksforgeeks.org/dsa/stack-vs-heap-memory-allocation/
 
+----------------------------------------------------------------------------------------------------
+Text segment
+----------------------------------------------------------------------------------------------------
 
+Esta memoria almacena el código del programa como funciones e instrucciones.
+Este segmento es usualmente de solo lectura para evitar la modificación accidental durante la ejecución.
+Generalmente está guardado en la parte más baja de la memoria.
+El tamaño de este segmento depende del número de instrucciones y la complejidad del programa. 
+
+-----------------------------------------------------------------------------------------------------
+Data segment
+-----------------------------------------------------------------------------------------------------
+El data segment tiene importancia cuando programamos en C o C++, pero no en lenguajes como java.
+El data segment almacena variables globales y estáticas del programa.
+Las variables en este segmento retienen sus valores durante la ejecución del programa.
+El tamaño del dará segment depende del número y tipo de variables globales y estáticas.
+Se divide en secciones inicializadas y no inicializadas.
+* Data segment inicializado: es la parte que contiene variables globales y estáticas inicializadas por el programador.
+* Data segment no inicializado o BSS: Almacena variables globales y estáticas no inicializadas; Estas variables se incializan en 0 automáticamente por el sistema en tiempo de ejecución.
+
+https://www.geeksforgeeks.org/c/memory-layout-of-c-program/
