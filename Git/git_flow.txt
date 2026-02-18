@@ -1,0 +1,15 @@
+Git Flow es un modelo de ramificación de git diseñado para facilitar el desarrollo colaborativo y la gestión de lanzamientos de software, utilizando ramas estructuradas (main, develop, feature, reléase, hotfix).
+
+En el flujo de trabajo de git Flow hay diferentes tipos de ramas:
+* Rama main: El propósito de la rama main en el flujo de trabajo de girflow es contener código  listo para ser lanzado. Esta rama se crea al principio del proyecto y es mantenida en el proceso de desarrollo. La rama puede ser etiquetada en varios commits para significar diferentes versiones o lanzamientos de código, y otras ramas serán combinadas dentro de la rama main después de que hayan sido examinadas y probadas.
+* Rama develop: Se crea al comenzar un proyecto y es mantenida durante el proceso de desarrollo, y contiene código pre-producción con nuevas ramas que están en el proceso de ser probadas.
+Las nuevas ramas de feautures (funciones) deben crearse basadas en la rama develop, y luego deben combinarse cuando estén listas luego de ser probadas.
+ 
+Cuando desarrollamos con git Flow hay tres tipos de ramas de soporte con diferentes propósitos: feature, reléase y hotfix.
+* Rama feature: es el tipo más común de rama en el flujo de trabajo de git Flow. Se crea cuando se añaden nuevas funciones al código.
+Cuando se trabaja en una nueva función, crearás una nueva rama feature desde la rama develop y luego combinar los cambios realizados con la rama develop cuando la feature ha sido revisada y probada.
+* Rama reléase: debería ser usada cuando nos preparamos para lanzamientos a producción. Típicamente, el trabajo realizado en ramas reléase tiene que ver con toques finales y bugs menores específicos al lanzar nuevo código, con código que debería ser señalado separadamente de la rama develop.
+* Rama hotfix: se usa para señalar cambios necesarios en la rama main. La base de la rama hotfix debería ser la rama main y debería combinarse con la rama main y la rama develop. Combinar los cambios de la rama hotfix de vuelta a la rama develop es crítico para asegurar que la reparación persista la próxima vez que la rama main se lance.  
+
+https://www.gitkraken.com/learn/git/git-flow
+https://media2.dev.to/dynamic/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsqxc7kepfadqqkg6sgdn.png - Imagen de git flow
