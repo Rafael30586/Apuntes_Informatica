@@ -236,3 +236,35 @@ No todos los servicios estàsn disponibles en China, por ejemplo: Route53.
 AWS tiene dos regiones en China: 
 * Ningxia CN-NorthWest-1, manejado por NSWCF
 * Beijing CN-North-1, manejado por SINNET
+
+AWS Ground Station
+Es un servicio completamente gestionado que te permite controlar comunicaciones satelitales, procesar datos y escalar tus operaciones sin tener que preocuparte por construir o gestionar tu propia infraestructura de estación terrestre.
+Casos de uso:
+* Pronóstico del clima
+* Imágenes de la superficie
+* Comunicaciones
+* Transmisión de video
+
+AWS Outposts
+Es un servicio completamente gestionado que ofrece la misma infraestructura, servicios AWS , API y herramientas para cualquier datacenter, co-ubicación o instalación "on-premise" para una experiencia híbrida consistente.
+AWS outposts es un estante de servidores ejecutando infraestructura de AWS en tu ubicación física.
+Un estante de servidores es un marco diseñado para organizar equipo IT, ejemplo 42U Rack. La U es por "rack units" o "U spaces" que es igual a 1.75 pulgadas. El estándar de la industria es 48U, que serían siete pies.
+Ejemplo de un rack server o estante de servidores: https://media.datacenterdynamics.com/media/images/op_rack_400w_1.original.jpg 
+
+---------------------------------------------------------------------------------------------------
+Cloud architecture o arquitectura en la nube
+---------------------------------------------------------------------------------------------------
+
+¿Qué es un "solutions architect"?
+Es un rol en una organización técnica que diseña una solución técnica usando múltiples sistemas vía búsqueda, documentación y experimentación.
+¿Qué es un "cloud architect"?
+Es un solutions archictect que está enfocado únicamente en soluciones técnicas arquitectónicas usando servicios cloud.
+Un cloud architect necesita entender los siguientes términos y factorizarlos en su arquitectura basado en los requerimientos del negocio:
+* Disponibilidad: la habilidad para asegurar que el servicio esté disponible.
+* Escalabilidad: la habilidad pata crecer rápido o sin obstáculos.
+* Elasticidad: la habilidad para creecer o encogerse para cumplir con la demanda.
+* Tolerancia a fallos: la habilidad para prevenir fallos.
+* Recuperación de desastre: la habilidad para recuperarse de los fallos.
+Un solutions architect necesita siempre considerar los siguinetes factores de negocio:
+* Seguridad: cuan segura es la solución.
+* Costo: cuanto va a costar.
