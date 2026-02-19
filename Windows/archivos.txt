@@ -3,3 +3,10 @@
 Se ejecutan con el intérprete de comandos de Windows (cmd.exe o símbolo delsistema).
 
 .cmd --> como .bat pero más modernos (Windows NT en adelante)
+
+.dll --> dll significa biblioteca de enlaces dinámicos. Esta biblioteca contiene datos y código de instrucciones que múltiples programas y aplicaciones pueden usar simultáneamente. Ahorra una cantidad significativa de espacio utilizando esta técnica de compartir una biblioteca.
+Usos de los archivos dll:
+* Responsables de ejecutar el sistema operativo Windows: El sistema operativo Windows no puede funcionar sin ellos.
+* Realización de ciertas tareas: Cada tipo de archivo dll está desarrollado para realizar un tipo de función, como Comdlg32 realiza las tareas comunes relacionadas con los cuadros de diálogo.
+* Ejecutar ciertas aplicaciones: La mayoría de las aplicaciones utilizan archivos dll para ejecutarse, por lo tanto, estos archivos se instalan en el momento de su instalación. El sistema operativo indica que instale ciertos archivos dll para ciertos juegos y software.
+¿Cómo abrir una archivo dll? no se recomienda abrirlos porque un ligero cambio en el código lo corromperá. Sin embargo, las personas técnicas pueden llegar a necesitar abrirlos y para eso usarán un descompilador.

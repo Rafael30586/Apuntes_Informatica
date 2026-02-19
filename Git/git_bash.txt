@@ -88,6 +88,8 @@ git pull --> descarga el historial y los cambios.
 
 git pull -u origin <rama> --> descarga una rama a nuestro repositorio local.
 
+git cherry-pick <id_de_commit> --> trae a la rama en la que estamos los cambios de un commit de una rama que elijamos. Puede que haya conflictos y tendremos que solucionarlos.
+
 git clone <url> --> clona un repositorio remoto y lo deja en local.
 
 git push -u origin <rama> --> copia la rama en la que estamos trabajando en local en el repositorio remoto.

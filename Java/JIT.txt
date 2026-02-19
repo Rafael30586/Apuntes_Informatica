@@ -1,0 +1,5 @@
+El JIT o just in time compiler es una parte esencial del JRE que es responsable por la optimización del rendimiento de aplicaciones java durante el tiempo de ejecución.
+
+https://www.ibm.com/docs/es/sdk-java-technology/8?topic=reference-jit-compiler
+https://www.geeksforgeeks.org/java/just-in-time-compiler/
+https://media.geeksforgeeks.org/wp-content/uploads/CommonArticleDesign20-min-1.png
