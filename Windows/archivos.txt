@@ -1,0 +1,5 @@
+.bat --> son archivos de procesamiento por lotes que contienen una serie de comandos que el sistema ejecuta uno tras otro en la consola. Son archivos de texto plano con comandos de terminal de windows
+ que se ejecutan automáticamente al abrirlos.
+Se ejecutan con el intérprete de comandos de Windows (cmd.exe o símbolo delsistema).
+
+.cmd --> como .bat pero más modernos (Windows NT en adelante)

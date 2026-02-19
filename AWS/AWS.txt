@@ -273,3 +273,40 @@ Alta disponibilidad
 Es la habilidad de que un servicio permanezca disponible asegurando que no hayan ningún punto de fallos y asegurar cierto nivel de desampeño.
 Asegurar tus cargas de trabajo a través de múltiples AZs asegura que si una o dos AZs dejan de estar disponibles, el servicio o aplicaciones permanezca disponible.
 Elastic Load Balancer: Un load balancer o balanceador de carga permite distribuir el tráfico a múltiples servidores en uno o más datacenter. Si un datacenter o servidor deja de estar disponible, el load balancer va a enrutar el tráfico solo a datacenters disponibles con servidores.
+
+Alta escalabilidad
+Es la habilidad para incrementar la capacidad basado en el incremento de la demanda de tráfico, memoria y poder de cómputo.
+* Escalado vertical (scaling up): mejorar a un servidor más grande.
+* Escalado horizontal (scaling out): añadir más servidores del mismo tamaño. 
+
+Alta elasticidad
+Es la habilidad para incrementar o decrementar automáticamente la capacidad basado en el tráfico actual, memoria y poder de cómputo. Se suele confundir con alta escalabilidad.
+Escalado hotizontal:
+* Scaling out: añadir más servidores del mismo tamaño.
+* Scaling in: quitar servidores poco utilizados del mismo tamaño.
+El escalado vertical es generalmente difícil para la arquitectura tradicional por lo que generalmente verás solamente escalado hotrizontal descrito con elasticidad.
+Auto Scaling Groups (ASG): Es una característica de AWS que añadirá automáticamente o quitará servidores basado en regalas de escalado que definís basado en métricas.
+
+Tolerancia a fallos
+Es la habilidad de tu servicio de asegurar que no haya ningún punto de fallo.
+Fail-over: es cuando tenés que planear cambiar el tráfico a un sistema redundante en caso de que el sistema principal falle. Un ejemplo común es tener una copia de tu base de datos en donde los cambios realizados se sincronizan. El sistema secundario no está en uso hasta que ocurre un "fail-over" y se vuelve la base de datos principal.
+RDS Multi-AZ es cuando "corrés" una base de datos duplicada en stand by en otra zona de disponibilidad en caso de que tu base de datos principal falle.
+
+Alta durabilidad 
+Es la habilidad para recuperarse de un desastre y prevenir la pérdida de datos. Las soluciones que recuperan de un desastre se conocen como "disaster recovery" (DR)
+* ¿Tenés un backup?
+* ¿Qué ten rápido podés recuperar ese backup?
+* ¿Tu backup todavía funciona?
+* ¿Cómo te asegurás de que los datos actuales no está corruptos?
+CloudEndure Disaster Recovery replica continuamente tus máquinas a áreas de "staging" de bajo costo en tu cuenta objetivo de AWS y región preferida posibilitando una recuperación rápida y confiable en caso de fallos en el datacenter.
+
+Business continuity plan (BCP)
+Es un documento que describe como un negocio continuará operando durante una ruptura no planeada de los servicios.
+* Recovery Point Objective (RPO): Es el máximo aceptable de pérdida de datos después de un incidente no planificado, expresado como una cantidad de tiempo.
+* Recovery Time Objective (RTO): Es el máximo tiempo de inactividad que tu negocio puede tolerar sin incurrir en una pérdida financiera significativa.
+
+Hay múltiples opciones para recuperación que cambian costo vs tiempo para recuperar.
+* Backup y recuperación: se hace un backup de tus datos a una nueva infraestructura. RPO/RTO -> horas.
+* "Pilot light": Los datos son replicados a otra región con los mínimos servicios ejecutándose. RPO/RTO -> 10 minutos.
+* "Warm standby": copia escalada para abajo de tu infraestructura ejecutándose lista para escalar para arriba. RPO/RTO -> minutos.
+* "Multi-site Active/active": copia escalada para arriba de tu infraestructura en otra región. RPO/RTO -> tiempo real. 
