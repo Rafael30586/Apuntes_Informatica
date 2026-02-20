@@ -1,0 +1,28 @@
+https://www.geeksforgeeks.org/operating-systems/what-is-fragmentation-in-operating-system/
+
+La fragmentación en computación es el proceso en el que un archivo se divide en pequeños fragmentos que son almacenados en diferentes partes del medio de almacenamiento, como el disco rígido o la RAM. Cuando un archivo es fragmentado, sus fragmentos son almacenados en bloques no contiguos. Esto puede llevar a un uso ineficiente de la memoria o almacenamiento y un acceso más lento a los archivos.  La fragmentación ocurre tanto en el almacenamiento como en la RAM, y es un desafío común en los sistemas operativos que afecta al desempeño del sistema.
+* La fragmentación ocurre cuando los procesos se cargan y descargan de la memoria, dejando pequeños bloques de memoria sin usar;
+* Los programas crean espacios vacíos u "hoyos" en memoria que son cargados y removidos, lo que no siempre puede ser usado por nuevos procesos;
+* Acceder a archivos fragmentados puede ralentizar el sistema porque el S.O tiene que localizar y ensamblar fragmentos dispersos;
+* La desfragmentación es el proceso de reorganizar la memoria o almacenamiento para almacenar archivos en bloques contiguos, mejorando la eficiencia y la velocidad de acceso.
+
+Causas de la fragmentación
+* La fragmentación ocurre cuando un archivo es muy grande para caber en un solo bloque contiguo de espacio libre en el medio de almacenamiento.
+* Puede también ocurrir cuando los bloques libres disponibles en el medio de almacenamiento son muy pequeños para abarcar todo un archivo;
+* Como resultado, el archivo es partido en fragmentos que son almacenados en diferentes lugares;
+* El sistema debe buscar y reunir estos fragmentos dispersos para acceder al archivo, lo que puede ralentizar la lectura y procesamiento del archivo.
+
+Efecto de la fragmentación
+* La fragmentación reduce el rendimiento general del sistema porque acceder a fragmentos dispersos toma más tiempo.
+
+Tipos de fragmentación
+Los tipos principales de fragmentación son la interna y la externa.
+
+Fragmentación interna
+* Ocurre cuando memoria asignada contiene espacio sin usar dentro de un bloque;
+* Ocurre cuando el tamaño del bloque de memoria asignada es más grande que lo requerido por un proceso.
+* Por ejemplo, si un sistema asigna un bloque de 64 KB a un proceso que solo requiere 40KB, los 24KB restantes permanece4n sin usar, resultando en fragmentación interna. 
+* Este tipo de fragmentación ocurre comúnmente en sistemas que usan técnicas e asignación de memoria de tamaño fijo.
+* El espacio sin usar adentro del bloque asignado no puede ser utilizado por otros procesos, llevando a un uso ineficiente e la memoria.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20190924115421/Untitled-Diagram-146.png - imagen de fragmentación interna 

@@ -61,3 +61,4 @@ Se divide en secciones inicializadas y no inicializadas.
 * Data segment no inicializado o BSS: Almacena variables globales y estáticas no inicializadas; Estas variables se incializan en 0 automáticamente por el sistema en tiempo de ejecución.
 
 https://www.geeksforgeeks.org/c/memory-layout-of-c-program/
+

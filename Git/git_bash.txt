@@ -4,6 +4,8 @@ git config --global user.email "<email>" --> configura el email de manera global
 
 git config --list --> muestra información como nombre de usuario, email, etc.
 
+git config --list <opcion> --> muestra las configuraciones según la opción que elijamos. LAs opciones pueden ser --local, --global o --system
+
 git config --get-regexp <secuencia> --> muestra configuraciones que contengan la secuencia de caracteres que queramos, por ejemplo: git config --get-regexp user , esto mostrará datos como user.name y user.email.
 
 git init --> inicializa un repositorio de git en la carpeta en la que estamos. Se crea una carpeta oculta .git en el directorio.
@@ -88,10 +90,10 @@ git pull --> descarga el historial y los cambios.
 
 git pull -u origin <rama> --> descarga una rama a nuestro repositorio local.
 
-git cherry-pick <id_de_commit> --> trae a la rama en la que estamos los cambios de un commit de una rama que elijamos. Puede que haya conflictos y tendremos que solucionarlos.
-
 git clone <url> --> clona un repositorio remoto y lo deja en local.
 
 git push -u origin <rama> --> copia la rama en la que estamos trabajando en local en el repositorio remoto.
 
 git push --> guarda los cambios producidos en la rama del repositorio local en el remoto.
+
+git cherry-pick <id_de_commit> --> trae a la rama en la que estamos los cambios de un commit de una rama que elijamos. Puede que haya conflictos y tendremos que solucionarlos.
