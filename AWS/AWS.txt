@@ -310,3 +310,9 @@ Hay múltiples opciones para recuperación que cambian costo vs tiempo para recu
 * "Pilot light": Los datos son replicados a otra región con los mínimos servicios ejecutándose. RPO/RTO -> 10 minutos.
 * "Warm standby": copia escalada para abajo de tu infraestructura ejecutándose lista para escalar para arriba. RPO/RTO -> minutos.
 * "Multi-site Active/active": copia escalada para arriba de tu infraestructura en otra región. RPO/RTO -> tiempo real. 
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250419125835918183/AWS-Disaster-Recovery.webp
+
+Recovery time objective (RTO): es el máximo retraso aceptable entre la interrupción del servicio y la recuperación del mismo. Este objetivo determina la que es considerada una ventana aceptable de tiempo cuando el servicio no está disponible y es definido por la organización.
+
+Recovery point objective (RPO): Es la máxima cantidad de tiempo aceptable desde el último punto de recuperación de datos. Este objetivo determina lo que es considerado una aceptable pérdida de datos entre el último punto de recuperación y la interrupción del servicio y es definido por la organización.  
