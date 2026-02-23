@@ -21,8 +21,31 @@ Los tipos principales de fragmentación son la interna y la externa.
 Fragmentación interna
 * Ocurre cuando memoria asignada contiene espacio sin usar dentro de un bloque;
 * Ocurre cuando el tamaño del bloque de memoria asignada es más grande que lo requerido por un proceso.
-* Por ejemplo, si un sistema asigna un bloque de 64 KB a un proceso que solo requiere 40KB, los 24KB restantes permanece4n sin usar, resultando en fragmentación interna. 
-* Este tipo de fragmentación ocurre comúnmente en sistemas que usan técnicas e asignación de memoria de tamaño fijo.
-* El espacio sin usar adentro del bloque asignado no puede ser utilizado por otros procesos, llevando a un uso ineficiente e la memoria.
+* Por ejemplo, si un sistema asigna un bloque de 64 KB a un proceso que solo requiere 40KB, los 24KB restantes permanecen sin usar, resultando en fragmentación interna. 
+* Este tipo de fragmentación ocurre comúnmente en sistemas que usan técnicas de asignación de memoria de tamaño fijo.
+* El espacio sin usar adentro del bloque asignado no puede ser utilizado por otros procesos, llevando a un uso ineficiente de la memoria.
 
 https://media.geeksforgeeks.org/wp-content/uploads/20190924115421/Untitled-Diagram-146.png - imagen de fragmentación interna 
+
+Fragmentación externa
+* La fragmentación externa ocurre cuando la memoria libre o espacio de almacenamiento se divide en bloques pequeños y no contiguos.
+* Es causada por asignación y liberación frecuente de procesos o archivos a través del tiempo.  
+* Aún cuando el espacio total sea suficiente, el sistema será incapaz de asignar memoria porque ningún bloque contiguo es lo suficientemente grande.
+* Como resultado, archivos o procesos deben ser almacenados en múltiples bloques más pequeños, incrementando el tiempo de acceso.
+* La fragmentación externa lleva a degradación de rendimiento y uso ineficiente del almacenamiento o recursos de memoria. 
+
+https://media.geeksforgeeks.org/wp-content/uploads/20200729172413/2581.png - imagen de fragmentación externa
+
+Impacto de la fragmentación en el rendimiento del sistema operativo
+* Ralentiza las operaciones de lectura y escritura en el disco porque la cabeza debe moverse a múltiples lugares para acceder a fragmentos de archivos dispersos.
+* El incremento del movimiento de cabeza aumenta el tiempo de acceso, lo que reduce la velocidad del sistema y causa ralentizaciones y lag en las aplicaciones.
+* La fragmentación lleva a utilización ineficiente del espacio en disco, ya que los archivos fragmentados pueden ocupar más espacio del necesario. 
+* El espacio desperdiciado puede hacer que el sistema sea propenso a errores.
+* En casos severos, la fragmentación excesiva puede causar que al sistema se le acabe el espacio en disco, incrementando el riesgo de pérdida de datos.
+* La fragmentación puede impactar negativamente a la batería de las laptops y dispositivos móviles porque el disco tiene que trabajar más duro para acceder a los datos dispersos.
+* La defragmentación regular reorganiza los archivos fragmentados en bloques contiguos, mejorando la velocidad de acceso del disco y reduciendo latencia.
+
+Ventajas de la fragmentación
+* Permite una mejor utilización del espacio disponible. Los archivos pueden ser almacenados en bloques libres incluso si esos bloques no son contiguos, previniendo que pequeños espacios sean desperdiciados.
+* Permite almacenar archivos muy grandes incluso cuando un bloque contiguo no esté disponible. El archivo puede ser dividido y almacenado en múltiples bloques pequeños. 
+* Provee flexibilidad en la asignación de memoria y almacenamiento, permitiendo que el sistema operativo continúe funcionando sin requerir grandes regiones de memoria contigua.    
