@@ -315,4 +315,29 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250419125835918183/AWS-Disa
 
 Recovery time objective (RTO): es el máximo retraso aceptable entre la interrupción del servicio y la recuperación del mismo. Este objetivo determina la que es considerada una ventana aceptable de tiempo cuando el servicio no está disponible y es definido por la organización.
 
-Recovery point objective (RPO): Es la máxima cantidad de tiempo aceptable desde el último punto de recuperación de datos. Este objetivo determina lo que es considerado una aceptable pérdida de datos entre el último punto de recuperación y la interrupción del servicio y es definido por la organización.  
+Recovery point objective (RPO): Es la máxima cantidad de tiempo aceptable desde el último punto de recuperación de datos. Este objetivo determina lo que es considerado una aceptable pérdida de datos entre el último punto de recuperación y la interrupción del servicio y es definido por la organización.
+  
+------------------------------------------------------------------------------------------------------
+Herramientas de gestión y desarrollo
+------------------------------------------------------------------------------------------------------
+API de AWS
+Una API es un software que permite que dos aplicaciones o servicios se comuniquen entre sí. El tipo más común es vía solicitudes HTTP/S
+La API de AWS es una API HTTP con la cual se puede interactuar enviando solicitudes HTTP usando aplicaciones como Postman.
+Cada servicio de AWS tiene su propio endpoint al cual podés enviarle solicitudes.
+Es raro que los usuarios envíen solicitudes directamente a la API de AWS. Es mucho más fácil interactuar con la API usando herramientas de desarrollador: AWS management console; AWS SDK, interactuá con la API usando tu lenguaje de programación favorito; AWS CLI, interactuá con la API usando una Shell/terminal. 
+
+AWS management console
+Es una consola unificada basada en web. Permite construir, gestionar y monitorear todo desde simples aplicaciones web hasta complejos despliegues en la nube.
+Permite apuntar y clickear para configurar manualmente recursos de AWS con conocimiento limitado sobre programación.
+A esto se le conoce como ClickOps, ya que podés llevar a cabo todas tus operaciones de sistema vía clicks.   
+
+https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/aws-cloud/use-the-aws-management-interfaces/images/35f42a4e069a9142d9edf235ad7d732e_ck-2-kwnd-9-i-003-s-0-y-5-jhiwbea-4-r.png
+- imagen de AWS console
+
+Service console
+Cada servicio de AWS tiene su propia consola personalizada. Podés acceder a estas consolas buscando el nombre del servicio.
+Algunas consolas de servicio de AWS se comportarán como paraguas conteniendo muchos servicios de AWS, ejemplos: VPC console, EC2 console, Systems manager console, SageMaker console, CloudWatch console.  
+
+ID de cuenta de AWS
+Toda cuenta de AWS tiene un ID único. Está compuesto de 12 dígitos, ejemplo: 271940387265. Se usa cuando ingresamos con un usuario que no sea root y tiene otros usos también (Cross-account roles, support cases, etc). 
+Generalmente es buena idea mantener el ID en secreto, ya que es uno de los datos que puede usar alguien malicioso para atacar.
