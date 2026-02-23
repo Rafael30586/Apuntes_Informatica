@@ -1,1 +1,10 @@
-ECHO est  activado.
+Redes de computadores
+Son un marco de telecomunicaciones en el que dispositivos digitales están conectados entre sí. Estos dispositivos son nodos. La interacción puede ser por cable o inalámbrica. Estos nodos interactúan para compartir recursos. Estos recursos pueden ser hardware o software. Internet es un ejemplo de una red de computadoras.
+
+Comunicación de datos
+En la comunicación de datos hay:
+* Un emisor
+* Un receptor
+* Un mensaje 
+* Un medio de transferencia
+* Reglas --> protocolos
