@@ -341,3 +341,35 @@ Algunas consolas de servicio de AWS se comportarán como paraguas conteniendo mu
 ID de cuenta de AWS
 Toda cuenta de AWS tiene un ID único. Está compuesto de 12 dígitos, ejemplo: 271940387265. Se usa cuando ingresamos con un usuario que no sea root y tiene otros usos también (Cross-account roles, support cases, etc). 
 Generalmente es buena idea mantener el ID en secreto, ya que es uno de los datos que puede usar alguien malicioso para atacar.
+
+
+AWS tools for Powershell
+¿Qué es powershell? es una Shell de línea de comandos y lenguaje de scripting. A diferencia de la mayoría de las shells, que aceptan devuelven texto, powershell está construida sobre el entorno de ejecución .NET y acepta y devuelve objetos .NET. 
+AWS tolos for powershell Te permite interactuar con la api de AWS vía cdmlets de powershell.
+Los cmdlets son tipos especiales de comandos de powershell.
+
+Amazon resource names o ARNs
+Identifican recursos de AWS. Los ARNs son requeridos para especificar un recurso sin ambigüedades por todo AWS. 
+Los ARN pueden tener los siguientes formatos:
+* arn:partition:service:region:account-id:resource-id
+* arn:partition:service:region:account-id:resource-type/resource-id
+* arn:partition:service:region:account-id:resource-type:resource-id
+Ejemplos de las partes de un ARN:
+* Partition
+- aws -> Regiones de aws
+- aws-cn -> Región de China
+- aws-us-gov -> Región AWS GovCloud (EEUU)
+* Service - identifica al servicio
+- ec2
+- s3
+- iam
+* Región - cual recurso de AWS
+- us-east-1
+- ca-central
+* Account id
+- 374102816883
+- 183092871115
+* Resource id - puede ser un número, nombre o ruta
+- user/Bob
+- instance/i-1234567890abcdef0
+En la AWS mangement console es común tener la posibilidad de copiar el ARN al clipboard.
