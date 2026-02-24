@@ -1,0 +1,7 @@
+ALU: Es una parte central del CPU que ejecuta operaciones lógicas y aritméticas. El ALU toma los operandos de entrada y una instrucción y produce el resultado. En algunos procesadores, el ALU está dividido en dos unidades: una unidad aritmética (AU) y una unidad lógica (LU). Algunos procesadores contienen más de una AU. 
+El ALU es una parte vital de los procesadores modernos. Contiene muchos subcomponentes para varias funciones, incluyendo acumuladores, registradores, un gestor de memoria, una unidad de punto flotante y memoria caché. Muchos procesadores nuevos tienen también GPU y unidad de procesamiento neural (NPU)
+El propósito de un ALU es aumentar la velocidad del CPU llevando a cabo funciones matemáticas y lógicas. Dividiendo estas funciones, las diferentes partes del CPU pueden ser más especializadas y llevar a cabo diferentes operaciones simultáneamente.
+En los primeros microprocesadores, el CPU principal solo podía llevar a cabo operaciones básicas y procesos más complejos, como matemática, requerían varios pasos y tomaban mucho tiempo para ser llevados a cabo. 
+Los núcleos modernos de los CPUs usan métodos de tubería para trabajar en varias cosas al mismo tiempo. 
+
+https://www.techtarget.com/whatis/definition/arithmetic-logic-unit-ALU

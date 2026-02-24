@@ -1,5 +1,3 @@
-https://www.geeksforgeeks.org/operating-systems/what-is-fragmentation-in-operating-system/
-
 La fragmentación en computación es el proceso en el que un archivo se divide en pequeños fragmentos que son almacenados en diferentes partes del medio de almacenamiento, como el disco rígido o la RAM. Cuando un archivo es fragmentado, sus fragmentos son almacenados en bloques no contiguos. Esto puede llevar a un uso ineficiente de la memoria o almacenamiento y un acceso más lento a los archivos.  La fragmentación ocurre tanto en el almacenamiento como en la RAM, y es un desafío común en los sistemas operativos que afecta al desempeño del sistema.
 * La fragmentación ocurre cuando los procesos se cargan y descargan de la memoria, dejando pequeños bloques de memoria sin usar;
 * Los programas crean espacios vacíos u "hoyos" en memoria que son cargados y removidos, lo que no siempre puede ser usado por nuevos procesos;

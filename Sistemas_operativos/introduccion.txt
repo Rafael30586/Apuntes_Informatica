@@ -1,0 +1,19 @@
+Un sistema operativo actúa como un intermediario entre el hardware y el usuario. Es una interfaz entre el usuario y el hardware de computadora.
+* Un sistema operativo es un programa que está en ejecución todo el tiempo en una computadora. Todos los otros programas se ejecutan sobre el sistema operativo.
+* Asigna recursos como memoria, procesadores y dispositivos de entrada y salida a los procesos que los necesitan. La asignación de recursos tiene que ser justa y segura.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250723191540003787/control_flow.webp 
+https://media.geeksforgeeks.org/wp-content/uploads/20250724095941185039/functions_of_os.webp
+
+Toda computadora de propósito general consiste en hardware, un sistema operativo, programas de sistema y programas de aplicación.
+* El hardware incluye CPU, ALU, memoria, dispositivos de entrada y salida, periféricos y dispositivos de almacenamiento.
+* Los programas de sistema incluyen compiladores, cargadores, editores y el propio sistema operativo.
+* Los programas de aplicación son software de nivel usuario que llevan a cabo tareas específicas. 
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250905143719949052/operating_system_diagram.webp
+
+Un sistema operativo está siempre en ejecución en segundo plano para gestionar y coordinar el uso de recursos de hardware a través del sistema y aplicaciones de programa para múltiples usuarios. El sistema operativo no es solo una interfaz de usuario, en su lugar provee una interfaz para la interacción de usuario, típicamente a través de:
+* Interface de línea de comandos (bash, powershell);
+* Interface gráfica de usuario (Windows desktop, macOS Finder)
+
+Note: En el núcleo del sistema operativo yace el kernel, que es la principal interfaz entre hardware y software que maneja operaciones de bajo nivel como gestión de procesos, gestión de memoria, control de sistema de archivos y manejo de dispositivos.
