@@ -373,3 +373,11 @@ Ejemplos de las partes de un ARN:
 - user/Bob
 - instance/i-1234567890abcdef0
 En la AWS mangement console es común tener la posibilidad de copiar el ARN al clipboard.
+
+AWS CLI
+¿Qué es una CLI? procesa comandos a un programa de computadora en la forma de líneas de texto. Los sistemas operativos implementan una CLI en una shell.
+¿Qué es una terminal? es una interface de solo texto.
+¿Qué es una consola? es una computadora física que permitirá la entrada de información en una terminal.
+¿Qué es una Shell? es un programa de línea de comandos con el cual los usuarios interactúan al ingresar comandos.
+AWS CLI: permite a los usuarios interactuar con la API de AWS vía comandos en una Shell o terminal.
+El CLI de AWS es un ejecutable programado en Python, por lo que hace falta tener Python instalado. El nombre del programa es aws y puede ser instalado en Windows, mac o Linux.
