@@ -97,3 +97,6 @@ git push -u origin <rama> --> copia la rama en la que estamos trabajando en loca
 git push --> guarda los cambios producidos en la rama del repositorio local en el remoto.
 
 git cherry-pick <id_de_commit> --> trae a la rama en la que estamos los cambios de un commit de una rama que elijamos. Puede que haya conflictos y tendremos que solucionarlos.
+
+Detached HEAD: 
+En condiciones normales, HEAD apunta a una rama y esa rama apunta a un commit, por ejemplo HEAD -> main -> C3. El detached head ocurre cuando HEAD deja de apuntar a una rama y apunta a un commit. En este estado se pueden hacer commits si uno lo desea, pero esos commits no pertenecen a ninguna rama. Si luego cambiamos a la rama main el commit que hayamos hecho en ese estado queda "flotando". El commit no se pierde inmediatamente (git lo mantiene en el reflog por un tiempo), pero si no se lo referencia con una rama, eventualmente puede ser recolectado por el recolector de basura. Estar en detached HEAD puede servir para: probar versiones antiguas; hacer debugging; revisar un tag; probar algo sin afectar ramas.
