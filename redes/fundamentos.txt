@@ -8,3 +8,9 @@ En la comunicación de datos hay:
 * Un mensaje 
 * Un medio de transferencia
 * Reglas --> protocolos
+
+Efectividad en redes
+* Envío: los datos deben ser enviados al destino correcto.
+* Precisión: los datos no deberían ser modificados en el camino (sin errores).
+* Tiempo: los datos deben ser enviados antes de cierto "deadline".
+* "Jitter": No deben ocurrir retrasos, como cuando el audio y la imagen en un video no están correctamente sincronizados.
