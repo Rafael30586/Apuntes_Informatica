@@ -1,0 +1,8 @@
+En computación hay dos tipos de procesadores: 32 bits y 64 bits. Esta clasificación nos dice a cuanta memoria puede acceder un procesador de un registro de CPU:
+* Un sistema de 32 bits puede acceder a 2^32 diferentes direcciones de memoria, es decir, 4 GB de RAM o memoria física. Idealmente puede acceder a más de 4GB de RAM
+* Un sistema de 64 bits puede acceder a 2^64 diferentes direcciones de memoria, es decir, trillones de bytes de RAM. En otras palabras, cualquier cantidad de memoria superior a 4GB puede ser fácilmente manejada.
+
+Diferencias entre sistemas operativos de 32 y 64 bits
+Una gran diferencia es la de la cantidad de cálculos por segundo que pueden llevar a cabo, lo que afecta a la velocidad a l cual pueden completar tareas. Los procesadores de 64 bits pueden venir como dual-core, quad-core, six-core y eight-core para computadoras hogareñas. Múltiples núcleos permiten más cálculos por segundo, lo que puede incrementar el poder de procesamiento y ayudar a que la computadora vaya más rápido. 
+
+https://www.geeksforgeeks.org/operating-systems/32-bit-vs-64-bit-operating-systems/
