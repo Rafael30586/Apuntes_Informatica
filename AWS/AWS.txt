@@ -381,3 +381,24 @@ AWS CLI
 ¿Qué es una Shell? es un programa de línea de comandos con el cual los usuarios interactúan al ingresar comandos.
 AWS CLI: permite a los usuarios interactuar con la API de AWS vía comandos en una Shell o terminal.
 El CLI de AWS es un ejecutable programado en Python, por lo que hace falta tener Python instalado. El nombre del programa es aws y puede ser instalado en Windows, mac o Linux.
+
+AWS software development kit (SDK)
+Un SDK es una colección de herramientas de desarrollo de software en un solo paquete instalable.
+Se puede usar AWS SDK para, de manera programática, crear, modificar, borrar o interactuar con los recursos de AWS.
+AWS SDK se presenta en varios lenguajes de programación: java, Python, node.js, ruby, go, .NET, php, JavaScript, C++.
+
+AWS cloudshell
+Es una Shell basada en browser integrada en la AWS management console. Tiene alcance por región.
+Tiene herramientas preinstaladas: AWS CLI, Python, Node.js, git, make, pip, sudo, tar, tmux, wget, zip y más.
+Tiene 1GB de almacenamiento libre por región de AWS.
+Los archivos guardados en el directorio home están disponibles para futuras sesiones para la misma región AWS.
+Se puede cambiar sin problemas entre bash, powershell y zsh.
+
+IaC (infrastrucuture as code) 
+Podés escribir scripts para automatizar la creación, actualización o destrucción de la infraestructura cloud.
+IaC es un cianotipo de tu infraestructura.
+IaC te permite compartir, versionar y armar un inventario de tu infraestructura cloud.
+AWS tiene dos ofertas para escribir IaC:
+* AWS CloudFormation (CFN), es una herramienta de IaC declarativa. Que sea declarativa significa que es explícita; es más verbosa pero no hay posibilidades de errores de configuración; se usan lenguajes como JSON, XML, YAML ,etc.
+* AWS Cloud development kit (CDK), es una herramienta de IaC imperativa. Que sea imperativa significa que es implícita; es menos verbosa pero podrías terminar con algún error de configuración; hace más que la declarativa; usa lenguajes de programación como Python, ruby o JavaScript. 
+
