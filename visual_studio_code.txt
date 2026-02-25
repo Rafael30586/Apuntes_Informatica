@@ -2,3 +2,5 @@ shift + (izquierda o derecha) --> selecciona un caracter a la izquierda o derech
 shift + (arriba o abajo) --> selecciona un renglón
 ctrl + shift + (izquierda o derecha) --> selecciona un palabra hacia la izquierda o derecha según indiquemos. 
 ctrl + (izquierda o derecha) --> el cursor avanza de palabra en palabra.
+Re pag y Av ag --> permiten avanzar más rápido hacia arriba y hacia abajo.
+ctrl + (inicio o fin) --> nos lleva al inicio o final del documento.
