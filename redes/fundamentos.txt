@@ -14,3 +14,10 @@ Efectividad en redes
 * Precisión: los datos no deberían ser modificados en el camino (sin errores).
 * Tiempo: los datos deben ser enviados antes de cierto "deadline".
 * "Jitter": No deben ocurrir retrasos, como cuando el audio y la imagen en un video no están correctamente sincronizados.
+
+Modos de transmisión:
+* Simplex: es unidireccional, por ejemplo, la televisión o la radio, solo se puede ver lo que hay sin poder enviar información. El flujo de información es en una dirección: hay un emisor y un receptor, es decir, el circuito está configurado de mjanera tal que solo puede transmitir o recibir
+* Half Duplex: es bidireccional pero por un solo carril, por ejemplo, un walkie talkie, no pueden hablar las dos personas al mismo tiempo, es por turnos. Ambos pueden transmitir y recibir pero no pueden dos transmitir al mismo tiempo. 
+* Full Duplex: también es bidireccional, por ejemplo, teléfono, ambos pueden transmitir y recibir al mismo tiempo.
+
+https://www.scaler.com/topics/computer-network/transmission-modes-computer-networks/
