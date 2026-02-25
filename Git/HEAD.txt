@@ -1,2 +1,2 @@
 HEAD
-Es una referencia al actual "check-out" commit en tu repositorio. Es básicamente un puntero o referencia simbólica al último commit de tu rama. Cada vez que cambiás de rama o hacés checkout a cierto commit, la cabeza se mueve para apuntar al commit que corresponda. Este definición no da un vistazo de lo que es el HEAD  
+Es una referencia al actual "check-out" commit en tu repositorio. Es básicamente un puntero o referencia simbólica al último commit de tu rama. Cada vez que cambiás de rama o hacés checkout a cierto commit, la cabeza se mueve para apuntar al commit que corresponda. 

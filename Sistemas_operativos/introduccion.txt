@@ -17,3 +17,20 @@ Un sistema operativo está siempre en ejecución en segundo plano para gestionar y
 * Interface gráfica de usuario (Windows desktop, macOS Finder)
 
 Note: En el núcleo del sistema operativo yace el kernel, que es la principal interfaz entre hardware y software que maneja operaciones de bajo nivel como gestión de procesos, gestión de memoria, control de sistema de archivos y manejo de dispositivos.
+
+Componentes de un sistema operativo
+* Shell: es la capa más externa del sistema operativo y maneja la interacción de usuario. Interpreta entradas para el sistema operativo y maneja la salida desde el sistema operativo.
+* Kernel: es el núcleo del sistema operativo. El kernel es la interfaz principal entre el sistema operativo y el hardware.
+
+Aplicaciones de un sistema operativo
+* Plataforma para programas de aplicación: provee una plataforma sobre la cual otros programas, llamados aplicaciones, pueden ejecutarse.
+* Gestión de salida y entrada: permite que la computadora gestione sus propios recursos como memoria, monitor, teclado, impresora, etc. Gestión de estos recursos es requerida para la utilización justa y efectiva.
+* Multitareas: gestiona memoria y permite que múltiples programas se ejecuten en su propio espacio y que incluso se comuniquen entre sí a través de memoria compartida.
+* Gestión de memoria y archivos: gestiona la memoria principal de la computadora y el almacenamiento secundario. Además asigna y libera memoria a todas las tareas y aplicaciones.
+* Provee seguridad: ayuda a mantener al sistema y a las aplicaciones seguras a través de procesos de autorización.
+
+¿Por qué elegir un sistema operativo?
+* Precio: Windows y MAC son pagos pero Linux es libre.
+* Accesibilidad: Algunos son más fáciles de usar que otros, MAC, por ejemplo, es más fácil de usar que Linux.
+* Compatibilidad: Algunos sistemas son compatibles con algunas aplicaciones pero no con otras.
+* Seguridad: MAC es más seguro que Windows.   
