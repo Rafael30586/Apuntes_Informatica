@@ -1,0 +1,37 @@
+https://www.geeksforgeeks.org/operating-systems/types-of-operating-systems/
+
+Tipos de sistemas operativos: 
+* Batch
+* Multiprogramados
+* Multitareas
+* Multiprocesamiento
+* Distribuidos
+* Redes
+* Tiempo real
+* Móvil
+
+Multiprogramados
+Múltiples programas se ejecutan en memoria al mismo tiempo. El CPU cambia entre programas, utilizando sus recursos de manera más efectiva y mejorando el rendimiento del sistema.
+* Ventajas: mejor utilización del CPU; eficiente uso de recursos.
+* Desventajas: Diseño complejo, requiere gestión avanzada de memoria y CPU; problemas de seguridad, más programas en memoria incrementan las probabilidades de acceso no autorizado; altos requerimientos de memoria, necesita más RAM para ejecutar múltiples programas juntos.
+* Ejemplos: sistemas de bancos, máquinas de facturación.
+
+Multitareas
+Es un tipo de sistema multiprogramado. Cada tarea obtiene una porción fija de tiempo llamada Quanto. Después de que el quanto termina el s.o cambia a la próxima tarea, permitiendo que muchas tareas se ejecuten de manera fluida en un solo sistema.
+* Ventajas: muchos usuarios pueden ejecutar el mismo software sin la necesidad de tener copias separadas; eficiente uso del CPU
+* Desventajas: los fallos de sistema afectan a todos los usuarios; el compartir datos entre usuarios puede causar conflictos.
+* Ejemplos: Windows terminal services; IBM VM/CMS
+
+Multiprocesamiento
+Es un tipo de sistema operativo en el que más de un CPU es usado para la ejecución de los recursos. Mejora el rendimiento del sistema.
+* Ventajas: incremento de la velocidad del sistema; si un procesador falla, otros pueden continuar trabajando.
+* Desventajas: elevado costo.
+* Ejemplos: UNIX; macOS; Linux (Ubuntu, Red hat, Debian).
+
+Distribuidos
+Conectan múltiples computadoras independientes a través de una red de comunicaciones. Cada sistema tiene su propio CPU y memoria pero trabajan juntos como una sola unidad. El principal beneficio es acceso remoto, permitiendo que usuarios usen archivos y software almacenado en otros sistemas conectados.
+* Ventajas: que una máquina falle no afecta a las otras; nuevos sistemas pueden ser añadidos fácilmente a la red; las tareas son manejadas más fácilmente a través de múltiples máquinas. 
+* Desventajas: si la red principal falla,  la comunicación se detiene; el hardware es caro y el software muy complejo.
+* Ejemplos: LOCUS; MICROS; Amoeba.   
+
+Redes
