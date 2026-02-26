@@ -21,3 +21,23 @@ Modos de transmisión:
 * Full Duplex: también es bidireccional, por ejemplo, teléfono, ambos pueden transmitir y recibir al mismo tiempo.
 
 https://www.scaler.com/topics/computer-network/transmission-modes-computer-networks/
+
+Criterio en redes
+* Confiabilidad: menos frecuencia de errores y el tiempo requerido para resolver errores debería ser menor.
+* Desempeño: tiempo de tránsito; tiempo de respuesta; número de usuarios; medio de transferencia.
+* Seguridad: proteger los datos de accesos no autorizados; la trìada de CIA: confidentiality, integrity, authorization or authentication; protege los datos de daños y de modificación.
+
+Tipos de conexión
+* conexiones point to point: el canal de comunicación es compartido entre dos dispositivos; hay un enlace dedicado entre dos nodos; hay un transmisor y un receptor.
+* conexiones multipoint: el canal es compartido entre múltiples nodos; hay un transmisor y varios receptores
+
+Topologìa
+Es la representación geométrica de los nodos que componen un red
+Algunos ejemplos: point to point, bus, anillo, estrella, árbol, malla. También pueden haber redes hìbridas (mezcla de topologìas)
+* Malla:
+ - Ventajas: menos problemas de tràfico; resistencia a fallos (robustez); fácil identificación de fallos.
+ - Desventajas: precio; dificultad de instalación.
+* Estrella: 
+ - Ventajas: fácil de instalar y reconfigurar; fácil identificación de fallas; es bastante robusta; menos cara que la malla.
+ - Desventajas: si el hub falla toda la red colapsa. 
+
