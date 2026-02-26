@@ -402,3 +402,16 @@ AWS tiene dos ofertas para escribir IaC:
 * AWS CloudFormation (CFN), es una herramienta de IaC declarativa. Que sea declarativa significa que es explícita; es más verbosa pero no hay posibilidades de errores de configuración; se usan lenguajes como JSON, XML, YAML ,etc.
 * AWS Cloud development kit (CDK), es una herramienta de IaC imperativa. Que sea imperativa significa que es implícita; es menos verbosa pero podrías terminar con algún error de configuración; hace más que la declarativa; usa lenguajes de programación como Python, ruby o JavaScript. 
 
+CDK
+CDK te permite usar tu lenguaje de programación favorito para escribir IaC
+* CDK está potenciado por CloudFormation (genera plantillas de CloudFormation)
+* CDK tiene una gran biblioteca de componentes reutilizables llamados CDK Construct https://constructs.dev 
+* CDK viene con su propia CLI
+* CDK tiene un marco de trabajo de testing para pruebas unitarias y de integración.
+
+AWS toolkit para VS code 
+Es un plugin open source para VS code para crear, debuggear y desplegar recursos de AWS.
+1. AWS Explorer: explorá un amplio rango de recursos de AWS enlazados a tu cuenta de AWS
+2. AWS CDK Explorer: te permite explorar tus stacks definidos por CDK 
+3. Amazon Elastic Container Service: provee Intellisense para archivos de definiciones de tareas ECS
+4. Serverless Applications: Creá, degugueá y desplegá aplicacionesa serverless vía SAM y CFN.   
