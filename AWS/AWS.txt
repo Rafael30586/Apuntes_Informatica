@@ -422,4 +422,12 @@ Es comúnmente conocida como credenciales de AWS.
 Las Access keys no deben ser compartidas con nadie.
 Se puede tener dos Access keys activas.
 Es posbile desactivar Access keys.
-Las Access keys son almacenadas en la ruta ~/.aws/credentials 
+Las Access keys son almacenadas en la ruta ~/.aws/credentials
+
+Documentación de AWS
+Es una larga colección de documentación técnica sobtre como usar los servicios de AWS. 
+Enlace: https://docs.aws.amazon.com/
+
+-------------------------------------------------------------------------------------------------------
+Modelo de responsabilidad compartida
+-------------------------------------------------------------------------------------------------------
