@@ -40,4 +40,9 @@ Algunos ejemplos: point to point, bus, anillo, estrella, árbol, malla. También p
 * Estrella: 
  - Ventajas: fácil de instalar y reconfigurar; fácil identificación de fallas; es bastante robusta; menos cara que la malla.
  - Desventajas: si el hub falla toda la red colapsa. 
-
+* Bus:
+ - Ventajas:
+ - Desventajas: tiene una columna vertebral (un cable) que si falla todo el sistema colapsa;
+* Anillo: 
+ - Ventajas: simple instalación y reconfiguración.
+ - Desventajas: un solo punto de fallo puede afectar a todo el sistema.
