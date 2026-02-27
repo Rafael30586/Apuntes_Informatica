@@ -415,3 +415,11 @@ Es un plugin open source para VS code para crear, debuggear y desplegar recursos
 2. AWS CDK Explorer: te permite explorar tus stacks definidos por CDK 
 3. Amazon Elastic Container Service: provee Intellisense para archivos de definiciones de tareas ECS
 4. Serverless Applications: Creá, degugueá y desplegá aplicacionesa serverless vía SAM y CFN.   
+
+Access keys
+Es una clave secreta requerida para acceder programáticamente a los recursos de AWS cuando interactuamos con la API de AWS fuera de la consola de gestión de AWS.
+Es comúnmente conocida como credenciales de AWS.
+Las Access keys no deben ser compartidas con nadie.
+Se puede tener dos Access keys activas.
+Es posbile desactivar Access keys.
+Las Access keys son almacenadas en la ruta ~/.aws/credentials 
