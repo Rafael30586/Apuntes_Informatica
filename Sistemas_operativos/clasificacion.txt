@@ -10,6 +10,12 @@ Tipos de sistemas operativos:
 * Tiempo real
 * Móvil
 
+Batch
+Están diseñados para manejar largos grupos de trabajos similares eficientemente. No interactúa con la computadora directamente, en su lugar procesa tareas que están agrupadas por un operador. Estas tareas forman un cola o fila y se ejecutan una tras otra, sin interacción del usuario durante el proceso.
+* Ventajas: el sistema minimiza el tiempo de inactividad al procesar tareas en una secuencia continua sin intervención humana; ideal para gestionar tareas largas y repetitivas; pueden manejar grandes volúmenes de tareas a la vez, mejorando el rendimiento del sistema.
+* Desventajas: utilización ineficiente del CPU; elevado tiempo de respuesta; 
+
+
 Multiprogramados
 Múltiples programas se ejecutan en memoria al mismo tiempo. El CPU cambia entre programas, utilizando sus recursos de manera más efectiva y mejorando el rendimiento del sistema.
 * Ventajas: mejor utilización del CPU; eficiente uso de recursos.
@@ -35,3 +41,19 @@ Conectan múltiples computadoras independientes a través de una red de comunica
 * Ejemplos: LOCUS; MICROS; Amoeba.   
 
 Redes
+Un sistema operativo de redes o NOS se ejecuta en un servidor y gestiona datos, usuarios, seguridad, aplicaciones y otras funciones de red. Permite el acceso compartidos a archivos, impresoras y recursos dentro de una pequeña red privada. Los usuarios pueden ver la configuración y conexiones de otros usuarios.
+* Ventajas: nuevo hardware y tecnologías pueden añadirse sin dificultad; los usuarios pueden acceder al servidor desde diferentes ubicaciones y dispositivos.
+* Desventajas: alto costo de servidores; la mayoría de las operaciones depender de un servidor central; se necesitan actualizaciones y soporte técnico frecuentes.
+* Ejemplos: Windows server 2003; Linux; macOS.
+
+Sistemas operativos en tiempo real
+El intervalo de tiempo requerido para procesar y responder a entradas de datos es muy pequeño. Este intervalo de tiempo es llamado tiempo de respuesta. Estos sistemas son usados cuando hay requerimientos de tiempo que son muy estrictos como sistemas de misiles, sistemas de control de tráfico aéreo, robots, etc.
+* Ventajas: máxima utilización de sistemas y dispositivos, por lo tanto más salida de datos desde todos los recursos; libres de errores; mejor gestión de la asignación de memoria.
+* Desventajas: muy pocas tareas se realizan al mismo tiempo; algoritmos muy complejos; 
+* Ejemplos: experimentos científicos; sistemas médicos por imágenes; robots.
+
+Sistemas operativos móviles
+Están diseñados específicamente para dispositivos móviles como tablets y smartphones.
+* Ventajas: interfaces amigables para el usuario; muchas aplicaciones para satisfacer las necesidades específicas del usuario; ofrecen múltiples opciones de conectividad.
+* Desventajas: restricciones en cuanto a la batería; los dispositivos móviles son susceptibles a amenazas a la seguridad como malware y ataques de phishing; en el caso de Android es difícil asegurar que las aplicaciones funcionen en todos los dispositivos.
+* Ejemplos: Android; IOS; Blackberry
