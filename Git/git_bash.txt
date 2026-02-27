@@ -58,7 +58,7 @@ git checkout <numero_de_commit> --> nos lleva al commit que queramos pero la cab
 
 En git, al igual que en Linux, se puede utilizar opciones cuando ejecutamos comandos. Por ejemplo -m cuando hacemos un commit es una opción y el mensaje que colocamos entre comillas sería el argumento. Cuando una opción es booleana se le puede llamar flag, por ejemplo, --list. Cuando las opciones llevan un solo guión serían la opción corta y cuando llevan dos guiones medios serían la opción larga. Las opciones cortas pueden, a veces, agruparse, por ejemplo ls -la. Las opciones largas son más legibles pero no pueden agruparse, algunas tienen una versión corta.
 
-git reset --hard <número_de_commit> --> nos lleva al commit que indiquemos y borra los posteriores, de todas formas podemos volver a tener los commits borrados ayudándonos con git reflog, ya que contiene el historial completo.
+git reset --hard <número_de_commit> --> nos lleva al commit que indiquemos y borra los posteriores, de todas formas podemos volver a tener los commits borrados ayudándonos con git reflog, ya que contiene el historial completo. Podemos hacer git reset --hard con commits que estén en el reflog.
 
 git reflog --> es el historial completo de interacciones en nuestro working tree. 
 
@@ -93,6 +93,10 @@ git pull -u origin <rama> --> descarga una rama a nuestro repositorio local.
 git clone <url> --> clona un repositorio remoto y lo deja en local.
 
 git push -u origin <rama> --> copia la rama en la que estamos trabajando en local en el repositorio remoto.
+
+origin: es el alias que git asigna automáticamente al repositorio remoto desde el cual se clonó el proyecto, sirviendo como un atajo o marcador para la URL de ese servidor. Al ejecutar git clone <URL>, git configura automáticamente origin para apuntar a esa URL. 
+
+git remote -v --> nos muestra a que URL apunta origin.
 
 git push --> guarda los cambios producidos en la rama del repositorio local en el remoto.
 

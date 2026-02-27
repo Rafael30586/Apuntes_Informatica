@@ -431,3 +431,17 @@ Enlace: https://docs.aws.amazon.com/
 -------------------------------------------------------------------------------------------------------
 Modelo de responsabilidad compartida
 -------------------------------------------------------------------------------------------------------
+Modelo de responsabilidad compartida
+Es un marco de trabajo de la nube que define las obligaciones de seguridad del cliente versus el CSP, ejemplo: AWS
+https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/security-identity-compliance/compliance/approved/images/7a404923-5572-409c-b30e-6d44706bcd89.094727e5c591e9a96edf10578d0bc1172d9e4553.jpeg
+Cada CSP tiene su propia variante de modelo de responsabilidad compartida pero son generalmente los mismo.
+
+Modelo de responsabilidad compartida de AWS
+* AWS es responsable de todo lo físico: hardware e infraestructura global -> regiones , zonas de disponibilidad, Edge locations, seguridad física
+Con respecto al software, AWS es responsable del almacenamiento, bases de datos, redes, cómputo.
+* El cliente es responsable de la configuración de los servicios gestionados de software de terceros: plataformas, aplicaciones, gestión de acceso e identidad (IAM).
+El cliente es también responsable de la configuración de la infraestructura virtual y los sistemas: elegir el sistema operativo, redes, firewall-
+El cliente es también responsable de la encriptación de datos del lado del cliente, encriptación del lado del servidor, protección del tráfico de redes, datos del cliente.
+
+Los clientes son responsables de la seguridad EN la nube.
+AWS es responsable de la seguridad DE la nube.
