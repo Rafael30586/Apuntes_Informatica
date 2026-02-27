@@ -46,3 +46,6 @@ Algunos ejemplos: point to point, bus, anillo, estrella, árbol, malla. También p
 * Anillo: 
  - Ventajas: simple instalación y reconfiguración.
  - Desventajas: un solo punto de fallo puede afectar a todo el sistema.
+
+Modelos de OSI
+permite la comunicación entre diferentes dispositivos aunque tengan diferente arquitectura. Es un marco de trabajo conceptual para crear una red de arquitectura robusta e interoperable. No es un protocolo, es un marco de trabajo. Trabaja como una arquitectura en capas.
