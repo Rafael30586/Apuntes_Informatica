@@ -49,3 +49,9 @@ Algunos ejemplos: point to point, bus, anillo, estrella, árbol, malla. También p
 
 Modelos de OSI
 permite la comunicación entre diferentes dispositivos aunque tengan diferente arquitectura. Es un marco de trabajo conceptual para crear una red de arquitectura robusta e interoperable. No es un protocolo, es un marco de trabajo. Trabaja como una arquitectura en capas.
+
+Direcciones IP
+Son direcciones lógicas de 32 bits. Están compuestas por 4 octetos. Cada octeto tiene 8 bits.
+Dirección IP --> ---.---.---.---
+El número total de direcciones IPv4 es de 2^32 = 4 mil millones
+En los 80s las direcciones IP estaban divididas en el id de red y  el id del anfitrión. Esto fue decidido por IANA. Los primeros 8 bits son el id de red y los otros 24 son el id del anfitrión.

@@ -1,6 +1,6 @@
 https://www.geeksforgeeks.org/operating-systems/kernel-in-operating-system/
 
-El kernel es el núcleo del sistema operativo. Funciona como puente entre las a0plicaciones de software y el hardaware de una computadora.
+El kernel es el núcleo del sistema operativo. Funciona como puente entre las aplicaciones de software y el hardware de una computadora.
 * El kernel gestiona recursos del sistema, como el CPU, la memoria y dispositivos, asegurando de que todo trabaje en conjunto de manera fluida y eficiente.
 * Gestiona tareas como programas en ejecución, acceso a archivos y conexión a dispositivos como impresoras y teclados.
 
@@ -21,7 +21,7 @@ Funciones del kernel
 https://media.geeksforgeeks.org/wp-content/uploads/20250725113119973417/Function-Of-Kernel.webp
 
 1. Gestión de procesos: programación y ejecución de procesos.
-2. Gestión de memoria: asignación y liberación es espacio de memoria, gestión de memoria virtual y manejo de protección de memoria. 
+2. Gestión de memoria: asignación y liberación de espacio de memoria, gestión de memoria virtual y manejo de protección de memoria. 
 3. Gestión de dispositivos: Gestión de dispositivos de entrada y salida, proveyendo una interfaz unificada para dispositivos y manejando comunicación con controladores de dispositivos.
 4. Gestión de archivos de sistema: Gestionando operaciones de archivos y proveyendo una interfaz de sistema de archivos a aplicaciones.
 5. Gestión de recursos: Gestionando recursos de sistema (CPU, espacio en disco, ancho de banda de red). Principalmente asignando y liberando recursos según la necesidad.
