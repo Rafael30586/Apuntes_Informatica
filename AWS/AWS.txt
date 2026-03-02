@@ -440,8 +440,26 @@ Modelo de responsabilidad compartida de AWS
 * AWS es responsable de todo lo físico: hardware e infraestructura global -> regiones , zonas de disponibilidad, Edge locations, seguridad física
 Con respecto al software, AWS es responsable del almacenamiento, bases de datos, redes, cómputo.
 * El cliente es responsable de la configuración de los servicios gestionados de software de terceros: plataformas, aplicaciones, gestión de acceso e identidad (IAM).
-El cliente es también responsable de la configuración de la infraestructura virtual y los sistemas: elegir el sistema operativo, redes, firewall-
+El cliente es también responsable de la configuración de la infraestructura virtual y los sistemas: elegir el sistema operativo, redes, firewall
 El cliente es también responsable de la encriptación de datos del lado del cliente, encriptación del lado del servidor, protección del tráfico de redes, datos del cliente.
 
 Los clientes son responsables de la seguridad EN la nube.
 AWS es responsable de la seguridad DE la nube.
+
+Tipos de responsabilidad en computación en la nube
+* On-premise: el cliente es responsable de todo
+* Infrastructure as a service: el cliente es responsable de las aplicaciones, datos, runtime, middleware y sistema operativo. El CSP es responsable de virtualización, servidores, almacenamiento y redes.
+* Platform as a service: El cliente es responsable de las aplicaciones y los datos. El CSP de todo lo demás.
+* Software as a service: El CSP es responsable de todo. 
+
+Ejemplo de comparación de modelo de responsabilidad compartida
+* IaaS: 
+ - Bare Metal , EC2 Bare metal instance: el cliente es responsable del sistema operativo anfitrión pervisor. AWS es responsable de la máquina física
+ - Máquina virtual , Elastic Coud Cmpute (EC2): el cliente es responsable de la configuración del sistema operativo huésped, del container runtime (ejemplo: docker). AWS es responsable de hipervisor, de la máquina física y del sistema operativo anfitrión.
+ - Contenedores , AWS Elastic Container Service (ECS): el cliente es responsable de la configuración de los contenedores, despliegue de contenedores, almacenamiento de contenedores. AWS es responsable de el sistema operativo (huésped y anfitrión), el hipervisor y del container runtime.
+*PaaS:
+ - Plataforma gestionada , AWS Elastic Beanstalk: el cliente es responsable de subir el código, algo de configuración del entorno, estrategias de despliegue, configuración de servicios asociados. AWS será responsable de los servidores, sistema operativo, redes, almacenamiento, seguridad.
+*SaaS:
+ - Colaboración de contenido , Amazon WorkDocs: el cliente es responsable del contenido de los documentos, gestión de archivos, configuración de los controles de acceso compartido. AWS será responsable de los servidores, sistema operativo, redes, almacenamiento y seguridad.
+*FaaS (functions as a service):
+ - Funciones, AWS lambda: el cliente es responsable de subir el código. AWS será responsable de todo lo demás.	
