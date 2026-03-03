@@ -54,4 +54,9 @@ Direcciones IP
 Son direcciones lógicas de 32 bits. Están compuestas por 4 octetos. Cada octeto tiene 8 bits.
 Dirección IP --> ---.---.---.---
 El número total de direcciones IPv4 es de 2^32 = 4 mil millones
-En los 80s las direcciones IP estaban divididas en el id de red y  el id del anfitrión. Esto fue decidido por IANA. Los primeros 8 bits son el id de red y los otros 24 son el id del anfitrión.
+En los 80s las direcciones IP estaban divididas en el id de red y el id del anfitrión. Esto fue decidido por IANA. Los primeros 8 bits son el id de red y los otros 24 son el id del anfitrión.
+
+Representaciones de las direcciones IP
+* Binaria --> 32 bits - 4 octetos de 8 bits , ejemplo: 11001000.11111100.00111111.11110111
+* Decimal --> ejemplo: 200.252.63.247
+* Hexadecimal --> ejemplo: C8.FC.3F.F7
