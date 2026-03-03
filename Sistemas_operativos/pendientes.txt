@@ -1,1 +1,1 @@
-user space vs kernel pace
+user space vs kernel space

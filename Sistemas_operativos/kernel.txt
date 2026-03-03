@@ -28,3 +28,22 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250725113119973417/Function
 6. Control de acceso y seguridad: haciendo cumplir políticas de control de acceso como permisos de usuario y autenticación.
 7. Comunicación interprocesos: Facilitando comunicación entre procesos proveyendo mecanismos como mensajes y memoria compartida. 
   
+Modo de trabajo del kernel
+* El kernel es la primera parte del sistema operativo cargada en la memoria durante el inicio, y se mantiene residente mientras el sistema está en ejecución.
+* Opera en un modo privilegiado (modo kernel), separado del modo usuario para aplicaciones; las aplicaciones de usuario no pueden acceder directamente al hardware o recursos críticos.
+* Las aplicaciones realizan solicitudes al kernel vía "system calls" (o interrupciones de software). El kernel maneja estos cambiando entre modo usuario y modo kernel.
+* El kernel ejecuta la operación solicitada, por ejemplo: I/O de archivos, creación de procesos, asignación de memoria, etc.
+* Al terminar, el kernel retorna el resultado (o error) al espacio de usuario.
+
+Kernel space y user space
+Son regiones segregadas de memoria virtualizada designadas para mejorar la seguridad y estabilidad del sistema operativo. El kernel space tiene acceso total al hardware ejecutándose en modo privilegiado, mientras que el user space ejecuta aplicaciones en modo sin privilegios, previniendo que el sistema se rompa por apps que funcionan mal.
+
+https://blogs.oracle.com/linux/userspace-vs-kernelspace-understanding-the-divide
+
+Userspace
+También llamada userland, es simplemente el espacio "el espacio controlado por el usuario". La mayor parte de las funcionalidades del sistema están implementadas en el userspace, incluyendo: ejecución de aplicaciones (navegadores web, software de oficina y juegos); soporte para frameworks y bibliotecas (gráficos, audio y bibliotecas de redes); servicios de sistema (sistemas init, logging en el sistema y gestión de dispositivos).
+Los programas del userspace se ejecutan en modo usuario. En Linux, el kernel provee userpace con un entorno sandbox, llamado modo usuario, en el cual los usuarios pueden actuar libremente. Cada proceso del userspace obtiene su propia región de memoria independiente, llamado espacio de dirección o addres space. Para acceder a cualquier área de memoria, el userspace debe ir a través del kernel. Si el kernel se niega, los usuarios no pueden hacer nada. Por defecto cada proceso solo puede ver la memoria en su propio address space, "no saben que otros existen".
+Kernelspace
+El el dominio del propio kernel. El kernel puede ser pensado como el puente entre el hardware y el software. En linux, el kernel tiene su propio address space, independiente de todos los procesos de los usuarios, y puede ver toda la otra memoria en el sistema. A esto se le llama modo supervisor.
+En el modo supervisor el kernel lleva a cabo tareas críticas como: gestión de procesos, crea, programa y termina procesos; gestión de memoria, asigna y libera memoria para aplicaciones; gestión de dispositivos, interactúa con discos, placas de red, etc; reforzamiento de seguridad: refuerza control de acceso, autenticación y autorización.
+Aunque el kernel tiene acceso no restringido a recursos de sistema, no hace mucho menos que reciba instrucciones. Para el usuario promedio, el kernel no es demasiado útil por sí mismo: su función principal es que las aplicaciones en userspace se ejecuten en un entorno seguro y estable.
