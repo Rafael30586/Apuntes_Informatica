@@ -1,0 +1,18 @@
+https://www.atlassian.com/es/git/tutorials/refs-and-the-reflog
+
+Una ref o referencia es una forma indirecta de referirse a un commit. Se lo puede considerar como un alias fácil de usar para un hash de un commit. Este es el mecanismo interno de git para representar ramas y etiquetas. Las referencias se almacenan como archivos de texto normales en el directorio .git/refs. Para consultar las referencias en alguno de los repositorios se puede ir a .git/refs. El directorio heads define todas las ramas locales del repositorio. Cada nombre de archivo coincide con el nombre de la rama correspondiente, y dentro del archivo habrá un hash de un commit. Este hash corresponde al del commit del extremo de la rama.
+Para cambiar la ubicación de la rama main, todo lo que tiene que hacer git es cambiar el contenido del archivo refs/heads/main. Del mismo modo, crear una nueva rama es simplemente cuestión de escribir un hash de commit en un nuevo archivo.
+El directorio tags funciona exactamente de la misma manera, pero contiene etiquetas en lugar de ramas. El directorio remotes enumera todos los repositorios remotos que creaste con git remote como subdirectorios separados. Dentro de cada uno, encontrarás todas las ramas remotas que se han recuperado en el repositorio.
+
+Referencias especiales
+Aparte del directorio refs, hay algunas referencias que se almacenan en el directorio .git de nivel superior: HEAD, FETCH_HEAD, ORIG_HEAD, MERGE_HEAD, CHERRY_PICK_HEAD. 
+
+Referencias de especificaciones
+Una especificación de referencia (o "refspec") asigna una rama del repositorio local a una rama en un repositorio remoto. Esto permite gestionar ramas remotas mediante comandos de git locales y configurar algunos comportamientos avanzados de git push y git fetch.
+Una especificación de referencia se indica así: [+]<src>:<dst>. El parámetro <src> es la rama de origen en el repositorio local y el parámetro <dst> es la rama destino en el repositorio remoto. El signo + opcional sirve para forzar al repositorio remoto a realizar una actualización sin avance rápido.
+Las especificaciones de referencia pueden usar git push para dar un nombre diferente a la rama remota, por ejemplo:
+git push origin main:refs/heads/qa-main
+Este comando envía la rama main al repositorio remoto origin como un git push normal, pero usa qa-main como el nombre de la rama en el repositorio origin.
+También permiten eliminar ramas del repositorio remoto enviando una especificación de referencia que tenga un parámetro vacío:
+git push origin :some-feautre
+

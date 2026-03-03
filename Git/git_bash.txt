@@ -109,6 +109,10 @@ En condiciones normales, HEAD apunta a una rama y esa rama apunta a un commit, p
 
 git show HEAD --> muestra la ubicación del HEAD y su estado.
 
+git show <commit> --> muestra datos sobre el commit que indiquemos.
+
 git ls-tree -r --name-only <commit> --> muestra los archivos que están commiteados en el commit que indiquemos
 
 git config --global alias.<nombre> "<comandos>" --> crea una alias según el nombre y los comandos que le indiquemos.
+
+git push origin --delete <rama> --> sirve para eliminar una rama del repositorio remoto.
