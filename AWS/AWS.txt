@@ -454,8 +454,8 @@ Tipos de responsabilidad en computación en la nube
 
 Ejemplo de comparación de modelo de responsabilidad compartida
 * IaaS: 
- - Bare Metal , EC2 Bare metal instance: el cliente es responsable del sistema operativo anfitrión pervisor. AWS es responsable de la máquina física
- - Máquina virtual , Elastic Coud Cmpute (EC2): el cliente es responsable de la configuración del sistema operativo huésped, del container runtime (ejemplo: docker). AWS es responsable de hipervisor, de la máquina física y del sistema operativo anfitrión.
+ - Bare Metal , EC2 Bare metal instance: el cliente es responsable del sistema operativo anfitrión e hipervisor. AWS es responsable de la máquina física
+ - Máquina virtual , Elastic Cloud Compute (EC2): el cliente es responsable de la configuración del sistema operativo huésped, del container runtime (ejemplo: docker). AWS es responsable de hipervisor, de la máquina física y del sistema operativo anfitrión.
  - Contenedores , AWS Elastic Container Service (ECS): el cliente es responsable de la configuración de los contenedores, despliegue de contenedores, almacenamiento de contenedores. AWS es responsable de el sistema operativo (huésped y anfitrión), el hipervisor y del container runtime.
 *PaaS:
  - Plataforma gestionada , AWS Elastic Beanstalk: el cliente es responsable de subir el código, algo de configuración del entorno, estrategias de despliegue, configuración de servicios asociados. AWS será responsable de los servidores, sistema operativo, redes, almacenamiento, seguridad.
@@ -463,3 +463,40 @@ Ejemplo de comparación de modelo de responsabilidad compartida
  - Colaboración de contenido , Amazon WorkDocs: el cliente es responsable del contenido de los documentos, gestión de archivos, configuración de los controles de acceso compartido. AWS será responsable de los servidores, sistema operativo, redes, almacenamiento y seguridad.
 *FaaS (functions as a service):
  - Funciones, AWS lambda: el cliente es responsable de subir el código. AWS será responsable de todo lo demás.	
+
+---------------------------------------------------------------------------------------------------
+Compute
+---------------------------------------------------------------------------------------------------
+Elastic compute cloud (EC2)
+Te permite lanzar máquinas virtuales. Una máquina virtual es una emulación de una computadora física usando software. 
+La virtualización del servidor te permite crear, copiar, cambiar de tamaño o migrar tu servidor.
+Múltiples máquinas virtuales pueden ejecutarse en el mismo servidor físico para compartir el costo con otros clientes.
+Cuando lanzamos una VM (máquina virtual) la llamamos instancia.
+EC2 es un servidor altamente configurable donde podés elegir AMI (amazon machine image) que afecta las siguientes opciones: 
+* La cantidad de CPUs
+* La cantidad de RAM 
+* La cantidad de ancho de banda
+* El sistema operativo
+* Unir múltiples discos duros virtuales	para almacenamiento, ejemplo: Elastic Block Store (EBS)
+
+AMI o amazon machine image
+Es una configuración predefinida para una máquina virtual
+
+EC2 es también considerado la columna vertebral de AWS porque la mayoría de los servicios de AWS están usando EC2 como sus servidores subyacentes, ejemplos: S3, RDS, DynamoDB, Lambdas
+
+Amazon LightSail
+Es el servicio de servidores virtuales gestionados. Es la versión "amigable" de las máquinas virtuales de EC2. Cuando querés lanzar un servidor de Windows o Linux pero no tenés mucho conocimiento de AWS. Ejemplo, lanzar un WordPress.
+
+Contenedores: virtualizar un sistema operativo para ejecutar múltiples cargas de trabajo en una sola instancia de un sistema operativo. Los contenedores se usan generalmente en arquitectura de microservicios
+Elastic Container Service (ECS)
+es un servicio de orquestación de contenedores que soporta contenedores de Docker. Lanza un cluster de servidores en instancias EC2 con Docker instalado. Es para cuando necesitás Docker como servicio o necesitás ejecutar contenedores.
+Elastic Container Regisitry (ECR)
+Es un repositorio para imágenes de contenedores. Para lanzar contenedores necesitás una imagen. Un repositorio es un almacenamiento que tiene control de versiones.
+ECS Fargate 
+Es un servicio de orquestación de contenedores serveless. Es como ECS, pagás on-demand por cada contenedor en ejecución (con ECS tenés que mantener un servidor EC2 corriendo incluso si no tenés contendores ejecutándose). AWS gestiona el servidor subyacente para que no tengas que escalar o mejorar el servidor EC2.
+Elastic Kubernetes Service (EKS)
+Es un servicio de kubernetes completamente gestionado. Kubernetes (K8) es un software de código abierto que fué creado por Google y es generalmente un estándar para gestión de microsevicios. Es para cuando necesitás ejecutar kubernetes como servicio.
+
+Serverless: es cuando los servidores subyacentes son gestionados por AWS. No debés preocuparte por configurar los servidores.
+AWS Lambda
+Es un servicio de funciones serverless. Podés ejecutar código sin gestionar servidores. Subís pequeñas piezas de código, elegís la cantidad de memoria y cuanto tiempo se le permite a la función ejecutarse antes de que se agote el tiempo. Pagás de acuerdo al tiempo de ejecución de la función serverless redondeado a los 100ms más cercanos. 
