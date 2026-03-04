@@ -500,3 +500,19 @@ Es un servicio de kubernetes completamente gestionado. Kubernetes (K8) es un sof
 Serverless: es cuando los servidores subyacentes son gestionados por AWS. No debés preocuparte por configurar los servidores.
 AWS Lambda
 Es un servicio de funciones serverless. Podés ejecutar código sin gestionar servidores. Subís pequeñas piezas de código, elegís la cantidad de memoria y cuanto tiempo se le permite a la función ejecutarse antes de que se agote el tiempo. Pagás de acuerdo al tiempo de ejecución de la función serverless redondeado a los 100ms más cercanos. 
+
+---------------
+Servicios de computación de alto rendimiento
+
+The Nitro System: Una combinación de hardware dedicado e hipervisor liviano que permite innovación más rápida y seguridad mejorada. Todas los tipos de instancias EC2 usan el Nitro System
+* Nitro cards: tarjetas especializadas para VPC, EBS y tarjeta controladora.
+* Nitro security chips: integrados en la placa madre. Protege los recursos de hardware.
+* Nitro hypervisor: memoria de hipervisor liviana y rendimiento tipo bare metal de asignación de CPU.
+
+Instancias bare metal: Podés lanzar instancias EC2 sin hypervisor para que puedas ejecutar cargas de trabajo directamente en el hardware para máximo rendimiento y control. Las instancias EC2 M5 y R5 se ejecutan como bare metal.
+
+Bottlerocket: es un sistema operativo de código abierto basado en Linux cuyo propósito es ejecutar contenedores en máquinas virtuales o anfitriones bare metal.
+
+Computación de alto rendimiento o HPC: es un cluster de cientos de miles de servidores con conexiones rápidas entre ellos con el propósito de aumentar la capacidad computacional. Cuando necesitás una super computadora para llevar a cabo problemas computacionales muy grandes para ejecutarse en computadoras estándar o que tomarían mucho tiempo.
+
+AWS ParallelCluster es una herramienta de gestión de clusters de código abierto soportada por AWS que hace que sea fácil el desplegar y gestionar clusters HPC en AWS.
