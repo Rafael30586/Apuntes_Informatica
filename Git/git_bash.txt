@@ -82,6 +82,8 @@ git stash drop --> borra el stash de la rama actual.
 
 git diff <rama> --> compara la rama que elijamos con la rama en la que estamos.
 
+git diff <rama1> <rama2> --> compara dos ramas que indiquemos.
+
 git branch -d <rama> --> borra una rama que indiquemos.
 
 git fetch --> descarga el historial de cambios sin descargar los cambios.
@@ -111,8 +113,12 @@ git show HEAD --> muestra la ubicación del HEAD y su estado.
 
 git show <commit> --> muestra datos sobre el commit que indiquemos.
 
+git show <rama> --> muestra datos sobre la rama que indiquemos.
+
 git ls-tree -r --name-only <commit> --> muestra los archivos que están commiteados en el commit que indiquemos
 
 git config --global alias.<nombre> "<comandos>" --> crea una alias según el nombre y los comandos que le indiquemos.
 
 git push origin --delete <rama> --> sirve para eliminar una rama del repositorio remoto.
+
+git fetch --> baja los cambios del repositorio remoto al local pero no lo fusiona con las ramas del repositorio local (como sì ocurre con git pull). Si queremos que además se fusionen con las ramas del repositorio local debemos hacer después de git fetch, por ejemplo, git merge origin/master (debemos estar posicionados en master), ya que origin/master tiene los cambios descargados del repositorio remoto y queremos combinarlos con nuestra rama master del repositorio local.
