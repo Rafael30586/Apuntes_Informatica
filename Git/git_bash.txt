@@ -94,7 +94,7 @@ git pull -u origin <rama> --> descarga una rama a nuestro repositorio local.
 
 git clone <url> --> clona un repositorio remoto y lo deja en local.
 
-git push -u origin <rama> --> copia la rama en la que estamos trabajando en local en el repositorio remoto.
+git push -u origin <rama> --> copia la rama en la que estamos trabajando en local en el repositorio remoto.  
 
 origin: es el alias que git asigna automáticamente al repositorio remoto desde el cual se clonó el proyecto, sirviendo como un atajo o marcador para la URL de ese servidor. Al ejecutar git clone <URL>, git configura automáticamente origin para apuntar a esa URL. 
 

@@ -1,1 +1,2 @@
 git refs
+probar de cambiar  rama a una de origin en el repositorio local
