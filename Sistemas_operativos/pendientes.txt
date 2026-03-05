@@ -1,2 +1,3 @@
-user space vs kernel space
 sistema de anillos en CPUs, ring 0 y ring 3 principalmente
+system calls
+kernel mode vs user mode ¿es diferente a kernelspace y userspace?

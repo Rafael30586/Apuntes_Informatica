@@ -1,0 +1,20 @@
+Los programas de usuario no pueden acceder directamente al hardware o recursos críticos del sistema operativo porque haría que el sistema se vuelva inestable e inseguro. Para mantener la seguridad, el sistema operativo provee system calls: interfaces controladas que permiten a los programas de usuario solicitar servicios del kernel. Estas llamadas funcionan como puertas de entrada entre el modo usuario y el modo kernel. Los system calls son:
+* Una forma que tienen los programas de usuario de interactuar con el sistema operativo;
+* Proveen los servicios del sistema operativo a los programas de usuario;
+* Solo puntos de entrada en el kernel son ejecutados en modo kernel.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250124123632394421/introduction_to_system_call.webp
+
+Ejemplos:
+* Abrir un archivo en C (fopen) usa internamente system calls como open()
+* Ejecutar un programa en Linux usa los system calls fork() y exec()
+
+¿Cómo funcionan los system calls?
+* El programa de usuario ejecuta una instrucción de system call 
+* El CPU cambia de modo usuario a modo kernel para una ejecución segura
+* El kernel identifica el número de system call y lleva a cabo la operación solicitada (acceso a archivos, creación de proceso, asignación de memoria, etc)
+* Después de completar una tarea, el kernel cambia a modo usuario
+* El resultado (éxito, error, datos) es devuelto al programa
+* Sin system calls, cada programa necesitaría su propia manera de acceder al hardware, llevando a sistemas inconsistentes e inseguros.
+
+Los system calls no siempre causan un cambio de contexto. Involucran principalmente un cambio de modo de modo usuario a modo kernel. Un cambio de contexto ocurre solo cuando el proceso de llamado es bloqueado, no durante cada llamado de sistema.
