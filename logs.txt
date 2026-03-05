@@ -1,0 +1,3 @@
+https://www.hts-italy.com/en/articles/computer-science-log-what-are-they/
+
+En computación un log se refiere a un registro secuencial y cronológico de operaciones llevadas a cabo por un sistema computacional. Los logs se pueden originar de varias fuentes como servidores, aplicaciones, cliente o software. Se almacenan en archivos específicos llamados log files y forman la base de los sistemas de gestión de logs y soluciones SIEM (Security information and evento management). 
