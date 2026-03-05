@@ -516,3 +516,42 @@ Bottlerocket: es un sistema operativo de código abierto basado en Linux cuyo pr
 Computación de alto rendimiento o HPC: es un cluster de cientos de miles de servidores con conexiones rápidas entre ellos con el propósito de aumentar la capacidad computacional. Cuando necesitás una super computadora para llevar a cabo problemas computacionales muy grandes para ejecutarse en computadoras estándar o que tomarían mucho tiempo.
 
 AWS ParallelCluster es una herramienta de gestión de clusters de código abierto soportada por AWS que hace que sea fácil el desplegar y gestionar clusters HPC en AWS.
+
+------------
+Edge computing y hybrid comnuting
+
+* Edge computing: es cuando empujàs tus cargas de trabajo de computación fuera de tus redes para correr cerca de las ubicación destino. Ejemplo: empujar para correr en teléfonos, dispositivos IoT o servidores externos dentro de tu red de la nube. 
+* Hybrid computing: es cuando podès correr tus cargas de trabajo tanto en tu datacenter on-premise como en tu AWS VPC.
+
+AWS Outposts: es un estante físico de servidores que podès poner en tu datacenter. Te permite usar la API de AWS y servicios como EC2 en tu datacenter.
+
+AWS wavelength: te permite construir y lanzar tus aplicaciones en un datacenter de telecom. Haciendo esto tus aplicaciones tendrán ultra baja latencia, ya que serán empujadas sobre una red 5G y estarán lo màs cerca posible del usuario final.
+
+VMWare Cloud: te permite gestionar máquinas virtuales on-premise usando VMWare como instancias EC2. El datacenter debe estar usando VMWare para virtualización.
+
+AWS Local Zones: son Edge datacenters localizados afuera de una región de AWS para que puedas usar AWS cerca de tu destino. Cuando necesitàs poder de còmputo màs rápido, almacenamiento y bases de datos en áreas muy pobladas que están fuera de una región de AWS. 
+
+-------------
+Gestión de costo y capacidad
+
+Gestión de costo: es como ahorramos dinero
+
+Gestión de capacidad: como atendemos a la demanda de tràfico y uso añadiendo o mejorando servidores
+
+EC2 Spot Instances, Reserved instances and saving plans
+Maneras de ahorrar en computación, pagando total o parcialmente, comprometiéndose a contratos anuales o siendo flexible sobre la disponibilidad e interrupción de servicios de computaciòn.
+
+AWS Batch 
+planea, programa y ejecuta tu lote de cargas de trabajo computacional a través del rango completo de servicios de computación de AWS, se puede usar spot intance para ahorrar dinero.
+
+AWS Compute Optimizar
+te sugiere como reducir costos y mejorar rendimiento usando machine learning para analizar tu historial de uso.
+
+EC2 Autoscaling Groups (ASGs)
+Automáticamente añade o quita servidores EC2 para atender la demanda actual de tràfico. Te ayudarà a ahorrar dinero y atenderà a la capacidad ya que solo corrès la cantidad de servidores que necesitàs.  
+
+Elastic Load Balance (ELB)
+Distribuye el tràfico a múltiples instancias, puede encaminar tràfico desde instancias poco saludables a instancias saludables. Puede encaminar tràfico a instancias EC2 en diferentes zonas de disponibilidad.
+
+AWS Elastic Beanstalk (EB)
+Es para desplegar fácilmente aplicaciones web sin que los desarrolladores se tengan que preocupar por configurar y entender los servicios subyacentes de AWS. Similar a Heroku.
