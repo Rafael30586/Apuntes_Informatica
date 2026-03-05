@@ -70,6 +70,8 @@ git branch <nombre> --> crea una rama con el nombre que indiquemos.
 
 git switch <rama> --> cambia de rama.
 
+git switch --detach origin/<rama> --> sirve para ir a una rama de origin en modo detach
+
 Si realizamos cambios en un archivo de una rama sin hacer commit, git no nos dejará cambiar de rama a menos que hagamos el commit o que usemos git stash.
 
 git stash --> guarda cambios producidos en una rama sin hacer commit. 
