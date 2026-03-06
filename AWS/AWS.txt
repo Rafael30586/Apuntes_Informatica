@@ -600,7 +600,7 @@ Objetos S3
  - Metadatos: información adicional unida al objeto
 
 S3 Bucket
-* Los buckets guardan objetos. Pueden también tener carpetas que guardan objetos.
+* Los buckets guardan objetos. Pueden también pueden tener carpetas que guardan objetos.
 * S3 es un namespace universal, por lo que un bucket debe tener un nombre único (parecido a tener un nombre de dominio)
 
 Cada objeto puede tener de 0 B a 5 TB en tamaño
