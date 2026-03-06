@@ -555,3 +555,29 @@ Distribuye el tràfico a múltiples instancias, puede encaminar tràfico desde i
 
 AWS Elastic Beanstalk (EB)
 Es para desplegar fácilmente aplicaciones web sin que los desarrolladores se tengan que preocupar por configurar y entender los servicios subyacentes de AWS. Similar a Heroku.
+
+--------------------------------------------------------------------------------------------------
+Alcenamiento
+--------------------------------------------------------------------------------------------------
+
+Tipos de servicios de almacenamiento
+
+Elastic Block Store (EBS) - Block
+Los datos son partidos en bloques
+Directamente accedido por el sistema operativo
+Soporta un solo volumen de escritura
+Protocolos: FC, iSCSI
+Es para cuando necesitás un disco rígido virtual unido a una máquina virtual
+
+AWS Elastic File Storage (EFS) - File
+El archivo es almacenado con datos y metadatos
+Múltiples conexiones vía comunicación de red
+Soporta múltiples lecturas, la escritura bloquea el archivo
+Protocolos: NFS, SMB
+Cuando necesitás compartir archivos donde múltiples usuarios o máquinas virtuales necesitan acceder a la misma unidad de almacenamiento
+
+Amazon Simple Storage Service (S3) - Object
+El objeto es almacenado con datos, metadatos y un único ID
+Soporta múltiples lecturas y escrituras (sin bloqueos) 
+Protocolos: HTTP/S, API
+Cuando necesitás subir archivos y no tener que preocuparte por la infraestructura subyacente. No está pensado para cuando hay muchos inputs y outputs por segundo
