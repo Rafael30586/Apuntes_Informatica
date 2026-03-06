@@ -557,7 +557,7 @@ AWS Elastic Beanstalk (EB)
 Es para desplegar fácilmente aplicaciones web sin que los desarrolladores se tengan que preocupar por configurar y entender los servicios subyacentes de AWS. Similar a Heroku.
 
 --------------------------------------------------------------------------------------------------
-Alcenamiento
+Almacenamiento
 --------------------------------------------------------------------------------------------------
 
 Tipos de servicios de almacenamiento
@@ -581,3 +581,26 @@ El objeto es almacenado con datos, metadatos y un único ID
 Soporta múltiples lecturas y escrituras (sin bloqueos) 
 Protocolos: HTTP/S, API
 Cuando necesitás subir archivos y no tener que preocuparte por la infraestructura subyacente. No está pensado para cuando hay muchos inputs y outputs por segundo
+
+----------
+Introducción a S3
+Almacenamiento basado en objetos: Es una arquitectura de almacenamiento de datos que gestiona los datos como objetos, a diferencia de otras arquitecturas de almacenamiento.
+En otras arquitecturas de almacenamiento: 
+* Los sistemas de archivos gestionan datos como un archivo y una jerarquía
+* Almacenamiento en bloque que gestiona los datos como bloques con sectores y rastros
+
+S3 te provee de almacenamiento ilimitado, no necesitás tener en cuenta la infraestructura subyacente. La consola de S3 te provee de una interface para que puedas subir datos y acceder a ellos.
+
+Objetos S3
+* Los objetos contienen tus datos, son como archivos
+* Un objeto consiste en:
+ - Una clave: es el nombre del objeto
+ - Un valor: los datos propiamente dichos compuestos de una secuencia de bytes
+ - Versión ID: la versión del objeto
+ - Metadatos: información adicional unida al objeto
+
+S3 Bucket
+* Los buckets guardan objetos. Pueden también tener carpetas que guardan objetos.
+* S3 es un namespace universal, por lo que un bucket debe tener un nombre único (parecido a tener un nombre de dominio)
+
+Cada objeto puede tener de 0 B a 5 TB en tamaño
