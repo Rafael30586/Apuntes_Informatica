@@ -18,3 +18,11 @@ Ejemplos:
 * Sin system calls, cada programa necesitaría su propia manera de acceder al hardware, llevando a sistemas inconsistentes e inseguros.
 
 Los system calls no siempre causan un cambio de contexto. Involucran principalmente un cambio de modo de modo usuario a modo kernel. Un cambio de contexto ocurre solo cuando el proceso de llamado es bloqueado, no durante cada llamado de sistema.
+
+Tipos de system calls
+Los servicios proveídos por el sistema operativo están típicamente relacionados a cualquier tipo de operación que un programa de usuario puede llevar acabo, como creación, terminación, comunicación, etc. Similares tipos de operaciones son agrupadas en una sola categoría de system call. Los system call se clasifican en las siguientes categorías: 
+* File system: Usados para crear, abrir, leer, escribir y gestionar archivos y directorios.
+* Proccess control: usados para crear, ejecutar, sincronizar y terminar procesos.
+* Gestión de memoria: usados para asignar, liberar y gestionar memoria para procesos.
+* Interprocess communication (IPC): usado para intercambio de datos y comunicación entre diferentes procesos.
+* Gestión de dispositivos: usados para solicitar y liberar dispositivos, y llevar a cabo operaciones de lectura/escritura en ellos.  
