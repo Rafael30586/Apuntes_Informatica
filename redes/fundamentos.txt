@@ -63,3 +63,16 @@ Representaciones de las direcciones IP
 
 Loopback testing
 Sirve para comprobar si un computadora dentro de una red es capaz de recibir paquetes de información de otras computadoras.
+
+Protocolos
+Son reglas predefinidas entre el emisor y el receptor para que haya sincronización entre ambos. Es necesario que haya sincronización porque si no la hay pueden perderse datos, por ejemplo, si el emisor envía 100Mb pero el receptor solo puede recibir 30Mb se perdería información.
+
+Conceptos clave de los protocolos
+* Sintaxis (orden), por ejemplo, que representan los bits recibidos según en donde se encuentren dentro de la secuencia.
+* Semántica (significado), por ejemplo, que significa cada sección de bits
+* Tiempo, cuando los datos serán enviados y que tan rápido serán enviados (pueden perderse datos)
+
+Identificación de problemas en una red
+1. La red (dirección IP lógica)
+2. El anfitrión (dirección MAC)
+3. El proceso: con el número de puerto
