@@ -26,3 +26,5 @@ Los servicios proveídos por el sistema operativo están típicamente relacionados 
 * Gestión de memoria: usados para asignar, liberar y gestionar memoria para procesos.
 * Interprocess communication (IPC): usado para intercambio de datos y comunicación entre diferentes procesos.
 * Gestión de dispositivos: usados para solicitar y liberar dispositivos, y llevar a cabo operaciones de lectura/escritura en ellos.  
+
+https://media.geeksforgeeks.org/wp-content/uploads/20251202114956548681/frame_11.webp

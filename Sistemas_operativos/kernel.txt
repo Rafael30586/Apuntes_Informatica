@@ -34,7 +34,7 @@ Modo de trabajo del kernel
 * Las aplicaciones realizan solicitudes al kernel vía "system calls" (o interrupciones de software). El kernel maneja estos cambiando entre modo usuario y modo kernel.
 * El kernel ejecuta la operación solicitada, por ejemplo: I/O de archivos, creación de procesos, asignación de memoria, etc.
 * Al terminar, el kernel retorna el resultado (o error) al espacio de usuario.
-
+---------------------------------------------
 Kernel space y user space
 Son regiones segregadas de memoria virtualizada designadas para mejorar la seguridad y estabilidad del sistema operativo. El kernel space tiene acceso total al hardware ejecutándose en modo privilegiado, mientras que el user space ejecuta aplicaciones en modo sin privilegios, previniendo que el sistema se rompa por apps que funcionan mal.
 
@@ -56,3 +56,25 @@ Por el lado del hardware, para reforzar la división, las arquitecturas de CPU im
 
 Beneficios de la división
 La separación entre userspace y kernelspace tiene efectos significativos en el diseño de sistema, desempeño y seguridad. Seguridad: La división previene a las aplicaciones del userspace el acceso a código o datos sensibles del kernel. Reduciendo el riesgo de compromisos del sistema. Estabilidad: La separación limita el acceso de las aplicaciones del userspace a los recursos del kernel, haciendo que el sistema sea más resiliente a "crashes" o mal comportamiento. Desempeño: El kernel puede optimizar los system calls e interfaces para mejorar el rendimiento del sistema.
+-----------------------
+Kernel mode y user mode
+Kernel mode y user mode son dos estados clave en un sistema operativo. El modo usuario ejecuta aplicaciones regulares con acceso limitado a recursos del sistema, mientras que el modo kernel ejecuta en núcleo del sistema operativo con control total sobre el hardware. Esta separación asegura seguridad, estabilidad y eficiente gestión de recursos. 
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250807124621795398/user_mode.webp
+
+Modo usuario
+Es un entorno restringido donde las aplicaciones corren. Cuando un programa comienza, el sistema operativo crea un proceso separado y le asigna su propio espacio de memoria.
+Los programas en modo usuario no pueden acceder al hardware o la memoria del kernel directamente. Deben solicitar acceso a través de system calls al kernel.
+
+Características clave del modo usuario
+* Entorno aislado
+* Acceso al harware solo a través del kernel
+* Ejecución segura: Errores o "crasheos" no afectan al sistem entero
+
+Ventajas
+* Más fácil de debuggear: los bugs son contenidos en aplicaciones individuales
+* "Crash containment": Solo la aplicación rota es afectada
+* Aislamiento de procesos: Una aplicación no puede corromper la memoria de otra
+* Acceso controlado: El kernel revisa y autoriza solicitudes
+* Estabilidad y confiabilidad: las aplicaciones no pueden afectar directamente al kernel u otros procesos, reduciendo el riesgo de rupturas del sistema completo
+* Securidad: el acceso directo a recursos críticos está bloqueado, previniendo uso no autorizado.
