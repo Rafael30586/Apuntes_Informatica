@@ -1,0 +1,19 @@
+https://www.atlassian.com/es/git/tutorials/git-hooks
+
+Los git hooks nos permiten ejecutar scripts personalizados en respuesta a eventos de git como merging, commiting y pushing. Estos hooks están en el subdirectorio hooks dentro de .git. Estos hooks están como archivos con la extensión "sample", lo que significa que no son utilizables. Para que sean utilizables hay que quitarle la extensión sample y usar chmod +x con git bash para darle el permiso de poder ser ejecutado. Luego hay que abrir el archivo con un editor de texto y llenarlo con el script que uno quiera. Un ejemplo de hook es pre-commit que ejecuta es script justo antes de hacer un commit.
+Cuando trabajamos con hooks se trabaja como en Linux, se les puede colocar un shebang a los archivos para que se ejecuten con el lenguaje que queramos.
+
+Algunos hooks locales son:
+* pre-commit
+* prepare-commit-msg
+* commit-msg
+* pre-rebase
+* pre-push
+
+pre-commit: se ejecuta cada vez que ejecutamos un commit antes de que se genere un objeto de confirmación. No se le pasa ningún argumento
+
+prepare-coomit-msg: se llama después del hook pre-commit para rellenar el editor de texto con un mensaje de confirmación. Sirve para modificar los mensajes de confirmación generados automáticamente para las confirmaciones combinadas o fusionadas. Se le pasan de uno a tres argumentos al script:
+1. El nombre de un archivo temporal que contiene el mensaje. Cambiás el mensaje de confirmación modificando este archivo in situ.
+2. El tipo de confirmación. Puede ser message (opción -m o -F), template (opción -t), merge (si la confirmación es de fusión) o squash (si la confirmación se combina con otras combinaciones)
+3. El hash SHA1 de la confirmación relevante. Solo se da si se dio la opción -c , -C o --amend
+
