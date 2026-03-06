@@ -1,1 +1,3 @@
 clases de direcciones IP, por ejemplo, clase A
+unicast, broadcast, multicast
+protocolo ARP
