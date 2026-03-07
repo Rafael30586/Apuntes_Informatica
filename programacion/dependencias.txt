@@ -7,3 +7,11 @@ Aspectos clave de las dependencias de software:
 * Una dependencia es un biblioteca, paquete, módulo, framework o servicio usado por una aplicación.
 * Las dependencias de software permite a las aplicaciones llevar a cabo funciones específicas que no pueden implementar por ellas mismas.
 * Si una dependencia falta, es incompatible, o funciona mal la aplicación podría no funcionar o comportarse de manera impredecible.
+
+-----------
+Tipos de dependencias de software
+Las dependencias de software entran en dos grandes clasificaciones basadas en como son introducidas en la aplicación: directas o transitivas.
+
+Dependencias directas
+Son componentes de software que los desarrolladores eligen explícitamente y declaran para su uso en un proyecto. Estas dependencias son añadidas intencionalmente para proveer de funcionalidades específicas a la aplicación.
+Las dependencias directas están típicamente listadas en archivos de configuración como: package.json (node.js), pom.xml (maven), build.graddle (Gradle), etc. 
