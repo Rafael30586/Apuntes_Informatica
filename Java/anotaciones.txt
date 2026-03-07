@@ -1,0 +1,1 @@
+Cuando ejecutamos un archivo .class en la terminal, podemos pasarle argumentos: java <Archivo> <argumento>. Este argumento corresponde al String[] args del método main. Así podemos utilizar al array args en el código de la aplicación.
