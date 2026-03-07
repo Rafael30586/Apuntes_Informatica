@@ -9,3 +9,14 @@ Tipos de logs
 3. De bases de datos: operaciones de registro de los DBMS llevadas a cabo en las bases de datos, como inserciones, actualizaciones y borrado. Estos logs también pueden capturar otros tipos de información dependiendo de la configuración del sistema.
 4. De seguridad: sistemas de computadoras complejos o sistemas diseñados para manejar datos sensibles usualmente mantienen logs de operaciones críticas para asegurar la integridad de los datos y monitorear intentos de acceso.
 5. De aplicación: muchas aplicaciones generan sus propios logs, los cuales registran eventos específicos de la aplicación y pueden servir como un protocolo para rastrear entrada y salida de datos.
+
+¿Para qué se usan los logs?
+Los logs sirven para varios propósitos: 
+* Análisis de infraestructura y evaluación de salud: analizando los errores registrados, es posible identificar y solucionar problemas dentro del sistema.
+* Análisis de intentos de acceso repetidos y fallidos: logs pueden ayudar a detectar patrones indicativos de potenciales ataques.
+* Correlación y predicción de ataques en SIEM: la información de seguridad y sistema de gestión de eventos utilizan logs para correlacionar datos y predecir potenciales grietas de seguridad.
+* Producción de estadísticas operacionales y de rendimiento.
+* Restauración de estados previos de sistema.
+* Rastreo de cambios hechos en una base de datos.
+* Rastreo de cambios hechos en archivos y carpetas.
+* Análisis de operaciones llevadas a cabo e identificación de posibles grupos, usualmente cruciales para cumplimiento con regulaciones.
