@@ -1,0 +1,22 @@
+El software de aplicación es un tipo de programa de computadora diseñado para ayudar a los usuarios a llevar a cabo tareas específicas o funciones. Estas tareas pueden ir desde escribir documentos y editar fotos a gestionar finanzas o navegar en internet.
+A diferencia del software de sistema, este se centra en lo que el usuario quiere hacer.
+Algunos ejemplos incluyen Microsoft 365, Google Chrome y Whatsapp.
+
+---------
+Tipos de aplicaciones de software
+
+por propósito:
+* Procesadores de texto (Word, notion)
+* Spreadsheet software (Google sheets, Excel)
+* Software de presentaciones (PowerPoint, Prezi)
+* Software multimedia (Adobe premiere pro, Unity)
+* Navegadores web (Google Chrome, Edge, Brave)
+* Software educacional (Moodle, Coursera)
+* Software de gráficos (Adobe illustrator, Autodesk Maya)
+* Software de simulación (SimScale, AnyLogic)
+
+por accesibilidad y licencia:
+* Freeware: libre para usarse sin derechos de modificación
+* Shareware: Pruebas gratis con mejoras pagas y uso continuado
+* Open-source: Ofrece código fuente editable, generalmente gratis
+* Closed-source: Con acceso restringido
