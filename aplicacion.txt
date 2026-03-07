@@ -1,0 +1,21 @@
+Una aplicación es el tipo de software que corre por solicitudes del usuario. Se ejecuta en la plataforma que es proveída por el software de sistema. Lenguajes de alto nivel son utilizados para escribir sofware de aplicación. Es un software de propósito específico. La principal diferencia entre software de sistema y software de aplicación es que sin el software de sistema, el sistema no puede estar en ejecución, por otro lado, sin software de aplicación, el software de mantenimiento de bajo nivel siempre corre.
+
+Funciones del software de aplicación
+* Gestión de información y datos
+* Gestión de documentos
+* Desarrollo de video e imágenes
+* Emails, mensajes de texto, audio, video conferencias, etc
+* Gestión de finanzas y pagos
+* Gestión de recursos (sistemas ERP y CRM)
+
+Características del software de aplicación
+* Escritos en lenguajes de alto nivel
+* Requiere más almacenamiento que el software de sistema
+* Es fácil de desarrollar en comparación con el software de sistema
+
+Tipos de software de aplicación
+1. Software de propósito general: se usan para llevar a cabo una gran variedad de tareas, por ejemplo, Word y Excel
+2. Software personalizado: se usa para llevar a cabo tareas que están diseñadas para organizaciones específicas.
+3. Software de utilidad: se usa para soportar la arquitectura de una computadora. Es diseñado para optimizar y mantener el sistema y también cuidando de sus requerimientos.  
+
+https://media.geeksforgeeks.org/wp-content/uploads/20230419082314/System-Software-vs-Application-Software.webp
