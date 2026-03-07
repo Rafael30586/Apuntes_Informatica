@@ -14,4 +14,13 @@ Las dependencias de software entran en dos grandes clasificaciones basadas en co
 
 Dependencias directas
 Son componentes de software que los desarrolladores eligen explícitamente y declaran para su uso en un proyecto. Estas dependencias son añadidas intencionalmente para proveer de funcionalidades específicas a la aplicación.
-Las dependencias directas están típicamente listadas en archivos de configuración como: package.json (node.js), pom.xml (maven), build.graddle (Gradle), etc. 
+Las dependencias directas están típicamente listadas en archivos de configuración como: package.json (node.js), pom.xml (maven), build.graddle (Gradle), etc.
+
+Dependencias transitivas
+Dependencias transitivas son componentes de software de los cuales una aplicación depende indirectamente. No son añadidas directamente por el desarrollador pero son requeridas por las dependencias directas de una aplicación para funcionar correctamente. 
+En otras palabras, las dependencias transitivas son dependencias de otras dependencias.
+¿Por qué son importantes?
+* Están incluidas automáticamente durante el proceso de construcción.
+* Generalmente componen la mayoría de las dependencias totales de una aplicación.
+* Pueden introducir vulnerabilidades, riesgos de licencia o conflictos entre versiones.
+* Los desarrolladores podrían no estar enterados de su presencia sin analizar el árbol completo de dependencias.   
