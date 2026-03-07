@@ -1,3 +1,11 @@
 https://www.hts-italy.com/en/articles/computer-science-log-what-are-they/
 
 En computación un log se refiere a un registro secuencial y cronológico de operaciones llevadas a cabo por un sistema computacional. Los logs se pueden originar de varias fuentes como servidores, aplicaciones, cliente o software. Se almacenan en archivos específicos llamados log files y forman la base de los sistemas de gestión de logs y soluciones SIEM (Security information and evento management). 
+Los logs están diseñados para rastrear operaciones, y en caso de fallas o cyber ataques, pueden servir para identificar la causa o el grupo responsable. Sirven como camino de auditoría y pueden ser analizados para entender la secuencia de eventos que llevan a un problema o incidente de seguridad.
+
+Tipos de logs
+1. De autenticación, reconocimiento y acceso: estos logs registran accesos de usuarios a un sistema, frecuentemente identificados como eventos login o logon. Son almacenados en un archivo dedicado y pueden ser analizados para detectar anomalías e identificar problemas relacionados al acceso del usuario.
+2. De sistema: los servidores de red registran eventos significativos ocurriendo entre el sistema y sus clientes usando el mecanismo de logging del sistema operativo. 
+3. De bases de datos: operaciones de registro de los DBMS llevadas a cabo en las bases de datos, como inserciones, actualizaciones y borrado. Estos logs también pueden capturar otros tipos de información dependiendo de la configuración del sistema.
+4. De seguridad: sistemas de computadoras complejos o sistemas diseñados para manejar datos sensibles usualmente mantienen logs de operaciones críticas para asegurar la integridad de los datos y monitorear intentos de acceso.
+5. De aplicación: muchas aplicaciones generan sus propios logs, los cuales registran eventos específicos de la aplicación y pueden servir como un protocolo para rastrear entrada y salida de datos.
