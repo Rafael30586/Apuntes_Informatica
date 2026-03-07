@@ -1,0 +1,9 @@
+https://www.sonatype.com/resources/articles/what-are-software-dependencies
+
+Una dependencia de software es un componente de software del cual una aplicación depende para funcionar correctamente. Las dependencias de software proveen capacidades específicas como acceso a base de datos, redes, autenticación o elementos de interfaz de usuario que les permite a los desarrolladores construir aplicaciones eficientemente sin reinventar una funcionalidad común.
+En simples palabras, si una pieza de software no puede ejecutarse, construirse o comportarse como se espera sin otra, tiene una dependencia.
+
+Aspectos clave de las dependencias de software:
+* Una dependencia es un biblioteca, paquete, módulo, framework o servicio usado por una aplicación.
+* Las dependencias de software permite a las aplicaciones llevar a cabo funciones específicas que no pueden implementar por ellas mismas.
+* Si una dependencia falta, es incompatible, o funciona mal la aplicación podría no funcionar o comportarse de manera impredecible.
