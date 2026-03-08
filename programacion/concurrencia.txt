@@ -7,4 +7,7 @@ Operaciones concurrentes y operaciones paralelas pueden ir juntas, pero no son l
 * Paralelismo: es como tener varios cocineros trabajando en diferentes tareas, cada uno haciendo su propia tarea de manera independiente.
 
 Cuando una computadora ejecuta varios programas a la vez, usa concurrencia para gestionarlos. 
-Tanto la concurrencia como el paralelismo ayudan a la computadora a ejecutar múltiples procesos de manera simultánea, aunque tenga recursos limitados. 
+Tanto la concurrencia como el paralelismo ayudan a la computadora a ejecutar múltiples procesos de manera simultánea, aunque tenga recursos limitados.
+
+El secreto de la concurrencia es asegurar de que las tareas sean interrumpibles (pueden ser pausadas y reanudadas). De esta manera, la computadora puede asignar recursos como memoria y poder de procesamiento a diferentes tareas cuando lo necesiten, manteniendo todo de manera fluida.
+ 
