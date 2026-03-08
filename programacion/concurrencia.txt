@@ -1,0 +1,10 @@
+Concurrencia es cuando una computadora es capaz de manejar múltiples tareas al mismo tiempo. Es lo que permite que los sistemas estructuren y gestionen múltiples operaciones eficientemente, aún cuando se estén ejecutando en un solo procesador.
+La concurrencia es diferente al paralelismo, el cual involucra múltiples procesos simultáneamente, sin importar si esos procesos están relacionados o no.
+
+Concurrencia vs paralelismo
+Operaciones concurrentes y operaciones paralelas pueden ir juntas, pero no son la misma cosa:
+* Concurrencia: significa manejar diferentes tareas de manera tal que pueden ser cambiadas entre sí rápidamente. Analogía: un cocinero cortando vegetales y agitando una olla, moviéndose entre tareas según la necesidad. El cocinero no está haciendo ambas tareas al mismo tiempo pero se las arregla para que todo vaya de manera fluida.
+* Paralelismo: es como tener varios cocineros trabajando en diferentes tareas, cada uno haciendo su propia tarea de manera independiente.
+
+Cuando una computadora ejecuta varios programas a la vez, usa concurrencia para gestionarlos. 
+Tanto la concurrencia como el paralelismo ayudan a la computadora a ejecutar múltiples procesos de manera simultánea, aunque tenga recursos limitados. 

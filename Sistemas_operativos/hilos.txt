@@ -1,6 +1,6 @@
 https://www.geeksforgeeks.org/operating-systems/thread-in-operating-system/
 
-Un hilo es una secuencia simple de stream dentro de un proceso y es llamado proceso de peso ligero porque es más pequeño y más rápido. Permite múltiples tareas se realicen simultáneamente, mejorando la eficiencia del programa.
+Un hilo es una secuencia simple de stream dentro de un proceso y es llamado proceso de peso ligero porque es más pequeño y más rápido. Permite que múltiples tareas se realicen simultáneamente, mejorando la eficiencia del programa.
 * En sistemas de un solo núcleo, se crea la ilusión de paralelismo; en sistemas de múltiples núcleos, los hilos realmente pueden ejecutarse en paralelo por los diferentes núcleos.
 * Cada hilo tiene su propio contador de programa, conjunto de registro, y espacio stack.
 * Los hilos comparten código, datos y recursos del sistema operativo dentro del mismo proceso.
