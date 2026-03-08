@@ -1,0 +1,45 @@
+https://www.geeksforgeeks.org/operating-systems/thread-in-operating-system/
+
+Un hilo es una secuencia simple de stream dentro de un proceso y es llamado proceso de peso ligero porque es más pequeño y más rápido. Permite múltiples tareas se realicen simultáneamente, mejorando la eficiencia del programa.
+* En sistemas de un solo núcleo, se crea la ilusión de paralelismo; en sistemas de múltiples núcleos, los hilos realmente pueden ejecutarse en paralelo por los diferentes núcleos.
+* Cada hilo tiene su propio contador de programa, conjunto de registro, y espacio stack.
+* Los hilos comparten código, datos y recursos del sistema operativo dentro del mismo proceso.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250829104433669224/multithreading-in-os.png
+
+¿Por qué necesitamos hilos?
+* Mejoran rendimiento: permiten que los programas se ejecuten más rápido.
+* Mejoran la capacidad de respuesta: si un hilo está ocupado, otro puede manejar las acciones el usuario, manteniendo a la aplicación con capacidad de respuesta.
+* Permiten la concurrencia: múltiples operaciones como guardar archivos, procesar datos y manejar entradas de usuario, todo simultáneamente.
+* Mejor utilización del CPU: los hilos pueden ejecutarse en diferentes núcleos, mejorando el rendimiento del sistema.
+* Compartir recursos eficientemente: los hilos son la misma memoria y recursos dentro de un proceso, haciendo que la comunicación sea más rápida y reduciendo "overhead".
+
+Componentes de los hilos
+* Stack space: almacena variables locales, llamados a funciones y direcciones de retorno específicas a un hilo.
+* Register set: guarda datos temporales y resultados inmediatos para la ejecución del hilo.
+* Program counter: rastrea la instrucción actual que está siendo ejecutada por el hilo.	 
+
+Tipos de hilos
+Los hilos  se clasifican basándose en como son gestionados y programados por el sistema operativo. Hay dos tipos:
+* Hilos de nivel usuario
+* Hilos de nivel kernel
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260204151901952105/user_level.webp
+
+Hilos de nivel usuario (ULTs)
+* Gestionados completamente en user space usando una biblioteca de hilos; el kernel no está enterado de ellos,
+* Cambiar entre ULTs es rápido ya que solo el program counter, registros y stack necesitan ser guardados/restaurados
+* No requieren system calls para creación o gestión, haciéndolos ligeros.
+* Si un hilo hace un system call bloqueante, el proceso entero se bloquea
+* La programación es realizada por la aplicación misma, lo cual no es tan eficiente como la programación  de nivel kernel.
+* No puede utilizar la capacidad máxima del multiprocesador porque el kernel programa procesos, no hilos de nivel usuario individuales
+
+Hilos de nivel kernel (KLTs)
+* Gestionados directamente por el kernel del sistema operativo.
+* El kernel programa cada hilo independientemente, permitiendo verdadera ejecución paralela en múltiples núcleos
+* Maneja las system call bloqueantes eficientemente; si un hilo se bloquea, el kernel puede ejecutar otro hilo del mismo proceso.
+* Provee mejor balanceo de carga a través de los procesadores ya que el kernel controla todos los hilos.
+* El cambio de contexto es más lento comparado con ULTs porque requiere cambiar entre modo usuario y modo kernel
+* La implementación es más compleja y requiere interacción frecuente con el kernel.
+* Grandes cantidades de hilos pueden añadir carga extra en el programador del kernel, potencialmente afectando el rendimiento.  
+	
