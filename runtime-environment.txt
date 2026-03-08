@@ -1,0 +1,10 @@
+Los sistemas en tiempo de ejecución o RTE (runtime evironment) reciben a veces el nombre de entornos en tiempo de ejecución. Actúan como un pequeño sistema operativo y proporcionan toda la funcionalidad que los programas necesitan para ejecutarse. Esto incluye desde interfaces hasta elementos físicos de hardware, pasando por interacciones de usuario y componentes de software.
+Un runtime environment carga todas las aplicaciones de un programa y las ejecuta en una plataforma. Esta plataforma pone a disposición todos los recursos necesarios para ejecutar el programa independientemente del sistema operativo. Por ejemplo, la reproducción de contenidos web de audio y video solo es posible si se dispone del sistema en tiempo de ejecución adecuado, como por ejemplo Adobe Flash player. Si este entorno está instalado, los contenidos flash de web se reproducen con la misma calidad y misma funcionalidad, sin importar el navegador o el sistema operativo.
+
+¿Cómo funciona un sistema en tiempo de ejecución?
+A través de un sistema en tiempo de ejecución, la aplicación en ejecución media entre el programa de aplicación y el sistema operativo. Cuando el programa se ejecuta, envía instrucciones al procesador y la memoria del ordenador, y accede a los recursos del sistema. Así, el sistema en tiempo de ejecución incluye el hardware, el espacio de almacenamiento, las variables de entorno, las interacciones del usuario y los componentes de software.
+
+¿Qué ventajas ofrece un runtime environment?
+Los sistemas en tiempo de ejecución proporcionan funcionalidad multiplataforma para ejecutar las aplicaciones. Esto simplifica el desarrollo de programas, porque no hay que adaptarlos a cada sistema operativo y cada versión del mismo. Si un programa se ejecuta en un runtime environment, los usuarios de todos los sistemas se benefician de las mismas funciones y de una interfaz casi idéntica.
+
+  	
