@@ -42,4 +42,7 @@ Hilos de nivel kernel (KLTs)
 * El cambio de contexto es más lento comparado con ULTs porque requiere cambiar entre modo usuario y modo kernel
 * La implementación es más compleja y requiere interacción frecuente con el kernel.
 * Grandes cantidades de hilos pueden añadir carga extra en el programador del kernel, potencialmente afectando el rendimiento.  
+
+Proceso vs hilo
+La diferencia principal es que los hilos dentro de un mismo proceso corren en un espacio de memoria compartida, mientras que los procesos se ejecutan en espacios de memoria separados. Los hilos no son independientes el uno del otro como pasa con los procesos, y como resultado, los hilos comparten con otros hilos su sección de código, sección de datos y recursos del sistema operativo. Pero como los procesos, los hilos tienen un propio program counter, register set y espacio stack. 
 	
