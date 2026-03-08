@@ -7,4 +7,11 @@ A través de un sistema en tiempo de ejecución, la aplicación en ejecución me
 ¿Qué ventajas ofrece un runtime environment?
 Los sistemas en tiempo de ejecución proporcionan funcionalidad multiplataforma para ejecutar las aplicaciones. Esto simplifica el desarrollo de programas, porque no hay que adaptarlos a cada sistema operativo y cada versión del mismo. Si un programa se ejecuta en un runtime environment, los usuarios de todos los sistemas se benefician de las mismas funciones y de una interfaz casi idéntica.
 
-  	
+Ejemplos conocidos de sistemas en tiempo de ejecución
+* Java runtime environment: ejecución de programas java. También se conoce como plataforma java. Consiste en una interfaz de programación, una máquina virtual y varias bibliotecas de programas. 
+* Blueprint: facilita la optimización de CSS.
+* Crystal space: es gratuito, incluye un motor 3D y se utiliza para desarrollar juegos y otras representaciones 3D.
+* Cygwin: sirve para ejecutar aplicaciones de Linux en Windows, macOS y otros sistemas operativos.
+* .NET framework: las aplicaciones de Windows .NET solo pueden ejecutarase con este framework de Microsoft.
+* Node.js: permite la ejecución de JavaScript del lado del servidor.
+* Visual basic runtime: requerido para muchos programas shareware y freeware.	  	
