@@ -604,3 +604,13 @@ S3 Bucket
 * S3 es un namespace universal, por lo que un bucket debe tener un nombre único (parecido a tener un nombre de dominio)
 
 Cada objeto puede tener de 0 B a 5 TB en tamaño
+
+---
+Clases de almacenamiento S3
+
+AWS ofrece un rango de clases de almacenamiento S3 que intercambia tiempo de recuperación, accesibilidad y durabilidad por precios más bajos.
+* S3 standard: es el más caro y es el que está por defecto. Es rápido, tiene 99.99% de disponibilidad. Replicado a través de tres zonas de disponibilidad.
+* S3 intelligent tearing: usa ML para analizar el uso de objetos y determinar la clase de almacenamiento apropiada. Los datos son movidos al tier de acceso con mejor costo, sin ningún impacto en el rendimiento.
+* S3 standard-IA (Infrequent access): es bastante rápido pero es más barato si accedés a tus archivos menos de una vez al mes. Una tarifa adicional de recuperación es aplicada. Tiene disponibilidad reducida.
+* S3 One-Zone-IA: bastante rápido. Los objetos solo existen en una zona de disponibiñidad. Las disponibilidad es de 99.5%. Es 20% más barato que standard-IA
+* S3 Glacier: para un almacenamiento frío de largo plazo. La recuperación de datos puede tomar entre minutos y horas pero es muy barato.
