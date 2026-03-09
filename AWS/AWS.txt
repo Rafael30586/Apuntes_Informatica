@@ -612,7 +612,7 @@ AWS ofrece un rango de clases de almacenamiento S3 que intercambia tiempo de rec
 * S3 standard: es el más caro y es el que está por defecto. Es rápido, tiene 99.99% de disponibilidad. Replicado a través de tres zonas de disponibilidad.
 * S3 intelligent tearing: usa ML para analizar el uso de objetos y determinar la clase de almacenamiento apropiada. Los datos son movidos al tier de acceso con mejor costo, sin ningún impacto en el rendimiento.
 * S3 standard-IA (Infrequent access): es bastante rápido pero es más barato si accedés a tus archivos menos de una vez al mes. Una tarifa adicional de recuperación es aplicada. Tiene disponibilidad reducida.
-* S3 One-Zone-IA: bastante rápido. Los objetos solo existen en una zona de disponibiñidad. Las disponibilidad es de 99.5%. Es 20% más barato que standard-IA
+* S3 One-Zone-IA: bastante rápido. Los objetos solo existen en una zona de disponibilidad. Las disponibilidad es de 99.5%. Es 20% más barato que standard-IA
 * S3 Glacier: para un almacenamiento frío de largo plazo. La recuperación de datos puede tomar entre minutos y horas pero es muy barato.
 * S3 Glacier Deep Archive: es el de menor costo. La recuperación de datos lleva 12 horas.
 
@@ -625,3 +625,12 @@ Los dispositivos son: Snowcone, Snowball Edge y Sonwmobile
 * Sonwmobile: 100PB de almacenamiento
 
 Los datos son enviados a Amazon S3  	
+
+------------
+Servicios de almacenamiento
+Simple Storage Service (S3): es un servicio de almacenamiento de objetos serverless. Podés subir archivos muy grandes y una cantidad ilimitada de archivos. No debés preocuparte por el sistema de archivos subyacente, o mejorar el tamaño del disco.
+S3 Glacier: es de muy bajo costo y está pensado para el largo plazo (back up). Utiliza HDDs para tener bajo costo. Es muy seguro y durable.
+Elastic Block Store (EBS): es un servicio de almacenamiento bloque persistente. Es un disco duro virtual que unís a instancias EC2. Podés elegir diferentes tipos de discos duros: SSD, IOPS SSD, HDD de rendimiento, HDD frío
+Elastic File Storage (EFS): es un servicio de sistema de archivos NFS cloud-native. Almacenamiento de archivos que podés montar en múltiples instancias EC2 al mismo tiempo. Cuando necesitás compartir archivos entre múltiples servidores.
+Stoarge Gateway: es un servicio de almacenamiento en la nube híbrido que extiende tu almacenamiento on-premise a la nube. Hay tres opciones: File Gateway, extiende tu almacenamiento local a AWS S3; Volume Gateway, cachea tus unidades locales a S3 para que puedas tener backup de archivos locales en la nube; Tape Gateway, guarda archivos en cintas virtuales para hacer back up de tus archivos a un buen costo en el largo plazo.
+AWS snow family: son dispositivos usados para migrar físicamente grandes cantidades de datos a la nube.	 

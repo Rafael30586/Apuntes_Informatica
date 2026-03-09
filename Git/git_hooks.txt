@@ -1,7 +1,10 @@
 https://www.atlassian.com/es/git/tutorials/git-hooks
 
-Los git hooks nos permiten ejecutar scripts personalizados en respuesta a eventos de git como merging, commiting y pushing. Estos hooks están en el subdirectorio hooks dentro de .git. Estos hooks están como archivos con la extensión "sample", lo que significa que no son utilizables. Para que sean utilizables hay que quitarle la extensión sample y usar chmod +x con git bash para darle el permiso de poder ser ejecutado. Luego hay que abrir el archivo con un editor de texto y llenarlo con el script que uno quiera. Un ejemplo de hook es pre-commit que ejecuta es script justo antes de hacer un commit.
-Cuando trabajamos con hooks se trabaja como en Linux, se les puede colocar un shebang a los archivos para que se ejecuten con el lenguaje que queramos.
+Los git hooks nos permiten ejecutar scripts personalizados en respuesta a eventos de git como merging, commiting y pushing. Estos hooks están en el subdirectorio hooks dentro de .git. Estos hooks están como archivos con la extensión "sample", lo que significa que no son utilizables. Para que sean utilizables hay que quitarle la extensión sample y usar chmod +x con git bash para darle el permiso de poder ser ejecutado. Luego hay que abrir el archivo con un editor de texto y llenarlo con el script que uno quiera. Un ejemplo de hook es pre-commit que ejecuta el script justo antes de hacer un commit.
+Cuando trabajamos con hooks se trabaja como en Linux, se les puede colocar un shebang a los archivos para que se ejecuten con el lenguaje que queramos. Los lenguajes que se suelen utilizar son bash, Python o Shell. Para que un hook se ejecute su valor de salida deb ser igual a cero. Para que falle, el valor de salida debe ser 1.
+
+Alcance de los hooks
+Los hooks son locales para todo repositorio de git, y no se copian al nuevo repositorio cuando hacés git clone.
 
 Algunos hooks locales son:
 * pre-commit
@@ -12,8 +15,14 @@ Algunos hooks locales son:
 
 pre-commit: se ejecuta cada vez que ejecutamos un commit antes de que se genere un objeto de confirmación. No se le pasa ningún argumento
 
-prepare-coomit-msg: se llama después del hook pre-commit para rellenar el editor de texto con un mensaje de confirmación. Sirve para modificar los mensajes de confirmación generados automáticamente para las confirmaciones combinadas o fusionadas. Se le pasan de uno a tres argumentos al script:
+prepare-commit-msg: se llama después del hook pre-commit para rellenar el editor de texto con un mensaje de confirmación. Sirve para modificar los mensajes de confirmación generados automáticamente para las confirmaciones combinadas o fusionadas. Se le pasan de uno a tres argumentos al script:
 1. El nombre de un archivo temporal que contiene el mensaje. Cambiás el mensaje de confirmación modificando este archivo in situ.
 2. El tipo de confirmación. Puede ser message (opción -m o -F), template (opción -t), merge (si la confirmación es de fusión) o squash (si la confirmación se combina con otras combinaciones)
 3. El hash SHA1 de la confirmación relevante. Solo se da si se dio la opción -c , -C o --amend
 
+commi-msg: es bastante parecido al anterior, pero es llamado después de que el usuario ingresa un mensaje de commit. Este es un lugar apropiado para avistar a los desarrolladores que su mensaje no adhiere a los estándares del equipo. 
+El único argumento pasado a este hook es el nombre del archivo que contiene el mensaje. Si no le gusta el mensaje que el usuario ingresó, puede alterar este archivo o puede abortar el commit completamente terminando con un status que no sea cero.
+
+pre-applypatch: Comprueba el estado del árbol de trabajo antes de confirmar los cambios. Se llama después de aplicar una nueva versión, pero antes de confirmar los cambios.
+
+post-commit: puede que no esté creado en el repositorio entonces debemos crearlo nosotros. Ejecutará un script después de realizar un commit.
