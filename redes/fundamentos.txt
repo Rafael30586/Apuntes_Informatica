@@ -76,3 +76,14 @@ Identificación de problemas en una red
 1. La red (dirección IP lógica)
 2. El anfitrión (dirección MAC)
 3. El proceso: con el número de puerto
+
+Tipos de comunicación
+* Unicast: una trama es enviada desde una única interfaz de salida a una única interfaz destino, es una transmisión uno a uno. 
+Es el de mayor uso en internet, a pesar de que gestionar las conexiones con este método tiene un gran impacto negativo en el ancho de banda y en los recursos del equipo.
+Aunque distintos usuarios soliciten la misma información de un servidor este solo responderá uno a uno. Un ejemplo claro de este tipo de transmisión sería el video bajo demanda.
+* Broadcast: difunde la información de forma simultánea a todos los nodos de la red. Es el método de comunicación más generalizado y el más intensivo ya que requiere de una gran cantidad de mensajes, dependiendo del número de anfitriones en la red.
+Las transmisiones broadcast pueden ser usadas de forma abusiva para crear ataques del tipo Denegación de servicio. La IP de destino es 255.255.255.255 para broadcast limitado (esta dirección IP nunca podría pertenecer a la IP del emisor). 	
+* Multicast: Este método de transmisión se caracteriza por ser el que envía de una interfaz de salida un grupo de interfaces de destino simultáneamente, es similar al broadcast solo que en multicast se envía a un grupo específico y el broadcast envía a todos los nodos de la red. Gracias a este método de transmisión se ahorra una gran cantidad de ancho de banda al dirigir la información sólo al grupo seleccionado y la mayor parte de los datos son enviados en una sola transmisión.
+Este método es más eficiente que unicast ya que no es necesario copiar y enviar los datos a cada usuario de la red. La información es enviada a un nodo central el cual se ocupa de hacer el envío a todos los nodos prestablecidos para dicha transmisión.	 	 	
+
+En todos estos tipos de comunicación los envíos de datos pueden ocurrir entre nodos de una misma red entre diferentes redes, por ejemplo: se puede dar el caso de que una computadora de una red envíe información a todos los nodos de otra red (broadcast). Si una computadora envía información a todos los nodos de la red en la que se encuentra se llama broadcast limitado; si todas las computadoras que reciben la información son de otra red, es broadcast directo.
