@@ -1,0 +1,8 @@
+La gestión de procesos es una función muy importante en un sistema operativo. Se encarga de la creación, programación y coordinación de procesos para asegurar una utilización eficiente del CPU y un rendimiento fluido del sistema.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260227113344202746/tasks_of_process_managementjjh.jpg
+
+Procesos ligados al CPU vs procesos ligados a I/O
+Un proceso ligado al CPU requiere más tiempo de CPU o gasta más tiempo en el estado de ejecución. Un proceso ligado a I/O requiere más tiempo de I/O y menos tiempo de CPU. Un proceso ligado a I/O está más tiempo en el estado de espera.
+* El CPU es mucho más rápido que los dispositivos I/O, por lo que si un proceso comienza haciendo I/O, el CPU no debería estar inactivo y debería ser asignado a algún otro proceso si hay otros procesos en espera.
+* El objetivo de la programación de procesos es maximizar la utilización del CPU asignándole un proceso si el proceso actual está haciendo I/O.
