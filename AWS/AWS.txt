@@ -614,3 +614,14 @@ AWS ofrece un rango de clases de almacenamiento S3 que intercambia tiempo de rec
 * S3 standard-IA (Infrequent access): es bastante rápido pero es más barato si accedés a tus archivos menos de una vez al mes. Una tarifa adicional de recuperación es aplicada. Tiene disponibilidad reducida.
 * S3 One-Zone-IA: bastante rápido. Los objetos solo existen en una zona de disponibiñidad. Las disponibilidad es de 99.5%. Es 20% más barato que standard-IA
 * S3 Glacier: para un almacenamiento frío de largo plazo. La recuperación de datos puede tomar entre minutos y horas pero es muy barato.
+* S3 Glacier Deep Archive: es el de menor costo. La recuperación de datos lleva 12 horas.
+
+------------
+AWS snow family
+Son dispositivos de almacenamiento y computación para mover físicamente datos hacia la nube o desde la nube cuando el movimiento de datos por internet o por conexiones privadas es lento, costoso o difícil.
+Los dispositivos son: Snowcone, Snowball Edge y Sonwmobile
+* Snowcone: viene en dos tamaños: HDD de 8TB y SSD de 14TB
+* Snowball Edge: viene generalmente en dos tipos: almacenamiento optimizado (80TB) y computación optimizada (39.5 TB)
+* Sonwmobile: 100PB de almacenamiento
+
+Los datos son enviados a Amazon S3  	
