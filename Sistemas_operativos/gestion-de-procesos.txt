@@ -6,3 +6,11 @@ Procesos ligados al CPU vs procesos ligados a I/O
 Un proceso ligado al CPU requiere más tiempo de CPU o gasta más tiempo en el estado de ejecución. Un proceso ligado a I/O requiere más tiempo de I/O y menos tiempo de CPU. Un proceso ligado a I/O está más tiempo en el estado de espera.
 * El CPU es mucho más rápido que los dispositivos I/O, por lo que si un proceso comienza haciendo I/O, el CPU no debería estar inactivo y debería ser asignado a algún otro proceso si hay otros procesos en espera.
 * El objetivo de la programación de procesos es maximizar la utilización del CPU asignándole un proceso si el proceso actual está haciendo I/O.
+
+Tareas de gestión de procesos
+La gestión de procesos es una parte clave en sistemas operativos con multiprogramación o multitareas.
+* Creación y terminación de procesos: La creación de un proceso involucra la creación de un ID de proceso y otras tareas. Un proceso puede ser terminado por el sistema operativo o por el proceso padre. La terminación de procesos involucra limpiar todos los recursos asignados a él.
+* Programación del CPU: en sistemas multiprogramados, múltiples procesos necesitan del CPU. Es el trabajo del sistema operativo la ejecución eficiente y fluida de múltiples procesos.
+* Manejo punto puerto o deadlock handling: es asegurar que el sistema no alcance un estado donde dos o más procesos no pueden continuar debido a una dependencia cíclica entre ellos.
+* Comunicación entre procesos: el sistema operativo provee facilidades tales como memoria compartida y pasaje de mensajes para que los procesos puedan comunicarse.
+* Sincronización de procesos: es la coordinación de ejecución de múltiples procesos en un sistema multiprogramado para asegurar de que accedan a recursos compartidos (como memoria) en un comportamiento controlado y predecible.

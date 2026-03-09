@@ -1,2 +1,2 @@
 sistema de anillos en CPUs, ring 0 y ring 3 principalmente
-kernel mode vs user mode ¿es diferente a kernelspace y userspace?
+partner proccess o proceso padre
