@@ -1,7 +1,6 @@
 git fork
 issues en GitHub
 git rebase
-git merge --squash
 git hooks
 git bisect
 practicar con git cherry-pick

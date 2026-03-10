@@ -1,0 +1,25 @@
+https://www.geeksforgeeks.org/operating-systems/process-in-operating-system/
+
+Un proceso es un programa en ejecución. Por ejemplo, cuando creamos un programa en C o C++ y lo compilamos, el compilador crea código binario. El código original y el código binario son ambos programas. Cuando ejecutamos el código binario, se vuelve un proceso:
+* Un proceso es una entidad activa en lugar de un programa, el cual es considerado un entidad pasiva.
+* Un solo programa puede crear muchos procesos cuando se ejecuta múltiples veces; por ejemplo, cuando abrimos un archivo .exe múltiples veces, múltiples instancias comienzan (múltiples procesos son creados).
+
+¿Cómo se ve un proceso en la memoria?
+Un proceso en la memoria se divide en distintas secciones, cuando una sirviendo un propósito diferente.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250726131340970559/Process_look.png
+
+* Sección de texto (Text section): contiene instrucciones ejecutables. Es típicamente una sección de solo lectura
+* Stack: contiene datos temporales, como parámetros de funciones, direcciones de retorno y variables locales.
+* Data section: Contiene variables globales.
+* Sección Heap: Memoria asignada dinámicamente al proceso durante su tiempo de ejecución.
+
+Atributos de un proceso
+Un proceso tiene varios atributos que le ayudan al sistema operativo gestionarlo y controlarlo. Estos atributos son almacenados en una estructura llamada Proccess Control Block (PCB) (a veces llamado task control block). El PCB mantiene toda la información clave sobre el proceso, incluyendo:
+* Process ID (PID): un número asignado a cada proceso para que el sistema operativo pueda identificarlo.
+* Estado del proceso: muestra el estado actual del proceso, como si está en ejecución, esperando o listo para ejecutarse.
+* Prioridad y otra información de la programación del CPU: son datos que ayudan al sistema operativo decidir que proceso debería ejecutar después, como niveles de prioridad y punteros a colas de programación.
+* Información I/O: información sobre dispositivos de entrada y salida que el proceso está usando.
+* Descriptores de archivos: información sobre archivos abiertos y conexiones de red.
+* Información de contabilidad: rastrea cuanto tiempo el proceso ha estado en ejecución, la cantidad de tiempo de CPU utilizada y otros datos de utilización de recursos.
+* Información de gestión de memoria: detalles sobre el espacio de memoria asignado al proceso, incluyendo cuando es cargado en memoria y la estructura de su disposición de memoria (stack, heap, etc).

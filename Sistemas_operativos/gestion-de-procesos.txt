@@ -14,3 +14,4 @@ La gestión de procesos es una parte clave en sistemas operativos con multiprogr
 * Manejo punto puerto o deadlock handling: es asegurar que el sistema no alcance un estado donde dos o más procesos no pueden continuar debido a una dependencia cíclica entre ellos.
 * Comunicación entre procesos: el sistema operativo provee facilidades tales como memoria compartida y pasaje de mensajes para que los procesos puedan comunicarse.
 * Sincronización de procesos: es la coordinación de ejecución de múltiples procesos en un sistema multiprogramado para asegurar de que accedan a recursos compartidos (como memoria) en un comportamiento controlado y predecible.
+
