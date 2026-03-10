@@ -628,9 +628,17 @@ Los datos son enviados a Amazon S3
 
 ------------
 Servicios de almacenamiento
-Simple Storage Service (S3): es un servicio de almacenamiento de objetos serverless. Podés subir archivos muy grandes y una cantidad ilimitada de archivos. No debés preocuparte por el sistema de archivos subyacente, o mejorar el tamaño del disco.
-S3 Glacier: es de muy bajo costo y está pensado para el largo plazo (back up). Utiliza HDDs para tener bajo costo. Es muy seguro y durable.
-Elastic Block Store (EBS): es un servicio de almacenamiento bloque persistente. Es un disco duro virtual que unís a instancias EC2. Podés elegir diferentes tipos de discos duros: SSD, IOPS SSD, HDD de rendimiento, HDD frío
-Elastic File Storage (EFS): es un servicio de sistema de archivos NFS cloud-native. Almacenamiento de archivos que podés montar en múltiples instancias EC2 al mismo tiempo. Cuando necesitás compartir archivos entre múltiples servidores.
-Stoarge Gateway: es un servicio de almacenamiento en la nube híbrido que extiende tu almacenamiento on-premise a la nube. Hay tres opciones: File Gateway, extiende tu almacenamiento local a AWS S3; Volume Gateway, cachea tus unidades locales a S3 para que puedas tener backup de archivos locales en la nube; Tape Gateway, guarda archivos en cintas virtuales para hacer back up de tus archivos a un buen costo en el largo plazo.
-AWS snow family: son dispositivos usados para migrar físicamente grandes cantidades de datos a la nube.	 
+* Simple Storage Service (S3): es un servicio de almacenamiento de objetos serverless. Podés subir archivos muy grandes y una cantidad ilimitada de archivos. No debés preocuparte por el sistema de archivos subyacente, o mejorar el tamaño del disco.
+* S3 Glacier: es de muy bajo costo y está pensado para el largo plazo (back up). Utiliza HDDs para tener bajo costo. Es muy seguro y durable.
+* Elastic Block Store (EBS): es un servicio de almacenamiento bloque persistente. Es un disco duro virtual que unís a instancias EC2. Podés elegir diferentes tipos de discos duros: SSD, IOPS SSD, HDD de rendimiento, HDD frío
+* Elastic File Storage (EFS): es un servicio de sistema de archivos NFS cloud-native. Almacenamiento de archivos que podés montar en múltiples instancias EC2 al mismo tiempo. Cuando necesitás compartir archivos entre múltiples servidores.
+* Stoarge Gateway: es un servicio de almacenamiento en la nube híbrido que extiende tu almacenamiento on-premise a la nube. Hay tres opciones: File Gateway, extiende tu almacenamiento local a AWS S3; Volume Gateway, cachea tus unidades locales a S3 para que puedas tener backup de archivos locales en la nube; Tape Gateway, guarda archivos en cintas virtuales para hacer back up de tus archivos a un buen costo en el largo plazo.
+* AWS snow family: son dispositivos usados para migrar físicamente grandes cantidades de datos a la nube. 
+ - Snowball y Snowball Edge son dispositivos de almacenamiento del tamaño de un maletín con una capacidad de 50 a 80 TB.
+ - Snowmobile es un contenedor lleno con estantes de almacenamiento y computación que es transportado vía un camión para transferir 100PB de datos por trailer.	 
+ - Snowcone es una versión muy pequeña de snowball que puede transferir 8 TB de datos.
+* AWS Backup es un servicio de backup completamente gestionado que hace que sea fácil centralizar y automatizar el backup de los datos a través de múltiples servicios de AWS, por ejemplo: EC2, EBS, RDS, DynamoDB, EFS, Storage Gateway. Podés crear planes de backup.
+* CloudEndure Disaster Recovery, continuamente replica tus máquinas en un área de staging de bajo costo en tu cuenta objetivo de AWS y región preferida, permitiendo una recuperación rápida y confiable en caso de fallas de datacenters.
+* Amazon FSx es un sistema de archivos de alto rendimiento que puede ser usado en Windows (SMB) o Linux (Lustre)
+ - Amazon FSx para Windows File Server usa el protocolo SMB y te permite montar FSx a servidores de Windows.
+ - Amazon FSx for Lustre usa el sistema de archivos de Linux Lustre y te  permite montar FSx a servidores Linux.
