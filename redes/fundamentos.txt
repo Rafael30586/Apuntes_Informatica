@@ -87,3 +87,11 @@ Las transmisiones broadcast pueden ser usadas de forma abusiva para crear ataque
 Este método es más eficiente que unicast ya que no es necesario copiar y enviar los datos a cada usuario de la red. La información es enviada a un nodo central el cual se ocupa de hacer el envío a todos los nodos prestablecidos para dicha transmisión.	 	 	
 
 En todos estos tipos de comunicación los envíos de datos pueden ocurrir entre nodos de una misma red entre diferentes redes, por ejemplo: se puede dar el caso de que una computadora de una red envíe información a todos los nodos de otra red (broadcast). Si una computadora envía información a todos los nodos de la red en la que se encuentra se llama broadcast limitado; si todas las computadoras que reciben la información son de otra red, es broadcast directo.
+
+Ejemplos de direcciones IP
+200.10.192.100 --> clase C
+7.10.230.1 --> clase A
+128.1.1.254 --> Clase B
+127.3.6.200 --> "self conection"
+255.255.255.255 --> dirección de boradcast limitado
+100.255.255.255 --> dirección de broadcast directo

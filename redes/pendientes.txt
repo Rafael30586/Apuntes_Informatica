@@ -1,3 +1,4 @@
 clases de direcciones IP, por ejemplo, clase A
-unicast, broadcast, multicast
 protocolo ARP
+network mask
+En direcciones IP hay algo llamado NID y HID, siendo network ID y host ID respectivamente
