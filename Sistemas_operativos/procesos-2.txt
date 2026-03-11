@@ -1,1 +1,24 @@
 https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html
+
+Un es una instancia de un programa en ejecución.
+
+Estados de un proceso
+* Nuevo: el proceso está en el estado de ser creado.
+* Listo: el proceso tiene todos los recursos disponibles que necesita para ejecutarse, pero el CPU no está trabajando actualmente en las instrucciones de este proceso.
+* En ejecución (running): el CPU está trabajando en las instrucciones de este proceso
+* Esperando: el proceso no puede ejecutarse en este momento, porque está esperando a aque algún recurso esté disponible o a que ocurra algún evento. Por ejemplo, el proceso podría estar esperando por input del teclado, solicitud de acceso a disco, mensajes inte-procesos o un proceso hijo por finalizar.
+* Terminado: el proceso se ha completado.
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_02_ProcessState.jpg
+
+Puede ser que algusnos sistemas tengan más estados de los que están en este apunte.
+
+Process Control Block
+Por cada proceso hay un process control block o PCB que almacena los siguientes tipos de información específica de los procesos:
+* Estado del proceso: puede estar en ejecución, en espera, etc.
+* ID del proceso e ID del proceso padre
+* CPU registers y program counter: estos necesitan ser guardados y restaurados durante el cambio de procesos dentro y fuera del CPU
+* Información de programación del CPU: como información de prioridad y punteros a colas de programación.
+* Información de gestión de memoria: page tables o segment tables.
+* Información de contabilidad: tiempo consumido de CPU por usuario y kernel.
+* Información de estado I/O: distopotivos asignados, tablas de archivos abiertos, etc.
