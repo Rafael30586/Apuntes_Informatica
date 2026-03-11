@@ -95,3 +95,6 @@ Ejemplos de direcciones IP
 127.3.6.200 --> "self conection"
 255.255.255.255 --> dirección de boradcast limitado
 100.255.255.255 --> dirección de broadcast directo
+
+Subnetting
+Es el proceso de dividir un red grande en varias subredes más pequeñas. Es útil porque el mantenimiento y la administración se vuelven más fáciles. También provee seguridad porque las redes están aisladas entre sí. Como desventaja, la identificación se vuelve un poco más compleja, ya que, para identificar un anfitrión de alguna red hay que seguir más pasos: identificar la red, luego la subred, después el anfitrión y por último, el puerto. Además, es más costoso porque hacen falta más dispositivos, como, por ejemplo, switches. Otra posible desventaja es que hace falta un administrador de redes experimentado. 
