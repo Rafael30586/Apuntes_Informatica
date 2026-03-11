@@ -652,3 +652,17 @@ Una base de datos es un almacenamiento de datos más complejo porque requiere el
 
 Las bases de datos pueden ser relacionales: datos estructurados que representan datos de manera tabular (tablas, filas y columnas)
 Bases de datos no relacionales: semi-estructuradas que pueden o no utilizar datos de manera tabular 
+
+----------
+¿Qué es un depósito de datos?
+Es un almacenamiento de datos diseñado para cargas de trabajo analíticas, que es generalmente orientado en columnas.
+Las compañías tendrán terabytes y millones de filas de datos, y necesitan una manera rápida de producir reportes analíticos.
+Los depósitos de datos generalmente llevan a cabo agregado (aggregation)
+El agregado es agrupar datos, por ejemplo, encontrar un total o un promedio.
+Los depósitos de datos están optimizados alrededor de columnas ya que necesitan rápidamente agregar datos de columnas
+
+Los depósitos de datos están diseñados para ser "calientes". Con calientes se refiere a que pueden retornar consultas muy rápido aunque tengan muchísimos datos.
+
+Los depósitos de datos son accedidos de manera poco frecuente, lo que significa que no están diseñados para reportes en tiempo real pero tal vez una o dos veces en un día o una vez a la semana para generar negocios y reportes de usuario.
+
+Un depósito de datos necesita consumir datos de bases de datos relacionales de forma regular. 
