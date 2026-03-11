@@ -2,6 +2,10 @@ git config --global user.name "<nombre>" --> configura el nombre de usuario de m
 
 git config --global user.email "<email>" --> configura el email de manera global.
 
+git config --global core.editor "code --wait" --> es para configurar el editor de texto como visual studio code
+
+git config --global -e --> muestra en el editor de texto que tengamos configurado, los datos de configuración global
+
 git config --list --> muestra información como nombre de usuario, email, etc.
 
 git config --list <opcion> --> muestra las configuraciones según la opción que elijamos. LAs opciones pueden ser --local, --global o --system
