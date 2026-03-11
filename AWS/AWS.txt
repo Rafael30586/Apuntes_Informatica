@@ -654,7 +654,7 @@ Las bases de datos pueden ser relacionales: datos estructurados que representan 
 Bases de datos no relacionales: semi-estructuradas que pueden o no utilizar datos de manera tabular 
 
 ----------
-¿Qué es un depósito de datos?
+¿Qué es un depósito de datos? (data warehouse)
 Es un almacenamiento de datos diseñado para cargas de trabajo analíticas, que es generalmente orientado en columnas.
 Las compañías tendrán terabytes y millones de filas de datos, y necesitan una manera rápida de producir reportes analíticos.
 Los depósitos de datos generalmente llevan a cabo agregado (aggregation)
@@ -666,3 +666,20 @@ Los depósitos de datos están diseñados para ser "calientes". Con calientes se
 Los depósitos de datos son accedidos de manera poco frecuente, lo que significa que no están diseñados para reportes en tiempo real pero tal vez una o dos veces en un día o una vez a la semana para generar negocios y reportes de usuario.
 
 Un depósito de datos necesita consumir datos de bases de datos relacionales de forma regular. 
+
+---------
+¿Qué es un almacenamiento clave valor? (key value store)
+Es un tipo de base de datos no relacional (NoSQL) que usa un método de clave y valor para almacenar datos. Debido a su diseño simple pueden escalar muy bien.
+
+--------
+¿Qué es una base de datos de documentos? (document database)
+Es una base de datos NoSQL que almacena documentos como su principal estructura de datos. Un documento podría ser un XML pero más comúnmente un JSON o algo similar. Los almacenamientos por documentos son subclases de almacenamiento clave/valor.
+Los componentes de un documento son comparables a una base de datos relacional: 
+
+SQL   |  Documento
+-------------------
+tablas   | Colección 
+filas    | Documentos
+columnas | Campos
+índices  | índices
+"joins"  | "embedding" o "linking"
