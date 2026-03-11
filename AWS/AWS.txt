@@ -683,3 +683,10 @@ filas    | Documentos
 columnas | Campos
 índices  | índices
 "joins"  | "embedding" o "linking"
+
+-------------
+Servicios de bases de datos NoSQL
+* DynamoDB: es una base de datos NoSQL de documentos y pares clave valor serverless. Está diseñada para escalar miles de millones de registros con un retorno de datos consistente garantizado en por lo menos un segundo. No tenés que preocuparte por gestionar fragmentos.
+DynamoDB es el buque insignia de los servicios de bases de datos de AWS lo que significa que siempre que pensamos en un servicio de base de datos que escale, tenga buen costo y muy rápido deberíamos pensar en DynamoDB
+* DocumentDB: es una base de datos NoSQL basada en documentos que es "compatible con MongoDB". Hubieron problemas de licencia open-source al usar MongoDB, por lo que AWS decidió crear su propia base de datos tipo MongoDB
+* Amazon Keyspaces: es una base de datos Apache Cassandra completamente gestionada. Cassandra es una base de datos open-source NoSQL de clave y valor similar a DynamoDB en que es en columnas pdero tiene funciones adicionales. 
