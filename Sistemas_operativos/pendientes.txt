@@ -1,2 +1,7 @@
 sistema de anillos en CPUs, ring 0 y ring 3 principalmente
-partner proccess o proceso padre
+partner proccess o proceso padre, child process
+page tables
+segment tables
+memoria virtual o virtual memory
+CPU-bound processes I/O bound processes
+

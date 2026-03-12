@@ -22,3 +22,22 @@ Por cada proceso hay un process control block o PCB que almacena los siguientes 
 * Información de gestión de memoria: page tables o segment tables.
 * Información de contabilidad: tiempo consumido de CPU por usuario y kernel.
 * Información de estado I/O: distopotivos asignados, tablas de archivos abiertos, etc.
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_04_ProcessSwitch.jpg
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_05_LinuxProcesses.jpg
+
+------------
+Programación de procesos (process scheduling)
+* Los dos principales objetivos del sistema de programación de procesos es mantener al CPU ocupado todo el tiempo para ofrecer tiempos de respuesta aceptables para todos los programas, particularmente para los interactivos.
+* El programador de procesos debe cumplir con estos objetivos al implementar políticas convenientes para cambiar entre procesos de adentro y afuera del CPU.
+* Tener en cuenta que estos objetivos pueden conflictuar. En particular, cada vez que el sistema cambia entre procesos le "roba" tiempo al CPU, el cual se pierde de hacer algún trabajo productivo.
+
+Colas de programación (scheduling queues)
+* Todos los procesos son almacenados en la cola de trabajos (job queue).
+* Los procesos en el estado "listo" son colocados en la cola lista (ready queue).
+* Los procesos en espera para que un dispositivo esté disponible o para enviar datos son colocados en colas de dispositivos (device queues). Generalmente hay una cola de dispositivo separada para cada dispositivo.
+* Otras colas podrán también ser creadas y usadas según la necesidad. 
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_05_Queues.jpg 
+
