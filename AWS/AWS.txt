@@ -689,4 +689,12 @@ Servicios de bases de datos NoSQL
 * DynamoDB: es una base de datos NoSQL de documentos y pares clave valor serverless. Está diseñada para escalar miles de millones de registros con un retorno de datos consistente garantizado en por lo menos un segundo. No tenés que preocuparte por gestionar fragmentos.
 DynamoDB es el buque insignia de los servicios de bases de datos de AWS lo que significa que siempre que pensamos en un servicio de base de datos que escale, tenga buen costo y muy rápido deberíamos pensar en DynamoDB
 * DocumentDB: es una base de datos NoSQL basada en documentos que es "compatible con MongoDB". Hubieron problemas de licencia open-source al usar MongoDB, por lo que AWS decidió crear su propia base de datos tipo MongoDB
-* Amazon Keyspaces: es una base de datos Apache Cassandra completamente gestionada. Cassandra es una base de datos open-source NoSQL de clave y valor similar a DynamoDB en que es en columnas pdero tiene funciones adicionales. 
+* Amazon Keyspaces: es una base de datos Apache Cassandra completamente gestionada. Cassandra es una base de datos open-source NoSQL de clave y valor similar a DynamoDB en que es en columnas pdero tiene funciones adicionales.
+
+--------------
+Servicios de bases de datos relacionales
+* Relational Database Service (RDS): es un servicio de bases de datos relacional que soporta múltiples motores SQL. Relacional es sinínimo de SQL y procesamiento transaccional en línea (OLTP)
+RDS soporta los siguientes motores de bases de datos: MySQL, MariaDB, Postgres, Oracle, Microsoft SQL server, Aurora.
+* Aurora: es una base de datos completamente gestionada de MySQL (5 veces más rápida) y PSQL (3 veces más rápida). Es para cuando querés una base de datos relacional disponible, durable, escalable y segura para Postgres o MySQL.
+* Aurora Serverless: es la versión serverless on-demand de Aurora. Es para cuando querés la mayor parte de los beneficios de Aurora pero podés ceder "cold-starts" o no tenés mucha demanda de tráfico
+* RDS on VMware: te permite desplegar motores soporados por RDS a un datacenter om-premise. El datacenter debe usar VMware para virtualización del servidor. Es para cuando querés bases de datos gestionadas por RDS en tu propio datacenter.
