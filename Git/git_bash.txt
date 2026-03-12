@@ -8,9 +8,13 @@ git config --global -e --> muestra en el editor de texto que tengamos configurad
 
 git config --list --> muestra información como nombre de usuario, email, etc.
 
-git config --list <opcion> --> muestra las configuraciones según la opción que elijamos. LAs opciones pueden ser --local, --global o --system
+git config --list <opcion> --> muestra las configuraciones según la opción que elijamos. Las opciones pueden ser --local, --global o --system
 
 git config --get-regexp <secuencia> --> muestra configuraciones que contengan la secuencia de caracteres que queramos, por ejemplo: git config --get-regexp user , esto mostrará datos como user.name y user.email.
+
+git config --global core.autocrlf <opcion> --> si estamos en Windows debemos colocar true como opción, si estamos en linxu o macOS, debemos colocar input.
+
+git config --global -h --> nos muestra una ayuda de las opciones que tenemos a la hora de usar global.
 
 git init --> inicializa un repositorio de git en la carpeta en la que estamos. Se crea una carpeta oculta .git en el directorio.
 
