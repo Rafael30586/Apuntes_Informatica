@@ -698,3 +698,15 @@ RDS soporta los siguientes motores de bases de datos: MySQL, MariaDB, Postgres, 
 * Aurora: es una base de datos completamente gestionada de MySQL (5 veces más rápida) y PSQL (3 veces más rápida). Es para cuando querés una base de datos relacional disponible, durable, escalable y segura para Postgres o MySQL.
 * Aurora Serverless: es la versión serverless on-demand de Aurora. Es para cuando querés la mayor parte de los beneficios de Aurora pero podés ceder "cold-starts" o no tenés mucha demanda de tráfico
 * RDS on VMware: te permite desplegar motores soporados por RDS a un datacenter om-premise. El datacenter debe usar VMware para virtualización del servidor. Es para cuando querés bases de datos gestionadas por RDS en tu propio datacenter.
+
+------------
+Otros servicios de bases de datos
+* Redshift es un warehouse de datos de petabytes de tamaño. Los warehouse de datos pueden ser caras porque mantienen a los datos "calientes", lo que significa que puede ejecutar una consulta compleja y una gran cantidad de datos y recoger los datos de vuelta de manera muy rápida. Es para cuando generás reportes o analíticas de una gran cantidad de datos.
+* ElasticCache es una base de datos gestionada de las bases de datos en memoria y de cache open-source Redis o Memcached. Es para cuando querés mejorar el rendimiento de aplicación al añadir una capa de cache en frente del servidor web o la base de datos.
+* Neptune: es una base de datos gestionada de grafos. Los datos son representados como nodos interconectados. Es para cuando necesitás entender las conexiones entre datos, por ejemplo, mapear relaciones en redes sociales
+* Amazon Timestreams: se puede pensar como un dispositivo que envía un montón de datos que son sensibles al tiempo como dispositivos IoT. Es para cuando querés medir como las cosas cambian con el tiempo.
+* Amazon Quantum Ledger Database: es una base de datos que provee logs de transacciones variables transparentes, inmutables y criptográficos. Es para cuando necesitás registrar el historial de actividades financieras que son confiables.
+* Database Migration Service (DMS): es un servicio de migración de bases de datos. Podés migrar de: 
+ - bases de datos on-premise a AWS
+ - desde dos bases de datos diferentes o las mismas cuentas de AWS usando diferentes motores de SQL
+ - desde SQL a NoSQL
