@@ -11,3 +11,7 @@ ctrl + t --> abre una nueva pestaña en el navegador mientras lo estamos usando.
 ctrl + w --> cierra la pestaña actual.
 
 ctrl + <número> --> abre la pestaña que corresponda al número que indiquemos.
+
+alt + f4 --> cierra la ventana actual
+
+shift + click derecho --> abre un menú distinto al habitual
