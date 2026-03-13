@@ -730,4 +730,24 @@ Servicios de red empresariales/híbridos
 
 * AWS Virtual Private Network (VPN): una conexión segura entre on-prmise, oficinas remotas y empleados móviles.
 * DirectConnect: conexión dedicada de gigabits de un data center on-premise a AWS (conexión muy rápida)
-* PrivateLinks (VPC interface ebdpoints): mantiene el tráfico dentro de la red AWS y no atraviesa el internet para mantener el tráfico seguro.	
+* PrivateLinks (VPC interface ebdpoints): mantiene el tráfico dentro de la red AWS y no atraviesa el internet para mantener el tráfico seguro.
+
+------------
+Virtual private cloud (VPC) y subredes
+
+Virtual Private Network (VPC): es una sección lógicamente aislada de la red de AWS a domde podés lanzar tus recursos de AWS. Elegís un rango de IPs usando rango CIDR
+
+Las subredes necesitan tener un rango más pequeño de CIDR que el VPC
+
+Subred pública: es una red que puede alcanzar internet
+
+Subred privada: es una red que no puede alcanzar internet
+
+---------
+Security groups vs NACLs
+
+NACLs (network Access control lists): funciona como un firewall virtual a nivel de subred. Podés crear reglas sobre lo que se permite y lo que se denega, por ejemplo: bloquear una dirección IP específica por abuso.
+
+Security groups: Funcionan como firewalls a nivel instancia. Deniega todo el tráfico de manera implícita. Solo creas reglas sobre lo que se permite, por ejemplos: permitir que una instancia EC2 acceda al puerto 22 para SSH; no podés bloquear ninguna dirección IP
+
+	   	
