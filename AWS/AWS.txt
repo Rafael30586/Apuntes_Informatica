@@ -710,3 +710,24 @@ Otros servicios de bases de datos
  - bases de datos on-premise a AWS
  - desde dos bases de datos diferentes o las mismas cuentas de AWS usando diferentes motores de SQL
  - desde SQL a NoSQL
+
+------------------------------------------------------------------------------------------------
+Redes (networking)
+------------------------------------------------------------------------------------------------
+Servicios de redes cloud-native
+
+VPC: es una sección lógicamente aislada de la nube de AWS donde podés lanzar recursos de AWS.
+Internet Gateway: permite el acceso a internet
+Route tables: determinan donde el tráfico de red de tus subredes es direccionado
+Región: la ubicación geográfica de tu red
+AZ: el data center de tus recursos de AWS
+Subredes o subnets: una partición lógica de una red IP en múltiples segmentos de red más pequeños.
+NACLs: funcionan como firewalls al nivel de la subred
+Security groups: funcionan como firewall a nivel de instancia
+
+------------
+Servicios de red empresariales/híbridos
+
+* AWS Virtual Private Network (VPN): una conexión segura entre on-prmise, oficinas remotas y empleados móviles.
+* DirectConnect: conexión dedicada de gigabits de un data center on-premise a AWS (conexión muy rápida)
+* PrivateLinks (VPC interface ebdpoints): mantiene el tráfico dentro de la red AWS y no atraviesa el internet para mantener el tráfico seguro.	
