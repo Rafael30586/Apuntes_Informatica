@@ -41,3 +41,14 @@ Colas de programación (scheduling queues)
 
 https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_05_Queues.jpg 
 
+Programadores (schedulers)
+* Un programador a largo plazo (long-term scheduler) es un típico sistema por lotes o un sistema muy cargado. Corre con poca frecuencia (como cuando un proceso termina seleccionando uno o más para ser cargados del disco en su lugar) y puede permitirse tomarse el tiempo de implementar algoritmos de programación (scheduling) inteligentes y avanzados.
+* Un programador a corto plazo (short-term scheduler), o CPU scheduler, corre con mucha frecuencia , en el orden de los 100 milisegundos, y deberá rápidamente sacar un proceso fuera del CPU y cambiarlo por otro.
+* Algunos sistemas también emplean programadores a mediano plazo (medium-term scheduler). Cuando las cargas de sistem están altas, este scheduler va a cambiar uno o más procesos fuera del sistema de "ready queue" por unos pocos segundos, para permitir que trabajos más rápidos y pequeños terminen rápidamente y limpien el sistema.
+* Un sistema de programaición eficiente va a selñeccionar una buena combinación de procesos CPU-bound y procesos I/O-bound
+
+________________________________________________
+Hacer resumen en archivo proccess-schedulers.txt
+___________________________________________________________
+Hacer resument en archivo cpu-bound-io-boound-processes.txt
+___________________________________________________________
