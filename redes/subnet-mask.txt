@@ -1,0 +1,8 @@
+https://www.ipxo.com/blog/what-is-subnet-mask/
+
+Una máscara de subred es un número que distingue la dirección de la red y la dirección del anfitrión en una dirección IP. Una subred es una red más pequeña dentro de una red que requiere una máscara de subred.
+El subnetting es el proceso de dividir una red en dos o más subredes. Su función principal es la de hacer que el enrutamiento sea más eficiente y seguro. El subnetting también ayuda a hacer un mejor uso de direcciones IPv4.
+
+_____________________________________________
+Continuar resumiendo lo que está en el enlace
+_____________________________________________

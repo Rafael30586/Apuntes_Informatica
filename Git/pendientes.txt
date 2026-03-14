@@ -3,3 +3,4 @@ issues en GitHub
 git hooks
 git bisect
 practicar con git cherry-pick
+practicar el averiguar la base de una rama con la respuesta que me dio chat GPT en uno de los chats de git
