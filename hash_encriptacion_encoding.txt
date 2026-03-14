@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/computer-networks/difference-between-hashing-and-encryption/
+
 Encriptación, hashing y encondig son tres métodos diferentes de transformar datos, cada uno sirviendo a un propósito diferente. Mientras la encriptación protege la confidencialidad, el hashing asegura integridad y el encoding se centra en representación segura de datos.
 
 ¿Qué es la encriptación?

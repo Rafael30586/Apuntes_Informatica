@@ -1,0 +1,10 @@
+* Hash SHA-1: 
+SHA-1 o secura hash algorithm 1 es un algoritmo criptográfico que toma una entrada de datos y produce un valor hash de 160 bits (20 bytes). Esta valor hash es conocido como "message digest". Este message digest es usualmente traducido como un número hexadecimal de 40 dígitos de largo. Es un estándar de procesamiento de información federal de Estados Unidos y fue diseñado por la agencia de seguridad nacional de los Estados Unidos. SHA-1 es considerado inseguro desde 2005. Vario0s navegadores importantes como Microsoft, Google, Apple y Mozilla han dejado de aceptar certificados SHA-1 SSL desde 2017.
+
+Aplicaciones de SHA-1:
+- Criptografía: La principal aplicación de SHA-1 es proteger las comunicaciones de ser interceptadas por grupos de externos.
+- Integridad de datos: en muchas industrias, como en finanzas, salud y gobierno, la integridad de los datos es una gran preocupación.
+- Firmas digitales: las firmas digitales se usan para confirmar la legitimidad de documentos digitales y mensajes.
+- Área forense digital: en el área forense digital, un hash de un archivo que contenga evidencia digital puede ser producido usando el algoritmo SHA-1.
+- Almacenamiento de contraseñas: SHA-1 puede ser usado para almacenar contraseñas. Un hash de la contraseña es generada usando SHA-1 cuando un usuario crea una contraseña. La contraseña es substituida en la base de datos por el valor hash. La contraseña del usuario es hasheada con SHA-1 cuando intentan ingresar y el hash resultante es comparado con el previamente generado.
+- Actualizaciones de software: la integridad de las actualizaciones de software puede ser garantizada usando  SHA-1.  
