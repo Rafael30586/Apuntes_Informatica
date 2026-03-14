@@ -1,0 +1,30 @@
+¿Qué es un plugin?
+Un plugin es un componente de software que añade funcionalidades específicas a un programa o nevegador existente. Los plugins están diseñados para ampliar las capacidades de la aplicación principal sin modificar su código base. Pueden ser útiles para agregar funciones, mejorar el rendimiento, reforzar la seguridad o integrar servicios de terceros.
+
+¿Cómo funcionan los plug ins?
+Los plugins se conectan con la aplicación principal mediante interfaces definidas. Esta última ofrece API o ganchos que los plugins usan para interactuar con ella. Al instalar un plugin, puede añadir menues, botones u opciones a la interfaz de la aplicación. Cuando utilizás estos elementos, el código del plugin se ejecuta y realiza su función específica.
+
+¿Por qué son importantes los plugins?
+Los plugins permiten personalizar tu experiencia y adaptar aplicaciones a tus necesidades. Sin ellos, estarías limitado a las funciones predeterminadas de la aplicación. Además, los plugins fomentan la innovación al permitir a los desarrolladores crear nuevas herramientas que se integran perfectamente con el software existente.
+
+¿Qué tipos de plug ins existen?
+* Extensiones del navegador como bloqueadores de anuncios
+* Reproductores multimedia como Adobe Flash Player 
+* Plugins para herramientas de edición como los de Photoshop
+* Módulos de CMS (plugins de wordpress)
+* Modificaciones para video juegos
+
+¿Son seguros los plugins? 
+No siempre. Algunos plugins pueden tener fallos o ser maliciosos. Por esos es esencial descargarlos únicamente de fuentes de confianza como tiendas oficiales o sitios con buena reputación.
+
+Problemas comunes con los plugins
+* Compatibilidad: Un plugin puede no ser compatible con nuevas versiones de la aplicación principal;
+* Conflictos: Pueden surgir problemas entre varios plugins instalados;
+* Seguridad: Algunos plugins tiene vulnerabilidades que los hackers pueden explotar;
+* Rendimiento: demasiados plugins pueden ralentizar el sistema.
+
+¿Hay riesgos al usar demasiados plugins?
+Sí:
+* Rendimiento disminuido: cada plugin adicional consume recursos;
+* Mayor riesgo de seguridad: más plugins significan más puntos vulnerables;
+* Gestión complicada: administrar muchos plugins puede ser tedioso.			 
