@@ -1,0 +1,23 @@
+Encriptación, hashing y encondig son tres métodos diferentes de transformar datos, cada uno sirviendo a un propósito diferente. Mientras la encriptación protege la confidencialidad, el hashing asegura integridad y el encoding se centra en representación segura de datos.
+
+¿Qué es la encriptación?
+Es el procesos de convertir texto plano legible en texto cifrado ilegible, que puede ser revertido solamente con la clave correcta. Se usa para proteger datos sensibles durante almacenamiento o transmisión.
+* Reversible con una clave
+* Protege confidencialidad
+* Usado en comunicación segura y protección de datos
+* Los algoritmos incluyen AES, RSA y blowfish
+
+¿Qué es el hashing?
+El hashing convierte datos en una valor de longitud fija e irreversible llamado hash. Se usa para revisiones de integridad y almacenamiento de contraseñas.
+* Transformación en una dirección
+* Asegura integridad (detecta cambios)
+* Salida de longitud fija sin importar el tamaño de la entrada
+* Los algoritmos incluyen SHA-256, MD5
+
+¿Qué es el encoding?
+Transforma datos en un formato diferente para transmisión segura (safe) o almacenamiento. No es un mecanismo de seguridad (security) y es completamente reversible sin una clave.
+* Reversible sin una clave
+* Asegura compatibilidad de datos y formateo
+* Usado para transporte de datos, no seguridad (security)
+* Ejemplos incluyen Base64, URL encoding, ASCII
+
