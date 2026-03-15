@@ -1,10 +1,41 @@
-* Hash SHA-1: 
+Hash SHA-1: 
 SHA-1 o secura hash algorithm 1 es un algoritmo criptográfico que toma una entrada de datos y produce un valor hash de 160 bits (20 bytes). Esta valor hash es conocido como "message digest". Este message digest es usualmente traducido como un número hexadecimal de 40 dígitos de largo. Es un estándar de procesamiento de información federal de Estados Unidos y fue diseñado por la agencia de seguridad nacional de los Estados Unidos. SHA-1 es considerado inseguro desde 2005. Vario0s navegadores importantes como Microsoft, Google, Apple y Mozilla han dejado de aceptar certificados SHA-1 SSL desde 2017.
 
 Aplicaciones de SHA-1:
-- Criptografía: La principal aplicación de SHA-1 es proteger las comunicaciones de ser interceptadas por grupos de externos.
-- Integridad de datos: en muchas industrias, como en finanzas, salud y gobierno, la integridad de los datos es una gran preocupación.
-- Firmas digitales: las firmas digitales se usan para confirmar la legitimidad de documentos digitales y mensajes.
-- Área forense digital: en el área forense digital, un hash de un archivo que contenga evidencia digital puede ser producido usando el algoritmo SHA-1.
-- Almacenamiento de contraseñas: SHA-1 puede ser usado para almacenar contraseñas. Un hash de la contraseña es generada usando SHA-1 cuando un usuario crea una contraseña. La contraseña es substituida en la base de datos por el valor hash. La contraseña del usuario es hasheada con SHA-1 cuando intentan ingresar y el hash resultante es comparado con el previamente generado.
-- Actualizaciones de software: la integridad de las actualizaciones de software puede ser garantizada usando  SHA-1.  
+* Criptografía: La principal aplicación de SHA-1 es proteger las comunicaciones de ser interceptadas por grupos de externos.
+* Integridad de datos: en muchas industrias, como en finanzas, salud y gobierno, la integridad de los datos es una gran preocupación.
+* Firmas digitales: las firmas digitales se usan para confirmar la legitimidad de documentos digitales y mensajes.
+* Área forense digital: en el área forense digital, un hash de un archivo que contenga evidencia digital puede ser producido usando el algoritmo SHA-1.
+* Almacenamiento de contraseñas: SHA-1 puede ser usado para almacenar contraseñas. Un hash de la contraseña es generada usando SHA-1 cuando un usuario crea una contraseña. La contraseña es substituida en la base de datos por el valor hash. La contraseña del usuario es hasheada con SHA-1 cuando intentan ingresar y el hash resultante es comparado con el previamente generado.
+* Actualizaciones de software: la integridad de las actualizaciones de software puede ser garantizada usando  SHA-1.
+
+----------------------
+Hash SHA-256:
+El algoritmo SHA-256 (secure hash algorithm 256) es una función criptográfica que transforma cualquier tipo de información en un código único de 256 bits. Esto se representa en una cadena de 64 caracteres en formato hexadecimal. Es una de las funciones más seguras y ampliamente utilizadas hoy en día, especialmente en blockchain, seguridad informática y validación de datos.
+
+¿Cómo funciona?
+SHA-256 toma un mensaje de cualquier longitud y lo procesa dividiéndolo en bloques de 512 bits. Luego aplica una serie de operaciones matemáticas, lógicas y bitwise (rotaciones, desplazamientos, sumas modulares y más) para transformar estos bloques en una salida final de 256 bits.
+Esta transformación es determinista: los mismos datos siempre generan el mismo hash, pero un pequeño cambio en la entrada producirá un resultado completamente distinto. Esta propiedad se llama efecto avalancha.
+
+Características clave
+* Determinismo: siempre produce el mismo hash para el mismo datos
+* Irreversibilidad: es matemáticamente imposible recuperar la entrada original desde el hash.
+* Colisiones improbables: dos entradas distintas no deben generar el mismo hash
+* Rapidez: puede ejecutarse rápidamente, incluso sobre grandes volúmenes de datos.
+
+Aplicaciones prácticas
+1. Blockchain y criptomonedas: cada bloque en la blockchain contiene un hash que representa su contenido. Si cualquier parte del bloque se modifica, el hash cambia, haciendo evidente la manipulación.
+2. Firma digital y certificados: al crear una firma digital, se genera un hash del documento original. Este hash se firma con una clave privada. El receptor puede verificar la firma generando el hash del documento y comparándolo con el original.
+3. Verificación de integridad: al descargar software o archivos importantes, muchas páginas ofrecen el hash SHA-256 para verificar que el contenido no fue alterado durante la descarga.
+4. Almacenamiento seguro de contraseñas: aunque SHA-256 no está diseñado específicamente para hashes de contraseñas (donde se prefiere bcrypt o Argon2), en sistemas heredados puede encontrarse como método de hash simple.
+
+SHA-256 vs otros algoritmos
+A diferencia de SHA-1, que fue comprometido por ataques de colisión, SHA-256 sigue considerándose seguro y confiable.
+
+Hola mundo con SHA-256:
+64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477245fbcf8e5b2c5be3
+
+Hola Mundo con SHA-256 (con M mayúscula)
+fcea920f7412b5da7be0cf42b8c93759d112e33d
+
+El hash cambia completamente, por lo que cualquier modificación, por mínima que sea, es detectada.	
