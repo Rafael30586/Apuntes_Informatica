@@ -6,3 +6,15 @@ Entender estructuras de datos aumentará tus habilidades de resolución de probl
 * Eficiencia: Al usar las estructuras de datos apropiadas, podés mejorar drásticamente la eficiencia de tu código.
 * Habilidades de resolución de problemas: Una vez domines estructuras de datos, resolverás problemas complejos más fácilmente. 
 * Avance de carrera: un profundo entendimiento de las estructuras de datos puede hacerte mejor en tu carrera.
+
+Tipos de estructuras de datos
+Existen las estructuras de datos primitivas y las no primitivas. Las no primitivas se dividen en lineales y no lineales.
+* Primitivas: Integer, float, character, boolean
+* No primitivas:
+  - Lineales:
+    # Acceso directo: Arrays, matrices
+    # Acceso secuencial: Lista enlazada, pila (stack), cola (queue)
+  - No lineales:
+    # Jerárquicas: árboles (trees), heaps, trie
+    # Desordenadas: grafos, conjuntos (sets), tablas hash (hash tables)
+     
