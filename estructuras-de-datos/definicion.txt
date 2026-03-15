@@ -1,0 +1,2 @@
+Las estructuras de datos son los bloques de construcción de la programación. Sin ellas no podríamos estructurar, almacenar o manejar datos eficientemente.
+En términos simples, una estructura de datos es una manera de almacenar datos para que puedan ser usados de manera eficiente.
