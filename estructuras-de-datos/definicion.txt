@@ -1,2 +1,8 @@
 Las estructuras de datos son los bloques de construcción de la programación. Sin ellas no podríamos estructurar, almacenar o manejar datos eficientemente.
 En términos simples, una estructura de datos es una manera de almacenar datos para que puedan ser usados de manera eficiente.
+
+¿Por qué estudiar estructuras de datos?
+Entender estructuras de datos aumentará tus habilidades de resolución de problemas y mejorará tu habilidad para pensar al programar.
+* Eficiencia: Al usar las estructuras de datos apropiadas, podés mejorar drásticamente la eficiencia de tu código.
+* Habilidades de resolución de problemas: Una vez domines estructuras de datos, resolverás problemas complejos más fácilmente. 
+* Avance de carrera: un profundo entendimiento de las estructuras de datos puede hacerte mejor en tu carrera.
