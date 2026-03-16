@@ -1,1 +1,18 @@
 https://www.geeksforgeeks.org/operating-systems/process-schedulers-in-operating-system/
+
+Programadores de procesos en sistemas operativos
+
+Process scheduling es la actividad del gestor de procesos que maneja la remoción de los procesos en ejecución del CPU y la selección de otro proceso basado en una estrategia particular. A través de su tiempo de vida, un proceso se mueve entre varias colas de programación (scheduling queues), como la ready queue, la waiting queue o la device queue.
+
+* La programación de procesos es importante em sistemas operativos con multiprogramación porque múltiples procesos podrían ser elegibles para estar en ejecución al mismo tiempo.
+* Una de las responsabilidades clave de un sistema operativo es decidir qué programas se ejecutarán en el CPU.
+* Los process schedulers son componentes fundamentales de los sistemas operativos responsables de decidir el orden en el que los procesos son ejecutados por el CPU. En términos simples, gestionan como el CPU asigna su tiempo entre múltiples tareas o procesos que están compitiendo por su atención.
+
+1. Long-term schedulers (job schedulers)
+Este scheduler es responsable de cargar procesos desde el disco a la memoria principal para que puedan ejecutarse.
+* Transfiere procesos de la job queue a la ready queue
+* Controla el grado de multiprogramación, el número de procesos presente en memoria o ready state en cualquier momento
+* Selecciona cuidadosamente una combinación balanceada de procesos I/O-bound y CPU-bound para asegurar el desempeño eficiente del sistema.
+* Ayuda a evadir situaciones en las cuales el CPU o los dispositivos I/O permanezcan inactivos
+* En muchos sistemas time-sharing modernos (como windows), un long-term scheduler podría no existir; nuevos procesos son admitidos directamente en memoria para programación a corto plazo.
+* Es el más lento de todos los schedulers, porque opera con menor frecuencia.
