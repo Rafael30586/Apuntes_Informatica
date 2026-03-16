@@ -750,4 +750,20 @@ NACLs (network Access control lists): funciona como un firewall virtual a nivel 
 
 Security groups: Funcionan como firewalls a nivel instancia. Deniega todo el tráfico de manera implícita. Solo creas reglas sobre lo que se permite, por ejemplos: permitir que una instancia EC2 acceda al puerto 22 para SSH; no podés bloquear ninguna dirección IP
 
+---------------------------------------------------------------------------------------------------
+EC2
+---------------------------------------------------------------------------------------------------
+Introducción a EC2
+
+Elastic Compute Cloud (EC2) es un servidor virtual altamente configurable
+EC2 es capacidad computacional redimensionable. Toma minutos lanzar nuevas instancias.
+Todo en AWS usa instancias EC2 por debajo.
+
+* Se puede elegir el sistema operativo via AMI (Amazon Mchine Image): Red Hat, Ubuntu, Windows, Amazon Linux, Suse
+* Elegir el tipo de instancia: t2.nano o C4.8xlarge (hay diferencias en las especificaciones técnicas)
+* Añadir almacenamiento (EBS, EFS) 
+  - Si se elige EBS hay que elegir entra las siguientes opciones: SSD, HDD, Virtual magnetic tape, Multiple volumes
+* Configrar la instancia: Security Groups, Key Pairs, UserData, IAM Roles, Placement Groups 
+
+
 	   	
