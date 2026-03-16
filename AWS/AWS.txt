@@ -763,7 +763,22 @@ Todo en AWS usa instancias EC2 por debajo.
 * Elegir el tipo de instancia: t2.nano o C4.8xlarge (hay diferencias en las especificaciones técnicas)
 * Añadir almacenamiento (EBS, EFS) 
   - Si se elige EBS hay que elegir entra las siguientes opciones: SSD, HDD, Virtual magnetic tape, Multiple volumes
-* Configrar la instancia: Security Groups, Key Pairs, UserData, IAM Roles, Placement Groups 
+* Configurar la instancia: Security Groups, Key Pairs, UserData, IAM Roles, Placement Groups 
 
+-------------
+Familias de instancias EC2
 
+Las familias de instancia son diferentes combinaciones de CPU, memoria, almacenamiento y capacidad de red.
+Las familias de instancias te permiten elegir la combinación apropiada de capacidad para satisfacer los requerimientos únicos de tu aplicación.	
+Diferentes familias de instancias son diferentes por las variaciones de hardware usadas para darles sus propiedades únicas.
+
+Tipos de familias de instancias
+* Propósito general: A1, T2, T3, T3a, T4g, M4, M5, M5a, M5n, M6zn, M6g, M6i, Mac. Tienen un buen balance de cómputo, memoria y recursos de red. Casos de uso: servidores web y repositorios de código.
+* Compute optimized: C5, C4, Cba, C5n, C6g, C6gn. Ideales para aplicaciones que necesitan alto rendimiento de procesador. Casos de uso: modelado científico, servidores de juegos dedicados
+* Memory optimized: R4, R5, R5a, R5b, X1, X1e, High memory, z1d. Alto rendimiento para cargas de trabajo que procesan grandes conjuntos de datos en memoria. Casos de uso: caches en memoria, bases de datos en memoria, big data analytics en tiempo real
+* Accelerated optimized: P2, P3, P4, G3, G4ad, G4dn, F1, inf1, VT1. Aceleradores de hardware o co-procesadores. Casos de uso: Machine learning, finanzas computacionales, análisis sísmico, speech recognition.
+* Storage optimized: I3, I3en, D2, D3, D3en, H1. Lectura secuencial y acceso de escritura a grandes conjuntos de datos en almacenamiento local. Casos de uso: NoSQL, bases de datos transaccionales o en memoria, data warehousing
+
+Un instance type es una combinación entre tamaño y familia.
 	   	
+	
