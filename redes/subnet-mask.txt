@@ -2,14 +2,25 @@ https://www.ipxo.com/blog/what-is-subnet-mask/
 
 Una máscara de subred es un número que distingue la dirección de la red y la dirección del anfitrión en una dirección IP. Una subred es una red más pequeña dentro de una red que requiere una máscara de subred.
 El subnetting es el proceso de dividir una red en dos o más subredes. Su función principal es la de hacer que el enrutamiento sea más eficiente y seguro. El subnetting también ayuda a hacer un mejor uso de direcciones IPv4.
-Cuando conectás un dispositivo a una red, la red le adigna una dirección IP al dispositivo. La dirección IP consiste en dos partes: la porción de red y la porción del anfitrión (host). La porción de red de la dirección IP identifica a la red mientras que la porción del anfitrión identifica al dispositivo.
+Cuando conectás un dispositivo a una red, la red le asigna una dirección IP al dispositivo. La dirección IP consiste en dos partes: la porción de red y la porción del anfitrión (host). La porción de red de la dirección IP identifica a la red mientras que la porción del anfitrión identifica al dispositivo.
 La dirección de red y la dirección del anfitrión contenidas en una IP son indistinguibles la una de la otra sin una máscara de sub red (subnet mask). La máscara de subred permite al tráfico de la red entender la dirección IP al partirlas en la dirección de red y la del anfitrión.
 
 ----------------
 Diferencia entre subred y máscara de subred
 * Subred: describe la parte específica de una red que comparte la IP de red pero que tiene una única dirección de subred
 * Máscara de subred: diferencia entre la porción de una dirección IP que se refiere a la subred y la porción que se refiere al anfitrión  
+---------------
+¿Por qué usar subredes?
 
+Implementar subredes y máscaras de subred beneficia a las organizaciones para mejorar la seguridad y optimizar el desempeño para cumplir con sus necesidades de negocio efectivamente
+
+* Enrutamiento más eficiente de datos
+El tráfico broadcast crea una gran ineficiencia en redes. Este tipo de tráfico involucra que los paquetes de datos atraviesen la red por cada nodo. Al dividir los dominios de broadcast, las subredes reducen el número de nodos con el cual el tráfico de broadcast interactúa y hace que el enrutamiento de paquetes de datos sea más directo y eficiente.
+Por ejemplo, imaginá un ISP proveyendo de servicios a clientes en una zona geográfica muy amplia. Al hacer subnetting, el ISP puede crear redes más pequeñas para usuarios en diferentes regiones.
+En este ejemplo las subredes son la clave,  ya que la máscara de subred es lo que asegura que el tráfico esté contenido dentro de su subred designada. Esto reduce la congestión en la red.
+El subnetting reduce efectivamente la distancia que los paquetes de datos tienen que recorrer en la red. Esto también ayuda a la red a enrutar datos de manera más eficiente. Todo esto incrementa la velocidad y el desempeño de la red.
+
+https://www.ipxo.com/app/uploads/2021/10/Subnetting-min.png 
 _____________________________________________
 Continuar resumiendo lo que está en el enlace
 _____________________________________________
