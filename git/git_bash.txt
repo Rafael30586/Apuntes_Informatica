@@ -141,3 +141,4 @@ git rebase <rama> --> https://git-scm.com/docs/git-rebase . En este enlace está
 
 git merge-base <rama1> <rama2> --> muestra a donde está la base de la rama2, siendo rama2 una ramificación de la rama1
 
+git mv <ruta_original> <ruta_destino> --> sirve para mover o renombrar un archivo
