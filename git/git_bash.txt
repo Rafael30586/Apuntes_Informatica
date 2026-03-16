@@ -137,5 +137,7 @@ git push origin --delete <rama> --> sirve para eliminar una rama del repositorio
 
 git fetch --> baja los cambios del repositorio remoto al local pero no lo fusiona con las ramas del repositorio local (como sì ocurre con git pull). Si queremos que además se fusionen con las ramas del repositorio local debemos hacer después de git fetch, por ejemplo, git merge origin/master (debemos estar posicionados en master), ya que origin/master tiene los cambios descargados del repositorio remoto y queremos combinarlos con nuestra rama master del repositorio local.
 
-git rebase <rama> --> https://git-scm.com/docs/git-rebase . En este enlace está exoplicado
+git rebase <rama> --> https://git-scm.com/docs/git-rebase . En este enlace está explicado
+
+git merge-base <rama1> <rama2> --> muestra a donde está la base de la rama2, siendo rama2 una ramificación de la rama1
 
