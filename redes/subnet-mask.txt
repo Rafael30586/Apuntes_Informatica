@@ -20,7 +20,12 @@ Por ejemplo, imaginá un ISP proveyendo de servicios a clientes en una zona geog
 En este ejemplo las subredes son la clave,  ya que la máscara de subred es lo que asegura que el tráfico esté contenido dentro de su subred designada. Esto reduce la congestión en la red.
 El subnetting reduce efectivamente la distancia que los paquetes de datos tienen que recorrer en la red. Esto también ayuda a la red a enrutar datos de manera más eficiente. Todo esto incrementa la velocidad y el desempeño de la red.
 
-https://www.ipxo.com/app/uploads/2021/10/Subnetting-min.png 
+https://www.ipxo.com/app/uploads/2021/10/Subnetting-min.png
+
+* Mejor seguridad (security) de red
+Si estás operando una red local grande, con muchos dispositivos conectados y un alto volumen de tráfico,  hay un número de ventajas en seguridad (security) de correr múltiples subredes en lugar de una grande.
+Si una red es comprometida por un ataque, solo ese segmento se verá afectado. Usando subredes, en lugar de que todos los dispositivos en la misma red sean visibles para los atacantes, solo tendrían acceso a otros dispositivos de la misma subred.
+Un jefe de redes que divide un red de área local en redes más pequeñas puede también controlar el flujo de tráfico a través de mapas de ruta, QoS o ACLs, lo cual ayuda a identificar amenazas más eficientemente. 
 _____________________________________________
 Continuar resumiendo lo que está en el enlace
 _____________________________________________
