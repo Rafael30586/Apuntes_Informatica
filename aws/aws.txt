@@ -820,3 +820,12 @@ Los anfitriones dedicados son instancias EC2 inquilinas diseñadas para dejarte 
   - "Targeted instance placement": Control adicional sobre colocación de instancia en el servidor físico
   - Colocación automático de instancia: sí
   - Añadir capacidad usando una solicitud de asignación: sí
+
+-------------
+Tenencia de EC2
+
+EC2 tiene tres niveles de tenencia
+
+* Anfitrión dedicado: tenés control sobre los atributos físicos de tu servidor (el servidor entero)
+* Instancia dedicada: tu servidor está en la misma máquina física que la de otros clientes
+* Por defecto: tu instancia vivirá en algún lugar del servidor y cuando hagas reboot va a estar en otro lugar
