@@ -781,4 +781,19 @@ Tipos de familias de instancias
 
 Un instance type es una combinación entre tamaño y familia.
 	   	
-	
+-------------------
+Tipos de instancias EC2
+
+Un tipo de instancia o instance type es un particular tamaño de instancia y familia de instancia
+
+Un patrón común de tamaños de instancia es el siguiente: nano, micro, small, medium, large, xlarge, 2xlarge, 4xlarge, 8xlarge. Ejemplo: t2.micro. Cabe aclarar que hay excepciones para este patrón de tamaños, por ejemplo: c6g.metal, es una máquina baremetal; C5.9xlarge
+
+Los tamaños de las instancias EC2 generalmente doblan en precio	y atributos clave
+Ejemplo:
+
+nombre    |  vCPU  |  RAM(GIB)  |  on-demand por hora  |  on-demand por mes
+
+t2.small     1         12               $0.023               $16.79
+t2.medium    2         24               $0.0464              $33.87
+t2.large     2         36               $0.0928              $67.74
+t2.xlarge    4	       54               $0.1856              $135.48
