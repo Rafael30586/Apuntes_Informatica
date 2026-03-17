@@ -4,4 +4,5 @@ page tables
 segment tables
 memoria virtual o virtual memory
 CPU-bound processes I/O bound processes
+despachador o dispatcher
 

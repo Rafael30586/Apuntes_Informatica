@@ -16,3 +16,12 @@ Este scheduler es responsable de cargar procesos desde el disco a la memoria pri
 * Ayuda a evadir situaciones en las cuales el CPU o los dispositivos I/O permanezcan inactivos
 * En muchos sistemas time-sharing modernos (como windows), un long-term scheduler podría no existir; nuevos procesos son admitidos directamente en memoria para programación a corto plazo.
 * Es el más lento de todos los schedulers, porque opera con menor frecuencia.
+
+2. Short-term schedulers (CPU schedulers)
+Este scheduler es responsable de seleccionar un proceso de la ready queue y asignarle el CPU
+* Con frecuencia selecciona el próximo proceso a ejecutar del ready state
+* Asegura de que ningún proceso sufra de hambre
+* Usa varios algoritmos de programación de CPU para decidir el orden de los procesos
+* Maximiza la utilización del CPU al mantenerlo lo más ocupado posible
+* Llama al despachador, que lleva a cabo el verdadero cambio de contexto (context switch)
+* Es el scheduler más rápido, ya que suele operar cada pocos milisegundos		
