@@ -1,0 +1,6 @@
+git fork
+issues en GitHub
+git hooks
+git bisect
+practicar con git cherry-pick
+git rebase --onto
