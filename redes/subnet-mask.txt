@@ -25,7 +25,10 @@ https://www.ipxo.com/app/uploads/2021/10/Subnetting-min.png
 * Mejor seguridad (security) de red
 Si estás operando una red local grande, con muchos dispositivos conectados y un alto volumen de tráfico,  hay un número de ventajas en seguridad (security) de correr múltiples subredes en lugar de una grande.
 Si una red es comprometida por un ataque, solo ese segmento se verá afectado. Usando subredes, en lugar de que todos los dispositivos en la misma red sean visibles para los atacantes, solo tendrían acceso a otros dispositivos de la misma subred.
-Un jefe de redes que divide un red de área local en redes más pequeñas puede también controlar el flujo de tráfico a través de mapas de ruta, QoS o ACLs, lo cual ayuda a identificar amenazas más eficientemente. 
+Un jefe de redes que divide un red de área local en redes más pequeñas puede también controlar el flujo de tráfico a través de mapas de ruta, QoS o ACLs, lo cual ayuda a identificar amenazas más eficientemente.
+
+* Aumenta la vida útil de IPv4
+En lugar de asignar una única dirección IP a cada dispositivo, el subnetting permite que múltiples direcciones IP privadas existan en una única red IP. Esto significa que cada dispositivo en una red IP tiene una dirección IP con una parte que refiere a la dirección IP de la red entera, y una parte de ella refiere a la subred. 
 _____________________________________________
 Continuar resumiendo lo que está en el enlace
 _____________________________________________
