@@ -797,3 +797,26 @@ t2.small     1         12               $0.023               $16.79
 t2.medium    2         24               $0.0464              $33.87
 t2.large     2         36               $0.0928              $67.74
 t2.xlarge    4	       54               $0.1856              $135.48
+
+------------------
+Anfitriones dedicados vs instancias dedicadas
+
+Los anfitriones dedicados son instancias EC2 inquilinas diseñadas para dejarte "Bring-Your-Own-Licence" (BYOL) basado en características de máquina
+
+* Instancia dedicada
+  - Aislamiento de instancia
+  - Facturación por instancia
+  - Visibilidad de características físicas: sin visibilidad
+  - Afinidad entre un anfitrión y la instancia: sin afinidad
+  - "Targeted instance placement": Sin control
+  - Colocación automático de instancia: sí
+  - Añadir capacidad usando una solicitud de asignación: no
+
+* Anfitriones dedicados
+  - Aislamiento físico de servidor
+  - Facturación por anfitrión
+  - Visibilidad de características físicas: Sockets, núcleos, id del anfitrión
+  - Afinidad entre un anfitrión y la instancia: despliegue de consistencia a las mismas instancias en el mismo servidor
+  - "Targeted instance placement": Control adicional sobre colocación de instancia en el servidor físico
+  - Colocación automático de instancia: sí
+  - Añadir capacidad usando una solicitud de asignación: sí
