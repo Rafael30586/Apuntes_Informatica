@@ -24,4 +24,15 @@ Este scheduler es responsable de seleccionar un proceso de la ready queue y asig
 * Usa varios algoritmos de programación de CPU para decidir el orden de los procesos
 * Maximiza la utilización del CPU al mantenerlo lo más ocupado posible
 * Llama al despachador, que lleva a cabo el verdadero cambio de contexto (context switch)
-* Es el scheduler más rápido, ya que suele operar cada pocos milisegundos		
+* Es el scheduler más rápido, ya que suele operar cada pocos milisegundos
+
+3. Medium-term scheduler
+Gestiona el intercambio, lo que temporalmente mueve procesos entre la memoria principal y el disco
+* Intercambia procesos fuera de la memoria cuando están esperando (por ejemplo, bloqueado por I/O) para reducir el grado de multiprogramación
+* Libera memoria para otros procesos activos
+* Intercambia procesos de vuelta en la memoria cuando están listos para continuar la ejecución, permitiéndoles reanudar desde donde estaban
+* Ayuda a mantener una combinación efectiva de procesos CPU-bound e I/O-bound
+* Opera más rápido que los long-term schedulers pero más lento que los short-term schedulers
+
+https://media.geeksforgeeks.org/wp-content/uploads/20241231145333769989/mts.webp
+		
