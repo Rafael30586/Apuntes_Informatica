@@ -1,0 +1,30 @@
+Una rama upstream es la rama remota asociada con la rama local que git usa como referencia por defecto para la sincronización.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20251003170621589624/upstream.webp
+
+* Permite que podamos hacer git push y git pull sin especificar la rama remota y la local cada vez.
+* Puede ser configurado usando git push -u o git branch -u
+
+---------------------
+Configurar rama upstream usando git push
+
+* Para asignar una rama upstream usandp git push, primero crear una nueva rama y cambiar a ella con git switch o checkoput -b
+* Configurar la rama upstream usando git push con la opción -u:
+ git push -u origin <rama>
+* Una alternativa es la siguiente:
+ git push --set-upstream origin <rama>
+
+---------------------
+Cambiar rama upstream en git
+
+git branch -u <remota/rama>
+
+Ejemplo
+
+git branch master -u <origin/master>
+
+--------------------
+Revisar que ramas locales están rastreando ramas upstream
+
+git branch -vv
+   
