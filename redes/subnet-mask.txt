@@ -28,7 +28,15 @@ Si una red es comprometida por un ataque, solo ese segmento se verá afectado. U
 Un jefe de redes que divide un red de área local en redes más pequeñas puede también controlar el flujo de tráfico a través de mapas de ruta, QoS o ACLs, lo cual ayuda a identificar amenazas más eficientemente.
 
 * Aumenta la vida útil de IPv4
-En lugar de asignar una única dirección IP a cada dispositivo, el subnetting permite que múltiples direcciones IP privadas existan en una única red IP. Esto significa que cada dispositivo en una red IP tiene una dirección IP con una parte que refiere a la dirección IP de la red entera, y una parte de ella refiere a la subred. 
+En lugar de asignar una única dirección IP a cada dispositivo, el subnetting permite que múltiples direcciones IP privadas existan en una única red IP. Esto significa que cada dispositivo en una red IP tiene una dirección IP con una parte que refiere a la dirección IP de la red entera, y una parte de ella refiere a la subred.
+
+-----------------------
+¿Cómo funcionan las subredes?
+Las redes usan direcciones de protocolos de internet para identificar piezas de hardware específicas, como servidores o computadoras. El subnetting permite que una red con una sola dirección IP pública sea partida en redes más pequeñas. Cada una con una dirección IP interna única.
+Las redes son capaces de conectar cientos e incluso miles de dispositivos. Como resultado, el tráfico podría viajar por una ruta compleja a la dirección IP asociada para un dispositivo específico.
+Subnetting crea sub-redes dentro de una sola red física, limitando el uso de direcciones IP a unos pocos dispositivos. Debido a esto, los datos pueden viajar más directamente a su dirección IP destino. No necesita interactuar con todas las partes de la red.
+Para identificar el dispositivo al que un paquete de datos está yendo, es importante ordenar la dirección IP de una manera lógica. El propósito es asegurar que sea fácil identificar la dirección de red y la del anfitrión.
+Para hacer que el subnetting sea posible, y para estar seguros de que el tráfico llegue al destino correcto, cada dirección IP necesita ser emparejada a una máscara de subred. 
 _____________________________________________
 Continuar resumiendo lo que está en el enlace
 _____________________________________________
