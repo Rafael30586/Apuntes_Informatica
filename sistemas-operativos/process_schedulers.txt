@@ -4,7 +4,7 @@ Programadores de procesos en sistemas operativos
 
 Process scheduling es la actividad del gestor de procesos que maneja la remoción de los procesos en ejecución del CPU y la selección de otro proceso basado en una estrategia particular. A través de su tiempo de vida, un proceso se mueve entre varias colas de programación (scheduling queues), como la ready queue, la waiting queue o la device queue.
 
-* La programación de procesos es importante em sistemas operativos con multiprogramación porque múltiples procesos podrían ser elegibles para estar en ejecución al mismo tiempo.
+* La programación de procesos es importante en sistemas operativos con multiprogramación porque múltiples procesos podrían ser elegibles para estar en ejecución al mismo tiempo.
 * Una de las responsabilidades clave de un sistema operativo es decidir qué programas se ejecutarán en el CPU.
 * Los process schedulers son componentes fundamentales de los sistemas operativos responsables de decidir el orden en el que los procesos son ejecutados por el CPU. En términos simples, gestionan como el CPU asigna su tiempo entre múltiples tareas o procesos que están compitiendo por su atención.
 
