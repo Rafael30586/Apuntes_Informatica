@@ -116,7 +116,13 @@ git remote -v --> nos muestra a que URL apunta origin.
 
 git push --> guarda los cambios producidos en la rama del repositorio local en el remoto.
 
-git push --force origin <rama> --> sirve para empujar cambios del repositorio local al remoto aunque en el remoto esté varios commits adelantado. Esto puede servir para cuando hacemos git reset --hard hacia un commit anterior en nuestro repositorio local y queremos que se borren los commits posteriores en el repositorio remoto. 
+git push --force origin <rama> --> sirve para empujar cambios del repositorio local al remoto aunque en el remoto esté varios commits adelantado. Esto puede servir para cuando hacemos git reset --hard hacia un commit anterior en nuestro repositorio local y queremos que se borren los commits posteriores en el repositorio remoto.
+
+git branch --remote --> muestra las ramas que son referencias a las remotas, por ejemplo: origin/master.
+
+git branch --unset-upstream --> borra el vínculo que existe entre la rama actual y la referencia a la rama remota, por lo tanto, git push deja de funcionar.
+
+git branch --set-upstream-to=<origin/rama> --> hace que la rama en la que estamos esté vinculada a origin para subir cambios al repositorio remoto.   
 
 git cherry-pick <id_de_commit> --> trae a la rama en la que estamos los cambios de un commit de una rama que elijamos. Puede que haya conflictos y tendremos que solucionarlos.
 
