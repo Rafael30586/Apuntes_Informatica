@@ -36,7 +36,21 @@ Las redes usan direcciones de protocolos de internet para identificar piezas de 
 Las redes son capaces de conectar cientos e incluso miles de dispositivos. Como resultado, el tráfico podría viajar por una ruta compleja a la dirección IP asociada para un dispositivo específico.
 Subnetting crea sub-redes dentro de una sola red física, limitando el uso de direcciones IP a unos pocos dispositivos. Debido a esto, los datos pueden viajar más directamente a su dirección IP destino. No necesita interactuar con todas las partes de la red.
 Para identificar el dispositivo al que un paquete de datos está yendo, es importante ordenar la dirección IP de una manera lógica. El propósito es asegurar que sea fácil identificar la dirección de red y la del anfitrión.
-Para hacer que el subnetting sea posible, y para estar seguros de que el tráfico llegue al destino correcto, cada dirección IP necesita ser emparejada a una máscara de subred. 
+Para hacer que el subnetting sea posible, y para estar seguros de que el tráfico llegue al destino correcto, cada dirección IP necesita ser emparejada a una máscara de subred.
+
+------------------------
+¿Cómo se relacionan las clases de IP y las máscaras de sub red?
+Las redes vienen en diferentes tamaños. Algunas requieren acceso para solo algunos anfitriones. Otras necesitan ofrecer acceso a miles de anfitriones.
+Por esto hay diferentes clases de direcciones IP. Existen las redes de clase A, las de clase B y las de clase C. También existen las de clase D y E. Las D facilitan el multicasting y las E la investigación.
+De todas maneras, hoy en día la mayoría de las direcciones IP no tienen clase.
+La clase de dirección IP determina el posible tamaño de la red, así como cuantos octetos están dedicados a la máscara de subred. Las diferentes clases de direcciones IP son adecuadas para diferentes necesidades.
+* Clase A: la red soporta más de 65536 anfitriones. La máscara de subred refleja la dirección de red en el primer octeto, con el segundo, el tercero y el cuarto libres para que el administrador asigne a anfitriones y subredes.
+* Clase B: la red tiene una dirección IP donde la máscara de subred refleja la dirección de la red en el primer y segundo octeto. Dejando solo al tercero y al cuarto para asignar en la red. La clase B tiene disponibilidad para conexiones de entre 256 y 65534 anfitriones.
+* Clase C: esta red soporta menos anfitriones. El primero, segundo y tercer octeto son usados para reflejar el número de red. Dejando al último octeto para permitir hasta 254 direcciones de anfitriones.
+
+Tanto las direcciones de clase B como las de clase C se ven iguales. Por lo tanto, requieren de una máscara de subred para identificar la dirección de red y la dirección del anfitrión.
+
+
 _____________________________________________
 Continuar resumiendo lo que está en el enlace
 _____________________________________________
