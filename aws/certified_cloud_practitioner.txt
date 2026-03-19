@@ -829,3 +829,31 @@ EC2 tiene tres niveles de tenencia
 * Anfitrión dedicado: tenés control sobre los atributos físicos de tu servidor (el servidor entero)
 * Instancia dedicada: tu servidor está en la misma máquina física que la de otros clientes
 * Por defecto: tu instancia vivirá en algún lugar del servidor y cuando hagas reboot va a estar en otro lugar
+
+-----------
+Modelo de precios de EC2
+
+Hay 5 maneras de pagar por EC2 (máquinas virtuales)
+* On-demand:
+  - flexible y de bajo costo
+  - se paga por hora o por segundo
+  - cargas de trabajo impredecibles y de corto plazo
+  - no puede ser interrumpido
+  - "for first time apps"
+  - es el que requiere menos compromiso
+* Spot hasta 90%:
+  - "request spare computing capacity"
+  - "flexible start and endtimes"
+  - puede manejar interrupciones (si el servidor se detiene o empieza de manera aleatoria)
+  - "for non-critical background jobs" 
+  - es con el que más se ahorra
+* Reservado hasta 75% menos:
+  - uso predecible y estado firme
+  - comprometerte con EC2 en un plazo de 1 o 3 años
+  - podés revender instancias reservadas no usadas
+  - es el mejor para el largo plazo
+* Dedicado:
+  - servidores dedicados
+  - puede ser on-demand, reservado o spot
+  - cuando necesitás garantía de hardware aislado (requerimientos empresariales)
+  - es el más caro
