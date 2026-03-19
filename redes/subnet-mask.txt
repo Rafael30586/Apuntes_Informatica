@@ -50,6 +50,16 @@ La clase de dirección IP determina el posible tamaño de la red, así como cuan
 
 Tanto las direcciones de clase B como las de clase C se ven iguales. Por lo tanto, requieren de una máscara de subred para identificar la dirección de red y la dirección del anfitrión.
 
+--------------------
+¿Cómo se relacionan las direcciones de red y las máscaras de subred?
+Para direcciones IPv4, cada una de las diferentes clases de la red tiene una diferente máscara por defecto:
+* Para clase A es 255.0.0.0
+* Para clase B es 255.255.0.0
+* Para clase C es 255.255.255.0
+
+Se puede ver como la máscara de subred por defecto refleja cuantos de los octetos son usados por la dirección de red.
+Al ver a las máscaras de subred por defecto podés darte cuenta del tipo y número de direcciones IP de una red dada. Cada subred contiene dispositivos conectados con un rango fijo de direcciones IP
+Si tomamos 10.45.21.0 como ejemplo de una dirección IP y la emparejamos con la máscara de subred 255.255.255.0, podés determinar que la dirección de la red está en la porción 10.45.21, mientras que la subred asociada para direcciones de anfitriones está en el rango de 10.45.21.0-10.45.21.255
 
 _____________________________________________
 Continuar resumiendo lo que está en el enlace
