@@ -4,3 +4,4 @@ git hooks
 git bisect
 practicar con git cherry-pick
 git rebase --onto
+git push --prune
