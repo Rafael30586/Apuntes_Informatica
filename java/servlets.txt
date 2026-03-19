@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/java/introduction-java-servlets/
+
 Un servlet java es un programa java que corre en un servidor web habilitado para java o en un servidor de aplicación. Se encarga de las solicitudes del cliente, las procesa y genera respuestas dinámicamente. Los servlets son la columna vertebral de muchas aplicaciones java del lado del servidor debido a su eficiencia y escalabilidad.
 
 ------------------
@@ -20,4 +22,20 @@ Flujo de trabajo de la arquitectura de servlet
 * El servidor web pasa la solicitud al servlet correspondiente
 * El servlet procesa la solicitud y genera la respuesta en la forma de output
 * El servlet envía la respuesta de vuelta al servidor web
-* El servidor web envía la respuesta de vuelta al cliente y el browser del cliente la muestra en pantalla		
+* El servidor web envía la respuesta de vuelta al cliente y el browser del cliente la muestra en pantalla	
+
+-------------------
+Contenedor de servlet (servlet container)
+También conocido como motor de servlet (servlet engine), es un conjunto de objetos integrado que ofrece un entorno de ejecución para componentes de java servlet. Es un sistema que gestiona componentes de servlets java sobre el servidor web para encargarse de las solicitudes del cliente web.
+
+Servicios proveidos por el servlet container:
+* Servicios de red: carga la clase servlet. La carga podrá ser de un sistema de archivos local, un sistema de archivos remoto u otros servicios de red. El servlet container provee los servicios de red sobre los que las solicitudes y respuestas son enviadas
+* Provee el servicio de codificar y decodificar mensajes MIME-based
+* Gestiona el ciclo de vida de un servlet
+* Gestiona los recursos estáticos y dinámicos, como archivos HTML, servlets y páginas JSP
+* Se encarga de autorización y autenticación de acceso a recursos
+* Mantiene una sesión al adjuntar un ID de sesión a la ruta de la URL	
+
+______________________________________________________________
+Continuar resumiendo el contenido del enlace de arriba de todo
+______________________________________________________________
