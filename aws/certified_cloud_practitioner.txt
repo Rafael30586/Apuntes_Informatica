@@ -857,3 +857,29 @@ Hay 5 maneras de pagar por EC2 (máquinas virtuales)
   - puede ser on-demand, reservado o spot
   - cuando necesitás garantía de hardware aislado (requerimientos empresariales)
   - es el más caro
+
+-----------------------------------------------------------------
+Modelos de precios de EC2
+-----------------------------------------------------------------
+On-demand
+
+Es un modelo PAYG (pay as you go), donde consumís cómputo y luego pagás
+
+Cuando lanzás una instancia EC2 está usando precio on-demand por defecto
+
+No tiene pago "up-front" ni compromiso a largo plazo
+
+Pagás por el segundo (mínimo 60 segundos) o por la hora
+
+por segundo para:
+* Linux
+* Windows
+* Windows con SQL Enterprise
+* Windows con SQL estándar
+* Windows con instancias web SQL que no tienen cobro de horas por separado
+
+por hora para:
+* Para todos los tipos de instancias
+
+On-demand es para aplicaciones a donde la carga de trabajo es para corto plazo o impredecible
+Es para cuando tenés una nueva app para desarrollo o querés experimentar
