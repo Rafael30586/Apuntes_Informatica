@@ -2,3 +2,13 @@ Introducción a Apache Tomcat
 
 Apache Tomcat es un servidor web open-source y servlet container desarrollado por Apache Software Foundation. Aunque generalmente se lo llama "servidor de aplicación", técnicamente es un servidor web diseñado específicamente para ejecutar servlets java y reproducir (renderizar) JSP.
 A diferencia de un servidor Java EE de aplicación (como JBoss o WebLogic), que soporta el stack entero de funciones empresariales (EJB, JMS, etc), Tomcat es liviano y enfocado puramente en la parte web. Esto hace que sea el estándar de la industria para alojar aplicaciones desarrolladas con spring boot y microservicios.
+
+------------------
+Componentes clave
+
+1. Catalina (el servlet container)
+Catalina es el motor que implementa la especificación servlet java. Gestiona el ciclo de vida de tus servlets (init, service, destroy). Cuando desplegás un archivo .war, Catalina lo desempaqueta y carga las clases.
+2. Coyote (el conector)
+Coyote se encarga de la comunicación de red. Soporta protocolos HTTP/1.1, HTTP/2 y AJP. Gestiona el thread pool, creando hilos para manejar eficientemente las solicitudes entrantes.
+3. Jasper (el motor JSP)
+Si tu aplicación usa archivos .jsp, Jasper es responsable de "parsearlas". Compila el archivo JSP a un servlet java estándar (archivo .class) para que Catalina puedas ejecutarlo. Por esto es que la primera carga de una página JSP es lenta (compilación) pero las cargas siguientes son rápidas.  	 
