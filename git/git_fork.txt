@@ -1,0 +1,1 @@
+git fork sirve para copiar el repositorio de otro usuario a tu propia cuenta de git hub.

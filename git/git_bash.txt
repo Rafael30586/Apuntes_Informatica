@@ -116,7 +116,7 @@ git remote -v --> nos muestra a que URL apunta origin.
 
 git push --> guarda los cambios producidos en la rama del repositorio local en el remoto.
 
-git push --force origin <rama> --> sirve para empujar cambios del repositorio local al remoto aunque en el remoto esté varios commits adelantado. Esto puede servir para cuando hacemos git reset --hard hacia un commit anterior en nuestro repositorio local y queremos que se borren los commits posteriores en el repositorio remoto.
+git push --force origin <rama> --> sirve para empujar cambios del repositorio local al remoto aunque en el remoto esté varios commits adelantado. Esto puede servir para cuando hacemos git reset --hard hacia un commit anterior en nuestro repowsitorio local y queremos que se borren los commits posteriores en el repositorio remoto.
 
 git push origin --delete <rama_remota> --> borra la rama remota que indiquemos.
 
