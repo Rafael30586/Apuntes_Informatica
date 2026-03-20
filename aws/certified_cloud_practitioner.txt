@@ -883,3 +883,53 @@ por hora para:
 
 On-demand es para aplicaciones a donde la carga de trabajo es para corto plazo o impredecible
 Es para cuando tenés una nueva app para desarrollo o querés experimentar
+
+-----------------
+Reservado, instancias reservadas (RI)
+
+Diseñado para aplicaciones que tienen un estado firme, uso predecible o requieren capacidad reservada
+
+El precio reducido se basa en: Term x Class offering x RI attributes x Payment option
+
+Term: mientras más largo sea el plazo más grande es el ahorro. Te comprometés a un contrato de 1 o 3 años. Las instancias reservadas no se renuevan automáticamente. Cuando expire tu instancia va a usar on-demand sin interrupción del servicio
+
+Class offering: mientras menos flexible más se ahorra. 
+* Estándar: hasta 75% de reducción de precio comparado con on-demand; podés modificar atributos RI
+* Covertible: hasta 54% de precio reducido comparado con on-demand. Podés intercambiar RI basado en atributos RI si es más grande o igual en valor
+* Programado: AWS ya no ofrece RI programado
+
+Opciones de pago: mientras más se pague por adelantado más se ahorra
+* "All upfront": el pago completo se realiza al principio 
+* "Partial upfront": una porción del costo se paga por adelantado y las horas restantes del período se facturan a una tasa de descuento por hora
+* "No upfront": se te factura a una tasa de descuento por hora por cada hora dentro del período, a pesar de que la instancia reservada está siendo usada.
+
+Las RIs (reserved instances) pueden ser compartidos entre múltiples cuentas dentro de una organización de AWS
+Las RIs sin uso pueden ser vendidos en el Reserved Instance Marketplace
+
+
+-----------------
+Atributos RI
+
+Atributos RI (AKA atributos de instancia) son limitados basados en class offering y pueden afectar el precio final de una RI. Hay cuatro atributos RI:
+1. Tipo de instancia: por ejemplo , m4.large. Está conformado de la familia de la instancia (en este ejemplo m4) y el tamaños de la instancia (large en este caso)
+2. Región: la región en la que la instancia reservada (RI) es comprada
+3. Tenencia: si tu instancia corre en hardware compartido (por defecto) o dedicado
+4. Plataforma: el sistema operativo, por ejemplo Windows o Linux
+
+------------------
+RI zonal y regional
+
+Cuando comprás una RI, vos determinás el alcance de la instancia reservada.
+El alcance no afecta al precio
+
+RI regional: compra por región
+* No reserva capacidad
+* Descuentos de RI aplican al uso de instancia en cualquier AZ en la región
+* Los descuentos RI aplican a uso de instancia dentro de la familia de instancia. Solo soportado en instancias reservadas Amazon Linux/Unix con tenencia por defecto.
+* Podés hacer colas de compras para RI regional 
+
+RI zonal: compra por zona de disponibilidad (availability zone)
+* Reserva capacidad en al AZ especificada
+* Descuentos de RI aplican a instancia en la AZ seleccionada (no hay flexibilidad con las AZs)
+* Sin flexibilidad en tamaño de instancia. Los descuentos RI aplican al uso de instancia solamente para el tipo de instancia especificado y el tamaño.
+* No podés hacer colas para compras para RI zonal 
