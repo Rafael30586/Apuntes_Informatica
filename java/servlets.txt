@@ -28,14 +28,37 @@ Flujo de trabajo de la arquitectura de servlet
 Contenedor de servlet (servlet container)
 También conocido como motor de servlet (servlet engine), es un conjunto de objetos integrado que ofrece un entorno de ejecución para componentes de java servlet. Es un sistema que gestiona componentes de servlets java sobre el servidor web para encargarse de las solicitudes del cliente web.
 
-Servicios proveidos por el servlet container:
+Servicios proveídos por el servlet container:
 * Servicios de red: carga la clase servlet. La carga podrá ser de un sistema de archivos local, un sistema de archivos remoto u otros servicios de red. El servlet container provee los servicios de red sobre los que las solicitudes y respuestas son enviadas
 * Provee el servicio de codificar y decodificar mensajes MIME-based
 * Gestiona el ciclo de vida de un servlet
 * Gestiona los recursos estáticos y dinámicos, como archivos HTML, servlets y páginas JSP
 * Se encarga de autorización y autenticación de acceso a recursos
-* Mantiene una sesión al adjuntar un ID de sesión a la ruta de la URL	
+* Mantiene una sesión al adjuntar un ID de sesión a la ruta de la URL
 
-______________________________________________________________
-Continuar resumiendo el contenido del enlace de arriba de todo
-______________________________________________________________
+------------------
+Pre-requisitos para crear un servlet java
+* Instalar el JDK
+* Instalar el servidor Apache Tomcat (por ejemplo, versión 9 o 10)
+* Instalar un IDE como IntelliJ IDEA o Eclipse
+* Descargar el JAR API servlet (ya incluido en Tomcat)
+
+----------------
+¿Por qué elegir servlets java en lugar de otras tecnologías?
+El contenido web dinámico requiere tecnologías del lado del servidor. Aunque hay muchas opciones, los servlets java se destacan debido a sus ventajas sobre alternativas como CGI(Common Gateway Interface)
+
+Limitaciones de CGI
+* CGI crea y destruye un proceso por casa solicitud del cliente, llevando a un alto consumo de recursos.
+* Problemas de escalabilidad: Rendimiento pobre cuando hay muchas solicitudes del cliente
+
+----------------
+Clases e interfaces clave
+* Servlet: interface; paquete: jakarta.servlet.*
+* ServletRequest: interface; paquete: jakarta.servlet.*
+* ServletResponse: interface; paquete: jakarta.servlet.*
+* GenericServlet: clase; paquete: jakarta.servlet.*
+* HttpServlet: clase; paquete: jakarta.servlet.http.*
+* HttpServletRequest: interface; jakarta.servlet.http.*
+* HttpServletResponse: interface; jakarta.servlet.http.*
+* Filter: interface; paquete: jakarta.servlet.*
+* ServletConfig: interface; paquete: jakarta.servlet.*	 	
