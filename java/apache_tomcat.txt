@@ -11,4 +11,17 @@ Catalina es el motor que implementa la especificación servlet java. Gestiona el
 2. Coyote (el conector)
 Coyote se encarga de la comunicación de red. Soporta protocolos HTTP/1.1, HTTP/2 y AJP. Gestiona el thread pool, creando hilos para manejar eficientemente las solicitudes entrantes.
 3. Jasper (el motor JSP)
-Si tu aplicación usa archivos .jsp, Jasper es responsable de "parsearlas". Compila el archivo JSP a un servlet java estándar (archivo .class) para que Catalina puedas ejecutarlo. Por esto es que la primera carga de una página JSP es lenta (compilación) pero las cargas siguientes son rápidas.  	 
+Si tu aplicación usa archivos .jsp, Jasper es responsable de "parsearlas". Compila el archivo JSP a un servlet java estándar (archivo .class) para que Catalina puedas ejecutarlo. Por esto es que la primera carga de una página JSP es lenta (compilación) pero las cargas siguientes son rápidas. 
+
+-------------------
+Arquitectura central: como Tomcat es construido
+
+Tomcat es construido de manera jerárquica. Entender esta jerarquía es clave para configurarlo correctamente.
+1. Servidor: El componente más importante. Representa la instancia de Tomcat entera (JVM). Está a la escucha esperando por un comando de cerrado en un puerto específico (por defecto el 8005)
+2. Servicio: Un grupo de uno o más conectores que comparten un solo motor. Rol: hace de puente entre el afuera (conectores) con la lógica de procesamiento interna (motor)
+3. Conector (Coyote): El componente que está a la escucha de conexiones entrantes
+* Conector HTTP: escucha en el puerto 8080 (por defecto) para tráfico web estándar 
+* Conector AJP: escucha en puerto 8009 por tráfico desde un proxy reverso como Apache HTTPD
+4. Motor (Catalina): el cerebro de la operación. Representa la tubería (pipeline) de procesamiento de solicitudes. Examina las cabeceras de la solicitud entrante para determinar que anfitrión y contexto debería encargarse de él.
+5. Anfitrión: representa un anfitrión virtual (por ejemplo: www.ejemplo.com). Tenés múltiples anfitriones en un servidor tomcat.
+6. Contexto: representa una aplicación web (por ejemplo: /my-app)	 
