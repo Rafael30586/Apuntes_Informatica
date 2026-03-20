@@ -3,3 +3,29 @@ https://www.techtarget.com/whatis/definition/context-switch
 Un context switch en un sistema operativo es una operación que el CPU lleva a cabo cuando alteran entre proceso o hilos mientras asegura que los procesos no conflictúen. Un context switching efectivo hace posible el multitasking.
 Cada vez que el CPU hace un cambio (switch), el sistema suspende temporalmente la tarea en ejecución actual, guarda su estado (contexto) a un process control block (PCB) y luego ejecuta la próxima tarea en la cola o fila. Si esa tarea ya ha empezado, el CPU recupera el estado para esa tarea para poder empezar la ejecución donde la había dejado. Estas operaciones continúan y se repiten mientras el CPU rota entre procesos "queued".
 La habilidad del context switching de cambiar rápidamente entre tareas es una capacidad importante de un sistema operativo con multitasking como Windows, Linux o macOS. El context switching permite que múltiples procesos compartan un solo CPU, mientras lo hacen parecer como si el CPU estuviera ejecutando múltiples procesos simultáneamente. Es esta capacidad la que permite a los usuarios cambiar sin problemas entre aplicaciones abiertas en el escritorio. 
+
+-------------
+¿Cómo funciona el context switch?
+Cada vez que el CPU cambia a un proceso diferente, guarda los datos del estado a su PCB asignado. Los datos exactos pueden variar entre sistemas, pero generalmente incluye un puntero, program counter, registers y más información asociada con el proceso.
+Un PCB es una estructura de datos creada para cada proceso. Además de tener datos del estado, también almacena el estado de ejecución del proceso, el número de proceso y la información de gestión de memoria.
+
+El context switching generalmente ocurre como resultado de alguna de las siguientes causas
+* Operación de multitasking: El context switching ocurre cuando un proceso cede el paso a otro proceso para que el segundo pueda ser ejecutado. En algunos casos, el context switching toma lugar porque al proceso se le ha asignado solo una cierta cantidad de tiempo de CPU. De todas maneras, puede también ocurrir cuando un proceso debe ceder el CPU a un proceso con mayor prioridad. O un proceso podría ceder el CPU voluntariamente, por ejemplo al esperar una operación input/output.
+* Interrupt: El context switching ocurre por un "interrupt" de sistema desde un componente de hardware o software. Por ejemplo, un teclado podría emitir	un interrupt cuando un usuario presiona una tecla, o una aplicación podría emitir un interrupt cuando requiere input de usuario. Un sistema operativo contiene típicamente un manejador de interrupt para procesar y priorizar estas solicitudes. 
+* Cambio usuario/kernel: En algunos casos, el context switching puede ocurrir cuando el sistema operativo transiciona entre modo usuario y modo kernel. Por ejemplo, un proceso podría necesitar cambiar desde modo usuario  a modo kernel para acceder a recursos del sistema, lo que podría requerir un context switch para acomodarse al distinto nivel de privilegio.
+
+Cuando el CPU encuentra una de estas causas, empieza una serie de pasos que alternan entre procesos en ejecución. 
+
+https://www.techtarget.com/rms/onlineimages/how_context_switching_works-f.png
+
+La figura anterior muestra como el CPT alterna entre el proceso 1 y el proceso 2, cambiando entre estados de ejecución e inactividad. Los siguientes pasos describen la secuencia básica de eventos al moverse entre procesos:
+1. El CPU ejecuta el proceso 1
+2. Un evento ocurre, como puede ser un interrupt o system call
+3. El sistema pausa el proceso 1 y guarda su estado (contexto) a PCB1, el PCB que fue creado para ese proceso.
+4. El sistema selecciona el proceso 2 de la cola y carga el estado del proceso desde PCB2
+5. El CPU ejecuta el proceso 2, continuando desde donde lo había dejado (si el proceso ya había estado corriendo)
+6. Cuando el próximo evento ocurre, el sistema pausa el proceso 2 y guarda su estado a PCB2
+7. El estado del proceso 1 es recargado, y el CPU ejecuta los procesos, una vez más continuando desde donde lo había dejado. El proceso 2 se mantiene en un estado inactivo hasta que es llamado de vuelta
+
+Mientras más grande sea el número de proceso activos, más complejas se vuelven estas operaciones, especialmente mientras los procesos son comenzados y detenidos. De todas maneras, el CPU puede ejecutar solamente un proceso a la vez, no importa cuantas tareas estén en la cola de espera. El context switching también toma tiempo para llevarse a cabo porque los datos del estado deben ser guardados y recuperados por cada transición. Mientras más context switching ocurre, más tiempo es necesitado para alternar.
+Un context switch puede ser llevado a cabo totalmente por el hardware, aunque esta estrategia tiende a estar limitada a CPUs más viejos. Hoy en día, el context switching está basado en software y típicamente manejado por el kernel, el cual es más rápido y eficiente que el context switching basado en hardware. Un sistema moderno puede llevar a cabo cientos de context switch por segundo. Aunque parece que la computadora está realizando múltiples tareas en paralelo, el CPU está alternando entre operaciones a una alta tasa de velocidad.
