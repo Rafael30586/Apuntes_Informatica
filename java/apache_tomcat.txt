@@ -1,0 +1,4 @@
+Introducción a Apache Tomcat
+
+Apache Tomcat es un servidor web open-source y servlet container desarrollado por Apache Software Foundation. Aunque generalmente se lo llama "servidor de aplicación", técnicamente es un servidor web diseñado específicamente para ejecutar servlets java y reproducir (renderizar) JSP.
+A diferencia de un servidor Java EE de aplicación (como JBoss o WebLogic), que soporta el stack entero de funciones empresariales (EJB, JMS, etc), Tomcat es liviano y enfocado puramente en la parte web. Esto hace que sea el estándar de la industria para alojar aplicaciones desarrolladas con spring boot y microservicios.
