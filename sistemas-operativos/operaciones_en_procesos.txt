@@ -1,0 +1,8 @@
+https://www.geeksforgeeks.org/operating-systems/process-creation-and-deletions-in-operating-systems/
+
+Creado y borrado de procesos en sistemas operativos
+
+Un proceso es una instancia de un programa ejecutándose, y su ciclo de vida incluye varias fases como creación, ejecución y borrado
+* El sistema operativo se encarga de la creación de procesos al asignar los recursos necesarios y dándole a cada proceso un identificador único
+* El borrado de un proceso involucra la liberación de recursos una vez que el proceso completa su ejecución
+* Los procesos son, generalmente, organizados en una jerarquía, donde los proceso padres crean procesos hijos, formando una estructura como la de un árbol
