@@ -1,3 +1,16 @@
+https://www.techtarget.com/searchstorage/definition/file-system
+
 ¿Qué es un sistema de archivos?
 En computación, un sistema de archivos es un sistema lógico y físico para organizar, gestionar y acceder a los archivos y directorios en un SSD, HDD u otros medios. Sin un sistema de archivos, el sistema operativo vería solamente grandes pedazos de datos sin forma de distinguir un archivo del otro.
 Los sistemas de archivos pueden ser bastante diferentes entre distintos sistemas operativos como Windows, macOS y Linux. Por otro lado, un sistema operativo puede soportar múltiples sistemas de archivos a pesar de sus diferencias. 
+
+¿Cómo funcionan los sistemas de archivos?
+Un sistema de archivos almacena y organiza datos. Puede ser pensado como un índice para todos los datos contenidos en el dispositivos de almacenamiento. En adición a SSDs y HDDs, los sistemas de archivos se usan para discos ópticos, unidades flash y cintas magnéticas.
+Los sistemas de archivos especifican convenciones para nombrar archivos, incluyendo la máxima cantidad de caracteres en un nombre, que caracteres pueden ser usados y que tan grande puede ser la extensión del archivo. En muchos sistemas operativos, los nombres de los archivos no son "case sensitive".
+Junto con el contenido de un archivo, un sistema de archivos mantiene metadatos sobre los archivos junto con otra información. Los metadatos incluyen detalles como el tamaño del archivo, fecha de creación o ubicación en el directorio.
+La mayoría de los sistemas organizan los archivos en una jerarquía de directorios, con la ubicación del archivo descrito por su ruta dentro de la estructura de directorios. Los directorios (carpetas en windows) están organizados en una estructura invertida jerárquica de árbol, con el directorio raíz en la cima. Cada archivo es ubicado en un directorio o subdirectorio a la ubicación deseada dentro de la estructura de árbol.
+
+https://www.techtarget.com/rms/onlineImages/TT_tree.jpg
+
+Antes de que los archivos y directorios puedan ser definidos en un medio de almacenamiento, una o más particiones deben ser creadas. Una partición es una región de almacenamiento que el sistema operativo gestiona separadamente de otras particiones, como gestionando unidades (o discos) individuales. Cada partición puede ser formateada con un sistema de archivos diferente para mayor flexibilidad.
+Particiones separadas ayudan a aislar archivos y operaciones entre sí, lo que puede mejorar el rendimiento, seguridad y mantenimiento. Por ejemplo, un SSD de una computadora podría contener tres particiones, una para los archivos del sistema operativo, una para los archivos del usuario y otra para loa archivos de recuperación del sistema. Si el sistema de archivos en una partición se corrompe, los datos en otra partición deberían estar a salvo. 
