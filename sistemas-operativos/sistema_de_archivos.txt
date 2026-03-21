@@ -41,7 +41,17 @@ Los sistemas de archivos usan metadatos para almacenar y recuperar archivos y pa
 * Atributos como solo lectura u oculto
 * Ubicación en la jerarquía de directorios
 
-Los usuarios pueden típicamente acceder a los metadatos de los archivos a través de la interface del sistema. En Windows, por ejemplo,  se puede hacer click derecho e ir a propiedades en el menú.  
+Los usuarios pueden típicamente acceder a los metadatos de los archivos a través de la interface del sistema. En Windows, por ejemplo,  se puede hacer click derecho e ir a propiedades en el menú.
+
+----------------------
+Acceso al sistema de archivos
+
+Los sistemas de archivos pueden restringir la lectura y escritura a un usuario en particular o un grupo de usuarios.
+Permisos de directorios y archivos pueden ser usados para controlar quien tiene acceso a recursos específicos y que nivel de acceso tienen. Esta estrategia es útil para prevenir acceso para usuarios internos pero no es tan efectivo contra usuarios de afuera.
+La encriptación de archivos puede también prevenir el acceso de usuarios, pero está enfocado en proteger a los sistemas de ataques externos. Una clave de encriptado es aplicada a un texto sin encriptar para encriptarlo. La clave puede ser usada también para desencriptar el texto encriptado. Solo usuarios que tengan la clave pueden desencriptar el archivo. Con la encriptación, el sistema de archivos no necesita saber la clave de encriptado para gestionar los datos eficientemente.
+
+https://www.techtarget.com/rms/onlineimages/encryption_operation-f.png
+  
 ____________________________________________
 Continuar resumiendo lo del enlace de arriba
 ____________________________________________
