@@ -1,0 +1,3 @@
+¿Qué es un sistema de archivos?
+En computación, un sistema de archivos es un sistema lógico y físico para organizar, gestionar y acceder a los archivos y directorios en un SSD, HDD u otros medios. Sin un sistema de archivos, el sistema operativo vería solamente grandes pedazos de datos sin forma de distinguir un archivo del otro.
+Los sistemas de archivos pueden ser bastante diferentes entre distintos sistemas operativos como Windows, macOS y Linux. Por otro lado, un sistema operativo puede soportar múltiples sistemas de archivos a pesar de sus diferencias. 
