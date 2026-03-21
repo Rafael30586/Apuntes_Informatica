@@ -4,6 +4,7 @@ https://www.techtarget.com/searchstorage/definition/file-system
 En computación, un sistema de archivos es un sistema lógico y físico para organizar, gestionar y acceder a los archivos y directorios en un SSD, HDD u otros medios. Sin un sistema de archivos, el sistema operativo vería solamente grandes pedazos de datos sin forma de distinguir un archivo del otro.
 Los sistemas de archivos pueden ser bastante diferentes entre distintos sistemas operativos como Windows, macOS y Linux. Por otro lado, un sistema operativo puede soportar múltiples sistemas de archivos a pesar de sus diferencias. 
 
+---------------------
 ¿Cómo funcionan los sistemas de archivos?
 Un sistema de archivos almacena y organiza datos. Puede ser pensado como un índice para todos los datos contenidos en el dispositivos de almacenamiento. En adición a SSDs y HDDs, los sistemas de archivos se usan para discos ópticos, unidades flash y cintas magnéticas.
 Los sistemas de archivos especifican convenciones para nombrar archivos, incluyendo la máxima cantidad de caracteres en un nombre, que caracteres pueden ser usados y que tan grande puede ser la extensión del archivo. En muchos sistemas operativos, los nombres de los archivos no son "case sensitive".
@@ -14,3 +15,33 @@ https://www.techtarget.com/rms/onlineImages/TT_tree.jpg
 
 Antes de que los archivos y directorios puedan ser definidos en un medio de almacenamiento, una o más particiones deben ser creadas. Una partición es una región de almacenamiento que el sistema operativo gestiona separadamente de otras particiones, como gestionando unidades (o discos) individuales. Cada partición puede ser formateada con un sistema de archivos diferente para mayor flexibilidad.
 Particiones separadas ayudan a aislar archivos y operaciones entre sí, lo que puede mejorar el rendimiento, seguridad y mantenimiento. Por ejemplo, un SSD de una computadora podría contener tres particiones, una para los archivos del sistema operativo, una para los archivos del usuario y otra para loa archivos de recuperación del sistema. Si el sistema de archivos en una partición se corrompe, los datos en otra partición deberían estar a salvo. 
+
+---------------------------
+Arquitectura del sistema de archivos
+
+Los sistemas de archivos se encargan de operaciones lógicas y físicas asociadas a la gestión de archivos. Aunque tienen diferentes estrategias para almacenar los datos de los archivos, comúnmente separan a los metadatos del contenido del archivo. También almacenan una pequeña cantidad de otros tipos de datos, que son usados para mantener el sistema de archivos y facilitar el acceso a archivos.
+Un sistema de archivos divide una partición en bloques, y su tamaño depende del sistema de archivos. La mayoría de los bloques se usan para el contenido de los archivos. Los bloques restantes se dividen entre metadatos de archivos y gestión de datos del sistema de archivos. La siguiente imagen provee información sobre como un sistema de archivos en un entorno tipo UNIX podría organizar los datos a través de los bloques individuales. En este caso, los metadatos son almacenados en "inodes" (index nodes). Un inodo es una estructura de datos indexada que mantiene detalles sobre un archivo o directorio.
+
+https://www.techtarget.com/rms/onlineimages/file_systems_architecture-f.png
+
+Los datos de gestión ocupan los primeros bloques, seguidos por los metadatos de inodos y luego los bloques con el contenido, lo que consume la mayor parte del almacenamiento. Acá hay un desglose de los diferentes tipos de bloques:
+* Super block: este bloque contiene información sobre el sistema de archivos propiamente dicho, funcionando como su propio repositorio de metadatos. Por ejemplo, el superblock podría incluir detalles sobre el tipo de sistema de archivos, número total de bloques, número de inodos u otros componentes.
+* Data block bitmap: este bloque contiene un simple mapa de bits que indica que data blocks están usados o en desuso. El valor 1 indica que el bloque está en uso, y el 0 indica desuso.
+* Inode bitmap: el bloque contiene un simple mapa de bits que indica que inodos están usados o en desuso, utilizando 1s y 0s de manera similar al item anterior.
+* Inodos: el sistema de archivos mantiene un inodo por cada archivo y directorio. El inodo es identificado por un número único e incluye los metadatos para el archivo asociado o el directorio. También incluye la dirección de los data blocks que contienen el contenido del archivo. En este sentido, el inodo puede utilizarse para localizar el archivo rápidamente.
+* Content data blocks: todo el contenido de los archivos es almacenado en los data blocks. Estos bloques representan a la mayoría de los bloques ocupados del archivo. La imagen anterior solo muestra una porción de los content data blocks.
+
+Los sistemas de archivos usan metadatos para almacenar y recuperar archivos y para proveer a los usuarios con información sobre sus archivos. Los sistemas de archivos no necesariamente rastrean los mismos tipos de metadatos, pero generalmente mantienen la siguiente información:
+* Fecha y hora de creación
+* Fecha y hora de modificación
+* Fecha y hora de último acceso
+* Dueño del archivo
+* Permisos de acceso
+* Tamaño del archivo, incluyendo tamaño en disco
+* Atributos como solo lectura u oculto
+* Ubicación en la jerarquía de directorios
+
+Los usuarios pueden típicamente acceder a los metadatos de los archivos a través de la interface del sistema. En Windows, por ejemplo,  se puede hacer click derecho e ir a propiedades en el menú.  
+____________________________________________
+Continuar resumiendo lo del enlace de arriba
+____________________________________________
