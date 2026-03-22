@@ -1,0 +1,3 @@
+¿Qué significa "robusto" en software?
+
+La "robustness" es una medida de que tan bien un sistema de software puede afrontar entradas de datos (inputs) inválidas e interacciones de usuario no esperadas. Un sistema robusto es aquel que continua funcionando correctamente incluso al enfrentar inputs inválidos o inesperados. Un sistema de software que es robusto es capaz de manejar errores e inputs inesperados con gracia, sin romperse o producir resultados incorrectos. Es también capaz de adaptarse a los cambios en su entorno de operaciones, tales como cambios en el sistema operativo, hardware u otros componentes de software.
