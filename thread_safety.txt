@@ -1,0 +1,18 @@
+Thread safety es cuando múltiples hilos acceden al mismo objeto o pieza de código al mismo tiempo y el programa se comporta correctamente, sin corrupción de datos ni resultados inesperados. Una clase o método es thread safe si funciona bien incluso cuando es accedido por muchos hilos a la vez. Aunque los hilos corran en cualquier orden, los datos compartidos permanecerán siempre correctos.
+
+-----------------------------------
+¿Cómo obtener thread safety en java?
+
+Hay cuatro maneras
+
+1. Usando sincronización
+Se puede usar la palabra reservada "synchronized" para asegurar que solo un hilo puede acceder a un método o bloque de código a la vez. 
+
+2. Usando la palabra clave "volatile"
+Asegura la visibilidad de cambios en las variables a través de los hilos. No garantiza atomicidad, pero asegura que todo hilo lea el último valor de la memoria principal, no la cache.
+
+3. Usando variables atómicas
+Cuando las variables son compartidas por múltiples hilos, la variable atómica asegura que los hilos no se rompan entre ellos.
+
+4. Usando objetos inmutables
+Los objetos inmutables son inherentemente thread safe, ya que su estado no cambia después de su creación. Marcar campos como final y no proveer setters.
