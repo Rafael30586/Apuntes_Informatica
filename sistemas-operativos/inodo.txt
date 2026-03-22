@@ -1,0 +1,4 @@
+Inodos en sistemas operativos
+
+En sistemas operativos basados en UNIX, cada archivo es identificado por un inodo (index node). Los inodos son estructuras de datos especiales creadas cuando el sistema de archivos se inicializa. El número total de inodos determina el número máximo de archivos y directorios que el sistema puede contener.
+Un inodo contiene información esencial sobre un archivo, como su tamaño, dueños, permisos y punterosa los data blocks. Cuando un sistema de archivos es creado, un número fijo de inodos es asignado, típicamente el 1% del espacio total en disco es reservado para la tabla de inodos. Esta asignación limita el número de archivos que pueden ser almacenados, a pesar del espacio en disco.
