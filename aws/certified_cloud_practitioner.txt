@@ -951,3 +951,16 @@ Antes de comprar RI debés asegurarte de que tu límite on-demand sea igual o m�
 Límites zonales
 Podés exceder  tu límite de instancias on-demand coorriendo al comprar instancias reservadas zonales
 Si ya tenés 20 instancias on-demand corriendo, y comprás 20 instancias reservadas zonales, podés lanzar  más de 20 instancias on-demand que coinciden con las especificaciones de tus instancias reservadas zonales.
+
+------------------
+Reservaciones de capacidad (Capacity reservation)
+
+Las instancias EC2 son respaldadas por diferentes tipos de hardware, y por eso hay una cantidad finita de servidores disponibles dentro de una AZ por tipo de instancia o familia
+
+Puede ocurrir que quieras lanzar un tipo específico de instancia EC2 pero a AWS se le hayan acabado los servidores
+
+Capacity reservation es un servicio de EC2 que te permite solicitar una reserva de instancia EC2 para una región específica y AZ
+
+La capacidad reservada es cobrada a la tasa on-demand del tipo de instancia seleccionada sin importar si la instancia está corriendo o no
+
+Podés también usar tus instancias reservadas regionales con tus capacity reservations para beneficiarte de descuentos de facturación
