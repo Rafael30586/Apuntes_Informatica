@@ -53,6 +53,10 @@ Saber en donde los archivos están es crítico para la asministración
 * /logs: registros del servidor (catalina.out, localhost_access_log)
 * /webapps: acá es donde desplegás tus aplicaciones. Dejá un archivo .war acá y tomcat va a desplegarlo automáticamente
 * /work: directorio temporal en donde Jasper almacena servlets JSP compilados
-______________________________________________________
-Continuar resumiendo el contenido del enlace de arriba
-______________________________________________________	 
+
+--------------------
+Casos de uso de Apache Tomcat
+
+* Aplicaciones de spring boot: Aunque spring boot tiene un tomcat incorporado, por debajo, está corriendo el mismo motor tomcat descrito más arriba
+* Microservicios: porque es liviano y comienza rápido, es ideal para microservicios en contenedores (docker)
+* Aplicaciones empresariales legacy: alojando aplicaciones java tradicionales .war que usan servlets y JSPs
