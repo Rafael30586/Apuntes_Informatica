@@ -1,0 +1,19 @@
+https://jumpcloud.com/it-index/what-is-a-network-mask
+
+Definición y conceptos clave
+
+Una máscara de red es un valor de 32 bits para IPv4 o de 128 bits para IPv6 que divide una dirección IP en la porción de red y la del anfitrión. La máscara consiste en 1s binarios contiguos seguidos por 0s binarios contiguos. Los 1s identifican la porción de red, mientras que los 0s identifican la porción del anfitrión.
+Las máscaras de red permiten a los dispositivos determinar si una dirección IP destino reside en la misma área local o requiere enrutamiento a una red remota. Esta operación fundamental conduce todas las decisiones de enrutamiento de IP.
+
+Componentes esenciales
+* Dirección IP: un identificador numérico único asignado a cada dispositivo en una red. Toda dirección IP requiere una máscara de red asociada para funcionar apropiadamente.
+* Dirección de red (ID de red): la porción de una dirección IP que la red específica o subred. Esta valor se mantiene constante para todos los dispositivos dentro del mismo segmento de red.
+* Dirección del anfitrión (ID del anfitrión): la porción que identifica un dispositivo específico dentro de una red. Cada dispositivo deberá tener una dirección de anfitrión única dentro de su segmento de red.
+* Representación binaria: las máscaras de red son mejor entendidas en forma binaria. La estructura binaria revela la red exacta y los límites del anfitrión.
+* Bitwise y operación: La operación lógica llevada a cabo entre una dirección IP y máscara de red para derivar la dirección de red. Esta operación crea la base de todos los cálculos de enrutamiento.
+* Dotted-decimal notation: La representación común para máscaras de red IPv4, como 255.255.255.0. Este formato convierte la máscara binaria en cuatro octetos decimales.
+* Notación CIDR: Classless Inter-Domain Routing (CIDR) notation provee una representación usando una barra y número (por ejemplo /24). El número indica cuantos bits representan la porción de red.
+
+____________________________________________
+Continuar resumiendo lo del enlace de arriba
+____________________________________________
