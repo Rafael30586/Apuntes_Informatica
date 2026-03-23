@@ -964,3 +964,25 @@ Capacity reservation es un servicio de EC2 que te permite solicitar una reserva 
 La capacidad reservada es cobrada a la tasa on-demand del tipo de instancia seleccionada sin importar si la instancia está corriendo o no
 
 Podés también usar tus instancias reservadas regionales con tus capacity reservations para beneficiarte de descuentos de facturación
+
+---------------------
+RI convertible vs RI estándar
+
+RI estándar
+* Los atributos RI pueden ser modificados: 
+  - cambiar la AZ dentro de la región
+  - cambiar el alcance del RI zonal a RI regional y viceversa 
+  - cambiar el tamaño de instancia (Linux/UNIX solamente, tenencia por defecto)
+  - cambia la red de EC2-classic a VPC y viceversa
+* No se pueden intercambiar
+* Puede ser comprado o vendido en el Marketplace de RI
+
+RI convertible
+* Los atributos RI no pueden ser modificados (llevás a cabo un intercambio)
+* Puede ser intercambiado durante el plazo por otro RI convertible con nuevos atributos RI, incluyendo:
+  - familia de instancia
+  - tipo de instancia
+  - plataforma
+  - alcance
+  - tenencia
+* No puede ser comprado o vendido en el Marketplace RI
