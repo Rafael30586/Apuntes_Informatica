@@ -933,3 +933,21 @@ RI zonal: compra por zona de disponibilidad (availability zone)
 * Descuentos de RI aplican a instancia en la AZ seleccionada (no hay flexibilidad con las AZs)
 * Sin flexibilidad en tamaño de instancia. Los descuentos RI aplican al uso de instancia solamente para el tipo de instancia especificado y el tamaño.
 * No podés hacer colas para compras para RI zonal 
+
+--------------------
+Límites RI
+
+Hay un límite de instancias reservadas que podés comprar por mes
+
+Por mes podés comprar:
+* 20 instancias reservadas regionales por región
+* 20 instancias reservadas zonales por AZ
+
+Límites regionales
+No podés exceder tu límite de instancias on-demand corriendo por comprar instancias reservadas regionales.
+El límite por defecto de instancias on-demand es 20
+Antes de comprar RI debés asegurarte de que tu límite on-demand sea igual o más grande que el RI que intentás comprar
+
+Límites zonales
+Podés exceder  tu límite de instancias on-demand coorriendo al comprar instancias reservadas zonales
+Si ya tenés 20 instancias on-demand corriendo, y comprás 20 instancias reservadas zonales, podés lanzar  más de 20 instancias on-demand que coinciden con las especificaciones de tus instancias reservadas zonales.
