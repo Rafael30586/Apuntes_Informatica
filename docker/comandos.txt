@@ -1,0 +1,19 @@
+docker images --> muestra la lista de las imágenes
+
+dokcer pull <imagen>:<versión> --> descarga la imagen de la versión que indiquemos. Sin no aclaramos la versión descargará la última
+
+docker image rm <imagen>:<versión> --> elimina la imagen que indiquemos
+
+docker create <imagen>:<versión> --> crea un contenedor a partir de la imagen que indiquemos
+
+docker create --name <nombre> <imagen>:<versión> --> crea un contenedor con el nombre que indiquemos
+
+docker start <id_o_nombre_de contenedor> --> ejecuta el contenedor según el id que indiquemos
+
+docker ps --> muestra todos los contenedores en ejecución
+
+docker stop <id_de_contenedor> --> detiene el contenedor según el id que indiquemos
+
+docker ps -a --> muestra todos los contenedores, incluidos los que no están en ejecución
+
+docker rm <id_o_nombre_de contenedor> --> borra el contenedor según el nombre o id que indiquemos 
