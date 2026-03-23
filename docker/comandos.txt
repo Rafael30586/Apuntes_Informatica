@@ -17,3 +17,7 @@ docker stop <id_de_contenedor> --> detiene el contenedor según el id que indiqu
 docker ps -a --> muestra todos los contenedores, incluidos los que no están en ejecución
 
 docker rm <id_o_nombre_de contenedor> --> borra el contenedor según el nombre o id que indiquemos 
+
+docker create -p<puerto_anfitrión>:<puerto_contenedor> <imagen> --> crea una contenedor de la imagen que indiquemos haciendo un mapeo con el puerto de la máquina anfitrión y el del contenedor según indiquemos. Si colocamos solo un puerto en lugar de dos, docker asignará un puerto del anfitrión al azar
+
+docker logs <contenedor> --> muestra el registro del contenedor que indiquemos
