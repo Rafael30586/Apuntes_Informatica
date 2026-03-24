@@ -986,3 +986,18 @@ RI convertible
   - alcance
   - tenencia
 * No puede ser comprado o vendido en el Marketplace RI
+
+-----------------------
+RI Marketplace
+
+EC2 reserved instance matketplace te permite vender RI estándar sin usar para recuperar tu gasto de RI por RI que no usán o no podés usar
+
+* Reserved instances pueden ser vendidas después de que han estado activas por al menos 30 días y una vez que AWS ha recibido pago por adelantado (si es aplicable)
+* Deberás tener una cuenta de banco de Estados Unidos para vender instancias reservadas en el RI marketplace 
+* Debe haber por lo menos un mes restante en el plazo de la RI que estás listando
+* Vas a conservar el precio y el beneficio de capacidad de tu reservación hasta que sea vendida y la transacción completada
+* El nombre de tu compañía será compartido con el comprador para propósitos de impuestos
+* Un vendedor puede solamente asignar el precio por adelantado para una RI. El precio de uso y otra configuración (por ejemplo, tipo de instancia, AZ, plataforma) va a permanecer igual a cuando la RI fue inicialmente comprada
+* El tamaño del plazo será redondeado para abajo al mes más cercano. Por ejemplo, una reservación con 9 meses y 15 días restantes aparecerá como 9 meses en el Marketplace de RI
+* Podés vender hasta $20000 en RI por año. Si necesitás vender más RI.
+* RIs en la región GovCloud no pueden ser vendidas en el RI marketplace	
