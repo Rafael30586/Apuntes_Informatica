@@ -1,0 +1,33 @@
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html
+
+Creación de procesos
+
+* Los procesos pueden crear otros procesos a través de los system calls apropiados, como fork o spawn. El proceso que crea al otro es el padre, mientras que el proceso creado es el hijo.
+* A cada proceso se le da un número entero como identificador, denominado "process identifier" o PID. El PID del padre (PPID) también es almacenado para cada proceso.
+* En típicos sistemas de UNIX el process scheduler es denominado "sched" y su PID es 0. Lo primero que hace al comenzar el sistema es lanzar init, que le da a ese proceso el PID 1. Init luego lanza todos los "daemons" del sistema y login de usuario, y se vuelve el padre absoluto de todos los procesos. La siguiente imagen muestra el típico árbol de procesos para un sistema Linux, y otros sistemas tendrán árboles similares:
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_08_ProcessTree.jpg 
+
+* Dependiendo de la implementación del sistema, un proceso hijo recibirá una cantidad de recursos compartidos con su padre. Los procesos hijos podrían o no estar limitados a un subconjunto de recursos originalmente asignados para el padre, previniendo que los hijos se descontrolen consumiendo un determinado recurso del sistema.
+* Hay dos opciones para el proceso padre después de crear a un hijo:
+  1. Esperar a que el proceso hijo termine antes de seguir. El padre hace un system call wait(), para un hijo específico o para cualquier hijo, lo que causa que el proceso padre se bloquee hasta que el wait() regrese. Las shells de UNIX normalmente esperan a que sus hijos completen antes de emitir un nuevo aviso.
+  2. Correr concurrentemente con el hijo, continuando el proceso sin esperar. Esta es la operación vista cuando en una Shell de UNIX un proceso corre como tarea en segundo plano. Es también posible para el padre correr por un tiempo, y después esperar por el hijo, lo cual podría ocurrir es una especie de operación de proceso paralela (por ejemplo, el padre podría bifurcar un número de hijos sin esperar por ninguno de ellos, luego hacer un poco de trabajo por sí mismo, y luego esperar por los hijos). 
+* Hay dos posibilidades para el address space del hijo relativo al padre:
+  1. El hijo podría ser un duplicado exacto del padre, compartiendo el mismo programa y data segments en memoria. Cada uno tendrá su propio PCB, incluyendo program counter, registers y PID.  Este es el comportamiento del system call fork en UNIX
+  2. El proceso hijo podrá tener un nuevo programa cargado en su address space, con nuevo código y data segments. Este es el comportamiento de los systema call spawn en Windows. Los sistemas de UNIX implementan esto como un segundo paso, usando el system call exec
+
+--------------------
+Terminación de procesos
+
+* Los procesos podrán solicitar su propia terminación con el system call exit(), típicamente retornando un int. Este int es transmitido al padre si está haciendo un wait(), y es típicamente cero si se completa exitosamente y no es cero cuando hay algún tipo de problema
+* Los procesos pueden terminarse por el sistema por una variedad de razones, incluyendo:
+  - La inhabilidad del sistema de entregar los recursos necesarios de sistema
+  - En respuesta a un comando KILL, u otro interrupt no manejado
+  - Un padre podrá matar a su hijo si la tarea asignada ya no es necesaria
+  - Si el padre existe, el sistema permitirá o no al hijo continuar sin el padre (en sistemas UNIX, los procesos huérfanos son generalmente heredados por init, quien luego procede a matarlos. El comando nohup de UNIX permite a un hijo continuar ejecutándose luego de que su padre haya salido)
+* Cuando un proceso termina, todos sus recursos de sistema son liberados, archivos abiertos "flushed" y cerrados, etc. El estado de terminación de un proceso y la cantidad de veces ejecutado son retornados al padre si el padre está esperando a que el hijo termine, o eventualmente retornado a init si el proceso se vuelve huérfano (los procesos que están tratando de terminar pero no pueden porque sus padres no están esperando por ellos son denominados zombies. Estos son eventualmente heredados por init y exterminados. Nótese que los shells modernos de UNIX no producen tantos huérfanos y zombies como otros sistemas más viejos) 	
+
+
+_____________________________________________
+Continuar resumiendo con el enlace de arriba
+_____________________________________________

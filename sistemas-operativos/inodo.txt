@@ -1,12 +1,14 @@
+https://www.geeksforgeeks.org/operating-systems/inode-in-operating-system/
+
 Inodos en sistemas operativos
 
 En sistemas operativos basados en UNIX, cada archivo es identificado por un inodo (index node). Los inodos son estructuras de datos especiales creadas cuando el sistema de archivos se inicializa. El número total de inodos determina el número máximo de archivos y directorios que el sistema puede contener.
-Un inodo contiene información esencial sobre un archivo, como su tamaño, dueños, permisos y punterosa los data blocks. Cuando un sistema de archivos es creado, un número fijo de inodos es asignado, típicamente el 1% del espacio total en disco es reservado para la tabla de inodos. Esta asignación limita el número de archivos que pueden ser almacenados, a pesar del espacio en disco.
+Un inodo contiene información esencial sobre un archivo, como su tamaño, dueños, permisos y punteros a los data blocks. Cuando un sistema de archivos es creado, un número fijo de inodos es asignado, típicamente el 1% del espacio total en disco es reservado para la tabla de inodos. Esta asignación limita el número de archivos que pueden ser almacenados, a pesar del espacio en disco.
 
 ----------------------------------------
 Información clave almacenada en un inodo
 
-Un inodo contiene metadatos importantes sobre un archivo o directorio. Contienbe la siguiente información:
+Un inodo contiene metadatos importantes sobre un archivo o directorio. Contiene la siguiente información:
 1. Nombres de archivos de 14 bytes e inodos correspondientes de 2 bytes.
 2. Información del dueño
   * UID numérico del dueño
@@ -22,4 +24,3 @@ Un inodo contiene metadatos importantes sobre un archivo o directorio. Contienbe
 6. Punteros de data blocks
   * Un número de bloques directos (típicamente 12) que contiene los primeros 12 bloques del archivo
   * Un puntero indirecto que apunta a un disk block, que es una colección de punteros a disk blocks que son index blocks, usados si el archivo es muy grande para ser indexado por los bloques directos e indirectos
-
