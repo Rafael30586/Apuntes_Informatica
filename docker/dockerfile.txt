@@ -1,0 +1,9 @@
+FROM <imagen>:<verión> --> sirve para elegir a partir de qué imagen se basará nuestra nueva imagen
+
+RUN <comando> --> sirve para ejecutar comandos dentro del contenedor, por ejemplo, para crear un directorio
+
+COPY <ruta_anfitrión> <ruta_contenedor> --> copia los archivos que indiquemos desde nuestra computadora a la ruta que le indiquemos en el contenedor
+
+EXPOSE <puerto> --> el puerto a exponer 
+
+CMD [<comandos>] --> se ejecuta el comando que indiquemos. El comando debe estar en forma de arrya, por ejemplo CMD ["java","-jar","app.jar"] 
