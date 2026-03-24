@@ -1015,3 +1015,25 @@ AWS Batch: es una manera fácil y conveniente de usar spot pricing
 Condiciones de finalización: Las instancias pueden ser finalizadas por AWS en cualquier momento
 Si tu instancia es terminada por AWS no se te cobra por un uso parcial de hora
 Si vos finalizás una instancia se te cobra por cualquier hora en la que haya estado corriendo
+
+-----------------------
+Instancias dedicadas
+
+Las instancias dedicadas están diseñadas para cumplir con requerimientos regulatorios
+
+* Multi-tenant: es como cuando muchas personas viven en un mismo edificio de departamentos 
+Cuando múltiples clientes están corriendo cargas de trabajo en el mismo hardware. El aislamiento virtual es lo que separa a los clientes
+
+* Single-tenant: es como cuando cada uno tiene su casa
+Cuando un cliente tiene hardware dedicado. El aislamiento físico es lo que separa a los clientes
+
+Dedicado puede ofrecerse:
+* on-demand
+* reservado (ahorro de hasta 60%)
+* spot (ahorro de hasta 90%)
+
+Elegís la tenencia cuando lanzás tu EC2 (dedicated host es una de las opciones)
+
+Organizaciones grandes y empresas pueden tener preocupaciones de seguridad al compartir del mismo hardware con otros clientes de AWS
+
+ 	
