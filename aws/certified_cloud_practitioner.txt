@@ -999,5 +999,19 @@ EC2 reserved instance matketplace te permite vender RI estándar sin usar para r
 * El nombre de tu compañía será compartido con el comprador para propósitos de impuestos
 * Un vendedor puede solamente asignar el precio por adelantado para una RI. El precio de uso y otra configuración (por ejemplo, tipo de instancia, AZ, plataforma) va a permanecer igual a cuando la RI fue inicialmente comprada
 * El tamaño del plazo será redondeado para abajo al mes más cercano. Por ejemplo, una reservación con 9 meses y 15 días restantes aparecerá como 9 meses en el Marketplace de RI
-* Podés vender hasta $20000 en RI por año. Si necesitás vender más RI.
+* Podés vender hasta $20000 en RI por año
 * RIs en la región GovCloud no pueden ser vendidas en el RI marketplace	
+
+------------------------
+Spot instances
+
+AWS tiene capacidad de cómputo sin usar y quieren maximizar la utilidad de sus servidores inactivos. Es como cuando un avión ofrece descuentos por asientos que están vacantes.
+
+Las spot instances proveen un descuento del 90% comparado con el precio on-demand
+Las spots instances pueden ser finalizadas si la capacidad de cómputo se necesita por otros clientes on-demand
+Está diseñado para aplicaciones que tiene un comienzo flexible o aplicaciones que son solamente factibles a costos de cómputo muy bajos
+
+AWS Batch: es una manera fácil y conveniente de usar spot pricing
+Condiciones de finalización: Las instancias pueden ser finalizadas por AWS en cualquier momento
+Si tu instancia es terminada por AWS no se te cobra por un uso parcial de hora
+Si vos finalizás una instancia se te cobra por cualquier hora en la que haya estado corriendo
