@@ -4,3 +4,5 @@ network mask
 subnet mask
 En direcciones IP hay algo llamado NID y HID, siendo network ID y host ID respectivamente
 VLSM o variable length subnet masking
+CIDR notation
+broadcast domain
