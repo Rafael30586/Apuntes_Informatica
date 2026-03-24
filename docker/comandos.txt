@@ -21,3 +21,9 @@ docker rm <id_o_nombre_de contenedor> --> borra el contenedor según el nombre o
 docker create -p<puerto_anfitrión>:<puerto_contenedor> <imagen> --> crea una contenedor de la imagen que indiquemos haciendo un mapeo con el puerto de la máquina anfitrión y el del contenedor según indiquemos. Si colocamos solo un puerto en lugar de dos, docker asignará un puerto del anfitrión al azar
 
 docker logs <contenedor> --> muestra el registro del contenedor que indiquemos
+
+docker logs --folow <contenedor> --> muestra los registros de un contenedor y permanece a la escucha de los mismos
+
+docker run <imagen> --> descarga la imagen que indiquemos (si es que no la tenemos descargada ya), crea un contenedor a partir de la imagen y lo ejecuta. Se le puede agregar la opción --name <nombre> para darle nombre al contenedor. Agregando la opción -d hace que el contenedor se ejecute en segundo plano 
+
+docker <comando> --help --> muestra ayuda del comando que le indiquemos 
