@@ -41,6 +41,11 @@ Las organizaciones pueden crear múltiples subredes desde una sola asignación d
 Decisiones de enrutamiento
 Los routers usan máscaras de red en tablas de enrutamiento para determinar la interfaz saliente	para paquetes IP. El prefix match más largo determina la mejor ruta para envío de paquetes  
 
+-----------------------------
+Características clave y componentes
+
+Las máscaras de red poseen varias características críticas que permiten una operación de red apropiada:
+* Estructura de longitud fija: 32 bits para IPv4 y 128 bits para IPv6, coincidiendo con la longitud exacta de la correspondiente dirección IP
 ____________________________________________
 Continuar resumiendo lo del enlace de arriba
 ____________________________________________
