@@ -34,4 +34,10 @@ docker network ls --> lista todas las redes
 
 docker network create <nombre> --> crea una red con el nombre que le indiquemos
 
-docker network rm <red> --> borra una red que indiquemos 
+docker network rm <red> --> borra una red que indiquemos
+
+docker create --network <red> <imagen> --> crea un contenedor asignándole la red que indiquemos
+
+docker create -e <variable>=<valor> <imagen> --> crea un contenedor asignándole un valor a la variable de entorno que indiquemos
+
+docker build -t <nombre>:<versión> <ruta> --> crea una imagen a partir del dockerfile presente en le ruta que indiquemos con el nombre que indiquemos y su versión. Si estamos posicionados en el mismo directorio donde está el dockerfile, el argumento sería un punto

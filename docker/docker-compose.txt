@@ -1,0 +1,11 @@
+Para trabajar con docker compose hay que crear un archivo llamado docker-compose.yml, preferentemente en la raíz del proyecto
+
+version: <"numero"> --> 
+
+services: --> seguido de los servicios van los nombres que les queremos asignar a los contenedores
+
+build: <ruta> --> va después del nombre de algunos contenedores e indica la ruta en la que se encuentra el dockerfile, si es en el directorio raíz va un punto
+
+ports: /salto de línea /tabulación - <"puerto_anfitrión>:<puerto_contenedor"> --> va después del nombre de los contenedores y es para los puertos del anfitrión y del contenedor respectivamente
+
+links: /salto de línea /tabulación - <contenedor> --> es para vincular el contenedor a otro contendor de la red
