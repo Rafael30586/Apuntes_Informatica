@@ -21,4 +21,11 @@ Incluso, aunque nuestro proyecto, que usa Maven, tenga un pom.xml sin opciones p
 https://www.campusmvp.es/recursos/image.axd?picture=/2022/2T/maven-estructura-por-defecto.png
 
 En el archivo pom.xml, los 4 primeros nodos son los únicos obligatorios y definen respectivamente el modelo de objetos que utilizará Maven, el identificador del grupo, el id del proyecto (artifact) y su versión. Esto es lo mínimo  que debe incluir el archivo si utilizamos Maven y la mayor parte de los editores y herramientas nos lo crearán automáticamente al crear el proyecto.
+
+--------------------------
+Herencia de POMs
+
+Dentro de un proyecto pueden existir varios archivos pom.xml en distintas subcarpetas. Cuando una subcarpeta tiene su propio pom, este hereda los valores de las carpetas superiores, sobrescribiéndolos en caso de estar definidos de nuevo dentro de él.
+De hecho el archivo pom.xml que tenemos en la raíz está actuando ya de esta manera: hereda todos los valores del super pom que son los que tenemos por defecto y, si en nuestro pom.xml propio en el proyecto establecemos otros diferentes, estos prevalecerán sobre los que hay en el super pom. 
+Este tipo de funcionamiento es típico en muchas herramientas de configuración y nos ofrece una manera muy potente de definir valores particulares para casos concretos teniendo una configuración global por defecto.	 
 	
