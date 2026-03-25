@@ -26,8 +26,3 @@ Terminación de procesos
   - Un padre podrá matar a su hijo si la tarea asignada ya no es necesaria
   - Si el padre existe, el sistema permitirá o no al hijo continuar sin el padre (en sistemas UNIX, los procesos huérfanos son generalmente heredados por init, quien luego procede a matarlos. El comando nohup de UNIX permite a un hijo continuar ejecutándose luego de que su padre haya salido)
 * Cuando un proceso termina, todos sus recursos de sistema son liberados, archivos abiertos "flushed" y cerrados, etc. El estado de terminación de un proceso y la cantidad de veces ejecutado son retornados al padre si el padre está esperando a que el hijo termine, o eventualmente retornado a init si el proceso se vuelve huérfano (los procesos que están tratando de terminar pero no pueden porque sus padres no están esperando por ellos son denominados zombies. Estos son eventualmente heredados por init y exterminados. Nótese que los shells modernos de UNIX no producen tantos huérfanos y zombies como otros sistemas más viejos) 	
-
-
-_____________________________________________
-Continuar resumiendo con el enlace de arriba
-_____________________________________________

@@ -1,0 +1,22 @@
+https://www.geeksforgeeks.org/operating-systems/inter-process-communication-ipc/
+
+Comunicación entre procesos (IPC)
+
+IPC es un mecanismo que permite a los procesos comunicarse y compartir datos entre sí mientras se están ejecutando. Como cada proceso tiene su propio espacio de memoria, IPC provee métodos controlados para intercambiar información y coordinar acciones. Ayuda a que los procesos trabajen juntos eficientemente y de forma segura en un sistema operativo.
+* Ayuda a los procesos a sincronizar sus actividades, compartir información y evitar conflictos mientras se comparten recursos
+* Hay dos métodos de IPC, "shared memory" y "message passing". Un sistema operativo puede implementar ambos métodos de comunicación
+
+Ejemplo: un sistema ATM de banco, donde un proceso lee la tarjeta y el PIN, otro revisa el balance de cuenta y un tercero dispensa plata. Estos procesos se comunican y coordinan para completar la transacción correctamente.
+
+-------------------------
+Shared memory
+
+La comunicación entre procesos usando memoria compartida requiere que los procesos compartan alguna variable y depende completamente de como el programador los implementará. Los procesos pueden usar memoria compartida para extraer información como un registro desde otro proceso y para enviar cualquier información específica a otros procesos.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250829161702611682/Shared_Memory.webp
+
+* En la imagen de arriba, un espacio común de memoria es asignado por el kernel
+* El proceso A escribe datos en la región de la memoria compartida (paso 1)
+* El proceso B puede directamente leer estos datos desde la misma región de memoria compartida (paso 2)
+* Ya que ambos procesos acceden al mismo segmento de memoria, este método es rápido pero requiere mecanismo de sincronización (como semáforos) para evitar conflictos cuando múltiples procesos escriben/leen simultáneamente
+* Ejemplo: múltiples personas pueden editar un documento al mismo tiempo en Google doc  
