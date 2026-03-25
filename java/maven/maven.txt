@@ -11,4 +11,14 @@ Con Maven se puede:
 * Generar documentación a partir del código fuente
 * Gestionar las distintas fases del ciclo de vida de las build: validación, generación de código fuente, procesamiento, generación de recursos, compilación, ejecución de test...
 
+---------------------------
+¿Qué es el archivo pom.xml?
+
+La unidad básica de trabajo de Maven es el llamado modelo de objetos de proyecto conocido simplemente como POM (Project object model).
+Se trata de un archivo XML que se encuentra por defecto en la raíz de los proyectos y que contiene toda la información del proyecto: configuración, dependencias, etc.	
+Incluso, aunque nuestro proyecto, que usa Maven, tenga un pom.xml sin opciones propias, prácticamente vacío, estará usando el modelo de objetos para definir los valores por defecto del mismo. Por ejemplo, por defecto, el directorio donde está el código fuente es src/main/java, dodne se compila el proyecto es target y donde ubicamos los tests unitarios  es en src/main/test, etc. Al pom.xml global, con los valores predeterminados se le llama super pom. La siguiente imagen muestra la estructura habitual de un proyecto java que utiliza Maven:
+
+https://www.campusmvp.es/recursos/image.axd?picture=/2022/2T/maven-estructura-por-defecto.png
+
+En el archivo pom.xml, los 4 primeros nodos son los únicos obligatorios y definen respectivamente el modelo de objetos que utilizará Maven, el identificador del grupo, el id del proyecto (artifact) y su versión. Esto es lo mínimo  que debe incluir el archivo si utilizamos Maven y la mayor parte de los editores y herramientas nos lo crearán automáticamente al crear el proyecto.
 	
