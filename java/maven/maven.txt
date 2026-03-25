@@ -1,0 +1,14 @@
+https://www.campusmvp.es/recursos/post/java-que-es-maven-que-es-el-archivo-pom-xml.aspx?srsltid=AfmBOorBp-wNFp3ZhcFaJbNgPuTVVrDjYj1CPH1uYi8G37TMNwjEoLeH
+
+Maven es una herramienta de gestión de proyectos que se utiliza para gestión de dependencias, como herramienta de compilación e incluso como herramienta de documentación. Es de código abierta y gratuita. La unidad básica de trabajo en Maven es el llamado modelo de objetos de proyecto conocido simplemente como POM. 
+Aunque se puede utilizar con diversos lenguajes (C#, Ruby, Scala, etc) se usa principalmente en proyectos java, donde es muy común ya que está escrita en este lenguaje.
+Al contrario que otras herramientas anteriores y más limitadas como Apache Ant, Maven utiliza convenciones sobre donde colocar ciertos archivos para el proceso de "build" de un proyecto, por lo que solo debemos establecer las excepciones y por lo tanto simplifica mucho el trabajo. Además, es una herramienta declarativa. Es decir, todo lo que definamos (dependencias en módulos y componentes externos, procesos, orden de compilación, plugins del propio Maven...) se almacena en un archivo XML que Maven lee a la hora de funcionar.
+Con Maven se puede:
+* Gestionar dependencias del proyecto, para descargar e instalar módulos, paquetes y herramientas que sean necesarios para el mismo
+* Compilar el código fuente de la aplicación de manera automática
+* Empaquetar el código en archivos .jar o .zip
+* Instalar los paquetes en un repositorio (local, remoto o en la central de la empresa)
+* Generar documentación a partir del código fuente
+* Gestionar las distintas fases del ciclo de vida de las build: validación, generación de código fuente, procesamiento, generación de recursos, compilación, ejecución de test...
+
+	
