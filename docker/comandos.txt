@@ -27,3 +27,11 @@ docker logs --folow <contenedor> --> muestra los registros de un contenedor y pe
 docker run <imagen> --> descarga la imagen que indiquemos (si es que no la tenemos descargada ya), crea un contenedor a partir de la imagen y lo ejecuta. Se le puede agregar la opción --name <nombre> para darle nombre al contenedor. Agregando la opción -d hace que el contenedor se ejecute en segundo plano 
 
 docker <comando> --help --> muestra ayuda del comando que le indiquemos 
+
+docker exec --> sirve para ejecutar comandos en un contenedor en ejecución
+
+docker network ls --> lista todas las redes
+
+docker network create <nombre> --> crea una red con el nombre que le indiquemos
+
+docker network rm <red> --> borra una red que indiquemos 
