@@ -46,6 +46,33 @@ Características clave y componentes
 
 Las máscaras de red poseen varias características críticas que permiten una operación de red apropiada:
 * Estructura de longitud fija: 32 bits para IPv4 y 128 bits para IPv6, coincidiendo con la longitud exacta de la correspondiente dirección IP
-____________________________________________
-Continuar resumiendo lo del enlace de arriba
-____________________________________________
+* Patrón de bits contiguo: máscaras válidas contienen contiguos 1s seguidos por contiguos 0s sin espacios o patrones mixtos
+* "Routing foundation": Esencial para todas las decisiones de enrutamiento IP a través de áreas de red
+* Capacidad de subnetting: Permite asignación de dirección IP eficiente y estrategias de segmentación de red
+* Mejoramiento de la seguridad (security): facilita organización de red e implementación de control de acceso a través de segmentación lógica
+
+-------------------------
+Casos de uso y aplicaciones
+
+* Configuración de red
+Todo dispositivo con IP habilitada requiere una configuración de máscara de red apropiada. Configuraciones incorrectas de máscara de red dificultan la buena comunicación y crean problemas de conectividad.
+Los administradores de red configuran máscaras en computadoras, servidores, routers y switches durante la configuración inicial y procedimientos de mantenimiento.
+
+* Operaciones de subnetting
+Las organizaciones usan máscaras de red para dividir grandes redes en segmentos más pequeños basados en requerimientos departamentales, geográficos o funcionales.
+
+* Implementación de enrutamiento
+Los routers se benefician de las máscaras de red para tomar decisiones de envío. Cada "routing table entry" incluye una red destino y su correspondiente máscara.
+El proceso de enrutamiento usa "longest prefix matching" para seleccionar la ruta más específica para el envío del paquete.
+
+* Configuración de políticas de seguridad (security)
+Las reglas de los firewalls y listas de control de acceso (ACLs) usan máscaras de red para definir el rango de direcciones IP para políticas de seguridad.
+Las máscaras de red habilitan a los administradores de red a crear reglas que afecten a las subredes enteras en lugar de a direcciones individuales.
+
+* Diseño de red y planeamiento
+Los arquitectos de red usan máscaras para asignar direcciones IP eficientemente y estructuras diseños de red jerárquicos.
+Una selección apropiada de la máscara asegura una adecuada capacidad del anfitrión mientras se minimiza el gasto de direcciones.
+
+* Procedimientos de solución de problemas
+Los problemas de conectividad en redes generalmente involucran configuraciones de máscara incorrectos. Los administradores verifican las configuraciones de máscara al diagnosticar problemas de comunicación.
+Problemas comunes incluyen máscaras que no coinciden entre los dispositivos y cálculos de subred incorrectos.

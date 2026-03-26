@@ -6,3 +6,6 @@ En direcciones IP hay algo llamado NID y HID, siendo network ID y host ID respec
 VLSM o variable length subnet masking
 CIDR notation
 broadcast domain
+default Gateway
+Bitwise AND operation
+Access control lists o ACLs
