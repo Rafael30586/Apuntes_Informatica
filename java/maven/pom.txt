@@ -1,0 +1,1 @@
+groupId y artifactId --> identifican tu proyecto entre todos los proyectos del mundo. Ejemplo de groupId: com.f-rafael. Ejemplo de artifactId: maven-tutorial
