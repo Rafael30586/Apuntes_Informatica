@@ -1,0 +1,1 @@
+Docker volumes: sirve para persistir la información guardada en un contenedor aunque este se elimine. La información se guarda en el sistema operativo anfitrión. Esto puede servir para cuando trabajamos con bases de datos.
