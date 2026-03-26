@@ -19,4 +19,18 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250829161702611682/Shared_M
 * El proceso A escribe datos en la región de la memoria compartida (paso 1)
 * El proceso B puede directamente leer estos datos desde la misma región de memoria compartida (paso 2)
 * Ya que ambos procesos acceden al mismo segmento de memoria, este método es rápido pero requiere mecanismo de sincronización (como semáforos) para evitar conflictos cuando múltiples procesos escriben/leen simultáneamente
-* Ejemplo: múltiples personas pueden editar un documento al mismo tiempo en Google doc  
+* Ejemplo: múltiples personas pueden editar un documento al mismo tiempo en Google doc 
+
+-------------------------
+Message passing
+
+Message passing es un método en el cual los procesos se comunican al enviar y recibir mensajes para intercambiar datos. Un proceso envía un mensaje y el otro lo recibe, permitiendo que ambos compartan información. El message passing puede realizarse a través de diferentes métodos como sockets, colas de mensajes o pipes.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250829161702509451/Message_Passing_.webp
+
+* En la imagen de arriba, los procesos intercambian información al enviar y recibir mensajes a través del kernel
+* El proceso A envía un mensaje al kernel (paso 1)
+* El kernel luego entrega el mensaje al proceso B (paso 2)
+* Acá, los procesos no comparten memoria directamente. En su lugar, la comunicación ocurre vía system calls (send(), recv() o similar)
+* Este método es más simple y seguro (safer) que shared memory porque no hay riesgo sobreescribir datos, pero hay más sobrecarga debido a la intervención del kernel
+* Ejemplo: múltiples personas envían actualizaciones a un grupo de chat, pero cada mensaje va a través del servidor antes de que otros lo vean, como procesos enviando mensajes en lugar de compartir directamente memoria  
