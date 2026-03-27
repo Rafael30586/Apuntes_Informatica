@@ -1,5 +1,20 @@
-POM son siglas de Project object model. Este archivo es el archivo principal de configuración de un proyecto de Maven. Define los metadatos del proyecto, dependencias, plugins y configuraciones de construcción requeridas para compilar, probar y sdesplegar una aplicación 
+POM son siglas de Project object model. Este archivo es el archivo principal de configuración de un proyecto de Maven. Define los metadatos del proyecto, dependencias, plugins y configuraciones de construcción requeridas para compilar, probar, empaquetar y desplegar una aplicación
 
+------------------------
+Flujo de trabajo del pom
+
+1. Inicialización: Maven lee el pom.xmle inicializa el proyecto
+2. Resolución de dependencias: descarga todas las dependencias definidas desde repositorios
+3. Ejecución del ciclo de vida de construcción: corre fases como compilado, pruebas, empaquetación y verificación
+4. Ejecución de plugins: ejecuta objetivos de plugins como compilación, pruebas y análisis
+5. Empaquetación: genera archivos JAR/WAR/EAR según lo definido en el pom
+6. Despliegue: sube el artifact final al repositorio remoto o servidor
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260110124644365192/pom_work_flow.webp
+
+------------------------
+Etiquetas
+ 
 groupId y artifactId --> identifican tu proyecto entre todos los proyectos del mundo. Ejemplo de groupId: com.f-rafael. Ejemplo de artifactId: maven-tutorial
 
 versión --> es la versión del proyecto. Si tiene la palabra Snapshot significa que es un trabajo en desarrollo
