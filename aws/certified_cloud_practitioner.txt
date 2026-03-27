@@ -1036,4 +1036,30 @@ Elegís la tenencia cuando lanzás tu EC2 (dedicated host es una de las opciones
 
 Organizaciones grandes y empresas pueden tener preocupaciones de seguridad al compartir del mismo hardware con otros clientes de AWS
 
- 	
+--------------------------
+Planes de ahorro
+
+Los planes de ahorro te ofrecen descuentos similares a RIs pero simplifican el proceso de compra
+
+Hay tres tipos de planes de ahorro:
+* planes de ahorro de cómputo
+* planes de ahorro de instancias EC2
+* planes de ahorro SageMaker
+
+Se pueden elegir dos plazos diferentes:
+* 1 año
+* 3 años
+
+Elegís las siguientes opciones de pago:
+* Todo por adelantado
+* Parcialmente por adelantado
+* No por adelantado 	
+
+Planes de ahorro de cómputo:
+Proveen la mayor flexibilidad y ayudan a reducir tu costo por un 66%. Estos planes aplican automáticamente a uso de instancias EC2, AWS fargate y a uso de servicio AWS lambda sin importar la familia de instancia, tamaño, AZ, región, S.O o tenencia
+
+Planes de ahorro de instancias EC2:
+provee los precios más bajos, ofreciendo ahorro de hasta 72% a cambio de compromiso de uso de familias de instancias individuales en una región. Automáticamente reduce tu costo en la familia de instancia seleccionada en esa región sin importar AZ, tamaño, SO o tenencia. Te da flexibilidad para cambiar tu uso entre instancias dentro de una familia en esa región
+
+Planes de ahorro de SageMaker:
+Te ayuda a reducir costos de SageMaker a un 64%. Automáticamente aplica a uso de SageMaker sin importar familia de instancia, tamaño, componente o región de AWS 
