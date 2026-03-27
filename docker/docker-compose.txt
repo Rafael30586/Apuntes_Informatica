@@ -17,3 +17,7 @@ environment: /salto de línea /tabulación - <variable>=<valor> --> va después 
 volumes: /salto de línea /tabulación <nombre> --> va al mismo nivel que servicios. Es para trabajar con docker volumes
 
 volumes: /salto de línea /tabulación - <nombre>:<ruta> --> trabaja en conjunto con el anterior. Va después del contenedor que corresponda, generalmente de una base de datos. El nombre es el mismo que en el del volumes anterior. La ruta es adonde ser guarda la información dentro del contenedor. La ruta para mongoDB es /data/db, para MySQL es /var/lib/mysql, para postgres es /var/lib/postgresql/data 
+
+context <ruta>: sigue después de build y es para la ruta del dockerfile en caso de que queramos, por alguna razón, trabajar con un dockerfile que se llame distinto
+
+dockerfile <nombre>: va a la misma altura de context. Es para cuando queremos trabajar con un Docker file que se llame distinto, por ejemplo, Dockerfile.dev

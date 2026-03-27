@@ -7,3 +7,5 @@ COPY <ruta_anfitrión> <ruta_contenedor> --> copia los archivos que indiquemos d
 EXPOSE <puerto> --> el puerto a exponer 
 
 CMD [<comandos>] --> se ejecuta el comando que indiquemos. El comando debe estar en forma de arrya, por ejemplo CMD ["java","-jar","app.jar"] 
+
+WORKDIR	<ruta> --> establece cual es el directorio dentro del contendor en donde se ejecutarán los próximos comandos

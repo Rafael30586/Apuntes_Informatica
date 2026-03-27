@@ -1,0 +1,3 @@
+Docker registry vs Docker repository
+* Docker registry: es un servicio que provee almacenamiento para imágenes; puede ser "hosted" por terceros, como AWS o por vos mismo; ejemplo: AWS ECR; puede contener una colección de repositorios
+* Docker repository: esuna colección de imágenes relacionadas con el mismo nombre pero diferentes versiones
