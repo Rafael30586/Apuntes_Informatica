@@ -1063,3 +1063,25 @@ provee los precios más bajos, ofreciendo ahorro de hasta 72% a cambio de compro
 
 Planes de ahorro de SageMaker:
 Te ayuda a reducir costos de SageMaker a un 64%. Automáticamente aplica a uso de SageMaker sin importar familia de instancia, tamaño, componente o región de AWS 
+
+----------------------------------------------------------------------------------------------
+Identidad
+----------------------------------------------------------------------------------------------
+Zero trust model
+
+Opera según el principio "no confiar en nadie, verificar todo"
+
+Al ser los actores maliciosos capaces de sobrepasar controles de acceso convencional demuestra que las medidas de seguridad (security) tradicionales ya no son suficientes
+
+La identidad se convierte en el perímetro principal de seguridad
+
+¿Qué es el perímetro principal de seguridad (primary security perimeter)?
+Define la primera línea de defensa y sus controles de seguridad que protegen a los recursos de nube de una compañía y sus "assets"
+
+Network-centric (la viaje manera)
+La seguridad tradicional se enfocaba en firewalls y VPNs al pocos empleados y workstations fuera de la oficina o estaban en oficinas remotas específicas
+
+Identity-centric (la nueva manera)
+Las workstations remotas son mucho más comunes, no podemos confiar en que el empleado esté en una ubicación segura, tenemos controles de seguridad basados en identidad como MFA, o provisión de acceso provisional basado en el nivel de riesgo desde donde, cuando y qué usuario quiere acceder
+
+Identity-centric no reemplaza a network-centric, lo mejora
