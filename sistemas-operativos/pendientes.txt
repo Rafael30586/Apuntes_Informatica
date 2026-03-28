@@ -8,3 +8,4 @@ despachador o dispatcher
 context switch
 desarrollo sobre micro kernel y kernel monolítico
 interrupt
+deadlock, starvation y race conditions en procesos

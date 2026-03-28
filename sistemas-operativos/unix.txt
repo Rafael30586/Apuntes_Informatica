@@ -1,0 +1,31 @@
+UNIX es un sistema operativo multiusuario y multitarea diseñado para proveer un entorno computacional estable, seguro y eficiente. Fue desarrollado originalmente por laboratorios AT&T Bell y luego se convirtió en la base para muchos sistemas operativos.
+* Soporta la ejecución de múltiples tareas o procesos simultáneamente
+* Es bien conocido por su fiabilidad, diseño estructurado y estabilidad a largo plazo
+* Sus principios de diseño han influido muchos sistemas operativos como Linux, BSD y macOS
+
+--------------------
+Características clave
+
+1. Sistema multiusuario
+* Múltiples usuarios pueden acceder al sistema al mismo tiempo sin afectar los procesos de otro
+* Cada usuario obtiene permisos y entorno separado para asegurar la privacidad y operaciones seguras
+
+2. Capacidad multitarea
+* UNIX puede ejecutar varios procesos simultáneamente a través gestión (scheduling) de procesos eficiente
+* Tareas en primer y segundo plano pueden correr juntas, mejorando productividad y utilización de recursos
+
+3. Portabilidad
+* Escrito principalmente en lenguaje C, permitiendo el movimiento fácil de UNIX a diferentes plataformas de hardware
+* Solo unos mínimos cambios son requeridos para adaptar UNIX a sistemas nuevos, haciéndolo ampliamente soportado 
+
+4. Sistema de archivos jerárquico
+* Los archivos y directorios están ordenados en un estructura como de árbol, comenzando por la raíz /
+* La estructura hace a la navegación, organización de archivos y acceso a datos simple y sistemática
+
+5. Permisos y seguridad (security)
+* UNIX asigna permisos (lectura, escritura y ejecución) a usuarios, grupos y otros para protección de archivos
+* La autenticación a través nombres de usuario y contraseñas asegura control de acceso seguro
+
+6. Soporte para Shell y scripting
+* La Shell actúa como un intérprete de comandos, permitiendo a los usuarios comunicarse con el sistema
+* El Shell scripting automatiza tareas repetitivas, haciendo que la gestión del sistema sea más rápida y fácil
