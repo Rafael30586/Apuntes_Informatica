@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/linux-unix/introduction-to-unix-system/
+
 UNIX es un sistema operativo multiusuario y multitarea diseñado para proveer un entorno computacional estable, seguro y eficiente. Fue desarrollado originalmente por laboratorios AT&T Bell y luego se convirtió en la base para muchos sistemas operativos.
 * Soporta la ejecución de múltiples tareas o procesos simultáneamente
 * Es bien conocido por su fiabilidad, diseño estructurado y estabilidad a largo plazo
@@ -29,3 +31,30 @@ Características clave
 6. Soporte para Shell y scripting
 * La Shell actúa como un intérprete de comandos, permitiendo a los usuarios comunicarse con el sistema
 * El Shell scripting automatiza tareas repetitivas, haciendo que la gestión del sistema sea más rápida y fácil
+
+-----------------------------
+Estructura en capas de UNIX
+
+La estructura en capas de UNIX organiza sus componentes de manera jerárquica para asegurar un funcionamiento del sistema modular, seguro (secure) y eficiente
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260122104403667600/hardware.webp
+
+* Capa 1: Hardware
+  - Representa los componentes físicos de la computadora, como el CPU, memoria, dispositivos de almacenamiento y hardware de entrada/salida
+  - Todas las operaciones de sistema dependen de esta capa
+
+* Capa 2: kernel
+  - El kernel es el núcleo de UNIX e interactúa directamente con el hardware
+  - Gestiona tareas esenciales como asignación de memoria, programación de procesos, manejo de archivos, control de dispositivos y gestión general de recursos
+
+* Capa 3: Programas de sistema, comandos y utilidades
+  - Esta capa incluye compiladores, editores, procesadores de texto y Shell
+  - También contiene herramientas comunes de UNIX como wc, grep, date, who y a.out, que cuentan con el kernel para llevar a cabo diferentes funciones como procesamiento de texto, gestión de archivos y monitoreo del sistema
+
+* Capa 4: Capa de aplicación
+  - Representa aplicaciones externas desarrolladas para el usuario que corren por encima de las utilidades del sistema y entorno de Shell 
+  - Estas aplicaciones usan capas subyacentes (kernel y utilidades de sistema) para ejecutar tareas exitosamente y proveer servicios al usuario
+
+________________________________________________
+Continuar resumiendo con el enlace de más arriba
+________________________________________________
