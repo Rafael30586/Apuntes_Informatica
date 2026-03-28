@@ -88,7 +88,16 @@ La historia de UNIX traza su evolución desde un simple proyecto de investigaci�
 5. Estandarización y legado
 * Estándares como POSIX fueron creados para asegurar compatibilidad a través de sistemas UNIX
 * Los conceptos de UNIX permanecen profundamente arraigados en redes, servidores y computación empresarial
-* Su diseño continúa influenciando a la computación moderna, asegurando un legado fuerte y de larga duración 
+* Su diseño continúa influenciando a la computación moderna, asegurando un legado fuerte y de larga duración
+
+----------------------------
+El kernel en UNIX
+
+El kernel es el núcleo y la parte más esencial de UNIX. Funciona como la unidad central de control que gestiona todos los recurso del sistema y permite la comunicación entre hardware y software.
+* El kernel interactúa directamente con el hardware y lleva a cabo tareas de bajo nivel como asignación (allocation) de memoria, control de dispositivos y programación de CPU
+* Gestiona procesos, archivos y system calls, asegurando que el sistema corra de manera fluida y segura
+* Pr9ovee una interfaz para aplicaciones para solicitar servicios de sistema sin acceder al hardware directamente, asegurando operaciones controladas y seguras
+* Asegura la multitarea, gestión de recursos y protección, haciendo a UNIX estable, eficiente y seguro 
 
 ________________________________________________
 Continuar resumiendo con el enlace de más arriba
