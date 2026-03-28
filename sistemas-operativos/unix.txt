@@ -55,6 +55,41 @@ https://media.geeksforgeeks.org/wp-content/uploads/20260122104403667600/hardware
   - Representa aplicaciones externas desarrolladas para el usuario que corren por encima de las utilidades del sistema y entorno de Shell 
   - Estas aplicaciones usan capas subyacentes (kernel y utilidades de sistema) para ejecutar tareas exitosamente y proveer servicios al usuario
 
+-----------------------
+Historia de UNIX
+
+La historia de UNIX traza su evolución desde un simple proyecto de investigación en Bell labs a uno de los sistemas operativos más influyentes en el mundo
+
+1. Desarrollo inicial
+* Comenzó entre 1969 y 1971 en AT&T Bell labs por Ken Thompson, Dennis Ritchie y su equipo
+* La primera versión de UNIX fue desarrollada en una máquina PDP-7
+* Fue escrito completamente en lenguaje ensamblador, haciéndolo muy dependiente del hardware
+
+2. Reescrito en C
+* En 1973, UNIX fue completamente reescrito en el lenguaje de programación C
+* Esto hizo que el sistema operativo fuera portable a través de diferentes plataformas de hardware
+* Su flexibilidad ayudó a UNIX ganar popularidad en entornos académicos y de investigación
+
+3. Expansión y adopción
+* Durante los mediados de los 70 hasta 1980, universidades como UC Berkeley crearon sus propias versiones de UNIX
+* Esto llevó al desarrollo de BSD UNIX, añadiendo características y herramientas avanzadas
+* AT&T introdujo UNIX System V, resultando en dos familias principales de UNIX: BSD Y System V
+
+4. Comercialización
+* Desde los 1980s hasta los 1990s, muchas compañías tecnológicas construyeron sus variantes comerciales de UNIX
+* Versiones populares incluyeron Solaris (Sun), HP-UX (HP), AIX (IBM) y DEC UNIX
+* UNIX se volvió ampliamente popular en servidores empresariales, laboratorios de investigación y workstations
+
+5. Influencia en sistemas operativos modernos
+* En los 1990s, UNIX inspiró la creación de Linux (1991) por Linus Torvalds
+* Sistemas modernos como macOS, Android y variantes de BSD siguen los principios de diseño de UNIX
+* Su arquitectura continua dando forma a sistemas operativos comerciales de código abierto de hoy en día
+
+5. Estandarización y legado
+* Estándares como POSIX fueron creados para asegurar compatibilidad a través de sistemas UNIX
+* Los conceptos de UNIX permanecen profundamente arraigados en redes, servidores y computación empresarial
+* Su diseño continúa influenciando a la computación moderna, asegurando un legado fuerte y de larga duración 
+
 ________________________________________________
 Continuar resumiendo con el enlace de más arriba
 ________________________________________________
