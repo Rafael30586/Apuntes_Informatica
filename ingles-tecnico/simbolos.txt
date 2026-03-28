@@ -1,0 +1,25 @@
+* --> asterisk o star
+? --> question mark
+() --> parentheses o round Brackets
+! --> exclamation mark o bang
+/ --> forward slash
+> --> greater than sign
+< --> less than sign
+% --> percent sign
+& --> ampersand
+[] --> square Brackets
+{} --> curly braces o cutly Brackets
+; --> semicolon
+: --> colon
+- --> hyphen o dash
+_ --> underscore
+| --> vertical bar o pipe
+" --> double quote o quotation mark
+^ --> caret
+# --> hash o pund sign
+~ --> tilde
+` --> backtick o grave accent
+= --> equals sign
+' --> single quote o apostrophe
+
+
