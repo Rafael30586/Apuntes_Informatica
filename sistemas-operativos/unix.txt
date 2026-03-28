@@ -97,7 +97,41 @@ El kernel es el núcleo y la parte más esencial de UNIX. Funciona como la unida
 * El kernel interactúa directamente con el hardware y lleva a cabo tareas de bajo nivel como asignación (allocation) de memoria, control de dispositivos y programación de CPU
 * Gestiona procesos, archivos y system calls, asegurando que el sistema corra de manera fluida y segura
 * Pr9ovee una interfaz para aplicaciones para solicitar servicios de sistema sin acceder al hardware directamente, asegurando operaciones controladas y seguras
-* Asegura la multitarea, gestión de recursos y protección, haciendo a UNIX estable, eficiente y seguro 
+* Asegura la multitarea, gestión de recursos y protección, haciendo a UNIX estable, eficiente y seguro
+
+---------------------------
+Kernel y su diagrama de bloque
+
+El kernel y su diagrama de bloque ilustra como el kernel de UNIX gestiona system calls, procesos, archivos e interacciones con el hardware en una forma estructurada
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260122104404160306/system_call_interface.webp
+
+* Nivel 1. Usuario: Esta capa contiene programas de usuario y aplicaciones, quienes solicitan servicios  del sistema operativo usando system calls. Los system calls se comportan como funciones normales de C, accedidas a través de bibliotecas en tiempo de compilación
+
+System call e interfaz de biblioteca
+- Funciona como la frontera de comunicación entre programas de usuario y el kernel, asegurando un acceso seguro al sistema
+- Programas de C usan funciones de biblioteca,  mientras que los programas de ensamblador pueden invocar system calls directamente
+
+* Nivel 2. Nivel de kernel: El nivel de kernel gestiona operaciones de sistema principales (core) como procesos, archivos, memoria y control de dispositivos interactuando directamente con el hardware
+
+1. Subsistema de archivos
+- Maneja tareas relacionadas a archivos como asignación (allocation), permisos de acceso, recuperación de datos y almacenamiento
+- Provee system calls relacionados a archivos como open, read, write, close, stat, chmod y chown
+
+2. Buffering y bloque entrada/salida (block I/O)
+- Regula el flujo de datos entre el kernel y los dispositivos de almacenamiento a través de un mecanismo de buffering
+- Funciona con controladores de dispositivos block I/O para gestionar eficientemente operaciones de lectura y escritura en disco
+
+3. Controladores de dispositivos
+- Módulos del kernel que controlan componentes de hardware como discos, impresoras y terminales
+- Soporta dispositivos buffered de bloqueo y dispositivos puros que sobrepasan el buffering
+
+4. Subsistema de control de procesos
+- Gestiona creación, planeamiento, ejecución y terminación de procesos
+- Trabaja de cerca con el subsistema de archivos y asigna tiempo de CPU a procesos en ejecución
+
+* Nivel 3. Nivel de hardware: consiste en componentes físicos tales como el CPU, memoria y dispositivos de entrada/salida; genera "interrupts" que el kernel debe manejar meintras gestiona tareas en curso
+
 
 ________________________________________________
 Continuar resumiendo con el enlace de más arriba

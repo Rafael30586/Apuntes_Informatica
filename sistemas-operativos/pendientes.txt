@@ -9,3 +9,5 @@ context switch
 desarrollo sobre micro kernel y kernel monolítico
 interrupt
 deadlock, starvation y race conditions en procesos
+Con respecto a UNIX: BSD, System V, Solaris
+CPU time
