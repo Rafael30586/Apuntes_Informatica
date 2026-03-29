@@ -1,0 +1,33 @@
+https://www.geeksforgeeks.org/operating-systems/introduction-of-deadlock-in-operating-system/
+
+Deadlock es un estado en el sistema operativo en donde dos o más procesos están trabados para siempre porque cada uno está esperando por un recurso retenido por otro. Solo ocurre cuando existen 4 condiciones: exclusión mutua, retención y espera, sin prevención y espera circular. Por ejemplo, P1 retiene a R1 y necesita a R2, mientras P2 retiene R2 y necesita a R1, por lo tanto ambos esperan para siempre. El deadlock puede ser manejado usando prevención, evitación (Banker´s algorithm) o detección y recuperación.
+
+¿Cómo ocurre el deadlock en el sistema operativo?
+Un proceso en un sistema operativo típicamente usa recursos según la siguiente secuencia:
+* Solicita un recurso
+* Usa el recurso
+* Libera el recurso
+
+El deadlock surge cuando los procesos retienen algunos recursos mientras esperan por otros, por ejemplo:
+* El proceso P1 retiene el recurso R1 y solicita R2
+* El proceso P2 retiene el recurso R2 y solicita R1
+Ninguno de los procesos puede continuar causando un deadlock
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250116142222043136/d.webp
+
+---------------------------
+Condiciones necesarias para deadlock en sistemas operativos
+
+Un deadlock puede surgir si las siguientes 4 condiciones se mantienen simultáneamente
+1. Exclusión mutua: solo un proceso puede usar un recurso en un momento dado, es decir, los recursos no se pueden compartir
+2. Retener y esperar (hold and wait): un proceso está reteniendo un recurso a la vez y está esperando para adquirir otros recursos retenidos por otros procesos
+3. No prevención (no preemption): un recurso no puede ser tomado por un proceso a menos que el proceso libere el recurso
+4. Espera circular: un conjunto de procesos están esperando el uno por el otro en una manera circular. Por ejemplo, imaginemos 4 procesos P1, P2, P3 y P4 y 4 recursos R1, R2, R3 y R4
+
+https://media.geeksforgeeks.org/wp-content/uploads/20241003170604/Screenshot-2024-10-03-170601.png
+
+en la imagen anterior está pasando lo siguiente:
+* P1 está reteniendo a R1 y esperando por R2 (que está siendo retenido por P2)
+* P2 está reteniendo a R2 y esperando por R3 (que está siendo retenido por P3)
+* P3 está reteniendo a R3 y esperando por R4 (que está siendo retenido por P4)
+* P4 está reteniendo a R4 y esperando por R1 (que está siendo retenido por P1) 
