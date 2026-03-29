@@ -9,3 +9,12 @@ Starvation (o indefinite blocking) ocurre en el priority scheduling cuando un pr
 Causas de la inanición
 1. Programación (scheduling) no razonable: si hay siempre procesos de mayor prioridad disponibles, entonces los procesos de menor prioridad podrían nunca correr. A parte de la prioridad, puede haber otras causas como un algoritmo de planeación (scheduling) que elije al azar un proceso y de alguna manera un proceso víctima siempre es dejado de lado llevándolo a la inanición
 2. Recursos limitados: Decido a recursos limitados un proceso u otro debe esperar
+
+--------------------------
+Envejecimiento, la solución a la inanición
+
+Envejecimiento es una técnica de planeamiento (scheduling) usada para prevenir la inanición incrementando la prioridad de procesos que están en espera por mucho tiempo en el sistema.
+* Asegura justicia, un proceso que ha estado mucho tiempo en espera eventualmente obtiene tiempo de CPU
+* Generalmente combinado con algoritmos como priority scheduling o round-robin para balancear la eficiencia a corto plazo con justicia a largo plazo
+
+Por ejemplo, si el rango  de prioridades va de 127 (bajo) a 0 (alto), un proceso en espera puede moverse un nivel cada 15 minutos, asegurando que incluso los procesos de más baja prioridad se ejecuten eventualmente
