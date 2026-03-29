@@ -1,0 +1,11 @@
+https://www.geeksforgeeks.org/operating-systems/starvation-and-aging-in-operating-systems/
+
+Inanición (starvation) y envejecimiento (aging) en sistemas operativos
+
+Starvation (o indefinite blocking) ocurre en el priority scheduling cuando un proceso de baja prioridad se mantiene esperando indefinidamente porque procesos de alta prioridad continuamente usan el CPU
+* El problema surge en sistemas muy cargados donde los recursos están siempre ocupados por tareas de mayor prioridad, dejando a algunos procesos "hambrientos"
+* Para prevenir esto, los sistemas operativos usan envejecimiento (aging), una t+ecnica que gradualmente incrementa la prioridad de procesos en espera, asegurando ejecución razonable
+
+Causas de la inanición
+1. Programación (scheduling) no razonable: si hay siempre procesos de mayor prioridad disponibles, entonces los procesos de menor prioridad podrían nunca correr. A parte de la prioridad, puede haber otras causas como un algoritmo de planeación (scheduling) que elije al azar un proceso y de alguna manera un proceso víctima siempre es dejado de lado llevándolo a la inanición
+2. Recursos limitados: Decido a recursos limitados un proceso u otro debe esperar
