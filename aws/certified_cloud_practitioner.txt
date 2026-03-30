@@ -1102,3 +1102,18 @@ AWS no tiene controles de identidad listos para usar que sean inteligentes, por 
 AWS CloudTrail: rastrea todas las llmadas de APIs
 Amazon GuardDuty: detecta actividad sospechosa o maliciosa basado en CloudTrail y otros logs
 Amazon Detective: usado para analizar, investigar e identificar rápidamente problemas de seguridad (puede ingerir hallazgos de Guard Duty) 
+
+---------------------------
+Zero trust en AWS con terceros
+
+AWS técnicamente implementa un zero trust model pero no permite controles de seguridad de identidad inteligentes
+
+Por ejemplo:
+Azure active directory tiene una detección de riesgo calculada y en tiempo real basada en más puntso de datos que AWS. Está basado en: dispositivo y aplicación; hora del día; ubicación; si MFA está activado; lo que está siendo accedido.
+Y los controles de seguridad, verificaciones o restricciones lógicas es mucho más robusto
+
+Soluciones de identidad de terceros
+* Azure Active Directory (Azure AD)
+* Google BeyondCorp
+* JumpCloud
+Todos tienen más controles de seguridad inteligente para detección en tiempo real
