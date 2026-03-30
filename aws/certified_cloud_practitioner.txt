@@ -1085,3 +1085,20 @@ Identity-centric (la nueva manera)
 Las workstations remotas son mucho más comunes, no podemos confiar en que el empleado esté en una ubicación segura, tenemos controles de seguridad basados en identidad como MFA, o provisión de acceso provisional basado en el nivel de riesgo desde donde, cuando y qué usuario quiere acceder
 
 Identity-centric no reemplaza a network-centric, lo mejora
+
+-----------------------------
+Zero trust en AWS
+
+Controles de seguridad de identidad que podés implementar en AWS para cumplir con el Zero trust model
+
+AWS Identity and Access Management (IAM)
+* IAM policies
+* Límites de permisos (permission boundaries)
+* Políticas de control de servicio (Service control policies)
+* IAM policy conditions
+
+AWS no tiene controles de identidad listos para usar que sean inteligentes, por lo cual se considera que AWS no tiene una oferta zero trust para clientes, por lo que servicios de terceros deben ser usados 	
+
+AWS CloudTrail: rastrea todas las llmadas de APIs
+Amazon GuardDuty: detecta actividad sospechosa o maliciosa basado en CloudTrail y otros logs
+Amazon Detective: usado para analizar, investigar e identificar rápidamente problemas de seguridad (puede ingerir hallazgos de Guard Duty) 
