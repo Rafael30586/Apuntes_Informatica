@@ -1117,3 +1117,30 @@ Soluciones de identidad de terceros
 * Google BeyondCorp
 * JumpCloud
 Todos tienen más controles de seguridad inteligente para detección en tiempo real
+
+-----------------------------
+Servicio de directorio (directory service)
+
+¿Qué es un directory service?
+Un directory service mapea nombres de recursos de red a sus direcciones de red
+
+Un directory service es infraestructura de información compartida para localizar, gestionar, administrar y organizar recursos:
+* Volumes
+* Carpetas
+* Archivos
+* Impresoras
+* Usuarios
+* Grupos
+* Dispositivos
+* Números de teléfono
+* Otros objetos
+
+Un directory service es un componente crítico de un sistema operativo de red
+
+directory server (name server): es un servidor que provee un directory service
+
+Cada recurso en la red es considerado un objeto por el directory server. La información sobre un recurso en particular es almacenada como una colección de atributos asociados con ese recurso u objeto
+
+Algunos directory service bien conocidos:
+* Domain name service (DNS): el directory service de internet
+* Microsoft Active Directory: Azure Active Directory
