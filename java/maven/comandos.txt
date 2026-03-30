@@ -1,0 +1,11 @@
+mvn clean --> borra el contenido de la carpeta target
+
+mvn compile --> crea los archivos .class y los guarda en algún subdirectorio de target6
+
+mvn test --> compila los archivos java en archivos .class y ejecuta los test de la carpeta tests
+
+mvn compile test --> hace los mismo que la anterior
+
+mvn package --> incluye mvn compile y mvn test. Además, crea un archivo .jar. También se puede escribir como mvn compile test package
+
+mvn install --> crea una archivo .jar y lo coloca en repositorio de Maven local

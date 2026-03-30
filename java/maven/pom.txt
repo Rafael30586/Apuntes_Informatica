@@ -14,15 +14,20 @@ https://media.geeksforgeeks.org/wp-content/uploads/20260110124644365192/pom_work
 
 ------------------------
 Etiquetas
+
+project --> este es el elemento raíz del pom. Contiene todos los metadatos relacionados al proyecto y la configuración usada por Maven para gestionar el proceso de construcción
  
-groupId y artifactId --> identifican tu proyecto entre todos los proyectos del mundo. Ejemplo de groupId: com.f-rafael. Ejemplo de artifactId: maven-tutorial
+groupId y artifactId --> identifican tu proyecto entre todos los proyectos del mundo. Ejemplo de groupId: com.f-rafael. Ejemplo de artifactId: maven-tutorial. gropuId es, generalmente, el dominio de la organización pero alrevés y el artifactId es el nombre del proyecto o del módulo.
 
 versión --> es la versión del proyecto. Si tiene la palabra Snapshot significa que es un trabajo en desarrollo
 
-properties --> puede ir la versión de java y otras propiedades
+properties --> puede ir la versión de java y otras propiedades. Define variables reutilizables para mantener consistencia y simplificar actualizaciones de versión. Usando ${propiedad.nombre} te permite referencia restos valores a lo largo del archivo 
 
 build.plugins.plugin --> sirve para especificar plugins
 
 dependencies.dependency --> es para las bibliotecas del proyecto que queremos que maven descargue. Cada biblioteca tiene las propiedades groupId, artifactId, versión y a veces otras más como scope. 
 
 dependency.scope --> cuando una dependencia tiene compile en scope significa que necesitás la dependencia cuando compilás el proyecto, cuando ejecutás los tests y después también. scope también puede ser igual a test, lo que significa que solo necesitás la dependencia para ejecutar los tests, no la neceasitás cuando despliegues tu proyecto, por lo tanto que rés que se borre después 
+
+-------------------------
+Más información en el siguiente enlae: https://www.geeksforgeeks.org/advance-java/maven-pom/
