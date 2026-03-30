@@ -14,6 +14,8 @@ Las imágenes de docker consisten en varias capas
 * Es una manera de empaquetar aplicaciones con todas las dependencias y configuraciones necesarias
 * Son artefactos portables, fáciles de compartir
 * Sirven para hacer al desarrollo y despliegue más eficientes
+* Están conformados por capas de imágenes
+* La imagen base de los contendores suele ser de una distribución de Linux. Por encima de esta capa se encuentran otras
 
 ¿En donde "viven" los contenedores?
 
