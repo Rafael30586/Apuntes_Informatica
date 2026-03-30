@@ -6,7 +6,9 @@ Docker registry vs Docker repository
 -----------------------
 Imágenes de Docker
 
-Las imágenes de docker consisten en varias capas
+* Las imágenes de docker consisten en varias capas
+* Cuando descargamos una imagen podemos ver en la terminal como se van descargando las diferentes capas, cada una de ellas identificada con un hash
+* Si descargamos imágenes de diferentes versión de, por ejemplo, PostgreSQL, las capas que están repetidas no volverán a descargarse, por lo cual es una ventaja si queremos tener distintas versiones de una misma imagen
 
 -----------------------
 ¿Qué es un contenedor?
