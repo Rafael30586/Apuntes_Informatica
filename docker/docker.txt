@@ -1,3 +1,22 @@
 Docker registry vs Docker repository
+
 * Docker registry: es un servicio que provee almacenamiento para imágenes; puede ser "hosted" por terceros, como AWS o por vos mismo; ejemplo: AWS ECR; puede contener una colección de repositorios
 * Docker repository: esuna colección de imágenes relacionadas con el mismo nombre pero diferentes versiones
+
+-----------------------
+Imágenes de Docker
+
+Las imágenes de docker consisten en varias capas
+
+-----------------------
+¿Qué es un contenedor?
+
+* Es una manera de empaquetar aplicaciones con todas las dependencias y configuraciones necesarias
+* Son artefactos portables, fáciles de compartir
+* Sirven para hacer al desarrollo y despliegue más eficientes
+
+¿En donde "viven" los contenedores?
+
+* En repositorios de contenedores
+* Muchas empresas tienen sus propios repositorios privados de contenedores en donde los almacenan o los hospedan
+* Hay un repositorio público: dockerhub	
