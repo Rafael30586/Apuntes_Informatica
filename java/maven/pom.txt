@@ -27,7 +27,9 @@ build.plugins.plugin --> sirve para especificar plugins
 
 dependencies.dependency --> es para las bibliotecas del proyecto que queremos que maven descargue. Cada biblioteca tiene las propiedades groupId, artifactId, versión y a veces otras más como scope. 
 
-dependency.scope --> cuando una dependencia tiene compile en scope significa que necesitás la dependencia cuando compilás el proyecto, cuando ejecutás los tests y después también. scope también puede ser igual a test, lo que significa que solo necesitás la dependencia para ejecutar los tests, no la neceasitás cuando despliegues tu proyecto, por lo tanto que rés que se borre después 
+dependency.scope --> cuando una dependencia tiene compile en scope significa que necesitás la dependencia cuando compilás el proyecto, cuando ejecutás los tests y después también. scope también puede ser igual a test, lo que significa que solo necesitás la dependencia para ejecutar los tests, no la neceasitás cuando despliegues tu proyecto, por lo tanto querés que se borre después 
+
+modules.module --> es para los diferentes módulos de una proyecto de Maven. Cada módulo hereda las dependencias presentes en el proyecto padre
 
 -------------------------
-Más información en el siguiente enlae: https://www.geeksforgeeks.org/advance-java/maven-pom/
+Más información en el siguiente enlace: https://www.geeksforgeeks.org/advance-java/maven-pom/
