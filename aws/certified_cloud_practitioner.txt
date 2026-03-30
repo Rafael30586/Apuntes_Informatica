@@ -1144,3 +1144,8 @@ Cada recurso en la red es considerado un objeto por el directory server. La info
 Algunos directory service bien conocidos:
 * Domain name service (DNS): el directory service de internet
 * Microsoft Active Directory: Azure Active Directory
+
+-----------------------------
+Active directory
+
+Microsoft introdujo Active Directory Domain Services en Windows 2000 para darles a las organizaciones la habilidad de gestionar múltiples componentes y sistemas de infraestructura on-premise usando una identidad individual por usuario
