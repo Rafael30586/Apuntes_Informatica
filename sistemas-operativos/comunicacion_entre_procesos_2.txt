@@ -1,0 +1,25 @@
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html
+
+Comunicación entre procesos
+
+* Procesos independientes: son procesos concurrentes que no pueden afectar a otros procesos ni ser afectados por otros
+
+* Procesos colaborativos (cooperating proccesses): son aquellos que pueden afectar a otros procesos o ser afectados por otros. Hay varias razones por las cuales los procesos colaborativos están permitidos:
+  - compartir información: puede ocurrir que varios procesos deban acceder al mismo archivo (por ejemplo, pielines)
+  - aceleración de cómputo: generalmente una solución a un problema puede ser alcanzada más rápido si el problema puede ser separado en pequeñas subtareas opara ser resueltas simultáneamente (particularmente cuando múltiples proceso están involucrados)
+  - modularidad: la arquitectura más eficiente podría ser dividir un sistema en módulos colaborativos (por ejemplo, bases de datos con una arquitectura cliente-servidor)
+  - conveniencia: incluso un solo usuario podría estar haciendo multitareas, tales como editar, compilar, imprimir y ejecutar el mismo código en diferentes ventanas
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_ChromeBrowserArchitecture.jpg
+
+* Los proceso colaborativos requieren un tipo de com unicación entre procesos, que es comunemente de dos tipos: shared memory systems o message passing systems
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_12_CommunicationsModels.jpg
+
+* Shared memory es más rápido una vez está establecido, porque no hacen falra system calls y el acceso ocurre a una velocidad normal de memoria. Aunque es más complicado de configurar y no funciona tan bien a través de múltiples computadoras. Shared memory es preferible, generalmente, cuando grandes cantidades de información deben ser compartidas rápidamente en la misma computadora
+
+* Message passing requiere system calls para cada transferencia de mensaje, y es poir lo tanto más lento, pero es más simple de configurar y funciona bien a través de múltiples computadoras. Message passing es preferible cuando la cantidad y/o frecuencia de la transferencia de datos es pequeña, o cuando múltiples computadores están involucradas
+
+________________________________________________
+Continuar resumiendo con el enlace de más arriba
+________________________________________________
