@@ -9,6 +9,7 @@ Imágenes de Docker
 * Las imágenes de docker consisten en varias capas
 * Cuando descargamos una imagen podemos ver en la terminal como se van descargando las diferentes capas, cada una de ellas identificada con un hash
 * Si descargamos imágenes de diferentes versión de, por ejemplo, PostgreSQL, las capas que están repetidas no volverán a descargarse, por lo cual es una ventaja si queremos tener distintas versiones de una misma imagen
+* Son los artefactos que pueden ser movidos
 
 -----------------------
 ¿Qué es un contenedor?
@@ -24,3 +25,11 @@ Imágenes de Docker
 * En repositorios de contenedores
 * Muchas empresas tienen sus propios repositorios privados de contenedores en donde los almacenan o los hospedan
 * Hay un repositorio público: dockerhub	
+
+-----------------------
+Diferencias entre Docker y máquinas virtuales
+
+* En un contenedor de Docker se virtualiza solamente la parte de las aplicaciones, mientras que en una máquina virtual se virtualiza, además, el kernel del sistema operativo
+* El tamaño de las imágenes de Docker es mucho menor que las máquinas virtuales. Cada imagen ocupan unos cuantos megabytes, mientras que una máquina virtual ocupa gigabytes
+* Los contenedores comienzan y corren más rápido
+* Una máquina virtual de cualquier sistema operativo puede correr en cualquier SO sinfitrión
