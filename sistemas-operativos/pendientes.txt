@@ -12,4 +12,5 @@ deadlock, starvation y race conditions en procesos
 Con respecto a UNIX: BSD, System V, Solaris
 CPU time
 algoritmos priority scheduling y round-robin 
-semaphores en sistemas operativos
+semaphores y monitors en sistemas operativos
+mutex
