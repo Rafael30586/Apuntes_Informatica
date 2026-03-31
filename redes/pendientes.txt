@@ -1,10 +1,8 @@
 clases de direcciones IP, por ejemplo, clase A
 protocolo ARP
-network mask
-subnet mask
 En direcciones IP hay algo llamado NID y HID, siendo network ID y host ID respectivamente
 VLSM o variable length subnet masking
-CIDR notation
+CIDR: notación, CIDR blocks (¿ejercicios para determinar si un bloque de direcciones IP es válido)
 broadcast domain
 default Gateway
 Bitwise AND operation
