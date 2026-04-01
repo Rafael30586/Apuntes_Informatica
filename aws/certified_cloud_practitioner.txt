@@ -1175,3 +1175,16 @@ SSO permite a los departamentos de IT administrar una sola identidad que puede a
 
 El ingreso (login) para SSO es fluido, donde una vez el usuario ha ingresado al directorio principal, mientras utilicen este software no se les presenta una pantalla de login
 
+--------------------------
+LDAP
+
+Lightweight Directory Access Protocol es un protocolo de aplicación estándar de la industria abierto y "vendor-neutral" para acceder y mantener servicios de información de directorio distribuido en lugar de una IP de red
+
+Un uso común de LDAP es proveer un lugar central a donde almacenar nombres de usuario y contraseñas
+
+LDAP permite same-sign on. Esto permite a los usuarios tener un solo ID y contraseña, pero tienen que ingresarlos siempre que quieran ingresar
+
+¿Por qué usar LDAP cuando SSO es más conveniente?
+* La mayoría de los SSO están usando LDAP 
+* LDAP no fue diseñado para trabajar nativamente con aplicaciones web 
+* Algunos sistemas solo soportan integración con LDAP y no SSO   
