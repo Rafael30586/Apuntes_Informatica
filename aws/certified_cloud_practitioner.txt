@@ -1187,4 +1187,13 @@ LDAP permite same-sign on. Esto permite a los usuarios tener un solo ID y contra
 ¿Por qué usar LDAP cuando SSO es más conveniente?
 * La mayoría de los SSO están usando LDAP 
 * LDAP no fue diseñado para trabajar nativamente con aplicaciones web 
-* Algunos sistemas solo soportan integración con LDAP y no SSO   
+* Algunos sistemas solo soportan integración con LDAP y no SSO  
+
+--------------------------
+Multi-factor authentication
+
+También conocido como MFA. Es un control de seguridad en el cual, luego de que llenás los campos con tu usuario/email y contraseña, tenés que usar un segundo dispositivo (como un teléfono) para confirmar que estás ingresando a tu cuenta
+
+Te protege contra gente que pueden haberte robado la contraseña
+
+MFA es una opción en la mayoría de los proveedores de la nube e incluso redes sociales como facebook 
