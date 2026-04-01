@@ -14,3 +14,5 @@ CPU time
 algoritmos priority scheduling y round-robin 
 semaphores y monitors en sistemas operativos
 mutex
+address space
+circular queue en sistemas operativos

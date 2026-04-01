@@ -16,10 +16,20 @@ https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_Chr
 
 https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_12_CommunicationsModels.jpg
 
-* Shared memory es más rápido una vez está establecido, porque no hacen falra system calls y el acceso ocurre a una velocidad normal de memoria. Aunque es más complicado de configurar y no funciona tan bien a través de múltiples computadoras. Shared memory es preferible, generalmente, cuando grandes cantidades de información deben ser compartidas rápidamente en la misma computadora
+* Shared memory es más rápido una vez está establecido, porque no hacen falta system calls y el acceso ocurre a una velocidad normal de memoria. Aunque es más complicado de configurar y no funciona tan bien a través de múltiples computadoras. Shared memory es preferible, generalmente, cuando grandes cantidades de información deben ser compartidas rápidamente en la misma computadora
 
-* Message passing requiere system calls para cada transferencia de mensaje, y es poir lo tanto más lento, pero es más simple de configurar y funciona bien a través de múltiples computadoras. Message passing es preferible cuando la cantidad y/o frecuencia de la transferencia de datos es pequeña, o cuando múltiples computadores están involucradas
+* Message passing requiere system calls para cada transferencia de mensaje, y es por lo tanto más lento, pero es más simple de configurar y funciona bien a través de múltiples computadoras. Message passing es preferible cuando la cantidad y/o frecuencia de la transferencia de datos es pequeña, o cuando múltiples computadores están involucradas
 
+----------------------------
+Sistemas de memoria compartida
+* En general la memoria a compartir en un sistema de memoria compartida está inicialmente dentro del address space de un proceso particular, que necesita hacer system calls para lograr que esa memoria esté  disponible públicamente para uno o más procesos
+* Otros procesos que desean usar la memoria compartida tendrán que hacer sus propios system calls para ligar la memoria compartida sobre su address space
+* Generalmente unos pocos mensajes deberán pasarse entre los procesos colaborativos primero para establecer y coordinar el acceso a memoria compartida 
+
+Ejemplo de productor-consumidor usando memoria compartida
+* Este es un ejemplo clásico, en el cual un proceso está produciendo datos y otros proceso consume datos
+* Los datos son pasados vía un buffer intermediario, que puede estar cerrado (bounded) o ser ilimitado (unbounded). Con un buffer cerrado el productor tendrá que esperar hasta que haya espacio disponible en el buffer, pero con un buffer ilimitado el productor nunca necesitará esperar. El consumidor necesitará esperar en cualquier caso hasta que hayan datos disponibles
+* Este ejemplo usa memoria compartida y una cola circular
 ________________________________________________
 Continuar resumiendo con el enlace de más arriba
 ________________________________________________
