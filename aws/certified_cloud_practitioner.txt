@@ -1164,4 +1164,14 @@ OAuth2.0
 Es un protocolo estándar de la industria para autorización. Oauth no comparte contraseñas, en su lugar usa token de autorización para demostrar una identidad entre consumidores y proveedores de servicios. Oauth es sobre otorgar acceso a funcionalidades
 
 SAML
-Security Assertion Markup Languaje es un estándar abierto para intercambiar autenticación y autorización entre un identity provider y un service provider. Un importante caso de uso para SAML es Single-Sign_on vía navegador web
+Security Assertion Markup Languaje es un estándar abierto para intercambiar autenticación y autorización entre un identity provider y un service provider. Un importante caso de uso para SAML es Single-Sign-on vía navegador web
+
+--------------------------
+Single-Sign-On
+
+SSO es un sistema de autenticación que permite al usuario ingresar con un solo ID y contraseña a diferentes sistemas y software
+
+SSO permite a los departamentos de IT administrar una sola identidad que puede acceder a muchas máquinas y servicios en la nube
+
+El ingreso (login) para SSO es fluido, donde una vez el usuario ha ingresado al directorio principal, mientras utilicen este software no se les presenta una pantalla de login
+
