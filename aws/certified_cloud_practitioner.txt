@@ -1153,4 +1153,15 @@ Microsoft introdujo Active Directory Domain Services en Windows 2000 para darles
 ---------------------------
 Proveedores de identidad o identity providers (IpD)
 
-Microsoft introdujo Active Directory Domain Services en Windows 2000 para darles a las organizaciones la habilidad de gestionar múltiples componentes y sistemas de infraestructura on-premiseusando una sola identidad por usuario
+Un identity provider es una entidad de sistema que crea, mantiene y gestiona información de identidad para "principals" y también provee servicios de autenticación para aplicaciones dentro de una federación o red distribuida. Un proveedor confiable de tu identidad de usuario que te deja autenticar para acceder a otros servicios. Algunos identity providers podrían ser Facebook, Amazon, Google, Twitter, GitHub, Linkedin 
+
+Federated identity es un método que vincula la identidad de un usuario a lo largo de múltiples sistemas separados de gestión de identidad
+
+OpenID
+Es un protocolo de autenticación descentralizado, por ejemplo, permite hacer login en una red social usando tu cuenta de Google o Facebook.
+
+OAuth2.0
+Es un protocolo estándar de la industria para autorización. Oauth no comparte contraseñas, en su lugar usa token de autorización para demostrar una identidad entre consumidores y proveedores de servicios. Oauth es sobre otorgar acceso a funcionalidades
+
+SAML
+Security Assertion Markup Languaje es un estándar abierto para intercambiar autenticación y autorización entre un identity provider y un service provider. Un importante caso de uso para SAML es Single-Sign_on vía navegador web
