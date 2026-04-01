@@ -34,8 +34,16 @@ Ejemplo: revisar si 100.1.2.32 a 100.1.2.47 es un bloque de direcciones IP váli
 * El número total de direcciones IP en el bloque es 16 = 2^4
 * La primera dirección IP es 100.1.2.00100000 . El id del anfitrión contiene los últimos 4 bits y todos los 4 bits menos significativos son cero. Por consiguiente, la primera dirección IP es divisible por el tamaño del bloque.
 
-Las tres reglas se cumplen por este bloque. Por lo tanto, es un bloque de direcciones IP válido. 
+Las tres reglas se cumplen por este bloque. Por lo tanto, es un bloque de direcciones IP válido.
 
-________________________________________________
-Continuar resumiendo con el enlace de más arriba
-________________________________________________
+-----------------------
+Ventajas de CIDR
+* Uso eficiente de direcciones IP: minimiza el desperdicio de direcciones IPv4
+* Asignación flexible: soporta redes de cualquier tamaño
+* Enrutamiento mejorado: junta direcciones para un enrutamiento más simple y rápido
+* Baja la sobrecarga administrativa: gestión de IP y red más fácil 
+
+Desventajas de CIDR
+* Complejidad: CIDR es más complejo de implementar y gestionar comparado con el "addressing" tradicional basado en clase
+* Problemas de compatibilidad: algunos dispositivos de red más viejos podrían no soportar CIDR
+* Inquietudes de seguridad: implementar medidas de seguridad como reglas de firewall y listas de control de acceso puede ser más difícil
