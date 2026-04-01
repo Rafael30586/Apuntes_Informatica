@@ -1196,4 +1196,13 @@ También conocido como MFA. Es un control de seguridad en el cual, luego de que 
 
 Te protege contra gente que pueden haberte robado la contraseña
 
-MFA es una opción en la mayoría de los proveedores de la nube e incluso redes sociales como facebook 
+MFA es una opción en la mayoría de los proveedores de la nube e incluso redes sociales como Facebook
+
+----------------------------
+Security keys
+
+Es un dispositivo secundario usado como segundo paso en el proceso de autenticación para ganar acceso a un dispositivo, Workstation o aplicación
+
+Una llave de seguridad puede recordar a un memory stick. Cuando tu dedo hace contacto con un botón o metal expuesto en el dispositivo va a generar y auto-llenar un token de seguridad
+
+Una marca popular de llave de seguridad es Yubikey. Funciona con Gmail, Facebook y otros cientos. Soporta FIDO2/WebAuthn,  U2F. Es a prueba de agua y resistente a golpes. USB-A y NFC dual connectors en una sola llave 
