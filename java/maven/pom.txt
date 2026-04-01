@@ -27,6 +27,8 @@ build.plugins.plugin --> sirve para especificar plugins
 
 dependencies.dependency --> es para las bibliotecas del proyecto que queremos que maven descargue. Cada biblioteca tiene las propiedades groupId, artifactId, versión y a veces otras más como scope. 
 
+dependency.exclusions.exclusion --> sirve para excluir de la dependencia directa la dependencia transitiva que indiquemos. Puede ser útil cuando una dependenica genera conflictos con otra, por ejemplo, si tenemos junit-jupiter-engine y spring-boot-starter-test en el mismo proyeto, podría haber conflicto con las diferentes versiones de junit
+
 dependency.scope --> cuando una dependencia tiene compile en scope significa que necesitás la dependencia cuando compilás el proyecto, cuando ejecutás los tests y después también. scope también puede ser igual a test, lo que significa que solo necesitás la dependencia para ejecutar los tests, no la neceasitás cuando despliegues tu proyecto, por lo tanto querés que se borre después 
 
 modules.module --> es para los diferentes módulos de una proyecto de Maven. Cada módulo hereda las dependencias presentes en el proyecto padre
