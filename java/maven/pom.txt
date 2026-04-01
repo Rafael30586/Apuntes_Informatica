@@ -31,5 +31,16 @@ dependency.scope --> cuando una dependencia tiene compile en scope significa que
 
 modules.module --> es para los diferentes módulos de una proyecto de Maven. Cada módulo hereda las dependencias presentes en el proyecto padre
 
--------------------------
 Más información en el siguiente enlace: https://www.geeksforgeeks.org/advance-java/maven-pom/
+
+----------------------------
+Diferencias entre super, simplest y effective pom
+
+* Super POM
+Es el POM por defecto y todo POM hereda de un parent o del super POM. Esto abarca valores por defecto. Maven usa un effective POM (configuración del super POM más configuración del proyecto) para llevar a cabo objetivos esenciales
+
+* Simplest POM
+Es aquel que definís en tu proyecto de Maven. Para declarar un POM, debés especificar al menos 4 elementos: model versión, group id, artifact id y versión. El simples POM va a heredar las configuraciones del super POM
+
+* Effective POM
+Combina todas las configuraciones por defecto del super POM con la configuración especificada en el POM de tu aplicación. Maven requiere de todas las configuraciones por defecto para compilar. Usará las configuraciones por defecto hasta que el desarrollador sobre-escriba estas configuraciones  

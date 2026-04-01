@@ -2,3 +2,4 @@ Averiguar en donde va el archivo manifest en un proyecto de Maven si no usamos e
 Probar de usar Maven wrapper con la línea de comandos usando el siguiente video: https://www.youtube.com/watch?v=Xatr8AZLOsE&list=PLH4-9MlhMdT2vMxl4QmJr7w9zZfnHoBvr&index=1&t=19s
 Investigar sobre los arquetipos de Maven
 Investigar sobre proyectos en Maven con varios módulos
+Tomar nota y practicar con los comandos relacionados al plugin de spring boot

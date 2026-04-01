@@ -9,3 +9,5 @@ mvn compile test --> hace los mismo que la anterior
 mvn package --> incluye mvn compile y mvn test. Además, crea un archivo .jar. También se puede escribir como mvn compile test package
 
 mvn install --> crea una archivo .jar y lo coloca en repositorio de Maven local. Incluye compile, test y package
+
+mvn help:effective-pom --> muestra el effective POM del proyecto
