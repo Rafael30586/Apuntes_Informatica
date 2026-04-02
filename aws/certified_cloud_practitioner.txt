@@ -23,11 +23,11 @@ En abril de 2003 Amazon empezó a ofrecer programas de certificación para ingen
 Proveedores de servicios en la nube (CSPs):
 - proveen múltiples servicios en la nube, decenas a centenas de servicios;
 - esos servicios en la nube pueden ser encadenados entre sí para crear arquitecturas en la nube;
-- esos servicios en la nube son accesibles vía una sola API unificada, por ejemplo, AWS API. 
+- esos servicios en la nube son accesibles vía una sola API unificada, por ejemplo, AWS API.
 - esos servicios en la nube tienen  una oferta  de infraestructura como un servicio (IaaS).
 - esos servicios en la nube utilizan facturación medida basada en uso (por hora, por segundo, etc).
 - esos servicios tienen rico monitoreo integrado, ejemplo AWSCLoudTrail
-- esos servicios ofrecen automatización vía infraestructura como código (IaC) 
+- esos servicios ofrecen automatización vía infraestructura como código (IaC)
 Si una compañía ofrece múltiples servicios en la nube bajo un a misma interfaz de usuario pero no cumple con la mayoría de estos requisitos, estaríamos hablando de una plataforma en la nube o cloud platform, ejemplos: Twilio, HashiCorp, Databricks
 
 CPSs:
@@ -52,22 +52,22 @@ Evolución de la computación en la nube:
 * estás limitado por el sistema operativo huésped.
 * múltiples aplicaciones pueden resultar en conflictos al compartir recursos.
 * tenés garantía de seguridad, privacidad y completa utilización de recursos subyacentes.
-- máquinas virtuales: 
+- máquinas virtuales:
 * se puede ejecutar varias máquinas virtuales en una sola máquina física.
 * el hypervisor es el software que permite ejecutar las MVs.
 * un servidor físico compartido por varios clientes.
-* se paga por una fracción del servidor. 
+* se paga por una fracción del servidor.
 * se paga de más por una máquina virtual porque hay espacio que está sin usar.
 * estanos limitados por el sistema operativo huésped.
 * varias aplicaciones en una misma máquina virtual pueden resultar en conflictos al compartir recursos.
 * es fácil exportar o importar imágenes para la migración.
 * es fácil de escalar vertical u horizontalmente.
-- contenedores: 
+- contenedores:
 * máquinas virtuales ejecutando varios contenedores.
 * Docker Daemon es el nombre de la capa de software que permite ejecutar múltiples contenedores.
 * se puede maximizar la utilización de la capacidad disponible lo cual es mejor para el teme del costo.
 * los contenedores comparten el mismo sistema operativo subyacente por lo que los contenedores son más eficientes que múltiples máquinas virtuales.
-- funciones: 
+- funciones:
 * son MVs gestionadas ejecutando contenedores gestionados.
 * conocido como computación serverless
 * subís una pieza de código, elegís la cantidad de memoria y duración.
@@ -121,21 +121,21 @@ La infraestructura global de AWS está hecha de los siguientes recursos:
 * más de 550 puntos de presencia
 * 35 zonas locales o Lcal zones
 * 29 wavelength zones
-Ejemplo: en la región de US oeste (Oregon) hay 4 zonas de disponibilidad. 
+Ejemplo: en la región de US oeste (Oregon) hay 4 zonas de disponibilidad.
 
 Regiones: son ubicaciones que consisten en una o más zonas de disponibilidad.
-Cada región está físicamente aislada de las otras regiones en términos de ubicación, energía y suministro de agua. 
+Cada región está físicamente aislada de las otras regiones en términos de ubicación, energía y suministro de agua.
 La primera región fue US-East 1 (Northern Virginia). Casi todos los servicios se hacen disponibles primero en esta región.
 El costo de los servicios varían según la región.
 Al elegir una región hay cuatro factores a considerar:
 * Las regulaciones de la región.
 * El costo de los servicios de AWS en la región.
-* Qué servicios de AWS están disponibles. 
+* Qué servicios de AWS están disponibles.
 * Cual es la latencia o distancia con respecto a los usuarios.
 No todos los servicios de AWS están disponibles en todas las regiones.
 
 Los servicios de AWS pueden ser globales o regionales.
-Los servicios globales operan a través de múltiples regiones y están fijados como globales. Ejemplos: Amazon S3, CloudFront, Route53, IAM. 
+Los servicios globales operan a través de múltiples regiones y están fijados como globales. Ejemplos: Amazon S3, CloudFront, Route53, IAM.
 
 Zonas de disponibilidad (availability zones): son ubicaciones físicas para uno o más data centers.
 Un datacenter es un edificio que contiene cientas o miles de computadores.
@@ -148,7 +148,7 @@ Todo el tráfico entre las AZs está encriptado.
 Las AZs están alejadas unos 100km la una de la otra.
 
 Dominio de fallas o fault domain: es una sección de una red que es vulnerable a daños si un dispositivo crítico o sistema falla. Su propósito es que si un fallo ocurre no irá en cascada fuera del dominio, limitando el daño posible.
-Se puede tener dominios de fallas anidados en otros dominios de fallas. 
+Se puede tener dominios de fallas anidados en otros dominios de fallas.
 Un nivel de fallas o fault level es una colección de dominios de fallas.
 Una región AWS sería un nivel de fallas y un zona de disponibilidad sería un dominio de fallas.
 Cada región de Amazon está completamente aislada de otras regiones de Amazon. Esto produce la máxima estabilidad y tolerancia a fallos posible.
@@ -159,7 +159,7 @@ Red global de AWS: representa la interconexión entre la infraestructura global 
 VPC endpoints: aseguran que los recursos permanezcan en la red de AWS y no lleguen hasta la internet pública.
 Edge locations: pueden funcionar como rampas o como vias de escape a la red global de AWS.
 AWS Global Accelerator y AWS S3 Transfer Acceleration: Usa Edge locations para alcanzar recursos de AWS en otras regiones atravesando rápidamente la red global de AWS.
-Amazon CloudFront (CDN): Usa Edge locations como una via de escape para proveer al Edge storage y computar cerca del usuario final. 
+Amazon CloudFront (CDN): Usa Edge locations como una via de escape para proveer al Edge storage y computar cerca del usuario final.
 
 Edge locations: son integrales a la infraestructura de AWS permitiendo el envío de contenido y aplicaciones con baja latencia y alto rendimiento. Funcionando como datacenters al borde de la red estas ubicaciones cachean contenido, procesan datos y traen los servicios cloud más cerca de los usuarios finales. Son datacenters estratégicamente posicionados alrededor del mundo diseñados para optimizar el envío de contenido y aplicaciones. Funcionan como puntos de presencia para los servicios de AWS permitiendo que los datos sean servidos desde la ubicación más cercana al usuario final lo cual reduce significativamente la latencia.
 
@@ -223,17 +223,17 @@ Soberanìa de datos: es el control jurisdiccional o autoridad legal que puede se
 Para cargas de traqbajo que necesitan cumplir con los lìmites de cumplimiento estrictamente definiendo la residencia de datos y recursos de la nube en AWS se puede usar:
 * AWS config es una política como servicio de código. Podès crear reglas para revisar continuamente la configuración de los recursos de AWS.
 * AWS outposts es un estante físico de servidores que podès poner en tu datacenter. Tus datos van a residir en donde resida fìsicamente tu outpost.
-* IAM policies  
+* IAM policies
 
 AWS puede utilizarse para el sector público u organizaciones desarrollando cargas de trabajo en la nube para el sector público.
-AWS logra esto por programas de cumplimiento regulatorio junto con controles de seguridad y gobernanza. 
-AWS tiene regiones especiales para regulaciones de Estados Unidos llamadas GovCloud. 
+AWS logra esto por programas de cumplimiento regulatorio junto con controles de seguridad y gobernanza.
+AWS tiene regiones especiales para regulaciones de Estados Unidos llamadas GovCloud.
 
 AWS China
 Està completamente aislado intencionalmente de AWS global para cumplir con las regulaciones de China. AWS està en su propio dominio: amazonaws.cn.
 Para poder operar en la región de AWS China necesitàs una "China Business License".
 No todos los servicios estàsn disponibles en China, por ejemplo: Route53.
-AWS tiene dos regiones en China: 
+AWS tiene dos regiones en China:
 * Ningxia CN-NorthWest-1, manejado por NSWCF
 * Beijing CN-North-1, manejado por SINNET
 
@@ -249,7 +249,7 @@ AWS Outposts
 Es un servicio completamente gestionado que ofrece la misma infraestructura, servicios AWS , API y herramientas para cualquier datacenter, co-ubicación o instalación "on-premise" para una experiencia híbrida consistente.
 AWS outposts es un estante de servidores ejecutando infraestructura de AWS en tu ubicación física.
 Un estante de servidores es un marco diseñado para organizar equipo IT, ejemplo 42U Rack. La U es por "rack units" o "U spaces" que es igual a 1.75 pulgadas. El estándar de la industria es 48U, que serían siete pies.
-Ejemplo de un rack server o estante de servidores: https://media.datacenterdynamics.com/media/images/op_rack_400w_1.original.jpg 
+Ejemplo de un rack server o estante de servidores: https://media.datacenterdynamics.com/media/images/op_rack_400w_1.original.jpg
 
 ---------------------------------------------------------------------------------------------------
 Cloud architecture o arquitectura en la nube
@@ -277,7 +277,7 @@ Elastic Load Balancer: Un load balancer o balanceador de carga permite distribui
 Alta escalabilidad
 Es la habilidad para incrementar la capacidad basado en el incremento de la demanda de tráfico, memoria y poder de cómputo.
 * Escalado vertical (scaling up): mejorar a un servidor más grande.
-* Escalado horizontal (scaling out): añadir más servidores del mismo tamaño. 
+* Escalado horizontal (scaling out): añadir más servidores del mismo tamaño.
 
 Alta elasticidad
 Es la habilidad para incrementar o decrementar automáticamente la capacidad basado en el tráfico actual, memoria y poder de cómputo. Se suele confundir con alta escalabilidad.
@@ -292,7 +292,7 @@ Es la habilidad de tu servicio de asegurar que no haya ningún punto de fallo.
 Fail-over: es cuando tenés que planear cambiar el tráfico a un sistema redundante en caso de que el sistema principal falle. Un ejemplo común es tener una copia de tu base de datos en donde los cambios realizados se sincronizan. El sistema secundario no está en uso hasta que ocurre un "fail-over" y se vuelve la base de datos principal.
 RDS Multi-AZ es cuando "corrés" una base de datos duplicada en stand by en otra zona de disponibilidad en caso de que tu base de datos principal falle.
 
-Alta durabilidad 
+Alta durabilidad
 Es la habilidad para recuperarse de un desastre y prevenir la pérdida de datos. Las soluciones que recuperan de un desastre se conocen como "disaster recovery" (DR)
 * ¿Tenés un backup?
 * ¿Qué ten rápido podés recuperar ese backup?
@@ -309,14 +309,14 @@ Hay múltiples opciones para recuperación que cambian costo vs tiempo para recu
 * Backup y recuperación: se hace un backup de tus datos a una nueva infraestructura. RPO/RTO -> horas.
 * "Pilot light": Los datos son replicados a otra región con los mínimos servicios ejecutándose. RPO/RTO -> 10 minutos.
 * "Warm standby": copia escalada para abajo de tu infraestructura ejecutándose lista para escalar para arriba. RPO/RTO -> minutos.
-* "Multi-site Active/active": copia escalada para arriba de tu infraestructura en otra región. RPO/RTO -> tiempo real. 
+* "Multi-site Active/active": copia escalada para arriba de tu infraestructura en otra región. RPO/RTO -> tiempo real.
 
 https://media.geeksforgeeks.org/wp-content/uploads/20250419125835918183/AWS-Disaster-Recovery.webp
 
 Recovery time objective (RTO): es el máximo retraso aceptable entre la interrupción del servicio y la recuperación del mismo. Este objetivo determina la que es considerada una ventana aceptable de tiempo cuando el servicio no está disponible y es definido por la organización.
 
 Recovery point objective (RPO): Es la máxima cantidad de tiempo aceptable desde el último punto de recuperación de datos. Este objetivo determina lo que es considerado una aceptable pérdida de datos entre el último punto de recuperación y la interrupción del servicio y es definido por la organización.
-  
+ 
 ------------------------------------------------------------------------------------------------------
 Herramientas de gestión y desarrollo
 ------------------------------------------------------------------------------------------------------
@@ -324,32 +324,32 @@ API de AWS
 Una API es un software que permite que dos aplicaciones o servicios se comuniquen entre sí. El tipo más común es vía solicitudes HTTP/S
 La API de AWS es una API HTTP con la cual se puede interactuar enviando solicitudes HTTP usando aplicaciones como Postman.
 Cada servicio de AWS tiene su propio endpoint al cual podés enviarle solicitudes.
-Es raro que los usuarios envíen solicitudes directamente a la API de AWS. Es mucho más fácil interactuar con la API usando herramientas de desarrollador: AWS management console; AWS SDK, interactuá con la API usando tu lenguaje de programación favorito; AWS CLI, interactuá con la API usando una Shell/terminal. 
+Es raro que los usuarios envíen solicitudes directamente a la API de AWS. Es mucho más fácil interactuar con la API usando herramientas de desarrollador: AWS management console; AWS SDK, interactuá con la API usando tu lenguaje de programación favorito; AWS CLI, interactuá con la API usando una Shell/terminal.
 
 AWS management console
 Es una consola unificada basada en web. Permite construir, gestionar y monitorear todo desde simples aplicaciones web hasta complejos despliegues en la nube.
 Permite apuntar y clickear para configurar manualmente recursos de AWS con conocimiento limitado sobre programación.
-A esto se le conoce como ClickOps, ya que podés llevar a cabo todas tus operaciones de sistema vía clicks.   
+A esto se le conoce como ClickOps, ya que podés llevar a cabo todas tus operaciones de sistema vía clicks.
 
 https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/aws-cloud/use-the-aws-management-interfaces/images/35f42a4e069a9142d9edf235ad7d732e_ck-2-kwnd-9-i-003-s-0-y-5-jhiwbea-4-r.png
 - imagen de AWS console
 
 Service console
 Cada servicio de AWS tiene su propia consola personalizada. Podés acceder a estas consolas buscando el nombre del servicio.
-Algunas consolas de servicio de AWS se comportarán como paraguas conteniendo muchos servicios de AWS, ejemplos: VPC console, EC2 console, Systems manager console, SageMaker console, CloudWatch console.  
+Algunas consolas de servicio de AWS se comportarán como paraguas conteniendo muchos servicios de AWS, ejemplos: VPC console, EC2 console, Systems manager console, SageMaker console, CloudWatch console.
 
 ID de cuenta de AWS
-Toda cuenta de AWS tiene un ID único. Está compuesto de 12 dígitos, ejemplo: 271940387265. Se usa cuando ingresamos con un usuario que no sea root y tiene otros usos también (Cross-account roles, support cases, etc). 
+Toda cuenta de AWS tiene un ID único. Está compuesto de 12 dígitos, ejemplo: 271940387265. Se usa cuando ingresamos con un usuario que no sea root y tiene otros usos también (Cross-account roles, support cases, etc).
 Generalmente es buena idea mantener el ID en secreto, ya que es uno de los datos que puede usar alguien malicioso para atacar.
 
 
 AWS tools for Powershell
-¿Qué es powershell? es una Shell de línea de comandos y lenguaje de scripting. A diferencia de la mayoría de las shells, que aceptan devuelven texto, powershell está construida sobre el entorno de ejecución .NET y acepta y devuelve objetos .NET. 
+¿Qué es powershell? es una Shell de línea de comandos y lenguaje de scripting. A diferencia de la mayoría de las shells, que aceptan devuelven texto, powershell está construida sobre el entorno de ejecución .NET y acepta y devuelve objetos .NET.
 AWS tolos for powershell Te permite interactuar con la api de AWS vía cdmlets de powershell.
 Los cmdlets son tipos especiales de comandos de powershell.
 
 Amazon resource names o ARNs
-Identifican recursos de AWS. Los ARNs son requeridos para especificar un recurso sin ambigüedades por todo AWS. 
+Identifican recursos de AWS. Los ARNs son requeridos para especificar un recurso sin ambigüedades por todo AWS.
 Los ARN pueden tener los siguientes formatos:
 * arn:partition:service:region:account-id:resource-id
 * arn:partition:service:region:account-id:resource-type/resource-id
@@ -394,27 +394,27 @@ Tiene 1GB de almacenamiento libre por región de AWS.
 Los archivos guardados en el directorio home están disponibles para futuras sesiones para la misma región AWS.
 Se puede cambiar sin problemas entre bash, powershell y zsh.
 
-IaC (infrastrucuture as code) 
+IaC (infrastrucuture as code)
 Podés escribir scripts para automatizar la creación, actualización o destrucción de la infraestructura cloud.
 IaC es un cianotipo de tu infraestructura.
 IaC te permite compartir, versionar y armar un inventario de tu infraestructura cloud.
 AWS tiene dos ofertas para escribir IaC:
 * AWS CloudFormation (CFN), es una herramienta de IaC declarativa. Que sea declarativa significa que es explícita; es más verbosa pero no hay posibilidades de errores de configuración; se usan lenguajes como JSON, XML, YAML ,etc.
-* AWS Cloud development kit (CDK), es una herramienta de IaC imperativa. Que sea imperativa significa que es implícita; es menos verbosa pero podrías terminar con algún error de configuración; hace más que la declarativa; usa lenguajes de programación como Python, ruby o JavaScript. 
+* AWS Cloud development kit (CDK), es una herramienta de IaC imperativa. Que sea imperativa significa que es implícita; es menos verbosa pero podrías terminar con algún error de configuración; hace más que la declarativa; usa lenguajes de programación como Python, ruby o JavaScript.
 
 CDK
 CDK te permite usar tu lenguaje de programación favorito para escribir IaC
 * CDK está potenciado por CloudFormation (genera plantillas de CloudFormation)
-* CDK tiene una gran biblioteca de componentes reutilizables llamados CDK Construct https://constructs.dev 
+* CDK tiene una gran biblioteca de componentes reutilizables llamados CDK Construct https://constructs.dev
 * CDK viene con su propia CLI
 * CDK tiene un marco de trabajo de testing para pruebas unitarias y de integración.
 
-AWS toolkit para VS code 
+AWS toolkit para VS code
 Es un plugin open source para VS code para crear, debuggear y desplegar recursos de AWS.
 1. AWS Explorer: explorá un amplio rango de recursos de AWS enlazados a tu cuenta de AWS
-2. AWS CDK Explorer: te permite explorar tus stacks definidos por CDK 
+2. AWS CDK Explorer: te permite explorar tus stacks definidos por CDK
 3. Amazon Elastic Container Service: provee Intellisense para archivos de definiciones de tareas ECS
-4. Serverless Applications: Creá, degugueá y desplegá aplicacionesa serverless vía SAM y CFN.   
+4. Serverless Applications: Creá, degugueá y desplegá aplicacionesa serverless vía SAM y CFN.
 
 Access keys
 Es una clave secreta requerida para acceder programáticamente a los recursos de AWS cuando interactuamos con la API de AWS fuera de la consola de gestión de AWS.
@@ -425,7 +425,7 @@ Es posbile desactivar Access keys.
 Las Access keys son almacenadas en la ruta ~/.aws/credentials
 
 Documentación de AWS
-Es una larga colección de documentación técnica sobtre como usar los servicios de AWS. 
+Es una larga colección de documentación técnica sobtre como usar los servicios de AWS.
 Enlace: https://docs.aws.amazon.com/
 
 -------------------------------------------------------------------------------------------------------
@@ -450,10 +450,10 @@ Tipos de responsabilidad en computación en la nube
 * On-premise: el cliente es responsable de todo
 * Infrastructure as a service: el cliente es responsable de las aplicaciones, datos, runtime, middleware y sistema operativo. El CSP es responsable de virtualización, servidores, almacenamiento y redes.
 * Platform as a service: El cliente es responsable de las aplicaciones y los datos. El CSP de todo lo demás.
-* Software as a service: El CSP es responsable de todo. 
+* Software as a service: El CSP es responsable de todo.
 
 Ejemplo de comparación de modelo de responsabilidad compartida
-* IaaS: 
+* IaaS:
  - Bare Metal , EC2 Bare metal instance: el cliente es responsable del sistema operativo anfitrión e hipervisor. AWS es responsable de la máquina física
  - Máquina virtual , Elastic Cloud Compute (EC2): el cliente es responsable de la configuración del sistema operativo huésped, del container runtime (ejemplo: docker). AWS es responsable de hipervisor, de la máquina física y del sistema operativo anfitrión.
  - Contenedores , AWS Elastic Container Service (ECS): el cliente es responsable de la configuración de los contenedores, despliegue de contenedores, almacenamiento de contenedores. AWS es responsable de el sistema operativo (huésped y anfitrión), el hipervisor y del container runtime.
@@ -462,19 +462,19 @@ Ejemplo de comparación de modelo de responsabilidad compartida
 *SaaS:
  - Colaboración de contenido , Amazon WorkDocs: el cliente es responsable del contenido de los documentos, gestión de archivos, configuración de los controles de acceso compartido. AWS será responsable de los servidores, sistema operativo, redes, almacenamiento y seguridad.
 *FaaS (functions as a service):
- - Funciones, AWS lambda: el cliente es responsable de subir el código. AWS será responsable de todo lo demás.	
+ - Funciones, AWS lambda: el cliente es responsable de subir el código. AWS será responsable de todo lo demás.
 
 ---------------------------------------------------------------------------------------------------
 Compute
 ---------------------------------------------------------------------------------------------------
 Elastic compute cloud (EC2)
-Te permite lanzar máquinas virtuales. Una máquina virtual es una emulación de una computadora física usando software. 
+Te permite lanzar máquinas virtuales. Una máquina virtual es una emulación de una computadora física usando software.
 La virtualización del servidor te permite crear, copiar, cambiar de tamaño o migrar tu servidor.
 Múltiples máquinas virtuales pueden ejecutarse en el mismo servidor físico para compartir el costo con otros clientes.
 Cuando lanzamos una VM (máquina virtual) la llamamos instancia.
-EC2 es un servidor altamente configurable donde podés elegir AMI (amazon machine image) que afecta las siguientes opciones: 
+EC2 es un servidor altamente configurable donde podés elegir AMI (amazon machine image) que afecta las siguientes opciones:
 * La cantidad de CPUs
-* La cantidad de RAM 
+* La cantidad de RAM
 * La cantidad de ancho de banda
 * El sistema operativo
 * Unir múltiples discos duros virtuales	para almacenamiento, ejemplo: Elastic Block Store (EBS)
@@ -492,14 +492,14 @@ Elastic Container Service (ECS)
 es un servicio de orquestación de contenedores que soporta contenedores de Docker. Lanza un cluster de servidores en instancias EC2 con Docker instalado. Es para cuando necesitás Docker como servicio o necesitás ejecutar contenedores.
 Elastic Container Regisitry (ECR)
 Es un repositorio para imágenes de contenedores. Para lanzar contenedores necesitás una imagen. Un repositorio es un almacenamiento que tiene control de versiones.
-ECS Fargate 
+ECS Fargate
 Es un servicio de orquestación de contenedores serveless. Es como ECS, pagás on-demand por cada contenedor en ejecución (con ECS tenés que mantener un servidor EC2 corriendo incluso si no tenés contendores ejecutándose). AWS gestiona el servidor subyacente para que no tengas que escalar o mejorar el servidor EC2.
 Elastic Kubernetes Service (EKS)
 Es un servicio de kubernetes completamente gestionado. Kubernetes (K8) es un software de código abierto que fué creado por Google y es generalmente un estándar para gestión de microsevicios. Es para cuando necesitás ejecutar kubernetes como servicio.
 
 Serverless: es cuando los servidores subyacentes son gestionados por AWS. No debés preocuparte por configurar los servidores.
 AWS Lambda
-Es un servicio de funciones serverless. Podés ejecutar código sin gestionar servidores. Subís pequeñas piezas de código, elegís la cantidad de memoria y cuanto tiempo se le permite a la función ejecutarse antes de que se agote el tiempo. Pagás de acuerdo al tiempo de ejecución de la función serverless redondeado a los 100ms más cercanos. 
+Es un servicio de funciones serverless. Podés ejecutar código sin gestionar servidores. Subís pequeñas piezas de código, elegís la cantidad de memoria y cuanto tiempo se le permite a la función ejecutarse antes de que se agote el tiempo. Pagás de acuerdo al tiempo de ejecución de la función serverless redondeado a los 100ms más cercanos.
 
 ---------------
 Servicios de computación de alto rendimiento
@@ -520,7 +520,7 @@ AWS ParallelCluster es una herramienta de gestión de clusters de código abiert
 ------------
 Edge computing y hybrid comnuting
 
-* Edge computing: es cuando empujàs tus cargas de trabajo de computación fuera de tus redes para correr cerca de las ubicación destino. Ejemplo: empujar para correr en teléfonos, dispositivos IoT o servidores externos dentro de tu red de la nube. 
+* Edge computing: es cuando empujàs tus cargas de trabajo de computación fuera de tus redes para correr cerca de las ubicación destino. Ejemplo: empujar para correr en teléfonos, dispositivos IoT o servidores externos dentro de tu red de la nube.
 * Hybrid computing: es cuando podès correr tus cargas de trabajo tanto en tu datacenter on-premise como en tu AWS VPC.
 
 AWS Outposts: es un estante físico de servidores que podès poner en tu datacenter. Te permite usar la API de AWS y servicios como EC2 en tu datacenter.
@@ -529,7 +529,7 @@ AWS wavelength: te permite construir y lanzar tus aplicaciones en un datacenter 
 
 VMWare Cloud: te permite gestionar máquinas virtuales on-premise usando VMWare como instancias EC2. El datacenter debe estar usando VMWare para virtualización.
 
-AWS Local Zones: son Edge datacenters localizados afuera de una región de AWS para que puedas usar AWS cerca de tu destino. Cuando necesitàs poder de còmputo màs rápido, almacenamiento y bases de datos en áreas muy pobladas que están fuera de una región de AWS. 
+AWS Local Zones: son Edge datacenters localizados afuera de una región de AWS para que puedas usar AWS cerca de tu destino. Cuando necesitàs poder de còmputo màs rápido, almacenamiento y bases de datos en áreas muy pobladas que están fuera de una región de AWS.
 
 -------------
 Gestión de costo y capacidad
@@ -541,14 +541,14 @@ Gestión de capacidad: como atendemos a la demanda de tràfico y uso añadiendo 
 EC2 Spot Instances, Reserved instances and saving plans
 Maneras de ahorrar en computación, pagando total o parcialmente, comprometiéndose a contratos anuales o siendo flexible sobre la disponibilidad e interrupción de servicios de computaciòn.
 
-AWS Batch 
+AWS Batch
 planea, programa y ejecuta tu lote de cargas de trabajo computacional a través del rango completo de servicios de computación de AWS, se puede usar spot intance para ahorrar dinero.
 
 AWS Compute Optimizar
 te sugiere como reducir costos y mejorar rendimiento usando machine learning para analizar tu historial de uso.
 
 EC2 Autoscaling Groups (ASGs)
-Automáticamente añade o quita servidores EC2 para atender la demanda actual de tràfico. Te ayudarà a ahorrar dinero y atenderà a la capacidad ya que solo corrès la cantidad de servidores que necesitàs.  
+Automáticamente añade o quita servidores EC2 para atender la demanda actual de tràfico. Te ayudarà a ahorrar dinero y atenderà a la capacidad ya que solo corrès la cantidad de servidores que necesitàs.
 
 Elastic Load Balance (ELB)
 Distribuye el tràfico a múltiples instancias, puede encaminar tràfico desde instancias poco saludables a instancias saludables. Puede encaminar tràfico a instancias EC2 en diferentes zonas de disponibilidad.
@@ -578,14 +578,14 @@ Cuando necesitás compartir archivos donde múltiples usuarios o máquinas virtu
 
 Amazon Simple Storage Service (S3) - Object
 El objeto es almacenado con datos, metadatos y un único ID
-Soporta múltiples lecturas y escrituras (sin bloqueos) 
+Soporta múltiples lecturas y escrituras (sin bloqueos)
 Protocolos: HTTP/S, API
 Cuando necesitás subir archivos y no tener que preocuparte por la infraestructura subyacente. No está pensado para cuando hay muchos inputs y outputs por segundo
 
 ----------
 Introducción a S3
 Almacenamiento basado en objetos: Es una arquitectura de almacenamiento de datos que gestiona los datos como objetos, a diferencia de otras arquitecturas de almacenamiento.
-En otras arquitecturas de almacenamiento: 
+En otras arquitecturas de almacenamiento:
 * Los sistemas de archivos gestionan datos como un archivo y una jerarquía
 * Almacenamiento en bloque que gestiona los datos como bloques con sectores y rastros
 
@@ -624,7 +624,7 @@ Los dispositivos son: Snowcone, Snowball Edge y Sonwmobile
 * Snowball Edge: viene generalmente en dos tipos: almacenamiento optimizado (80TB) y computación optimizada (39.5 TB)
 * Sonwmobile: 100PB de almacenamiento
 
-Los datos son enviados a Amazon S3  	
+Los datos son enviados a Amazon S3
 
 ------------
 Servicios de almacenamiento
@@ -633,9 +633,9 @@ Servicios de almacenamiento
 * Elastic Block Store (EBS): es un servicio de almacenamiento bloque persistente. Es un disco duro virtual que unís a instancias EC2. Podés elegir diferentes tipos de discos duros: SSD, IOPS SSD, HDD de rendimiento, HDD frío
 * Elastic File Storage (EFS): es un servicio de sistema de archivos NFS cloud-native. Almacenamiento de archivos que podés montar en múltiples instancias EC2 al mismo tiempo. Cuando necesitás compartir archivos entre múltiples servidores.
 * Stoarge Gateway: es un servicio de almacenamiento en la nube híbrido que extiende tu almacenamiento on-premise a la nube. Hay tres opciones: File Gateway, extiende tu almacenamiento local a AWS S3; Volume Gateway, cachea tus unidades locales a S3 para que puedas tener backup de archivos locales en la nube; Tape Gateway, guarda archivos en cintas virtuales para hacer back up de tus archivos a un buen costo en el largo plazo.
-* AWS snow family: son dispositivos usados para migrar físicamente grandes cantidades de datos a la nube. 
+* AWS snow family: son dispositivos usados para migrar físicamente grandes cantidades de datos a la nube.
  - Snowball y Snowball Edge son dispositivos de almacenamiento del tamaño de un maletín con una capacidad de 50 a 80 TB.
- - Snowmobile es un contenedor lleno con estantes de almacenamiento y computación que es transportado vía un camión para transferir 100PB de datos por trailer.	 
+ - Snowmobile es un contenedor lleno con estantes de almacenamiento y computación que es transportado vía un camión para transferir 100PB de datos por trailer.
  - Snowcone es una versión muy pequeña de snowball que puede transferir 8 TB de datos.
 * AWS Backup es un servicio de backup completamente gestionado que hace que sea fácil centralizar y automatizar el backup de los datos a través de múltiples servicios de AWS, por ejemplo: EC2, EBS, RDS, DynamoDB, EFS, Storage Gateway. Podés crear planes de backup.
 * CloudEndure Disaster Recovery, continuamente replica tus máquinas en un área de staging de bajo costo en tu cuenta objetivo de AWS y región preferida, permitiendo una recuperación rápida y confiable en caso de fallas de datacenters.
@@ -651,7 +651,7 @@ Una base de datos es un almacenamiento de datos que guarda datos estructurados y
 Una base de datos es un almacenamiento de datos más complejo porque requiere el uso de un diseño formal y técnicas de modelado.
 
 Las bases de datos pueden ser relacionales: datos estructurados que representan datos de manera tabular (tablas, filas y columnas)
-Bases de datos no relacionales: semi-estructuradas que pueden o no utilizar datos de manera tabular 
+Bases de datos no relacionales: semi-estructuradas que pueden o no utilizar datos de manera tabular
 
 ----------
 ¿Qué es un depósito de datos? (data warehouse)
@@ -665,7 +665,7 @@ Los depósitos de datos están diseñados para ser "calientes". Con calientes se
 
 Los depósitos de datos son accedidos de manera poco frecuente, lo que significa que no están diseñados para reportes en tiempo real pero tal vez una o dos veces en un día o una vez a la semana para generar negocios y reportes de usuario.
 
-Un depósito de datos necesita consumir datos de bases de datos relacionales de forma regular. 
+Un depósito de datos necesita consumir datos de bases de datos relacionales de forma regular.
 
 ---------
 ¿Qué es un almacenamiento clave valor? (key value store)
@@ -674,11 +674,11 @@ Es un tipo de base de datos no relacional (NoSQL) que usa un método de clave y 
 --------
 ¿Qué es una base de datos de documentos? (document database)
 Es una base de datos NoSQL que almacena documentos como su principal estructura de datos. Un documento podría ser un XML pero más comúnmente un JSON o algo similar. Los almacenamientos por documentos son subclases de almacenamiento clave/valor.
-Los componentes de un documento son comparables a una base de datos relacional: 
+Los componentes de un documento son comparables a una base de datos relacional:
 
 SQL   |  Documento
 -------------------
-tablas   | Colección 
+tablas   | Colección
 filas    | Documentos
 columnas | Campos
 índices  | índices
@@ -706,7 +706,7 @@ Otros servicios de bases de datos
 * Neptune: es una base de datos gestionada de grafos. Los datos son representados como nodos interconectados. Es para cuando necesitás entender las conexiones entre datos, por ejemplo, mapear relaciones en redes sociales
 * Amazon Timestreams: se puede pensar como un dispositivo que envía un montón de datos que son sensibles al tiempo como dispositivos IoT. Es para cuando querés medir como las cosas cambian con el tiempo.
 * Amazon Quantum Ledger Database: es una base de datos que provee logs de transacciones variables transparentes, inmutables y criptográficos. Es para cuando necesitás registrar el historial de actividades financieras que son confiables.
-* Database Migration Service (DMS): es un servicio de migración de bases de datos. Podés migrar de: 
+* Database Migration Service (DMS): es un servicio de migración de bases de datos. Podés migrar de:
  - bases de datos on-premise a AWS
  - desde dos bases de datos diferentes o las mismas cuentas de AWS usando diferentes motores de SQL
  - desde SQL a NoSQL
@@ -761,15 +761,15 @@ Todo en AWS usa instancias EC2 por debajo.
 
 * Se puede elegir el sistema operativo via AMI (Amazon Mchine Image): Red Hat, Ubuntu, Windows, Amazon Linux, Suse
 * Elegir el tipo de instancia: t2.nano o C4.8xlarge (hay diferencias en las especificaciones técnicas)
-* Añadir almacenamiento (EBS, EFS) 
+* Añadir almacenamiento (EBS, EFS)
   - Si se elige EBS hay que elegir entra las siguientes opciones: SSD, HDD, Virtual magnetic tape, Multiple volumes
-* Configurar la instancia: Security Groups, Key Pairs, UserData, IAM Roles, Placement Groups 
+* Configurar la instancia: Security Groups, Key Pairs, UserData, IAM Roles, Placement Groups
 
 -------------
 Familias de instancias EC2
 
 Las familias de instancia son diferentes combinaciones de CPU, memoria, almacenamiento y capacidad de red.
-Las familias de instancias te permiten elegir la combinación apropiada de capacidad para satisfacer los requerimientos únicos de tu aplicación.	
+Las familias de instancias te permiten elegir la combinación apropiada de capacidad para satisfacer los requerimientos únicos de tu aplicación.
 Diferentes familias de instancias son diferentes por las variaciones de hardware usadas para darles sus propiedades únicas.
 
 Tipos de familias de instancias
@@ -780,7 +780,7 @@ Tipos de familias de instancias
 * Storage optimized: I3, I3en, D2, D3, D3en, H1. Lectura secuencial y acceso de escritura a grandes conjuntos de datos en almacenamiento local. Casos de uso: NoSQL, bases de datos transaccionales o en memoria, data warehousing
 
 Un instance type es una combinación entre tamaño y familia.
-	   	
+	
 -------------------
 Tipos de instancias EC2
 
@@ -845,7 +845,7 @@ Hay 5 maneras de pagar por EC2 (máquinas virtuales)
   - "request spare computing capacity"
   - "flexible start and endtimes"
   - puede manejar interrupciones (si el servidor se detiene o empieza de manera aleatoria)
-  - "for non-critical background jobs" 
+  - "for non-critical background jobs"
   - es con el que más se ahorra
 * Reservado hasta 75% menos:
   - uso predecible y estado firme
@@ -893,13 +893,13 @@ El precio reducido se basa en: Term x Class offering x RI attributes x Payment o
 
 Term: mientras más largo sea el plazo más grande es el ahorro. Te comprometés a un contrato de 1 o 3 años. Las instancias reservadas no se renuevan automáticamente. Cuando expire tu instancia va a usar on-demand sin interrupción del servicio
 
-Class offering: mientras menos flexible más se ahorra. 
+Class offering: mientras menos flexible más se ahorra.
 * Estándar: hasta 75% de reducción de precio comparado con on-demand; podés modificar atributos RI
 * Covertible: hasta 54% de precio reducido comparado con on-demand. Podés intercambiar RI basado en atributos RI si es más grande o igual en valor
 * Programado: AWS ya no ofrece RI programado
 
 Opciones de pago: mientras más se pague por adelantado más se ahorra
-* "All upfront": el pago completo se realiza al principio 
+* "All upfront": el pago completo se realiza al principio
 * "Partial upfront": una porción del costo se paga por adelantado y las horas restantes del período se facturan a una tasa de descuento por hora
 * "No upfront": se te factura a una tasa de descuento por hora por cada hora dentro del período, a pesar de que la instancia reservada está siendo usada.
 
@@ -926,13 +926,13 @@ RI regional: compra por región
 * No reserva capacidad
 * Descuentos de RI aplican al uso de instancia en cualquier AZ en la región
 * Los descuentos RI aplican a uso de instancia dentro de la familia de instancia. Solo soportado en instancias reservadas Amazon Linux/Unix con tenencia por defecto.
-* Podés hacer colas de compras para RI regional 
+* Podés hacer colas de compras para RI regional
 
 RI zonal: compra por zona de disponibilidad (availability zone)
 * Reserva capacidad en al AZ especificada
 * Descuentos de RI aplican a instancia en la AZ seleccionada (no hay flexibilidad con las AZs)
 * Sin flexibilidad en tamaño de instancia. Los descuentos RI aplican al uso de instancia solamente para el tipo de instancia especificado y el tamaño.
-* No podés hacer colas para compras para RI zonal 
+* No podés hacer colas para compras para RI zonal
 
 --------------------
 Límites RI
@@ -969,9 +969,9 @@ Podés también usar tus instancias reservadas regionales con tus capacity reser
 RI convertible vs RI estándar
 
 RI estándar
-* Los atributos RI pueden ser modificados: 
+* Los atributos RI pueden ser modificados:
   - cambiar la AZ dentro de la región
-  - cambiar el alcance del RI zonal a RI regional y viceversa 
+  - cambiar el alcance del RI zonal a RI regional y viceversa
   - cambiar el tamaño de instancia (Linux/UNIX solamente, tenencia por defecto)
   - cambia la red de EC2-classic a VPC y viceversa
 * No se pueden intercambiar
@@ -993,14 +993,14 @@ RI Marketplace
 EC2 reserved instance matketplace te permite vender RI estándar sin usar para recuperar tu gasto de RI por RI que no usán o no podés usar
 
 * Reserved instances pueden ser vendidas después de que han estado activas por al menos 30 días y una vez que AWS ha recibido pago por adelantado (si es aplicable)
-* Deberás tener una cuenta de banco de Estados Unidos para vender instancias reservadas en el RI marketplace 
+* Deberás tener una cuenta de banco de Estados Unidos para vender instancias reservadas en el RI marketplace
 * Debe haber por lo menos un mes restante en el plazo de la RI que estás listando
 * Vas a conservar el precio y el beneficio de capacidad de tu reservación hasta que sea vendida y la transacción completada
 * El nombre de tu compañía será compartido con el comprador para propósitos de impuestos
 * Un vendedor puede solamente asignar el precio por adelantado para una RI. El precio de uso y otra configuración (por ejemplo, tipo de instancia, AZ, plataforma) va a permanecer igual a cuando la RI fue inicialmente comprada
 * El tamaño del plazo será redondeado para abajo al mes más cercano. Por ejemplo, una reservación con 9 meses y 15 días restantes aparecerá como 9 meses en el Marketplace de RI
 * Podés vender hasta $20000 en RI por año
-* RIs en la región GovCloud no pueden ser vendidas en el RI marketplace	
+* RIs en la región GovCloud no pueden ser vendidas en el RI marketplace
 
 ------------------------
 Spot instances
@@ -1021,7 +1021,7 @@ Instancias dedicadas
 
 Las instancias dedicadas están diseñadas para cumplir con requerimientos regulatorios
 
-* Multi-tenant: es como cuando muchas personas viven en un mismo edificio de departamentos 
+* Multi-tenant: es como cuando muchas personas viven en un mismo edificio de departamentos
 Cuando múltiples clientes están corriendo cargas de trabajo en el mismo hardware. El aislamiento virtual es lo que separa a los clientes
 
 * Single-tenant: es como cuando cada uno tiene su casa
@@ -1053,7 +1053,7 @@ Se pueden elegir dos plazos diferentes:
 Elegís las siguientes opciones de pago:
 * Todo por adelantado
 * Parcialmente por adelantado
-* No por adelantado 	
+* No por adelantado
 
 Planes de ahorro de cómputo:
 Proveen la mayor flexibilidad y ayudan a reducir tu costo por un 66%. Estos planes aplican automáticamente a uso de instancias EC2, AWS fargate y a uso de servicio AWS lambda sin importar la familia de instancia, tamaño, AZ, región, S.O o tenencia
@@ -1062,7 +1062,7 @@ Planes de ahorro de instancias EC2:
 provee los precios más bajos, ofreciendo ahorro de hasta 72% a cambio de compromiso de uso de familias de instancias individuales en una región. Automáticamente reduce tu costo en la familia de instancia seleccionada en esa región sin importar AZ, tamaño, SO o tenencia. Te da flexibilidad para cambiar tu uso entre instancias dentro de una familia en esa región
 
 Planes de ahorro de SageMaker:
-Te ayuda a reducir costos de SageMaker a un 64%. Automáticamente aplica a uso de SageMaker sin importar familia de instancia, tamaño, componente o región de AWS 
+Te ayuda a reducir costos de SageMaker a un 64%. Automáticamente aplica a uso de SageMaker sin importar familia de instancia, tamaño, componente o región de AWS
 
 ----------------------------------------------------------------------------------------------
 Identidad
@@ -1097,11 +1097,11 @@ AWS Identity and Access Management (IAM)
 * Políticas de control de servicio (Service control policies)
 * IAM policy conditions
 
-AWS no tiene controles de identidad listos para usar que sean inteligentes, por lo cual se considera que AWS no tiene una oferta zero trust para clientes, por lo que servicios de terceros deben ser usados 	
+AWS no tiene controles de identidad listos para usar que sean inteligentes, por lo cual se considera que AWS no tiene una oferta zero trust para clientes, por lo que servicios de terceros deben ser usados
 
 AWS CloudTrail: rastrea todas las llmadas de APIs
 Amazon GuardDuty: detecta actividad sospechosa o maliciosa basado en CloudTrail y otros logs
-Amazon Detective: usado para analizar, investigar e identificar rápidamente problemas de seguridad (puede ingerir hallazgos de Guard Duty) 
+Amazon Detective: usado para analizar, investigar e identificar rápidamente problemas de seguridad (puede ingerir hallazgos de Guard Duty)
 
 ---------------------------
 Zero trust en AWS con terceros
@@ -1153,7 +1153,7 @@ Microsoft introdujo Active Directory Domain Services en Windows 2000 para darles
 ---------------------------
 Proveedores de identidad o identity providers (IpD)
 
-Un identity provider es una entidad de sistema que crea, mantiene y gestiona información de identidad para "principals" y también provee servicios de autenticación para aplicaciones dentro de una federación o red distribuida. Un proveedor confiable de tu identidad de usuario que te deja autenticar para acceder a otros servicios. Algunos identity providers podrían ser Facebook, Amazon, Google, Twitter, GitHub, Linkedin 
+Un identity provider es una entidad de sistema que crea, mantiene y gestiona información de identidad para "principals" y también provee servicios de autenticación para aplicaciones dentro de una federación o red distribuida. Un proveedor confiable de tu identidad de usuario que te deja autenticar para acceder a otros servicios. Algunos identity providers podrían ser Facebook, Amazon, Google, Twitter, GitHub, Linkedin
 
 Federated identity es un método que vincula la identidad de un usuario a lo largo de múltiples sistemas separados de gestión de identidad
 
@@ -1185,9 +1185,9 @@ Un uso común de LDAP es proveer un lugar central a donde almacenar nombres de u
 LDAP permite same-sign on. Esto permite a los usuarios tener un solo ID y contraseña, pero tienen que ingresarlos siempre que quieran ingresar
 
 ¿Por qué usar LDAP cuando SSO es más conveniente?
-* La mayoría de los SSO están usando LDAP 
-* LDAP no fue diseñado para trabajar nativamente con aplicaciones web 
-* Algunos sistemas solo soportan integración con LDAP y no SSO  
+* La mayoría de los SSO están usando LDAP
+* LDAP no fue diseñado para trabajar nativamente con aplicaciones web
+* Algunos sistemas solo soportan integración con LDAP y no SSO
 
 --------------------------
 Multi-factor authentication
@@ -1205,4 +1205,20 @@ Es un dispositivo secundario usado como segundo paso en el proceso de autenticac
 
 Una llave de seguridad puede recordar a un memory stick. Cuando tu dedo hace contacto con un botón o metal expuesto en el dispositivo va a generar y auto-llenar un token de seguridad
 
-Una marca popular de llave de seguridad es Yubikey. Funciona con Gmail, Facebook y otros cientos. Soporta FIDO2/WebAuthn,  U2F. Es a prueba de agua y resistente a golpes. USB-A y NFC dual connectors en una sola llave 
+Una marca popular de llave de seguridad es Yubikey. Funciona con Gmail, Facebook y otros cientos. Soporta FIDO2/WebAuthn,  U2F. Es a prueba de agua y resistente a golpes. USB-A y NFC dual connectors en una sola llave
+
+--------------------------
+AWS IAM (Identity and Access management)
+
+Podés crear y gestionar usuarios y grupos de AWS, y usar permisos para permitirles y denegarles acceso a recursos de AWS
+
+Políticas (policies) IAM: son documentos JSON que otorgan permisos para usuarios, grupos i roles específicos para acceder a servicios. Las políticas (policies) están ligadas a identidades IAM
+
+IAM permissiones: las acciones de API que pueden o no llevarse a cabo. Están presentados en el documento de IAM policy
+
+IAM identities:
+* IAM users: usuarios finales que ingresan en la consola o interactúan con recursos de AWS programáticamente o vía click en interfaces de usuario 
+* IAM groups: Se pueden agrupar usuarios para que compartan niveles de permisos del grupo, por ejemplo: administradores, desarrolladores, auditores
+* IAM roles: el rol otorga permisos a recursos de AWS a acciones específicas de API de AWS. Asociar políticas a un rol y luego lo asigna a un recurso de AWS 
+
+ 
