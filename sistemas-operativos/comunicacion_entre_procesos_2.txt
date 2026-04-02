@@ -30,6 +30,34 @@ Ejemplo de productor-consumidor usando memoria compartida
 * Este es un ejemplo clásico, en el cual un proceso está produciendo datos y otros proceso consume datos
 * Los datos son pasados vía un buffer intermediario, que puede estar cerrado (bounded) o ser ilimitado (unbounded). Con un buffer cerrado el productor tendrá que esperar hasta que haya espacio disponible en el buffer, pero con un buffer ilimitado el productor nunca necesitará esperar. El consumidor necesitará esperar en cualquier caso hasta que hayan datos disponibles
 * Este ejemplo usa memoria compartida y una cola circular
+
+-------------------------
+Sistemas de Message-passing
+* Los sistemas de message passing deberán soportar como mínimo system calls para "enviar mensaje" y "recibir mensaje"
+* Un enlace de comunicación debe ser establecido entre los procesos colaborativos (cooperating) antes de que los mensajes puedan ser enviados
+* Hay 3 problemas clave a resolver en estos sistemas:
+  1. comunicación directa o indirecta (naming)
+  2. comunicación síncrona o asincrónica
+  3. buffering automático o explícito
+
+1. naming
+* Con la comunicación directa el emisor debe conocer el nombre del receptor a quien desea enviar el mensaje
+  - hay un enlace uno a uno entre todo par emisor-receptor
+  - para comunicación simétrica, el receptor debe también conocer el nombre específico del emisor de quien desea recibir el mensaje
+  - para comunicación asimétrica, esto último no es necesario
+* La comunicación indirecta usa cajas de correo compartidas o puertos
+  - múltiples procesos pueden compartir la/s misma/s caja/s de correo
+  - solo un proceso puede leer cualquier mensaje en una caja de correo. Inicialmente, el proceso que crea la caja de correo es el dueño, y es el único al que se le permite leer correo de la caja de correo, aunque este privilegio puede ser transferido
+  - El SO debe proveer de system calls para crear y borrar cajas de correo, y para enviar y recibir mesajes de y para cajas de correo
+
+2. Sincronización
+* Ya sea enviar o recibir mensajes (o ninguno o ambos) puede ser bloqueante o no bloqueante
+
+3. Buffering
+* Los mensajes son pasados vía colas, que pueden tener una de tres configuraciones de capacidad
+  - Capacidad cero: los mensajes no pueden ser almacenados en la cola, por lo que los emisores deben bloquear hasta que los receptores acepten los mensajes
+  - Capacidad encerrada (bounded): hay una cierta capacidad finita predeterminada en la cola. Los emisores deben bloquear si la cola está llena hasta que el espacio se haga disponible en la cola, pero sino puede ser bloqueante o no bloqueante 
+  - Capacidad ilimitada (unbounded): la cola tiene un capacidad teórica infinita, por lo que los emisores nunca se ven forzados a bloquear 
 ________________________________________________
 Continuar resumiendo con el enlace de más arriba
 ________________________________________________
