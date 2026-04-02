@@ -1212,13 +1212,25 @@ AWS IAM (Identity and Access management)
 
 Podés crear y gestionar usuarios y grupos de AWS, y usar permisos para permitirles y denegarles acceso a recursos de AWS
 
-Políticas (policies) IAM: son documentos JSON que otorgan permisos para usuarios, grupos i roles específicos para acceder a servicios. Las políticas (policies) están ligadas a identidades IAM
+Políticas (policies) IAM: son documentos JSON que otorgan permisos para usuarios, grupos y roles específicos para acceder a servicios. Las políticas (policies) están ligadas a identidades IAM
 
-IAM permissiones: las acciones de API que pueden o no llevarse a cabo. Están presentados en el documento de IAM policy
+IAM permissions: las acciones de API que pueden o no llevarse a cabo. Están presentados en el documento de IAM policy
 
 IAM identities:
 * IAM users: usuarios finales que ingresan en la consola o interactúan con recursos de AWS programáticamente o vía click en interfaces de usuario 
 * IAM groups: Se pueden agrupar usuarios para que compartan niveles de permisos del grupo, por ejemplo: administradores, desarrolladores, auditores
 * IAM roles: el rol otorga permisos a recursos de AWS a acciones específicas de API de AWS. Asociar políticas a un rol y luego lo asigna a un recurso de AWS 
 
- 
+--------------------------
+Anatomía de una IAM policy
+
+Las IAM policies están escritas en JSON y contienen los permisos que determinan que acciones de API están permitidas o denegadas
+
+* Version
+* Statement
+  - Sid (opcional): es una manera de etiquetar tus staetments
+  - Effect: determina si una política va a permitir o denegar
+  - Action: lista de acciones que la política permite o denega
+  - Principal: cuenta, usuario, rol o usuario federado al que quisieras permitir o denegar acceso
+  - Resource: el recurso al que la/s accion/es aplica/n
+  - Condition (opcional): circunstancias bajo las cuales la política otorga permisos 
