@@ -30,6 +30,8 @@ De hecho el archivo pom.xml que tenemos en la raíz está actuando ya de esta ma
 Este tipo de funcionamiento es típico en muchas herramientas de configuración y nos ofrece una manera muy potente de definir valores particulares para casos concretos teniendo una configuración global por defecto.
 
 -----------------------
+https://www.youtube.com/watch?v=JhSBS2OpGdU&list=PLH4-9MlhMdT1uxDwPGEi3zPI0CdI2UnH2&index=1
+
 Alcance (scope) de las dependencias
 
 * compile: disponible solo en tiempo de compilación dentro del classpath. Es el alcance por defecto
@@ -37,4 +39,12 @@ Alcance (scope) de las dependencias
 * runtime: disponible en tiempo de ejecución pero no en tiempo de compilación. Ejemplo: mysql-connector-java
 * test: solo disponibles mientras se ejecutan y escriben tests. Ejemplo: junit-jupiter-engine
 * system: la ruta al jar debe ser provista manualmente usando <systemPath> 	 
-	
+
+---------------------
+https://www.youtube.com/watch?v=JhSBS2OpGdU&list=PLH4-9MlhMdT1uxDwPGEi3zPI0CdI2UnH2&index=1
+
+Repositorios
+
+* Repositorio local: es una carpeta dentro de nuestra máquina. Es .m2 y está dentro de la carpeta de nuestro usuario
+
+* Repositorio remoto: es un sitio web de donde podemos descargar dependencias, ejemplos: website de Maven, artifactory o nexus
