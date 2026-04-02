@@ -4,3 +4,4 @@ Investigar sobre los arquetipos de Maven
 Investigar sobre proyectos en Maven con varios módulos
 Tomar nota y practicar con los comandos relacionados al plugin de spring boot
 Averiguar si en Eclipse hay que configurar Maven para que funcione correctamente
+¿Qué es un artifact?

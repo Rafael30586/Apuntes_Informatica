@@ -48,3 +48,22 @@ Repositorios
 * Repositorio local: es una carpeta dentro de nuestra máquina. Es .m2 y está dentro de la carpeta de nuestro usuario
 
 * Repositorio remoto: es un sitio web de donde podemos descargar dependencias, ejemplos: website de Maven, artifactory o nexus
+
+--------------------
+Ciclo de vida de "build"
+
+Se divide en tres pasos: default, clean y site
+
+* default: 
+  - validate: comprueba si el pom.xml es válido o no
+  - compile: compila el código fuente
+  - test: ejecuta los tests unitarios dentro del proyecto
+  - package: empaqueta el código fuente en un artefacto
+  - integration-test: ejecuta los tests de integración
+  - verify: verifica los resultados de los tests de integración
+  - install: instala el paquete creado en nuestro repositorio local
+  - deploy: despliega el paquete creado al repositorio remoto
+  Por ejemplo, si hacemos mvn compile, ocurren las fases validate y compile; si hacemos mvn install, ocurren las fases validate, compile, test, package, integration-test, verify e install.
+
+* clean: limpia los archviso .class generados con anterioridad
+* site: responsable de generar documentación de java
