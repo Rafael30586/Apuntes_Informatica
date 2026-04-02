@@ -21,7 +21,7 @@ Solución: CIDR permite una asignación de bloque flexible coincidiendo con los 
 Reglas para formar bloques CIDR
 * Todas las IPs deben ser contiguas
 * El tamaño de un bloque debe ser una potencia de 2 (2^n). Simplifica la división de red
-* ¿?
+* La primera IP del bloque, debe ser divisible por el tamaño del bloque. Los últimos n bits de la primera IP del bloque deben ser 0, siendo n la potencia a la que está elevada 2 en el punto anterior. Los n bits restantes se llaman resto (remainder) según un video de redes de freecodecamp, y los primeros son el cociente (quotient). Además, la primera IP del bloque es el ID del bloque. El video es: https://www.youtube.com/watch?v=fQbBPa0ADvs&list=PLH4-9MlhMdT1uxDwPGEi3zPI0CdI2UnH2&index=16
 
 Ejemplo : si el tamaño del bloque es 2^5 entonces el id del anfitrión contiene 5 bits y la red contiene 32 - 5 = 27 bits
 
@@ -32,13 +32,13 @@ La primera dirección IP del bloque debe ser divisible por el tamaño del bloque
 Ejemplo: revisar si 100.1.2.32 a 100.1.2.47 es un bloque de direcciones IP válido o no
 * Todas las direcciones IP son contiguas
 * El número total de direcciones IP en el bloque es 16 = 2^4
-* La primera dirección IP es 100.1.2.00100000 . El id del anfitrión contiene los últimos 4 bits y todos los 4 bits menos significativos son cero. Por consiguiente, la primera dirección IP es divisible por el tamaño del bloque.
+* La primera dirección IP es 100.1.2.00100000 . El id del anfitrión contiene los últimos 4 bits y todos los 4 bits menos significativos son cero. Por consiguiente, la primera dirección IP es divisible por el tamaño del bloque. 
 
 Las tres reglas se cumplen por este bloque. Por lo tanto, es un bloque de direcciones IP válido.
 
 -----------------------
 Ventajas de CIDR
-* Uso eficiente de direcciones IP: minimiza el desperdicio de direcciones IPv4
+* Uso eficiente de direcciones IP: minimiza el desperdicio de direcciones IPv4. Cabe aclarar que el desperdicio de direcciones IP es posible si la cantidad de direcciones que se necesitan no es una potencia de 2, por ejemplo, si necesitamos 5 direcciones IP, necesitaremos un bloque de 8 , que es 2^3
 * Asignación flexible: soporta redes de cualquier tamaño
 * Enrutamiento mejorado: junta direcciones para un enrutamiento más simple y rápido
 * Baja la sobrecarga administrativa: gestión de IP y red más fácil 
