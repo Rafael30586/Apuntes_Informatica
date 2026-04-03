@@ -25,6 +25,8 @@ properties --> puede ir la versión de java y otras propiedades. Define variable
 
 build.plugins.plugin --> sirve para especificar plugins
 
+plugin.configuration --> 
+
 dependencies.dependency --> es para las bibliotecas del proyecto que queremos que maven descargue. Cada biblioteca tiene las propiedades groupId, artifactId, versión y a veces otras más como scope. 
 
 dependency.exclusions.exclusion --> sirve para excluir de la dependencia directa la dependencia transitiva que indiquemos. Puede ser útil cuando una dependenica genera conflictos con otra, por ejemplo, si tenemos junit-jupiter-engine y spring-boot-starter-test en el mismo proyeto, podría haber conflicto con las diferentes versiones de junit

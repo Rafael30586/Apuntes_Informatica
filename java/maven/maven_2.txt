@@ -1,0 +1,65 @@
+https://www.youtube.com/watch?v=JhSBS2OpGdU&list=PLH4-9MlhMdT1uxDwPGEi3zPI0CdI2UnH2&index=1
+
+Alcance (scope) de las dependencias
+
+* compile: disponible solo en tiempo de compilación dentro del classpath. Es el alcance por defecto
+* provided: provisto por JDK o entorno de ejecución, disponible en tiempo de compilación pero no en tiempo de ejecución. Ejemplo: servlet-api
+* runtime: disponible en tiempo de ejecución pero no en tiempo de compilación. Ejemplo: mysql-connector-java
+* test: solo disponibles mientras se ejecutan y escriben tests. Ejemplo: junit-jupiter-engine
+* system: la ruta al jar debe ser provista manualmente usando <systemPath> 	 
+
+---------------------
+
+Repositorios
+
+* Repositorio local: es una carpeta dentro de nuestra máquina. Es .m2 y está dentro de la carpeta de nuestro usuario
+
+* Repositorio remoto: es un sitio web de donde podemos descargar dependencias, ejemplos: website de Maven, artifactory o nexus
+
+--------------------
+Ciclo de vida de "build"
+
+Se divide en tres pasos: default, clean y site
+
+* default: 
+  - validate: comprueba si el pom.xml es válido o no
+  - compile: compila el código fuente
+  - test: ejecuta los tests unitarios dentro del proyecto
+  - package: empaqueta el código fuente en un artefacto
+  - integration-test: ejecuta los tests de integración
+  - verify: verifica los resultados de los tests de integración
+  - install: instala el paquete creado en nuestro repositorio local
+  - deploy: despliega el paquete creado al repositorio remoto
+  Por ejemplo, si hacemos mvn compile, ocurren las fases validate y compile; si hacemos mvn install, ocurren las fases validate, compile, test, package, integration-test, verify e install.
+
+* clean: limpia los archivos .class generados con anterioridad
+* site: responsable de generar documentación de java
+
+-------------------------
+plugins y goals
+
+* Los plugins nos permiten ejecutar las fases del ciclo de vida en nuestro proyecto de Maven
+* Cada plugin está asociado a un goal, que está vinculado a la fase del ciclo de vida (por ejemplo, compile)
+* Los plugins pueden ser definidos dentro de la sección plugin, bajo la etiqueta build
+
+Ejemplos de plugins
+
+* Compiler: compila nuestros archivos java, similar a hacer javac <clase-de-java>
+- Su groupId es org.apache.maven.plugins
+- Su artifactId es maven-compiler-plugin
+- Para ejecutarlo en la terminal hay que hacer mvn compiler:compile, compiler es el nombre del plugin
+- Si no funciona puede ser que haya que agregar la etiqueta configuration y dentro de la misma las etiquetas source y target. En estas etiquetas se coloca la versión de java con la que queremos trabajar, por ejemplo: 15
+
+* Maven Surefire: ejecuta pruebas unitarias dentro de nuestro proyecto, también genera informes de las pruebas
+- Su groupId es org.apache.maven.plugins
+- Su artifactId es maven-surefire-plugin
+- Para ejecutarlo en la terminal hay que hacer mvn clean test
+
+* Maven Install: empaqueta el código fuente en un artefacto y los instala en el repositorio local
+- Su groupId es org.apache.maven.plugins
+- Su artifactId es maven-install-plugin
+- Para ejecutarlo en la terminal hay que hacer mvn clean install
+
+* Maven Deploy: despliega el artefacto creado en el repositorio remoto
+- Su groupId es org.apache.maven.plugins
+- Su artifactId es maven-deploy-plugin 
