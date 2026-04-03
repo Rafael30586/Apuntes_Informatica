@@ -2,3 +2,4 @@ Tipos de docker volumes, según HolaMundo hay tres tipos
 Tipos de redes de Docker, por ejemplo, bridge
 Probar de ejecutar diferentes comandos de Linux en un dockerfile usando RUN
 Averiguar como ejecutar varios comandos de Linux con usar RUN una sola vez er el dockerfile. Tener en cuenta que hay que separar a los comandos con barras "\" y signos "&"
+Comprobar si docker rmi <imagen> realmente borra una imagen

@@ -49,6 +49,8 @@ docker create --network <red> <imagen> --> crea un contenedor asignándole la re
 
 docker create -e <variable>=<valor> <imagen> --> crea un contenedor asignándole un valor a la variable de entorno que indiquemos
 
+docker tag <imagen> <nuevo-nombre> --> le cambia de nombre a una imagen que indiquemos. Lo que en realidad hace, aparentemente, es realizar una copia de la imagen con el nuevo nombre que indicamos
+
 docker build -t <nombre>:<versión> <ruta> --> crea una imagen a partir del dockerfile presente en le ruta que indiquemos con el nombre que indiquemos y su versión. Si estamos posicionados en el mismo directorio donde está el dockerfile, el argumento de la ruta sería un punto
 
 docker compose up --> construye los contendores que están en el archivo docker-compose.yml. Debemos estar posicionados en el directorio donde está dicho archivo. Con ctrl + c detenemos todos los servicios 

@@ -32,4 +32,15 @@ Diferencias entre Docker y máquinas virtuales
 * En un contenedor de Docker se virtualiza solamente la parte de las aplicaciones, mientras que en una máquina virtual se virtualiza, además, el kernel del sistema operativo
 * El tamaño de las imágenes de Docker es mucho menor que las máquinas virtuales. Cada imagen ocupan unos cuantos megabytes, mientras que una máquina virtual ocupa gigabytes
 * Los contenedores comienzan y corren más rápido
-* Una máquina virtual de cualquier sistema operativo puede correr en cualquier SO sinfitrión
+* Una máquina virtual de cualquier sistema operativo puede correr en cualquier SO anfitrión
+
+-------------------------
+Docker volumes
+
+* Se usa para persistencia de datos, por ejemplo, cuando se trabaja con bases de datos y otras aplicaciones statefull
+* Un contenedor tiene un sistema de archivos virtual en donde se guardan los datos, pero no hay persistencia, por lo que los datos se pierden cuando el contenedor se reinicia o se borra
+* Gracias a Docker volumes, podemos "enchufar" una carpeta del anfitrión a la carpeta virtual en Docker. Los datos se replican de la carpeta virtual a la del anfitrión y viceversa
+* Hay tres formas de usar Docker volumes
+  - usando docker run --> docker run -v <ruta-anfitrión>:<ruta-contenedor> . Este tipo de volumes se llama "host volumes", vos decidís adonde en el sistema de archivos del anfitrión se hace la referencia 
+  - la segunda manera es solo referenciando la ruta dentro del contenedor --> docker run -v <ruta-contenedor> . El directorio en el anfitrión es creado automáticamente por docker. A esta forma se la llama "Anonymous volumes"
+  - el tercero puede ser visto como una mejora del anterior. Se especifica el nombre del directoio en el anfitrión --> docker run -v <nombre>:<ruta-contenedor> . Este caso se llama "named volumes". En este caso podés referenciar a los volumes por nombre. Este es el que más se usa en producción 
