@@ -1234,3 +1234,16 @@ Las IAM policies están escritas en JSON y contienen los permisos que determinan
   - Principal: cuenta, usuario, rol o usuario federado al que quisieras permitir o denegar acceso
   - Resource: el recurso al que la/s accion/es aplica/n
   - Condition (opcional): circunstancias bajo las cuales la política otorga permisos 
+
+-------------------------
+Principle of least privilige (PoLP)
+
+PoLP es el concepto de seguridad en computadoras de proveerle a un usuario, rol o aplicación la mínima cantidad de permisos para llevar a cabo una operación o acción
+
+Just-Enough-Acces (JEA): se le permiten solo las acciones exactas a la identidad para llevar a cabo una tarea
+
+Just-In-Time (JIT): se le permite la más pequeña duración a una identidad para usar permisos
+
+Risk-based adaptive policies: Cada intento de acceder a un recurso genera un puntaje de riesgo de que tan probable  es que una solicitud sea de una fuente comprometida. El puntaje de riesgo podría estar basado en muchos factores, por ejemplo: dispositivo, ubicación de usuario, la dirección IP, que servicio está siendo accedido y cuando, etc
+
+ConsoleMe es un proyecto de código abierto de Netflix para que un usuario final pueda acceder a recursos de AWS mientras se hace cumplir JEA y JIT  
