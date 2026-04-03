@@ -1247,3 +1247,32 @@ Just-In-Time (JIT): se le permite la más pequeña duración a una identidad par
 Risk-based adaptive policies: Cada intento de acceder a un recurso genera un puntaje de riesgo de que tan probable  es que una solicitud sea de una fuente comprometida. El puntaje de riesgo podría estar basado en muchos factores, por ejemplo: dispositivo, ubicación de usuario, la dirección IP, que servicio está siendo accedido y cuando, etc
 
 ConsoleMe es un proyecto de código abierto de Netflix para que un usuario final pueda acceder a recursos de AWS mientras se hace cumplir JEA y JIT  
+
+-----------------------
+Usuario root de cuenta de AWS
+
+Cuenta de AWS: es la cuenta que tiene todos los recursos de AWS
+Usuario root de cuenta de AWS: una cuenta especial con acceso total y no puede ser borrada
+Usuario de cuenta de AWS: un usuario para tareas comunes que tiene permisos asignados
+
+Tener en cuenta que cuando se habla de un cuenta de AWS, a veces se hará referencia a un usuario y otras veces a una cuenta que contiene los usuarios 
+
+Usuario root de cuenta de AWS: es un usuario especial que se crea en el momento de la creación de una cuenta de AWS
+* Usa un email y una contraseña para login, mientras que un usuario regular debe proveer el ID de la cuenta/alias, nombre de usuario y contraseña
+* El usuario root no se puede borrar
+* El usuario root tiene permisos totales a la cuenta y sus permisos no pueden ser limitados, no podés usar IAM policies para denegar al usuario root el acceso a recursos, pero podés usar un AWS organizations service control policy (SCP) para limitar los permisos del usuario root 
+* Solo puede haber un usuario root por cada cuenta de AWS
+* El usuario root es para tareas específicas que son poco frecuentes o rara vez llevadas a cabo, el usuario root no debería ser usado para tareas diarias comunes 
+* Se recomienda con fuerza nunca usar las claves de acceso del usuario root
+* Se recomienda con fuerza activar MFA para el usuario root
+
+Tareas administrativas que deben ser llevadas a cabo solo por el usuario root:
+* Cambiar las configuraciones de la cuenta: nombre, dirección de email, contraseña de root y claves de acceso del usuario root. Otras configuraciones de cuenta como información de contacto, divisa de pago y regiones no requieren credenciales del usuario root
+* Restaurar permisos de usuario IAM. Si el único administrador IAM anula accidentalmente sus propios permisos, podés iniciar sesión como usuario root para editar las políticas y restaurar esos permisos
+* Activar acceso IAM a la facturación y consola de gestión de costo
+* Ver ciertas facturas de impuestos
+* Cerrar tu cuenta de AWS
+* Cambiar o cancelar tu plan de soporte de AWS
+* Registrarte como vendedor en el mercado de instancia reservada
+* Permitir borrado MFA en un bucket de S3
+* Editar o borrar una política de amazon S3 bucket que incluya un VPC ID o VPC endpoint ID inválido 
