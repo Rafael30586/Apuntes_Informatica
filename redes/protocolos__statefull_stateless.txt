@@ -12,4 +12,15 @@ Este es un protocolo de red en el cual un cliente envía una solicitud a un serv
 * Cada comunicación es discreta y no relacionada a aquellas que preceden o a las que le siguen
 * Este protocolo requiere menos recursos porque el sistema no necesita rastrear múltiples comunicaciones de enlace (link communications) y detalles de sesión
 
-https://media.geeksforgeeks.org/wp-content/uploads/20260317113908261691/1.webp 
+https://media.geeksforgeeks.org/wp-content/uploads/20260317113908261691/1.webp
+
+Protocolos statefull
+
+Es un protocolo de comunicación en el cual el servidor mantiene información sobre el estado de la interacción con el cliente a lo largo de múltiples solicitudes. El servidor rastrea los datos, por lo que las solicitudes posteriores dependen de interacciones previas. 
+* Las aplicaciones statefull requieren almacenamiento de apoyo
+* FTP, TCP y Telnet son ejemplos de protocolos statefull
+* Permite comunicación eficiente y continua
+* Las solicitudes statefull siempre dependen del estado en el lado del servidor
+* Las sesiones TCP siguen un protocolo statefull porque ambos sistemas mantienen información sobre la sesión durante su vida
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260317113934929050/2.webp 
