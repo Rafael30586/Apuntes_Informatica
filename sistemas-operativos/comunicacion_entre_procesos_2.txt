@@ -58,6 +58,3 @@ Sistemas de Message-passing
   - Capacidad cero: los mensajes no pueden ser almacenados en la cola, por lo que los emisores deben bloquear hasta que los receptores acepten los mensajes
   - Capacidad encerrada (bounded): hay una cierta capacidad finita predeterminada en la cola. Los emisores deben bloquear si la cola está llena hasta que el espacio se haga disponible en la cola, pero sino puede ser bloqueante o no bloqueante 
   - Capacidad ilimitada (unbounded): la cola tiene un capacidad teórica infinita, por lo que los emisores nunca se ven forzados a bloquear 
-________________________________________________
-Continuar resumiendo con el enlace de más arriba
-________________________________________________
