@@ -3,3 +3,13 @@ Diferencias entre protocolos stateless y statefull
 Las interacciones entre clientes y servidores en redes afectan significativamente el desempeño del sistema. Hay principalmente dos tipos de protocolos de red usados para esta comunicación: protocolos stateless y statefull
 * Los protocoloes stateless no mantienen información de estado, por lo que el servidor no necesita retener información de solicitudes previas
 * Los protocolos statefull mantienen el estado de la sesión, permitiendo una interacción más consistente entre clientes y servidores 
+
+Protocolos stateless
+
+Este es un protocolo de red en el cual un cliente envía una solicitud a un servidor y el servidor responde únicamente basado en su estado actual. No requiere que el servidor retenga información de sesión o estado sobre cada compañero de comunicación para múltiples solicitudes
+* Estos protocolos simplifican el diseño del servidor
+* HTTP, UDP y DNS son ejemplos de protocolos stateless
+* Cada comunicación es discreta y no relacionada a aquellas que preceden o a las que le siguen
+* Este protocolo requiere menos recursos porque el sistema no necesita rastrear múltiples comunicaciones de enlace (link communications) y detalles de sesión
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260317113908261691/1.webp 
