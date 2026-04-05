@@ -45,3 +45,19 @@ Requerimientos de soluciones de sección crítica
 3. Espera limitada (bounded waiting)
 * Debe haber un lìmite sobre cuanto tiempo espera un proceso antes de que tenga la oportunidad de entrar en la sección crítica
 * Previene inanición, donde un proceso es repetidamente sobrepasado mientras otros se ejecutan 
+
+----------------------------
+Ejemplos de secciones críticas en aplicaciones del mundo real
+
+* Sistema bancario (ATM o banco online)
+  - Sección crítica: actualizando un balance de cuenta durante un depòsito o retiro
+  - El problema si no se maneja: dos retiros simultáneos podrían resultar en un balance final incorrecto  debido a "race conditions"
+* Sistema de reserva de tickets (aerolíneas, pelìculas, trenes)
+  - Sección crítica: reservar el último asiento
+  - El problema si no se maneja: a dos usuarios se les podría mostrar el mismo asiento disponible y ambos podrían reservarlo, llevando a sobre-reserva
+* Cola de impresión en una impresora conectada en red
+  - Sección crítica: enviado de trabajos de impresión a la cola de impresión
+  - El problema si no se maneja: los trabajos de impresión podrían mezclarse o saltearse si múltiples usuarios envían trabajos simultáneamente
+* Edición de archivos en documentos compartidos (por ejemplo: Google docs, MS Word con acceso compartido)
+  - Sección crítica: guardar o escribir en el documento compartido
+  - El problema si no se maneja: ediciones simultàneas podrían conflicto en versiones o pèrdida de datos 
