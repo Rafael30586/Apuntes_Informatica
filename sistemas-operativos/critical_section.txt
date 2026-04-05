@@ -18,3 +18,15 @@ Estructura de una sección crítica
 4. Sección remanente: el resto del programa que no involucra el acceso a recursos compartidos
 
 https://media.geeksforgeeks.org/wp-content/uploads/20250828163016996133/Critical_section.webp
+
+--------------------------
+Problema de sección crítica
+
+* Los recursos compartidos incluyen memoria, variables globales, archivos y bases de datos
+* Una "race condition" ocurre cuando 2 o más procesos intentan actualizar datos compartidos al mismo tiempo, llevando  a resultados inesperados. Ejemplo: dos transacciones bancarias modificando el mismo balance de cuenta simultáneamente sin sincronización podría llevar a una balance final incorrecto
+
+Requerimientos de una solución
+Una buena solución de sección crítica debe asegurar:
+* Correctitud: los datos compartidos deberían permanecer consistentes
+* Eficiencia: debería minimizar la espera y maximizar la utilización de CPU
+* Justicia (fairness): ningún proceso debería ser injustamente retrasado o "starved"
