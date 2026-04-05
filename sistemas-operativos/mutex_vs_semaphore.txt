@@ -18,7 +18,7 @@ https://media.geeksforgeeks.org/wp-content/uploads/20241015130619461685/Mutex.pn
 
 Usando Mutex
 
-El problema del productor-consumidor: Considere el problema estándar del productor-consumidor. Asuma que tenemos un buffer 4096 bytes. El productor del hilo recolecta los datos y los escribe en el buffer. Un hilo consumidor procesa los datos recolectados del buffer. El objetivo es que ambos hilos no corran al mismo tiempo
+El problema del productor-consumidor: Considere el problema estándar del productor-consumidor. Asuma que tenemos un buffer de 4096 bytes. El productor del hilo recolecta los datos y los escribe en el buffer. Un hilo consumidor procesa los datos recolectados del buffer. El objetivo es que ambos hilos no corran al mismo tiempo
 Solución: Un mutex provee exclusión mutua, el productor o el consumidor puede tener la llave (mutex) y proceder con su trabajo. Mientras el buffer esté lleno por el productor, el consumidor necesita esperar y viceversa. En cualquier momento, solo un hilo puede trabajar con el buffer entero. El concepto puede ser generalizado usando semaphore
 
 Ventajas de mutex
@@ -29,7 +29,7 @@ Ventajas de mutex
 
 Desventajas de los mutex
 
-* Si un hilo reteniendo el mutex se adelanta o va a dormir dentro de la sección crítica, otros hilos se bloquean, lo cual puede llevar a onversión de prioridad o inanición
+* Si un hilo reteniendo el mutex se adelanta o va a dormir dentro de la sección crítica, otros hilos se bloquean, lo cual puede llevar a inversión de prioridad o inanición
 * Los mutex involucran context switching y sobrecarga del kernel, lo que los hace más lentos que "spinlocks" para las secciones críticas muy cortas
 * El uso incorrecto (como olvidar abrir) puede causar deadlock
 
@@ -47,7 +47,7 @@ nota: Los semáforos son usados, generalmente, para señalización coordinada en
 
 Usando semáforo
 
-El problema del productor-consumidor: Considere el problema estándar del productor-consumidor. Asuma que tenemos un buffer de 4096 bytes. Un hilo productor recolecta los datos y los escribe en el buffer. Un hilo consumidor procesa los datos recolectados del buffer. El objetivo es que ambos hilos no deberían  no deberían correr al mismo tiempo
+El problema del productor-consumidor: Considere el problema estándar del productor-consumidor. Asuma que tenemos un buffer de 4096 bytes. Un hilo productor recolecta los datos y los escribe en el buffer. Un hilo consumidor procesa los datos recolectados del buffer. El objetivo es que ambos hilos no deberían correr al mismo tiempo
 Solución: un semáforo es un mutex generalizado. En lugar de un solo buffer, podemos dividir los 4 KB de buffer en 4 buffer de 1 KB (idénticos recursos). Un semáforo puede ser asociado con estos 4 buffer. El consumidor y el productor pueden trabajar en diferentes buffer al mismo tiempo
 
 Ventajas de un semáforo
@@ -86,6 +86,3 @@ Mientras que un semáforo es un mecanismo de señalización usado para controlar
 * Si la descarga está todavía en progreso, el semáforo previene a la tarea de impresión de continuar, como diciendo "esperá hasta que la descarga finalice"
 * Una vez se completa la descarga, el semáforo señaliza que la tarea B puede empezara imprimir
 * Esto asegura que ambas tareas no interfieran entre sí y ayuda a gestionar recursos de sistema eficientemente, permitiendo que las tareas se ejecuten de manera fluida sin conflicto
-____________________________________________
-Continuar resumiendo lo del enlace de arriba
-____________________________________________ 

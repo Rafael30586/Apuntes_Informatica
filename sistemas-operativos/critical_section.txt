@@ -1,0 +1,20 @@
+https://www.geeksforgeeks.org/operating-systems/critical-section-in-synchronization/
+
+Sección crítica en sincronización
+
+Una sección crítica es una parte de un programa donde recursos compartidos (como memoria, archivos o variables) son accedidas por múltiples procesos o hilos. Para evitar problemas como "race conditions" e inconsistencia de datos, solo un proceso/hilo debería ejecutar la sección crítica a la vez usando técnicas de sincronización. Esto asegura que las operaciones en recursos compartidos son llevadas a cabo de manera segura y predecible.
+
+------------------------
+Estructura de una sección crítica
+
+1. Entry section
+* El proceso solicita permiso para entrar a la sección crítica
+* Herramientas de sincronización (por ejemplo, mutex o semáforo) se usan para controlar el acceso
+
+2. Sección crítica: el verdadero código donde los recursos compartidos son accedidos o modificados
+
+3. Sección de salida: el proceso libera el cierre o semáforo, permitiendo que otros procesos entren en la sección crítica
+
+4. Sección remanente: el resto del programa que no involucra el acceso a recursos compartidos
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250828163016996133/Critical_section.webp

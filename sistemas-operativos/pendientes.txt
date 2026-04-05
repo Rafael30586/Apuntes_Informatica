@@ -1,11 +1,11 @@
 sistema de anillos en CPUs, ring 0 y ring 3 principalmente
-proceso padre, child process
+// proceso padre, child process
 page tables
 segment tables
 memoria virtual o virtual memory
 CPU-bound processes I/O bound processes
 despachador o dispatcher
-context switch
+// context switch
 desarrollo sobre micro kernel y kernel monolítico
 interrupt
 deadlock, starvation y race conditions en procesos
@@ -13,11 +13,12 @@ Con respecto a UNIX: BSD, System V, Solaris
 CPU time
 algoritmos priority scheduling y round-robin 
 semaphores y monitors en sistemas operativos
-mutex
-address space
+// mutex
+// address space
 circular queue en sistemas operativos
 GNU
 priority inversión
 threads
 buffer
 critical section (relacionado a procesos, hilos, semáforos y mutex)
+data inconcistency
