@@ -1,0 +1,34 @@
+https://www.geeksforgeeks.org/operating-systems/mutex-vs-semaphore/
+
+Mutex vs Semaphore
+
+Mutex y semaphores son recursos del kernel que proveen sincronización de servicios (también conocidos como sichronization primitives). La sincronización es requerida cuando múltiples procesos se están ejecutando de manera concurrente, para evitar conflictos entre procesos usando recursos compartidos.
+
+-------------------------
+Mutex
+
+Un mutex es diferente de un semáforo binario, que provee mecanismo de cerrado. Mutex es por "mutual exclusión object". Mutex es usado principalmente para proveer exclusión mutua a una porción específica del código para que el proceso se pueda ejecutar y trabajar con una sección particular del código en un momento particular.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20241015130619461685/Mutex.png
+
+* Un mutex refuerza la posesión estricta. Solo el hilo que cierra el mutex puede abrirlo.
+* Se usa específicamente para bloquear (lock) un recurso para asegurar que solo un hilo acceda a la vez
+* Debido a esta estricta posesión, un mutex no se usa solamente de manera típica para señalización entre hilos, sino que se usa también para exclusión mutua también para asegurar que el recurso sea accedido solo por un hilo a la vez
+* Mutex usa un mecanismo de herencia de prioridad para evitar problemas de inversión de prioridad. El mecanismo de herencia de prioridad mantiene a procesos de alta prioridad en un estado de bloqueado por el mínimo tiempo posible. De todas formas, esto no puede evitar el problema de inversión de prioridad, pero puede reducir su efecto hasta cierto punto
+
+Usando Mutex
+
+El problema del productor-consumidor: Considere el problema estándar del productor-consumidor. Asuma que tenemos un buffer 4096 bytes. El productor del hilo recolecta los datos y los escribe en el buffer. Un hilo consumidor procesa los datos recolectados del buffer. El objetivo es que ambos hilos no corran al mismo tiempo
+Solución: Un mutex provee exclusión mutua, el productor o el consumidor puede tener la llave (mutex) y proceder con su trabajo. Mientras el buffer esté lleno por el productor, el consumidor necesita esperar y viceversa. En cualquier momento, solo un hilo puede trabajar con el buffer entero. El concepto puede ser generalizado usando semaphore
+
+Ventajas de mutex
+
+* No emergen "race conditions", ya que solo un proceso está en la sección crítica a la vez
+* Los datos permanecen consistentes y esto ayuda en mantener integridad
+* Es un simple mecanismo de cerrado en la sección crítica y que se libera cuando deja la sección crítica
+
+Desventajas de los mutex
+
+* Si un hilo reteniendo el mutex se adelanta o va a dormir dentro de la sección crítica, otros hilos se bloquean, lo cual puede llevar a onversión de prioridad o inanición
+* Los mutex involucran context switching y sobrecarga del kernel, lo que los hace más lentos que "spinlocks" para las secciones críticas muy cortas
+* El uso incorrecto (como olvidar abrir) puede causer deadlock   

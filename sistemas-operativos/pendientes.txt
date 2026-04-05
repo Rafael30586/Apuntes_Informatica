@@ -1,5 +1,5 @@
 sistema de anillos en CPUs, ring 0 y ring 3 principalmente
-partner proccess o proceso padre, child process
+proceso padre, child process
 page tables
 segment tables
 memoria virtual o virtual memory
@@ -16,3 +16,5 @@ semaphores y monitors en sistemas operativos
 mutex
 address space
 circular queue en sistemas operativos
+GNU
+priority inversion
