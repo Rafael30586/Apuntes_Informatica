@@ -75,6 +75,17 @@ Diferencias entre mutex y semáforo
 * Un mutex puede ser modificado solamente por el proceso que está solicitando o liberando el recurso; el semáforo funciona con dos operaciones atómicas (wait, signal) que pueden modificarlo
 * Si el mutex está cerrado entonces el proceso necesita esperar en la cola de procesos y el mutex solo puede ser accedido una vez la cerradura se libera; Si el proceso necesita un recurso y ningún recurso está libre. Entonces el proceso necesita llevar a cabo una operación wait hasta que el valor del semáforo sea mayor que cero
 
+------------------------
+Ideas equivocadas sobre mutex y semáforo
+
+Hay una ambigüedad entre semáforo binario y mutex. Podríamos llegar a creer que un mutex es un semáforo binario, ¡pero no lo es!. El propósito de un semáforo y un mutex es diferente.
+* Un mutex esa un mecanismo de cerrado usado para sincronizar el acceso a un recurso
+* Solo una tarea (puede ser un hilo o un proceso basado en la abstracción del SO) puede adquirir el mutex.
+* Significa que hay una propiedad (ownership) asociada con el mutex y solo el dueño  puede liberar el cierre (mutex)
+Mientras que un semáforo es un mecanismo de señalización usado para controlar el acceso  recursos compartidos en un sistema operativo. Por ejemplo, imaginá que estás bajando un archivo grande en tu computadora (tarea A) y simultáneamente tratando de imprimir un documento (tarea B). Cuando la impresión se inicia, gatilla a un semáforo que revisa si la descarga está completa
+* Si la descarga está todavía en progreso, el semáforo previene a la tarea de impresión de continuar, como diciendo "esperá hasta que la descarga finalice"
+* Una vez se completa la descarga, el semáforo señaliza que la tarea B puede empezara imprimir
+* Esto asegura que ambas tareas no interfieran entre sí y ayuda a gestionar recursos de sistema eficientemente, permitiendo que las tareas se ejecuten de manera fluida sin conflicto
 ____________________________________________
 Continuar resumiendo lo del enlace de arriba
 ____________________________________________ 
