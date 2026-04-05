@@ -30,3 +30,18 @@ Una buena solución de sección crítica debe asegurar:
 * Correctitud: los datos compartidos deberían permanecer consistentes
 * Eficiencia: debería minimizar la espera y maximizar la utilización de CPU
 * Justicia (fairness): ningún proceso debería ser injustamente retrasado o "starved"
+
+----------------------------
+Requerimientos de soluciones de sección crítica
+
+1. Exclusión mutua
+* Como máximo un solo proceso puede estar dentro de la sección crítica a la vez
+* Previene conflictos al asegurar que 2 procesos no actualicen el recurso compartido simultáneamente
+
+2. Progreso
+* Si ningún proceso està en la sección crítica, y algunos proceso quieren entrar, la elección sobre quien es el próximo en entrar deberìa ser pospuesta indefinidamente
+* Asegura que el sistema continúe progresando en lugar de quedarse trabado
+
+3. Espera limitada (bounded waiting)
+* Debe haber un lìmite sobre cuanto tiempo espera un proceso antes de que tenga la oportunidad de entrar en la sección crítica
+* Previene inanición, donde un proceso es repetidamente sobrepasado mientras otros se ejecutan 
