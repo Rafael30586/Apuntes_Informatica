@@ -17,4 +17,6 @@ mutex
 address space
 circular queue en sistemas operativos
 GNU
-priority inversion
+priority inversión
+threads
+buffer

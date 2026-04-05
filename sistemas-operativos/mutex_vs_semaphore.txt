@@ -31,4 +31,40 @@ Desventajas de los mutex
 
 * Si un hilo reteniendo el mutex se adelanta o va a dormir dentro de la sección crítica, otros hilos se bloquean, lo cual puede llevar a onversión de prioridad o inanición
 * Los mutex involucran context switching y sobrecarga del kernel, lo que los hace más lentos que "spinlocks" para las secciones críticas muy cortas
-* El uso incorrecto (como olvidar abrir) puede causer deadlock   
+* El uso incorrecto (como olvidar abrir) puede causar deadlock
+
+-------------------
+Semáforo
+
+Un semáforo es una variable entera no negativa que es compartida entre varios hilos. El semáforo trabaja  sobre un mecanismo de señalización.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20241015130721027935/Semaphore.png
+
+* Provee un mecanismo de control menos restrictivo. Cualquier hilo puede invocar signal() (también conocido  como release() o up()) y cualquier otro hilo puede invocar wait() (también conocido como acquire() o down())
+* No hay propiedad estricta en los semáforos, lo que quiere decir que el hilo que señaliza no necesariamente tiene que ser el mismo que esperó
+
+nota: Los semáforos son usados, generalmente, para señalización coordinada entre hilos. Los semáforos usan dos operaciones atómicas para sincronización de procesos: Wait (P) y Signal (V)
+
+Usando semáforo
+
+El problema del productor-consumidor: Considere el problema estándar del productor-consumidor. Asuma que tenemos un buffer de 4096 bytes. Un hilo productor recolecta los datos y los escribe en el buffer. Un hilo consumidor procesa los datos recolectados del buffer. El objetivo es que ambos hilos no deberían  no deberían correr al mismo tiempo
+Solución: un semáforo es un mutex generalizado. En lugar de un solo buffer, podemos dividir los 4 KB de buffer en 4 buffer de 1 KB (idénticos recursos). Un semáforo puede ser asociado con estos 4 buffer. El consumidor y el productor pueden trabajar en diferentes buffer al mismo tiempo
+
+Ventajas de un semáforo
+
+* Múltiples hilos pueden acceder a la sección crítica al mismo tiempo
+* Los semáforos son independientes de la máquina
+* Solo un proceso accederá a la sección crítica a la vez, aún así, múltiples hilos son permitidos
+* Gestión flexible de recursos
+
+Desventajas de un semáforo
+
+* Tiene inversión de prioridad
+* Las operaciones de semáforos (Wait, Signal) deben ser implementadas en la manera correcta para evitar deadlock
+* Lleva a una pérdida de modularidad, por lo que los semáforos no pueden ser usados en sistemas a gran escala
+* El semáforo es propenso a error de programación y esto puede llevar a deadlock o violación de la propiedad de exclusión mutua
+* El sistema operativo tiene que rastrear todas las llamadas para operaciones wait y signal
+
+__________________________________________
+Continuar resumiendo lo del enlace de arriba
+____________________________________________ 
