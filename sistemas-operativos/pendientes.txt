@@ -20,3 +20,4 @@ GNU
 priority inversión
 threads
 buffer
+critical section (relacionado a procesos, hilos, semáforos y mutex)

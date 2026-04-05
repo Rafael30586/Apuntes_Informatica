@@ -65,6 +65,16 @@ Desventajas de un semáforo
 * El semáforo es propenso a error de programación y esto puede llevar a deadlock o violación de la propiedad de exclusión mutua
 * El sistema operativo tiene que rastrear todas las llamadas para operaciones wait y signal
 
-__________________________________________
+-------------------------
+Diferencias entre mutex y semáforo
+
+* Mutex es un objeto y el semáforo es un número entero
+* El mutex trabaja sobre el mecanismo de cerrado y el semáforo usa mecanismos de señalización
+* Operaciones en mutex: cerrar (lock) y abrir (unlock);en semáforos: wait y signal
+* Los mutex no tienen subtipos; semáforos hay de dos tipos: counting semaphore y semáforo binario
+* Un mutex puede ser modificado solamente por el proceso que está solicitando o liberando el recurso; el semáforo funciona con dos operaciones atómicas (wait, signal) que pueden modificarlo
+* Si el mutex está cerrado entonces el proceso necesita esperar en la cola de procesos y el mutex solo puede ser accedido una vez la cerradura se libera; Si el proceso necesita un recurso y ningún recurso está libre. Entonces el proceso necesita llevar a cabo una operación wait hasta que el valor del semáforo sea mayor que cero
+
+____________________________________________
 Continuar resumiendo lo del enlace de arriba
 ____________________________________________ 
