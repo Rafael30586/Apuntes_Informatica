@@ -1,0 +1,29 @@
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html
+
+
+Comunicación en sistemas cliente-servidor
+
+
+------------------------------
+Sockets
+* Un socket es un punto final para comunicaciones
+* Dos procesos comunicándose sobre una red generalmente usan un par de sockets conectados como canal de comunicación. El software que es diseñado para operaciones cliente-servidor podría usar también sockets para la comunicación entre dos procesos corriendo en la misma computadora, por ejemplo, la IU para un programa de base de datos podría comunicarse con el back-end gestor de bases de datos usando sockets
+* Un socket es identificado por una dirección IP concatenada con un número de puerto, por ejemplo 200.100.50.5:80
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_20_Sockets.jpg
+
+* Los números de puerto menores que 1024 son considerados bien conocidos, y están generalmente reservados para servicios de internet comunes. Por ejemplo FTP está en el puerto 21 y servidores web en el puerto 80
+* Los sockets de usuario de propósito general son asignados a puertos sin usar sobre 1024 por el sistema operativo en respuesta a system calls como socket() o socketpair()
+* Los canales de comunicación vía sockets pueden ser uno de dos formas:
+  - Connection-oriented (TCP, transmisión control protocol): las conexiones emulan a una conexión de teléfono. Todos los paquetes enviados por la conexión llegan con garantía en buenas condiciones al final, y para ser enviado al proceso receptor en el orden en el cual fueron enviados. La capa TCP del protocolo de red ejecuta pasos para verificar todos los datos enviados, re-enviar paquetes si es necesario y organizar los paquetes recibidos en el orden apropiado antes de enviarlos al proceso receptor. Hay un cierto grado de sobrecarga involucrado en este procedimiento, y si un paquete falta o está retrasado, entonces cualquier paquete que le siga tendrá que esperar hasta que el paquete errante sea enviado antes de que puedan continuar su viaje
+  - Conecitionless (UDP, user datagram protocol) emular telegramas individuales. No hay garantía de que un paquete en particular lleguen sin daños y tampoco hay garantía de que los paquetes sean enviados en un orden en particular. Podrían incluso haber paquetes duplicados enviados, dependiendo de como están configuradas las conexiones intermediarias. Las transmisiones UDP son mucho más rápidas que las TCP, pero las aplicaciones deben implementar su propia revisación de errores y procedimientos de recuperación
+* Los sockets son considerados un canal de comunicación de bajo nivel, y los procesos frecuentemente elegirán usar algo de más alto nivel, tales como aquellas tratadas en secciones posteriores.
+
+-----------------------
+Remote procedure calls, RPC
+
+* El concepto general de RPC es hacer "procedure calls" similar a llamar "local procedures" ordinarios
+
+____________________________________________
+Continuar resumiendo lo del enlace de arriba
+____________________________________________

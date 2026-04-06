@@ -22,3 +22,4 @@ threads
 buffer
 critical section (relacionado a procesos, hilos, semáforos y mutex)
 data inconcistency
+local procedures
