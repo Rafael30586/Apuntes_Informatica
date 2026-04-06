@@ -1,0 +1,41 @@
+https://www.baeldung.com/maven-archetype
+
+Un arquetipo de Maven es una abstracción de un tipo de un proyecto que puede ser instanciado en un proyecto de Maven concreto y personalizado. En pocas palabras, es un proyecto plantilla desde el cual otros proyectos son creados.
+El principal beneficio de usar arquetipos es estandarizar el desarrollo de proyectos y permitir a los desarrolladores fácilmente seguir las mejores prácticas y arrancando sus proyectos más rápido.
+
+-----------------------
+Maven archetype descriptor
+
+El Maven archetype descriptor es el corazón del proyecto de arquetipo. Es un archivo XML llamado archetype-metadata.xml y localizado en el directorio META-INF/Maven.
+Se usa para describir los metadatos del arquetipo:
+
+ <archetype-descriptor
+  ...
+  name="custom-archetype">
+
+    <requiredProperties>
+        <requiredProperty key="foo">
+            <defaultValue>bar</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+    <modules>
+        <module name="sub-module"></module>
+    </modules>
+
+</archetype-descriptor>
+
+La etiqueta requiredProperties es usada para proveer propiedades durante la generación del proyecto. Así, seremos estimulados a proveer valores para ellos, con la libertad de aceptar el valor por defecto.
+fileSets, por otro lado, son usados para configurar que recursos serán copiados en el proyecto concreto generado. Un archivo "filtered" significa que marcadores de posición serán substituidos con valores proveídos durante el proceso de generación.
+Y al usar packaged="true" en el fileSet, estamos diciendo que los archivos seleccionados serán añadidos a la jerarquía de carpetas especificada por la propiedad package.
+Si queremos generar un proyecto multi-módulo, entonces la etiqueta modules puede ayudar a configurar todos los módulos del proyecto generado.
+Nótese que este archivo es sobre archetype 2 en adelante. En la versión 1.0.x el archivo se llamaba archetype.xml y tenía una estructura diferente.
