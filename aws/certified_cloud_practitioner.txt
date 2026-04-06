@@ -1275,4 +1275,25 @@ Tareas administrativas que deben ser llevadas a cabo solo por el usuario root:
 * Cambiar o cancelar tu plan de soporte de AWS
 * Registrarte como vendedor en el mercado de instancia reservada
 * Permitir borrado MFA en un bucket de S3
-* Editar o borrar una política de amazon S3 bucket que incluya un VPC ID o VPC endpoint ID inválido 
+* Editar o borrar una política de amazon S3 bucket que incluya un VPC ID o VPC endpoint ID inválido
+* Inscribirse a GovCloud 
+
+-------------------------
+AWS Single-Sign On
+
+AWS Single Sign-On (AWS SSO) es donde creás o conectás tus identidades personales (workforce identities) en AWS una vez y gestionás acceso centralmente a lo largo de tu organización AWS
+
+https://d1.awsstatic.com/AM_AWSSSOUseCases_120717a(1).6fddf94767ba21cae19bbd26106cc97ecb491929.png
+
+Elegís tu fuente de identidad
+* AWS SSO
+* Active directory
+* SAML 2.0 idP
+
+Gestión de permisos de usuario centralmente
+* Cuenta AWS
+* Aplicaciones AWS
+* Aplicaciones SAML
+
+Usa acceso con un solo click	
+
