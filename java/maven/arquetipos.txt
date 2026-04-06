@@ -39,3 +39,39 @@ fileSets, por otro lado, son usados para configurar que recursos serán copiados
 Y al usar packaged="true" en el fileSet, estamos diciendo que los archivos seleccionados serán añadidos a la jerarquía de carpetas especificada por la propiedad package.
 Si queremos generar un proyecto multi-módulo, entonces la etiqueta modules puede ayudar a configurar todos los módulos del proyecto generado.
 Nótese que este archivo es sobre archetype 2 en adelante. En la versión 1.0.x el archivo se llamaba archetype.xml y tenía una estructura diferente.
+
+------------------------
+Como crear un arquetipo
+
+Un arquetipo es un proyecto normal de Maven con el siguiente contenido extra:
+* src/main/resources/archetype-resources es la plantilla de la cual los recursos son copiados al nuevo proyecto creado
+* src/main/resources/META-INF/maven/archetype-metadata.xml: es el descriptor usado patra describir los metadatos del arquetipo
+
+Para crear un arquetipo manualmente, podemos comenzar con un nuevo proyecto creado en Maven y después podemos añadir los recursos mencionados más arriba.
+O podemos generarlo al usar el archetype-maven-plugin, y luego personalizar el contenido del directorio archetype-resources y el archivo archetype-metada.xml
+Para generar el arquetipo podemos usar:
+ 
+mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-archetype \
+  -DarchetypeGroupId=maven-archetype \
+  -DgroupId=<groupId> \
+  -DartifactId=<artifactId>
+
+También podemos crear el arquetipo de un proyecto en Maven existente:
+  mvn archetype:create-from-project
+
+Se genera en target/generated-sources/archetype listo para ser usado
+
+No importa como hayamos creado el arquetipo, terminaremos con la siguiente estructura
+ archetype-root/
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        └── resources
+            ├── archetype-resources
+            │   ├── pom.xml
+            │   └── src
+            └── META-INF
+                └── maven
+                    └── archetype-metadata.xml
+Ahora podemos comenzar a construir nuestro arquetipo 
