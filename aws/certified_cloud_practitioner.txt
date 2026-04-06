@@ -1316,3 +1316,28 @@ Los sistemas comunes o patrones de diseño utilizados para integración de aplic
 * State machine
 * Event bus  	
 
+----------------------------
+Queueing
+
+¿Qué es un sistema de mensajería?
+Se usa para proveer comunicación asincrónica y desacoplar procesos vía mensajes/eventos de un emisor y receptor (productor y consumidor)
+
+¿Qué es un sistema de colas (queueing system)?
+Un sistema de colas es un sistema de mensajería que generalmente borrará mensajes una vez se consuman. Comunicación simple. No es en tiempo real. Hay que "tironear" (pull) los datos. No reactivo
+
+Simple Queueing Service (SQS)
+Un servicio de colas completamente gestionado que te permite desacoplar y escalar microservicios, sistemas distribuidos y aplicaciones serverless
+
+Caso de uso: necesitás hacer cola (queue up) de emails de transacción para ser enviados, por ejemplo: registrarse, reinicializar contraseña
+
+-------------------------------
+Streaming
+
+¿Qué es?
+Múltiples consumidores pueden reaccionar a eventos (mensaje)
+Los eventos viven en el stream por largos períodos de tiempo, así operaciones complejas pueden ser aplicadas. Es en tiempo real
+
+Amazon Kinesis
+Es una solución completamente gestionada para recolectar, procesar y analizar streaming de datos en la nube
+
+https://docs.aws.amazon.com/images/streams/latest/dev/images/architecture.png
