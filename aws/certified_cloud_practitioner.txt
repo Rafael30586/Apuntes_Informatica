@@ -1295,5 +1295,24 @@ Gestión de permisos de usuario centralmente
 * Aplicaciones AWS
 * Aplicaciones SAML
 
-Usa acceso con un solo click	
+Usa acceso con un solo click
+
+-------------------------------------------------------------------------------------------------
+Integración de aplicaciones
+-------------------------------------------------------------------------------------------------
+
+Integración de aplicaciones
+
+¿Qué es?
+Es el proceso de permitir que dos aplicaciones independientes se comuniquen y trabajen entre sí, comúnmente facilitado por un sistema intermediario
+
+Las cargas de trabajo de la nube alientan a los sistemas y servicios a estar débilmente acoplados y así  AWS tiene muchos servicios para el propósito específico de integración de aplicaciones
+
+Los sistemas comunes o patrones de diseño utilizados para integración de aplicaciones generalmente son:
+* Queueing
+* Streaming
+* Pub/Sub
+* API gateways
+* State machine
+* Event bus  	
 
