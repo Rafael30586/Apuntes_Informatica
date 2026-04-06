@@ -1,2 +1,6 @@
 aplicación spring boot
 dispatcher servlet en spring boot
+Maven archetypes
+group id y artifact id en proyectos de Maven
+archivo manifest para obtener jar
+JAX-RS
