@@ -57,6 +57,10 @@ docker compose up --> construye los contendores que están en el archivo docker-
 
 docker compose down --> elimina las imágenes y contenedores construidos a partir del archivo docker-compose.yml del directorio
 
+docker compose stop --> detiene los contenedores de fueron creado y ejecutados por el archivo de docker compose 
+
 Cuando utilizamos Docker compose, a los contenedores creados a partir del archivo docker-compose.yml se los agrupará en una red, por lo que no es necesario que incluyamos las redes en el archivo yml
 
-docker compose -f <nombre> up --> sirve para crear los contenedores y la red a partir de un archivo  de docker compose que tenga un nombre diferente	 
+docker compose -f <nombre> up --> sirve para crear los contenedores y la red a partir de un archivo  de docker compose que tenga un nombre diferente
+
+docker compose up -d --> es para crear y ejecutar contenedores en modo "deprendido" (los contenedores se ejecutan en segundo plano)	 

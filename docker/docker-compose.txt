@@ -4,6 +4,8 @@ version: <"numero"> -->
 
 services: --> seguido de los servicios van los nombres que les queremos asignar a los contenedores. Dichos nombres van con un salto de línea y tabulación
 
+<nombre>: --> va después de services y es el nombre que va a tener el contenedor 
+
 build: <ruta> --> va después del nombre de algunos contenedores e indica la ruta en la que se encuentra el dockerfile, si es en el directorio raíz va un punto
 
 ports: /salto de línea /tabulación - <"puerto_anfitrión>:<puerto_contenedor"> --> va después del nombre de los contenedores y es para los puertos del anfitrión y del contenedor respectivamente
@@ -16,10 +18,12 @@ environment: /salto de línea /tabulación - <variable>=<valor> --> va después 
 
 volumes: /salto de línea /tabulación <nombre> --> va al mismo nivel que servicios. Es para trabajar con docker volumes
 
-volumes: /salto de línea /tabulación - <nombre>:<ruta> --> trabaja en conjunto con el anterior. Va después del contenedor que corresponda, generalmente de una base de datos. El nombre es el mismo que en el del volumes anterior. La ruta es adonde ser guarda la información dentro del contenedor. La ruta para mongoDB es /data/db, para MySQL es /var/lib/mysql, para postgres es /var/lib/postgresql/data 
+volumes: /salto de línea /tabulación - <nombre>:<ruta> --> trabaja en conjunto con el anterior. Va después del contenedor que corresponda, generalmente de una base de datos. El nombre es el mismo que en el del volumes anterior. La ruta es adonde se guarda la información dentro del contenedor. La ruta para mongoDB es /data/db, para MySQL es /var/lib/mysql, para postgres es /var/lib/postgresql/data 
 
 context <ruta>: sigue después de build y es para la ruta del dockerfile en caso de que queramos, por alguna razón, trabajar con un dockerfile que se llame distinto
 
 dockerfile <nombre>: va a la misma altura de context. Es para cuando queremos trabajar con un Docker file que se llame distinto, por ejemplo, Dockerfile.dev
 
 Cuando trabajamos con Docker compose no hace falta configurar una red, docker compose se encarga de crear una
+
+depends_on: /salto de línea /tabulación - "<contenedor>" --> va después del nombre del contendor. Sirve para ncuando un contenedor depende de otro, por ejemplo, un backend en java no puede ejecutarse si la base de datos no 4está todavía en ejecución
