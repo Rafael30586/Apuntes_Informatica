@@ -1,0 +1,7 @@
+javac <archivo> --> compila un un archivo con extensión .java en código de bytes
+
+javac -d <ruta> <archivo> --> compila un archivo .java y lo coloca el el paquete declarado en el archivo en la ruta que indiquemos
+
+java <clase-main> --> ejecuta el código de bytes del archivo .class según la clase main que indiquemos
+
+java <paquete>.<clase-main> --> ejecuta el código de bytes del archivo .class de la clase main que indiquemos dentro del paquete que indiquemos
