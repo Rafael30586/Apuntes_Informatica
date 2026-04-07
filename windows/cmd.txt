@@ -44,13 +44,17 @@ systeminfo --> muestra las especificaciones técnicas de la PC.
 
 set --> muestra las variables de entorno.
 
+set <variable>=<valor> --> crea una variable y le asigna el valor que le indiquemos.
+
+echo %<variable>% --> imprime en la terminal el valor de la variable que indiquemos.
+
 title <palabras> --> cambia el título de la ventana de la terminal según le indiquemos.
 
 fc <archivo1> <archivo2> --> compara dos archivos que indiquemos.
 
 netstat -an --> muestra puertos abiertos, sus direcciones IP y estados.
 
-ping <direccioón_web> --> muestra la dirección IP de una web y el tiempo que toma transmitir datos y obtener una respuesta.
+ping <dirección_web> --> muestra la dirección IP de una web y el tiempo que toma transmitir datos y obtener una respuesta.
 
 color attr --> muestra los colores que es posible otorgarle a los caracteres de la terminal.
 
