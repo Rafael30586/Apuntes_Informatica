@@ -62,6 +62,7 @@ También podemos crear el arquetipo de un proyecto en Maven existente:
 Se genera en target/generated-sources/archetype listo para ser usado
 
 No importa como hayamos creado el arquetipo, terminaremos con la siguiente estructura
+
  archetype-root/
 ├── pom.xml
 └── src
@@ -74,4 +75,105 @@ No importa como hayamos creado el arquetipo, terminaremos con la siguiente estru
             └── META-INF
                 └── maven
                     └── archetype-metadata.xml
-Ahora podemos comenzar a construir nuestro arquetipo 
+
+Ahora podemos comenzar a construir nuestro arquetipo al colocar recursos en el directorio archetype-resources y configurarlos en el archivo archetype-metadata.xml
+
+---------------------------------
+Construyendo el arquetipo
+
+Ahora estamos listos para personalizar nuestro arquetipo. Ahora ejemplificaremos este proceso con la creación de un simple arquetipo de Maven para generar aplicaciones RESTful basado en JAX-RS 2.1. Llamémoslo maven-archetype
+
+* Empaquetamiento de arquetipo
+
+Comenzamos por modificar el pom.xml del proyecto de arquetipo localizado bajo el directorio maven-archetype
+
+<packaging>maven-archetype</packaging>
+
+Este tipo de empaquetamiento está disponible gracias a la extensión archetype-packaging 
+
+<build>
+    <extensions>
+        <extension>
+            <groupId>org.apache.maven.archetype</groupId>
+            <artifactId>archetype-packaging</artifactId>
+            <version>3.0.1</version>
+        </extension>
+    </extensions>
+    <!--....-->
+</build>
+
+* Añadiendo el pom.xml
+
+Ahora creamos un archivo pom.xml localizado bajo el directorio archetype-resources:
+
+<project ...>
+
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
+    <packaging>war</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.ws.rs</groupId>
+            <artifactId>jakarta.ws.rs-api</artifactId>
+            <version>2.1.6</version>
+            <scope>provided</scope>
+        </dependency>        
+    </dependencies>
+
+</project>
+
+Como podemos ver, groupId, artifactId y version están parametrizados. Serán reemplazados durante la creación de un nuevo proyecto de este arquetipo.
+Podemos colocar todo lo necesario por el proyecto generado, como dependencias y plugins en el pom.xml. Acá, hemos añadido la dependencia JAX RS como el arquetipo que será usado para generar aplicaciones basadas en RESTful
+
+* Añadiendo los recursos requeridos
+
+Luego, podemos añadir código java para nuestra aplicación en archetype-resources/src/main/java
+Una clase para configurar la aplicación JAX-RS:
+
+package ${package};
+// import
+@ApplicationPath("${app-path}")
+public class AppConfig extends Application {
+}
+
+Y una clase para el recurso ping: 
+
+@Path("ping")
+public class PingResource{
+    //...
+}
+
+Finalmente, poner el archivo de configuración del servidor, server.xml, en archetype-respurces/src/main/config/Liberty
+
+* Configurando metadatos
+
+Después de añadir todos los recursos necesarios, podemos ahora configurar cuales serán copiados durante la generación a través del archivo archetype-metadata.xml
+
+<archetype-descriptor
+  name="maven-archetype">
+    
+    <!--...-->
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/config/liberty</directory>
+            <includes>
+                <include>server.xml</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+</archetype-descriptor>
+
+Acá queremos que todos los archivos java del directorio src/main/java y el archivo server.xml de src/main/config/Liberty se copien
+
+________________________________________________
+Continuar resumiendo con el enlace de más arriba
+________________________________________________
