@@ -1341,3 +1341,19 @@ Amazon Kinesis
 Es una solución completamente gestionada para recolectar, procesar y analizar streaming de datos en la nube
 
 https://docs.aws.amazon.com/images/streams/latest/dev/images/architecture.png
+
+---------------------------
+Pub/Sub
+
+Patrón publish-suscribe comúnmente implementado en sistemas de mensajería 
+En estos sistemas el emisor de mensajes (publishers) no envían sus mensajes directamente a los receptores, en su lugar envían sus mensajes a un bus de eventos. El bus de eventos categoriza sus mensajes en grupos
+Los receptores de mensajes (suscriptores) se suscriben a estos grupos
+Cuando nuevos mensajes aparecen dentro de su suscripción los mensajes son inmediatamente enviados a ellos
+El Publisher no tiene conocimiento de quienes son sus suscriptores
+Los suscriptores no tironean por mensajes
+Los mensajes son automáticamente e inmediatamente empujados a los suscriptores
+Mensajes y eventos son términos intercambiables en pub/sub
+
+Casos de uso: chat en tiempo real. Un sistema de web-hook
+
+Simple Notification Service (SNS): es servicio de mensajería pub/sub altamente disponible, seguro, durable, completamente gestionado que te permite desacoplar microservicios, sistemas distribuidos y aplicaciones serverless 
