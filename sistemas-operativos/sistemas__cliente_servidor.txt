@@ -3,7 +3,6 @@ https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html
 
 Comunicación en sistemas cliente-servidor
 
-
 ------------------------------
 Sockets
 * Un socket es un punto final para comunicaciones
@@ -22,7 +21,20 @@ https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_20_
 -----------------------
 Remote procedure calls, RPC
 
-* El concepto general de RPC es hacer "procedure calls" similar a llamar "local procedures" ordinarios
+* El concepto general de RPC es hacer "procedure calls" similar a llamar "local procedures" ordinarios, excepto que el procedimiento llamado se encuentra en una máquina remota
+* La implementación involucra stubs en los dos puntos finales de la conexión
+  - El proceso local llama al stub, casi como se llamaría sobre un "local procedure"
+  - El sistema RPC empaca (marshals) los parámetros para el procedure call, y los transmite al sistema remoto
+  - En el lado remoto, el Daemon RPC acepta los parámetros y llamadas sobre el procedimiento remoto apropiado para llevar a cabo el trabajo solicitado
+  - Cualquier resultados a ser retornados son luego empacados en sistemas locales vs remotos (por ejemplo, big-endian vs Little-endian). La resolución de este problema generalmente involucra en un formato intermediario acordado, como XDR (external data representation)
+* Otro problema es identificar a que procedimiento en el sistema remoto un particular RPC está destinado
+  - Los remote procedures están identificados por puertos, aunque no son los mismos puertos descritos anteriormente relacionados a sockets
+  - Una solución es que el procedimiento que llama sepa el número de puerto al que desea comunicarse en el sistema remoto. Esto es problemático, ya que el número de puerto sería compilado en el código, y lo hace romperse si el sistema remoto cambia sus números de puertos
+  - Con mayor frecuencia un proceso "matchmaker" es empleado, que funciona como un servicio de directorio de teléfono. El proceso local debe primero contactar al matchmaker en el sistema remoto (a un puerto bien conocido), que busca el número de puerto deseado y lo devuelve. El proceso local puede entonces usar esa información para contactar al procedimiento remoto deseado. Esta operación involucra un paso extra, pero es mucho más flexible
+
+Ejecución de un llamado a un proceso remoto: https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_23_RPC.jpg
+
+* Un ejemplo común de sistema basado en llamadas RPC es un sistema de archivos en red. Mensajes son pasados para leer, escribir, borrar, renombrar o revisar estado, como podría hacerse para solicitudes oridnarias de acceso a disco local.
 
 ____________________________________________
 Continuar resumiendo lo del enlace de arriba

@@ -22,4 +22,7 @@ threads
 buffer
 critical section (relacionado a procesos, hilos, semáforos y mutex)
 data inconcistency
-local procedures
+local procedures y procedure calls
+stubs
+Daemon proccess
+Big endian vs Little endian
