@@ -1,0 +1,69 @@
+https://www.geeksforgeeks.org/computer-networks/supernetting-in-network-layer/
+
+SuperNetting
+
+Supernetting es lo opuesto a subnetting. Mientras el subnetting divide una gran red en subredes más pequeñas, supernetting combina múltiples redes pequeñas con prefijos similares en una red más grande (supernet). Reduce el tamaño del routing table, simplifica el enrutamiento y optimiza el uso de direcciones IP, principalmente a través de compresión de rutas.
+
+Beneficios del supernetting
+* Guarda espacio de almacenamiento en routing tables
+* Reduce el número de actualizaciones de enrutamiento
+* Simplifica decisiones de enrutamiento
+* Ayuda a gestionar el crecimiento de routing tables mientras el internet se expande
+
+Puntos importantes del supernetting
+* Todas las redes deben ser contiguas
+* El tamaño de bloque de cada red debería ser igual y debería ser de la forma 2^n
+* El primer id de red debería ser exactamente divisible por el tamaño total de la supered
+
+Ejemplo: combinar 4 redes clase C
+Considere las redes:
+200.1.0.0
+200.1.1.0
+200.1.2.0
+200.1.3.0
+
+Routing table original:
+
+Id de red: 200.1.0.0
+máscara de subred: 255.255.255.0
+interfaz: A
+
+Id de red: 200.1.1.0
+máscara de subred: 255.255.255.0
+interfaz: B
+
+Id de red: 200.1.2.0
+máscara de subred: 255.255.255.0
+interfaz: C
+
+Id de red: 200.1.3.0
+máscara de subred: 255.255.255.0
+interfaz: D
+
+Primero revisamos si las 3 condiciones se satisfacen o no
+
+1. Redes contiguas
+* Todas las redes deben estar próximas entre sí sin espacios 
+* Ejemplo: 200.1.0.0 - 200.1.0.255 es la primera red
+* Añadir 1 a la última IP (200.1.0.255 + 1 = 200.1.1.0) para obtener la próxima red
+* Repetir para asegurar que todas las redes sean contiguas
+
+2. Igual tamaño de red
+* Todas las redes deben tener el mismo número de direcciones IP
+* Para redes clase C, cada una tiene 256 direcciones (/24)
+
+3. La primer IP se alinea con el tamaño de la super red
+* Tamaño total de la super red = suma de todas las redes (en potencia de 2, por ejemplo 4 x 256 = 1024 direcciones)
+* Convertir la primera IP a binario
+* Si los últimos n bits (donde n = bits representando el tamaño de la super red) son 0, la primera IP está correctamente alineada para supernetting
+
+En el ejemplo dado la primera IP es 200.1.0.0 y el tamaño total de la super-red es 4x2^8 = 2^10 . Si los últimos 10 bits de la primera dirección IP son 0 entonces la IP es divisible
+
+200(11001000).1(00000001).0(000000|00).0(00000000)
+
+Los 10 últimos bits de la primera dirección IP son 0 (marcado con una barra vertical). Todas las condiciones están satisfechas, por lo que estas 4 redes pueden combinarse en una super-red
+
+Ventajas del supernetting
+* Controla y reduce el tráfico de red
+* Útil para resolver el problema de direcciones IP faltantes
+* Minimiza la routing table 	
