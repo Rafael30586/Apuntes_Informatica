@@ -1366,3 +1366,11 @@ Es un programa que se monta entre un punto de entrada y múltiples backends
 El API Gateway permite regulación, logging, enrutamiento lógico o formateo de la solicitud y respuesta
 
 Amazon API Gateway: es una solución para crear APIs seguras en tu entorno de la nube a cualquier escala. Crear APIs que funcionan como una puerta frontal para aplicaciones para acceder a datos, lógica de negocio o funcionalidad de servicios backend
+
+----------------------------
+State machines
+
+¿Qué es?
+Es un modelo abstracto que decide como un estado se mueve a otro basado en una serie de condiciones. Se puede pensar en un state machine como un diagrama de flujo
+
+AWS Step Functions: Coordinar múltiples servicios de AWS en un flujo de trabajo serverless; una consola gráfica para visualizar los componentes de tu aplicación como una serie de pasos; automáticamente gatilla y rastrea cada paso, y vuelve a intentar cuando hay errores, para que tu aplicación ejecute en el orden esperado todo el tiempo; registra (logs) el estado de cada paso, para que cuando las cosas salgan mal puedas diagnosticar y debuguear los problemas rápidamente 
