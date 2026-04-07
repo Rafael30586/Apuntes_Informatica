@@ -1,0 +1,7 @@
+Máscara de sub-red:
+* El número de 1s >= NID, pide prestado del HID
+* Siempre aplicable a una sola red
+
+Máscara de super-red:
+* El número de 1s en <= NID, pide prestado del NID
+* Aplicable a dos o más redes
