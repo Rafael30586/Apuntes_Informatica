@@ -174,6 +174,37 @@ Después de añadir todos los recursos necesarios, podemos ahora configurar cual
 
 Acá queremos que todos los archivos java del directorio src/main/java y el archivo server.xml de src/main/config/Liberty se copien
 
+* Instalando el arquetipo
+
+Ahora que finalizamos poniéndolo todo junto, podemos instalar el arquetipo invocando este comando:
+
+mvn install
+
+En este punto, el arquetipo está registrado en el archivo archetype-catalog.xml, localizado en el repositorio local de Maven, y por lo tanto listo para su uso
+
+----------------------------
+Usando el arquetipo instalado
+
+El maven-archetype-plugin permite al usuario crear un proyecto de Maven a través del "generate goal" y arquetipo existente. Para más información sobre este plugin podés visitar el siguiente enlace https://maven.apache.org/archetype/maven-archetype-plugin/index.html
+
+Este comando usa este plugin para generar un proyecto en Maven de nuestro arquetipo
+
+mvn archetype:generate -DarchetypeGroupId=com.baeldung.archetypes
+                       -DarchetypeArtifactId=maven-archetype
+                       -DarchetypeVersion=1.0-SNAPSHOT
+                       -DgroupId=com.baeldung.restful
+                       -DartifactId=cool-jaxrs-sample
+                       -Dversion=1.0-SNAPSHOT
+
+Deberíamos entonces pasar el GAV (groupId, archetypeId, version) de nuestro arquetipo como argumentos al maven-archetype-plugin:generate goal. También podemos pasar el GAV del proyecto concreto que queremos generar, sino, podemos proveerles en modo interactivo.
+El proyecto cool-jaxrs-sample concreto generado está por lo tanto listo para correr sin cambios. Podemos ejecutarlo al invocar este comando:
+
+mvn package liberty:run
+
+Podemos entonces acceder a esta URL:
+
+http://localhost:9080/cool-jaxrs-sample/<app-path>/ping   
+
 ________________________________________________
 Continuar resumiendo con el enlace de más arriba
 ________________________________________________
