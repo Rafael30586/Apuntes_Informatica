@@ -1357,3 +1357,12 @@ Mensajes y eventos son términos intercambiables en pub/sub
 Casos de uso: chat en tiempo real. Un sistema de web-hook
 
 Simple Notification Service (SNS): es servicio de mensajería pub/sub altamente disponible, seguro, durable, completamente gestionado que te permite desacoplar microservicios, sistemas distribuidos y aplicaciones serverless 
+
+-----------------------------
+API Gateway
+
+¿Qué es?
+Es un programa que se monta entre un punto de entrada y múltiples backends
+El API Gateway permite regulación, logging, enrutamiento lógico o formateo de la solicitud y respuesta
+
+Amazon API Gateway: es una solución para crear APIs seguras en tu entorno de la nube a cualquier escala. Crear APIs que funcionan como una puerta frontal para aplicaciones para acceder a datos, lógica de negocio o funcionalidad de servicios backend
