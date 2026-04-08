@@ -1374,3 +1374,24 @@ State machines
 Es un modelo abstracto que decide como un estado se mueve a otro basado en una serie de condiciones. Se puede pensar en un state machine como un diagrama de flujo
 
 AWS Step Functions: Coordinar múltiples servicios de AWS en un flujo de trabajo serverless; una consola gráfica para visualizar los componentes de tu aplicación como una serie de pasos; automáticamente gatilla y rastrea cada paso, y vuelve a intentar cuando hay errores, para que tu aplicación ejecute en el orden esperado todo el tiempo; registra (logs) el estado de cada paso, para que cuando las cosas salgan mal puedas diagnosticar y debuguear los problemas rápidamente 
+
+-----------------------------
+Event bus
+
+¿Qué es?
+Un bus de eventos (event bus) recibe eventos de una fuente y enruta eventos a un objetivo basado en reglas
+
+https://raw.githubusercontent.com/greenrobot/EventBus/master/EventBus-Publish-Subscribe.png
+
+EventBridge: es un bus de eventos serverless que es usado para integración de aplicaciones al streamear datos en tiempo real para tus aplicaciones. Se llamaba Amazon Cloudwatch Events, pero luego fue renombrado
+
+El bus de eventos retiene los datos del evento, define reglas en un bus de eventos para reaccionar a eventos
+Bus de eventos por defecto: una cuenta de AWS tiene un bus de eventos por defecto
+Bus de eventos personalizado: con alcance de múltiples cuentas u otras cuentas de AWS
+Bus de eventos SaaS: con alcance proveedores de SaaS "third party"
+
+Productores: servicios de AWS que emiten eventos	
+Eventos: Datos emitidos por servicios. JSON que viajan (stream) dentro del bus de eventos
+"Partner sources": aplicaciones de terceros que pueden emitir eventos hacia un bus de eventos
+Reglas: determina que eventos capturar y pasar a objetivos (targets) (100 reglas por bus)
+Objetivos (targets): servicios de AWS que consumen eventos (5 targets por regla)  
