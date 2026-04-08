@@ -5,3 +5,5 @@ javac -d <ruta> <archivo> --> compila un archivo .java y lo coloca el el paquete
 java <clase-main> --> ejecuta el código de bytes del archivo .class según la clase main que indiquemos
 
 java <paquete>.<clase-main> --> ejecuta el código de bytes del archivo .class de la clase main que indiquemos dentro del paquete que indiquemos
+
+javac -cp <ruta-classpath> -d <ruta-clases> <archivo-java> --> compila una archivo java estableciendo el classpath de las clases que importa. Si se necesita más de un classpth, las rutas deben separarse por ";" . Los archivos .class resultantes se guardarán en la ruta que indiquemos  
