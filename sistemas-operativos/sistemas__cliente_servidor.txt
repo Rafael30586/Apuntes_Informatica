@@ -34,7 +34,39 @@ Remote procedure calls, RPC
 
 Ejecución de un llamado a un proceso remoto: https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter3/3_23_RPC.jpg
 
-* Un ejemplo común de sistema basado en llamadas RPC es un sistema de archivos en red. Mensajes son pasados para leer, escribir, borrar, renombrar o revisar estado, como podría hacerse para solicitudes oridnarias de acceso a disco local.
+* Un ejemplo común de sistema basado en llamadas RPC es un sistema de archivos en red. Mensajes son pasados para leer, escribir, borrar, renombrar o revisar estado, como podría hacerse para solicitudes ordinarias de acceso a disco local.
+
+-----------------------
+Pipes
+
+* Los pipes son unos de los canales de comunicación entre procesos (UNIX) más simples y tempranos
+* Hay 4 consideraciones clave en la implementación de pipes:
+  1. ¿Comunicación unidireccional o bidireccional?
+  2. ¿Es la comunicación bidireccional half-duplex o full-duplex?
+  3. ¿Debe existir una relación padre-hijo entre procesos?
+  4. ¿Pueden los pipes comunicarse a través de una red o solo en la misma máquina?
+
+Pipes ordinarias
+
+* Las pipes ordinarias son unidireccionales (si se necesitan comunicaciones bidireccionales, se requiere una segunda pipe)
+* En UNIX las pipes ordinarias se crean con el system call "int pipe ( int fd [] )"
+* Las pipes en Windows son muy similares
+  - Windows las nombra como pipes anónimas
+  - Están limitadas a relaciones padre-hijo
+  - Son creadas con la función CreatePipe(), que toma argumentos adicionales
+
+Pipes con nombre (named pipes)
+
+* Soportan comunicación bidireccional y comunicación entre procesos que no necesariamente tengan relación padre-hijo. Múltiples procesos pueden también compartir un pipe con nombre, típicamente uno que lee y muchos que escriben
+* En UNIX, las named pipes se llaman fifos, y aparecen como archivos ordinarios en el sistema de archivos
+  - Creadas con mkfifo() y manipuladas con read(), write(), open(), close(), etc
+  - Los named pipes de UNIX son bidireccionales, pero half-duplex, por lo que dos pipes son usados típicamente para comunicaciones bidireccionales
+  - Las named pipes de UNIX requieren que los procesos corran en la misma máquina. Sino se usan sockets
+* Los named pipes de Windows proveen una comunicación más rica
+* Soportan full-duplex
+* Los procesos pueden residir en la misma o diferente máquina
+* Creadas y manipuladas usando CreateNamedPipe(), ConnectNamedPipe(), ReadFile() y WriteFile()
+
 
 ____________________________________________
 Continuar resumiendo lo del enlace de arriba
