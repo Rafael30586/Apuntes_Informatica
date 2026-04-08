@@ -26,4 +26,6 @@ dockerfile <nombre>: va a la misma altura de context. Es para cuando queremos tr
 
 Cuando trabajamos con Docker compose no hace falta configurar una red, docker compose se encarga de crear una
 
-depends_on: /salto de línea /tabulación - "<contenedor>" --> va después del nombre del contendor. Sirve para ncuando un contenedor depende de otro, por ejemplo, un backend en java no puede ejecutarse si la base de datos no 4está todavía en ejecución
+depends_on: /salto de línea /tabulación - "<contenedor>" --> va después del nombre del contendor. Sirve para ncuando un contenedor depende de otro, por ejemplo, un backend en java no puede ejecutarse si la base de datos no está todavía en ejecución
+
+En Docker compose podemos trabajar con variables de entorno. En el archivo .yml las variables se usan así: ${<variable>}. Una manera de establecer las variables es hacerlo en la terminal, por ejemplo, en Windows hacer: set <variable>=<valor> , de esta manera, cuando ejecutemos el archivo de Docker compose, los campos del archivo .yml se llenarán con los valores que tiene las variables. Ejemplo: en Docker compose puede aparecer el siguiente campo --> MONGO_DB_USERNAME: ${MONGO_ADMIN_USER} , pero en la terminal debemos primero establecer el valor de la variable así --> set MONGO_ADMIN_USER=rafael
