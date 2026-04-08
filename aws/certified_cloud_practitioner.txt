@@ -1394,4 +1394,25 @@ Productores: servicios de AWS que emiten eventos
 Eventos: Datos emitidos por servicios. JSON que viajan (stream) dentro del bus de eventos
 "Partner sources": aplicaciones de terceros que pueden emitir eventos hacia un bus de eventos
 Reglas: determina que eventos capturar y pasar a objetivos (targets) (100 reglas por bus)
-Objetivos (targets): servicios de AWS que consumen eventos (5 targets por regla)  
+Objetivos (targets): servicios de AWS que consumen eventos (5 targets por regla) 
+
+----------------------------
+Servicios de integración de aplicaciones
+
+Simple Notification Service (SNS): un sistema de mensajería pub-sub. Envía notificaciones vía varios formatos como email en texto plano, HTTP/s (webhooks), SMS (mensajes de texto), SQS y lambda. "Empujar" mensajes que son luego enviados a suscriptores
+
+Simple Queue Service (SQS): es un servicio de mensajería de colas. Envía eventos a una cola. Otras aplicaciones tironean la cola por mensajes. Comúnmente usado en trabajos en segundo plano (background)
+
+Step Functions es un servicio "state machine". Coordina múltiples servicios de AWS en flujos de trabajo serverless. Comparte datos fácilmente entre lambdas. Hace que un grupo de lambdas esperen la una por la otra. Crea pasos lógicos. También funciona con tareas Fargate.
+
+EventBridge (CloudWatch Events): es un bus de eventos serverless que hace que sea fácil de conectar aplicaciones entre sí desde tu misma aplicación, servicios de terceros y servicios de AWS
+
+Kinesis: es un servicio de streaming de datos en tiempo real. Crea productores que envían datos a un stream. Múltiples consumidores pueden consumir datos dentro de un stream. Se usa analíticas en tiempo real, click streams, ingestión de datos de una flota de dispositivos IoT
+
+Amazon MQ: es un servicio "message broker" que usa Apache ActiveMQ
+
+Managed Kafka Service (MSK): un servicio de Apache Kafka completamente gestionado. Kafka es una plataforma de código abierto para construir tuberías (pipelines) de steaming de datos en tiempo real y aplicaciones. Similar a Kinesis pero más robusto
+
+API Gateway: es un servicio totalmente gestionado para desarrolladores para crear, publicar, mantener, monitorear y proteger APIs. Podés crear endpoints de APIs y enrutarlos a servicios de AWS
+
+AppSync: es un servicio de GraphQL totalmente gestionado. GraphQL es un adaptador de código abierto que te permite consultar datos de muchas fuentes diferentes   
