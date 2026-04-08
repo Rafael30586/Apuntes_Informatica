@@ -1,2 +1,4 @@
 https://www.w3schools.com/java/java_packages.asp
 https://labex.io/tutorials/java-how-to-fix-no-main-manifest-attribute-error-in-java-417707
+https://www.campusmvp.es/recursos/post/paquetes-en-java-que-son-para-que-se-utilizan-y-como-se-usan.aspx
+https://www.campusmvp.es/recursos/post/java-que-es-el-classpath-y-como-lo-ajusto.aspx?srsltid=AfmBOoo9bb08OPgZQKpkSjrlscs-0MOqcUKg_Va4XkM8zEN3z1hmuNET

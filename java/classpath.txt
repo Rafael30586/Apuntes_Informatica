@@ -1,0 +1,12 @@
+Cuando estás programando en Java y quieres hacer uso de alguna clase desde tu código que está en otro paquete o en una librería externa, debes incluir un import al principio de tu clase de forma que le indiques qué otras clases quieres utilizar. Pero ¿cómo hace Java para localizarlas, ya que pueden estar en cualquier sitio de tu disco duro? La respuesta es a través de una variable de entorno especial llamada CLASSPATH.
+Cuando estás programando en Java y quieres hacer uso de alguna clase desde tu código que está en otro paquete o en una librería externa, debes incluir un import al principio de tu clase.
+¿Cómo sabe el compilador de Java dónde encontrar las clases que hemos importado? Más aún, si se trata de una clase de terceros, no de la plataforma, ¿de qué manera averigua dónde está y cómo ponerla a disposición de tu programa a partir del import?.
+Básicamente, la máquina virtual de Java (JVM) puede utilizar dos tipos de archivos para acceder a este código referenciado:
+* Archivos .class de código intermedio ByteCode, resultado de compilar nuestra aplicación.
+* Archivos .jar, que contienen dentro librerías y recursos de una aplicación o biblioteca de funciones, incluyendo archivos .class.
+
+Los primeros suelen estar en la carpeta output de nuestro proyecto, por ejemplo, en el archivo carpeta output/com/miempresa/utilidades/MiUtilidad.class, junto a los demás archivos compilados de las demás clases de ese paquete.
+Los segundos, .jar, pueden estar en cualquier sitio de nuestro sistema, en donde el compilador debe encontrarlos.
+Pero lo que no tendría sentido es que, para localizar cada paquete, se recorriese el disco duro completo buscándolos.
+Así, si la clase MiUtilidad que queremos emplear en nuestro código forma parte de una librería externa que nos han facilitado en forma de archivo .jar para su distribución, ¿cómo la localizan las herramientas de Java?
+La respuesta está en una variable de entorno especial llamada CLASSPATH, que contiene las rutas en donde las herramientas de Java y la JVM deben mirar para localizar los archivos de código y los paquetes que se van a utilizar. Puede apuntar a las carpetas raíz de jerarquías de paquetes y rutas directas a archivos .jar.
