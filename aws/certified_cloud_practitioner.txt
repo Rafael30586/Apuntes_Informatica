@@ -1415,4 +1415,16 @@ Managed Kafka Service (MSK): un servicio de Apache Kafka completamente gestionad
 
 API Gateway: es un servicio totalmente gestionado para desarrolladores para crear, publicar, mantener, monitorear y proteger APIs. Podés crear endpoints de APIs y enrutarlos a servicios de AWS
 
-AppSync: es un servicio de GraphQL totalmente gestionado. GraphQL es un adaptador de código abierto que te permite consultar datos de muchas fuentes diferentes   
+AppSync: es un servicio de GraphQL totalmente gestionado. GraphQL es un adaptador de código abierto que te permite consultar datos de muchas fuentes diferentes 
+
+-----------------------------------------------------------------------------------------------------
+Contenedores
+-----------------------------------------------------------------------------------------------------
+
+Máquinas virtuales vs contenedores
+
+Cuando contratamos una instancia EC2, esta tiene un sistema operativo anfitrión y un hipervisor que te permite desplegar máquinas virtuales
+También se puede contratar una instancia EC2 con un docker Daemon en lugar de un hipervisor para poder ejecutar contenedores. De esta manera se aprovecha mejor el espacio en la máquina que usando máquinas virtuales
+
+Las máquinas virtuales no hacen el mejor uso del espacio. Las aplicaciones no están aisladas, lo cual podría causar conflictos de configuración y problemas de seguridad
+Los contenedores te permiten ejecutar múltiples aplicaciones que están virtualmente aisladas entre sí. Podés lanzar nuevos contenedores y configurar dependencias del SO por contenedor  
