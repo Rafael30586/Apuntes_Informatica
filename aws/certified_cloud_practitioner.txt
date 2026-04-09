@@ -1434,4 +1434,14 @@ Los contenedores te permiten ejecutar múltiples aplicaciones que están virtual
 
 Arquitectura monolítica: Una aplicación es responsable de todo; la funcionalidad está acoplada
 
-Arquitectura de microservicios: múltiples aplicaciones son responsables por una cosa cada una; la funcionalidad está aislada y es stateless  
+Arquitectura de microservicios: múltiples aplicaciones son responsables por una cosa cada una; la funcionalidad está aislada y es stateless
+
+------------------------------
+Kubernetes
+
+Es un sistema de código abierto de orquestación de contenedores para automatizar despliegue, escalado y gestión de contenedores  
+Fue originalmente creado por Google y ahora es mantenido por la Cloud Native Computing Foundation (CNCF)
+Comúnmente se le llama K8, donde el 8 representa la cantidad de letras que le siguen a la a "k" (ubernete)
+La ventaja de kubernetes sobre Docker es la habilidad de ejecutar contenedores a lo largo de múltiples máquinas virtuales
+Un componente único de kubernetes son los Pods. Un pod es un grupo uno o más contenedores con almacenamiento compartido, recursos de red y otras configuraciones compartidas
+Kubernetes es ideal para arquitectura de microservicios donde una compañía tiene decenas de miles de servicios que necesitan gestionar   
