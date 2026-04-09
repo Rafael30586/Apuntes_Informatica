@@ -1427,4 +1427,11 @@ Cuando contratamos una instancia EC2, esta tiene un sistema operativo anfitrión
 También se puede contratar una instancia EC2 con un docker Daemon en lugar de un hipervisor para poder ejecutar contenedores. De esta manera se aprovecha mejor el espacio en la máquina que usando máquinas virtuales
 
 Las máquinas virtuales no hacen el mejor uso del espacio. Las aplicaciones no están aisladas, lo cual podría causar conflictos de configuración y problemas de seguridad
-Los contenedores te permiten ejecutar múltiples aplicaciones que están virtualmente aisladas entre sí. Podés lanzar nuevos contenedores y configurar dependencias del SO por contenedor  
+Los contenedores te permiten ejecutar múltiples aplicaciones que están virtualmente aisladas entre sí. Podés lanzar nuevos contenedores y configurar dependencias del SO por contenedor
+
+----------------------------------
+¿Qué son los microservicios?
+
+Arquitectura monolítica: Una aplicación es responsable de todo; la funcionalidad está acoplada
+
+Arquitectura de microservicios: múltiples aplicaciones son responsables por una cosa cada una; la funcionalidad está aislada y es stateless  
