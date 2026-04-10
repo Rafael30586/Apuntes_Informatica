@@ -4,3 +4,34 @@ https://www.geeksforgeeks.org/java/java-enterprise-edition/
 
 Java Enmterprise edition (Java EE) también conocido como Jakarta EE, se usa para diseñar aplicaciones grandes y poderosas usadas por organizaciones. Provee herramientas y funciones que ayudan a los desarrolladores crear sitios web, aplicaciones y sistemas backend que pueden encargarse de muchos usuarios al mismo tiempo. JEE incluye soporte integrado para desarrollo web, gestión de bases de datos y seguridad (security).
 JEE is ampliamente utilizado en industrias como la banca, salud y e-commerce por su fiabilidad, escalabilidad y seguridad. JEE continúa haciendo que el desarrollo de software empresarial sea más eficiente.
+
+---------------------------
+Arquitectura de java Enterprise edition
+
+Java EE tiene una arquitectura multicapa, lo que quiere decir que la aplicación está dividida en diferentes capas. Esto hace que sea más fácil gestionar, escalar y actualizar sin afectar al sistema entero
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250211173623531043/Architecture.webp
+
+1. Capa de cliente
+* Esta es la capa del frontend adonde los usuarios interactúan con la aplicación
+* Puede ser un buscador web, aplicación móvil o de escritorio
+* Usa tecnologías como HTML, CSS, JavaScript y JSP (Java server pages)
+
+2. Capa web (capa servlet)
+* La capa web se encarga de las solicitudes de usuario y respuestas
+* Usa servlets, JSP, JSF para procesar datos de los usuarios
+* Envía los datos a la capa de negocio para su procesamiento
+
+3. Capa de negocio (capa de lógica)
+* La capa de negocio contiene la lógica nuclear de una aplicación
+* Usa EJB (Enterprise java beans) para manejar tareas como cálculos, transacciones y seguridad.
+* Procesa datos y se comunica con la capa de bases de datos
+
+4. Capa de datos
+* La capa de datos almacena y extrae datos de la base de datos
+* Usa JPA y JOBC para gestión de bases de datos
+* Asegura almacenamiento de datos seguro y eficiente
+
+5. Capa de integración (opcional)
+* Se usa para conectar la aplicación con sistemas externos, APIs y servicios
+* Usa java messaging services (JMS) y servicios web 
