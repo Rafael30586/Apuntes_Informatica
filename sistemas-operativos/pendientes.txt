@@ -26,3 +26,4 @@ local procedures y procedure calls
 stubs
 Daemon proccess
 Big endian vs Little endian
+profundizar en datagram socket vs stream socket

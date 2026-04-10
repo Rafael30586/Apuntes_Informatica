@@ -1,0 +1,35 @@
+-----------------------------------------------------------------------------------------------------
+Sockets
+----------------------------------------------------------------------------------------------------
+
+Un socket es un punto final de un enlace de comunicación entre dos programas corriendo en una red. El mecanismo socket provee un método de comunicación entre procesos (IPC).
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250503164629911922/Socket-in-Computer-Network-1.webp
+
+------------------
+¿Cómo funcionan los sockets en una red de computadoras?
+ Así como 'Pipe' se usa para crear pipes, los sockets se crean usando el system call 'socket'. Los sockets proveen comunicación FIFO bidireccional a través de la red
+* Un socket conectándose a la red es creado en cada punto final de la comunicación
+* Cada socket tiene una dirección específica
+* Esta dirección está compuesta por una dirección IP y un número de puerto
+* Los sockets son empleados generalmente en aplicaciones cliente-servidor
+* El servidor crea un socket, lo une a una dirección de puerto de red, luego espera a que elliente lo contacte
+* El cliente crea un socket y luego intenta conectarse al socket del servidor
+* Cuando se establece la conexión, ocurre la transferencia de datos
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250503164723620815/Socket-in-Computer-Network-2.webp
+
+---------------------
+Tipos de sockets
+
+Hay dos tipos de sockets: datagram socket y stream socket
+* Datagram socket: Este es un tipo de red que tiene conexión "less point" para enviar y recibir paquetes. Es similar a una caja de correo. Las cartas (datos) publicadas en la caja son recolectadas y entregadas (transmitidas) a una caja de cartas (socket que recibe)
+* Stream socket: En sistemas operativos de computadoras, un stream socket es un tipo de socket de comunicación entre procesos o socket de red que provee un flujo de datos "connection-oriented", secuencial y único sin límites de registro con mecanismos bien definidos para crear y destruir conexiones y para detectar errores. Es similar a un teléfono. Una conexión es establecida entre los teléfonos (dos extremos) y una conversación (transferencia de datos) ocurre
+
+---------------------------------------------------------------------------------------------------------------------------
+https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC
+
+Remote procedure calls (RPC)
+
+Un remote procedure call es un protocolo de comunicación de software que un programa usa para solicitar un servicio de otro programa localizado en una computadora y red diferente, sin tener que entender los detalles de la red. Específicamente, RPC se usa para llamar a otros procesos en sistemas remotos como si el proceso estuviera en el sistema local. Un procedure call es también conocido como un function call o subroutine call.
+RPC funciona como un protocolo de transporte de bajo nivel para llevar paquetes de datos entre programas comunicándose. Hace esto usando el modelo cliente-servidor. El programa que solicita es llamado cliente, mientras que el que provee el servicio se llama servidor. Como un local procedure call, un RPC es una operación sincrónica que requiere que el programa que solicita sea suspendido hasta que los resultados del remote proceder regresen. De todas formas, el uso de hilos que comparten el mismo address space permite que múltiples RPCs se lleven a cabo de manera concurrente  
