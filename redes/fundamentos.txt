@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=fQbBPa0ADvs&list=PLH4-9MlhMdT1uxDwPGEi3zPI0CdI2UnH2&index=24&t=15960s
+
 Redes de computadores
 Son un marco de telecomunicaciones en el que dispositivos digitales están conectados entre sí. Estos dispositivos son nodos. La interacción puede ser por cable o inalámbrica. Estos nodos interactúan para compartir recursos. Estos recursos pueden ser hardware o software. Internet es un ejemplo de una red de computadoras.
 
@@ -99,3 +101,43 @@ Ejemplos de direcciones IP
 Subnetting
 Es el proceso de dividir una red grande en varias subredes más pequeñas. Es útil porque el mantenimiento y la administración se vuelven más fáciles. También provee seguridad porque las redes están aisladas entre sí. Como desventaja, la identificación se vuelve un poco más compleja, ya que, para identificar un anfitrión de alguna red hay que seguir más pasos: identificar la red, luego la subred, después el anfitrión y por último, el puerto. Además, es más costoso porque hacen falta más dispositivos, como, por ejemplo, switches. Otra posible desventaja es que hace falta un administrador de redes experimentado. 
 
+----------------------------------------------------------------------------------------------------------------------
+Control de errores
+-----------------------------------------------------------------------------------------------------------------------
+
+* No se trata de aspectos de seguridad (security)
+* Las modificaciones intencionales no cuentan como errores, es decir, cuando se viola la integridad, cuando, por ejemplo, un hacker modifica intencionalmente los datos
+* Cuando los datos recibidos no son los mismos que los datos enviados debido al "ruido", esto indica que ha ocurrido un error
+* Hay dos tipos de errores: single bit errors y burst errors
+* En los single bit, un solo bit ha cambiado de 1 a 0 o de 0 a 1, por ejemplo se envía 00000010 y se recibe 00001010
+* En los burst errors más de un bit cambia de 1 a 0 o de 0 a 1, por ejemplo se envía 01001010 y se recibe 01101110 . El primer error está en el tercer bit (de izquierda a derecha) y el último error está en el sexto bit. Se llama burst length a la distancia entre el primer error y el último error. Esta distancia es el número de bits que hay
+* El número de bits corrompidos depende de: la duración del ruido y la tasa de datos (DR x TD) , por ejemplo, si la duración del ruido es de 1/10 segundos y la tasa de datos es de 1 kbps (10^3 bits/seg), entonces el número de bits corrompidos será (1/10 segundos) x (1000 bits/segundo) = 100 bits
+* Hay mayor probabilidad de que ocurran burst errors que single bit errors
+
+Detección y corrección de errores
+
+* La detección es mucho más fácil que la corrección
+* Detección: es identificar que los bits recibidos no son los mismos que los enviados
+* Corrección: ¿Cuáles pueden ser los bits correctos en lugar de estos que he recibido?
+* ¿Cómo hace el receptor para identificar que los bits recibidos no son los mismos que los enviados? ocurre con el concepto de los bits redundantes
+* Tanto para detectar como para corregir, es necesario enviar bits extra con los datos. El receptor va a quitar esos bits extra. Los bits redundantes son conocidos tanto por el emisor como por el receptor. Si el receptor corrobora que los bits extra están intactos, significa que ningún error ha ocurrido, es decir, el resto de los datos están intactos. En cambio, si hay un error en los bits extra, el receptor asume que algún error ha ocurrido. En caso de haber ocurrido un error, el receptor le va a solicitar al emisor que vuelva a enviar esos bits
+* Para corregir es necesario saber el número exacto de bits que han sido corrompidos y, más importante aún, la ubicación de los bits. Por esto la corrección es mucho más difícil que la detección
+* Si ocurre un error del tipo single bit, hay 8 posibles ubicaciones para el bit del error. Si hay un error de 2 bits hay (8x7)/2=28 posibilidades para ubicar a los bits
+
+Nota: para calcular la cantidad de posibilidades cuando hay errores de bits, el profesor del video usa una c para realizar un cálculo, por ejemplo, cuando hay 2 bits en error dentro de un byte, usa 8c2, que significa 8x7/2 . Esto se explica en el segundo 4:28:23  
+
+* Cálculo
+  - k bits de error
+  - n bits (8 en el ejemplo de más arriba)
+  - nck (la k es un subíndice y la n un superíndice a la izquierda)
+  - El cálculo es --> n!/k!(n-k)!
+
+Detección de errores
+* Simple parity
+* 2D parity
+* Check sum
+* CRC
+
+Corrección de errores
+* Hamming code
+		
