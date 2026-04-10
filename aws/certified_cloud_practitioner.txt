@@ -1459,4 +1459,17 @@ Docker hub: un repositorio en línea público para contenedores publicados por l
 
 The Open Container Initiative (OCI) es una estructura de gobernanza abierta para crear estándares de industria abiertos alrededor de formatos de contenedor y tiempo de ejecución. Docker estableció el OCI y es ahora mantenido por la Linux Foundation 
 
-Docker ha estado perdiendo popularidad entre desarrolladores debido a la introducción de un modelo de pago de código abierto y una alternativa como Podman está creciendo   
+Docker ha estado perdiendo popularidad entre desarrolladores debido a la introducción de un modelo de pago de código abierto y una alternativa como Podman está creciendo 
+
+-------------------------
+Podman, Buildah y Skopeo
+
+Podman es un motor de contenedores que OCI-complaciente y es un reemplazo de Docker
+
+* Podman es daemon-less mientras que Docker usa un "containered Daemon"  
+* Podman te permite crear pods como kubernetes. Docker no tiene pods
+* Podman solo reemplaza una parte de Docker. Podman debe usarse junto con Buildah y skopeo
+
+Buildah es una herramienta para construir imágenes OCI
+
+Skopeo es una herramienta para mover imágenes de contenedores entre diferentes tipos de almacenamientos de contenedores  
