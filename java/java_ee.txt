@@ -35,3 +35,30 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250211173623531043/Architec
 5. Capa de integración (opcional)
 * Se usa para conectar la aplicación con sistemas externos, APIs y servicios
 * Usa java messaging services (JMS) y servicios web 
+
+---------------------------
+Componentes nucleares de JEE
+
+1. Servlets: es una parte del marco de trabajo de JEE. Se usan para desarrollo web. Los servlets se encargan de procesar las solicitudes de clientes y generar respuestas. Se usan para extender funciones de servidores web al recibir y responder a solicitudes de clientes web
+
+2. JSP: también conocido como java server pages, permite incorporar código java dentro del HTML para páginas web dinámicas. Es más fácil de mantener las JSP porque ayudan a distinguir entre diseño y desarrollo. JSP provee algunas funciones añadidas como lenguaje de expresión, etiquetas personalizadas, etc
+
+3. JSF: JSF es por java server faces. Es un marco de trabajo usado para construcción de interfaces de usuario basadas en web. Hace que el desarrollo web sea más simple al proveer componentes de UI como formularios, botones y tablas. Se usa para gestionar beans y manejar datos y acción efiientemente
+
+4. EJB: EJB es por Enterprise java beans. Maneja lógica de negocio compleja, transacciones y seguridad. EJB ayuda a los desarrolladores a crear lógica de negocio segura, escalable y reutilizable para grandes aplicaciones. Se usa principalmente en bancos, e-commerce, etc.
+
+5. CDI: CDI es por contexts and dependency injection que se usa para simplificar gestión de dependencias y se encarga del ciclo de vida de objetos. Simplifica la dependencia entre diferentes partes de una aplicación. Hace a las aplicaciones java más flexibles, modulares fáciles d emantener
+
+6. JAAS: JAAS se conoce como java authentication and authorization service, es un marco de trabajo de seguridad de java que se usa para autenticar usuarios y acceso de control en aplicaciones. Ayuda a asegurar que solo usuarios autorizados puedan acceder a ciertas partes del sistema. Verifica la identidad de los usuarios usando un nombre de usuario, contraseña y otros métodos
+
+7. JDBC: JDBC es por java database connectivity, una API de java que permite que las aplicaciones se conecten a bases de datos, envíen consultas y extraigan datos. Ayuda a los programas java a interactuar con bases de datos como MySQL, Oracle, SQL Server. Solicita y procesa datos de una base de datos
+
+8. Beans gestionados (managed beans): es una simple clase de java que es automáticamente creada y gestionada por el contenedor java EE. Se usa principalmente en JSF y CDI para manejar lógica de negocio e interacciones de usuario en aplicaciones web. Retiene input de usuario y procesa acciones
+
+9. Validación de beans: se usa para validar input de usuario y datos en aplicaciones java. Asegura que los datos sigan reglas específicas. Revisa si los valores de input cumplen con las condiciones requeridas. La validación de beans usa anotaciones simples como @NotNull, @Size y @Pattern
+
+10 Application client: Un application client en java EE es un programa java autónomo que corre en una computadora de usuario y se conecta al servidor java EE para usar servicios empresariales como EJB, JPA, JMS. Corre separado de las aplicaciones web. Puede extraer o enviar datos a las aplicaciones principales
+
+____________________________________________
+Continuar resumiendo lo del enlace de arriba
+____________________________________________
