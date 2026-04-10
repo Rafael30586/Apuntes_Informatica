@@ -1,0 +1,14 @@
+Docker Daemon
+
+En el núcleo de las operaciones de Docker yace el Docker Daemon. Es el servicio responsable de orquestar la gestión del ciclo de vida de los contenedores. Esto significa que el Docker Daemon se encarga de varias tareas incluyendo la creación, ejecución y monitoreo de contenedores. En resumen, funciona como un puente entre el cliente Docker y el motor de Docker siguiendo la arquitectura cliente-servidor. Docker Daemon ejecuta comandos emitidos por el cliente al traducirlos en operaciones procesables dentro del entorno de Docker.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260120110533165091/docker_daemon.webp
+
+----------------------------
+Funciones del Docker Daemon 
+
+* Gestión de contenedores: esto involucra supervisar la creación, ejecución y terminación de contenedores. Estas acciones son llevadas a cabo basadas en comandos recibidos del cliente Docker
+* Redes y almacenamiento: Docker Daemon permite integración continua con recursos con el sistema operativo subyacente. Docker Daemon provee contenedores con acceso a puertos de red, volúmenes de almacenamiento y otros componentes esenciales.
+* Empujar y traer imágenes del registro: cuando una imagen solicitada o contendor no está disponible localmente, Docker Daemon interactúa con el Docker registry para buscar y desplegar los recursos solicitados
+* Sistema operativo anfitrión: Docker Daemon utiliza los recursos del sistema operativo anfitrión para gestionar contenedores. Se comunica con el kernel del sistema operativo anfitrión para ejecutar operaciones de contenedores
+* Escalabilidad y flexibilidad: la arquitectura de Docker Daemon permite integración fluida con herramientas de terceros y extensiones. Esto permite personalización de entornos de contenedores    
