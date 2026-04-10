@@ -1473,3 +1473,22 @@ Podman es un motor de contenedores que OCI-complaciente y es un reemplazo de Doc
 Buildah es una herramienta para construir imágenes OCI
 
 Skopeo es una herramienta para mover imágenes de contenedores entre diferentes tipos de almacenamientos de contenedores  
+
+-------------------------
+Servicios de contenedores
+
+Servicios principales
+* Elastic Container Service (ECS): sin arranques en frío; EC2 autogestionado
+* AWS Fargate: más robusto que Lambda; puede escalar sin costo; EC2 gestionado por AWS
+* Elastic Kubernetes Services (EKS): código abierto; es útil para cuando se quiere evitar "vendor lock-in"
+* AWS Lambda: Solo pensás sobre el código; diseñado para tareas pequeñas; se puede desplegar contenedores personalizados
+
+Suministro y despliegue
+* Elastic Beanstalk (EB): Platform as a service
+* App Runner: Platform as a service; específicamente para contenedores
+* AWS Copilot CLI: construir, liberar y operar aplicaciones en contenedores listas para producción en AWS App Runner, Amazon ECS y AWS Fargate
+
+Servicios de apoyo
+* Elastic Container Registry (ECR): repositorios de tus imágenes de Docker
+* X-Ray: análisis y debug entre micrsoservicios
+* Step Functions: unir Lambdas y tareas ECS  
