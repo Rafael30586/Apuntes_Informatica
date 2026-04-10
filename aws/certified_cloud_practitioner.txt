@@ -1444,4 +1444,19 @@ Fue originalmente creado por Google y ahora es mantenido por la Cloud Native Com
 Comúnmente se le llama K8, donde el 8 representa la cantidad de letras que le siguen a la a "k" (ubernete)
 La ventaja de kubernetes sobre Docker es la habilidad de ejecutar contenedores a lo largo de múltiples máquinas virtuales
 Un componente único de kubernetes son los Pods. Un pod es un grupo uno o más contenedores con almacenamiento compartido, recursos de red y otras configuraciones compartidas
-Kubernetes es ideal para arquitectura de microservicios donde una compañía tiene decenas de miles de servicios que necesitan gestionar   
+Kubernetes es ideal para arquitectura de microservicios donde una compañía tiene decenas de miles de servicios que necesitan gestionar
+
+------------------------
+Docker
+
+Dokcer es un conjunto de productos PaaS que usan virtualización de nivel del sistema operativo para entregar software en paquetes llamados contenedores
+
+Dokcer CLI: comandos para descargar, subir, construir, correr y debuguear contenedores
+Dockerfile: un archivo de configuración sobre como proveer un contenedor
+Docker compose: es una herramienta y archivo de configuración para cuando se trabaja con varios contenedores
+Docker swarm: una herramienta de orquestación para gestionar arquitecturas multi-contenedor desplegadas
+Docker hub: un repositorio en línea público para contenedores publicados por la comunidad para descargar
+
+The Open Container Initiative (OCI) es una estructura de gobernanza abierta para crear estándares de industria abiertos alrededor de formatos de contenedor y tiempo de ejecución. Docker estableció el OCI y es ahora mantenido por la Linux Foundation 
+
+Docker ha estado perdiendo popularidad entre desarrolladores debido a la introducción de un modelo de pago de código abierto y una alternativa como Podman está creciendo   
