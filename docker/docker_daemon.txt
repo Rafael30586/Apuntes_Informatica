@@ -12,3 +12,20 @@ Funciones del Docker Daemon
 * Empujar y traer imágenes del registro: cuando una imagen solicitada o contendor no está disponible localmente, Docker Daemon interactúa con el Docker registry para buscar y desplegar los recursos solicitados
 * Sistema operativo anfitrión: Docker Daemon utiliza los recursos del sistema operativo anfitrión para gestionar contenedores. Se comunica con el kernel del sistema operativo anfitrión para ejecutar operaciones de contenedores
 * Escalabilidad y flexibilidad: la arquitectura de Docker Daemon permite integración fluida con herramientas de terceros y extensiones. Esto permite personalización de entornos de contenedores    
+
+-------------------------
+Entendiendo la arquitectura de Docker
+
+1. Arquitectura cliente servidor
+En el interior, Docker emplea una arquitectura cliente-servidor. Acá el Docker Daemon funciona como el servidor. El cliente Docker podrá ser el Docker CLI o la aplicación de Docker desktop. La interacción entre el cliente docker y el Daemon ocurre vía llamadas de API REST. El cliente Docker funciona como un frontend a través del cual el usuario interactúa y el Docker Daemon ejecuta los comandos requeridos.
+
+2. Relación entre Docker Daemon y cliente Docker
+Cuando el usuario interactúa con el cliente Docker (ya sea por el CLI o por la aplicación de escritorio), el cliente Docker envía los comandos requeridos al Docker Daemon. Al recibir las instrucciones requeridas, el Docker Daemon las ejecuta. El resultado de esta operación (junto con potenciales errores) es mostrado al usuario vía cliente Docker.
+En resumen, el cliente Docker funciona como un simple frontend por el cual Docker Daemon gestiona los recursos. 
+
+3. Relación entre Docker Daemon y Docker registry
+Docker registry es un servicio remoto que guarda imágenes de Docker y otra información relacionada. El registro funciona como un eje central a través del cual las imágenes de Docker pueden ser accedidas por el usuario. Los usuarios también pueden subir sus propias imágenes al registro. DockerHub es un registro público popular, pueden también ser gestionados de manera privada.
+Cuando la imagen es solicitada, el Docker Daemon revisa si existe localmente, si existe comienza un contenedor usando la imagen. Si la imagen solicitada no existe localmente el Daemon hace una solicitud al registro para traer la imagen requerida. 
+
+4. Relación entre Docker Daemon y Docker engine
+Docker engine se compone de "containerd" y "runc", los cuales potencian las capacidades internas de contenerizar de Docker. Containerd es un runtime de contenedores de alto nivel que interactúa con Docker Daemon para encargarse de tareas de gestión de contenedores. Por otro lado, Runc asegura ejecución de contenedores consistente gestionando la ejecución de las tareas
