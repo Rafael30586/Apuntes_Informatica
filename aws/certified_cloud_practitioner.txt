@@ -1491,4 +1491,23 @@ Suministro y despliegue
 Servicios de apoyo
 * Elastic Container Registry (ECR): repositorios de tus imágenes de Docker
 * X-Ray: análisis y debug entre micrsoservicios
-* Step Functions: unir Lambdas y tareas ECS  
+* Step Functions: unir Lambdas y tareas ECS
+
+---------------------------------------------------------------------------------------------------
+Governancia
+---------------------------------------------------------------------------------------------------
+Organizaciones y cuentas
+
+AWS Organizations permite la creación de nuevas cuentas de AWS. Gestionar centralmente facturación, control de acceso, cumplimiento, seguridad y recursos compartidos a lo largo de tus cuentas de AWS
+
+Usuario de cuenta Root (Root Account User) es una identidad que tiene acceso completo a todos los servicios de AWS en un cuenta. Cada cuenta  tiene un Root Account User
+
+Se puede tener una cuenta maestra que tendrá un Root Account User. Las otras cuentas asociadas a la cuenta maestra también tendrán un Root Account User	
+
+Organization Units son un grupo de cuentas de AWS dentro de una organización que también contienen otras unidades organizacionales, creando una jerarquía
+
+Service Control Policies dan control central sobre los permisos para todas las cuentas en tu organización, ayudando a asegurar que tus cuentas permanezcan dentro de las pautas de tu organización
+
+AWS Organizations debe estar activado, una vez lo está no puede desactivarse. Podés crear tantas cuentas de AWS como quieras, una cuenta va a ser la cuenta maestra (master/root account)
+
+Una cuenta AWS no es lo mismo que una cuenta de usuario 
