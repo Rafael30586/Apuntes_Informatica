@@ -1,0 +1,6 @@
+https://www.geeksforgeeks.org/java/java-enterprise-edition/
+
+¿Qué es java Enterprise edition?
+
+Java Enmterprise edition (Java EE) también conocido como Jakarta EE, se usa para diseñar aplicaciones grandes y poderosas usadas por organizaciones. Provee herramientas y funciones que ayudan a los desarrolladores crear sitios web, aplicaciones y sistemas backend que pueden encargarse de muchos usuarios al mismo tiempo. JEE incluye soporte integrado para desarrollo web, gestión de bases de datos y seguridad (security).
+JEE is ampliamente utilizado en industrias como la banca, salud y e-commerce por su fiabilidad, escalabilidad y seguridad. JEE continúa haciendo que el desarrollo de software empresarial sea más eficiente.
