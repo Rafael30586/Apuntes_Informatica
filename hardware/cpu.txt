@@ -1,0 +1,6 @@
+La unidad central de procesamiento es como el cerebro de la computadora. Es la parte que hace la mayor parte del acto de pensar, calcular y toma de decisiones para hacer que la computadora funcione. Ya sea que estés jugando a un juego, escribiendo una tarea para la escuela o mirando un video, el CPU está ocupado encargándose de todas las instrucciones para tener el trabajo hecho.
+El CPU es usualmente colocado en una ranura especial llamada socket en la placa madre de la computadora, que es como el circuito principal que conecta todas las partes de la computadora. El CPU maneja tareas como:
+* hacer cálculos matemáticos como sumar o multiplicar números)
+* ejecutar aplicaciones o juegos
+* operaciones de entrada y salida: comunicación con periféricos
+* almacenar y extraer información durante tareas
