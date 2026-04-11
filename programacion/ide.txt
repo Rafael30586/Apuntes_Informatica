@@ -71,8 +71,49 @@ Aunque los editores de texto pueden ser usados para programar, los IDEs ofrecen 
   - integración con sistemas de control de versiones
   - entorno de desarrollo consistente a lo largo del equipo
   - configuraciones de proyecto compartidas
-  - herramientas de revisación de código 	 
+  - herramientas de revisación de código
 
-________________________________________________
-Continuar resumiendo con el enlace de más arriba
-________________________________________________  
+--------------------------
+Tipos de IDEs
+
+* IDEs de escritorio: se instalan en la máquina local y corren en la misma. Generalmente proveen funcionalidad completa sin requerir una conexión a internet
+Ventajas:
+- funciona offline sin depender de internet
+- acceso total a recursos del sistema local
+- no hay problemas de latencia
+- control completo sobre la configuración
+Desventajas:
+- puede consumir mucho tiempo y ser difícil de configurar
+- consume recursos de la máquina local, lo cual puede afectar al rendimiento
+- las diferencias de configuración entre la máquina local y el entorno de producción puede causar errores
+Ejemplo: Microsoft Visual Studio, Eclipse, IntelliJ IDEA, PyCharm
+
+* IDEs de la nube: estos IDEs permiten a los desarrolladores escribir, editar y compilar código directamente en el navegador sin descargar software en la máquina local
+Ventajas: 
+- entorno de desarrollo estandarizado a lo largo del equipo
+- independencia de la plataforma (trabajar desde cualquier dispositivo con un navegador)
+- mejor rendimiento porque los recursos de cómputo vienen de la nube
+- no hace falta instalación
+Desventajas:
+- requiere una conexión a internet estable
+- puede tener limitaciones de rendimiento
+- inquietudes de seguridad potenciales con código sensible
+Ejemplos: AWS Cloud9, Replit, CodeSandbox
+
+* IDEs de inteligencia artificial: estos IDEs son entornos especializados que integran machine learning (ML) y herramientas de desarrollo de inteligencia artificial. Proveen soporte para preprocesamiento de datos, entrenamiento de modelos, evaluación y despliegue en una sola interfaz. Muchos vienen con soporte integrado para frameworks populares como TensorFlow, PyTorch y Scikit-learn
+Ventajas:
+- hecho a medida para flujos de trabajo AI/ML con bibliotecas y frameworks preconfigurados
+- generalmente incluyen herramientas de visualización para datasets y rendimiento de modelo
+- rastreo coordinado y versionado de modelo
+- algunos se integran con GPUs y entornos de entrenamiento basados en la nube
+Desventajas:
+- pueden requerir uso intensivo de recursos debido a la naturaleza de las cargas de trabajo de IA
+- curva de aprendizaje más empinada comparado con IDEs de propósito general
+- puede requerir costos adicionales de nube para entrenamiento de modelo a gran escala
+Ejemplos: Cursor, Windsurf, Kiro
+
+* IDEs de desarrollo móvil: estos son diseñados específicamente para la creación de aplicaciones móviles, con funciones como soporte para emuladores y bibliotecas específicas de móviles
+Ejemplo: Android Studio y Xcode
+
+* IDEs específicos de bases de datos: Estos entornos especiales se centran en el desarrollo de bases de datos, ofreciendo funciones como constructores de consultas y herramientas de análisis de bases de datos
+Ejemplos: MySQL Workbench, Oracle SQL developer y pgAdmin	 
