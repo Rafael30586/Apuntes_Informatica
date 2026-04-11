@@ -26,4 +26,12 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250506112724169099/function
 1. Fetch: el CPU toma la instrucción. Eso significa que números binarios son pasados de la RAM al CPU
 2. Decode: cuando la instrucción entró al CPU, necesita decodificar las instrucciones. Con la ayuda de la ALU, el proceso de decodificación empieza
 3. Execute: después del paso de decodificar las instrucciones están listas para ejecutarse
-4. Store: después del paso de la ejecución las instrucciones están listas para almacenarse en memoria  
+4. Store: después del paso de la ejecución las instrucciones están listas para almacenarse en memoria
+
+--------------------------
+Tipos de CPU
+
+Los CPUs vienen en diferentes tipos, dependiendo de cuantos núcleos posean. Un núcleo es como un mini-CPU dentro del CPU principal, y más núcleos significan que los CPU pueden hacer más tareas a la vez. Estos son los tipos principales:
+* Single-Core CPU: el tipo más viejo, usado en los 1970s. Solo puede encargarse de una tarea a la vez, por lo que es lento para aplicaciones modernas como  juegos o navegadores web 
+* Dual-Core CPU: tiene dos núcleos, por lo que puede encargarse de dos tareas a la vez. Es más rápido y mejor para multitareas, como escuchar música mientras se hace tarea
+* Quad-Core CPU: tiene 4 núcleos, haciéndolo muy bueno para tareas pesadas como edición de video o jugar juegos modernos. Es muy rápido y común en computadoras de hoy en día 
