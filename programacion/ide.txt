@@ -1,4 +1,49 @@
+https://www.codecademy.com/article/what-is-ide
+
 ¿Qué es un IDE?
 
 Un IDE o entorno de desarrollo integrado permite a los programadores consolidar los diferentes aspectos de escribir un programa de computadora. Un IDE combina herramientas de desarrollo esenciales en una interfaz gráfica de usuario, coordinando el flujo de trabajo de programación y mejorando la productividad.
-Los IDEs incrementan la productividad de los programadores al combinar actividades comunes de escribir software en una sola aplicación: editando código fuente, construyendo ejecutables y haciendo debugging. En lugar de hacer malabarismos con múltiples herramientas desconectadas, los desarrolladores pueden trabajar en un entorno cohesivo que se encarga de todos los aspectos de la creación de software. 
+Los IDEs incrementan la productividad de los programadores al combinar actividades comunes de escribir software en una sola aplicación: editando código fuente, construyendo ejecutables y haciendo debugging. En lugar de hacer malabarismos con múltiples herramientas desconectadas, los desarrolladores pueden trabajar en un entorno cohesivo que se encarga de todos los aspectos de la creación de software.
+
+----------------------------
+Características clave de un IDE
+
+Los IDEs modernos ofrecen un conjunto de funciones que trabajan juntas para mejorar la experiencia de desarrollo. Acá se presentan las capacidades nucleares que encontrarás en en la mayoría de los IDEs:
+
+* Editor de código inteligente
+Los IDEs facilitan el proceso de escribir código con funciones como resaltado de sintaxis y autocompletado
+  - Resaltado de sintaxis: Un IDe que sabe la sintaxis de tu lenguaje puede proveer señales visuales. Palabras clave, como class en java son resaltadas con diferentes colores
+  - Autocompletado: Cuando un IDE conoce tu lenguaje de programación, puede anticipar que vas a escribir después
+  - Análisis de código: Los IDEs modernos van más allá de la edición de texto básica ofreciendo análisis de código en tiempo real. Estas herramientas pueden identificar problemas potenciales antes de que ejecutes tu código:
+    # Violaciones de estilo que hagan que tu código sea más difícil de mantener
+    # Posibles bugs o patrones ineficientes
+    # Vulnerabilidades de seguridad
+    # Variables o imports sin usar
+Esta inmediata respuesta ayuda a los desarrolladores a escribir código más eficiente y limpio desde el principio
+
+* Automatización de construcción (build)
+Muchos lenguajes de programación requieren compilación antes de que los programas puedan ejecutarse. Por ejemplo, java es un lenguaje compilado. Antes de que los programas se ejecuten, el código fuente del archivo .java debe ser transformado en un ejecutable .class por el compilador. Una vez compilado, el programa puede ser ejecutado desde la terminal.
+Este proceso de compilación es necesario para todo programa. Los IDEs proveen construcción automatizada para lenguajes, por lo que el acto de compilar y ejecutar código es abstraído
+
+* Gestión de proyecto
+Los IDEs típicamente incluyen capacidades de gestión de proyecto robustas
+  - Organización de archivos y recursos en proyectos
+  - Gestión de dependencias y bibliotecas
+  - Configurando "build settings"
+  - Integración con controladores de versiones como git 
+
+* Herramientas potentes de debugging
+Cuando un programa no corre correctamente, el IDE provee herramientas de debugging para permitir a los programadores examinar diferentes variables e inspeccionar su código en un modo deliberado.
+Los IDEs también proveen pistas mientras escribimos código para prevenir errores antes de la compilación
+
+Funciones avanzadas de debugging
+Los IDEs modernos tienen capacidades de debugging sofisticadas:
+  - Establecimiento de puntos de interrupción para pausar ejecución en puntos específicos
+  - Atravesar el código línea por línea 
+  - Inspección de valores de variables en tiempo real
+  - Monitoreo de uso de memoria y rendimiento
+  - Visualización del "call stack" para entender el flujo del programa 	 
+
+________________________________________________
+Continuar resumiendo con el enlace de más arriba
+________________________________________________  
