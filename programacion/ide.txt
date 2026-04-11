@@ -1,0 +1,4 @@
+¿Qué es un IDE?
+
+Un IDE o entorno de desarrollo integrado permite a los programadores consolidar los diferentes aspectos de escribir un programa de computadora. Un IDE combina herramientas de desarrollo esenciales en una interfaz gráfica de usuario, coordinando el flujo de trabajo de programación y mejorando la productividad.
+Los IDEs incrementan la productividad de los programadores al combinar actividades comunes de escribir software en una sola aplicación: editando código fuente, construyendo ejecutables y haciendo debugging. En lugar de hacer malabarismos con múltiples herramientas desconectadas, los desarrolladores pueden trabajar en un entorno cohesivo que se encarga de todos los aspectos de la creación de software. 
