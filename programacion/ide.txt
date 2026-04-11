@@ -42,7 +42,36 @@ Los IDEs modernos tienen capacidades de debugging sofisticadas:
   - Atravesar el código línea por línea 
   - Inspección de valores de variables en tiempo real
   - Monitoreo de uso de memoria y rendimiento
-  - Visualización del "call stack" para entender el flujo del programa 	 
+  - Visualización del "call stack" para entender el flujo del programa 
+
+------------------------------
+Beneficio de usar un IDE
+
+Aunque los editores de texto pueden ser usados para programar, los IDEs ofrecen significativas ventajas que los hacen herramientas esenciales para desarrolladores profesionales:
+
+* Incrementan la productividad
+  - las herramientas integradas significan menos "context switching" entre aplicaciones
+  - la automatización de tareas repetitivas ahorra tiempo
+  - la generación de código para patrones comunes reduce escritura
+  - documentación integrada y referencias rápidas
+
+* Mejora de la calidad del código
+  - detección de errores en tiempo real
+  - herramientas de refactorización que hacen que la mejora del código sea más fácil
+  - el formateo consistente refuerza las pautas de estilo
+  - el análisis del código sugiere optimizaciones
+
+* Curva de aprendizaje más fácil
+  - ayuda contextual y documentación
+  - plantillas para estructuras comunes
+  - indicadores visuales para sintaxis y semánticas
+  - flujo de trabajo guiado para principiantes	
+
+* Colaboración en equipo
+  - integración con sistemas de control de versiones
+  - entorno de desarrollo consistente a lo largo del equipo
+  - configuraciones de proyecto compartidas
+  - herramientas de revisación de código 	 
 
 ________________________________________________
 Continuar resumiendo con el enlace de más arriba
