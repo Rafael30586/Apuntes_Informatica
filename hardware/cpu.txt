@@ -4,3 +4,14 @@ El CPU es usualmente colocado en una ranura especial llamada socket en la placa 
 * ejecutar aplicaciones o juegos
 * operaciones de entrada y salida: comunicación con periféricos
 * almacenar y extraer información durante tareas
+
+----------------------------
+Componentes principales de un CPU
+
+Los componentes de un CPU incluyen la ALU (unidad lógica y aritmética), CU (unidad de control), registros, cache y reloj
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250719153951741828/CPU-Components-.webp
+
+* Unidad de control: gestiona el CPU al enviar señales como clock, hold y reset a sus partes. Asegura que todos los componentes trabajen juntos para completar tareas. Por ejemplo, sincroniza movimiento de datos desde la memoria caché hasta la ALU
+* Unidad lógica y aritmética: Se encarga de tareas aritméticas (como sumas, restas, multiplicaciones y divisiones) y tareas lógicas (como comparaciones AND y OR)
+* Unidad de memoria: almacena datos e instrucciones. Los CPUs más viejos usaban registros, pero los modernos también tienen memoria caché rápida. El CPU trae datos de RAM, ROM o discos duros y los almacena en registros o caché durante tareas  
