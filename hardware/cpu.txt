@@ -14,4 +14,16 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250719153951741828/CPU-Comp
 
 * Unidad de control: gestiona el CPU al enviar señales como clock, hold y reset a sus partes. Asegura que todos los componentes trabajen juntos para completar tareas. Por ejemplo, sincroniza movimiento de datos desde la memoria caché hasta la ALU
 * Unidad lógica y aritmética: Se encarga de tareas aritméticas (como sumas, restas, multiplicaciones y divisiones) y tareas lógicas (como comparaciones AND y OR)
-* Unidad de memoria: almacena datos e instrucciones. Los CPUs más viejos usaban registros, pero los modernos también tienen memoria caché rápida. El CPU trae datos de RAM, ROM o discos duros y los almacena en registros o caché durante tareas  
+* Unidad de memoria: almacena datos e instrucciones. Los CPUs más viejos usaban registros, pero los modernos también tienen memoria caché rápida. El CPU trae datos de RAM, ROM o discos duros y los almacena en registros o caché durante tareas
+
+----------------------------
+Funciones del CPU
+
+El principal trabajo del CPU es procesar instrucciones de programas. Hace esto a través del proceso llamado ciclo Fecth-Decode-Execute-Store
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250506112724169099/functions_of_cpu.webp
+
+1. Fetch: el CPU toma la instrucción. Eso significa que números binarios son pasados de la RAM al CPU
+2. Decode: cuando la instrucción entró al CPU, necesita decodificar las instrucciones. Con la ayuda de la ALU, el proceso de decodificación empieza
+3. Execute: después del paso de decodificar las instrucciones están listas para ejecutarse
+4. Store: después del paso de la ejecución las instrucciones están listas para almacenarse en memoria  
