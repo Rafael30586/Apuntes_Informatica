@@ -1,0 +1,13 @@
+https://www.intel.com/content/www/us/en/gaming/resources/cpu-clock-speed.html
+
+El rendimiento de tu CPU tiene un gran impacto en la velocidad a la cual los programas pueden cargar y que tan fluidos se ejecutan. De todas formas, hay distintas maneras de medir el rendimiento de un procesador. La velocidad de reloj es una de las más significativas.
+
+¿Qué es la velocidad de reloj?
+
+En general, una velocidad más alta de reloj habla de un CPU más rápido. Aún así, muchos otros factores influyen también.
+Tu CPU procesa muchas instrucciones de diferentes programas a cada segundo. Algunas de estas instrucciones involucran simple aritmética, mientras otras son más complicadas. La velocidad del reloj mide el número de ciclos que tu CPU puede ejecutar por segundo, medido en GHz (gigahertz).
+En este caso, un "ciclo" es la unidad básica que mide la velocidad del CPU. Durante cada ciclo, miles de millones de transistores dentro del procesador se abren y se cierran. Así es como el CPU ejecuta los cálculos contenidos en las instrucciones que recibe.
+Un CPU con una velocidad de reloj de 3.2 GHz ejecuta 3.2 miles de millones de ciclos por segundo (CPUs más viejos tiene una velocidad medida en MHz, o millones de ciclos por segundo).
+A veces múltiples instrucciones se completan en un solo ciclo de reloj; en otros casos, una instrucción podría ser manejada por múltiples ciclos de reloj. Ya que diferentes diseños de CPU manejan instrucciones de manera diferente, es mejor comparar velocidades de reloj dentro de la misma marca y generación.
+Por ejemplo, un CPU con mayor velocidad de reloj de 5 años atrás, puede ser superado por un nuevo CPU con menor velocidad de reloj,  porque la arquitectura más nueva se encarga de las instrucciones de manera más eficiente.
+Características recientes como Intel Thread Director permite que los procesadores de Intel de última generación distribuyan inteligentemente las cargas de trabajo entre múltiples núcleos. Por esto es que muchos procesadores modernos superan a otros más viejos en pruebas aunque tengan la misma velocidad de reloj	

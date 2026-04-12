@@ -1,3 +1,5 @@
 clock del CPU
 unidad de memoria del CPU: register y caché
 ALU
+transitor
+circuito integrado o integrated circuit
