@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/computer-science-fundamentals/central-processing-unit-cpu/
+
 La unidad central de procesamiento es como el cerebro de la computadora. Es la parte que hace la mayor parte del acto de pensar, calcular y toma de decisiones para hacer que la computadora funcione. Ya sea que estés jugando a un juego, escribiendo una tarea para la escuela o mirando un video, el CPU está ocupado encargándose de todas las instrucciones para tener el trabajo hecho.
 El CPU es usualmente colocado en una ranura especial llamada socket en la placa madre de la computadora, que es como el circuito principal que conecta todas las partes de la computadora. El CPU maneja tareas como:
 * hacer cálculos matemáticos como sumar o multiplicar números
@@ -49,3 +51,11 @@ Los CPUs modernos están diseñados para ser super eficientes. Las siguientes so
 * Relojes más rápidos: la velocidad del reloj (medida en GHz, como 3.5 GHz) determina cuantas instrucciones puede manejar el CPU por segundo
 * Caché más grande: más caché significa que el CPU puede almacenar más datos muy cerca, reduciendo tiempos de espera
 * Pipelining: esto permite al CPU comenzar a trabajar en la próxima instrucción antes de finalizar la actual, como una línea de fábrica 
+
+------------------------
+Desventajas de los CPUs
+
+* Calor: los CPUs se calientan cuando trabajan duro, por lo que las computadoras necesitan ventiladores o sistemas para enfriar para estar a salvo
+* Uso de energía: los CPUs potentes necesitan un montón de electricidad, lo cual puede subir las facturas
+* Costo: los CPUs de alto rendimiento, como el Intel core I9, puede ser caro
+* No son perfectos para todas las tareas: para tareas como gráficos y edición de video, chips especializados como GPUs son mejores que los CPUs  
