@@ -1,0 +1,6 @@
+https://en.wikipedia.org/wiki/Computer_program
+
+Un programa de computadora es una secuencia o conjunto de instrucciones escrito en un lenguaje de programación para que una computadora lo ejecute. Es un componente del software, que además incluye documentación y otros componentes intangibles.
+Un programa de computadora en su forma legible para humanos se llama código fuente. El código fuente necesita otro programa de computadora para ejecutar porque las computadoras puede ejecutar solamente sus instrucciones nativas de máquina. Así, el código fuente deberá ser traducido a instrucciones de máquina usando un compilador escrito para el lenguaje. El archivo resultante se llama ejecutable. Alternativamente, el código fuente podría ejecutarse con un intérprete escrito para el lenguaje.
+Si el ejecutable es solicitado para ejecución, entonces el sistema operativo lo carga en memoria y comienza el proceso. El CPU cambiará a este proceso para poder traer, decodificar y luego ejecutar cada instrucción.
+Si el código fuente es solicitado para ejecución, entonces el sistema operativo carga al correspondiente intérprete en memoria y comienza el proceso. Luego el intérprete carga el código fuente en memoria para traducir y ejecutar cada declaración. Ejecutar el código fuente es más lento que ejecutar un ejecutable

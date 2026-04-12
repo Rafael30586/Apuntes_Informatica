@@ -1,1 +1,5 @@
 CMS
+Scrum
+CI/CD
+sistemas statefull y stateless
+virtual memory vs phisical memory
