@@ -1,0 +1,10 @@
+https://www.techtarget.com/whatis/definition/clock-speed
+
+¿Qué es la velocidad de reloj?
+
+La velocidad de reloj es el número de veces por segundo en que un circuito opera y está generalmente asociado al CPU. Se mide en Hertz, o ciclos por segundo. Mientras más alta la velocidad de reloj, mayor poder de procesamiento (mientras los otros aspectos estén igualados). 
+Circuitos complejos requieren "timing" cuidadoso para operar apropiadamente. El reloj es un pulso regular que mantiene a todo el circuito trabajando de manera sincrónica.
+El reloj es un pulso eléctrico regular apagado-encendido. Cada vez que un pulso va de encendido a apagado y después vuelve a encendido otra vez es un ciclo. Cada ciclo, el circuito puede llevar a cabo una operación.
+Aunque la velocidad de reloj es comúnmente asociada al CPU, otros componentes que usan circuitos integrados (ICs) también tienen un reloj para sincronizar operaciones.
+Hay diferentes maneras en que los fabricantes de circuitos pueden generar pulsos de reloj. Históricamente, cristales de cuarzo oscilantes se han usado para generar pulsos de reloj precisos, y otro circuito podría entonces multiplicar esa frecuencia a la velocidad necesitada. En CPUs modernos de alta velocidad, un pulso de referencia es generado por un circuito oscilante. Esto puede ser usado para establecer velocidad de bus del lado frontal. Un multiplicador adicional es luego aplicado  al reloj del bus para generar el reloj nuclear de CPU.
+Hay muchas variables además de la velocidad del reloj que pueden afectar el rendimiento de un CPU. Por lo tanto, la velocidad de reloj puede ser comparada directamente solo en la misma generación y familia de procesadores. 	
