@@ -1,0 +1,7 @@
+https://www.techtarget.com/whatis/definition/daemon
+
+¿Qué es un Daemon?
+
+En computación, un Daemon es un programa que corre continuamente como un proceso en segundo plano y despierta para encargarse de solicitudes de servicio periódicas, lo cual viene generalmente de procesos remotos. El programa Daemon es alertado a la solicitud del sistema operativo, y responde a la solicitud o envía la solicitud a otro programa o proceso igual de apropiado.
+Comunes procesos Daemon incluyen colas de impresión, manejadores de emails y otros programas que gestionan tareas administrativas. Muchos programas de utilidad de UNIX y Linux corren como daemons. Por ejemplo, en Linux, el Daemon network time protocol (NTP) se usa para medir deferencias de horario entre el reloj de la computadora en el que está con respecto a las otras computadoras de la red. Un Daemon de tiempo corre en cada una de las computadoras anfitrión, con una designada como la principal y las otras como secundarias. Los daemons secundarios reinician el horario de red en su computadora anfitrión al enviar un solicitud al daemon de tiempo principal para encontrar el horario de red correcto.
+Un Daemon juega el rol de servidor en un modelo de cliente-servidor.
