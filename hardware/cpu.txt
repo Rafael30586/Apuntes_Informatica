@@ -58,4 +58,17 @@ Desventajas de los CPUs
 * Calor: los CPUs se calientan cuando trabajan duro, por lo que las computadoras necesitan ventiladores o sistemas para enfriar para estar a salvo
 * Uso de energía: los CPUs potentes necesitan un montón de electricidad, lo cual puede subir las facturas
 * Costo: los CPUs de alto rendimiento, como el Intel core I9, puede ser caro
-* No son perfectos para todas las tareas: para tareas como gráficos y edición de video, chips especializados como GPUs son mejores que los CPUs  
+* No son perfectos para todas las tareas: para tareas como gráficos y edición de video, chips especializados como GPUs son mejores que los CPUs
+
+-----------------------
+Historia del CPU
+
+* 1823: un científico llamado Baron Jons Berzelius descubrió el silicio, un material que todavía se usa para hacer CPUs
+* 1947: los científicos John Bardeen, Walter Battain y William Shockley inventaron el transistor, un pequeño interruptor que ayudó a hacer posibles los CPUs modernos
+* 1958: los ingenieros Jack Kilby y Rober Noyce crearon el circuito integrado, que combinaba muchos transistores en un solo chip
+* 1971: Intel lanzó el Intel 4004, el primer microprocesador (un CPU en un solo chip), empezando la época de las computadoras personales
+* 1979: Motorola introdujo el Motorola 68000, un CPU poderoso usado en las primeras computadoras y consolas de video juegos
+* 1999: Intel lanzó los procesadores Celeron, haciendo a las computadoras más rápidas y accesibles
+* 2005: AMD introdujo el primer procesador dual-core, permitiendo que los CPUs manejen varias tareas a la vez
+* 2009: Intel lanzó el Core I5, un procesador de 4 núcleos que hizo a las computadoras más rápidas
+* 2017-2018: Intel introdujo el Core I9, uno de los CPUs más poderoso para laptops y computadoras de escritorio 
