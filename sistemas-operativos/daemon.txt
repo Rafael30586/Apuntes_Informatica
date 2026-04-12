@@ -12,4 +12,15 @@ Un Daemon juega el rol de servidor en un modelo de cliente-servidor.
 Uno de los más obvios ejemplos de Daemon es el Daemon de protocolo de transferencia de hipertexto (HTTPd), que corre en todo servidor web, continuamente esperando en modo inactivo hasta que las solicitudes vengan de clientes web y sus usuarios. Versiones tempranas de Daemon HTTP engendrarían un nuevo proceso para encargarse de cada solicitud. El nuevo proceso, una réplica del Daemon, traería el contenido solicitado y lo devolvería al cliente solicitante. Entonces, el nuevo proceso muere.
 Al engendrar un nuevo proceso, el proceso original podría volver a estar en modo inactivo para esperar otras solicitudes. Este enfoque fue usado para evitar que el proceso original esté muy ocupado por las nuevas solicitudes, ya que el Daemon encargándose de todas las solicitudes por sí mismo haría que el sistema esté más vulnerable contra hackers. Ataques denial-of-service están , generalmente, basados en la estrategia de mantener al Daemon muy ocupado para manejar solicitudes entrantes.
 Daemons HTTP más modernos, como Apache, se encarga de solicitudes usando hilos en lugar de engendrar nuevos procesos. Los hilos permiten que diferentes partes del mismo proceso corran en paralelo. La parte principal del Daemon puede esperar por nuevas solicitudes, mientras otros hilos se encargan de solicitudes más viejas. Los hilos requieren menos sobrecarga que engendrar un nuevo proceso, el cual toma tiempo para conseguirse, y el nuevo proceso necesita memoria para correr.
-Un tercer enfoque es ejemplificado por el Daemon de Nginx HTTP, que está basado en una arquitectura conducida por eventos operando en un solo hilo. Las solicitudes delegadas a procesos trabajadores (worker proccesses), que constantemente corren en segundo plano. El administrador determina cuantos procesos trabajadores crear.   
+Un tercer enfoque es ejemplificado por el Daemon de Nginx HTTP, que está basado en una arquitectura conducida por eventos operando en un solo hilo. Las solicitudes delegadas a procesos trabajadores (worker proccesses), que constantemente corren en segundo plano. El administrador determina cuantos procesos trabajadores crear.
+
+-----------------------------
+¿Qué tipos de sistemas operativos requieren los daemons? 
+
+Ya que los daemons requieren servicios especiales del sistema operativo, se comportan de una manera un poco diferente entre un sistema operativo y otro. Los primeros daemons estuvieron corriendo en UNIX y fueron diseñados de acuerdo a las características de UNIX.
+Los daemons son ejecutados en la línea de comandos de UNIX o en un archivo de arranque; estos archivos contienen un script que es ejecutado cuando el sistema es booteado o en algún otro evento, como ingreso de usuario o cuando un nuevo script de Shell es engendrado. Corren en segundo plano y esperan por una señal del SO para despertar in ponerse en marcha. 
+Los daemons solo pueden correr en SOs multitarea. Fueron implementados en Microsoft Windows, empezando con la versión NT, y se lo conoce como servicios de Windows en lugar de daemons
+
+____________________________________________
+Continuar resumiendo lo del enlace de arriba
+____________________________________________ 
