@@ -59,6 +59,29 @@ Componentes nucleares de JEE
 
 10 Application client: Un application client en java EE es un programa java autónomo que corre en una computadora de usuario y se conecta al servidor java EE para usar servicios empresariales como EJB, JPA, JMS. Corre separado de las aplicaciones web. Puede extraer o enviar datos a las aplicaciones principales
 
+--------------------------
+Aplicaciones de JEE
+
+* Aplicaciones web
+  - se usa para sitios web dinámicos, portales y paneles
+  - Ejemplos: sitios e-commerce como Amazon, construidos usando tecnología de java EE como servlets, JSP y JSF
+
+* Aplicaciones empresariales
+  - aplicaciones de negocios a larga escala usadas por organizaciones para gestionar operaciones
+  - Ejemplos: sistemas ERP (Enterprise resource palnning) y CRM (customer relationship management)
+
+* Aplicaciones de banco y financieras
+  - aplicaciones seguras para banca en línea, comercio de stock y transacciones financieras
+  - Ejemplos: portales de bancos, sistemas de procesamiento de tarjeta de crédito como Visa, MasterCard, etc
+
+* Aplicaciones basadas en la nube
+  - java EE soporta arquitectura basada en microservicios y despliegues en la nube usando Docker
+  - Ejemplos: plataformas SaaS como Salesforce
+
+* Sistemas de salud
+  - java es usado para gestión de hospitales, registros médicos electrónicos y telemedicina
+  - Ejemplos: sistemas de información de salud usados por hospitales
+
 ____________________________________________
 Continuar resumiendo lo del enlace de arriba
 ____________________________________________

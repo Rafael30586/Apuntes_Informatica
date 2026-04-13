@@ -4,3 +4,4 @@ https://www.campusmvp.es/recursos/post/paquetes-en-java-que-son-para-que-se-util
 https://www.campusmvp.es/recursos/post/java-que-es-el-classpath-y-como-lo-ajusto.aspx?srsltid=AfmBOoo9bb08OPgZQKpkSjrlscs-0MOqcUKg_Va4XkM8zEN3z1hmuNET
 https://www.javamadesoeasy.com/2017/04/solve-error-source-folder-is-not-java.html
 https://stackoverflow.com/questions/79915064/the-format-of-the-maven-plugins-in-the-pom-xml/79922307#79922307
+https://en.wikipedia.org/wiki/Eclipse_(software)
