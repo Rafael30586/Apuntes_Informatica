@@ -1500,7 +1500,7 @@ Organizaciones y cuentas
 
 AWS Organizations permite la creación de nuevas cuentas de AWS. Gestionar centralmente facturación, control de acceso, cumplimiento, seguridad y recursos compartidos a lo largo de tus cuentas de AWS
 
-Usuario de cuenta Root (Root Account User) es una identidad que tiene acceso completo a todos los servicios de AWS en un cuenta. Cada cuenta  tiene un Root Account User
+Usuario de cuenta Root (Root Account User) es una identidad que tiene acceso completo a todos los servicios de AWS en una cuenta. Cada cuenta tiene un Root Account User
 
 Se puede tener una cuenta maestra que tendrá un Root Account User. Las otras cuentas asociadas a la cuenta maestra también tendrán un Root Account User	
 
@@ -1511,3 +1511,17 @@ Service Control Policies dan control central sobre los permisos para todas las c
 AWS Organizations debe estar activado, una vez lo está no puede desactivarse. Podés crear tantas cuentas de AWS como quieras, una cuenta va a ser la cuenta maestra (master/root account)
 
 Una cuenta AWS no es lo mismo que una cuenta de usuario 
+
+------------------------------
+AWS control tower
+
+AWS control tower ayuda a las empresas a configurar rápidamente AWS multi-cuentas
+Te provee con un entorno base para comenzar con una arquitectura multi-cuentas
+
+Landing Zone: es un entorno de base que sigue las mejores prácticas para comenzar lanzando cargas de trabajo listas para producción. Tendrá AWS SSO activado por defecto, logging centralizado para AWS CloudTrail, auditoría de seguridad "cross-account"
+
+Account Factory: automatiza el aprovisionamiento de nuevas cuentas en tu organización; estandariza el aprovisionamiento de nuevas cuentas con configuraciones de cuenta pre-aprobadas; podés configurar tu account factory con configuración de red pre-aprobada y selección de regiones; habilitar autoservicio para tus constructores y provisión de nuevas cuentas usando el catálogo de servicio de AWS
+
+Guardrails: reglas de gobernanza pre-empaquetadas para seguridad, operaciones, y cumplimiento que los clientes pueden seleccionar y aplicar "enterprise-wide" o a grupos específicos de cuentas
+
+AWS Control Tower es el reemplazo de AWS Landing Zones	
