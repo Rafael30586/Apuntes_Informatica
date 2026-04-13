@@ -23,7 +23,7 @@ buffer
 critical section (relacionado a procesos, hilos, semáforos y mutex)
 data inconcistency
 local procedures y procedure calls
-stubs
+stubs en sistemas distribuidos
 Daemon proccess
 Big endian vs Little endian
 profundizar en datagram socket vs stream socket
