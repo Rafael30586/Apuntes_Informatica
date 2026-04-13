@@ -37,7 +37,7 @@ mongo
 
 docker <comando> --help --> muestra ayuda del comando que le indiquemos 
 
-docker exec --> sirve para ejecutar comandos en un contenedor en ejecución. Se le sule agregar las opciones -it, el nombre del contenedor y el intérprete de comandos que le corresponda (/bon/sh, /sin/bash, /bash , etc)
+docker exec --> sirve para ejecutar comandos en un contenedor en ejecución. Se le suele agregar las opciones -it, el nombre del contenedor y el intérprete de comandos que le corresponda (/bon/sh, /sin/bash, /bash , etc). Otra cosa que se puede hacer con este comando, por ejemplo, es hacer docker exec <contenedor> <comando> para ejecutar comandos de Linux en el contenedor sin la necesidad de hacer -it
 
 docker network ls --> lista todas las redes
 
@@ -52,6 +52,10 @@ docker create -e <variable>=<valor> <imagen> --> crea un contenedor asignándole
 docker tag <imagen> <nuevo-nombre> --> le cambia de nombre a una imagen que indiquemos. Lo que en realidad hace, aparentemente, es realizar una copia de la imagen con el nuevo nombre que indicamos
 
 docker build -t <nombre>:<versión> <ruta> --> crea una imagen a partir del dockerfile presente en le ruta que indiquemos con el nombre que indiquemos y su versión. Si estamos posicionados en el mismo directorio donde está el dockerfile, el argumento de la ruta sería un punto
+
+docker search <caracteres> --> sirve para listar las imágenes que se pueden descargar relacionada a los caracteres suministrados
+
+docker cp <archivo> <contenedor>:<ruta> --> copia un archivo que indiquemos en el directorio del contenedor en ejecución que indiquemos
 
 docker compose up --> construye los contendores que están en el archivo docker-compose.yml. Debemos estar posicionados en el directorio donde está dicho archivo. Con ctrl + c detenemos todos los servicios 
 
