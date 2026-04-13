@@ -1524,4 +1524,22 @@ Account Factory: automatiza el aprovisionamiento de nuevas cuentas en tu organiz
 
 Guardrails: reglas de gobernanza pre-empaquetadas para seguridad, operaciones, y cumplimiento que los clientes pueden seleccionar y aplicar "enterprise-wide" o a grupos específicos de cuentas
 
-AWS Control Tower es el reemplazo de AWS Landing Zones	
+AWS Control Tower es el reemplazo de AWS Landing Zones
+
+----------------------------
+AWS Config
+
+¿Qués es change management?
+Change management en el contexto de la infraestructura de la nube es cuando tenemos un proceso formal a:
+* monitorear cambios
+* forzar cambios
+* remediar cambios
+
+¿Qué es Compliance-as-code (CaC)?
+Es cuando utilizamos programación para automatizar monitoreo, reforzando y remediando cambios para permanecer complacientes con programas de cumplimiento o configuración esperada
+
+¿Qués AWS Config?
+es un framework CaC que nos permite gestionar cambios en tus cuentas de AWS en una base por región
+
+¿Cuándo deberías usar AWS Config?
+Cuando quiero que el recurso permanezca configurado de una manera específica para cumplimiento; cuando quiero rastrear cambios de configuración a recursos; cuando quiero una lista de todos los recursos dentro de una región; cuando quiero usar análisis de vulnerabilidades de seguridad potenciales, necesitás información de historial detallada 	
