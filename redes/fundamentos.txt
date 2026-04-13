@@ -140,4 +140,10 @@ Detección de errores
 
 Corrección de errores
 * Hamming code
-		
+
+-----------------------------
+Lógica para detección de errores
+
+En detección de errores hacemos "block coding". En block coding dividimos un mensaje en bloques, cada uno de estos bloques de tamaño k bits. En cada bloque añadimos r bits redundantes. Cada uno de los bloques de k bits es un "data Word". El data Word más los r bits redundantes es un "code word". La longitud del code Word es k + r. Los code words son transmitidos por el emisor. Por ejemplo, si dividimos un mensaje de 8 bits en bloques de 2 bits (k = 2), obtendríamos 4 data words; si añadimos un bit redundante a cada data Word entonces r = 1 y code Word = k + r = 2 + 1 = 3
+Podríamos, por ejemplo, considerar los datawords 00 - 01 - 10 - 11 de un mensaje. Si los code word válidos son, por ejemplo 000 - 011 -  101 - 110 , entonces, los code Word 001 - 010 - 100 - 111 serían inválidos
+Los k bits determinan la cantidad de combinaciones en un data Word, que sería de 2^k . Cuando a k le sumamos r , obtenemos n , y tendríamos 2^n combinaciones. En el ejemplo anterior tenemos 4 (2^2) data words posibles y 8 (2^3) code words posibles	. Los code words inválidos son 2^n - 2^k , que serían para el ejemplo anterior 2^3 - 2^2 = 8 - 4 = 4 , el resto (4) son code words válidos		
