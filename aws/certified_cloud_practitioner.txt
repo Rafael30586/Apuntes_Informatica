@@ -1542,4 +1542,18 @@ Es cuando utilizamos programación para automatizar monitoreo, reforzando y reme
 es un framework CaC que nos permite gestionar cambios en tus cuentas de AWS en una base por región
 
 ¿Cuándo deberías usar AWS Config?
-Cuando quiero que el recurso permanezca configurado de una manera específica para cumplimiento; cuando quiero rastrear cambios de configuración a recursos; cuando quiero una lista de todos los recursos dentro de una región; cuando quiero usar análisis de vulnerabilidades de seguridad potenciales, necesitás información de historial detallada 	
+Cuando quiero que el recurso permanezca configurado de una manera específica para cumplimiento; cuando quiero rastrear cambios de configuración a recursos; cuando quiero una lista de todos los recursos dentro de una región; cuando quiero usar análisis de vulnerabilidades de seguridad potenciales, necesitás información de historial detallada
+
+-----------------------------
+AWS Quick Starts
+
+AWS Quick Starts son plantillas prediseñadas por AWS y AWS partners para ayudar a desplegar un amplio rango de stacks
+
+Reduce cientos de procedimientos manuales en solo unos pocos pasos
+
+Un Quick Start está compuesto de 3 partes:
+1. Una arquitectura de referencia para el despliegue
+2. Plantillas de AWS CloudFormation que automatizan y configuran el despliegue
+3. Una guía de despliegue explicando la arquitectura e implementación en detalle
+
+La mayoría de los despliegues de referencia de Quick Start te permiten girar una arquitectura completamente funcional en menos de 1 hora  	
