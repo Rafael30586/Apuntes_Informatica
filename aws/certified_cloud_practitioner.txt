@@ -1595,4 +1595,23 @@ Los grupos de recursos pueden mostrar detalles sobre un grupo de recursos basado
 * configuraciones
 En cualquier momento podés modificar las configuraciones de tus grupos de recursos para cambiar que recursos aparecen
 Los grupos de recursos aparecen en la cabecera global de consola y bajo el gestor de sistemas
+
+-------------------------
+Servicios céntricos de negocios (business centric services)
+
+Amazon Connect es un servicio de call center virtual. Podés crear flujos de trabajo para enrutar comunicantes. Podés grabar llamadas de teléfono. Gestionar una cola de comunicantes. Basado en el mismo sistema probado usado por los grupos de servicio al cliente de Amazon
+
+WorkSpaces es un servicio de escritorio virtual remoto. Es un servicio seguro gestionado para aprovisionar escritorios de Linux o Windows en unos pocos minutos lo cual escala rápidamente a miles de escritorios
+
+WorkDocs es un servicio de colaboración compartido. Un almacenamiento centralizado para compartir contenido y archivos. Es similar a Microsoft SharePoint. Se puede pensar en él como una carpeta compartida donde la compañía tiene posesión
+
+Chime es un servicio de video conferencia. Es similar a zoom o Skype. Podés compartir pantalla, tener múltiples personas en la llamada. Es seguro por defecto y te puede mostrar un calendario de tus próximas llamadas
+
+WorkMail es un servicio de correo electrónico, contactos, y calendario gestionado con soporte para aplicaciones de cliente de email de escritorio y móvil (IMAP). Similar a Gmail
+
+Pinpoint es un servicio de gestión de campaña de marketing. Pinpoint es para enviar emails localizados vía SMS, notificaciones push y mensajes de voz. Podés llevar a cabo prueba A/B o crear viajes o journeys (flujos de trabajo de complejos de respuesta de emails)
+
+Simple Email Service (SES) es un servicio de email transaccional. Podés integrar SES en tu aplicación para enviar emails. Podés crear plantilla común, rastrear tarifas abiertas, rastrear tu reputación
+
+QuickSight es un servicios de inteligencia de negocios. Conecta múltiples fuentes de datos y visualiza rápidamente datos en la forma de grafos con poco o nada de conocimiento sobre programación	
   	
