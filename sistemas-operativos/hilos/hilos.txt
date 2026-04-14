@@ -1,0 +1,12 @@
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4_Threads.html
+
+Hilos
+
+* Un hilo es una unidad básica de utilización del CPU, que consiste en un program counter, un stack y un conjunto de registers (y un ID de thrad)
+
+Motivación
+
+* Los hilos son muy útiles en la programación moderna cuando un proceso tiene que llevar a cabo múltiples tareas independientes entre sí
+*  Esto es particularmente cierto cuando una de las tareas podría bloquear, y se desea permitir a las otras tareas proceder sin bloqueos
+* Por ejemplo, en un procesador de texto, un hilo de en segundo plano puede revisar la gramática mientras un hilo en primer plano procesa input de usuario (pulsaciones de teclas), mientras un tercer hilo carga imágenes del disco duro y un cuarto hace backups periódicos automáticos del archivo siendo editado
+* Otro ejemplo es un servidor web: múltiples hilos permiten múltiples solicitudes a ser satisfechas simultáneamente, sin tener que tratar solicitudes de manera secuencial o bifurcar procesos separados para cada solicitud entrante (lo último es como este tipo de cosas se hacía antes de que el concepto de hilos existiera. Un daemon escucharía un puerto, bifurcar un hijo por cada solicitud entrante a ser procesada, y luego volver a escuchar un puerto)    
