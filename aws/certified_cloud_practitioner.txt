@@ -1556,4 +1556,31 @@ Un Quick Start está compuesto de 3 partes:
 2. Plantillas de AWS CloudFormation que automatizan y configuran el despliegue
 3. Una guía de despliegue explicando la arquitectura e implementación en detalle
 
-La mayoría de los despliegues de referencia de Quick Start te permiten girar una arquitectura completamente funcional en menos de 1 hora  	
+La mayoría de los despliegues de referencia de Quick Start te permiten girar una arquitectura completamente funcional en menos de 1 hora
+
+---------------------------------
+Etiquetado (tagging)
+
+Una etiqueta (tag) es un par clave-valor que podés asignarles a recursos de AWS
+
+Ejemplos de etiquetas:
+* Dept = Finance
+* Status = Approved
+* Team = Compliance
+* Environment = Production
+* Project = Enterprise
+* Location = Canada
+
+Las etiquetas te permiten organizar tus recursos de las siguientes maneras:
+* Gestión de recursos
+  - Cargas de trabajo específicas, entornos, por ejemplo, entornos de desarrollo
+* Gestión de costo y optimización
+  - Rastreo de costos, presupuestos, alertas
+* Gestión de operaciones
+  - Compromisos de negocios y operaciones SLA
+* Seguridad
+  - Clasificación de datos e impacto en la seguridad
+* Governanza y cumplimiento regulatorio
+* Automatización
+* Optimización de cargas de trabajo
+  	
