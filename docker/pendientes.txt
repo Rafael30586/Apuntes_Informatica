@@ -3,3 +3,5 @@ Probar de ejecutar diferentes comandos de Linux en un dockerfile usando RUN
 Averiguar como ejecutar varios comandos de Linux con usar RUN una sola vez en el dockerfile. Tener en cuenta que hay que separar a los comandos con barras "\" y signos "&"
 Comprobar si docker rmi <imagen> realmente borra una imagen
 Probar si existe docker compose start para ejecutar contenedores detenidos
+Averiguar que diferencia hay en ADD y COPY en el docekrfile
+Averiguar que diferencia hay en ENTRYPOINT y CMD en el dokcerfile

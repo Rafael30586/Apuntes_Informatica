@@ -57,6 +57,14 @@ docker search <caracteres> --> sirve para listar las imágenes que se pueden des
 
 docker cp <archivo> <contenedor>:<ruta> --> copia un archivo que indiquemos en el directorio del contenedor en ejecución que indiquemos
 
+docker volume ls --> muestra la lista de volúmenes
+
+docker volume prune --> borra volúmenes sin usar
+
+docker volume inspect <volume> --> muestra datos sobre el volume que indiquemos
+
+docker volume rm <volume> --> borra el volume que indiquemos 
+
 docker commit <contenedor> <nombre>:<version> --> crea una imagen a partir de un contenedor. Si se le agrega la opción --change='CMD ["cadena1","cadena2",...]' se puede agregar comandos para la que se ejecuten al momento de crear un contenedor de esa imagen 
 
 docker compose up --> construye los contendores que están en el archivo docker-compose.yml. Debemos estar posicionados en el directorio donde está dicho archivo. Con ctrl + c detenemos todos los servicios 
