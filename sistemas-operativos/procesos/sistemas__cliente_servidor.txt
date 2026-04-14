@@ -66,8 +66,3 @@ Pipes con nombre (named pipes)
 * Soportan full-duplex
 * Los procesos pueden residir en la misma o diferente máquina
 * Creadas y manipuladas usando CreateNamedPipe(), ConnectNamedPipe(), ReadFile() y WriteFile()
-
-
-____________________________________________
-Continuar resumiendo lo del enlace de arriba
-____________________________________________

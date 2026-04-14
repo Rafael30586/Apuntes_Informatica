@@ -27,9 +27,22 @@ Hay dos tipos de sockets: datagram socket y stream socket
 * Stream socket: En sistemas operativos de computadoras, un stream socket es un tipo de socket de comunicación entre procesos o socket de red que provee un flujo de datos "connection-oriented", secuencial y único sin límites de registro con mecanismos bien definidos para crear y destruir conexiones y para detectar errores. Es similar a un teléfono. Una conexión es establecida entre los teléfonos (dos extremos) y una conversación (transferencia de datos) ocurre
 
 ---------------------------------------------------------------------------------------------------------------------------
+Remote proceder calls
+---------------------------------------------------------------------------------------------------------------------------
 https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC
 
 Remote procedure calls (RPC)
 
 Un remote procedure call es un protocolo de comunicación de software que un programa usa para solicitar un servicio de otro programa localizado en una computadora y red diferente, sin tener que entender los detalles de la red. Específicamente, RPC se usa para llamar a otros procesos en sistemas remotos como si el proceso estuviera en el sistema local. Un procedure call es también conocido como un function call o subroutine call.
-RPC funciona como un protocolo de transporte de bajo nivel para llevar paquetes de datos entre programas comunicándose. Hace esto usando el modelo cliente-servidor. El programa que solicita es llamado cliente, mientras que el que provee el servicio se llama servidor. Como un local procedure call, un RPC es una operación sincrónica que requiere que el programa que solicita sea suspendido hasta que los resultados del remote proceder regresen. De todas formas, el uso de hilos que comparten el mismo address space permite que múltiples RPCs se lleven a cabo de manera concurrente  
+RPC funciona como un protocolo de transporte de bajo nivel para llevar paquetes de datos entre programas comunicándose. Hace esto usando el modelo cliente-servidor. El programa que solicita es llamado cliente, mientras que el que provee el servicio se llama servidor. Como un local procedure call, un RPC es una operación sincrónica que requiere que el programa que solicita sea suspendido hasta que los resultados del remote procedure regresen. De todas formas, el uso de hilos que comparten el mismo address space permite que múltiples RPCs se lleven a cabo de manera concurrente
+
+---------------------------------
+¿Qué hacen los RPCs?
+
+RPCs son comúnmente usados para construir e interactuar con sistemas distribuidos. RPC permite que un programa llame a una sub-rutina en una computadora diferente sin que esta sepa que es remoto. Aunque RPC actúa como un protocolo de transporte, es en realidad un procedimiento de comunicación entre procesos.
+Cuando una sentencia de programa o instrucción que usa el framework RPC se compila en un programa ejecutable, un stub viene incluido. Un stub es una pieza de código que se usa para convertir parámetros que son pasados entre un cliente y un servidor. El stub actúa como un representante del código del procedimiento remoto. Cuando el programa se ejecuta y la procedure call es emitida, el stub recibe la solicitud y la envía al programa runtime del cliente en la computadora local. La primera vez que el stub del cliente es invocado, contacta un servidor de nombres para determinar la dirección de transporte donde el servidor reside.
+El programa runtime del cliente sabe como ubicar (address) a la computadora remota y aplicación de servidor y envía el mensaje a través de la red que solicita el remote procedure. De manera similar, el servidor incluyen un programa runtime y stub que hace de interfaz con el propio remote procedure. Protocolos respuesta-solicitud son retoornados de la misma manera      
+
+_______________________________________________________
+Continuar resumiendo sobre RPCs con el enlace de arriba
+_______________________________________________________
