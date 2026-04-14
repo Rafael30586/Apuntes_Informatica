@@ -1583,4 +1583,16 @@ Las etiquetas te permiten organizar tus recursos de las siguientes maneras:
 * Governanza y cumplimiento regulatorio
 * Automatización
 * Optimización de cargas de trabajo
+
+--------------------------------
+Grupos de recursos
+
+Son colecciones de recursos que comparten una o más etiquetas
+Te ayuda a organizar y consolidar información basado en tu proyecto y el recurso que usás
+Los grupos de recursos pueden mostrar detalles sobre un grupo de recursos basado en:
+* métricas
+* alarmas
+* configuraciones
+En cualquier momento podés modificar las configuraciones de tus grupos de recursos para cambiar que recursos aparecen
+Los grupos de recursos aparecen en la cabecera global de consola y bajo el gestor de sistemas
   	
