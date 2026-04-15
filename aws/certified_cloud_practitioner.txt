@@ -1614,4 +1614,34 @@ Pinpoint es un servicio de gestión de campaña de marketing. Pinpoint es para e
 Simple Email Service (SES) es un servicio de email transaccional. Podés integrar SES en tu aplicación para enviar emails. Podés crear plantilla común, rastrear tarifas abiertas, rastrear tu reputación
 
 QuickSight es un servicios de inteligencia de negocios. Conecta múltiples fuentes de datos y visualiza rápidamente datos en la forma de grafos con poco o nada de conocimiento sobre programación	
-  	
+
+
+---------------------------------------------------------------------------------------------------------------------------
+Aprovisionamiento
+---------------------------------------------------------------------------------------------------------------------------
+
+Servicios de aprovisionamiento
+
+¿Qué es aprovisionamiento? 
+La asignación o creación de recursos y servicios a un cliente
+Los servicios de aprovisionamiento de AWS son responsables de establecer y luego gestionar esos servicios de AWS
+
+Elastic Beanstalk (EB) es un PaaS para desplegar fácilmente aplicaciones web. EB va a aprovisionar varios servicios de AWS, incluyendo EC2, S3, Simple Notification Service (SNS), CloudWatch, EC2 Auto Scaling Groups y Elastic Load Balancers. Es el equivalente a Heroku
+
+AWS OpsWorks es un servicio de gestión de configuración que también provee instancias gestionadas del software de configuración de código abierto y gestionado Chef y Puppet
+
+CloudFormation es un servicio de aprovisionamiento y modelado de infraestructura. Automatizá el aprovisionamiento de servicios de AWS escribiendo plantillas de CloudFormation en JSON o archivos YAML. Esto se conoce como infrastructure as code (IaC)
+
+AWS QuickStarts son paquetes pre-hechos que pueden lanzar y configurar tu cómputo, red, almacenamiento de AWS y otros servicios requeridos para desplegar una carga de trabajo en AWS
+
+AWS Marketplace es un catálogo digital de miles de listados de software de vendedores de software independientes que podés usar para encontrar, comprar, probar y desplegar software
+
+AWS Amplify es un framework móvil y de aplicación web que aprovisionará múltiples servicios de AWS como tu backend
+
+AWS App Runner es un servicio totalmente gestionado que hace fácil para los desarrolladores desplegar rápidamente aplicaciones y APIs web en contenedores, sin experiencia anterior en infraestructura requerida
+
+AWS Copilot es un CLI que permite a los clientes lanzar rápidamente y gestionar fácilmente aplicaciones en contenedores en AWS
+
+AWS CodeStar provee una interfaz de usuario unificada, permitiéndote que gestiones fácilmente tus actividades de desarrollo de software en un solo lugar. Fácilmente lanzá tipos comunes de stacks como, por ejemplo LAMP
+
+AWS Cloud Development Kit (CDK) es una herramienta infrastructure as code. Te permite usar tu lenguaje de programación favorito. Genera plantillas de CloudFormation como los medios para IaC 	
