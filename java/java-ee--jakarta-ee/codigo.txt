@@ -1,0 +1,11 @@
+Cuando creamos un servlet, este es una clase de java que hereda de HttpServlet 
+
+En un servlet podemos crear un método que tenga como parámetros un HttpServletRequest y HttpServletResponse. Estas son la solicitud y la respuesta que se le hacen al servlet respectivamente. 
+
+Del objeto HttpServletRequest podemos obtener valores que provienen de una página web, como un formular, con el método getParameter(). El valor obtenido es un String 
+
+Del objeto HttpServletResponse podemos obtener un objeto de clase PrintWriter gracias al método getWriter(). Este objeto permite que el servlet imprima en pantalla del navegador lo que nosotros queramos gracias al método println()
+
+Los servlets se pueden mapear a un endpoint gracias a la etiqueta servlet-mapping que podemos usar en el archivo web.xml. También podemos colocarle un nombre al servlet gracias a la etiqueta servlet
+
+En un servlet podemos usar los métodos doGet y doPost, que son para solicitudes get y post respectivamente. Amobs tienen los parámetros HttpServletRequest y HttpServletResponse. También tenemos el método service que acepta los mismos parámetros y también se puede usar para solicitudes
