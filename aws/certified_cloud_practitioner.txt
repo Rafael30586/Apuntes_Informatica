@@ -1644,4 +1644,24 @@ AWS Copilot es un CLI que permite a los clientes lanzar rápidamente y gestionar
 
 AWS CodeStar provee una interfaz de usuario unificada, permitiéndote que gestiones fácilmente tus actividades de desarrollo de software en un solo lugar. Fácilmente lanzá tipos comunes de stacks como, por ejemplo LAMP
 
-AWS Cloud Development Kit (CDK) es una herramienta infrastructure as code. Te permite usar tu lenguaje de programación favorito. Genera plantillas de CloudFormation como los medios para IaC 	
+AWS Cloud Development Kit (CDK) es una herramienta infrastructure as code. Te permite usar tu lenguaje de programación favorito. Genera plantillas de CloudFormation como los medios para IaC
+
+--------------------------
+AWS Elactic Beanstalk
+
+¿Qué es un a platform as a service?
+Un PaaS permite a los clientes desarrollar, correr y gestionar aplicaciones sin la complejidad de construir y mantener la infraestructura típicamente asociada con desarrollar y lanzar una aplicación
+
+Elastic Beanstalk es un PaaS para desarrollar aplicaciones web con poco o nada de conocimiento de la infraestructura subyacente para que puedas enfocarte en escribir el código de tu aplicación en lugar de configurar una tubería (pipeline) de despliegue automatizado y tareas devops 
+Elegís una plataforma, subís tu código y corre con poco conocimiento de infraestructura
+No se recomienda para aplicaciones de "producción" (AWS se refiere a empresas y compañías grandes)
+
+Elastic Beanstalk está potenciado por una configuración de plantillas de CloudFormation para vos:
+* Elastic Load Balancer
+* Autoscaling Groups
+* Base de datos RDS
+* Instancia EC2 preconfigurada
+* Monitoreo (CloudWatch, SNS)
+* Metodologías de despliegue In-Place y azul/verde
+* Seguridad (rotación de contraseñas)
+* Se puede correr entornos dockerizados
