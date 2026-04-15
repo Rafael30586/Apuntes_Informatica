@@ -9,4 +9,11 @@ Motivación
 * Los hilos son muy útiles en la programación moderna cuando un proceso tiene que llevar a cabo múltiples tareas independientes entre sí
 *  Esto es particularmente cierto cuando una de las tareas podría bloquear, y se desea permitir a las otras tareas proceder sin bloqueos
 * Por ejemplo, en un procesador de texto, un hilo de en segundo plano puede revisar la gramática mientras un hilo en primer plano procesa input de usuario (pulsaciones de teclas), mientras un tercer hilo carga imágenes del disco duro y un cuarto hace backups periódicos automáticos del archivo siendo editado
-* Otro ejemplo es un servidor web: múltiples hilos permiten múltiples solicitudes a ser satisfechas simultáneamente, sin tener que tratar solicitudes de manera secuencial o bifurcar procesos separados para cada solicitud entrante (lo último es como este tipo de cosas se hacía antes de que el concepto de hilos existiera. Un daemon escucharía un puerto, bifurcar un hijo por cada solicitud entrante a ser procesada, y luego volver a escuchar un puerto)    
+* Otro ejemplo es un servidor web: múltiples hilos permiten múltiples solicitudes a ser satisfechas simultáneamente, sin tener que tratar solicitudes de manera secuencial o bifurcar procesos separados para cada solicitud entrante (lo último es como este tipo de cosas se hacía antes de que el concepto de hilos existiera. Un daemon escucharía un puerto, bifurcar un hijo por cada solicitud entrante a ser procesada, y luego volver a escuchar un puerto)
+
+Beneficios
+Hay 4 categorías mayores de beneficios en multi-hilos:
+* Capacidad de respuesta: un hilo puede proveer una respuesta rápida mientras otros hilos están bloqueados o ralentizados haciendo cálculos intensivos
+* Intercambio de recursos: por defecto los hilos comparten código, datos y otros recursos, lo que permite realizar múltiples tareas simultáneamente en un mismo address space
+* Economía: Crear y gestionar threads (y context switch entre ellos) es mucho más rápido que llevar a cabo las mismas tareas para procesos
+* Escalabilidad, es decir, utilización de arquitecturas de multiprocesador: un proceso de un solo hilo puede correr en un CPU, no importa cuantos haya disponibles, mientras que la ejecución de una aplicación multi-hilo puede dividirse entre los procesadores disponibles (nótese que los procesos de un solo hilo pueden beneficiarse de arquitecturas multiprocesador cuando hay múltiples procesos luchando por el CPU, es decir, cuando el promedio de carga está por encima de cierto límite)	     
