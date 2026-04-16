@@ -1,0 +1,25 @@
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4_Threads.html
+
+
+Programación multinúcleo
+
+* Una tendencia	reciente en arquitectura de computadoras es producir chips con múltiples núcleos, o CPUs en un solo chip
+* Una aplicación multi-hilo corriendo en un chip tradicional de un solo núcleo tendría que intercalar los hilos...
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_03_ConcurrentSingleCore.jpg
+
+...pero en un chip multinúcleo, los hilos pueden desparramarse a los largo de los núcleos disponibles, permitiendo verdadero procesamiento en paralelo
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_04_ParralelMulticore.jpg
+
+* Para sistemas operativos, los chips multinúcleo requieren nuevos algoritmos de programación (scheduling) para hacer mejor uso de los múltiples núcleos disponibles
+* Mientras el multi-hilo se vuelve más penetrante e importante (miles en lugar de decenas de hilos), los CPUs han logrado soportar más hilos simultáneos por núcleo en el hardware 
+
+---------------------------
+Tipos de paralelismo
+
+En teoría, hay dos maneras distintas de paralelizar la carga de trabajo
+1. Paralelismo de datos: divide los datos entre los diferentes núcleos (hilos) y lleva a cabo la misma tarea en cada subconjunto de los datos. Por ejemplo: dividir una imagen grande en pedazos y llevando a cabo el mismo procesamiento digital de imagen en cada pieza en diferentes núcleos
+2. Paralelismo de tareas: divide las diferentes tareas a ser llevadas a cabo entre los diferentes núcleos y las lleva a cabo simultáneamente
+
+En la práctica ningún programa se divide únicamente en una de estas, en su lugar, por una forma híbrida que es la combinación de ambas      
