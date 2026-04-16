@@ -1685,4 +1685,20 @@ AWS Lambda es un servicio de funciones serverless. Podés correr código sin apr
 
 Step Functions es un servicio de estado de máquina. Coordina múltiples servicios de AWS en flujos de trabajo serverless. Fácilmente se comparten datos entre Lambdas. Podés tener un grupo de Lambdas esperando la una por la otra. Creá pasos lógicos. También funciona con Fargate Tasks
 
-Aurora Serverless es la versión bajo demanda serverless de Aurora. Cuando querés la mayoría de los beneficios de Aurora pero no podés tolerar tener "cold-starts" o no tenés mucha demanda de tráfico 
+Aurora Serverless es la versión bajo demanda serverless de Aurora. Cuando querés la mayoría de los beneficios de Aurora pero no podés tolerar tener "cold-starts" o no tenés mucha demanda de tráfico
+
+-------------------------------
+¿Qué es serverless?
+
+La arquitectura serverless generalmente describe servicios de la nube completamente gestionados. La clasificación de un servicio cloud siendo serveless no es una respuesta booleana (sí o no), sino una respuesta en una escala en el cual un servicio de la nube tiene un grado de serverless
+
+Un servicio serverless podría tener todas o la mayoría de las siguientes características:
+* Altamente elástico y escalable
+* Altamente disponible
+* Altamente durable
+* Seguro por defecto
+* Abstrae la infraestructura subyacente y son cobrados basado en la ejecución de tu tarea de negocios
+* Serverless puede escalar a cero, lo que significa que cuando no están en uso los recursos serverless no cuestan nada
+* Pagás por valor, no pagás por servidores inactivos
+
+Una analogía de serverless podría ser similar a etiquetas eficiencia energética que permiten a los consumidores comparar diferentes productos. Algunos servicios son más serverless que otros 
