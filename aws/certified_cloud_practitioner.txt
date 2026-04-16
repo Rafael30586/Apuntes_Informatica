@@ -1665,3 +1665,24 @@ Elastic Beanstalk está potenciado por una configuración de plantillas de Cloud
 * Metodologías de despliegue In-Place y azul/verde
 * Seguridad (rotación de contraseñas)
 * Se puede correr entornos dockerizados
+
+------------------------------------------------------------------------------------------------------------------------------
+Serverless
+------------------------------------------------------------------------------------------------------------------------------
+
+Servicios serverless
+
+¿Qué es serverless?
+Es cuando el CSP se encarga de los servidores subyacentes, infraestructura y sistema operativo. Serverless es generalmente altamente disponible, escalable y de buen costo por defecto. Pagás por lo que usás
+
+DynamoDB es una base de datos NoSQL, de clave valor y de documentos serverless. Está diseñada para escalar miles de millones de registros con retorno de datos consistente garantizado en al menos un segundo. No tenés que preocuparte por gestionar fragmentos (shards)
+
+Simple Storage Service (S3) es un servicio de almacenamiento de objetos serverless. Podés subir una cantidad ilimitada de archivos. Pagás por lo que almacenás. No tenés que preocuparte del sistema de archivos subyacente o mejorar el tamaño del disco
+
+ECS Fargate es un servicio de orquestación de contenedores serverless. Es lo mismo que ECS, pagás bajo demanda por contenedor en ejecución (con ECS tenés que mantener un servidor EC2 corriendo incluso si no tenés contenedores en ejecución). AWS gestiona el servidor subyacente, por lo que no tenés que escalar o mejorar el servidor EC2
+
+AWS Lambda es un servicio de funciones serverless. Podés correr código sin aprovisionar o gestionar servidores. Subís pequeñas piezas de código, elegís la cantidad de memoria y cuanto tiempo se le permite a la función correr antes de que se acabe el tiempo. Se te cobra basado en el tiempo de ejecución de la función serverless redondeando hasta los 100 milisegundos más cercanos
+
+Step Functions es un servicio de estado de máquina. Coordina múltiples servicios de AWS en flujos de trabajo serverless. Fácilmente se comparten datos entre Lambdas. Podés tener un grupo de Lambdas esperando la una por la otra. Creá pasos lógicos. También funciona con Fargate Tasks
+
+Aurora Serverless es la versión bajo demanda serverless de Aurora. Cuando querés la mayoría de los beneficios de Aurora pero no podés tolerar tener "cold-starts" o no tenés mucha demanda de tráfico 
