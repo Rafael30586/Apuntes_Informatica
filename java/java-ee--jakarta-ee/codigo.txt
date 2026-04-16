@@ -9,3 +9,7 @@ Del objeto HttpServletResponse podemos obtener un objeto de clase PrintWriter gr
 Los servlets se pueden mapear a un endpoint gracias a la etiqueta servlet-mapping que podemos usar en el archivo web.xml. También podemos colocarle un nombre al servlet gracias a la etiqueta servlet
 
 En un servlet podemos usar los métodos doGet y doPost, que son para solicitudes get y post respectivamente. Amobs tienen los parámetros HttpServletRequest y HttpServletResponse. También tenemos el método service que acepta los mismos parámetros y también se puede usar para solicitudes
+
+Podemos hacer que un servlet llame a otro servlet con el método getRequestDispatcher() (acepta como argumento el nombre del servlet al que queremos llamar) de la solicitud que devuelve un objeto RequestDispatcher. Luego con este objeto podemos usar el método forward() que acepta la solicitud y la respuesta como argumento
+
+Podemos pasar cookies de un servlet a otro gracias a la clase Cookie del paquete jakarta.servlet.http . Las cookies se asignan a la respuesta del servlet con el método addCookie(). Luego podemos obtener las cookies de una respuesta graicas al método getCookies() que nos devuelve un array de Cookies
