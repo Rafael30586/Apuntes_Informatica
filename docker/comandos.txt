@@ -26,6 +26,10 @@ docker logs --folow <contenedor> --> muestra los registros de un contenedor y pe
 
 docker run <imagen> --> descarga la imagen que indiquemos (si es que no la tenemos descargada ya), crea un contenedor a partir de la imagen y lo ejecuta. Se le puede agregar la opción --name <nombre> para darle nombre al contenedor. Agregando la opción -d hace que el contenedor se ejecute en segundo plano
 
+docker run -it <imagen> <shell> --> sirve para revisar los directorios del contenedor creado a partir de una imagen que indiquemos
+
+docker run --rm <imagen> --> crea un contenedor a partir de la imagen que indiquemos y lo elimina al terminar la ejecución. Puede ser útil si queremos realizar un contenedor de una aplicación de consola
+
 Cuando creamos un contenedor con el comando run y debemos utilizar muchas opciones como -d, -p, -e , etc, podemos separar a las opciones usando una barra "\" después de cada opción y hacer un salto de línea para que todo sea más legible y no esté en una sola línea, Ejemplo:
 docker run -d \
 -p 27017:27017 \
