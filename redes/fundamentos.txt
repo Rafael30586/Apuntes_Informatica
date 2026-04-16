@@ -146,4 +146,32 @@ Lógica para detección de errores
 
 En detección de errores hacemos "block coding". En block coding dividimos un mensaje en bloques, cada uno de estos bloques de tamaño k bits. En cada bloque añadimos r bits redundantes. Cada uno de los bloques de k bits es un "data Word". El data Word más los r bits redundantes es un "code word". La longitud del code Word es k + r. Los code words son transmitidos por el emisor. Por ejemplo, si dividimos un mensaje de 8 bits en bloques de 2 bits (k = 2), obtendríamos 4 data words; si añadimos un bit redundante a cada data Word entonces r = 1 y code Word = k + r = 2 + 1 = 3
 Podríamos, por ejemplo, considerar los datawords 00 - 01 - 10 - 11 de un mensaje. Si los code word válidos son, por ejemplo 000 - 011 -  101 - 110 , entonces, los code Word 001 - 010 - 100 - 111 serían inválidos
-Los k bits determinan la cantidad de combinaciones en un data Word, que sería de 2^k . Cuando a k le sumamos r , obtenemos n , y tendríamos 2^n combinaciones. En el ejemplo anterior tenemos 4 (2^2) data words posibles y 8 (2^3) code words posibles	. Los code words inválidos son 2^n - 2^k , que serían para el ejemplo anterior 2^3 - 2^2 = 8 - 4 = 4 , el resto (4) son code words válidos		
+Los k bits determinan la cantidad de combinaciones en un data Word, que sería de 2^k . Cuando a k le sumamos r , obtenemos n , y tendríamos 2^n combinaciones. En el ejemplo anterior tenemos 4 (2^2) data words posibles y 8 (2^3) code words posibles	. Los code words inválidos son 2^n - 2^k , que serían para el ejemplo anterior 2^3 - 2^2 = 8 - 4 = 4 , el resto (4) son code words válidos	
+¿Cómo ocurre la detección del error? es receptor tiene la lista de los code words válidos. Puede pasar que cuando el receptor reciba el code Word se reciba uno que sea muy distinto a lo que debía recibirse, por ejemplo (siguiendo con el ejemplo anterior) el emisor envía 000, pero el receptor recibe 011, 011 está en la lista de los code words válidos, por lo que el receptor no puede detectar el error
+
+-----------------------
+Distancia Hamming (Hamming distance)
+
+Es la distancia entre 2 strings binarios del mismo tamaño y es el número de diferencias entre bits correspondientes, por ejemplo, la distancia haming entre 000 y 011 o d(000,011) es igual a 2. La fórmula es d(x,y) , donde x es el string 1 y "y" el string 2. Otro ejemplo, l distancia hamming entre 100 y 011 es d(100,011) = 3, otro ejemplo, distancia hamming entre 10101 y 11110 es d(10101,11110) = 3
+La distancia hamming se calcula gracias a una XOR gate, funciona así: si los dos inputs son 0, el resultado es 0, si lo dos inputs son 1, el resultado es 0, si un input es 1 y el otro 0, el resultado es 1
+Ejemplo de utilización de XOR gate
+    10101
+XOR 11110
+---------
+    01011
+La cantidad de 1s que se obtienen luego de la operación serían la distancia hamming
+
+Mínima distancia Hamming: es la distancia hamming más pequeña entre todos los posibles pares de codewords, por ejemplo, supongamos que los siguientes son 	los codewords válidos:
+a) 010
+b) 101
+c) 110
+d) 001
+Entre a y b es 3; entre a y c es 1; entre a y d es 2; entre b y c es 2; entre b y d es 1; entre c y d es 3
+La mínima distancia hamming es 1
+La distancia hamming es muy importante porque se usa en la detección de errores. Mientras más grande sea la mínima distancia hamming, mejor será la detección de errores, por ejemplo, si la mínima distancia hamming es 2, se pueden detectar todos los errores de 1 bit; si la mínima distancia hamming es 3, todos los errores de 1 o 2 bits se pueden detectar
+
+Fórmula para detección de errores: k bits --> (k + 1) distancia haming --> lo que se requiere de distancia hamming
+Fórmula para corrección de errores: k bits --> (2k + 1) distancia haming --> idem al anterior
+
+La última fórmula significa, por ejemplo, que para corregir errores de 2 bits hacen falta una distancia haming de 5
+ 
