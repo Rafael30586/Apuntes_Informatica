@@ -1,0 +1,41 @@
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4_Threads.html
+
+Modelos multi-hilo
+
+* Hay dos tipos de hilos a ser gestionados en un sistema moderno: hilos de usuario e hilos de kernel
+* Los hilos de usuario son soportados por encima del kernel, sin el soporte del kernel. Estos son los hilos que los programadores pondrían en sus programas
+* Los hilos de kernel son soportados dentro del kernel del sistema operativo. Todos los SOs modernos soportan hilos de nivel kernel, permitiendo que el kernel lleve a cabo múltiples tareas o hacer múltiples system calls simultáneamente
+* En una implementación específica, los hilos de usuario deben ser mapeados a hilos de kernel, usando una de las siguientes estrategias:
+
+
+1. Modelo muchos-a-uno (many-to-one)
+* En el modelo muchos-a-uno, muchos hilos de nivel usuario son mapeados a un solo hilo de kernel
+* La gestión de hilos es manejada por la biblioteca de hilos en user space, que es muy eficiente
+* Aún así, si se realiza un system call bloqueante, entonces el proceso completo se bloquea, incluso si los otros hilos de usuario fuesen capaces de continuar
+* Como un hilo de kernel puede operar solo en un CPU, el modelo muchos-a-uno no permite a proceso individuales dividirse entre múltiples CPUs
+* Los hilos verdes para Solaris e hilos GNU portables implementaban el modelo muchos-a-uno en el pasado, pero poco sistemas los implementan hoy en día 
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_05_ManyToOne.jpg
+
+2. Modelo uno-a-uno (one-to-one)
+* Este modelo crea un hilo separado de kernel para manejar cada hilo de usuario
+* El modelo uno-a-uno supera los problemas listados arriba que involucran systema calls bloqueantes y la división de procesos entre múltiples CPUs
+* Aún así, la sobrecarga de gestionar este modelo es más significante, involucrando más sobrecarga y ralentizando el sistema
+* La mayoría de las implementaciones de este modelo colocan un límite a cuantos hilos pueden ser creados
+* Linux y Windows 95 a XP implementan este modelo para hilos
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_06_OneToOne.jpg
+
+3. Modelo muchos-a-muchos
+* Este modelo multiplexa cualquier número de hilos de usuario entre un número igual o más pequeño de hilos de kernel, combinando las mejores características de los modelos uno-a-uno y muchso-a-uno
+* Los usuarios no tienen restricciones en el número de hilos creados
+* Los system calls bloqueantes de kernel no bloquean el proceso completo
+* Los procesos pueden dividirse entre múltiples procesadores
+* Los procesos individuales pueden ser asignados un número variable de número de hilos de kernel, dependiendo del número de CPUs presentes y otros factores 
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_07_ManyToMany.jpg
+
+* Una variación popular del modelo muchso-a-muchos es el modelo two-tier, que permite operaciones tanto muchos-a-muchos como uno-a-uno
+* IRIX, HP-UX, y Tru64 UNIX usan el modelo two-tier, y también Solaris previo a Solaris 9
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_08_TwoLevel.jpg  
