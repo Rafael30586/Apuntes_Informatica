@@ -12,4 +12,8 @@ En un servlet podemos usar los métodos doGet y doPost, que son para solicitudes
 
 Podemos hacer que un servlet llame a otro servlet con el método getRequestDispatcher() (acepta como argumento el nombre del servlet al que queremos llamar) de la solicitud que devuelve un objeto RequestDispatcher. Luego con este objeto podemos usar el método forward() que acepta la solicitud y la respuesta como argumento
 
-Podemos pasar cookies de un servlet a otro gracias a la clase Cookie del paquete jakarta.servlet.http . Las cookies se asignan a la respuesta del servlet con el método addCookie(). Luego podemos obtener las cookies de una respuesta graicas al método getCookies() que nos devuelve un array de Cookies
+Podemos pasar cookies de un servlet a otro gracias a la clase Cookie del paquete jakarta.servlet.http . Las cookies se asignan a la respuesta del servlet con el método addCookie(). Luego podemos obtener las cookies de una respuesta gracias al método getCookies() que nos devuelve un array de Cookies
+
+Con la etiqueta context-param en el archivo web.xml podemos establecer parámetros que son compartidos por todos los servlets
+
+Con las clases ServletConfig y ServletContext podemos trabajar con parámetros definidos en el archivo web.xml. Con servletContext trabajamos con parámetros compartidos por todos los servlets y con ServletConfig trabajamos con parámetros específicos de cada servlet. Estos parámetros específicos se establecen con la etiqueta init-param dentro de la etiqueta servlet. Para obtener una instancia de ServerContext y ServerConfig se utilizan los métodos getServletContext y getServerConfig respectivamente, que son heredados por la clase HttpServlet de la clase GenericServlet
