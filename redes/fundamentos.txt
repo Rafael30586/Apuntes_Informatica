@@ -174,4 +174,24 @@ Fórmula para detección de errores: k bits --> (k + 1) distancia haming --> lo qu
 Fórmula para corrección de errores: k bits --> (2k + 1) distancia haming --> idem al anterior
 
 La última fórmula significa, por ejemplo, que para corregir errores de 2 bits hacen falta una distancia haming de 5
- 
+
+
+---------------------------
+Simple Parity
+
+El bit agregado a los data words de un mensaje se llaman parity bits
+Simple parity puede detectar todos los errores de un solo bit
+No puede detectar errores de bits pares
+Puede detectar números impares de errores
+
+Even parity --> la cantidad de 1s, incluyendo el parity bit debe ser par  
+Odd parity --> la cantidad de 1s, incluyendo el parity bit, debe ser impar
+
+Nota: si todos los 1s de un data word con even parity son un número par, entonces se deduce que el parity bit es 0, en cambio, si los 1s en el data word con even parity son un número impar, se deduce que el parity bit es un 1. La misma lógica se sigue con odd parity en cuanto a deducir el valor del parity bit conociendo los 1s que hay en el data Word
+
+Ejemplo de even parity
+* Tenemos un mensaje que es 00011011
+* Lo dividimos en datawords de 2 bits, entonces quedan 4 datawords: 00 | 01 |10 | 11
+* Le agregamos un parity bit a cada uno para formar un codeword, de manera tal que la cantidad de 1s sea par en cada codeword: 000 | 011 | 101 | 110
+* En este contexto, supongamos que el primer codeword (que es 000) es enviado por el emisor, pero el receptor recibe, 100. Así se sabe que lo recibido es un error porque la cantidad de 1s es impar. El emisor y el receptor ya habían "hablado" sobre el envío de los codewords usando even parity. Luego de esto el receptor debe "pedirle" al emisor que retransmita el mensaje
+* Si el receptor recibe 110 en lugar de 000, sería incapaz de detectar el error (que en este caso es de 2 bits), porque la cantidad de 1s es par y el codeword recibido forma parte de los codeword válidos	
