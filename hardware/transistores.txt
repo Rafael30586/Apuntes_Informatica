@@ -1,0 +1,8 @@
+https://www.imec-int.com/en/semiconductor-education-and-workforce-development/microchips/history-microchips/transistors
+
+Transistores
+
+Los transistores son los bloques de construcción claves de circuitos integrados y microchips. Son básicamente amplificadores o interruptores electrónicos microscópicos. Como tales, controlan el flujo de las señales eléctricas, permitiendo al chip procesar y almacenar información.
+Un transistor está usualmente hecho de silicio u otro material semiconductor. Las propiedades de estos tipos de materiales están entre las de una material conductor (como un metal) y uno aislante (como caucho)
+Dependiendo de la temperatura, por ejemplo, o la presencia de impurezas, pueden conducir o bloquear la electricidad. Esto los hace perfectos para controlar señales eléctricas. 
+Un transistor consiste de 3 terminales: la base, recolector y emisor. A través de estas terminales, el transistor puede controlar el flujo de la corriente en un circuito.   
