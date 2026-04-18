@@ -45,8 +45,10 @@ Cualquier sistema basado en UNIX o en alguna de sus variantes corre varios daemo
 * syncd: este Daemon sincroniza archivos en diferentes servidores
 * systemd: este Daemon reemplaza init en sistemas Linux 
 * vhand: este Daemon selecciona páginas que no han sido recientemente referenciadas y que pueden ser intercambiadas fuera de la memoria principal en el almacenamiento secundario si es necesario
-* ypbind: este Daemon enlaza procesos en un cliente de "network information service" a servicios en un servidor NIS 
+* ypbind: este Daemon enlaza procesos en un cliente de "network information service" a servicios en un servidor NIS
 
-____________________________________________
-Continuar resumiendo lo del enlace de arriba
-____________________________________________ 
+------------------------------
+Historia de los daemons
+
+El término Daemon fue acuñado por programadores en el Massachusetts institute of Technology´s Project MAC (mathematics and computation) en 1963, inspirado por Maxwell´s demon, un agente imaginario en física y termondinámica. En un experimento reflexionado  ideado por James Clerk Maxwell en 1867, un demon controlaría una pequeña puerta sin masa entre dos cámaras de gas, forzando a moléculas muy rápidas a pasar en una dirección y moléculas lentas a pasar en la otra dirección. En la mitología griega, un daeomon se consideraba un ser poderoso sobre-natural
+Los programadores de MIT pensaron que demon sería un nombre apropiado para un proceso en segundo plano que trabara sin cansancio para llevar a cabo tareas de sistema. Pero en lugar de usar el término demon, usaron Daemon, que es una forma más vieja de la palabra
