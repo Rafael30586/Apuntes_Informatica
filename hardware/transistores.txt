@@ -5,4 +5,17 @@ Transistores
 Los transistores son los bloques de construcción claves de circuitos integrados y microchips. Son básicamente amplificadores o interruptores electrónicos microscópicos. Como tales, controlan el flujo de las señales eléctricas, permitiendo al chip procesar y almacenar información.
 Un transistor está usualmente hecho de silicio u otro material semiconductor. Las propiedades de estos tipos de materiales están entre las de una material conductor (como un metal) y uno aislante (como caucho)
 Dependiendo de la temperatura, por ejemplo, o la presencia de impurezas, pueden conducir o bloquear la electricidad. Esto los hace perfectos para controlar señales eléctricas. 
-Un transistor consiste de 3 terminales: la base, recolector y emisor. A través de estas terminales, el transistor puede controlar el flujo de la corriente en un circuito.   
+Un transistor consiste de 3 terminales: la base, recolector y emisor. A través de estas terminales, el transistor puede controlar el flujo de la corriente en un circuito.
+
+----------------------
+¿Cómo funciona un transistor?
+
+Cuando una pequeña corriente eléctrica es aplicada a la base del transistor, permite que una corriente más grande fluya entre el recolector y el emisor. Es como una válvula: un poco de presión en la base controla un flujo mucho más grande de electricidad.
+* Si no hay corriente en la base, el transistor funciona como un interruptor cerrado. Ninguna corriente fluye a través del recolector y el emisor.
+* Si hay corriente en la base, el transistor se abre. La corriente fluye
+
+La habilidad para controlar la corriente eléctrica permite a los transistores funcionar como un interruptor (prender y apagar) o como un amplificador (hacer a las señales más fuertes)
+* Como un interruptor: los transistores pueden prenderse y apagarse, representando estados binarios (0 y 1) que forman los fundamentos de la computación digital. Cuando un pequeño voltaje es aplicado a la base, permite a una corriente más grande fluir entre el recolector y el emisor, prendiendo el transistor. Cuando el voltaje es removido, la corriente se detiene y el transistor se apaga
+* Como un amplificador: los transistores pueden también ser usados para aumentar señales eléctricas débiles. Una pequeña señal de entrada aplicada a la base puede controlar una salida de señal más grande entre el recolector y el emisor, amplificándola. Esto es esencial en dispositivos como radios, televisores y sistemas de audio, donde la amplificación de la señal es necesaria para una operación apropiada.
+
+En electrónica digital, los transistores se usan en grandes cantidades para construir puertas lógicas. Estos forman los fundamentos de los procesadores de computadoras. Al prenderse y apagarse muy rápido, los transistores ayudan a procesar el código binario que las computadoras usan para operar   
