@@ -1,0 +1,9 @@
+https://www.techtarget.com/searchsecurity/definition/Secure-Shell
+
+¿Qué es Secure Shell (SSH) y como funciona?
+
+Secure Shell es un protocolo de red que les da a los usuarios, particularmente a administradores de sistemas, una manera segura de acceder a una computadora en una red insegura
+SSH también se refiere a un conjunto de utilidades que implementan el protocolo SSH. Secure Shell provee fuerte autenticación con contraseña y autenticación con clave pública, así como comunicaciones de datos encriptados entre dos computadoras conectándose en una red, tal como internet. SSH es importante para mantener la seguridad de los sistemas, ya que el protocolo funciona como una manera segura para proveer acceso y gestión de sistemas en red
+Además de proveer fuerte encriptación, SSH es ampliamente usado por administradores de red para gestionar sistemas y aplicaciones de manera remota, permitiéndoles iniciar sesión en otra comput6adora de una red, ejecutar comandos y mover archivos de una computadora a otra
+SSH se refiere tanto al protocolo de red criptográfico como al conjunto de utilidades que implementan el protocolo. SSH usa el modelo cliente-servidor conectando una aplicación cliente Secure Shell, que es el fin en donde la sesión es mostrada, con un servidor SSH, que es el fin en donde la sesión corre. Las implementaciones de SSH generalmente incluyen soporte para protocolos de aplicación usados para emulación de terminal o transferencia de archivos
+SSH puede también ser usado para crear túneles seguros para otros protocolos de aplicación, por ejemplo, para correr de manera segura X sesión gráfica de una sistema Windows de manera remota. Un servidor SSH, por defecto, escucha en el puerto estándar 22 TCP 	 

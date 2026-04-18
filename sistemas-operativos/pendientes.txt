@@ -18,12 +18,13 @@ semaphores y monitors en sistemas operativos
 circular queue en sistemas operativos
 GNU
 priority inversión
-threads
+// threads
 buffer
 critical section (relacionado a procesos, hilos, semáforos y mutex)
 data inconcistency
 local procedures y procedure calls
 stubs en sistemas distribuidos
-Daemon proccess
+// Daemon proccess
 Big endian vs Little endian
 profundizar en datagram socket vs stream socket
+Windows services

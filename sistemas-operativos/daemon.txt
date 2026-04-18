@@ -18,7 +18,7 @@ Un tercer enfoque es ejemplificado por el Daemon de Nginx HTTP, que está basado
 ¿Qué tipos de sistemas operativos requieren los daemons? 
 
 Ya que los daemons requieren servicios especiales del sistema operativo, se comportan de una manera un poco diferente entre un sistema operativo y otro. Los primeros daemons estuvieron corriendo en UNIX y fueron diseñados de acuerdo a las características de UNIX.
-Los daemons son ejecutados en la línea de comandos de UNIX o en un archivo de arranque; estos archivos contienen un script que es ejecutado cuando el sistema es booteado o en algún otro evento, como ingreso de usuario o cuando un nuevo script de Shell es engendrado. Corren en segundo plano y esperan por una señal del SO para despertar in ponerse en marcha. 
+Los daemons son ejecutados en la línea de comandos de UNIX o en un archivo de arranque; estos archivos contienen un script que es ejecutado cuando el sistema es booteado o en algún otro evento, como ingreso de usuario o cuando un nuevo script de Shell es engendrado. Corren en segundo plano y esperan por una señal del SO para despertar y ponerse en marcha. 
 Los daemons solo pueden correr en SOs multitarea. Fueron implementados en Microsoft Windows, empezando con la versión NT, y se lo conoce como servicios de Windows en lugar de daemons
 
 --------------------------
