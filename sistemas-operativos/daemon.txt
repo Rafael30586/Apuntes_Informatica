@@ -21,6 +21,32 @@ Ya que los daemons requieren servicios especiales del sistema operativo, se comp
 Los daemons son ejecutados en la línea de comandos de UNIX o en un archivo de arranque; estos archivos contienen un script que es ejecutado cuando el sistema es booteado o en algún otro evento, como ingreso de usuario o cuando un nuevo script de Shell es engendrado. Corren en segundo plano y esperan por una señal del SO para despertar in ponerse en marcha. 
 Los daemons solo pueden correr en SOs multitarea. Fueron implementados en Microsoft Windows, empezando con la versión NT, y se lo conoce como servicios de Windows en lugar de daemons
 
+--------------------------
+Ejemplos de daemons
+
+Los Daemons responden a las alertas del sistema operativo a algún evento externo, como la llegada de un mensaje de una red. Para mensajes viniendo de una red, el módulo TCP/IP de la computadora anfitrión busca el número de puerto del mensaje y envía una alerta al Daemon asignado a ese número de puerto. Por ejemplo, el número de puerto 80 está asignado a HTTP, por lo que cuando un mensaje con ese número de puerto es recibido, el stack de TCP/IP integrado en el SO envía una señal al HTTPd
+Cualquier sistema basado en UNIX o en alguna de sus variantes corre varios daemons, de los cuales sus nombres terminan típicamente con la letra d. Los siguientes son algunos ejemplos de daemons: 
+* init: este es el primer Daemon que comienza cuando UNIX bootea, y engendra todos los otros procesos
+* inetd: este super-Daemon está a la escucha de solicitudes de internet en un número de puerto designado y engendra el programa de servidor apropiado para manejarlas. Los servicios manejados por inetd incluyen rlogin, telnet, ftp, talk y finger
+* crond: este Daemon ejecuta comandos programados
+* dhcpd: este Daemon provee servicios de DHCP
+* fingerd: este dameon generalmente comenzado por inetd responde al comando finger
+* ftpd: este Daemon es generalmente comenzado por inetd para manejar solicitudes de FTP
+* httpd: este Daemon funciona como un servidor web
+* lpd: este Daemon provee solicitudes de "Line printer protocol"
+* named: este Daemon provee servicios de "domain name protocol"
+* nfsd: este Daemon provee servicio de "network file system"
+* ntpd: este Daemon provee servicios NTP, ya sea como primario o secundario
+* portmap/rcpbind: este Daemon convierte números de programa RPC en números de puertos de internet
+* sshd: este Daemon provee servicios de secure Shell
+* sendmail: el SMTP o Mailer Daemon se encarga de mensajes de correo entrantes
+* swapper: este Daemon de kernel mueve procesos enteros entre la memoria principal y almacenamiento secundario como parte de la gestión de la memoria virtual
+* syslogd: este Daemon maneja solicitudes de logging del kernel, otros procesos en la misma máquina y otros procesos en máquinas remotas
+* syncd: este Daemon sincroniza archivos en diferentes servidores
+* systemd: este Daemon reemplaza init en sistemas Linux 
+* vhand: este Daemon selecciona páginas que no han sido recientemente referenciadas y que pueden ser intercambiadas fuera de la memoria principal en el almacenamiento secundario si es necesario
+* ypbind: este Daemon enlaza procesos en un cliente de "network information service" a servicios en un servidor NIS 
+
 ____________________________________________
 Continuar resumiendo lo del enlace de arriba
 ____________________________________________ 
