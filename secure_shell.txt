@@ -34,4 +34,20 @@ Diseñadas para ser convenientes y funcionar a lo largo de fronteras organizacio
 SSH puede usarse también para crear túneles seguros para otros protocolos de aplicación. Por ejemplo, túneles seguros pueden para envío a puertos local, remoto y dinámico. Mientras se juega en roles giratorios en gestión de identidad y acceso, SSH hace más que autenticar en una conexión encriptada. Todo el tráfico de SSH está encriptado. Ya sea que los usuarios transfieran un archivo, naveguen por la web o ejecuten un comando, sus acciones son privadas	 
 Aunque es posible usar SSH con un ID de usuario ordinario y contraseña, SSH depende más seguido de una autenticación basada en clave usando pares de claves públicas para autenticar anfitriones entre sí. Usuarios individuales deberán emplear su ID de usuario y contraseña, u otros métodos de autenticación de usuario, para conectarse al anfitrión remoto, pero la máquina local y la máquina remota se autentican separadas la una de la otra. Esto se logra al generar un único par clave pública para cada anfitrión en la comunicación. Una sola sesión requiere 2 pares de clave pública: un par clave pública para autenticar la máquina remota en la máquina local y un segundo para de clave pública para autenticar la máquina local a la máquina remota
 SSH también es usado para gestionar y configurar firewalls u otras aplicaciones de seguridad, asegurando cambios y acceso de configuración administrativa
+
+------------------------------
+Capacidades de la secure Shell
+
+SSH permite las siguientes funciones:
+* Acceso remoto seguro a sistemas de red con SSH activado o dispositivos para usuarios, así como procesos automatizados
+* Sesiones de transferencia de archivos segura e interactiva
+* Transferencias de archivos seguras y automatizadas
+* Emisión segura de comandos en dispositivos o sistemas remotos
+* Gestión segura de componentes de infraestructura de red
+* Autenticación basada en anfitrión
+* Ejecución remota de comandos
+* Envío por puertos (Port forwarding)
+* Gestión de clave y sesión
+
+SSH puede ser usado de manera interactiva para permitir sesiones de terminal y debería ser usado en lugar del menos seguro programa Telnet. SSH es también comúnmente usado en scripts y otro software para permitir a programas y sistemas acceder de manera segura y remota a datos y otros recursos
   	 	 
