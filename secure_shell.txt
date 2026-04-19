@@ -73,4 +73,18 @@ SSH vs SSL/TSL
 El protocolo de Transport Layer Security (TLS), que actualiza al protocolo Secure Sockets Layer (SSL), fue diseñado para proveer seguridad para transmisiones de red en la capa de transporte. El protocolo SSH también opera en o un poco más arriba de la capa de transporte, pero hay diferencias importantes entre los dos protocolos.
 Aunque ambos dependen de pares de claves públicas o privadas, solo el servidor es autenticado con un par de claves bajo TLS. SSH usa un par de claves separado para autenticar cada conexión: un par de claves para una conexión de una máquina local a una máquina remota y un segundo par de claves para autenticar la conexión de una máquina remota a una máquina local.
 Otra diferencia entre SSH y TLS es que TLS puede estar encriptado sin requerir autenticación y puede autenticar sin encriptación. SSH autentica y encripta todas las conexiones
-SSH provee a los profesionales de IT e información con un mecanismo seguro para gestionar clientes SSH de manera remota. En lugar de requerir autenticación con contraseña para inicializar una conexión entre un cliente SSH y un servidor, SSH autentica a los propios dispositivos. Esto le permite al staff de IT conectarse con sistemas remotos y modificar configuraciones de SSH, incluyendo añadir o quitar pares de claves de anfitriones en el archivo known_hosts   	 	 	 
+SSH provee a los profesionales de IT e información con un mecanismo seguro para gestionar clientes SSH de manera remota. En lugar de requerir autenticación con contraseña para inicializar una conexión entre un cliente SSH y un servidor, SSH autentica a los propios dispositivos. Esto le permite al staff de IT conectarse con sistemas remotos y modificar configuraciones de SSH, incluyendo añadir o quitar pares de claves de anfitriones en el archivo known_hosts
+
+---------------------------
+Implementaciones de SSH
+
+SSH es un protocolo abierto. Ha sido implementado para la mayoría de las plataformas de computación. La implementación de OpenSSH de código abierto se encuentra en general en Linux, UNIX y otros sistemas operativos basados en BSD, incluyendo a MacOS de Apple
+OpenSSH fue porteado para correr en Windows powershell comenzando en 2015. En 2018, soporte opcional para OpenSSH fue añadido a windows 10. Mientras SSH es accesible directamente por defecto en la mayoría de los sistemas operativos tipo Unix, la versión porteada de Windows de OpenSSH debe ser explícitamente habilitada en las configuraciones de Windows
+PuTTY es otra implementación de código abierto de SSH. Aunque está actualmente disponible para Windows, macOS, Unix y BSD, PuTTY fue originalmente escrito para correr en Windows. Ha sido por mucho tiempo una de las mejores opciones para usar SSH en un sistema windows 
+La mayoría de las implementaciones del paquete SSK abarcan las siguientes tres utilidades:
+1. Inicio de sesión seguro (slogin)
+2. ssh
+3. copia segura (scp)
+Estas son versiones seguras de las anteriores utilidades inseguras de Unix rlogin, rsh y rcp
+SSH usa criptografía de clave pública para autenticar la computadora remota y habilitar la computadora remota para autenticar el usuario si es necesario
+Actualmente hay decenas de implementaciones de SSH disponibles para varias plataformas y bajo una variedad de licencias propietarias y de código abierto     	 	 	 
