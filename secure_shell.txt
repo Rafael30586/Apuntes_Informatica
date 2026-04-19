@@ -87,4 +87,32 @@ La mayoría de las implementaciones del paquete SSK abarcan las siguientes tres 
 3. copia segura (scp)
 Estas son versiones seguras de las anteriores utilidades inseguras de Unix rlogin, rsh y rcp
 SSH usa criptografía de clave pública para autenticar la computadora remota y habilitar la computadora remota para autenticar el usuario si es necesario
-Actualmente hay decenas de implementaciones de SSH disponibles para varias plataformas y bajo una variedad de licencias propietarias y de código abierto     	 	 	 
+Actualmente hay decenas de implementaciones de SSH disponibles para varias plataformas y bajo una variedad de licencias propietarias y de código abierto
+
+--------------------------
+Comandos SSH
+
+Aunque hay implementaciones gráficas de SSH, el programa es usualmente invocado por la línea de comandos o ejecutado como parte de un script. Correr el comando SSH sin argumentos, tal como anfitrión destino o ID de usuario, retorna una lista de parámetros de comando y opciones SSH
+La forma más básica de una comando SSH es invocar el programa y el nombre del anfitrión destino o dirección IP como sigue:
+
+ssh server.example.org
+
+Esto conecta al destino, server.example.org. El anfitrión destino responde pidiendo una contraseña para el ID de usuario de la cuenta bajo la cual el cliente está corriendo. En otras palabras, si el ID de usuario en uso es jsmith, entonces el anfitrión remoto pide una contraseña asociada con la cuenta jsmith en el anfitrión remoto
+En muchos casos, el ID de usuario para el anfitrión remoto es diferente, en cuyo caso el comando debería emitirse con el ID de usuario del anfitrión remoto como sigue:
+
+ssh remote_host_userID@server.example.org
+
+SSH puede también ser usado desde la línea de comandos para emitir un comando en el anfitrión remoto y luego salir, por ejemplo:
+ssh example.org ls
+
+Esto ejecuta el comando de Unix ls, el cual lista todo el contenido del directorio actual en el anfitrión remoto. Aunque este ejemplo es trivial, demuestra que SSH puede ser usado para ejecutar comandos más interesantes en un anfitrión remoto. Por ejemplo, un comando puede ser elaborado que inicialice una instancia del servidor que le de a una máquina remota acceso a un solo archivo, u otro recurso, y luego finalice el servidor después de que el archivo es accedido por el anfitrión remoto especificado
+En adición al ssh ejecutable, SSH tiene otros comandos ejecutables usados en la línea de comandos para funciones adicionales, incluyendo las siguientes:
+* sshd inicia el servidor SSH, el cual espera por solicitudes de conexiones SSH entrantes y habilita a sistemas autorizados a conectarse al anfitrión local 
+* ssh-keygen es un programa que crea un nuevo par de claves de autenticación, el cual puede ser usado para automatizar inicios de sesión, implementar SSO y autenticar anfitriones
+* ssh-copy-id es un programa usado para copiar , instalar y configurar una clave SSH en un servidor para automatizar inicios de sesión sin contraseña y SSO
+* ssh-agent es un programa de ayuda que rastrea las claves de identidad y sus frases de contraseña, de la cual SSH deriva una clave de encriptación, y habilita al usuario a usar las claves de identidad para iniciar sesión en diferentes servidores sin la necesidad de reingresar contraseñas o frases de contraseña
+* ssh-add es usado para añadir una clave al agente de autenticación SSH y se usa con ssh-agent para implementar SSO usando SSH
+* scp es un programa usado para copiar archivos desde una computadora a otra y es una versión SSH-segura de rcp
+* sftp es un programa usado para copiar archivos de una computadora a otra y es la versión SSH-segura de el original FTP. SFTP se ha vuelto el mecanismo preferido para compartir archivos en internet, reemplazando a ambos FTP y FTP seguro, el cual es un protocolo para usar FTP sobre un túnel SSL/TSL
+* cd se usa para cambiar de directorios en un servidor remoto
+* pwd se usa para mostrar los directorios de trabajo actuales en un servidor remoto	      	 	 	 
