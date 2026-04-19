@@ -50,4 +50,12 @@ SSH permite las siguientes funciones:
 * Gestión de clave y sesión
 
 SSH puede ser usado de manera interactiva para permitir sesiones de terminal y debería ser usado en lugar del menos seguro programa Telnet. SSH es también comúnmente usado en scripts y otro software para permitir a programas y sistemas acceder de manera segura y remota a datos y otros recursos
-  	 	 
+
+---------------------------
+Problemas de seguridad de SSH
+
+Empresas usando SSH deberían considerar encontrar formas de gestionar claves de anfitriones almacenados en sistemas clientes. Estas claves se pueden acumular con el tiempo, especialmente para staff IT que necesita acceder a anfitriones remotos para propósitos de gestión
+Ya que los datos almacenados en un archivo known_hosts pueden ser usados para obtener acceso autenticado a sistemas remotos, las organizaciones deberían estar enteradas de su existencia y tener un proceso estándar para retener control sobre ellos, incluso cuando el sistema es sacado de comisión, y los discos duros podrían tener estos datos almacenados en texto plano
+Los desarrolladores deberían ser cuidadosos al incorporar comandos SSH o funciones en un script u otro tipo de programa. Aunque es posible emitir un comando SSH que incluya ID de usuario y contraseña para autenticar al usuario de la máquina local a una cuenta en el anfitrión remoto, hacerlo puede exponer credenciales a un atacante que tenga acceso al código fuente
+Un hoyo de seguridad en el procesador de comandos Bash, puede ser ejecutado sobre SSH, pero su vulnerabilidad está en Bash, no en SSH
+La mayor amenaza a SSH es una pobre gestión de claves. Sin la apropiada creación, rotación y quitado centralizado de claves SSH, las organizaciones pueden perder control sobre quien tiene acceso a que recurso y cuando, particularmente cuando SSH se usa en procesos automatizados aplicación-a-aplicación  	 	 
