@@ -1,5 +1,6 @@
-clock del CPU
+// clock del CPU
 unidad de memoria del CPU: register y caché
 ALU
-transitor
+// transitor
 circuito integrado o integrated circuit
+microchips

@@ -18,4 +18,10 @@ La habilidad para controlar la corriente eléctrica permite a los transistores f
 * Como un interruptor: los transistores pueden prenderse y apagarse, representando estados binarios (0 y 1) que forman los fundamentos de la computación digital. Cuando un pequeño voltaje es aplicado a la base, permite a una corriente más grande fluir entre el recolector y el emisor, prendiendo el transistor. Cuando el voltaje es removido, la corriente se detiene y el transistor se apaga
 * Como un amplificador: los transistores pueden también ser usados para aumentar señales eléctricas débiles. Una pequeña señal de entrada aplicada a la base puede controlar una salida de señal más grande entre el recolector y el emisor, amplificándola. Esto es esencial en dispositivos como radios, televisores y sistemas de audio, donde la amplificación de la señal es necesaria para una operación apropiada.
 
-En electrónica digital, los transistores se usan en grandes cantidades para construir puertas lógicas. Estos forman los fundamentos de los procesadores de computadoras. Al prenderse y apagarse muy rápido, los transistores ayudan a procesar el código binario que las computadoras usan para operar   
+En electrónica digital, los transistores se usan en grandes cantidades para construir puertas lógicas. Estos forman los fundamentos de los procesadores de computadoras. Al prenderse y apagarse muy rápido, los transistores ayudan a procesar el código binario que las computadoras usan para operar
+
+-------------------------
+¿Por qué son importantes los transistores?
+
+Los transistores son los componentes principales en circuitos integrados y chips. Los microchips de hoy contienen miles de millones transistores, permitiendo a los dispositivos llevar a cabo tareas complejas a altas velocidades usando menos energía. Su invención y continua miniaturización revolucionaron la electrónica. Hacen que sea posible construir dispositivos más pequeños, más rápidos y más eficientes
+Hoy, los transistores están en todos lados: en smartphones, laptops y todos los dispositivos electrónicos. Son la clave para el mundo digital en el que vivimos hoy, y continúan volviéndose más pequeños y poderosos a medida que la tecnología mejora 

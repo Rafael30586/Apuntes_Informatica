@@ -19,3 +19,9 @@ Con la etiqueta context-param en el archivo web.xml podemos establecer parámetr
 Con las clases ServletConfig y ServletContext podemos trabajar con parámetros definidos en el archivo web.xml. Con servletContext trabajamos con parámetros compartidos por todos los servlets y con ServletConfig trabajamos con parámetros específicos de cada servlet. Estos parámetros específicos se establecen con la etiqueta init-param dentro de la etiqueta servlet. Para obtener una instancia de ServerContext y ServerConfig se utilizan los métodos getServletContext y getServerConfig respectivamente, que son heredados por la clase HttpServlet de la clase GenericServlet
 
 No es necesario utilizar el archivo web.xml para hacer mapeos entre servlets y endpoints, en su lugar se pueden usar anotaciones, por ejemplo, la anotación @WebServlet("/<endpoint>") en el servlet sirve para asignar un endpoint al servlet
+
+Cuando trabajamos con jsp podemos escribir código java en los mismos encerrando dicho código entre <%  %>
+
+Con jsp viene por defecto un objeto llamado request, del cual podemos obtener los argumentos con el método getParameter(), y el objeto out, que nos permite usar el método print() para imprimir valores de variables
+
+Si queremos que un formulario llame a un jsp, simplemente tenemos que poner en la parte de action el nombre del archivo jsp en lugar de poner un endpoint 

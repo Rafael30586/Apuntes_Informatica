@@ -1,1 +1,3 @@
 Cuando ejecutamos un archivo .class en la terminal, podemos pasarle argumentos: java <Archivo> <argumento>. Este argumento corresponde al String[] args del método main. Así podemos utilizar al array args en el código de la aplicación.
+
+Podemos ejecutar código java en la terminal si hacemos jshell + enter. Hecho esto podemos crear variables, asignarles valores, imprimir en consola, etc. Para salir de esta Shell hay que hacer /exit + enter

@@ -194,4 +194,13 @@ Ejemplo de even parity
 * Lo dividimos en datawords de 2 bits, entonces quedan 4 datawords: 00 | 01 |10 | 11
 * Le agregamos un parity bit a cada uno para formar un codeword, de manera tal que la cantidad de 1s sea par en cada codeword: 000 | 011 | 101 | 110
 * En este contexto, supongamos que el primer codeword (que es 000) es enviado por el emisor, pero el receptor recibe, 100. Así se sabe que lo recibido es un error porque la cantidad de 1s es impar. El emisor y el receptor ya habían "hablado" sobre el envío de los codewords usando even parity. Luego de esto el receptor debe "pedirle" al emisor que retransmita el mensaje
-* Si el receptor recibe 110 en lugar de 000, sería incapaz de detectar el error (que en este caso es de 2 bits), porque la cantidad de 1s es par y el codeword recibido forma parte de los codeword válidos	
+* Si el receptor recibe 110 en lugar de 000, sería incapaz de detectar el error (que en este caso es de 2 bits), porque la cantidad de 1s es par y el codeword recibido forma parte de los codeword válidos
+
+---------------------------------
+2d parity
+* Puede detectar y corregir todos los errores de un solo bit
+* Puede detectar errores de 2 y 3 bits
+* A veces puede detectar errores de 4 bits y otras veces no
+* 2d es por 2 dimensiones
+* Los bits de información están organizados en forma de matrix (filas y columnas)
+* Por cada fila y cada columna un "parity check bit" es calculado	
