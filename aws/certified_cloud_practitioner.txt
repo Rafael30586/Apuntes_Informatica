@@ -1702,3 +1702,37 @@ Un servicio serverless podría tener todas o la mayoría de las siguientes carac
 * Pagás por valor, no pagás por servidores inactivos
 
 Una analogía de serverless podría ser similar a etiquetas eficiencia energética que permiten a los consumidores comparar diferentes productos. Algunos servicios son más serverless que otros 
+
+--------------------------------------------------------------------------------------------------------------------------------
+Windows en AWS
+--------------------------------------------------------------------------------------------------------------------------------
+Windows en AWS
+
+AWS tiene múltiples servicios de la nube para que puedas correr tus cargas de trabajo de Windows en AWS
+
+Windows Servers on EC2
+Podés seleccionar de un número de versiones de Windows Server incluyendo la última versión, Windows Server 2019
+
+SQL Server on RDS
+Podés seleccionar de un número de versiones de bases de datos de SQL Server
+
+AWS Directory Service
+Te permite correr Microsoft Active Directory como un servicio gestionado
+
+AWS License Manager
+Hace que sea más fácil gestionar tus licencias de software de vendedores de software como Microsoft
+
+Amazon FSx Woindows File Server
+Es un almacenamiento completamente gestionado y escalable construido para Windows
+
+AWS Software Development Kit (SDK) 
+Te permite escribir código en tu lenguaje favorito para interactuar con la API AWS. El SDK soporta .NET
+
+Amazon WorkSpaces 
+Te permite correr un escritorio virtual. Podés lanzar un escritorio de Windows 10 para proveer un Workstation seguro y durable que es accesible de donde sea que tengas conexión a internet
+
+AWS Lambdas
+Soporta PowerShell como lenguaje de programación para escribir funciones serverless
+
+AWS Migration Acceleration Program (MAP) para Windows
+Es una metodología de migración. AWS tiene compañeros Amazon que se especializan en proveer servicios profesionales para MAP
