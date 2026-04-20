@@ -1736,3 +1736,20 @@ Soporta PowerShell como lenguaje de programación para escribir funciones server
 
 AWS Migration Acceleration Program (MAP) para Windows
 Es una metodología de migración. AWS tiene compañeros Amazon que se especializan en proveer servicios profesionales para MAP
+
+--------------------------------------
+AWS License manager
+
+¿Qué es Bring-Your-Own-License? (BYOL)
+El proceso de reutilizar una licencia de software existente para correr software de proveedor en un servicio de computación del proveedor. BYOL permite a las compañías ahorrar dinero ya que podrían haber comprado la licencia a granel o en un momento que proveyó un descuento más grande si se compraba otra vez
+Por ejemplo, License Mobility, proveído por Microsoft Volume Licensing para clientes con aplicaciones de servidor elegibles cubiertas por el programa Microsoft Software Assurance
+
+AWS License Manager es un servicio que hace que te sea más fácil gestionar tus licencias de software de proveedores de software a lo largo de AWS y tus entornos on-premise
+
+AWS Licence Manager está autorizado basado en núcleos virtuales (vCPUs), núcleos físicos, sockets o número de máquinas. Esto incluye una variedad de productos de software de Microsoft, IBM, SAP, Oracle y otros proveedores
+
+AWS License MAnager funciona con:
+* ECS
+* RDS (solo para bases de datos de Oracle)
+
+Para Mircosoft Windows Server y Microsoft SQL Server licence generalmente necesitás usar un anfitrión dedicado		
