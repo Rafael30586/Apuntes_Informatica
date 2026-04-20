@@ -1,0 +1,1 @@
+JSP es más simple que usar servlets, pero esto no quiere decir que los reemplacen completamente. Tomcat es un contenedor de servlets, estos son necesarios para el desarrollo de una aplicación web con java EE o jakarta EE. Los JSPs son convertidos en servlets durante la ejecución de la aplicación

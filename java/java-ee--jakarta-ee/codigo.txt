@@ -20,8 +20,16 @@ Con las clases ServletConfig y ServletContext podemos trabajar con parámetros d
 
 No es necesario utilizar el archivo web.xml para hacer mapeos entre servlets y endpoints, en su lugar se pueden usar anotaciones, por ejemplo, la anotación @WebServlet("/<endpoint>") en el servlet sirve para asignar un endpoint al servlet
 
-Cuando trabajamos con jsp podemos escribir código java en los mismos encerrando dicho código entre <%  %>
+Cuando trabajamos con jsp podemos escribir código java en los mismos encerrando dicho código entre <%  %> . Lo que está ancerrado entre esos símbolos se llama scriptlet y sería en un servlet lo que está en el método service. Si queremos que parte de nuestro código en el JSP esté fuera del método service, usamos <%! %> (se llama declaration). Para importar paquetes usamos la etiqueta <%@ import=<paquete> %> (se llama directive). Si se quiere importar varios paquetes o clases, se separa los impórts por una coma. También se puede usar la etiqueta expresion para guardar lo que quweramos en el método out.print(), se usa <%= <variable> %> 
 
 Con jsp viene por defecto un objeto llamado request, del cual podemos obtener los argumentos con el método getParameter(), y el objeto out, que nos permite usar el método print() para imprimir valores de variables
 
-Si queremos que un formulario llame a un jsp, simplemente tenemos que poner en la parte de action el nombre del archivo jsp en lugar de poner un endpoint 
+Si queremos que un formulario llame a un jsp, simplemente tenemos que poner en la parte de action el nombre del archivo jsp en lugar de poner un endpoint
+
+Directivas JSP, son 3: @page, @include, @taglib. 
+
+<%@ page <atributo>="<valor>" <atributo>="<valor>" %> . Algunos ejemplos de atributos son: language="<lenguaje>" (por defecto será java); extends="<clase>", es para que el servlet producido herede de la clase que indiquemos; import="<paquete1 , paquete2 , ...>", es para indicar que paquetes queremos importar, separando por comas si son más de uno ; session="<booleano>"; autoFlush="<booleano>" ; contentType="<>" ; errorPage="<url_de_error>" ; isErrorPage="<booleano>" ; info="<información>" ; isELIgnored="<booleano>" ; isThreadSafe="<booleano>"
+
+<%@ include file=<nombre_archivo> %> 
+
+<%@Taglib > . Es para usar etiquetas externas
