@@ -1,0 +1,35 @@
+Bibliotecas de hilos
+
+* Las bibliotecas de hilos proveen a los programadores con una API para crear y gestionar hilos
+* Las bibliotecas de hilos podrán ser implementadas en user space o kernel space. La original involucra funciones de API implementadas únicamente dentro de user space, sin soporte para kernel. La última involucra system calls, y requiere un kernel con soporte para bibliotecas de threads
+* Hay 3 bibliotecas principales en uso hoy en día:
+  1. POSIX Pthreads: puede ser proveída como biblioteca de usuario o de kernel, como una extensión del estándar POSIX
+  2. Win32 threads: proveída como una biblioteca de nivel kernel en sistemas Windows
+  3. Java threads: como java generalmente corre en una máquina virtual, la implementación de hilos está basada dependiendo del sistema operativo y hardware en el que esté corriendo la JVM, es decir, o Pthreads o Win32 threads dependiendo del sistema
+* Las próximas secciones demostrarán el uso de hilos en los 3 sistemas para calcular la suma de enteros de 0 a N en un hilo separado, y almacenando el resultado en una variable llamada sum
+
+Pthreads
+
+* El estándar POSIX (IEEE 1003.1c) define la especificación para Pthreads, no la implementación
+* Pthreads están disponibles en Solaris, Linux, Mac OSX, Tru64 y vía shareware de dominio público para Windows
+* Las variables globales son compartidas entre todos los hilos
+* Un hilo puede esperar a que los otros se reúnan antes de continuar
+* Pthreads comienza la ejecución en una función específica, en el siguiente ejemplo la función runner():
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_09_PThreadsAPI.jpg
+
+Windows threads
+
+* Similar a pThreads. El próximo ejemplo de código tiene diferencias de sintaxis y nomenclatura:
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_10_Win32API.jpg
+
+Java threads
+
+* Todos los programas java usan hilos, incluso los comunes de un solo hilo
+* LA creación de nuevos hilos requiere objetos que implementen la interfaz Runnable, lo que significa que contienen un método "public void run()" . Todo descendiente de la clase Thread contendrá dicho método. (en la práctica el método run() deberá ser sobre-escrito para tener una funcionalidad práctica)
+* Crear un objeto Thread no hace correr al hilo. Para hacer eso el programa deberá llamar al método "start()". start() asigna e inicializa memoria para el hilo, y luego llama al método run(). (los programadores no llaman a run() directamente)
+* Como java no soporta variables globales, los hilos deben pasarse como referencia a un objeto compartido para compartir datos, en este el ejemplo el objeto "Sum"
+* Nótese que la JVM corre sobre un SO nativo, y que la especificación de la JVM no especifica que modelo usar para mapear hilos de java a hilos de kernel. Esta decisión depende de la implementación de la JVM, y podrá ser uno-a-uno, muchos-a-muchos o muchos-a-uno (en un sistema Unix la JVM normalmente usa PThreads y en sistemas Windows normalmente usa Windows threads)
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_11_JavaThreads.jpg	  
