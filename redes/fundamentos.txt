@@ -203,4 +203,30 @@ Ejemplo de even parity
 * A veces puede detectar errores de 4 bits y otras veces no
 * 2d es por 2 dimensiones
 * Los bits de información están organizados en forma de matrix (filas y columnas)
-* Por cada fila y cada columna un "parity check bit" es calculado	
+* Por cada fila y cada columna un "parity check bit" es calculado
+* Ejemplo: tenemos un dato original así, en el cual k=6 --> 010010-010101-100101-111011-001001
+  1- Cada dataword es una fila
+  0 1 0 0 1 0
+  0 1 0 1 0 1
+  1 0 0 1 0 1
+  1 1 1 0 1 1
+  0 0 1 0 0 1
+  2- El número de filas es 5
+  3. Ahora calculamos la parity (considerando even parity), añadiendo otra fila y otra columna
+  0 1 0 0 1 0 | 0
+  0 1 0 1 0 1 | 1
+  1 0 0 1 0 1 | 1  row parity
+  1 1 1 0 1 1 | 1
+  0 0 1 0 0 1 | 0
+  -----------
+  0 1 0 0 0 0   1
+  	
+  column parity
+
+  4. Si, por ejemplo, el receptor recibe como cuarto codeword 1010111, se detectará el error, porque se suponía que era even parity y se recibió una cantidad impar de 1s en la fila y también en la segunda columna. La intersección entre la segunda columna y la cuarta fila es el bit corrupto (el segundo bit del codeword) 
+
+5. Si el error fuera de 2 bits sería un problema, porque habrían 4 intersecciones, y no todas ellas representan bits corruptos. En este caso no se podrá corregir el error por el receptor, no quedará otra que pedir al emisor que retransmita el mensaje 
+
+6. Con errores de 2 bits pueden ser afectados, como mínimo, 2 parity bits, y como mucho 4 parity bits. En el primer caso es cuando los dos bits están, por ejemplo, en la misma fila (el parity bit de la fila no se verá afectado, solo dos de las columnas). 4 parity bits son afectados cuando los errores ocurren en diferentes filas.
+
+7.- Con errores de 3 bits pueden verse afectados como mucho  6 parity bits, y como mínimo 2 	
