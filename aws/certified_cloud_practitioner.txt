@@ -1768,4 +1768,17 @@ CloudWatch: es una colección de múltiples servicios
 * CloudWatch Alarm: gatilla notificaciones basado en métricas
 * CloudWatch DashBoard: crea visualizaciones basadas en métricas
 
-AWS X-Ray: es un sistema de rastreo distribuido. Podés usarlo para determinar con precisión problemas con tus microservicios. Ves como los datos se mueven de una aplicación a otra, cuanto tiempo le tomó moverse, y si falló para seguir adelante		
+AWS X-Ray: es un sistema de rastreo distribuido. Podés usarlo para determinar con precisión problemas con tus microservicios. Ves como los datos se mueven de una aplicación a otra, cuanto tiempo le tomó moverse, y si falló para seguir adelante
+
+---------------------------------
+AWS CloudTrail
+
+AWS CloudTrail: es un servicio que permite gobernanza, cumplimiento, auditoría operacional y auditoría de riesgo en tu cuenta de AWS
+
+AWS CloudTrail se usa para monitorear llamadas a APIs y acciones hechas en una cuenta de AWS
+
+Fácilmente identificar que usuarios y cuentas hicieron una llamada a AWS, por ejemplo: donde, la dirección IP de origen; cuando; quien, usuario; qué, región, recurso, acción
+
+CloudTrail recolectará logs para los próximos 90 días vía Event History. Si necesitás más de 90 días necesitás crear un Trail. Los Trails son salida a S3 y no tienen GUI como Event History. Para analizar un Trail tendrías que usar Amazon Athena
+
+		
