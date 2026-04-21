@@ -1,0 +1,18 @@
+https://www.geeksforgeeks.org/computer-organization-architecture/introduction-to-memory-and-memory-units/
+
+Introducción a memoria y unidades de memoria
+
+La memoria es un componente esencial de un sistema computacional, responsable de almacenar datos e instrucciones necesitadas para el procesamiento. Le permite al CPU ejecutar programas eficientemente y asegura operación fluida de sistema.
+* Celda de memoria: es la más pequeña unidad que almacena 1 bit de datos. Cada dirección en memoria se refiere típicamente a un byte
+* Palabra y byte: una palabra es un grupo de bits; 1 byte son 8 bits
+* Capacidad: el número total de bits que una memoria puede retener
+
+-------------------------
+Clasificación de la memoria
+
+La memoria se clasifica en principal y secundaria basándose en velocidad, accesibilidad y volatilidad
+
+* Memoria principal: directamente accesible por el CPU; rápida pero limitada en capacidad
+* Memoria secundaria: usada para almacenamiento de largo plazo; más lenta pero más grande en capacidad
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250905170025440104/types_of_computer_memory_.webp 
