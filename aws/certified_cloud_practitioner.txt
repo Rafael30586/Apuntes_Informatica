@@ -1752,4 +1752,20 @@ AWS License MAnager funciona con:
 * ECS
 * RDS (solo para bases de datos de Oracle)
 
-Para Mircosoft Windows Server y Microsoft SQL Server licence generalmente necesitás usar un anfitrión dedicado		
+Para Mircosoft Windows Server y Microsoft SQL Server licence generalmente necesitás usar un anfitrión dedicado
+
+-------------------------------------------------------------------------------------------------------------------------------
+Logging
+-------------------------------------------------------------------------------------------------------------------------------
+Servicios de logging
+
+CloudTrail: loguea todas las llamadas a APIs (SDK, CLI) entre servicios de AWS. Sirve para saber a quien responsabilizar de ciertas actividades, por ejemplo, ¿quién creo este bucket? ¿quién puso en marcha esa cara instancia EC2? . Así se puede detectar alguna mala configuración de un desarrollador, detectar actores maliciosos, automatizar respuestas
+
+CloudWatch: es una colección de múltiples servicios
+* CloudWatch Logs: es un lugar centralizado para almacenar datos de logs de los servicios de la nube o logs de aplicaciones
+* CloudWatch Metrics: representa un conjunto ordenado de data points. Una variable a monitorear
+* CloudWatch Events (EventBridge): gatilla un evento basado en una condición, por ejemplo, a cada hora toma una foto del servidor
+* CloudWatch Alarm: gatilla notificaciones basado en métricas
+* CloudWatch DashBoard: crea visualizaciones basadas en métricas
+
+AWS X-Ray: es un sistema de rastreo distribuido. Podés usarlo para determinar con precisión problemas con tus microservicios. Ves como los datos se mueven de una aplicación a otra, cuanto tiempo le tomó moverse, y si falló para seguir adelante		
