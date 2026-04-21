@@ -1781,4 +1781,23 @@ Fácilmente identificar que usuarios y cuentas hicieron una llamada a AWS, por e
 
 CloudTrail recolectará logs para los próximos 90 días vía Event History. Si necesitás más de 90 días necesitás crear un Trail. Los Trails son salida a S3 y no tienen GUI como Event History. Para analizar un Trail tendrías que usar Amazon Athena
 
+------------------------------
+CloudWatch Alarms
+
+Una CloudWatch Alarm monitorea una CloudWatch Metric basada en un límite definido. Cuando la alarma se va afuera del límite definido cambia de estado
+
+Estados
+* OK: la métrica o expresión está dentro del límite definido
+* ALARM: la métrica o expresión está afuera del límite definido
+* INSUFFICIENT_DATA:
+  - la alarma acaba de comenzar
+  - la métrica no está disponible
+  - no hay suficientes datos disponibles
+
+Cuando cambia de estado podemos definir que acción debería gatillar:
+* Notificación
+* Auto scaling group
+* Acción EC2
+	 
+
 		
