@@ -1797,7 +1797,27 @@ Estados
 Cuando cambia de estado podemos definir que acción debería gatillar:
 * Notificación
 * Auto scaling group
-* Acción EC2
-	 
+* Acción EC2	
+
+----------------------------------------------
+Anatomía de una alarma
+
+Condición límite (Threshold condition)
+Define cuando un datapoint está incumpliendo
+
+Métrica	(metric)
+El dato que estamos midiendo
+
+Data point
+Representa la medida de la métrica en un período dado
+
+Período
+Que tan frecuentemente evalúa la alarma
+
+Evaluación de períodos
+Número de períodos previos
+
+Datapoints to alarm
+1 data point es incumplido en un período de evaluación volviendo 4 períodos. Esto es lo que gatilla la alrma 
 
 		
