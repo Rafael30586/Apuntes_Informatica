@@ -26,6 +26,7 @@ Con jsp viene por defecto un objeto llamado request, del cual podemos obtener lo
 
 Si queremos que un formulario llame a un jsp, simplemente tenemos que poner en la parte de action el nombre del archivo jsp en lugar de poner un endpoint
 
+{
 Directivas JSP, son 3: @page, @include, @taglib. 
 
 <%@ page <atributo>="<valor>" <atributo>="<valor>" %> . Algunos ejemplos de atributos son: language="<lenguaje>" (por defecto será java); extends="<clase>", es para que el servlet producido herede de la clase que indiquemos; import="<paquete1 , paquete2 , ...>", es para indicar que paquetes queremos importar, separando por comas si son más de uno ; session="<booleano>"; autoFlush="<booleano>" ; contentType="<>" ; errorPage="<url_de_error>" ; isErrorPage="<booleano>" ; info="<información>" ; isELIgnored="<booleano>" ; isThreadSafe="<booleano>"
@@ -33,3 +34,23 @@ Directivas JSP, son 3: @page, @include, @taglib.
 <%@ include file=<nombre_archivo> %> 
 
 <%@Taglib > . Es para usar etiquetas externas
+}
+
+{
+Objetos implícitos en JSP: son objetos que podemos utilizar en JSP. No necesitamos instanciarlos
+
+request (HttpServletRequest)
+
+response (HttpServletResponse)
+
+pageContext (PageContext) --> el contexto del objeto es la propia página, pero podemos pasarles argumentos a algunos métodos para que los atributos tengan un alance distinto
+
+out (JspWriter) ~ objeto PrintWriter
+
+sesión (HttpSession)
+
+application (ServletContext)
+
+config (ServletConfig)
+}
+
