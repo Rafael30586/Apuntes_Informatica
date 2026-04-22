@@ -15,4 +15,33 @@ La memoria se clasifica en principal y secundaria basándose en velocidad, acces
 * Memoria principal: directamente accesible por el CPU; rápida pero limitada en capacidad
 * Memoria secundaria: usada para almacenamiento de largo plazo; más lenta pero más grande en capacidad
 
-https://media.geeksforgeeks.org/wp-content/uploads/20250905170025440104/types_of_computer_memory_.webp 
+https://media.geeksforgeeks.org/wp-content/uploads/20250905170025440104/types_of_computer_memory_.webp
+
+-----------------------
+RAM (Random Acces Memory)
+
+La RAM es la memoria principal de la computadora usada para almacenamiento temporal de programas activos y datos. Los datos se pierden cuando se corta el suministro de energía. Provee acceso rápido del CPU, mejorando las multi-tareas y el rendimiento
+
+Tipos de RAM
+* SRAM (Static RAM): rápida, usada en caché
+* DRAM (Dynamic RAM): más lenta, necesita refresco periódico
+
+----------------------
+ROM (Read Only Memory)
+
+La ROM es memoria no volátil que almacena instrucciones esenciales permanentemente. Contiene el firmware del sistema e instrucciones de booteo
+
+Tipos de ROM
+* MROM: Pre-programada en la fabricación
+* PROM: programable por el usuario una vez
+* EPROM: borrable con UV
+* EEPROM: borrable con electricidad
+* Memoria flash: rápida, usada en SSDs y unidades USB 
+
+---------------------
+Memoria secundaria
+
+Provee almacenamiento a largo plazo y no es directamente accesible por el CPU
+
+* Ejemplos: HDD, SSD, discos ópticos (CD/DVD/Blu-ray), unidades USB, tarjetas flash, cintas magnéticas, almacenamiento en la nube
+* Características: no volátil, más lenta, alta capacidad, usada para almacenar sistemas operativos, software y archivos de usuario 
