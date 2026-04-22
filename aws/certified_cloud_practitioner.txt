@@ -1846,4 +1846,22 @@ CloudWatch Logs insights son comúnmente usados vía consola para hacer consulta
 
 AWS provee muestras de consultas que pueden ayudarte a empezar para tareas comunes, y para facilitar el aprendizaje de la sintaxis de consulta. Un buen ejemplo es filtrando logs VPC de flujo
 
-Podés crear y guardar tus propias consultas para hacer tareas futuras repetitivas más fáciles 	
+Podés crear y guardar tus propias consultas para hacer tareas futuras repetitivas más fáciles
+
+-----------------------
+CloudWatch Metrics
+
+Una métrica CloudWatch representa un conjunto de data points ordenados por tiempo. Es una variable que es monitoreada a través del tiempo
+
+CloudWatch viene con muchas métricas predefinidas que generalmente son "name spaced" por el servicio AWS	
+
+Métricas de EC2 por instancia
+* Utilización de CPU
+* DiskReadOps
+* DiskWriteOps
+* DiskReadBytes
+* DiskWriteBytes
+* NetworkIn
+* NetworkOut
+* NetworkPacketsIn
+* NetworkPacketsOut 	
