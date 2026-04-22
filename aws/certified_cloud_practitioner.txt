@@ -1818,6 +1818,13 @@ Evaluación de períodos
 Número de períodos previos
 
 Datapoints to alarm
-1 data point es incumplido en un período de evaluación volviendo 4 períodos. Esto es lo que gatilla la alrma 
+1 data point es incumplido en un período de evaluación volviendo 4 períodos. Esto es lo que gatilla la alarma 
 
-		
+----------------------
+CloudWatch logs - Logs streams
+
+Log streams: un log stream representa una secuencia de eventos de una aplicación o instancia siendo monitoreada
+
+Podés crear log streams de manera manual pero esto generalmente se hace automáticamente por el servicio que estás usando
+
+Eventos de log: representa un evento en un archivo de log. Los eventos de logs pueden ser vistos dentro de un logstream 		
