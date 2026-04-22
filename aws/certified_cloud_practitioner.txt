@@ -1827,4 +1827,23 @@ Log streams: un log stream representa una secuencia de eventos de una aplicació
 
 Podés crear log streams de manera manual pero esto generalmente se hace automáticamente por el servicio que estás usando
 
-Eventos de log: representa un evento en un archivo de log. Los eventos de logs pueden ser vistos dentro de un logstream 		
+Eventos de log: representa un evento en un archivo de log. Los eventos de logs pueden ser vistos dentro de un logstream 
+	
+--------------------------
+CloudWatch logs - log insights
+
+CloudWatch logs insights te permite buscar de manera interactiva y analizar tus logs de CloudWatch y tiene las siguientes ventajas:
+* Filtrado más robusto que usar los simples eventos de filtro en un logstream
+* Menos pesado que tener que exportar logs a S3 y analízalos vía Athena
+
+CloudWatch Logs insights soporta todos los tipos de logs
+
+CloudWatch Logs insights son comúnmente usados vía consola para hacer consultas "ad hoc" contra grupos de logs
+* CloudWatch Insights tiene su propio lenguaje llamado CloudWatch Logs Insights Query Sintax
+* Un asola solicitud puede consultar hasta 20 grupos de logs
+* A las consultas se les acaba el tiempo después de 15 minutos si no se completan
+* Los resultados de consultas están disponibles por 7 días
+
+AWS provee muestras de consultas que pueden ayudarte a empezar para tareas comunes, y para facilitar el aprendizaje de la sintaxis de consulta. Un buen ejemplo es filtrando logs VPC de flujo
+
+Podés crear y guardar tus propias consultas para hacer tareas futuras repetitivas más fáciles 	
