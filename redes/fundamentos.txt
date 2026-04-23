@@ -229,4 +229,74 @@ Ejemplo de even parity
 
 6. Con errores de 2 bits pueden ser afectados, como mínimo, 2 parity bits, y como mucho 4 parity bits. En el primer caso es cuando los dos bits están, por ejemplo, en la misma fila (el parity bit de la fila no se verá afectado, solo dos de las columnas). 4 parity bits son afectados cuando los errores ocurren en diferentes filas.
 
-7.- Con errores de 3 bits pueden verse afectados como mucho  6 parity bits, y como mínimo 2 	
+7.- Con errores de 3 bits pueden verse afectados como mucho  6 parity bits, y como mínimo 2 
+
+-------------------------
+Cyclic codes
+
+Anteriormente se ha hablado de block code lineales. Un codeword válido XORed con otro codeword válido resultará en un codeword válido. 
+Los code block cíclicos son casos especiales de code blocks lineales: si son cambiados cíclicamente, obtenemos otro code Word válido
+
+--------------------------
+CRC (cyclic redundant check)
+
+1. Supongamos que tenemos un emisor que envía datos a un receptor
+2. Además de tener datos, el emisor tiene un divisor k, también llamado generador CRC. A este divisor también lo tiene el receptor. Un ejemplo de generador CRC podría ser 1101 (el divisor es 4)
+3. A los datos para enviar se le añadirán k-1 0s, por ejemplo, si los datos a enviar son 1001001 y el divisor es 4, entonces a los datos se le añadirán (4 - 1)0s = (3)0s , quedando el resultado así --> 1001001000. Este resultado será el dividendo
+4. Teniendo el dividendo y el divisor, que son 10011001000 y 1101 respectivamente, hacemos "modulo 2 division". Usamos XOR
+1001001000
+1101
+----------
+0100001000
+
+5. El primer 0 del resultado es ignorado y se hace XOR con lo restante
+0|100001000
+  1101
+  ---------
+  010101000
+Repetimos el proceso
+0|10101000
+  1101
+  --------
+  01111000
+ Otra vez
+0|1111000
+  1101
+  -------
+  0010000
+ 
+00|10000
+   1101
+  ------
+   01010
+ 
+0|1010
+  1101
+  ----
+  0111
+
+0111 es el CRC
+
+6. Los 3 0s del codeword son reemplazados por el resultado obtenido: 1001001|000 --> 1001001|111 . Esto es lo que será transmitido al receptor
+
+7. Luego se hace el XOR con lo recibido por el receptor
+1001001111
+1101
+----------
+0100001111
+ 1101
+----------
+ 010101111
+  1101
+  --------
+  01111111
+   1101
+   -------
+   0010111
+     1101
+     -----
+     01101
+      1101
+      ----
+      0000
+El resto es 0, lo que significa que no hubo error		
