@@ -47,7 +47,7 @@ pageContext (PageContext) --> el contexto del objeto es la propia página, pero 
 
 out (JspWriter) ~ objeto PrintWriter
 
-sesión (HttpSession)
+session (HttpSession)
 
 application (ServletContext)
 
@@ -57,3 +57,5 @@ config (ServletConfig)
 Manejo de excepciones: se puede usar un try catch en los scriplets de los JSP. Otra forma es definir una página de error (un JSP) y colocar en el atributo errorPage del JSP el nombre de la página de error, por ejemplo, ...errorPage="error.jsp"... 
 
 Podemos agregar el atributo isErrorPage=true a la JSP de error para poder tener a disposición el objeto exception 
+
+Cuando trabajamos con JSP, podemos usar los símbolos ${} para traer un atributo de un servlet a nuestro JSP. Se le llama "expression language"
