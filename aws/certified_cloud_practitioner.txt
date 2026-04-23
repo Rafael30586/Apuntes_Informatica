@@ -1865,3 +1865,25 @@ Métricas de EC2 por instancia
 * NetworkOut
 * NetworkPacketsIn
 * NetworkPacketsOut 	
+
+-----------------------------
+Servicios de Machine learning y IA
+
+¿Qué es la inteligencia artificial (IA)?
+Son máquinas que llevan a cabo trabajos que imitan el comportamiento humano
+
+¿Qué es machine learning (ML)?
+Máquinas que se vuelven mejores en una tarea sin programación explícita
+
+¿Qué es deep learning (DL)?
+Son máuinas que tienen una red neural artificial inspirada en el cerebro humano para resolver problemas complejos
+
+Amazong SageMaker es un servicio totalmente gestionado pasra construir, entrenar y desplegar modelos de machine learning a escala
+* Apache MXNet en AWS, un framework de código abierto de deep learning
+* TensorFlow en AWS, una biblioteca de código abierto de inteligencia de máquinas
+* PyTorch en AWS, un framework de código abierto de machine learning
+
+Amazon SageMaker Ground Truth es un servicio de etiquetado de datos. Hace que los humanos etiqueten un dataset que será utilizado para entrenar modelos de machine learning
+
+Amazon Augmented AI es un servicio de revisión de intervención humana. Cuando SageMaker usa machine learning para hacer una predicción y no tiene confianza de tener la respuesta correcta coloca en una cola la predicción para que sea revisada por humanos
+ 		
