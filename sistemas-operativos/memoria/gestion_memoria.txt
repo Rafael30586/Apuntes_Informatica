@@ -1,0 +1,69 @@
+https://www.geeksforgeeks.org/operating-systems/memory-management-in-operating-system/
+
+Gestión de memoria en un sistema operativo
+
+La gestión de memoria es el proceso de controlar y organizar la memoria de la computadora asignando porciones, llamadas bloques (blocks), a diferentes programas ejecutándose para aumentar el rendimiento general del sistema
+* La función más importante de un sistema operativo es gestionar la memoria principal
+* Soporta múltiples procesos simultáneamente en memoria
+* Protege a los procesos de acceso no autorizado
+* Permite el intercambio y memoria virtual eficientemente
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250627171628398976/memory-tree.webp
+
+-----------------------
+Técnicas en asignación de memoria 
+
+Usadas por el sistema operativo para asignar, utilizar, y gestionar recursos de memoria para procesos. Varias técnicas ayudan al sistema operativo a gestionar la memoria eficientemente. Pueden ser categorizadas de la siguiente manera:
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260115153355666899/ggg.webp
+
+Intercambio (swapping)
+Swapping es una técnica de gestión de memoria en la cual los procesos son movidos temporalmente entre la memoria principal y la secundaria para liberar memoria para otros procesos
+* Permite a múltiples procesos ejecutarse eficientemente
+* Procesos de más baja prioridad pueden ser intercambiados por otros de mayor prioridad
+* Los procesos intercambiados reanudan cuando son cargados nuevamente en memoria
+* El tiempo de transferencia depende de la cantidad de datos movidos
+
+----------------------
+Asignación contigua de memoria (Contiguous memory allocation)
+
+Cada proceso es asignado a un solo bloque de memoria contiguo. Todas las instrucciones y datos de un proceso son almacenados en lugares de memoria adyacentes
+
+* Single Contiguous Memory Allocation: es la forma más simple de gestión de memoria. En esta técnica, la memoria principal se divide en dos partes:
+  - Una parte es reservada para el sistema operativo
+  - La parte restante es asignada a un solo proceso de usuario
+Características:
+  - Solo un proceso de usuario puede residir en memoria a la vez
+  - El sistema operativo ocupa una porción fija de memoria
+  - No es posible la multiprogramación
+  - Simple de implementar y gestionar
+Ventajas:
+  - Gestión de memoria simple
+  - No hay problemas de fragmentación
+Desventajas:
+  - Pobre utilización de memoria
+  - No soporta multitareas o multiprogramación
+
+* Partitioned Memory Allocation: La memoria principal se divide en múltiples particiones contiguas, y cada partición puede retener un proceso. Esta técnica soporta multiprogramación
+Partitioned memory allocation se clasigica en:
+  - Fixed Partition Allocation 
+    $ La memoria se divide en un número fijo de particiones
+    $ Cada partición tiene un tamaño fijo
+    $ Cada partición puede guardar solo un proceso
+    $ Lleva a fragmentación interna
+    $ Una vez las particiones están definidas, el sistema operativo rastrea del estado de las particiones de memoria, esto se hace a través de una estructura de datos llamada partition table
+
+Primera dirección de la partición | Tamaño de la partición | Estado
+0K                                | 200k                   | asignado
+200K                              | 100k                   | libre
+300K                              | 150k                   | libre
+450K                              | 250k                   | asignado
+
+* Variable partition allocation
+  - La memoria se divide en particiones dinámicamente basándose en el tamaño del proceso
+  - Reduce la fragmentación interna
+  - Sufre de fragmentación externa
+Ventajas:
+  - soporta multiprogramación
+  - mejor utilización de memoria comparado con single contiguous allocation
+
