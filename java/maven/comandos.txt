@@ -6,7 +6,7 @@ mvn test --> compila los archivos java en archivos .class y ejecuta los test de 
 
 mvn compile test --> hace los mismo que la anterior
 
-mvn package --> incluye mvn compile y mvn test. Además, crea un archivo .jar. También se puede escribir como mvn compile test package
+mvn package --> incluye mvn compile y mvn test. Además, crea un archivo .jar. También se puede escribir como mvn compile test package. Podemos hacer que se saltee los tests haciendo mvn package -DskipTests	 
 
 mvn install --> crea una archivo .jar y lo coloca en repositorio de Maven local. Incluye compile, test y package
 
