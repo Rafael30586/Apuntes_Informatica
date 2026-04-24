@@ -1866,7 +1866,9 @@ Métricas de EC2 por instancia
 * NetworkPacketsIn
 * NetworkPacketsOut 	
 
------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+ML, IA y Big Data
+----------------------------------------------------------------------------------------------------------------------------
 Servicios de Machine learning y IA
 
 ¿Qué es la inteligencia artificial (IA)?
@@ -1962,3 +1964,14 @@ AWS Glue es un servicio "Extract, Transform, Load" (ETL). Mover datos de una ubi
 AWS Lake Formation es un repositorio centralizado y asegurado que alamacena todos tus datos. Un data lake es un repositorio de almacenamiento que retiene una vasta cantidad de datos crudos en su formato nativo hasta que se necesitan
 
 AWS Data Excahnage es un catálogo de datasets de terceros. Podés descargar y suscribirte gratuitamente para comprar datasets. Por ejemplo: COVID-19 Foot Traffic Data, IMDB TV and Movie Data, Historical Weather Data
+
+--------------------------------
+Amazon QuickSight
+
+Amazon Quicksight es un dashboard de inteligencia de negocios que te permite ingerir datos de varios servicios de de bases de datos o almacenamiento de AWS para visualizar rápidamente datos de negocios con mínimos conocimientos de programación o fórmula de datos
+
+QuickSight usa SPICE (super-fast, parallel, in-memory, calculation engine ) para alcanzar un rendimiento muy rápido a escala
+
+Amazon QuickSight ML Insights, detecta anomalías, lleva a cabo predicción precisa, genera narrativas en lenguje natural
+
+Amazon QuickSight Q. hace preguntas usando lenguaje natural en todos tus datos y recibe respuestas en segundos		
