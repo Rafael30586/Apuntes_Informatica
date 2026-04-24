@@ -1925,3 +1925,40 @@ Amazon Elastic Inference te permite unir aceleración potenciada por GPUs de baj
 Amazon Fraud Detector es un servicio de detección de fraude completamente gestionado. Identifica actividades online potencialmente fraudulentas tales como fraude de pago online y creación de cuentas falsas
 
 Amazon Kendra usa lenguaje natural para sugerir respuestas a preguntas en lugar de un simple "keyword matching"  	  		
+
+-------------------------------
+
+Servicios de Big Data y analíticas
+
+¿Qué es Big Data?
+Es un término utilizado para describir cantidades masivas de datos que es muy difícil de mover y procesar usando técnicas tradicionales de base de datos y software
+
+Amazon Athena es un servicio de consulta interactivo serverless. Puede tomar un puñado de archivos CSV o JSON	en un bucket S3 y cargarlos en tablas SQL temporales para que puedas correr consultas SQL. 
+
+Amazon CloudSearch es un servicio de búsqueda de texto completo totalmente gestionado. Es para cuando querés añadir búsqueda a tu sitio web
+
+Amazon Elasticsearch Service (ES) es un cluster de ElasticSearch gestionado. ElasticSearch es un motor de búsqueda de código abierto. Es más robusto que CloudSearch pero requiere más mantenimiento operacional y de servidor
+
+Amazon Elastic MapReduce (EMR) es para procesamiento de datos y análisis. Puede usarse para crear reportes como RedShift, pero es más conveniente para cuando necesitás transformar dato sin estructura en datos estructurados sobre la marcha
+
+Kinesis Data Streams es un servicio de streaming de datos en tiempo real. Crea productores que envían datos a un stream. Múltiples consumidores pueden consumir datos dentro del stream. Se usa para analíticas en tiempo real, click streams, ingestión de datos de una flota de dispositivos IOT
+
+Kinesis Firehose es una versión serverless y más simple de data streams, pagás bajo demanda basado en cuantos datos son consumidos a través del stream y no tenés que preocuparte por los servidores subyacentes
+
+Amazon Kinesis Data Analytics te permite correr consultas contra datos que están fluyendo a través de tu stream en tiempo real para que puedas crear informes y análisis en datos emergentes
+
+Amazon Kinesis Video Streams te permite analizar o aplicar procesamiento en streaming de video en tiempo real	
+
+Managed Kafka Service (MKS) es un servicio de Apache Kafka totalmente gestionado. Kafka es una plataforma de código abierto para construir tuberías y aplicaciones de streaming datos en tiempo real. Es similar a Kinesis pero con funcionalidades más robustas
+
+Redshift es un data-warehouse de tamaño de petabytes. (los datawarehouses son para procesamiento analítico online), Los data warehouses OLAP pueden ser caros porque mantienen los datos "calientes". Lo que significa que podemos correr una consulta compleja y una gran cantidad de datos y traer esos datos de nuevo rápidamente. Es para cuando querés generar analíticas o informes de una gran cantidad de datos
+
+Amazon QuickSight es un dashboard de inteligencia de negocios. Podés usarlo para crear dashboard de negocios para potenciar decisiones de negocios. Requiere poco o nada de conocimiento sobre programación y se conecta a muchos tipos diferentes de bases de datos
+
+AWS Data Pipeline automatiza el movimiento de datos. Podés mover datos entre servicios de cómputo y almacenamiento
+
+AWS Glue es un servicio "Extract, Transform, Load" (ETL). Mover datos de una ubicación a otra y donde necesitás llevar a cabo transformaciones antes del destino final. Similar a Database Migration Service (DMS) pero más robusto
+
+AWS Lake Formation es un repositorio centralizado y asegurado que alamacena todos tus datos. Un data lake es un repositorio de almacenamiento que retiene una vasta cantidad de datos crudos en su formato nativo hasta que se necesitan
+
+AWS Data Excahnage es un catálogo de datasets de terceros. Podés descargar y suscribirte gratuitamente para comprar datasets. Por ejemplo: COVID-19 Foot Traffic Data, IMDB TV and Movie Data, Historical Weather Data
