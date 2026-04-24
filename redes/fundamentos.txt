@@ -299,4 +299,16 @@ Repetimos el proceso
       1101
       ----
       0000
-El resto es 0, lo que significa que no hubo error		
+El resto es 0, lo que significa que no hubo error
+
+------------------------
+CheckSum
+
+Checksum es capaz de detectar todos los errores de cantidad de bits impares y la mayoría de los errores en que los bits erróneos son pares
+
+1. Dividimos el mensaje original en bloques (una cantidad k de bloques) cada uno con una cantidad n de bits
+2. Sumamos todos los k data block. Añadimos el "carry" (aparentemente, carry hace referencia al número que se pasa en una suma cuando la suma de un dígito con otro da un resultado de dos dígitos y nos llevamos la decena) a la suma (si hay)
+Ejemplo de carry: https://i0.wp.com/mathema.me/wp-content/uploads/2024/06/unnamed-1.jpeg?resize=750%2C500&ssl=1
+3. Obtener el complemento del resultado de la suma, es decir, invertimos todos los bits, por ejemplo, el complemento de 1010 es 0101. Este complemento se llama checksum
+4. El receptor realizará la suma de los bloques (incluyendo el checksum) y deberá dar 0. Luego se hace el complemento que serán todos 1s (si es que no ocurrió ningún error)	
+	
