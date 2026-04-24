@@ -2,4 +2,4 @@ JSP es más simple que usar servlets, pero esto no quiere decir que los reemplac
 
 Cuando trabajamos con el modelo vista controlador usando jakarta EE, el controlador es un servlet, las vistas son archivos JSP y los modelos son POJOs. Los controladores tienen la lógica de negocio (no hay que colocarla en los JSP). Los controladores se conectan a un servlet que sería el service, el service se conecta a una clase DAO y la clase DAO a una base de datos. Tener en cuenta que el servicio y DAO no forman parte del modelo vista controlador
 
-JSTL --> JSP standard library
+JSTL --> JSP standard library . Para trabajar con JSTL en jakarta hay que descargar y añadir al proyecto dos bibliotecas:  jakarta.servlet.jsp.jstl, de glassfish; y jakarta.servlet.jsp.jstl-api, de jakarta . Se pueden encontrar en la página de Maven (podemos descargar los jar si nuestro proyecto no es de maven)

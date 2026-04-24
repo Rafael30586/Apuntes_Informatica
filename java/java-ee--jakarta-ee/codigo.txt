@@ -59,3 +59,5 @@ Manejo de excepciones: se puede usar un try catch en los scriplets de los JSP. O
 Podemos agregar el atributo isErrorPage=true a la JSP de error para poder tener a disposición el objeto exception 
 
 Cuando trabajamos con JSP, podemos usar los símbolos ${} para traer un atributo de un servlet a nuestro JSP. Se le llama "expression language"
+
+Cuando trabajamos con JSTL, es muy útil utilizar el forEach para cuando queremos mostrar una aserie de registros de una base de datos con el estilo que elijamos, ya que soporta etiquetas HTML y podemos darle estilos con CSS
