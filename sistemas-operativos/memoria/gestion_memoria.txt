@@ -66,4 +66,30 @@ Primera dirección de la partición | Tamaño de la partición | Estado
 Ventajas:
   - soporta multiprogramación
   - mejor utilización de memoria comparado con single contiguous allocation
+Desventajas: 
+  - problemas de fragmentación
+  - gestión de memoria compleja comparado con single continuous allocation
 
+--------------------------------------
+Asignación no-contigua de memoria (Non-contiguous memory allocation)
+
+Es una técnica de gestión de memoria en la cual un proceso se divide en partes más pequeñas y estas partes se almacenan en diferentes ubicaciones no-adyacentes en la memoria principal. A diferencia de la asignación contigua, el proceso entero no necesita ser colocado en un único bloque contiguo de memoria.
+Esta técnica es ampliamente utilizada en sistemas operativos modernos porque mejora la utilización de memoria y reduce los problemas de fragmentación
+
+* Características de la asignación no-contigua de memoria
+  - un proceso puede ser almacenado en múltiples ubicaciones de memoria
+  - mejora la utilización de la memoria disponible
+  - reduce la fragmentación externa
+  - requiere traducción de direcciones usando hardware de soporte (MMU)
+* Ventajas
+  - mejor utilización de memoria
+  - soporta programas grandes
+  - elimina la necesidad de memoria libre contigua
+* Desventajas
+  - más compleja que la asignación contigua
+  - sobrecarga adicional para traducción de direcciones
+  - requiere memoria extra para tablas (page table / segment table)
+* Técnicas usadas en asignación no-contigua de memoria
+  1. Paginación (paging): divide un proceso en páginas de tamaño fijo y la memoria en marcos del mismo tamaño
+  2. Segmentación: divide un proceso en segmentos lógicos de tamaño variable como código, datos y stack
+  3. Segmentación con paginación: combina segmentación lógica con paginación para reducir fragmentación
