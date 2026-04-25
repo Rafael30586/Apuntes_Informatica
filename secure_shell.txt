@@ -115,4 +115,15 @@ En adición al ssh ejecutable, SSH tiene otros comandos ejecutables usados en la
 * scp es un programa usado para copiar archivos desde una computadora a otra y es una versión SSH-segura de rcp
 * sftp es un programa usado para copiar archivos de una computadora a otra y es la versión SSH-segura de el original FTP. SFTP se ha vuelto el mecanismo preferido para compartir archivos en internet, reemplazando a ambos FTP y FTP seguro, el cual es un protocolo para usar FTP sobre un túnel SSL/TSL
 * cd se usa para cambiar de directorios en un servidor remoto
-* pwd se usa para mostrar los directorios de trabajo actuales en un servidor remoto	      	 	 	 
+* pwd se usa para mostrar los directorios de trabajo actuales en un servidor remoto
+
+------------------------------------
+¿Qué es la tunelización SSH? (SSH tunneling)
+
+Tunelización SSH, también conocida como "SSH port forwarding", es una técnica que permite a un usuario abrir un túnel seguro entre el anfitrión local y un anfitrión remoto para transmitir datos. La tunelización SSH es típicamente usada para acceder a servicios remotos de manera segura, conectado de manera segura a sistemas distribuidos y restricciones de desviación
+SSH port forwarding redirecciona el tráfico de red a un puerto particular o dirección IP para que el anfitrión remoto se haga directamente accesible por aplicaciones en el anfitrión local. El destino puede estar en el servidor SSH remoto, o ese servidor podría estar configurado para enviar a otro anfitrión remoto
+
+https://www.techtarget.com/rms/onlineimages/ssh_remote_port_forwarding_tunnel-f.png
+
+Hay múltiples tipos de envío soportados por la tunelización SSH, incluyendo local port forwarding, remote port forwarding y Dynamic port forwarding
+Remote port forwarding permite a lo servicios remotos ser accedidos de manera segura desde el lado del cliente a través de un túnel SSH. Local port forwarding, por otro lado, les permite a aplicaciones del lado del cliente acceder de manera segura a servicios corriendo del lado del servidor SSH. Dynamic port forwarding provee un modo más flexible para asegurar y enrutar el tráfico para múltiples aplicaciones usando una conexión SSH. Los túneles SSH son una herramienta poderosa para administradores IT, así como también para actores maliciosos, porque pueden transitar una firewall empresarial sin ser detectados. Como resultado, hay herramientas disponibles para prevenir uso no autorizado de túneles SSH a través de un firewll corporativo	 
