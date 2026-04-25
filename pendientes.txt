@@ -4,3 +4,4 @@ CI/CD
 sistemas statefull y stateless
 virtual memory vs phisical memory
 single sign-on
+texto cifrado o cyphertext

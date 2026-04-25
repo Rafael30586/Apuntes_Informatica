@@ -126,4 +126,16 @@ SSH port forwarding redirecciona el tráfico de red a un puerto particular o dir
 https://www.techtarget.com/rms/onlineimages/ssh_remote_port_forwarding_tunnel-f.png
 
 Hay múltiples tipos de envío soportados por la tunelización SSH, incluyendo local port forwarding, remote port forwarding y Dynamic port forwarding
-Remote port forwarding permite a lo servicios remotos ser accedidos de manera segura desde el lado del cliente a través de un túnel SSH. Local port forwarding, por otro lado, les permite a aplicaciones del lado del cliente acceder de manera segura a servicios corriendo del lado del servidor SSH. Dynamic port forwarding provee un modo más flexible para asegurar y enrutar el tráfico para múltiples aplicaciones usando una conexión SSH. Los túneles SSH son una herramienta poderosa para administradores IT, así como también para actores maliciosos, porque pueden transitar una firewall empresarial sin ser detectados. Como resultado, hay herramientas disponibles para prevenir uso no autorizado de túneles SSH a través de un firewll corporativo	 
+Remote port forwarding permite a lo servicios remotos ser accedidos de manera segura desde el lado del cliente a través de un túnel SSH. Local port forwarding, por otro lado, les permite a aplicaciones del lado del cliente acceder de manera segura a servicios corriendo del lado del servidor SSH. Dynamic port forwarding provee un modo más flexible para asegurar y enrutar el tráfico para múltiples aplicaciones usando una conexión SSH. Los túneles SSH son una herramienta poderosa para administradores IT, así como también para actores maliciosos, porque pueden transitar una firewall empresarial sin ser detectados. Como resultado, hay herramientas disponibles para prevenir uso no autorizado de túneles SSH a través de un firewall corporativo.
+
+-----------------------
+La historia de SSH
+
+La primea versión de SSH apareció en 1995 y fue diseñada por Tatu Ylonen, quien fue, en su tiempo, un investigador en la universidad de tecnología de Helsinki y luego comenzó SSH Communications Security Corp, un proveedor de ciberseguridad fundado en Finlandia.
+Al pasar el tiempo, varios defectos fueron encontrados en SSH1, llevando a esta versión a quedar desaprobada y considerada poco segura.
+Secure Shell 2.0 o SSH2, la versión actual del protocolo Secure Shell, fue adoptada como una especificación estándar por Internet Engineering Task Force en 2006. SSH2 no es compatible con SSH1 y usa intercambio de claves de Diffie-Hellman y una revisación de integridad más fuerte que usa códigos de autenticación de mensajes para mejorar la seguridad.
+Los clientes y servidores SSH pueden usar varios métodos de encriptación, los más ampliamente utilizados siendo Advanced Encryption Standard y Blowfish.
+Desde su desarrollo, varias vulnerabilidades SSH2 han sido encontradas. En 2008, una vulnerabilidad teórica fue encontrada para todas las versiones que permitían la recuperación de hasta 32 bits de texto plano de un bloque de texto cifrado encriptado.  	 
+Igualmente, información obtenida por Edward Snowden en 2013 sugería que la National Security Agency podría desencriptar parte del tráfico SSH.
+A pesar de estas vulnerabilidades y otras más, SSH2 es generalmente considerado seguro cuando se implementa correctamente y tiene configuraciones actuales.
+Para asegurar la seguridad, es importante usar la última y más actualizada versión de SSH.
