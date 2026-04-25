@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/system-design/client-server-model/
+
+El modelo cliente-servidor es una arquitectura de red en la cual los clientes envían solicitudes para obtener recursos o servicios, y los servidores procesan estas solicitudes, retornando las requeridas respuestas
+* Cliente: un dispositivo o programa que solicita datos o servicios (por ejemplo; navegadores web)
+* Servidor: un sistema que almacena recursos, gestiona datos, y responde a solicitudes de clientes
+* Mecanismo solicitud-respuesta: la comunicación sigue un ciclo estructurado: el cliente solicita, el servidor responde
+* Gestión centralizada: los datos y servicios son  controlados desde servidores, mejorando la seguridad y la consistencia
+
+ 
