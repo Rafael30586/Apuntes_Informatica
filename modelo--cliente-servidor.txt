@@ -6,4 +6,48 @@ El modelo cliente-servidor es una arquitectura de red en la cual los clientes en
 * Mecanismo solicitud-respuesta: la comunicación sigue un ciclo estructurado: el cliente solicita, el servidor responde
 * Gestión centralizada: los datos y servicios son  controlados desde servidores, mejorando la seguridad y la consistencia
 
- 
+----------------------------
+Tipos de arquitectura cliente-servidor
+
+La arquitectura cliente-servidor se clasifica comúnmente según cuantas capas se encargan de la presentación, lógica y datos
+
+1. Arquitectura nivel 2
+El cliente se comunica directamente con el servidor, quien es responsable típicamente tanto del procesamiento como el almacenamiento de datos
+* Consiste en dos capas: la capa del cliente y la capa del servidor
+* El cliente se encarga de la interfaz de usuario y podrá llevar a cabo algo de procesamiento antes de enviar solicitudes
+* El servidor procesa solicitudes del cliente y gestiona la base de datos
+* Esta arquitectura es conveniente para pequeñas aplicaciones y entornos con usuarios limitados
+* De todas formas, se vuelve difícil de escalar y gestionar cuando muchos clientes se conectan al servidor simultáneamente 
+
+2. Arquitectura nivel 3
+El sistema se divide en 3 capas para mejorar rendimiento, seguridad y escalabilidad
+* Consiste en la capa de presentación (cliente), capa de aplicación (lógica de negocio) y capa de datos (servidor de base de datos)
+* El cliente interactúa con el servidor de aplicación en lugar de comunicarse directamente con la base de datos
+* El servidor de aplicación procesa solicitudes, aplica lógica de negocio, y trae o almacena datos en la base de datos
+* Esta estructura mejora la seguridad porque la base de datos no se expone de manera directa a los clientes
+* Se usa ampliamente en aplicaciones web y sistemas empresariales debido a su flexibilidad mantenimiento más fácil
+
+-------------------------------
+
+Ventajas
+* Centraliza datos y servicios, lo que hace la gestión y actualizaciones más fáciles
+* Mejora la seguridad porque el control y autenticación de acceso puede ser impuesto en el servidor
+* Soporta múltiples clientes al mismo tiempo, para que muchos usuarios puedan usar el mismo servicio de manera concurrente
+* Hace que compartir de datos se haga de manera consistente porque los clientes obtienen información de una sola fuente confiable
+* Se hace más fácil de mantener porque la mayoría de los cambios pueden hacerse en el servidor sin actualizar cada cliente
+
+Limitaciones
+* Crea una dependencia con el servidor, por lo que los servicios se detendrán si el servidor falla
+* Puede volverse un cuello de botella cuando muchos clientes envían solicitudes al mismo tiempo
+* Requiere mayores costos porque los servidores requieren hardware potente, almacenamiento y disponibilidad continua
+* Necesita conectividad de red, por lo que las redes pobres pueden reducir el rendimiento o bloquear acceso
+* Puede ser complejo de escalar porque puede requerir balanceo de carga, replicación y backups
+
+Aplicaciones
+* La navegación por la web usa navegadores como clientes y servidores web para entregar páginas web y APIs
+* Los sistemas de email usan clientes de email y servidores de correo para enviar, alamcenar y traer mensajes
+* Sistemas de banca online usan aplicaciones móviles/web para acceder a servidores de banca seguros
+* Plataformas de redes sociales usan aplicaciones cliente para solicitar "feeds", publicaciones y "media" de servidores backend
+* Los servicios de almacenamiento en la nube usan aplicaciones cliente para subir, descargar y sincronizar archivos de servidores de almacenamiento
+* Aplicaciones conducidas por bases de datos usan clientes para consultar y actualizar los datos almacenados en servidores de bases de datos 
+	 
