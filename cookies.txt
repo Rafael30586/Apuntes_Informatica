@@ -1,0 +1,82 @@
+https://developer.mozilla.org/es/docs/Web/HTTP/Guides/Cookies
+
+HTTP cookies
+
+Una cookie HTTP, cookie web o cookie de navegador es una pequeña pieza de datos que un servidor envía a el navegador web del usuario. El navegador guarda estos datos y los envía de regreso junto con la nueva petición al mismo servidor. Las cookies se usan generalmente para decirle al servidor que dos peticiones tienen su origen en el mismo navegador web lo que permite, por ejemplo, mantener la sesión de un usuario abierta. Las cookies permiten recordar la información de estado en vista a que el protocolo HTTP es un protocolo sin estado.
+Las cookies se utilizan principalmente con tres propósitos:
+* Gestión de Sesiones: Inicios de sesión, carritos de compras, puntajes de juegos o cualquier otra cosa que el servidor deba recordar
+* Personalización: Preferencias de usuario, temas y otras configuraciones
+* Rastreo: Guardar y analizar el comportamiento del usuario
+
+Las cookies se usaron una vez para el almacenamiento general del lado del cliente. Si bien esto era legítimo cuando eran la única forma de almacenar datos en el cliente, hoy en día se recomienda preferir las API de almacenamiento modernas. Las cookies se envían con cada solicitud, por lo que pueden empeorar el rendimiento (especialmente para las conexiones de datos móviles). Las APIs modernas para el almacenamiento del cliente son la Web storage API (localStorage y sessionStorage) e IndexedDB.
+
+-----------------------
+Creando cookies
+
+Al recibir una solicitud HTTP, un servidor puede enviar un encabezado Set-Cookie con la respuesta. La cookie generalmente es almacenada por el navegador, y luego la cookie se envía con solicitudes hechas al mismo servidor dentro de un encabezado HTTP Cookie. Se puede especificar una fecha de vencimiento o duración, después de lo cual ya no se envía la cookie. Además, se pueden establecer restricciones a un dominio y ruta específicos, lo que limita el lugar donde se envía la cookie.
+
+-------------------------
+Los encabezados Set-Cookie y Cookie
+
+El encabezado de respuesta HTTP Set-Cookie envía las cookies del servidor al agente de usuario. Una cookie simple se establece así:
+Set-Cookie: <nombre-cookie>=<valor-cookie>
+Este encabezado del servidor le dice al cliente que almacene una cookie.
+
+HTTP/1.0 200 OK
+Content-type: text/html
+Set-Cookie: yummy_cookie=choco
+Set-Cookie: tasty_cookie=strawberry
+
+[contenido de la página]
+
+Ahora, con cada nueva solicitud al servidor, el navegador enviará todas las cookies almacenadas previamente al servidor utilizando el encabezado Cookie.
+
+GET /sample_page.html HTTP/1.1
+Host: www.example.org
+Cookie: yummy_cookie=choco; tasty_cookie=strawberry
+
+Cookies de sesión
+La cookie creada anteriormente es una cookie de sesión: se elimina cuando el cliente se cierra, por que no se especificó una directiva Expires o Max-Age . Sin embargo, los navegadores web pueden usar la restauración de sesiones, lo que hace que la mayoría de las cookies de sesión sean permanentes, como si el navegador nunca se cerrara.
+
+Cookies Permanentes
+En lugar de expirar cuando el cliente se cierra, las cookies permanentes expiran en una fecha específica (Expires) o tras un periodo de tiempo específico (Max-Age).
+
+Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;
+
+Nota: Cuando se establece una fecha de expiración, la fecha y hora que se establece es relativa al cliente en el que se establece la cookie, no del servidor.
+
+Cookies Secure y HttpOnly
+Una cookie segura sólo se envía al servidor con una petición cifrada sobre el protocolo HTTPS. Incluso con Secure, no debería almacenarse nunca información sensible en la cookies, ya que son inherentemente inseguras y este flag no puede ofrecer protección real. A partir de Chrome 52 y Firefox 52, los sitios inseguros (http:) no pueden establecer cookies con la directiva Secure.
+Para prevenir ataques cross-site scripting (XSS), las cookies HttpOnly son inaccesibles desde la API de Javascript Document.cookie; Solamente se envían al servidor. Por ejemplo, las cookies que persisten sesiones del lado del servidor no necesitan estar disponibles para JavaScript, por lo que debería establecerse el flag HttpOnly.
+
+Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT; Secure; HttpOnly
+
+--------------------------
+Alcance de las cookies
+
+Las directivas Domain y Path definen el alcance de la cookie: a qué URLs deberían enviarse las cookies.
+
+Domain especifica los hosts permitidos para recibir la cookie. Si no se especifica, toma como valor por defecto el host del Document.location actual, excluyendo subdominios. Si se especifica Domain, los subdominios son siempre incluidos.
+
+Por ejemplo, si se establece Domain=mozilla.org, las cookies se incluyen en subdominios como developer.mozilla.org.
+
+Path indica una ruta URL que debe existir en la URL solicitada para enviar el header. El carácter %x2F ("/") es considerado un separador de directorios, y los subdirectorios también coincidirán.
+
+Por ejemplo, si se establece Path=/docs estas rutas coincidirán:
+
+    /docs
+    /docs/Web/
+    /docs/Web/HTTP
+
+Cookies SameSite
+Las cookies SameSite permiten a los servidores requerir que una cookie no sea enviada con solicitudes cross-site (donde Site es definido por el dominio registrabe), lo que proporciona algo de protección contra ataques cross-site request forgery (CSRF).
+Las cookies SameSite son relativamente nuevas y soportadas por los principales navegadores.
+Aquí hay un ejemplo:
+Set-Cookie: key=value; SameSite=Strict	
+
+El atributo same-site puede tomar uno de los dos valores (case-insensitive):
+
+* Strict:  una cookie same-site tiene este atributo, el navegador sólo enviará cookies si la solicitud se originó en el sitio web que estableció la cookie. Si la solicitud se originó desde una URL diferente que la URL del location actual, no se incluirá ninguna cookie etiquetada con el atributo Strict.
+* Lax: Si el atributo se establece en Lax, las cookies same-site se retienen en (sub)peticiones cross-site, tales como llamadas para cargar imágenes o frames, pero se enviarán cuando un usuario navegue a la URL desde un sitio externo, por ejemplo, siguiendo un enlace.
+
+El comportamiento por defecto de este flag si no está establecido, o no está soportado por el navegador, es incluir las cookies en cualquier solicitud, incluyendo solicitudes corss-origin.
