@@ -2,7 +2,7 @@ https://developer.mozilla.org/es/docs/Web/HTTP/Guides/Cookies
 
 HTTP cookies
 
-Una cookie HTTP, cookie web o cookie de navegador es una pequeña pieza de datos que un servidor envía a el navegador web del usuario. El navegador guarda estos datos y los envía de regreso junto con la nueva petición al mismo servidor. Las cookies se usan generalmente para decirle al servidor que dos peticiones tienen su origen en el mismo navegador web lo que permite, por ejemplo, mantener la sesión de un usuario abierta. Las cookies permiten recordar la información de estado en vista a que el protocolo HTTP es un protocolo sin estado.
+Una cookie HTTP, cookie web o cookie de navegador es una pequeña pieza de datos que un servidor envía al navegador web del usuario. El navegador guarda estos datos y los envía de regreso junto con la nueva petición al mismo servidor. Las cookies se usan generalmente para decirle al servidor que dos peticiones tienen su origen en el mismo navegador web lo que permite, por ejemplo, mantener la sesión de un usuario abierta. Las cookies permiten recordar la información de estado en vista a que el protocolo HTTP es un protocolo sin estado.
 Las cookies se utilizan principalmente con tres propósitos:
 * Gestión de Sesiones: Inicios de sesión, carritos de compras, puntajes de juegos o cualquier otra cosa que el servidor deba recordar
 * Personalización: Preferencias de usuario, temas y otras configuraciones
@@ -104,7 +104,7 @@ Se presentan aquí algunas técnicas que se deberían usar para evitar que estas
 
 
 ----------------------
-Ratreo y privacidad
+Rastreo y privacidad
 
 Cookies de terceros
 Las Cookies tienen un dominio asociado a ellas. Si este dominio es el mismo que el dominio de la página en la que el cliente se encuentra, se llama cookie de origen. Si el dominio es distinto, se denomina cookie de terceros. Si bien las cookies de origen se envían únicamente al servidor que las configura, una página web puede contener imágenes u otros componentes almacenados en servidores de otros dominios (como publicidad). Las cookies que se envían a través de estos componentes de terceros se utilizan principalmente para publicidad y seguimiento en la web. Por ejemplo, los tipos de cookies utilizadas por Google.
@@ -112,3 +112,19 @@ Un servidor de terceros puede crear un perfil del historial y los hábitos de na
 Hay algunas funciones útiles disponibles para los desarrolladores que desean respetar la privacidad del usuario y minimizar el seguimiento de terceros:
 * Los servidores pueden (y deberían) configurar el atributo SameSite para especificar si se pueden enviar o no cookies de terceros.
 * Las cookies que tienen un estado de partición independiente (CHIPS) les permiten a los desarrolladores habilitar sus cookies en el almacenamiento particionado, con un contenedor de cookies separado por sitio de nivel superior. Esto permite que los usos válidos sin seguimiento de cookies de terceros sigan funcionando en navegadores que no permiten el uso de cookies para el seguimiento de terceros.
+
+---------------------
+Regulaciones relacionadas a las cookies
+
+La legislación o normativa que cubre el uso de cookies incluye:
+* El Reglamento General de Privacidad de Datos (RGPD) en la Unión Europea
+* La Directiva sobre la privacidad electrónica en la Unión Europea
+* Ley de Privacidad del Consumidor de California (CCPA)
+
+Estas regulaciones tienen alcance global. Se aplican a cualquier sitio del internet al que accedan usuarios de estas jurisdicciones (la UE y California, con la salvedad de que la ley de California se aplica sólo a entidades con ingresos brutos superiores a 25 millones de dólares, entre otras cosas).
+Estas regulaciones incluyen requisitos tales como:
+* Notificar a los usuarios que el sitio utiliza cookies.
+* Permitir a los usuarios escoger no recibir algunas o todas las cookies.
+* Permitir a los usuarios utilizar la mayor parte del servicio sin recibir cookies.
+
+Puede haber otras regulaciones que rijan el uso de cookies en tu ubicación. La carga de conocer y cumplir estas regulaciones recae sobre usted. Hay empresas que ofrecen un código de "banner de cookies" que le ayuda a cumplir con estas normativas.
