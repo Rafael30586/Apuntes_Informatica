@@ -1,3 +1,5 @@
+https://www.techtarget.com/whatis/definition/virtual-CPU-vCPU
+
 ¿Qué es un CPU virtual (vCPU)?
 Un CPU virtual es el procesador de una máquina virtual. Cada vCPU representa la habilidad de ejecutar un hilo de procesamiento a la vez. El hipervisor de la máquina virtual gestiona la planificación del tiempo de vCPU al CPU físico.
 
@@ -5,6 +7,14 @@ Un CPU virtual es el procesador de una máquina virtual. Cada vCPU representa la
 Las computadores necesitan 3 recursos principales para funcionar: almacenamiento (espacio en disco), memoria (RAM) y cómputo (CPU). En una máquina virtual (VM), el hipervisor gestiona las VMs huéspedes y les asigna a cuantos recursos virtuales pueden acceder. El hipervisor entonces planifica la demanda de la VM huésped al hardware físico. 
 Cada vCPU representa la habilidad de ejecutar un hilo de procesamiento en un CPU físico del sistema simultáneamente. Entonces, para cada vCPU, hay un hilo de procesador corriendo por cada uno en el CPU físico. Por ejemplo, si a una VM se le asigna 4 vCPUs, el SO esperaría a poder correr 4 hilos a la vez. El hipervisor será responsable de planificar hilos entrantes de la VM huésped al CPU físico para la ejecución.
 Sistemas virtualizados modernos no asignan permanentemente un solo vCPU a un solo CPU. En su lugar, toman los hilos entrantes de las VMs y las asignan según la necesidad a los núcleos del CPU físico al estar disponibles. Esto permite mejor utilización de los recursos del CPU.
-Complicando un poco las cosas, la mayoría de los CPUs modernos de servidores pueden ejecutar 2 hilos por núcleo usando multihilo simultáneo o hyperthreading. Cada vCPU representa la mitad de la habilidad de procesamiento de un núcleo físico. 	  
+Complicando un poco las cosas, la mayoría de los CPUs modernos de servidores pueden ejecutar 2 hilos por núcleo usando multihilo simultáneo o hyperthreading. Cada vCPU representa la mitad de la habilidad de procesamiento de un núcleo físico.
+
+---------------------------
+Sobresuscripción (oversuscription) de vCPUs 
+
+Asignar más vCPUs que núcleos físicos disponibles se llama sobresuscripción. Una cantidad moderada de sobresuscripción es generalmente aceptable porque la mayoría de las VMs rara vez usan todo el CPU disponible. En su lugar, con frecuencia permanecen inactivos por largos períodos de tiempo y luego usan un montón de recursos para una corta explosión de actividad.
+Si muchos vCPUs son utilizados a la vez en un sistema con sobresuscripción, podrá haber contención de recursos, el rendimiento empeorará. Para prevenir esto, es mejor planificar cuantos vCPUs se usan tomando en cuenta los CPUs físicos totales y la carga de trabajo esperada. Por ejemplo, una VM cliente de usuario tendrá un rendimiento errático dependiendo de la actividad del usuario, mientras que un servidor será más predecible. Algunas VMs correrán siempre a una alta utilización de CPU y no deberían ser sobresuscritas.
+Los proveedores de nube podrán o no sobresuscribir los vCPUs dependiendo del tipo de VM, costo y términos del servicio. Muchos de los niveles de AWS dedican un vCPU por hilo físico de CPU. Algunas instancias más pequeñas T2 se clasifican como "burstable performance instances", que están limitadas a no usar el CPU físico entero todo el tiempo.
+Para hipervisores de VM dedicados, los administradores pueden establecer reglas para determinar como manejaran la contención de recursos. Por ejemplo, VMware ESXI les asignará a todas las máquinas virtuales igual prioridad por defecto. Si los administradores quieren asegurarse de que una VM tiene siempre una cierta cantidad de capacidad, pueden establecer una salvedad para dedicar una cierta cantidad CPU físico para potenciarla. Una parte puede también ser especificada para darle a una VM una prioridad más alta o más baja que otras en caso de restricciones de recursos.	  
 
  
