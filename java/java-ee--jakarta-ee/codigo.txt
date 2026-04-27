@@ -60,4 +60,11 @@ Podemos agregar el atributo isErrorPage=true a la JSP de error para poder tener 
 
 Cuando trabajamos con JSP, podemos usar los símbolos ${} para traer un atributo de un servlet a nuestro JSP. Se le llama "expression language"
 
-Cuando trabajamos con JSTL, es muy útil utilizar el forEach para cuando queremos mostrar una aserie de registros de una base de datos con el estilo que elijamos, ya que soporta etiquetas HTML y podemos darle estilos con CSS
+Cuando trabajamos con JSTL, es muy útil utilizar el forEach para cuando queremos mostrar una serie de registros de una base de datos con el estilo que elijamos, ya que soporta etiquetas HTML y podemos darle estilos con CSS
+
+Al trabajar con JSTL, podemos usar SQL gracias a jakarta.tags.sql y podemos también usar funciones gracias a jakarta.tags.functions
+
+Algunas etiquetas que se usan para trabajar con JSTL en jakarta:
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<%@ taglib prefix="sql" uri="jakarta.tags.sql"%> 
+<%@ taglib prefix="fn" uri="jakarta.tags.functions"%> 	
