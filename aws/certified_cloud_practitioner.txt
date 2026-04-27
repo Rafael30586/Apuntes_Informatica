@@ -1989,4 +1989,29 @@ Amazon Lookout: para equipamiento/métricas/visión . Usa modelos de ML para con
 
 Amazon Monitron: usa modelos de ML para predecir tiempo de inactividad de equipamiento no planificado. Tien un sensor IoT que captura vibraciones y percibe datos
 
-AWS Neuron: es un SDK usado para llevar a cabo cargas de trabajo de aprendizaje profundo en instancias AWS Inferentia y AWS Trainium		
+AWS Neuron: es un SDK usado para llevar a cabo cargas de trabajo de aprendizaje profundo en instancias AWS Inferentia y AWS Trainium
+
+-----------------------
+IA generativa
+
+¿Qué es la IA generativa?
+Es un tipo de inteligencia artificial capaz de generar nuevo contenido, como texto, imágenes, música y otras formas de contenido
+
+-------------------------
+Frameworks y herramientas de ML y DL
+
+Los siguientes son algunos frameworks comunes de Machine learning y Deep learning que pueden ser usados en SageMaker o tienen soporte directo	
+
+Apache MXNet: adoptado por AWS, soporta ambos imperativo y simbólico
+
+PyTorch: biblioteca optimizada para Deep learning usando GPUs y CPU (creado por facebook)
+
+TensorFlow: framework de machine learning de bajo nivel (creado por google). Keras: framework de machine learning de alto nivel construido sobre TensorFlow
+
+Apache Spark: motor unificado de analíticas para procesamiento de datos a gran escala. SparkML: un conjunto uniforme de APIs de alto nivel que ayudan a los usuarios a crear y afinar pipelines de machine learning
+
+Chainer: framework poderoso, intuitivo y flexible de Deep learning que soporta CUDA
+
+Hugging Face: un comunidad de IA de modelos de ML y dataset
+
+Hay algunos frameworks de ML que ya no están en desarrollo, han sido absorbidos o abandonados o la comunidad no los usa: Caffe2, Theano, DSSTNE, CNTK		
