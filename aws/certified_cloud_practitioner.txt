@@ -1,4 +1,4 @@
-¿Qué es cloud computing? Es la práctica de usar una red de servidores remotos hospedados en internet para almacenar, gestionar y procesar datos, en lugar de hacerlo en una computadora personal o un servidor local.
+	¿Qué es cloud computing? Es la práctica de usar una red de servidores remotos hospedados en internet para almacenar, gestionar y procesar datos, en lugar de hacerlo en una computadora personal o un servidor local.
 
 Evolución del hospedaje en la nube:
 - Servidor dedicado: una máquina física dedicada a un solo negocio. Corre una sola aplicación web. Es muy caro, requiere mucho mantenimiento y  es de alta seguridad.
@@ -1974,4 +1974,19 @@ QuickSight usa SPICE (super-fast, parallel, in-memory, calculation engine ) para
 
 Amazon QuickSight ML Insights, detecta anomalías, lleva a cabo predicción precisa, genera narrativas en lenguje natural
 
-Amazon QuickSight Q. hace preguntas usando lenguaje natural en todos tus datos y recibe respuestas en segundos		
+Amazon QuickSight Q. hace preguntas usando lenguaje natural en todos tus datos y recibe respuestas en segundos	
+
+------------------------------
+Servicios de Machine learning y IA - extendido
+
+Amazon Bedrock: un servicio de la nube LLM que ofrece generar respuestas en forma de imágenes y texto. Muy parecido a ChatGPT
+
+Amazon CodeWhisper: un generador de código IA que va a predecir código para satisfacer tu caso de uso. Parecdio a GitHub copilot
+
+Amazon DevOps Guru: usa ML para analizar tus métricas y eventos de aplicación y datos operacionales para detectar anormalidades operacionales. Es para ver si hay algo mal con nuestras operaciones en la nube
+
+Amazon Lookout: para equipamiento/métricas/visión . Usa modelos de ML para control de calidad e inspecciones automatizadas llevadas a cabo
+
+Amazon Monitron: usa modelos de ML para predecir tiempo de inactividad de equipamiento no planificado. Tien un sensor IoT que captura vibraciones y percibe datos
+
+AWS Neuron: es un SDK usado para llevar a cabo cargas de trabajo de aprendizaje profundo en instancias AWS Inferentia y AWS Trainium		
