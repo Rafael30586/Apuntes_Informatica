@@ -111,3 +111,16 @@ Algoritmos de reemplazo de página (PRA)
 Demand paging
 * Carga solamente las páginas que un proceso necesita en memoria
 * Reduce el uso innecesario de memoria y I/O
+
+------------------------
+Problemas de gestión de memoria
+
+Fragmentación
+* La fragmentación ocurre cuando los procesos son cargados y removidos de la memoria, resultando en espacios de memoria sin usar que no pueden ser utilizados eficientemente
+* Fragmentación interna: ocurre cuando a un proceso se le asigna más memoria de la que realmente necesita, llevando a espacio desperdiciado dentro del bloque de memoria asignado
+* Fragmentación externa: ocurre cuando memoria libre se divide en bloques pequeños y dispersos, haciendo imposible asignar un bloque grande y contiguos incluso cuando existe la cantidad de memoria necesaria
+
+Thrashing
+* Ocurre cuando el sistema gasta la mayor parte de su tiempo intercambiando páginas entre memoria y disco en lugar de ejecutar procesos, causando baja utilización de CPU
+
+	
