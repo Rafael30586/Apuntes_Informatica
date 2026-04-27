@@ -2014,4 +2014,22 @@ Chainer: framework poderoso, intuitivo y flexible de Deep learning que soporta C
 
 Hugging Face: un comunidad de IA de modelos de ML y dataset
 
-Hay algunos frameworks de ML que ya no están en desarrollo, han sido absorbidos o abandonados o la comunidad no los usa: Caffe2, Theano, DSSTNE, CNTK		
+Hay algunos frameworks de ML que ya no están en desarrollo, han sido absorbidos o abandonados o la comunidad no los usa: Caffe2, Theano, DSSTNE, CNTK
+
+-------------------------
+Apache MXNet
+
+Apache MXNet es un framework de machine learning y Deep leanrning que soporta muchso lengujes de programación diferentes:
+Python, Java, Julia, Matlab, R, JavaScript, Go, R, Scala, Perl, Lenguaje Wólfram
+
+Las características clave de Apache MXNet son:
+* Escalable: diseñado par infraestructura en la nube distribuida
+* Flexible: soporta programación simbólica e imperativa
+* Portable
+* Múltiples lenguajes de programación
+
+AWS ha hecho a Apache MXNet su framework de ML elegido. Hay mucho apoyo para usar Apache MXNet dentro de AWS SageMaker y contenedores ML de AWS
+
+MXNet tiene dos interfaces de alto nivel:
+API Gluon - programación imperativa
+API Module - programación simbólica  			
