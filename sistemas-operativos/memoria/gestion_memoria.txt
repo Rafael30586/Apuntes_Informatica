@@ -93,3 +93,21 @@ Esta técnica es ampliamente utilizada en sistemas operativos modernos porque me
   1. Paginación (paging): divide un proceso en páginas de tamaño fijo y la memoria en marcos del mismo tamaño
   2. Segmentación: divide un proceso en segmentos lógicos de tamaño variable como código, datos y stack
   3. Segmentación con paginación: combina segmentación lógica con paginación para reducir fragmentación
+
+------------------------
+Mecanismos de gestión de memoria
+
+Memoria virtual
+* Deja correr a un programa incluso si es más grande que la RAM física
+* Usa el disco como una extensión de la memoria principal
+
+Algoritmos de reemplazo de página (PRA)
+* PRA decide que página remover de la memoria cuando está llena
+* FIFO: remueve la página que vino primero
+* LRU: remueve la página que menos ase ha utilizado recientemente
+* Optimal: remueve la página no necesitada por el tiempo futuro más extenso
+* LFU: remueve la página usada con menos frecuencia 
+
+Demand paging
+* Carga solamente las páginas que un proceso necesita en memoria
+* Reduce el uso innecesario de memoria y I/O
