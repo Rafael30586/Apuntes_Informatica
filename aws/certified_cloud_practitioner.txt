@@ -2032,4 +2032,11 @@ AWS ha hecho a Apache MXNet su framework de ML elegido. Hay mucho apoyo para usa
 
 MXNet tiene dos interfaces de alto nivel:
 API Gluon - programación imperativa
-API Module - programación simbólica  			
+API Module - programación simbólica 
+
+-------------------------
+¿Qué es Intel?
+
+Es una corporación multinacional y es uno de los más grandes fabricantes de chips semiconductores. Intel es el inventor del conjunto de instrucciones x86
+
+Existe otro conjunto de instrucciones popular llamado ARM que usa menos instrucciones y generalmente resulta en mejor eficiencia de el uso de energía que resulta en menores costos 			
