@@ -2039,4 +2039,29 @@ API Module - programación simbólica
 
 Es una corporación multinacional y es uno de los más grandes fabricantes de chips semiconductores. Intel es el inventor del conjunto de instrucciones x86
 
-Existe otro conjunto de instrucciones popular llamado ARM que usa menos instrucciones y generalmente resulta en mejor eficiencia de el uso de energía que resulta en menores costos 			
+Existe otro conjunto de instrucciones popular llamado ARM que usa menos instrucciones y generalmente resulta en mejor eficiencia de el uso de energía que resulta en menores costos
+
+-----------------------
+Intel Xeon escalable e Intel Gaudi
+
+Procesador escalable Intel Xeon
+Es un CPU de alto rendimiento diseñado para aplicaciones empresariales y de servidor, comúnmente usado en instancias AWS
+
+Intel Habana Gaudi
+Procesador de entrenamiento de IA desarrollado por Haban labs, una compañía adquirida por Intel. Gaudi está hecho a medida para modelos de entrenamiento de Deep learning. Gaudi es visto generalmente como un competidor de los GPUs de Nvidia. Aunque los GPUs de Nvidia son muy versátiles y ampliamente aceptados, Gaudi ofrece una alternativa especial que está optimizada especialmente para entrenamiento con IA
+
+---------------------------
+¿Qué es un GPU?
+
+Un GPU es un procesador que se especializa en reproducir imágenes en alta resolución y videos de manera concurrente. Muy bueno para video juegos
+
+Los GPUs pueden llevar a cabo operaciones paralelas en múltiples conjuntos de datos, y por eso se usan comúnmente para tareas no-gráficas como machine learning y computación científica
+
+Los CPUs pueden tener un promedio de 4 a 16 núcleos
+Los GPUs pueden tener miles de núcleos
+4 a 8 GPUs pueden proveer 40000 núcleos
+
+Los GPUs son convenientes para tareas repetitivas y paralelas:
+* Reproducir gráficos
+* Cryptocurrency mining
+* Deep Learning y ML			
