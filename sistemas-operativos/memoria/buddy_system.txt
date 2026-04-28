@@ -1,0 +1,8 @@
+https://www.geeksforgeeks.org/operating-systems/buddy-system-memory-allocation-technique/
+
+Buddy System - técnica de asignación de memoria
+
+El buddy allocation system es una técnica de gestión de memoria que divide un bloque grande de memoria en bloques más pequeños potencia de dos llamados "buddies"
+* si una solicitud llega, el bloque se divide parte repetidamente hasta que alcance un tamaño conveniente
+* cuando la memoria es liberada, su "buddy" es revisado, si también está libre, se vuelven a unir para formar un bloque más grande
+* esto hace que la reutilización de la memoria sea rápida y reduce la fragmentación
