@@ -123,4 +123,15 @@ Fragmentación
 Thrashing
 * Ocurre cuando el sistema gasta la mayor parte de su tiempo intercambiando páginas entre memoria y disco en lugar de ejecutar procesos, causando baja utilización de CPU
 
-	
+---------------------------
+Estrategias de asignación de memoria (memory allocation strategies)
+
+Asignación de partición fija (fixed partition allocation): la memoria es dividida en particiones de tamaño fijo, y cada partición puede retener solo un proceso. El SO rastrea particiones ocupadas y libres usando una tabla de particiones
+
+Asignación de partición dinámica (Dynamic partition allocation): la memoria es dividida en particiones de tamaño variable basadas en el tamaño de los procesos. Esto ayuda a evitar gasto de memoria pero puede resultar en fragmentación
+
+Algoritmos de colocación (placement algorithms): al asignar memoria, el sistema operativo usa algoritmos de colocación para decidir que bloque libre debería ser asignado  a un proceso:
+* First fit: asigna la primera partición disponible que sea lo suficientemente grande como para retener el proceso
+* Best fit: asigna la partición más pequeña disponible que se adapta al proceso, reduciendo el espacio malgastado
+* Worst fit: asigna la partición más grande disponible, dejando el espacio más grande remanente
+* Next fit: similar a first fit pero comienza buscando memoria libre desde el punto de la última asignación	
