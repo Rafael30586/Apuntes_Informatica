@@ -310,5 +310,34 @@ Checksum es capaz de detectar todos los errores de cantidad de bits impares y la
 2. Sumamos todos los k data block. Añadimos el "carry" (aparentemente, carry hace referencia al número que se pasa en una suma cuando la suma de un dígito con otro da un resultado de dos dígitos y nos llevamos la decena) a la suma (si hay)
 Ejemplo de carry: https://i0.wp.com/mathema.me/wp-content/uploads/2024/06/unnamed-1.jpeg?resize=750%2C500&ssl=1
 3. Obtener el complemento del resultado de la suma, es decir, invertimos todos los bits, por ejemplo, el complemento de 1010 es 0101. Este complemento se llama checksum
-4. El receptor realizará la suma de los bloques (incluyendo el checksum) y deberá dar 0. Luego se hace el complemento que serán todos 1s (si es que no ocurrió ningún error)	
-	
+4. El receptor realizará la suma de los bloques (incluyendo el checksum) y deberá dar 0. Luego se hace el complemento que serán todos 1s (si es que no ocurrió ningún error)
+
+--------------------------------------------------------------------------------------------------------------------------------
+Control de flujo
+--------------------------------------------------------------------------------------------------------------------------------
+
+Ancho de banda (band width)
+* Supongamos que tenemos un emisor, un receptor, un medio de transmisión y un mensaje
+* El tiempo que le toma al emisor colocar el mensaje en el enlace es la demora de transmisión (transmission delay o Td)
+* El ancho de banda es la cantidad de bits que se pueden colocar en 1 segundo
+* por ejemplo, si el tamaño del mensaje es 100 bits y el ancho de banda es 1 bit/segundo, el Td será de 100 segundos
+* Td = L / Bw , siendo L el tamaño del mensaje y Bw el ancho de banda
+
+Demora de propagación (propagation delay)
+* Es el tiempo que le toma al mensaje ir desde el emisor hasta el receptor
+* Pd = distancia / velocidad , siendo Pd la demora de propagación
+* Por ejemplo, si la velocidad es de 10 m/s y la distancia es de 30 m, Pd = 3 segundos
+
+Para ancho de banda, las equivalencias de los prefijos de unidades es la siguiente:
+Kilo --> 10^3
+Mega --> 10^6
+Giga --> 10^9
+Para datos, las equivalencias de los prefijos de unidades es la siguiente:
+Kilo --> 2^10 = 1024
+Mega --> 2^20 = (1024)^2
+Giga --> 2^30 = (1024)^3
+* Teniendo en cuenta esto, si, por ejemplo, el tamaño del mensaje es 8kb y el ancho de banda es 8kb/seg
+* 8kb = (8kb x 1024b/kb)
+* 8kb/seg = (8kb x 1000b/kb) / seg
+* Td = (8kb x 1024b/kb) / [(8kb x 1000b/kb) / seg] = (1 * 1,024) / [1 / seg] = 1,024 seg
+* La demora de transmisión es 1,024 seg
