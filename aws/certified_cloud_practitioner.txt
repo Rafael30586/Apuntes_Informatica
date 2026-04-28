@@ -2064,4 +2064,18 @@ Los GPUs pueden tener miles de núcleos
 Los GPUs son convenientes para tareas repetitivas y paralelas:
 * Reproducir gráficos
 * Cryptocurrency mining
-* Deep Learning y ML			
+* Deep Learning y ML
+
+-----------------------------
+¿Qué es CUDA?
+
+¿Qué es Nvidia?
+Es una compañía que fabrica GPUs para juegos y mercados profesionales
+
+CUDA (Compute Unified Device Architecture) es una plataforma y API de computación en paralelo por Nvidia que permite a los desarrolladores usar GPUs con CUDA habilitado para computación de propósito general en GPUs (GPGPU)
+
+Todos los frameworks de Deep learning más importantes están integrados con Nvidia Depp Learning SDK. Este SDK es una colección de bibliotecas de Nvidia para deep learning. Una de esas bibliotecas es la CUDA Deep Neural Network Library (cuDNN), que provee implementaciones sintonizadas para rutinas estándar como:
+* circunvolución 
+* agrupación (pooling)
+* normalización
+* capas de activación  				
