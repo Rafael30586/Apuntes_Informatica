@@ -64,7 +64,10 @@ Cuando trabajamos con JSTL, es muy útil utilizar el forEach para cuando queremo
 
 Al trabajar con JSTL, podemos usar SQL gracias a jakarta.tags.sql y podemos también usar funciones gracias a jakarta.tags.functions
 
-Algunas etiquetas que se usan para trabajar con JSTL en jakarta:
+Algunas areas que se usan para trabajar con JSTL en jakarta:
 <%@ taglib prefix="c" uri="jakarta.tags.core"%>
 <%@ taglib prefix="sql" uri="jakarta.tags.sql"%> 
-<%@ taglib prefix="fn" uri="jakarta.tags.functions"%> 	
+<%@ taglib prefix="fn" uri="jakarta.tags.functions"%>
+Cada una de estas áreas tiene sus propias etiquetas que sirven para diferentes cosas
+
+Podemos crear filtros y mapearlos a los servlets en el archivo web.xml. En jakarta, los filtros heredan de HttpFilter e implementan Filter. Podemos hacer un casting del ServletRequest que reciben como argumentos a HttpServletRequest para procesar lo que recibe de la solicitud. 	
