@@ -2074,7 +2074,7 @@ Es una compañía que fabrica GPUs para juegos y mercados profesionales
 
 CUDA (Compute Unified Device Architecture) es una plataforma y API de computación en paralelo por Nvidia que permite a los desarrolladores usar GPUs con CUDA habilitado para computación de propósito general en GPUs (GPGPU)
 
-Todos los frameworks de Deep learning más importantes están integrados con Nvidia Depp Learning SDK. Este SDK es una colección de bibliotecas de Nvidia para deep learning. Una de esas bibliotecas es la CUDA Deep Neural Network Library (cuDNN), que provee implementaciones sintonizadas para rutinas estándar como:
+Todos los frameworks de Deep learning más importantes están integrados con Nvidia Deep Learning SDK. Este SDK es una colección de bibliotecas de Nvidia para deep learning. Una de esas bibliotecas es la CUDA Deep Neural Network Library (cuDNN), que provee implementaciones sintonizadas para rutinas estándar como:
 * circunvolución 
 * agrupación (pooling)
 * normalización
@@ -2088,4 +2088,22 @@ AWS well-architectured framework
 
 Es un documento técnico creado por AWS para ayudar a los consumidores a construir usando las mejores prácticas definidas por AWS
 
-El framework está dividido en 5 secciones llamadas pilares que dirige diferentes aspectos o "lenses" que pueden ser aplicados a carga de trabajo en la nube. Los 5 pilares son: excelencia operacional, seguridad, confiabilidad, rendimiento/eficiencia, optimización de costo. Cada pilar tiene su propio documento técnico detallado 				
+El framework está dividido en 5 secciones llamadas pilares que dirige diferentes aspectos o "lenses" que pueden ser aplicados a carga de trabajo en la nube. Los 5 pilares son: excelencia operacional, seguridad, confiabilidad, rendimiento/eficiencia, optimización de costo. Cada pilar tiene su propio documento técnico detallado
+
+-----------------------------
+Definiciones generales
+
+* Pilar de excelencia operacional: para correr y monitorear sistemas 
+* Pilar de seguridad: protege datos y sistemas, mitiga riesgos
+* Pilar de confiabilidad: mitigar y recuperarse de interrupciones
+* Pilar de rendimiento/eficiencia: usa recursos de cómputo eficientemente
+* Pilar de optimización de costo: para obtener el menor precio
+
+Podés cambiar pilares basándote en el contexto del negocio
+
+Definiciones:
+* Componente: código, configuración y recurso de AWS contra un requerimiento
+* Carga de trabajo (workload): un conjunto de componentes que trabajan juntos para entregar valor de negocio
+* hitos (milestones): cambios clave de tu arquitectura a lo largo del ciclo de vida del producto
+* Arquitectura: es como los componentes trabajan juntos en una carga de trabajo
+* Portfolio de tecnología: una colección de cargas de trabajo requeridos por el negocio para operar				
