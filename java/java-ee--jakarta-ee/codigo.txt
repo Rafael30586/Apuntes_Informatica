@@ -70,4 +70,6 @@ Algunas areas que se usan para trabajar con JSTL en jakarta:
 <%@ taglib prefix="fn" uri="jakarta.tags.functions"%>
 Cada una de estas áreas tiene sus propias etiquetas que sirven para diferentes cosas
 
-Podemos crear filtros y mapearlos a los servlets en el archivo web.xml. En jakarta, los filtros heredan de HttpFilter e implementan Filter. Podemos hacer un casting del ServletRequest que reciben como argumentos a HttpServletRequest para procesar lo que recibe de la solicitud. 	
+Podemos crear filtros y mapearlos a los servlets en el archivo web.xml. En jakarta, los filtros heredan de HttpFilter e implementan Filter. Podemos hacer un casting del ServletRequest que reciben como argumentos a HttpServletRequest para procesar lo que recibe de la solicitud.
+
+Para crear un login usando jakarta podemos usar session o cookies. Las cookies se guardan en el navegador y la session en el servidor. 	
