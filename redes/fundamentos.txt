@@ -341,3 +341,11 @@ Giga --> 2^30 = (1024)^3
 * 8kb/seg = (8kb x 1000b/kb) / seg
 * Td = (8kb x 1024b/kb) / [(8kb x 1000b/kb) / seg] = (1 * 1,024) / [1 / seg] = 1,024 seg
 * La demora de transmisión es 1,024 seg
+
+El tiempo que toma enviar un paquete desde un nodo A a un nodo B es Pd + Td
+
+Queing delay
+* No hay una fórmula general para calcularla
+* Es la cantidad de tiempo que un paquete estará esperando en una cola en el router antes de ser tomado para el procesamiento
+* Todo router o receptor tiene una cola buffer (buffer queue), en la cual, si la velocidad del envío es mayor y la velocidad de procesamiento del router es menor, los paquetes estarán esperando en una cola de buffer
+* Se llama queueing delay al tiempo que tiene que estar esperando un paquete en la cola de buffer antes de ser procesado  
