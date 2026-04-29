@@ -2078,4 +2078,14 @@ Todos los frameworks de Deep learning más importantes están integrados con Nvi
 * circunvolución 
 * agrupación (pooling)
 * normalización
-* capas de activación  				
+* capas de activación
+
+-------------------------------------------------------------------------------------------------------------------------
+AWS well-architectured framework
+-------------------------------------------------------------------------------------------------------------------------
+
+AWS well-architectured framework
+
+Es un documento técnico creado por AWS para ayudar a los consumidores a construir usando las mejores prácticas definidas por AWS
+
+El framework está dividido en 5 secciones llamadas pilares que dirige diferentes aspectos o "lenses" que pueden ser aplicados a carga de trabajo en la nube. Los 5 pilares son: excelencia operacional, seguridad, confiabilidad, rendimiento/eficiencia, optimización de costo. Cada pilar tiene su propio documento técnico detallado 				
