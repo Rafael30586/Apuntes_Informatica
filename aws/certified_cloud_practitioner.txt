@@ -2104,6 +2104,28 @@ Podés cambiar pilares basándote en el contexto del negocio
 Definiciones:
 * Componente: código, configuración y recurso de AWS contra un requerimiento
 * Carga de trabajo (workload): un conjunto de componentes que trabajan juntos para entregar valor de negocio
-* hitos (milestones): cambios clave de tu arquitectura a lo largo del ciclo de vida del producto
-* Arquitectura: es como los componentes trabajan juntos en una carga de trabajo
-* Portfolio de tecnología: una colección de cargas de trabajo requeridos por el negocio para operar				
+* Hitos (milestones): cambios clave de tu arquitectura a lo largo del ciclo de vida del producto
+* Arquitectura: es como los componentes trabaj	an juntos en una carga de trabajo
+* Portfolio de tecnología: una colección de cargas de trabajo requeridos por el negocio para operar
+
+-----------------------------
+En arquitectura
+
+El AWS well-architected framework está diseñado alrededor de un tipo distinto de estructura de equipo.
+La empresas generalmente tienen equipos centralizados con roles específicos mientras AWS tiene equipos distribuidos con roles flexibles
+
+Empresas on-premise:
+equipo centralizado que consiste en:
+* Arquitecto técnico
+* Arquitecto de soluciones (software)
+* Arquitecto de datos
+* Arquitecto de redes
+* Arquitecto de seguridad
+
+Amazon web services:
+Equipos distribuidos que consisten en:
+* Prácticas
+  - expertos de equipo
+* Mecanismos
+  - revisaciones automatizadas para estándares
+* Principio de liderazgo de Amazon					
