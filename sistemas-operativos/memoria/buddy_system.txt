@@ -3,6 +3,55 @@ https://www.geeksforgeeks.org/operating-systems/buddy-system-memory-allocation-t
 Buddy System - técnica de asignación de memoria
 
 El buddy allocation system es una técnica de gestión de memoria que divide un bloque grande de memoria en bloques más pequeños potencia de dos llamados "buddies"
-* si una solicitud llega, el bloque se divide parte repetidamente hasta que alcance un tamaño conveniente
+* si una solicitud llega, el bloque se parte repetidamente hasta que alcance un tamaño conveniente
 * cuando la memoria es liberada, su "buddy" es revisado, si también está libre, se vuelven a unir para formar un bloque más grande
 * esto hace que la reutilización de la memoria sea rápida y reduce la fragmentación
+
+-----------------------------
+Algoritmo del buddy system
+
+Más abajo están los pasos involucrados en la técnica de asignación de memoria buddy system:
+* Dividir la memoria en bloques de un tamaño de potencia de 2 (2,4,8,16,32,64,etc)
+* Etiquetar cada bloque con su tamaño e ID
+* Inicialmente, todos los bloques están libres y se mantienen en una estructura como de árbol
+* En una solicitud, encontrar el bloque más pequeño que encaja. Si es muy grande, partirlo hasta alcanzar el tamaño requerido
+* Asignar un bloque, mantener los otros libres
+* Durante la liberación (deallocation), revisar si el "buddy" está libre --> combinar para formar un bloque más grande
+
+Ejemplo 
+
+* Problema: un sistema con 128KB de memoria recibe una solicitud de 18KB 
+
+* Solución: la potencia de 2 más cercana a 18KB es 32KB
+
+https://media.geeksforgeeks.org/wp-content/uploads/Capture-34.png
+
+* Podemos ver que si dividimos 32 a la mitad obtenemos 16, que es más pequeño que 18, es decir, insuficiente para almacenar 18, por lo tanto no podemos partir a la memoria más allá y 32 se convertirá en nuestro nodo hoja 
+
+----------------------------
+Características del buddy system
+
+* Escalabilidad: Maneja mucha memoria eficientemente partiendo en bloques más pequeños y ajustando dinámicamente
+* Partido y combinación eficientes: los bloques se parten en "buddies" iguales cuando se son asignados; se vuelven a combinar cuando ambos están libres
+* Reducción de la fragmentación: combina bloques libres adyacentes, minimizando espacios malgastados
+* Asignación rápida: rápida asignación/liberación con poca sobrecarga
+* Bloques potencia de 2: la memoria dividida en 1KB, 2KB, 4KB... simplifica el partido y combinación
+
+Ventajas del buddy system
+
+* Asignación y liberación de memoria simple y rápida
+* Fácil combinación de bloques libres reduce la fragmentación externa
+* Gestión eficiente de memoria usando bloques de tamaño de potencia de 2
+* Rápido partido y combinación de bloques de memoria
+
+Inconvenientes del buddy system
+
+* Fragmentación interna debido a tamaños de bloque fijos
+* Desperdicio de memoria cuando el tamaño solicitado no es una potencia de 2
+* Sobrecarga al mantener relaciones del tipo "buddy"
+* No es conveniente para sistemas que requieren muy buena asignación de memoria
+
+
+________________________________________________
+Continuar resumiendo con el enlace de más arriba
+________________________________________________
