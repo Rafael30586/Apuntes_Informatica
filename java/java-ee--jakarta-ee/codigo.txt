@@ -72,4 +72,8 @@ Cada una de estas áreas tiene sus propias etiquetas que sirven para diferentes 
 
 Podemos crear filtros y mapearlos a los servlets en el archivo web.xml. En jakarta, los filtros heredan de HttpFilter e implementan Filter. Podemos hacer un casting del ServletRequest que reciben como argumentos a HttpServletRequest para procesar lo que recibe de la solicitud.
 
-Para crear un login usando jakarta podemos usar session o cookies. Las cookies se guardan en el navegador y la session en el servidor. 	
+Para crear un login usando jakarta podemos usar session o cookies. Las cookies se guardan en el navegador y la session en el servidor.
+
+Cuando colocamos una etiqueta "a" en un JSP para que sirva de enlace, podemos colocarle en href el nombre del JSP al que nos lleva, por ejemplo <a href=videos.jsp></a>
+
+El protocolo HTTP tiene caché, lo que puede resultar en que el usuario entre a páginas que necesiten autenticación sin estar autorizado, por ejemplo, hacer logout y luego apretar el botón de ir para atrás en el navegador y que nos lleve a una página para la cual ya no tenemos autorización por no estar autenticados. Para evitar esto se puede colocar esta pieza de código en algunos JSPs, response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); 	
