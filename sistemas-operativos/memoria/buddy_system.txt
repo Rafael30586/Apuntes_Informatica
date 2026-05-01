@@ -51,6 +51,23 @@ Inconvenientes del buddy system
 * Sobrecarga al mantener relaciones del tipo "buddy"
 * No es conveniente para sistemas que requieren muy buena asignación de memoria
 
+-----------------------
+Ejemplo de asignación con buddy system
+
+Supongamos que la cantidad total de memoria es 2^U y una solicitud tiene un tamaño S. Se manejará así:
+* if 2^U-1 < S <= 2^U --> asignar bloque de tamaño 2^U
+* else, dividir recursivamente el bloque en dos buddies iguales hasta que el bloque más pequeño y apropiado se encuentre
+
+El sistema también mantiene un registro de todos los bloques no asignados y puede fusionar estos bloques de diferentes tamaños para crear un gran pedazo
+
+Reglas adicionales:
+* Manejo de solicitudes: Las solicitudes son atendidas en orden de llegada
+* Regla de partición (splitting rule): siempre asignar el buddy de la izquierda (menor dirección de memoria) primero
+* Regla de la combinación: bloques liberados se combinan con su buddy si es posible
+
+La siguiente imagen muestra la implementación del buddy system, considerando un bloque inicial de 1024KB (1MB) y las solicitudes se muestran en la izquierda de la tabla
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250113110644472883/buddy_system.webp
 
 ________________________________________________
 Continuar resumiendo con el enlace de más arriba
