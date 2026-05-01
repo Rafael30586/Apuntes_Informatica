@@ -69,6 +69,32 @@ La siguiente imagen muestra la implementación del buddy system, considerando un
 
 https://media.geeksforgeeks.org/wp-content/uploads/20250113110644472883/buddy_system.webp
 
-________________________________________________
-Continuar resumiendo con el enlace de más arriba
-________________________________________________
+----------------------------
+Tipos de buddy system
+
+El buddy system es un método de asignación de memoria en el cual los bloques son partidos y combinados para un uso eficiente. Diferentes tipos de buddy system existen para satisfacer necesidades y optimizaciones específicas en variops sistemas
+
+1. Buddy system binario
+* La memoria es partida en bloques de tamaño de potencias de 2
+* Cuando hay una solicitud, el bloque más grande y cercano es elegido y partido repetidamente en mitades iguales (buddies) hasta que el tamaño requerido es alcanzado
+* Los buddies liberados pueden volver a combinarse para formar bloques más grandes (coalescing)
+
+Ejemplo: si la cantidad total de memoria es 256KB y la solicitud es de 25KB, la potencia de 2 más cercana es 32KB
+* 256KB se parte en 128KB + 128KB
+* 128KB se parte en 64KB + 64KB
+* 64KB se parte en 32KB + 32KB
+* Un bloque de 32KB es asignado (25KB entran)
+
+2. Buddy system Fibonacci
+* Una variación del buddy system donde los bloques de memoria se dividen en tamaños basados en los números de Fibonacci en lugar de potencias de 2
+* El tamaño de los bloques siguen la relación: Z-i- = Z-(i-1)- + Z-(i-2)- 
+Aclaración: lo que está entre "-" son subíndices
+* Secuencia de ejemplo: 1,2,3,5,8,13,21,34...
+* Al haber una solicitud de memoria, el sistema encuentra el bloque de Fibonacci más pequeño que lo pueda satisfacer  
+* Como los buddies binarios, los bloques libres pueden combinarse (coalesced) en bloques de tamaño de Fibonacci más grandes
+
+3. Buddy system ponderado (Weighted buddy system)
+* En un sistema ponderado de pares, cada bloque de memoria se asocia con un peso, que representa su tamaño relativo a otros bloques. Cuando ocurre una solicitud de asignación de memoria, el sistema busca el bloque apropiado considerando el tamaño de la memoria solicitada y el peso de los bloques disponibles
+
+4. Buddy system terciario
+* En un buddy system tradicional, la memoria es dividida en bloques de tamaño fijo, generalmente una potencia de 2 y asignados a estos bloques, pero el buddy system terciario introduce una tercera estructura de memoria, que permite flexibilidad en asignación de mwemoria
