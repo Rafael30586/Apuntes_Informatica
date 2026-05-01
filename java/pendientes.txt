@@ -4,3 +4,4 @@ Maven archetypes
 group id y artifact id en proyectos de Maven
 archivo manifest para obtener jar
 JAX-RS
+Investigar si en IntelliJ IDEA se puede convertir los proyectos en java en proyectos en Maven con alguna opción 
