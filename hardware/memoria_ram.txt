@@ -1,1 +1,11 @@
 https://www.geeksforgeeks.org/computer-science-fundamentals/random-access-memory-ram/
+
+Random Access Memory
+
+La RAM es la memoria principal de la computadora que almacena temporalmente datos y permite rápidas operaciones de escritura y lectura. Localizada en la placa madre, apoya directamente al CPU, permitiendo que los programas corran de manera fluida y que la información se procese rápidamente
+* Los datos de la memoria RAM se pierden cuando la computadora se apaga
+* Su alta velocidad influencia de manera importante al rendimiento del sistema, y RAM insuficiente puede ralentizar la carga de programas y reducir eficiencia.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250307124405902226/Ram-3.webp
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250307124331054898/ram-1.webp
