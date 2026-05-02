@@ -15,3 +15,12 @@ Es una memoria no volátil usada para operar el sistema. Solo podemos leer los p
 * La información almacenada en la ROM es permanente
 * La información y programas están almacenados en la ROM en formato binario
 * Se usa en el proceso de puesta en marcha de la computadora
+
+---------------------------
+Evolución de la ROM
+
+1956 - Mask ROM (MROM) - cableada durante la fabricación - primeras calculadoras, sistemas incorporados (embedded systems)
+1956 - PROM - programada una vez por los usuarios - firmware personalizado
+1971 - EPROM - borrable con luz UV, reprogramable - BIOS de computadoras legacy
+1983 - EEPROM - borrable con electricidad, reutilizable - microcontroladores, llaveros de coches
+1984 - Flash memory - borradura de nivel bloque, alta velocidad - unidades USB, SSDs, smartphones
