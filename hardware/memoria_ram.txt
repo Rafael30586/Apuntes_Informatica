@@ -9,3 +9,17 @@ La RAM es la memoria principal de la computadora que almacena temporalmente dato
 https://media.geeksforgeeks.org/wp-content/uploads/20250307124405902226/Ram-3.webp
 
 https://media.geeksforgeeks.org/wp-content/uploads/20250307124331054898/ram-1.webp
+
+------------------------
+Evolución histórica de la memoria RAM
+
+1947 - Williams Tube - Primer tipo de RAM usando puntos cargados eléctricamente en tubos de rayos catódicos
+1947 - Magnetic-core memory - RAM hecha de pequeños anillos de metal para almacenar 1 bit de datos, fácilmente accesible
+1968 - DRAM (RAM dinámica) - Inventada por Robert Dennard, usando transistores para guardar datos, requiere energía
+1969 - Intel 1103 DRAM - Primer producto DRAM de Intel, marcando el uso comercial de la tecnología DRAM
+1993 - SDRAM - Samsung lanzó KM48SL2000, DRAM síncrona para procesamiento más rápido
+1996 - DDR SDRAM - Se volvió comercialmente disponible, ofreciendo velocidades más altas
+1999 - RDRAM - Lanzado para computadoras con un enfoque en tasas más rápidas de datos
+2003 - DDR2 SDRAM - Lanzada con mejor velocidad y eficiencia
+2007 - DDR3 SDRAM - Ofreció velocidades más altas y mejor eficiencia energética
+2014 - DDR4 SDRAM - Disponible con velocidades aún más altas y mayor eficiencia energética
