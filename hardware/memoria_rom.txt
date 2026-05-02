@@ -1,1 +1,17 @@
 https://www.geeksforgeeks.org/computer-organization-architecture/read-only-memory-rom/
+
+Read Only Memory (ROM)
+
+La memoria juega un rol crucial en como los dispositivos operan, y uno de los tipos más importantes es la ROM. A diferencia de la RAM, que pierde los datos cuando el equipo se desenchufa, la ROM está diseñada para almacenar información esencial de manera permanente.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250227180120495660/No-ROM-No-Start.webp
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250227180221296269/ROMFind-It.webp
+
+--------------------------
+¿Qué es la ROM?
+
+Es una memoria no volátil usada para operar el sistema. Solo podemos leer los programas y datos almacenados.
+* La información almacenada en la ROM es permanente
+* La información y programas están almacenados en la ROM en formato binario
+* Se usa en el proceso de puesta en marcha de la computadora
