@@ -32,3 +32,10 @@ La RAM está hecha de pequeños transistores y capacitores que almacenan cargas 
 Como la RAM funciona en la práctica
 Al correr programas, la computadora carga datos del almacenamiento a la RAM para que el CPU pueda acceder de manera rápida. Más RAM y memoria más rápida le permite a tu sistema encargarse de archivos grandes, hacer multitareas más eficientemente y correr aplicaciones demandantes de manera más fluida.
 Más RAM le permite a tu computadora hacer malabares con más tareas a la vez y procesar datos más rápido
+
+-------------------------
+RAM vs otros tipos de memoria
+
+* RAM vs disco duro: la RAM es rápida, memoria temporal usada para tareas activas, mientras que un disco duro provee almacenamiento permanente y más lento para archivos y programas
+* RAM vs ROM: la RAM es volátil y escribible, almacenando datos temporalmente, mientras la ROM es no volátil y almacena instrucciones permanentes que no pueden ser modificadas fácilmente
+* RAM vs memoria virtual: la RAM es memoria física para procesamiento inmediato, mientras que la memoria virtual usa una porción del disco duro como RAM temporal cuando la memoria física está llena, pero es mucho más lenta
