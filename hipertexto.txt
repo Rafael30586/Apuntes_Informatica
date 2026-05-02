@@ -9,3 +9,11 @@ Fundamentos técnicos
 
 El hipertexto opera en un principio simple pero poderoso: el enlace. Un hiper-enlace es una referencia de lo más confiable o un punto de navegación en cualquier documento que el lector puede usar para cambiar de una parte del documento a otro documento. Estos enlaces son normalmente invisibles dentro del artículo pero resaltados con subrayado o colocados dentro de texto plano que cuando el usuario interactúa con el mouse o la pantalla táctil su enlace se vuelve activo.
 HTML es la tecnología principal de hipertexto en la web. HTML es el medio usado por desarrolladores para diseñar sitios web y aplicaciones para ser corridas a lo largo de internet. Provee organización entre el texto y los enlaces, las imágenes y cualquier otro contenido que se encuentra en la web. HTML emplea un conjunto de palabras clave, conocidas como etiquetas, para organizar el contenido dentro de un documento.
+
+---------------------
+Características clave del hipertexto
+
+* No linealidad: El hipertexto difiere del texto estándar, donde la información es lineal, en que los usuarios son capaces de dirigirse a través del texto de una manera no lineal. Esto también significa que le usuario puede entrar a enlaces, quienes lo llevarán a más información en el tema específico bajo estudio o a otros temas relacionados de interés si un patrón conjunto de cubrir todos los sub-temas relacionados en una forma sucesiva
+* Interactividad: el hipertexto altera el rol del lector al cambiar el proceso de lectura en un activo. Los usuarios deciden directamente que enlaces clickear, que camino seguir y cuantos sub-temas rastrear
+* Integración multimedia: así como la palabra "hipertexto" lo indica, hipertexto no es solamente texto limitado, significa una red textual de nodos. Por ejemplo, puede dar la habilidad de insertar imágenes, videos y otros archivos de audio para una mejor experiencia
+
