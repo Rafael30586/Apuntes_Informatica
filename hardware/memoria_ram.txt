@@ -39,3 +39,40 @@ RAM vs otros tipos de memoria
 * RAM vs disco duro: la RAM es rápida, memoria temporal usada para tareas activas, mientras que un disco duro provee almacenamiento permanente y más lento para archivos y programas
 * RAM vs ROM: la RAM es volátil y escribible, almacenando datos temporalmente, mientras la ROM es no volátil y almacena instrucciones permanentes que no pueden ser modificadas fácilmente
 * RAM vs memoria virtual: la RAM es memoria física para procesamiento inmediato, mientras que la memoria virtual usa una porción del disco duro como RAM temporal cuando la memoria física está llena, pero es mucho más lenta
+
+--------------------------
+Tipos de RAM
+
+LA RAM se divide en 2 tipos: SRAM, Static RAM; DRAM, Dynamic RAM
+
+1. SRAM
+Se usa para memoria caché y retiene datos mientras la computadora está enchufada, sin requerir ciclos de refresco periódicos debido a su diseño basado en transistores. Está hecha usando tecnología CMOS y típicamente contiene entre 4 y 6 transistores por celda. SRAM es más rápida que otros tipos de memoria y provee una interfaz directa con el CPU, pero es más cara, consume más energía a altas velocidades, genera más calor y tiene una densidad de almacenamiento más baja comparada con la DRAM
+
+Características de la SRAM:
+* Usada para memoria caché
+* Es el tipo de memoria más rápida
+* Más costosa y de menor densidad
+* Eficiente uso de energía a velocidades normales, pero mayor consumo energético a altas frecuencias
+
+Tipos de SRAM
+* SRAM asíncrona: accedida sin un reloj; simple pero más lenta
+* SRAM síncrona (Sync SRAM): trabaja con el reloj del sistema; más rápida, usada en cachés de alto rendimiento
+* RAM pseudo-estática (PSRAM): basada en DRAM con interfaz SRAM; auto-refrescante
+* SRAM no volátil (NVSRAM): retiene datos sin energía; apoyada por una batería
+* SRAM multipuerto: permite múltiples operaciones de escritura/lectura simultáneas; usada en sistemas de alta velocidad
+
+2. DRAM
+Se usa como memoria principal en las computadoras. Cada celda de memoria consiste en un transistor y un capacitor, que deben ser recargados periódicamente, dándole a la DRAM su naturaleza "dinámica". Aunque más lenta que la SRAM, DRAM puede almacenar más bits por chip, requiere menos energía y produce menos calor. Fue el primer circuito integrado de memoria vendido ampliamente y permanece como la segunda tecnología de memoria más compacta después de la memoria flash
+
+Características de la DRAM:
+* Usada como memoria principal en las PCs
+* Más lenta que la SRAM pero más rápida que muchos otros tipos de memoria
+* Más barata y de más alta densidad que la SRAM
+* Eficiente uso de energía pero requiere ciclos de refresco periódicos
+
+Tipos de DRAM:
+* SDRAM (DRAM sincrónica): Sincroniza con el reloj del sistema para transferencia de datos CPU-memoria más rápida
+* DDR SDRAM (doble tasa de datos o double data rate): Transfiere datos en ambos bordes del reloj, doblando la velocidad de la SDRAM
+* DDR2 / DDR3 / DDR4: generaciones de DDR sucesivas con velocidad, ancho de banda y eficiencia mejorados
+* ECC DRAM (código  de corrección de errores o Error-Correcting Code): detecta y corrige errores para operaciones confiables
+* RDRAM (Rambus DRAM): memoria de alta velocidad usada a fines de 1990s-2000s: ofreció estabilidad pero mayor latencia; usada en algunas consolas de video juegos
