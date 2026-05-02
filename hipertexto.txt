@@ -1,0 +1,11 @@
+https://www.geeksforgeeks.org/websites-apps/what-is-hypertext/
+
+¿Qué es el hipertexto?
+
+Un hipertexto es un término que ha emergido como un nuevo concepto en el campo de la tecnología de la información y la computación como una manera de facilitar la extracción de información y como un medio de proveer acceso a la información. El término fue usado por primera vez por Ted Nelson a principios de los 1960s para describir un sistema de estructurar y mostrar texto en una manera no lineal en la cual el lector puede ir de un texto a otro con unos pocos clicks. A través de esta tecnología, podemos vincular documentos y la infraestructura de información entera de la world wide web que encontramos diariamente.
+
+------------------------
+Fundamentos técnicos
+
+El hipertexto opera en un principio simple pero poderoso: el enlace. Un hiper-enlace es una referencia de lo más confiable o un punto de navegación en cualquier documento que el lector puede usar para cambiar de una parte del documento a otro documento. Estos enlaces son normalmente invisibles dentro del artículo pero resaltados con subrayado o colocados dentro de texto plano que cuando el usuario interactúa con el mouse o la pantalla táctil su enlace se vuelve activo.
+HTML es la tecnología principal de hipertexto en la web. HTML es el medio usado por desarrolladores para diseñar sitios web y aplicaciones para ser corridas a lo largo de internet. Provee organización entre el texto y los enlaces, las imágenes y cualquier otro contenido que se encuentra en la web. HTML emplea un conjunto de palabras clave, conocidas como etiquetas, para organizar el contenido dentro de un documento.
