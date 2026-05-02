@@ -4,3 +4,4 @@ ALU
 // transitor
 circuito integrado o integrated circuit
 microchips
+capacitors o capacitores

@@ -23,3 +23,12 @@ Evolución histórica de la memoria RAM
 2003 - DDR2 SDRAM - Lanzada con mejor velocidad y eficiencia
 2007 - DDR3 SDRAM - Ofreció velocidades más altas y mejor eficiencia energética
 2014 - DDR4 SDRAM - Disponible con velocidades aún más altas y mayor eficiencia energética
+
+-------------------------
+Funcionamiento de la RAM
+
+La RAM está hecha de pequeños transistores y capacitores que almacenan cargas eléctricas representando bits de datos. Funciona como la memoria a corto plazo de la computadora, temporalmente reteniendo datos a los cuales el CPU necesita acceder rápidamente
+
+Como la RAM funciona en la práctica
+Al correr programas, la computadora carga datos del almacenamiento a la RAM para que el CPU pueda acceder de manera rápida. Más RAM y memoria más rápida le permite a tu sistema encargarse de archivos grandes, hacer multitareas más eficientemente y correr aplicaciones demandantes de manera más fluida.
+Más RAM le permite a tu computadora hacer malabares con más tareas a la vez y procesar datos más rápido
