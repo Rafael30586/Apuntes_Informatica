@@ -24,3 +24,24 @@ Evolución de la ROM
 1971 - EPROM - borrable con luz UV, reprogramable - BIOS de computadoras legacy
 1983 - EEPROM - borrable con electricidad, reutilizable - microcontroladores, llaveros de coches
 1984 - Flash memory - borradura de nivel bloque, alta velocidad - unidades USB, SSDs, smartphones
+
+------------------------
+Diagrama de bloques de ROM
+
+El propósito principal del diagrama de bloques de ROM es representar como la ROM trabaja dentro de una computadora. Ayuda a ilustrar el flujo de datos y como el sistema accede a la información almacenada.
+En un sistema ROM, hay k líneas de entrada y n líneas de salida. La dirección de entrada de la cual deseamos extraer el contenido de la ROM se toma usando las líneas k de entrada. Como cada una de las líneas k de entrada puede tener un valor de 1 o 0, hay un total de 2 k direcciones a las que pueden ser referidas por estas líneas de entrada, y cada una de estas direcciones contiene n bits de información que es salida de la ROM
+Una ROM de este tipo se designa como 2k x n ROM
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250228101522937160/Block-Diagram-of-ROM.webp 
+
+-----------------------
+Estructura interna de la ROM
+
+La estructura interna de la ROM tiene 2 componentes básicos
+1. Decodificador (decoder)
+2. Puertas OR (OR gates)
+
+https://media.geeksforgeeks.org/wp-content/uploads/20230719124136/Read-Only-Memory.png
+
+Un circuito conocido como decodificador convierte una forma codificada, como decimal en código binario, o BCD, a una forma decimal. Como resultado, la salida es el equivalente binario de la entrada. Las salidas del decodificador serán las salidas de cada puerta OR en la ROM. Usemos una ROM 64 x 4 como ejemplo. Esta memoria de solo lectura tiene 64 palabras con una longitud de 4 bits. Como resultado, habrían 4 líneas de salida.
+Como hay solamente 6 líneas de entradas y hay 64 palabras en esta ROM, podemos especificar 64 direcciones o términos mínimos al elegir una de las 64 palabras que están disponibles en las líneas de salida desde las 6 líneas de entrada. Cada dirección ingresada tiene una única palabra seleccionada
