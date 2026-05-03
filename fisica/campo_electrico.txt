@@ -1,0 +1,24 @@
+Autodidacta Océano Color 4 - Física II
+
+Campo eléctrico
+
+El espacio que rodea una carga eléctrica es asiento de un campo de fuerzas porque dicha carga ejerce una fuerza sobre cualquier otra carga que se coloca en dicho espacio. Este campo de fuerzas se denomina campo eléctrico o electrostático. Se llama intensidad E del campo a la fuerza que este determina sobre la unidad de carga eléctrica positiva colocada en el punto que se considere.
+Sea q la carga creadora del campo. Situando una carga q' a una distancia r de q, se observará que sobre q' actúa cierta fuerza F--> . El campo, o fuerza referida a la unidad de carga, existe en el punto indicado, valdrá pues:
+
+E = (F-->) / q'
+
+teniendo en cuenta la expresión de F-->, dada por la ley de Coulomb:
+
+E =  [K x (q x q' / r^2)] / q' = K x (q / r^2)
+
+El campo E será un vector de la misma dirección que la fuerza ejercida sobre una carga positiva y, por lo tanto, de dirección opuesta a la que actuaría sobre una carga negativa colocada en un punto considerado. Si existen varias cargas eléctricas y queremos estudiar el campo resultante de la acción simultánea de todas ellas, bastará sumar vectorialmente los distintos campos que, aisladamente, crearían las cargas presentes.
+Para representar el campo eléçtrico se utilizan las líneas de fuerza o líneas de campo. Una línea de fuerza representa la trayectoria que seguiría una pequeña carga positiva de prueba abandonada libremente en el campo. Así las líneas de fuerza están trazadas de tal modo que, en todo punto, presenten la misma dirección que el vector campo. Por lo tanto, por cada punto pasa una línea de fuerza, y solo una, que es tangente al correspondiente vector campo.
+
+
+https://cdn.todamateria.com/imagenes/campo-electrico-3-cke.jpg
+
+
+Se conviene en dibujar las líneas de fuerza de modo que, considerando una superficie de área unidad perpendicular a dichas líneas, el número de las que resulten cortadas coincida con la intensidad del campo en el centro de dicha superficie unidad, por lo tanto, cuanta más densidad de líneas haya en una determinada zona del campo, mayor será el valor de la intensidad.
+Es interesante observar que las líneas de fuerza son líneas continuas que no se cortan entre sí; esto es así porque, si se cortasen en el punto de intersección, habría dos intensidades de campo (tangentes a ambas líneas en dicho punto), lo cual es imposible.
+El sentido de las líneas de fuerza lo determina el siguiente convenio: salen de los cuerpos cargados positivamente y van hacia los cargados negativamente.
+En un campo electrostático no pueden existir líneas de fuerza cerradas. Si las líneas de fuerza son finitas, tienen siempre un comienzo y un extremo.

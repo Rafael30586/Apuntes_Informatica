@@ -1,0 +1,30 @@
+Autodidacta Océano Color 4 - Física II
+
+
+Corriente eléctrica
+
+Una corriente eléctrica se define como el desplazamiento de cargas eléctricas a lo largo de un conductor.
+Si se une mediante un conductor dos cuerpos cargados, los electrones pasan de un cuerpo a otro, hasta que ambos estén al mismo potencial eléctrico. Se establece, por lo tanto, una corriente transitoria.
+Para que la corriente sea permanente entre los dos puntos unidos por un conductor, debe existir una diferencia de potencial permanente, es decir, un campo eléctrico. Solo en este caso, los electrones son impulsados por una fuerza debida al campo eléctrico, originándose así la corriente eléctrica.
+Para ello se necesita un generador eléctrico, que es una máquina que transforma energía mecánica en energía eléctrica y, a la vez, un dispositivo que mantiene una diferencia de potencial entre sus polos. El polo negativo del generador es el de menor potencial y el polo positivo el de mayor potencial.
+La energía de los electrones proviene del mismo generador. En efecto, este generador establece una diferencia de potencial entre sus polos y, por lo tanto, un campo eléctrico. Los electrones sometidos a este campo se mueven con cierta velocidad y, por lo mismo, poseen energía cinética.
+Los electrones se desplazan del polo negativo del generador al polo positivo, a través del conductor que une los dos polos. Dentro del generador completan el circuito, por lo que se desplazan del polo positivo al negativo, aportando el generador la energía necesaria.
+Sin embargo, por convención internacional, el sentido de la corriente en el circuito exterior es del polo positivo al negativo, mientras que dentro del generador, es del polo negativo al positivo.
+
+Intensidad de corriente
+
+La corriente eléctrica es el flujo de cargas negativas que atravi8esan un conductor, de manera que el mismo número de cargas que entran por uno de sus extremos sale por el otro.
+Intensidad de corriente es la carga eléctrica transportada en cada unidad de tiempo. Se representa por I.
+Si por un conductor ha circulado una carga q durante un tiempo, la intensidad de corriente es:
+
+I=q/t
+
+En el sistema internacional se emplea como unidad de intensidad el amperio (A), que es el paso a través de un conductor eléctrico de un coulombio de carga eléctrica en un segundo:
+
+1 amperio = 1 coulombio / 1 segundo
+
+Suele también emplearse el miliamperio (mA), que es un submúltiplo del amperio, equivalente a una milésima parte de este:
+
+1 A = 1000 mA
+
+Las unidades de cantidad e intensidad eléctricas se definen también a partir del efecto químico de la correinte en un voltámetro que contiene nitrato de plata. Como la cantidad de plata depositada en el cátodo es directamente proporcional a la cantidad de electricidad que ha circulado por el voltámetro, se ha comprobado que un coulombio es la cantidad de electricidad que deposita en el cátodo 1,118 mg de plata
