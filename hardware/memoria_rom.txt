@@ -55,10 +55,31 @@ Cada elemento en la estructura representa un elemento de almacenamiento en el ch
 --------------------------
 Tipos de ROM
 
-* MROM (masked ROM): LA ROM es una vieja tecnología de semiconductores. MROM fue la primera ROM que consistió en una grilla de líneas de palabras y líneas de bits unidas entres sí por interruptores de transistores. Estos tipos de datos de ROM está físicamente codificada en el circuito y es programada solamente durante la fabricación. No era tan cara.
+* MROM (masked ROM): La ROM es una vieja tecnología de semiconductores. MROM fue la primera ROM que consistió en una grilla de líneas de palabras y líneas de bits unidas entres sí por interruptores de transistores. Estos tipos de datos de ROM están físicamente codificados en el circuito y son programados solamente durante la fabricación. No era tan cara.
 
-* PROM (Programmable ROM): La PROM es una forma de memoria digital. En este tipo de ROM, cada bit está cerrado por un fusible o antifusible. Los datos almacenados en ella están almacenados permanentemente almacenados y no pueden ser cambiados o borrados. Se usa en programas de bajo nivel como firmware o microcódigo
+* PROM (Programmable ROM): La PROM es una forma de memoria digital. En este tipo de ROM, cada bit está cerrado por un fusible o antifusible. Los datos almacenados en ella están almacenados permanentemente y no pueden ser cambiados o borrados. Se usa en programas de bajo nivel como firmware o microcódigo
 
 * EPROM (Erasable ROM): también llamada EROM, es un tipo de PROM pero puede ser reprogramada. Los datos almacenados en la EPROM pueden ser borrados y reprogramados con luz ultravioleta. Antes de la era de EEPROM y memoria flash, EPROM se usaba en microcontroladores
 
-* EEPROM (Electrically erasable ROM): como su nombre indica, puede ser programada y borrada eléctricamente. Los datos y programa de esta ROM pueden ser borrados y programados alrededor de decenas de miles de veces. La duración del borrado y programación de la EEPROM está entre 4ms y 10ms. Se usa en microcontroladores y sistemas sin llave remotos 
+* EEPROM (Electrically erasable ROM): como su nombre indica, puede ser programada y borrada eléctricamente. Los datos y programa de esta ROM pueden ser borrados y programados alrededor de decenas de miles de veces. La duración del borrado y programación de la EEPROM está entre 4ms y 10ms. Se usa en microcontroladores y sistemas sin llave remotos
+
+---------------------------
+Ventajas de la ROM
+
+* No volátil: retiene datos sin energía
+* Seguridad: previene cambios no autorizados
+* Confiable: los datos permanecen intactos a lo largo del tiempo
+* Buen costo: barata para producción a gran escala
+* Acceso rápido: rápida extracción de datos almacenados
+
+Desventajas de la ROM
+
+* Modificabilidad limitada: los datos no pueden modificarse fácilmente
+* Baja capacidad de almacenamiento: no es conveniente para almacenamiento de grandes cantidades de datos
+* Baja velocidad de escritura: escribir datos es un proceso lento
+* Desgaste físico: puede desgastarse después de muchos ciclos de escritura (EEPROM/EPROM)
+* Costo inicial elevado: cara de fabricar en pequeñas cantidades
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________ 
