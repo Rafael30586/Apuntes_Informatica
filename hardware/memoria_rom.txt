@@ -50,4 +50,15 @@ Como hay solamente 6 líneas de entradas y hay 64 palabras en esta ROM, podemos 
 Funcionamiento de la ROM
 
 Una pequeña batería de larga duración dentro de la computadora alimenta a la ROM, que está hecha de 2 componentes principales: las puertas lógicas OR y el decodificador. El decodificador recibe una entrada binaria y produce salida decimal. La salida decimal del decodificador sirve como entrada para las puertas OR. Los chips de ROM tienen una grilla con filas y columnas que pueden ser cambiadas entre prendido y apagado. Si están prendidas el valor es 1, y las líneas están conectadas por un diodo. Cuando el valor es 0, las líneas no están conectadas.
-Cada elemento en la estructura representa un elemento de almacenamiento en el chip de memoria. Los diodos permiten solamente una dirección de flujo, con un límite específico conocido como "forward break over". Esto determina la corriente requerida antes de que el diodo transmita el flujo. Los circuitos basados en silicio tiene típicamente un voltaje forward break over de 0,6 V. Los chips de ROM a veces transmiten una carga que excede el forward break over a la columna con una fila específica que está conectada a tierra a una celda específica. Cuando el diodo está presente en la celda, la carga se transforma al sistema binario, y la celda está prendida con un valor de 1  
+Cada elemento en la estructura representa un elemento de almacenamiento en el chip de memoria. Los diodos permiten solamente una dirección de flujo, con un límite específico conocido como "forward break over". Esto determina la corriente requerida antes de que el diodo transmita el flujo. Los circuitos basados en silicio tiene típicamente un voltaje forward break over de 0,6 V. Los chips de ROM a veces transmiten una carga que excede el forward break over a la columna con una fila específica que está conectada a tierra a una celda específica. Cuando el diodo está presente en la celda, la carga se transforma al sistema binario, y la celda está prendida con un valor de 1
+
+--------------------------
+Tipos de ROM
+
+* MROM (masked ROM): LA ROM es una vieja tecnología de semiconductores. MROM fue la primera ROM que consistió en una grilla de líneas de palabras y líneas de bits unidas entres sí por interruptores de transistores. Estos tipos de datos de ROM está físicamente codificada en el circuito y es programada solamente durante la fabricación. No era tan cara.
+
+* PROM (Programmable ROM): La PROM es una forma de memoria digital. En este tipo de ROM, cada bit está cerrado por un fusible o antifusible. Los datos almacenados en ella están almacenados permanentemente almacenados y no pueden ser cambiados o borrados. Se usa en programas de bajo nivel como firmware o microcódigo
+
+* EPROM (Erasable ROM): también llamada EROM, es un tipo de PROM pero puede ser reprogramada. Los datos almacenados en la EPROM pueden ser borrados y reprogramados con luz ultravioleta. Antes de la era de EEPROM y memoria flash, EPROM se usaba en microcontroladores
+
+* EEPROM (Electrically erasable ROM): como su nombre indica, puede ser programada y borrada eléctricamente. Los datos y programa de esta ROM pueden ser borrados y programados alrededor de decenas de miles de veces. La duración del borrado y programación de la EEPROM está entre 4ms y 10ms. Se usa en microcontroladores y sistemas sin llave remotos 
