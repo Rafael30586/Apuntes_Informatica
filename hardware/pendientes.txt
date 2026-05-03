@@ -5,3 +5,4 @@ ALU
 circuito integrado o integrated circuit
 microchips
 capacitors o capacitores
+diodo o diode
