@@ -348,4 +348,33 @@ Queing delay
 * No hay una fórmula general para calcularla
 * Es la cantidad de tiempo que un paquete estará esperando en una cola en el router antes de ser tomado para el procesamiento
 * Todo router o receptor tiene una cola buffer (buffer queue), en la cual, si la velocidad del envío es mayor y la velocidad de procesamiento del router es menor, los paquetes estarán esperando en una cola de buffer
-* Se llama queueing delay al tiempo que tiene que estar esperando un paquete en la cola de buffer antes de ser procesado  
+* Se llama queueing delay al tiempo que tiene que estar esperando un paquete en la cola de buffer antes de ser procesado
+
+Demora de procesamiento (processing delay)
+* Es el tiempo que requiere el receptor o el router para recibir paquetes de su puerto de entrada, quitar la cabecera y llevar a cabo el procedimiento de detección de errores
+* Si estamos hablando de un router, recibirá el paquete en el puerto de entrada, lo procesará y lo enviará por el puerto de salida
+* En caso de que tengamos un receptor, el paquete será recibido y enviado a las capas de más arriba
+
+Cuando se realizan problemas para resolver sobre redes, el queueing delay y la demora de procesamiento pueden darse como dato en el problema o directamente hay que ignorarlos. Además en estos problemas hay que tener en cuenta que la dificultad puede venir por el lado de la conversión de unidades
+
+Problema de ejemplo:
+* El tamaño del paquete es de 1kB; la capacidad del canal o ancho de banda es 10^9 bits/seg
+*¿Cuál es el tiempo de transmisión?
+
+Resolución
+* 1KB / 10^9 bits/seg
+* 1KB --> 1024B --> 8192 bits 
+* 8192 bits / 10^9 bits/seg = 8,192 x 10^-6
+
+Problema 2 de ejemplo
+* Un enlace de 100mbps (ancho de banda); el receptor, que es un satélite, está a una altura de 2100Km; la señal se propaga a una velocidad de 3x10^8 m/segcalcular el tiempo que le toma al receptor recibir un paquete de 1000 bytes 
+
+Resolución
+* Aparentemente hay que calcular el Td + Pd = tiempo que tarda el receptor en recibir el paquete
+* Td = L / Bw = 1000B / 100mbps
+* Bw = 100mbps = [100mb * (10^6bits / mb)] / seg = 10^8 bits / seg
+* L = 1000B = 1000B * 8 bits/B = 8000 bits
+* Td = 8000bits / 10^8bits/seg = 8x10^-5 seg 
+* Pd = 2100Km / (3x10^8m/seg = 2100Km / (3x10^5Km/seg) = 7x10^-3seg
+* Tiempo total = 8x10^-5 + 7x10^-3 = 7,08x10^-3 seg
+
