@@ -2151,4 +2151,24 @@ Los principios de liderazgo de Amazon son un conjunto de principios usados duran
 14. Entregar resultados
 15. Esforzarse por ser el mejor empleado en la tierra
 16. El éxito y la escala traen mucha responsabilidad	
+
+--------------------------
+Principios generales de diseño
+
+* Parar de adivinar las necesidades de capacidad, por ejemplo, la computación en la nube la usás mucho o poco basado en la demanda
+* Probá (test) sistemas a escala de producción, por ejemplo, clonar el entorno de producción a pruebas, demoler pruebas que no están en uso para ahorrar dinero
+* Automatizar para hacer que la experimentación de arquitectura sea más fácil, por ejemplo, usando CloudFormation con ChangeSets, StackUpdate y detección de desvíos (drift detection)
+* Permitir arquitecturas evolutivas, por ejemplo, CI/CD, lanzamientos de noche o rápidos, entornos de ejecución de lambdas desaprobados forzándote a evolucionar
+* Arquitecturas de conducción usando datos, por ejemplo, Cloud Trail automáticamente prendido para recolectar datos
+* Mejorar a través de días de juego, por ejemplo, simular tráfico en producción o "matar" a propósito instancias EC2 para ver la recuperación de pruebas
+
+-----------------------------
+Anatomía de un pilar
+
+Un pilar de un framework de buena arquitectura   está estructurado así: principios de diseño, definición, mejores prácticas y recursos
+
+* Principios de diseño: son una lista de principios de diseño que necesitan ser considerados durante la implementación
+* Definición: descripción general de las categorías de mejores prácticas
+* Mejores prácticas: información detallada sobre cada mejor práctica con servicios de AWS
+* Recursos: documentación adicional, documentos técnicos y videos para implementar este pilar	
 					
