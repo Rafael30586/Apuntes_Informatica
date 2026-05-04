@@ -1,0 +1,12 @@
+https://www.geeksforgeeks.org/operating-systems/overlays-in-memory-management/
+
+Incrustaciones (overlays) en gestión de memoria
+
+Overlays son una técnica de gestión de memoria usada para gestionar eficientemente memoria limitada cargando solo partes necesarias de un programa en la memoria a la vez. Esto permite que programas grandes corran con fluidez, incluso cuando las memoria disponible es màs pequeña que el tamaño del programa
+* Cargar solo la porción de un programa que se necesita para la tarea actual
+* Las partes sin usar del programa se almacenan en disco u otro almacenamiento y se cargan en memoria cuando se necesitan
+* Una vez que una parte del programa finaliza la ejecución, se descarga de la memoria, liberando espacio para que la próxima parte sea cargada
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250428144803628430/overlays.webp
+
+Nota: en un particionamiento fijo, si un proceso excede el tamaño de la partición de tamaño fijo asignada, no puede expandirse a lo largo de múltiples particiones. Overlays resuelve este problema al dejar que partes del programa se carguen y descarguen cuando sea necesario, haciendo mejor uso de la memoria disponible
