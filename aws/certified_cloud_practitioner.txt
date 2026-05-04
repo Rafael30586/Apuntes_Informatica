@@ -2170,5 +2170,25 @@ Un pilar de un framework de buena arquitectura   está estructurado así: princi
 * Principios de diseño: son una lista de principios de diseño que necesitan ser considerados durante la implementación
 * Definición: descripción general de las categorías de mejores prácticas
 * Mejores prácticas: información detallada sobre cada mejor práctica con servicios de AWS
-* Recursos: documentación adicional, documentos técnicos y videos para implementar este pilar	
+* Recursos: documentación adicional, documentos técnicos y videos para implementar este pilar
+
+-------------------------
+Principios de diseño para excelencia operacional
+
+Llevar a cabo operaciones como código
+Aplicar la misma disciplina de ingeniería que aplicarías a código de aplicación a tu infraestructura en la nube. Al atender a tus operaciones como código podés limitar el error humano y posibilitar respuestas consistentes a eventos. Por ejemplo infraestructura como código
+
+Hacer cambios frecuentes, pequeños y reversibles
+Diseñar cargas de trabajo para permitir a los componentes actualizarse regularmente
+Por ejemplo: rollbacks, cambios incrementales, azul/verde, CI/CD
+
+Refinar procedimientos de operaciones frecuentemente
+Buscar oportunidades continuas para mejorar tus operaciones
+Por ejemplo: usar días de juego (game days) para simular tráfico o falla de eventos en tus cargas de trabajo de producción
+
+Anticiparse a los fallos
+Llevar a cabo post-mortems en fallos de sistemas para mejorar, escribir código de pruebas, matar servidores de producción para probar la recuperación
+
+Aprender de todos los fallos operacionales
+Compartir lecciones aprendidas para eventos operacionales y fallos a través de tu organización entera	
 					
