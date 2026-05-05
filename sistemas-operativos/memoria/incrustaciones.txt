@@ -54,7 +54,10 @@ Memoria total requerida para pase 2 = 80KB + 30KB + 20KB + 10KB = 140KB
 Mínimo tamaño de partición:
 Como pase 1 requiere 130KB y pase 2 requiere 140KB, el mínimo tamaño de partición requerido para este proceso de overlay es 140KB. Esto nos permite cargar el pase en la memoria junto con los recursos compartidos (tabla de símbolo, rutina común y controlador overlays) sin exceder la memoria disponible
 
+--------------------------------
+Controlador overlays
 
-____________________________________________
-Continuar resumiendo lo del enlace de arriba
-____________________________________________
+El controlador overlay es la responsabilidad del usuario. El sistema operativo no provee un mecanismo automático para intercambiar las partes del programa hacia adentro y fuera de la memoria. El usuario deberá gestionar manualmente el proceso overlay. 
+* El usuario deberá cargar la parte requerida (pase 1 o pase 2) en la memoria
+* Después de que un pase se completa, el usuario debe sacar ese pase de la memoria y cargar el próximo pase
+* El controlador overlays facilita esto al gestionar el intercambio de código hacia adentro de la memoria y hacia afuera de ella
