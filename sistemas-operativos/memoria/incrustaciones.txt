@@ -10,3 +10,51 @@ Overlays son una técnica de gestión de memoria usada para gestionar eficientem
 https://media.geeksforgeeks.org/wp-content/uploads/20250428144803628430/overlays.webp
 
 Nota: en un particionamiento fijo, si un proceso excede el tamaño de la partición de tamaño fijo asignada, no puede expandirse a lo largo de múltiples particiones. Overlays resuelve este problema al dejar que partes del programa se carguen y descarguen cuando sea necesario, haciendo mejor uso de la memoria disponible
+
+-------------------------------
+¿Còmo funciona overlays?
+
+* El programa se divide en mòdulos màs pequeños o segmentos
+* Solo el mòdulo necesitado en un momento específico se carga en memoria
+* Una vez el mòdulo termina su ejecución, es descargado y otro mòdulo es cargado en el mismo espacio
+* El programa permanece funcional ya que solo las partes necesarias están en memoria en un determinado momento
+
+Ejemplo de overlays --> ensamblador con dos pases
+
+Considere un ensamblador que funciona en dos pases. En este, solo un pase puede ser llevado a cabo a la vez. El ensamblador finaliza el primer pase y una vez se completa, se mueve al segundo pase. Asumamos que la memoria principal disponible es de 150KB y el tamaño total del código es de 200KB. Así es como el programa està estructurado:
+* Pase 1: 70KB
+* Pase 2: 80KB
+* Tabla de símbolo: 30KB
+* Rutina común: 20KB
+
+Problema:
+Como el tamaño total del código es 200KB y la memoria disponible es 150KB, no es posible cargar ambos pases en la memoria al mismo tiempo. Por lo tanto, necesitamos usar la técnica overlays para gestionar la memoria de manera eficiente
+
+Como overlays trabaja en este caso:
+Solo un pase se necesita a la vez. Ambos pases siempre requieren la tabla de símbolo y la rutina común. Por lo tanto, la técnica overlays funciona cargando un pase a la vez, junto con la compartida tabla de símbolo y rutina común y luego intercambiando el pase una vez se ha hecho
+
+Requerimientos de memoria:
+
+Para pase 1: 
+* Pase 1 = 70KB
+* Tabla de símbolo = 30KB
+* Rutina común = 20KB
+* Controlador (driver) overlays = 10KB
+
+Memoria total requerida para pase 1 = 70KB + 30KB + 20KB + 10KB = 130KB
+
+Para pase 2: 
+* Pase 2 = 20KB
+* Tabla de símbolo = 30KB
+* Rutina común = 20KB
+* Controlador overlays = 10KB
+
+Memoria total requerida para pase 2 = 80KB + 30KB + 20KB + 10KB = 140KB
+
+Mínimo tamaño de partición:
+Como pase 1 requiere 130KB y pase 2 requiere 140KB, el mínimo tamaño de partición requerido para este proceso de overlay es 140KB. Esto nos permite cargar el pase en la memoria junto con los recursos compartidos (tabla de símbolo, rutina común y controlador overlays) sin exceder la memoria disponible
+
+
+____________________________________________
+Continuar resumiendo lo del enlace de arriba
+____________________________________________
