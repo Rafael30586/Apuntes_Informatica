@@ -2191,4 +2191,25 @@ Llevar a cabo post-mortems en fallos de sistemas para mejorar, escribir código 
 
 Aprender de todos los fallos operacionales
 Compartir lecciones aprendidas para eventos operacionales y fallos a través de tu organización entera	
-					
+
+--------------------------
+Principios de diseño para seguridad
+
+Implementar una fuerte base de identidad
+Implementar el principio del menor privilegio (PoLP). Usar identidad centralizada. Evitar credenciales de larga vida
+
+Permitir trazabilidad
+Monitorear alertas y auditar acciones y cambios a tu entorno en tiempo real
+Integrar colecciones métricas y de registros (log) y automatizar investigación y remediación
+
+Aplicar seguridad en todas las capas
+Tomar defensa con múltiples controles de seguridad para todo, por ejemplo, Edge network, VPC, instancias de balanceadores de carga, código de aplicación
+
+Automatizar mejores prácticas de seguridad
+
+Proteger datos en tránsito y en descanso
+
+Mantener a la gente alejada de los datos
+
+Prepararse para eventos de seguridad
+Sistemas de gestión de incidentes y políticas y procesos de investigación. Herramientas para detectar, investigar y recuperar de incidentes 						
