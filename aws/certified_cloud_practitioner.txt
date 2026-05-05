@@ -2212,4 +2212,25 @@ Proteger datos en tránsito y en descanso
 Mantener a la gente alejada de los datos
 
 Prepararse para eventos de seguridad
-Sistemas de gestión de incidentes y políticas y procesos de investigación. Herramientas para detectar, investigar y recuperar de incidentes 						
+Sistemas de gestión de incidentes y políticas y procesos de investigación. Herramientas para detectar, investigar y recuperar de incidentes
+
+--------------------------
+Principios de diseño para confiabilidad
+
+Recuperarse automáticamente de errores
+Monitorear indicadores clave de rendimiento (KPIs) y gatillar automatización cuando el límite es infringido
+
+Probar procedimientos de recuperación
+Probar como tu carga de trabajo falla, y validás tus procedimientos de recuperación
+Podés usar automatización para simular diferentes fallos o recrear escenarios que llevaron a fallos anteriormente
+
+Escalar horizontalmente para incrementar disponibilidad del sistema
+Reemplazar un gran recurso con múltiples pequeños recursos para reducir impacto de un solo fallo en la carga de trabajo total
+Distribuir solicitudes a lo largo de múltiples recursos más pequeños para asegurar que no compartan el mismo punto de fallo
+
+Parar de adivinar la capacidad
+En on-premise toma mucho trabajo de adivinación determinar la elasticidad de tus demandas de cargas de trabajo
+Con la nube no necesitás adivinar cuanto necesitás porque podés solicitar el tamaño correcto de recursos on-demand
+
+Gestionar cambio en automatización
+Hacer cambios vía infraestructura como código, permitirá un proceso formal para rastrear y revisar infraestructura					
