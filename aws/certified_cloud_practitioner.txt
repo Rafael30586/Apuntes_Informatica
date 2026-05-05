@@ -2233,4 +2233,24 @@ En on-premise toma mucho trabajo de adivinación determinar la elasticidad de tu
 Con la nube no necesitás adivinar cuanto necesitás porque podés solicitar el tamaño correcto de recursos on-demand
 
 Gestionar cambio en automatización
-Hacer cambios vía infraestructura como código, permitirá un proceso formal para rastrear y revisar infraestructura					
+Hacer cambios vía infraestructura como código, permitirá un proceso formal para rastrear y revisar infraestructura
+
+--------------------------
+Principios de diseño para eficiencia de rendimiento
+
+Democratizar tecnologías avanzadas
+Concentrarse en desarrollo de producto más que en consecución, provisionamiento y gestión de servicios
+Tomar ventaja de tecnología avanzada especializada y optimizada para tu caso de uso con servicios de la nube on-demand
+
+Globalizate en minutos
+Desplegar tu carga de trabajo en múltiples regiones de AWS alrededor del mundo te permite proveer menor latencia y una mejor experiencia para tus clientes a costo mínimo
+
+Usar arquitectura serverless
+La arquitectura serverless quita la necesidad de que tengas que correr y mantener los servidores físicos para actividades de computación tradicional
+Quita la molestia operacional de gestionar servidores físicos, y puede disminuir costos transaccionales porque los servicios gestionados operan a escala de la nube
+
+Experimentar más a menudo
+Con recursos virtuales y automatizables, podés rápidamente realizar pruebas comparativas usando diferentes tipos de instancias, almacenamiento y configuraciones
+
+Considerar simpatía mecánica
+Entender como los servicios de la nube son consumidos y siempre usar el enfoque de tecnología que mejor se alinea con los objetivos de tu carga de trabajo. Por ejemplo, considerá patrones de acceso a datos cuando seleccionás bases de datos o enfoques de almacenamiento					
