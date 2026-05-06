@@ -26,7 +26,7 @@ dockerfile <nombre>: va a la misma altura de context. Es para cuando queremos tr
 
 Cuando trabajamos con Docker compose no hace falta configurar una red, docker compose se encarga de crear una
 
-depends_on: /salto de línea /tabulación - "<contenedor>" --> va después del nombre del contendor. Sirve para ncuando un contenedor depende de otro, por ejemplo, un backend en java no puede ejecutarse si la base de datos no está todavía en ejecución
+depends_on: /salto de línea /tabulación - "<contenedor>" --> va después del nombre del contendor. Sirve para cuando un contenedor depende de otro, por ejemplo, un backend en java no puede ejecutarse si la base de datos no está todavía en ejecución
 
 networks: /salto de línea /tabulación - <red> --> va después del nombre del contenedor. Sirve para colocar el contenedor en la red que queramos
 

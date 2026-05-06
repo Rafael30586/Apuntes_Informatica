@@ -78,8 +78,8 @@ Desventajas de la ROM
 * Baja capacidad de almacenamiento: no es conveniente para almacenamiento de grandes cantidades de datos
 * Baja velocidad de escritura: escribir datos es un proceso lento
 * Desgaste físico: puede desgastarse después de muchos ciclos de escritura (EEPROM/EPROM)
-* Costo inicial elevado: cara de fabricar en pequeñas cantidades
+* Costo inicial elevado: cara de fabricar en pequeñas cantidades (Mask ROM)
 
-____________________________________________
-Continuar resumiendo con el enlace de arriba
-____________________________________________ 
+___________________________________________________________________________________________
+En el enlace quedan unos cuadros comparativos que pueden ser interesantes para otro momento
+___________________________________________________________________________________________ 

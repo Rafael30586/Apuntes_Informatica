@@ -40,7 +40,3 @@ La técnica de overlays también tiene ciertas desventajas como:
 * Incremento de la sobrecarga: el proceso de sacar y poner overlays en la memoria puede dar una sobrecarga significativa, llevando a degradación del rendimiento
 * Diseño complejo de programa: Diseñar programas para que funciones con overlays puede ser complejo y requiere planificación cuidadosa para asegurar que los overlays se carguen en el momento correcto
 * Flexibilidad limitada: los overlays son menos flexibles comparados con técnicas modernas de gestión de memoria como paging y segmentation, que permiten asignación de memoria dinámica
-
-____________________________________________
-Continuar resumiendo con el enlace de arriba
-____________________________________________

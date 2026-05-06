@@ -27,4 +27,4 @@ Suele también emplearse el miliamperio (mA), que es un submúltiplo del amperio
 
 1 A = 1000 mA
 
-Las unidades de cantidad e intensidad eléctricas se definen también a partir del efecto químico de la correinte en un voltámetro que contiene nitrato de plata. Como la cantidad de plata depositada en el cátodo es directamente proporcional a la cantidad de electricidad que ha circulado por el voltámetro, se ha comprobado que un coulombio es la cantidad de electricidad que deposita en el cátodo 1,118 mg de plata
+Las unidades de cantidad e intensidad eléctricas se definen también a partir del efecto químico de la corriente en un voltámetro que contiene nitrato de plata. Como la cantidad de plata depositada en el cátodo es directamente proporcional a la cantidad de electricidad que ha circulado por el voltámetro, se ha comprobado que un coulombio es la cantidad de electricidad que deposita en el cátodo 1,118 mg de plata

@@ -2282,4 +2282,24 @@ AWS well-architected tool
 
 Es una herramienta de auditoría usada para "asset" tus cargas de trabajo en la nube para alineamiento con el AWS well architected framework
 
-Es esencialmente una checklist, con referencias cercanas para ayudarte a ensamblar un informe para compartir con ejecutivos y tenedores de apuestas claves 			
+Es esencialmente una checklist, con referencias cercanas para ayudarte a ensamblar un informe para compartir con ejecutivos y tenedores de apuestas claves
+
+-------------------------
+Centro de arquitectura de AWS
+
+Es un portal web que contiene las mejores prácticas y arquitecturas de referencia para una variedad de cargas de trabajo diferentes
+
+----------------------------------------------------------------------------------------------------------------------------------
+TCO y migración
+----------------------------------------------------------------------------------------------------------------------------------
+Costo total de propiedad (TCO)
+
+¿Qué es TCO?
+Es un estimado financiero para ayudar a compradores y propietarios a determinar los costos directos e indirectos de un producto o servicio
+
+Crear un informe TCO es útil cuando tu compañía está preparándose para migrar de on-premise a la nube
+
+De acuerdo a una investigación hecha por Garter:
+"Los servicios cloud pueden inicialmente ser más caros que correr datacenters on-premise. De todas formas, también prueba que los servicios en la nube pueden tener mejor costo a lo largo del tiempo si las organizaciones aprenden a usar y operarlos más eficientemente"
+
+ 			
