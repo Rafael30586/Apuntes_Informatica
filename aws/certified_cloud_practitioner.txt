@@ -2275,4 +2275,11 @@ Esto te permite concentrarte en tus clientes y proyectos de negocio más que en 
 
 Analizar y atribuir gasto
 La nube hace que sea más fácil identificar precisamente el uso y costo de sistemas, lo cual luego permite atribución transparente de costo IT a dueños individuales de cargas de trabajo. Esto ayuda a medir el retorno en inversión (ROI) y les da a los dueños de cargas de trabajo una oportunidad para optimizar sus recursos y reducir costos
-			
+
+
+-----------------------
+AWS well-architected tool
+
+Es una herramienta de auditoría usada para "asset" tus cargas de trabajo en la nube para alineamiento con el AWS well architected framework
+
+Es esencialmente una checklist, con referencias cercanas para ayudarte a ensamblar un informe para compartir con ejecutivos y tenedores de apuestas claves 			
