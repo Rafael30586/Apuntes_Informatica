@@ -2253,4 +2253,26 @@ Experimentar más a menudo
 Con recursos virtuales y automatizables, podés rápidamente realizar pruebas comparativas usando diferentes tipos de instancias, almacenamiento y configuraciones
 
 Considerar simpatía mecánica
-Entender como los servicios de la nube son consumidos y siempre usar el enfoque de tecnología que mejor se alinea con los objetivos de tu carga de trabajo. Por ejemplo, considerá patrones de acceso a datos cuando seleccionás bases de datos o enfoques de almacenamiento					
+Entender como los servicios de la nube son consumidos y siempre usar el enfoque de tecnología que mejor se alinea con los objetivos de tu carga de trabajo. Por ejemplo, considerá patrones de acceso a datos cuando seleccionás bases de datos o enfoques de almacenamiento
+
+-------------------------
+Principios de diseño para optimización de costo
+
+Implementar gestión financiera de la nube
+Dedicar tiempo y recursos para construir capacidad, gestión financiera de la nube y herramientas de optimización de costo
+
+Adoptar un modelo de consumo
+Pagar solo por recursos de computación que requerís e incrementar o decrementar el uso dependiendo de los requerimientos del negocio
+
+Medir la eficiencia general
+Medir la salida de carga de trabajo del negocio y los costos asociados con la entrega
+Usar esta medición para saber la ganancias que hacés al incrementar la salida y reducir costos
+
+Parar de gastar dinero en levantamiento de peso indiferenciado
+AWS hace el levantamiento de peso de las operaciones de datacenters como "racking", "stacking" y dar energía a los servidores
+También quita la molestia operacional de gestionar sistemas operativos y aplicaciones con servicios gestionados			
+Esto te permite concentrarte en tus clientes y proyectos de negocio más que en la infraestructura IT
+
+Analizar y atribuir gasto
+La nube hace que sea más fácil identificar precisamente el uso y costo de sistemas, lo cual luego permite atribución transparente de costo IT a dueños individuales de cargas de trabajo. Esto ayuda a medir el retorno en inversión (ROI) y les da a los dueños de cargas de trabajo una oportunidad para optimizar sus recursos y reducir costos
+			
