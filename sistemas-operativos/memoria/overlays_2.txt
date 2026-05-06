@@ -18,13 +18,28 @@ En sistemas de computación tempranos, los overlays son comúnmente usados debid
 * Permitir que múltiples programas corran simultáneamente al compartir memoria
 
 ----------------------------
-Funcionamiento d overlays
+Funcionamiento de overlays
 
 El funcionamiento de overlays involucra los siguientes pasos:
 * El programa es dividido en secciones más pequeñas llamadas overlays
 * Una parte del programa permanecerá siempre en memoria, llamado el overlay base. Este contiene la lógica principal del programa y siempre se carga en memoria
 * Cuando el programa necesita acceder a un overlay diferente, el overlay actual es sacado de la memoria y el nuevo overlay es cargado a la memoria
 * El proceso continúa hasta que el programa termina su ejecución
+
+--------------------------
+Ventajas de los overlays
+
+La técnica overlay ofrece varias ventajas como:
+* Eficiencia de memoria: permite que programas más grandes que la memoria disponible corran al cargar solo las partes necesarias a la memoria
+* Reduce las huellas de memoria: al cargar solo los overlays requeridos, el uso de memoria general se reduce, permitiendo que más programas corran simultáneamente
+* Simplicidad: la técnica overlay es relativamente simple de implementar y no requiere algoritmos complejos de gestión de memoria
+
+Desventajas de los overlays
+
+La técnica de overlays también tiene ciertas desventajas como:
+* Incremento de la sobrecarga: el proceso de sacar y poner overlays en la memoria puede dar una sobrecarga significativa, llevando a degradación del rendimiento
+* Diseño complejo de programa: Diseñar programas para que funciones con overlays puede ser complejo y requiere planificación cuidadosa para asegurar que los overlays se carguen en el momento correcto
+* Flexibilidad limitada: los overlays son menos flexibles comparados con técnicas modernas de gestión de memoria como paging y segmentation, que permiten asignación de memoria dinámica
 
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
