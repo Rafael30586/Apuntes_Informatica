@@ -8,3 +8,24 @@ La siguiente imagen ilustra el concepto de overlays en sistemas operativos:
 https://www.tutorialspoint.com/operating_system/images/os_overlay.jpg
 
 En la imagen anterior, el proceso P1 tiene 3 overlays, En un momento dado, solo un overlay es cargado en la memoria principal (RAM). Cuando el proceso necesita acceder a un overlay diferente, el overlay actual es sacado de la memoria y un nuevo overlay es cargado en memoria
+
+----------------------------
+La necesidad de overlays
+
+En sistemas de computación tempranos, los overlays son comúnmente usados debido a la menor capacidad de almacenamiento para RAM. Los overlays se usan principalmente para:
+* Correr programas más grandes que la cantidad de RAM disponible
+* Asegurar la máxima utilización de los recursos de memoria
+* Permitir que múltiples programas corran simultáneamente al compartir memoria
+
+----------------------------
+Funcionamiento d overlays
+
+El funcionamiento de overlays involucra los siguientes pasos:
+* El programa es dividido en secciones más pequeñas llamadas overlays
+* Una parte del programa permanecerá siempre en memoria, llamado el overlay base. Este contiene la lógica principal del programa y siempre se carga en memoria
+* Cuando el programa necesita acceder a un overlay diferente, el overlay actual es sacado de la memoria y el nuevo overlay es cargado a la memoria
+* El proceso continúa hasta que el programa termina su ejecución
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________
