@@ -1,0 +1,8 @@
+https://www.dotcom-monitor.com/es/aprende-con-dotcom-monitor/glosario/que-es-una-api-soap/
+
+¿Qué es una API SOAP?
+
+SOAP es un protocolo utilizado para intercambiar información estructurada en el ámbito de los servicios web. Son las siglas de Simple Object Access Protocol (Protocolo simple de acceso a objetos) y está diseñado para facilitar la comunicación entre aplicaciones a través de una red, normalmente mediante HTTP o SMTP.
+Las API SOAP permiten que distintos sistemas interactúen sin problemas, lo que les permite enviar y recibir datos en un formato estandarizado, normalmente XML. Una de las características clave de SOAP es el uso de reglas predefinidas para ayudar a garantizar que los mensajes tengan el formato adecuado y sean comprendidos tanto por el emisor como por el receptor.
+Este protocolo es conocido por su solidez y seguridad, lo que lo convierte en una opción popular para aplicaciones de nivel empresarial en las que la fiabilidad y la integridad de los datos son cruciales. Ya sea para acceder a servicios, recuperar información o invocar funciones entre plataformas, las API SOAP proporcionan una forma fiable de conectarse y comunicarse de manera coherente.
+
