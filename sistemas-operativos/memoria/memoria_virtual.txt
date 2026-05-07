@@ -1,0 +1,17 @@
+https://www.geeksforgeeks.org/operating-systems/virtual-memory-in-operating-system/
+
+Memoria virtual en los sistemas operativos
+
+Memoria virtual es una técnica de gestión de memoria usada por sistemas operativos para dar la apariencia de un bloque de memoria grande y continuo para aplicaciones, incluso cuando la memoria física (RAM) está limitada y no necesariamente asignada de una manera contigua:
+* Un programa no necesita estar totalmente cargado en memoria para correr. Solo las partes necesarias son cargadas
+* Los programas pueden ser más grandes que la memoria física disponible en el sistema
+* La memoria virtual crea la ilusión de una memoria grande, incluso si la memoria RAM es pequeña
+* Utiliza la RAM y el almacenamiento del disco para gestionar memoria, cargando solo las partes de programas a la RAM según la necesidad 
+* Esto le permite al sistema correr más programas a la vez y gestionar la memoria de manera más eficiente
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250115142221545470/virtual_memory.webp
+
+¿Cómo funciona la memoria virtual?
+* La memoria virtual usa hardware y software para gestionar la memoria
+* Cuando un programa corre, usa direcciones virtuales (no verdaderos lugares en memoria)
+* La computadora convierte estas direcciones virtuales en direcciones físicas (verdaderos lugares en RAM) mientras el programa corre
