@@ -2314,3 +2314,15 @@ Gasto operacional (OPEX)
 * Los costos asociados con datacenters on-premise que han cambiado el costo al proveedor de servicio. El cliente solo tiene que estar ocupado de los costos no físicos
 * Arrendamiento de software y funciones de personalización, entrenar empleados en servicios de la nube, pagar por soporte de la nube, facturación basada en métricas de la nube (uso de computación y almacenamiento por ejemplo)
 * Con gastos operacionales podés probar un producto o servicio sin invertir en equipamiento 
+
+-------------------------
+¿Hace el cloud que le personal IT sea redundante?
+
+Una compañía está considerando migrar sus cargas de trabajo de una on-premise a una cloud para tener ventaja en los ahorros. Hay una preocupación entre el staff de que habrá despidos masivos. ¿Hace el cloud que el personal IT sea redundante?
+
+Cambiando el personal IT:
+* Una compañía necesita personal IT durante la fase de migración
+* Una compañía puede transicionar algunos roles a nuevos roles en la nube
+  - Redes a redes en la nube, por ejemplo
+* Una compañía podría decidir tomar un enfoque híbrido para que ellos siempre necesiten tener un grupo IT tradicional y un grupo IT de la nube
+* Una compañía puede cambiar actividades de empleados de gestionar infraestructura a generadores de ganancias
