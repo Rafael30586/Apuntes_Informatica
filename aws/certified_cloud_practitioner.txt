@@ -2302,4 +2302,15 @@ Crear un informe TCO es útil cuando tu compañía está preparándose para migr
 De acuerdo a una investigación hecha por Garter:
 "Los servicios cloud pueden inicialmente ser más caros que correr datacenters on-premise. De todas formas, también prueba que los servicios en la nube pueden tener mejor costo a lo largo del tiempo si las organizaciones aprenden a usar y operarlos más eficientemente"
 
- 			
+ -----------------------------------------
+Gasto operacional vs gasto capital (capital vs operational expenditure)
+
+Gasto capital (CAPEX):
+* Gastar dinero por adelantado en infraestructura física, restando ese gasto de tus facturas de impuesto a lo largo del tiempo
+* Costos de servidores (computadoras), costos de almacenamiento (discos duros), costos de red (routers, cables, switches), coastos de archivos y respaldo, costos de datacenter (seguridad física, enfriamiento, alquiler), personal técnico
+* Con gastos capitales tenés que pensar de antemano lo que planeás gastar 
+
+Gasto operacional (OPEX)
+* Los costos asociados con datacenters on-premise que han cambiado el costo al proveedor de servicio. El cliente solo tiene que estar ocupado de los costos no físicos
+* Arrendamiento de software y funciones de personalización, entrenar empleados en servicios de la nube, pagar por soporte de la nube, facturación basada en métricas de la nube (uso de computación y almacenamiento por ejemplo)
+* Con gastos operacionales podés probar un producto o servicio sin invertir en equipamiento 
