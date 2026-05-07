@@ -15,3 +15,10 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250115142221545470/virtual_
 * La memoria virtual usa hardware y software para gestionar la memoria
 * Cuando un programa corre, usa direcciones virtuales (no verdaderos lugares en memoria)
 * La computadora convierte estas direcciones virtuales en direcciones físicas (verdaderos lugares en RAM) mientras el programa corre
+
+------------------------
+Tipos de memoria virtual
+
+La memoria virtual es gestionada por la unidad de gestión de memoria (MMU), la cual suele estar integrada en el CPU. El CPU genera direcciones virtuales que el MMU traduce en direcciones físicas. Hay dos tipos principales de memoria virtual:
+* Paging
+* Segmentation 

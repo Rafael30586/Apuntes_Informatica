@@ -381,3 +381,39 @@ Resolución
 ¿Por qué estudiar Flow control?
 El control de flujo coordina la cantidad de datos que pueden ser enviados antes de recibir "reconocimiento" (acknowledgement). Este reconocimiento es un tipo especial de mensaje que el receptor le envía al emisor para "avisarle" que ha recibido lo que el emisor envió.
 A veces ocurre que el emisor le envía datos al receptor (estos datos son procesados por el receptor y esto lleva tiempo), y estos datos podrían ser enviados a gran velocidad y que el buffer queue se llene, por lo que muchos paquetes pueden empezar a "caer" (el receptor no llegaría a recibirlos). Por todo esto el receptor debe ser capaz de enviar un mensaje al emisor de los paquetes lo están abrumando, para que reduzca la velocidad. Hay que tener en cuenta que el receptor tiene une velocidad limitada a la cual puede procesar paquetes. 
+
+
+En Flow control hay varios protocolos: Stop and wait; go back n; selective repeat
+
+---------------------------
+Stop and wait
+* El emisor envía un paquete de datos
+* El receptor envía un reconocimiento después de recibir el paquete
+* El emisor enviará otro paquete solo si recibe el reconocimiento proveniente del receptor
+
+Problemas que pueden presentarse:
+* ¿qué pasa si el paquete enviado por el emisor se perdió por temas de ruido (noise)? el receptor se queda esperando por el paquete y el emisor se queda esperando por el reconocimiento, entonces se produce deadlock
+* ¿Qué pasa si el paquete es recibido por el receptor pero el reconocimiento se pierde? (tener en cuenta que también es un paquete y podría perderse por ruido) el emisor se queda esperando infinitamente por el reconocimiento
+* ¿Qué pasa si hay un retardo en el reconocimiento? el emisor puede "creer" que el reconocimiento recibido es por otro paquete
+
+Estos problemas deben ser solucionados usando stop and wait ARQ. ARQ significa automatic repeat request
+
+El emisor utilizará un temporizador luego de enviar un paquete. Este temporizador servirá para poner un límite de tiempo que, si se sobrepasa, se asumirá que el paquete se perdió en el camino o que el reconocimiento fue lo que se perdió, por lo que enviará el paquete nuevamente. Hay que tener en cuanta que si el paquete recibido por el receptor tiene un error, será descartado silenciosamente por él y no enviará el reconocimiento al receptor. El emisor no sabrá cual fue la verdadera causa de no recibir el reconocimiento (puede ser una de las ya descritas). Dicho todo esto stop and wait no sirve solamente para Flow control sino también para error control
+
+El reconocimiento enviado de parte del receptor es para solicitar el próximo paquete, no exactamente para decir que el paquete anterior se envió correctamente
+
+Hasta que el emisor reciba el reconocimiento del receptor, tendrá una copia del mensaje enviado en el buffer. Los mensajes del buffer se van borrando a medida que se confirma que el receptor ha recibido cada paquete
+
+El temporizador del cual se habló anteriormente impide que ocurra el deadlock
+
+También hay que tener en cuenta que los paquetes enviados tienen un número de secuencia y los reconocimientos también
+
+El reconocimiento enviado por el receptor es un paquete con su propio propagation delay, transmisión delay, etc
+
+Propagation delay no depende del tamaño del mensaje, por lo que dicha magnitud tendrá el mismo valor, tanto para el paquete enviado por el emisor como para el reconocimiento enviado por el receptor, ya que ambos se desplazan por el mismo medio
+
+El transmisión delay del reconocimiento es mucho menor que el del paquete enviado por el emisor. Esto es así porque el tamaño del reconocimiento es mucho menor que el del mensaje
+
+El cálculo del tiempo total es:
+TT =~ Td(mensaje) + 2Pd
+Se desprecia el transmisión delay del reconocimiento por ser muy pequeño en comparación 

@@ -13,3 +13,26 @@ Características principales de la API SOAP
 * Seguridad: SOAP es compatible con WS-Security, una especificación que garantiza la seguridad de la mensajería SOAP proporcionando confidencialidad, integridad y autenticación.
 * Extensibilidad: SOAP puede ampliarse para dar cabida a capacidades adicionales, como la Mensajería WS-Fiable, que garantiza la entrega de mensajes incluso en caso de fallos de software o hardware.
 * Independencia: SOAP puede funcionar a través de varios protocolos de transporte, como HTTP, SMTP, TCP o JMS (Java Message Service), lo que lo hace versátil en distintos entornos de red.
+
+---------------------------
+Ventajas de utilizar las API SOAP
+
+* Alta seguridad: Ideal para servicios de nivel empresarial en los que la seguridad, reforzada por protocolos SSL, es una prioridad.
+* Normas probadas: Proporciona normas bien definidas y se ha probado en numerosos entornos y aplicaciones.
+* Contratos formales: Utiliza WSDL para describir la interfaz de la API, garantizando el cumplimiento estricto del contrato de servicio.
+
+---------------------------
+Casos prácticos de uso de las API SOAP
+
+* Servicios financieros: Los bancos y las instituciones financieras utilizan las API SOAP para la gestión de transacciones, donde la seguridad y la corrección son primordiales.
+* Telecomunicaciones: Gestionar transacciones complejas y garantizar una mensajería fiable entre los componentes de la red.
+* Sanidad: Intercambio de información sensible de pacientes entre sistemas, donde la seguridad y el no repudio son cruciales.
+* API públicas: Muchas interfaces de datos gubernamentales y públicos utilizan servicios web SOAP para proporcionar servicios accesibles a través de diversas plataformas y sistemas operativos.
+
+-------------------------
+Construir una petición y una respuesta SOAP
+
+Un mensaje SOAP es un paquete de datos basado en XML que consta de tres partes principales:
+* Sobre: Define el inicio y el final del mensaje SOAP y encapsula otros elementos SOAP. Este sobre SOAP contiene la carga útil de la llamada a la API.
+* Cabecera: Contiene información específica de la aplicación, como tokens de autenticación, marcas de tiempo y otros metadatos.
+* Cuerpo: El contenedor principal del contenido del mensaje, que incluye los datos XML reales que representan la solicitud o la respuesta. El cuerpo sigue un esquema y una ruta específicos, lo que garantiza que la estructura del documento XML se ajusta al formato XML definido.

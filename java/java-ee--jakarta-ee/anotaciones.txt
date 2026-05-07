@@ -5,3 +5,5 @@ Cuando trabajamos con el modelo vista controlador usando jakarta EE, el controla
 JSTL --> JSP standard library . Para trabajar con JSTL en jakarta hay que descargar y añadir al proyecto dos bibliotecas:  jakarta.servlet.jsp.jstl, de glassfish; y jakarta.servlet.jsp.jstl-api, de jakarta . Se pueden encontrar en la página de Maven (podemos descargar los jar si nuestro proyecto no es de maven)
 
 Cuando trabajamos en un proyecto en Maven con un arquetipo webapp, puede pasar que no podamos acceder a la opción "targeted runtimes" en Eclipse. Para solucionar esto puede ser que hacer click derecho en el proyecto, ir a properties y luego entrar en donde dice "Project facets" y ahí elegir la opción que corresponda a un proyecto web dinámico
+
+Cuando trabajamos en un proyecto en Maven, puede ocurrir que si queremos empaquetar la aplicación no se reconozcan a los paquetes de jakarta. En este caso, lo que hay que hacer es usar esta dependencia: https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api/6.1.0
