@@ -2343,4 +2343,21 @@ Evaluador de migraciones
 
 Formalmente conocido como TSO logic, es una herramienta de estimación usada para determinar un costo on-premise existente de una organización para poder compararlo con costos de AWS para migración a la nube
 
-Usa un "Agentless Collector" para recolectar datos de tu infraestructura on-premise para extraer tus costos on-premise 
+Usa un "Agentless Collector" para recolectar datos de tu infraestructura on-premise para extraer tus costos on-premise
+
+----------------------------
+EC2 VM import/export
+
+Permite a los usuarios importar imágenes de máquinas virtuales a EC2
+
+AWS tiene instrucciones de importación para:
+* VMware
+* Citrix
+* Microsoft Hyper-V
+* Windows VHD de Azure 
+* Linux VHD de Azure
+
+Pasos:
+* Preparás tu imagne virtual para subirla
+* Subís tu imagen virtual a S3
+* Usás AWS CLI para importar tu imagen. Generará una AMI (Amazon Machine Image)
