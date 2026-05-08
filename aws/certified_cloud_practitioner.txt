@@ -2361,3 +2361,48 @@ Pasos:
 * Preparás tu imagne virtual para subirla
 * Subís tu imagen virtual a S3
 * Usás AWS CLI para importar tu imagen. Generará una AMI (Amazon Machine Image)
+
+----------------------------
+Servicio de migración de bases de datos (DMS)
+
+Te permite migrar de manera rápida y segura una base de datos en otra. DMS puede ser usado para migrar tu base de datos on-premise a AWS
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjZZSowRwj83-7daaBF2DpeLmSykQuhkHzg&s
+
+Orígenes posibles:
+* Bases de datos de Oracle
+* Microsoft SQL
+* MySQL
+* MariaDB
+* Post]geSQL
+* MongoDB
+* SAP ASE
+* IMDB Db2
+* Azure SQL
+* Amazon RDS
+* Amazon S3
+* Amazon Aurora
+* Amazon DocumentDB
+
+Objetivos posibles:
+* Bases de datos de Oracle
+* Microsoft SQL
+* MySQL
+* MariaDB
+* PostgreSQL
+* Redis
+* SAP ASE
+* Amazon Redshift
+* Amazon RDS
+* Amazon DynamoDB
+* Amazon S3
+* Amazon Aurora
+* Amazon OpenSearch Service
+* Amazon ElasticCache para Redis
+* Amazon DocumentDB
+* Amazon Neptune
+* Apache Kafka
+
+AWS Schema Conversión Tool se usa en muchos casos para convertir automáticamente un schema de base de datos de origen a un schema de base de datos objetivo
+
+Cada camino de migración requiere investigación porque no todas las combinaciones de orígenes y objetivos son posibles
