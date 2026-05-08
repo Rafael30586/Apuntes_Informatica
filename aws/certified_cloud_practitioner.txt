@@ -2336,4 +2336,11 @@ La calculadora contiene más de 100 servicios que podés configurar para estimar
 
 Para calcular el costo total de la propiedad una organización necesita comparar su costo existente al lado de los costos de AWS para que la calculadora pueda ser utilizada para determinar el costo
 
-Podés exportar tu estimado final a CSV
+Podés exportar tu estimado final a CSV	
+
+---------------------------
+Evaluador de migraciones
+
+Formalmente conocido como TSO logic, es una herramienta de estimación usada para determinar un costo on-premise existente de una organización para poder compararlo con costos de AWS para migración a la nube
+
+Usa un "Agentless Collector" para recolectar datos de tu infraestructura on-premise para extraer tus costos on-premise 
