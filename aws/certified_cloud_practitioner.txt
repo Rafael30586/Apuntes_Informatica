@@ -2326,3 +2326,14 @@ Cambiando el personal IT:
   - Redes a redes en la nube, por ejemplo
 * Una compañía podría decidir tomar un enfoque híbrido para que ellos siempre necesiten tener un grupo IT tradicional y un grupo IT de la nube
 * Una compañía puede cambiar actividades de empleados de gestionar infraestructura a generadores de ganancias
+
+------------------------------
+Calculadora de precios de AWS
+
+LA calculadora de precios de AWS es una herramienta gratuita que puede ser usada en tu navegador web sin la necesidad de una cuenta AWS para estimar el costo de varios servicios de AWS
+
+La calculadora contiene más de 100 servicios que podés configurar para estimar costo
+
+Para calcular el costo total de la propiedad una organización necesita comparar su costo existente al lado de los costos de AWS para que la calculadora pueda ser utilizada para determinar el costo
+
+Podés exportar tu estimado final a CSV
