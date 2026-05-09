@@ -1,0 +1,18 @@
+Autodidacta Océano Color 3 - Física I - página 827
+
+Fuerzas
+
+Fuerza es toda causa capaz de modificar el estado de reposo o de movimiento de un cuerpo, o de producir una deformación en el mismo.
+Loa elementos de una fuerza son: intensidad, dirección, sentido y punto de aplicación.
+Para representar gráficamente una fuerza se emplean vectores, que son segmentos orientados. El módulo del vector (medida del segmento) es la intensidad de la fuerza; la dirección, el sentido y el punto de aplicación corresponden a los de la fuerza
+
+------------------------------
+Clasificación de las fuerzas
+
+La cause de las fuerzas hay que buscarla en la interacción de los cuerpos. Según esta interacción se puede hacer la siguiente clasificación:
+A) Fuerzas por contacto
+B) Fuerzas a distancia, por ejemplo, las fuerzas gravitatorias, las electroestáticas y las magnéticas.
+Siempre que se traten de fuerzas a distancia se tendrá presente el concepto de campo de fuerzas, definido como el lugar o espacio donde un cuerpo cualquiera ejerce una fuerza a distancia sobre otros cuerpos, con lo que se puede afirmar que:
+* La Tierra crea en sus inmediaciones un campo gravitatorio de fuerzas
+* Una carga eléctrica crea a su alrededor un campo eléctrico de fuerzas
+* Un imán origina un campo magnético de fuerzas
