@@ -1,2 +1,3 @@
 # --> subíndices
-^ --> superíndices y potencias 
+^ --> superíndices y potencias
+#> --> magnitud vectorial 

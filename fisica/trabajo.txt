@@ -1,0 +1,14 @@
+Autodidacta Océano Color 3 - Física I - página 849
+
+Trabajo
+
+Supuesto un cuerpo situado en un punto A; al actuar sobre él una fuerza F#>, se desplaza hasta B, estando AB#__ en la misma dirección que F#>. El producto de la fuerza F#> por la distancia recorrida es el trabajo
+Si el espacio recorrido no tiene la misma dirección que la fuerza, el trabajo es el producto de la fuerza por el espacio por el coseno del ángulo que forman las dos direcciones. Llamando L al trabajo:
+
+L = F#> x d x cos ángulo
+
+https://s1.significados.com/foto/formula-trabajo-en-fisica-cke.jpg?class=article
+
+De acuerdo con esto, si F#> es perpendicular a d, el trabajo es nulo pues cos 90° = 0
+Si el ángulo es mayor de 90° el trabajo es negativo. Esto significa que la fuerza es de sentido contrario al desplazamiento. Un ejemplo se haya en el sentido de la fuerza-peso y la trayectoria de un cuerpo lanzado hacia arriba, mientras sube
+
