@@ -1,3 +1,3 @@
 # --> subíndices
 ^ --> superíndices y potencias
-& --> símbolos que van arriba de otro como, por ejemplo, la flecha de un vector
+& --> símbolos que van arriba de otro como, por ejemplo, la flecha de una magnitud vectorial como la fuerza, que se escribiría F&->

@@ -1,4 +1,4 @@
-Autodidacta Océano Color 3 - Física I - página 827
+Autodidacta Océano Color 3 - Física I - páginas 827, 842
 
 Fuerzas
 
@@ -16,3 +16,22 @@ Siempre que se traten de fuerzas a distancia se tendrá presente el concepto de 
 * La Tierra crea en sus inmediaciones un campo gravitatorio de fuerzas
 * Una carga eléctrica crea a su alrededor un campo eléctrico de fuerzas
 * Un imán origina un campo magnético de fuerzas
+
+----------------------------
+Unidades de fuerza
+
+* Sistema internacional
+La unidad de fuerza en el sistema internacional se denomina newton.
+Newton es la fuerza que aplicada a una masa de 1 kilogramo, le comunica una aceleración de un metro por segundo al cuadrado. Se representa por N
+
+N = kg x (m / s^2)
+
+* Sistema cegesimal
+La unidad de fuerza en el sistema cegesimal se denomina dina.
+Dina es la fuerza que aplicada a una masa de un gramos, le comunica una aceleración de un centímetro por segundo al cuadrado. Se representa por dyn
+
+dyn = g x (cm / s^2)
+
+* Sistema técnico
+La fuerza es una de las magnitudes fundamentales del sistema técnico; es por ello, que su correspondiente unidad (el kilopondio) no se obtiene a partir de otras, sino que se establece como unidad patrón.
+Kilopondio es la fuerza con que la tierra atrae en París al kilogramo de masa. Se representa por kp
