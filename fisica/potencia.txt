@@ -1,0 +1,28 @@
+Autodidacta Océano Color 3 - Física I - página 851
+
+Potencia
+
+Es el trabajo realizado en la unidad de tiempo. Se la designa con la letra W.
+Si se realiza un trabajo L en un tiempo t:
+
+W = L / t
+
+---------------------------
+Unidades de potencia
+
+* Sistema internacional
+La unidad de potencia en el sistema internacional se denomina watio.
+Watio es la potencia desarrollada cuando se realiza un trabajo de un julio por segundo.
+
+W = J / s
+
+* Sistema cegesimal
+La unidad de potencia en el sistema cegesimal se denomina ergio por segundo.
+Ergio por segundo es la potencia desarrollada cuando se realiza un trabajo de un ergio en un segundo
+Esta unidad, que se representa por erg/s, es excesivamente pequeña, por lo que apenas tiene utilización
+
+erg/s = (g x cm^2) / s^3
+
+* Sistema técnico
+La unidad de potencia en el sistema técnico se denomina kilopondímetro por segundo.
+Kilopondímetro por segundo es la potencia desarrollada cuando se realiza un trabajo de un kilopondímetro en un segundo. Se representa por kpm/s
