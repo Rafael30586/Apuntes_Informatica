@@ -1,0 +1,54 @@
+Autodidacta Océano Color 4 - Física II- páginas 938,939
+
+Potencial eléctrico. Diferencia de potencial
+
+Sea el campo eléctrico creado por una carga positiva Q. Se si coloca una carga positiva unidad q en sus proximidades, será rechazada con una fuerza que va disminuyendo a medida que la carga q se va alejando. Esta fuerza tiene tendencia a llevar a la carga q hasta el infinito.
+Si se quiere ahora situar la carga q donde antes estaba, se tendrá que ejercer una fuerza igual, pero opuesta a la del campo y ,por lo tanto, se realizará un trabajo contra el campo. 
+Se define como potencial eléctrico en un punto el trabajo realizado sobre la unidad de carga al desplazarla desde el infinito hasta dicho punto. Se representa por V.
+Sea L el trabajo que hay que realizar para transportar una carga q desde el infinito hasta un punto A de un campo eléctrico; el trabajo por cada unidad de carga, es decir, el potencial en A, se obtendrá mediante la fórmula:
+
+V#A = L / q 
+
+Por ser el potencial el cociente entre un trabajo y una carga, su fórmula dimensional se obtiene dividiendo las fórmulas dimensionales del trabajo y la carga:
+
+* V = L / q
+* [V] = [L] / [q] = ([F] x [e]) / [q] = (M x L x T^2 x L) / I x T = M x L^2 x T^-3 x I^-1
+* [V] = M x L^2 x T^-3 x I^-1
+
+La unidad de potencial en el sistema internacional se denomina voltio. Voltio es el potencial existente en un punto tal que para transportar un coulombio desde el infinito hasta él se requiere un trabajo de un joule. Se representa por V:
+
+voltio = joule / coulombio
+
+Cuanto más se acerque la carga unidad a la carga Q que crea el campo, mayor será el trabajo que se tendrá que realizar. Así, el potencial irá disminuyendo a medida que se consideren puntos cada vez más alejados de la carga Q.
+Las cargas positivas se desplazan dentro de los campos eléctricos desde los puntos que tienen mayor potencial a los de menor potencial. Los electrones, por el contrario, se desplazan desde los puntos de menor potencial a los de mayor potencial.
+Se demuestra que el potencial en un punto se calcula también mediante la siguiente expresión:
+
+V#A = K (Q / d)
+
+Donde:
+V#A = potencial eléctrico en un punto A
+Q = carga que crea el campo
+d = distancia entre la carga Q y el punto A
+
+Debe tenerse en cuenta que:
+* El origen de potenciales (potencial nulo) se considera situado en el infinito
+* El potencial eléctrico, a diferencia de la fuerza y el campo eléctrico, es una magnitud escalar
+* El potencial creado por una carga positiva es positivo
+* El potencial creado por una carga negativa es negativo
+
+Consideremos ahora dos puntos A y B de un campo eléctrico, cuyos potenciales son V#A y V#B, respectivamente.
+Según la definición de potencial, para transportar la unidad de carga desde el infinito hasta el punto A se requiere un trabajo V#A, y para hacerlo desde el infinito hasta el punto B se requiere un trabajo V#B; por lo tanto, si se quisiese transportar la citada unidad de carga desde A hasta B, habría que realizar un trabajo V#A - V#B, denominado diferencia de potencial.
+Diferencia de potencial (V#A - V#B) entre dos puntos A y B de un campo eléctrico es el trabajo que hay que realizar sobre la unidad de carga positiva para transportarla desde B hasta A. Recibe también el nombre de tensión. Su expresión matemática es la siguiente:
+
+V#A - V#B = L#(B-A) / q
+
+Donde V#A - V#B = diferencia de potencial entre A y B;
+L#(B-A) = trabajo para llevar la carga q desde B hasta A.
+
+La diferencia de potencial, al igual que el potencial eléctrico, es una magnitud escalar. Su unidad es el voltio.
+De la expresión anterior se deduce que el trabajo para trasladar una carga q desde B hasta A es:
+
+L#(B-A) = q(V#A - V#B)
+
+Al ser el potencial eléctrico una magnitud escalar, el cálculo del potencial creado en un punto por un sistema de cargas se reduce a una suma algebraica de los potenciales de cada una de ellas en dicho punto. El campo electrostático también se puede describir perfectamente mediante las superficies equipotenciales, que son perpendiculares en todos sus puntos al vector intensidad del campo y, de acuerdo con el nombre que llevan, están constituidas por puntos que presentan el mismo potencial. La traslación de una carga cualquiera a lo largo de una superficie equipotencial no supone trabajo alguno, porque la diferencia de potencial es nula.
+En el caso simple del campo creado por una carga eléçtrica única Q, dichas superficies serán esféricas con centro en Q. Se conviene en dibujar las superficies equipotenciales correspondientes a intervalos regulares de potencial; por wejemplo, de volt en volt, o de 10 volt en 10 volt, etc. 

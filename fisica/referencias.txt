@@ -1,0 +1,2 @@
+# --> subíndices
+^ --> superíndices y potencias 

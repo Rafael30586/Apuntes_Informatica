@@ -9,7 +9,7 @@ F = K x [(q x q') / d^2]
 
 donde, el factor K es una constante de proporcionalidad, que depende del sistema de unidades empleado; en el sistema internacional, su valor es:
 
-K = 9 x 10^9 x [(N x m^2) / C2] 
+K = 9 x 10^9 x [(N x m^2) / C^2] 
 
 Con la expresión anterior se determinará el módulo o intensidad de la fuerza. Ahora bien, la fuerza electrostática es una magnitud vectorial y se tendrá que definir, además: la dirección, dada por la recta que une las cargas; el sentido, que depende del signo de las cargas, y el punto de aplicación de la fuerza.
 Si la fuerza se expresa en Newtons, la distancia en metros y se utiliza el valor K en el sistema internacional, la unidad de carga es el coulombio, que se define como la carga que, puesta en el vacío frente a otra igual y a la distancia de 1m, la atrae o repele con la fuerza de 9 x 10^9N.
