@@ -1,3 +1,3 @@
 # --> subíndices
 ^ --> superíndices y potencias
-#> --> magnitud vectorial 
+& --> símbolos que van arriba de otro como, por ejemplo, la flecha de un vector

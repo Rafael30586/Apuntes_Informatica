@@ -5,10 +5,30 @@ Trabajo
 Supuesto un cuerpo situado en un punto A; al actuar sobre él una fuerza F#>, se desplaza hasta B, estando AB#__ en la misma dirección que F#>. El producto de la fuerza F#> por la distancia recorrida es el trabajo
 Si el espacio recorrido no tiene la misma dirección que la fuerza, el trabajo es el producto de la fuerza por el espacio por el coseno del ángulo que forman las dos direcciones. Llamando L al trabajo:
 
-L = F#> x d x cos ángulo
+L = F&> x d x cos ángulo
 
 https://s1.significados.com/foto/formula-trabajo-en-fisica-cke.jpg?class=article
 
 De acuerdo con esto, si F#> es perpendicular a d, el trabajo es nulo pues cos 90° = 0
 Si el ángulo es mayor de 90° el trabajo es negativo. Esto significa que la fuerza es de sentido contrario al desplazamiento. Un ejemplo se haya en el sentido de la fuerza-peso y la trayectoria de un cuerpo lanzado hacia arriba, mientras sube
 
+--------------------------
+Unidades de trabajo
+
+* Sistema internacional
+La unidad de trabajo en el sistema internacional se denomina joule o julio
+Joule es el trabajo efectuado por una fuerza de 1 newton al desplazarse un metro en su propia dirección. Se representa por J
+
+J = N x m = (kg x m^2) / s^2
+
+* Sistema cegesimal
+La unidad de trabajo en el sistema cegesimal se denomina ergio
+Ergio es el trabajo efectuado por una fuerza de una dina al desplazarse un centímetro en su propia dirección. Se representa por erg
+
+erg = dyn x cm = (g x cm^2) / s^2
+
+* Sistema técnico
+La unidad de trabajo en el sistema técnico se denomina kilopondímetro
+Kilopondímetro es el trabajo efectuado por una fuerza de un kilopondio al desplazarse un metro en su propia dirección. Se representa por kpm
+
+kpm = kp x m

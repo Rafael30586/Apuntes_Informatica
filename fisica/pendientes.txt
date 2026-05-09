@@ -1,6 +1,7 @@
-campo eléctrico
-carga eléctrica - coulombio
-Diferencia de potencial
-Trabajo
+// campo eléctrico
+// carga eléctrica - coulombio
+// Diferencia de potencial
+// Trabajo
 Potencia
 Superficie equipotencial
+Fuerza
