@@ -2,6 +2,6 @@
 // carga eléctrica - coulombio
 // Diferencia de potencial
 // Trabajo
-Potencia
+// Potencia
 Superficie equipotencial
-Fuerza
+// Fuerza
