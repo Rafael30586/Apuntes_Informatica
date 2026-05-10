@@ -1,0 +1,9 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 421, 422, 423
+
+Campo eléctrico
+
+Así como el espacio que rodea a un planeta está lleno con un campo gravitacional, el espacio que rodea a un cuerpo con carga eléctrica está lleno por un campo eléctrico, una especie de aura que se extiende por el espacio. Un campo eléctrico tiene tanto magnitud (intensidad) como dirección. La magnitud del campo en cualquiera de sus puntos es simplemente la fuerza por unidad de carga. Si un cuerpo con carga q experimenta una fuerza F en determinado punto del espacio, el campo eléçtrico E en ese punto es
+
+E = F / q 
+
+El concepto de campo eléctrico nos ayuda no solo a comprender las fuerzas entre los cuerpos estacionarios cargados y aislados, sino también lo que sucede cuando se mueven las cargas. Cuando esto sucede, su movimiento se comunica a los cuerpos cargados vecinos, en forma de perturbación del campo. La perturbación emana del cuerpo cargado que acelera, y se propaga a la velocidad de la luz. El campo eléctrico es un almacén de energía, y la energía se puede transportar a largas distancias en un campo eléctrico. La energía que se propaga en un campo eléctrico se puede dirigir a través de alambres metálicos, y guiarse en ellos. O bien, puede juntarse con un campo magnético para atravesar el espacio vacío.  
