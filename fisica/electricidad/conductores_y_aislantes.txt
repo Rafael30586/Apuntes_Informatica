@@ -1,0 +1,12 @@
+Física conceptual - 10ma edición - Paul G Hewitt
+
+Conductores y aislantes
+
+Es fácil establecer una corriente eléctrica en los metales, porque sus átomos tiene un o más electrones en su capa externa que no están anclados a núcleos de átomos determinados; en cambio, son libres para desplazarse por el material. A esos materiales se los llama buenos conductores.
+En otros materiales, como caucho y vidrio, los electrones están fuertemente enlazados con determinados átomos, y pertenecen a ellos. No están libres para desplazarse entre otros átomos del material. En consecuencia, no es fácil hacer que fluyan. Esos materiales son  malos conductores de la corriente eléctrica y se llaman aislantes.
+
+-----------------------
+Semiconductores
+
+Hay algunos materiales, como el silicio y el germanio, que no son buenos conductores ni buenos aislantes. Están a la mitad del intervalo de resistividades eléctricas; son aislantes regulares en su forma cristalina pura, y se vuelven conductores excelentes cuando se reemplaza uno de sus átomos, entre 10 millones de ellos, con una impureza que agregue o quite un electrón a la estructura cristalina. A los materiales que puede hacerse que se comporten a veces como aislantes y a veces como conductores se les llama semiconductores. Las capas delgadas de materiales semiconductores, una sobre otra, forman los transistores, que sirven para controlar el flujo de las corrientes en los circuitos, para detectar y amplificar señales de radio y para producir oscilaciones en los transmisores.
+Un semiconductor también puede conducir cuando se ilumina con la luz del color adecuado. Una placa de selenio puro es, normalmente, un buen aislante, y toda carga eléctrica que se acumula en su superficie se quedará ahí durante largo tiempo en la oscuridad. Sin embargo, si la placa se expone a la luz, la carga desaparece casi de inmediato. Si una placa cargada de selenio se expone a una distribución de luz, la carga saldrá solamente de las áreas expuestas a la luz. Si se unta su superficie con un polvo de plástico negro, ese polvo solo se adheriría a las áreas cargadas, donde la placa no se ha expuesto a la luz.       
