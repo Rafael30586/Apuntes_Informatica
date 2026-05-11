@@ -2406,3 +2406,34 @@ Objetivos posibles:
 AWS Schema Conversión Tool se usa en muchos casos para convertir automáticamente un schema de base de datos de origen a un schema de base de datos objetivo
 
 Cada camino de migración requiere investigación porque no todas las combinaciones de orígenes y objetivos son posibles
+
+---------------------------
+AWS Cloud Adoption Framework (CAF)
+
+Es un documento técnico que te ayuda a planear tu migración de on-premise a AWS
+
+En el más alto nivel; el CAF AWS organiza una guía en seis áreas: negocio, gente, gobernanza, plataforma, seguridad, operaciones
+
+1. Perspectiva de negocio, por ejemplo, gerentes de negocios, gerentes de finanzas, propietarios de presupuesto, stakeholders de estrategia
+
+Como actualizar las habilidades del elenco y procesos organizacionales para optimizar el valor del negocio mientras se mueven a la nube
+
+2. Perspectiva de la gente, por ejemplo, recursos humanos, dotación de personal, gerentes de gente
+
+Como actualizar las habilidades del elenco y procesos organizacionales para optimizar y mantener su fuerza de trabajo, y asegurar que las competencias están en su lugar y en el momento apropiado
+
+3. Perspectiva de gobernanza, por ejemplo, CIO, gerentes de programas, gerentes de proyectos, arquitectos de empresas, analistas de negocios
+
+Como actualizar las habilidades del elenco y procesos organizacionales que son necesarios para asegurar gobernanza de negocio en la nube, y gestionar y medir inversiones de la nube para evaluar sus resultados de negocios
+
+4. Perspectiva de la plataforma, por ejemplo, CTO, gerentes de IT, arquitectos de soluciones
+
+Como actualizar las habilidades del elenco y procesos organizacionales que son necesarios para entregar y optimizar soluciones y servicios de nube
+
+5. Perspectiva de seguridad, por ejemplo CISO, gerentes de seguridad IT, analistas de seguridad IT
+
+Como actualizar las habilidades del elenco y procesos organizacionales que son necesarios para asegurar que la arquitectura desplegada en la nube se alinea con los requerimientos de control, resiliencia y cumplimientos de requerimiento de seguridad de la organización
+
+6. Perspectiva de operaciones, por ejemplo, gerentes de operaciones de IT, gerentes de soporte de IT
+
+Como actualizar las habilidades del elenco y procesos organizacionales que son necesarios para asegurar la salud y confiabilidad del sistema durante el traslado de las operaciones a la nube y luego operar usando las mejores practicas de computación en la nube ágiles y en curso		  
