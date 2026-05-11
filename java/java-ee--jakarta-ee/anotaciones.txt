@@ -7,3 +7,5 @@ JSTL --> JSP standard library . Para trabajar con JSTL en jakarta hay que descar
 Cuando trabajamos en un proyecto en Maven con un arquetipo webapp, puede pasar que no podamos acceder a la opción "targeted runtimes" en Eclipse. Para solucionar esto puede ser que hacer click derecho en el proyecto, ir a properties y luego entrar en donde dice "Project facets" y ahí elegir la opción que corresponda a un proyecto web dinámico
 
 Cuando trabajamos en un proyecto en Maven, puede ocurrir que si queremos empaquetar la aplicación no se reconozcan a los paquetes de jakarta. En este caso, lo que hay que hacer es usar esta dependencia: https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api/6.1.0
+
+A veces puede ocurrir que tomcat no arranque por culpa de un solo proyecto y que no podamos usarlo para el resto de los proyectos. Para que vuelva a funcionar hay que quitar el proyecto de la parte de abajo de Eclipse que dice servers 
