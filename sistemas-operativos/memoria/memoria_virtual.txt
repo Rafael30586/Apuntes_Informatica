@@ -20,5 +20,17 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250115142221545470/virtual_
 Tipos de memoria virtual
 
 La memoria virtual es gestionada por la unidad de gestión de memoria (MMU), la cual suele estar integrada en el CPU. El CPU genera direcciones virtuales que el MMU traduce en direcciones físicas. Hay dos tipos principales de memoria virtual:
-* Paging
-* Segmentation 
+* Paginación (paging)
+* Segmentación (segmentation) 
+
+1. Paginación
+Paginación divide la memoria en pequeños bloques de tamaño fijo llamados páginas (pages). Cuando a la computadora se le acaba la RAM, páginas que no están en uso actualmente son movidas al disco rígido, en una área llamada swap file.
+* Las swap files actúan como una extensión de la RAM
+* Cuando una página es necesitada otra vez, es cambiada otra vez a la RAM, un proceso conocido como cambio de página (page swapping)
+* Esto asegura que el sistema operativo y las aplicaciones tengan suficiente memoria para correr (run)
+
+Page fault service time: es el tiempo que toma para brindar servicio a la falla de página. El page fault service time incluye el tiempo que toma para llevar a cabo los pasos de arriba
+
+____________________________________________________________________
+No terminé de resumir porque no se entiende bien lo que quiere decir
+____________________________________________________________________

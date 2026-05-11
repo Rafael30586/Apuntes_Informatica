@@ -1,0 +1,9 @@
+https://www.techtarget.com/searchstorage/definition/virtual-memory
+
+¿Qué es la memoria virtual?
+
+Memoria virtual es una técnica de gestión de memoria en la cual la memoria secundaria puede ser usada como si fuera parte de la memoria principal. Es una técnica común usada en el sistema operativo de una computadora por lo efectiva que es en la optimización del uso de memoria. 
+La memoria virtual usa tanto hardware como software para permitirle a una computadora compensar por falta de memoria física, transfiriendo temporalmente datos de la RAM al almacenamiento en disco. Mapeando pedazos de memoria a archivos de disco permite a la computadora tratar a la memoria secundaria como si fuera la memoria principal.
+Hoy en día, la mayoría de las PCs vienen con 8GB de RAM, pero a veces, eso no es suficiente para correr varios programas a la vez. La memoria virtual libera RAM al cambiar datos que no han sido usados recientemente a un dispositivo de almacenamiento, como disco duro o SSD.
+La memoria virtual es importante para mejorar el rendimiento del sistema, hacer multitareas y usar programas grandes. De todas formas, los usuarios no deberían depender demasiado de la memoria virtual, ya que es bastante más lenta que la RAM. Si el SO tiene que cambiar datos entre memoria virtual y RAM muy seguido, la computadora empieza a ralentizarse, resultando en una condición llamada thrashing.
+La memoria virtual fue desarrollada en una época en la cual la memoria RAM física era cara. Las computadoras tiene  una cantidad finita de RAM, por lo que la memoria se acaba cuando múltiples programas corren simultáneamente. Un sistema usando memoria virtual usa una sección del disco duro o SSD para emular RAM. Con la memoria virtual, un sistema puede cargar programas más grandes o múltiples programas al mismo tiempo, permitiendo a cada uno operar como si tuviera más espacio asignable de disco, sin tener que comprar más RAM.
