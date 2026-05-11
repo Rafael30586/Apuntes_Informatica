@@ -2436,4 +2436,26 @@ Como actualizar las habilidades del elenco y procesos organizacionales que son n
 
 6. Perspectiva de operaciones, por ejemplo, gerentes de operaciones de IT, gerentes de soporte de IT
 
-Como actualizar las habilidades del elenco y procesos organizacionales que son necesarios para asegurar la salud y confiabilidad del sistema durante el traslado de las operaciones a la nube y luego operar usando las mejores practicas de computación en la nube ágiles y en curso		  
+Como actualizar las habilidades del elenco y procesos organizacionales que son necesarios para asegurar la salud y confiabilidad del sistema durante el traslado de las operaciones a la nube y luego operar usando las mejores practicas de computación en la nube ágiles y en curso
+
+----------------------------------------------------------------------------------------------------------------------------------
+Facturación, precio y soporte
+----------------------------------------------------------------------------------------------------------------------------------
+
+Servicios gratuitos de AWS
+
+Estos servicios son gratuitos para siempre, a diferencia de la de la categoría libre (free tier) "that are up to a point of usage or time"
+
+* IAM
+* Amazon VPC
+* Auto Scaling #
+* CloudFormation #
+* Elastic Beanstalk #
+* Opsworks #
+* Amplify #
+* AppSync #
+* CodeStar #
+* Organizations and Consolidated Billing
+* AWS Cost Explorer
+
+Los que están marcados con # pueden provisionar otros servicios que cuestan dinero 
