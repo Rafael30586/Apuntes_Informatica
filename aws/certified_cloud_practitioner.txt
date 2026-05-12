@@ -2458,4 +2458,42 @@ Estos servicios son gratuitos para siempre, a diferencia de la de la categoría 
 * Organizations and Consolidated Billing
 * AWS Cost Explorer
 
-Los que están marcados con # pueden provisionar otros servicios que cuestan dinero 
+Los que están marcados con # pueden provisionar otros servicios que cuestan dinero
+
+----------------------------
+Planes de soporte de AWS
+
+* Básico
+  - Solo para soporte de correo electrónico
+  - Para facturación y estado de cuenta
+  - 7 revisaciones de tutores confiables
+  - Pago mínimo: 0 dólares/mes 
+
+* Desarrollador
+  - Soporte técnico vía Email. 24hs hasta la respuesta
+  - No hay soporte de terceros 
+  - Guía general < 24hs
+  - Sistema dañado < 12hs
+  - 7 revisaciones de tutores confiables
+  - Pago mínimo: 29 dólares/mes
+
+* Negocio
+  - Soporte técnico vía Email. 24hs hasta la respuesta
+  - Soporte técnico vía chat, teléfono 24/7
+  - Guía general < 24hs
+  - Sistema dañado < 12hs
+  - Sistema de producción dañado < 4hs
+  - Sistema de producción "down" < 1hs
+  - Todas las revisaciones de tutores confiables
+  - Pago mínimo: 100 dólares/mes
+
+* Empresarial
+  - Soporte técnico vía Email. 24hs hasta la respuesta
+  - Soporte técnico vía chat, teléfono 24/7
+  - Guía general < 24hs
+  - Sistema dañado < 12hs
+  - Sistema de producción "down" < 1hs
+  - Sistema crítico de negocio "down" < 15m
+  - Sistema de producción dañado < 4hs
+  - Todas las revisaciones de tutores confiables
+  - Pago mínimo: 15000 dólares/mes
