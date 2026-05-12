@@ -80,4 +80,6 @@ El protocolo HTTP tiene caché, lo que puede resultar en que el usuario entre a 
 
 Estos símbolos <% %> nos sirven para escribir código java en el JSP y se llaman scripplets
 
-Cuando usamos request.getAttribute() en nuestro JSP, tendremos que hacer una refundición, ya que el método devuelve un objeto de clase Object	
+Cuando usamos request.getAttribute() en nuestro JSP, tendremos que hacer una refundición, ya que el método devuelve un objeto de clase Object
+
+Cuando creamos un listener, podemos usar la anotación @WebListener en la clase	
