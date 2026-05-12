@@ -2516,3 +2516,21 @@ Provee guía proactiva y soporte reactivo para ayudarte a tener éxito con tu vi
 * Resolver una variedad de problemas a lo largo de diferentes clientes mientras migran sus cargas de trabajo a la nube
 * Inspirar capacidades de los clientes al manejar talleres, sesiones de mochila marrón, etc
 * Los TAMs están disponibles solamente en el nivel de soporte empresarial 
+
+----------------------------
+Mercado de AWS
+
+El mercado (marketplace) de AWS es un catálogo digital con miles de listados de software de vendedores de software independientes
+
+Fácilmente encontrá, comprá, probá y desplegá software que ya corre en AWS
+
+El producto puede ser gratis para usarse o puede tener un cobro asociado. El cobro se vuelve parte de tu factura de AWS, y una vez pagás, el mercado de AWS le paga al proveedor
+
+El canal de ventas para ISVs y compañeros de consulta te permite vender tus soluciones a otros clientes de AWS
+
+Los productos pueden ser ofrecidos como:
+* AMIs (amazon machine images)
+* Plantillas de AWS CloudFormation
+* Ofrecimientos de SaaS
+* Web ACL
+* Reglas AWS WAF   
