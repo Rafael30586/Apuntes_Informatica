@@ -2497,3 +2497,22 @@ Planes de soporte de AWS
   - Sistema de producción dañado < 4hs
   - Todas las revisaciones de tutores confiables
   - Pago mínimo: 15000 dólares/mes
+
+-----------------------
+Gerente de cuenta técnica (TAM)
+
+Provee guía proactiva y soporte reactivo para ayudarte a tener éxito con tu viaje AWS
+
+¿Qué hacen?
+* Construir soluciones, proveer guía técnica y abogar por el cliente
+* Asegurar que los entornos de AWS permanezcan operacionalmente sanos mientras se reduce costo y complejidad
+* Generar una relación de confianza con los clientes, entendiendo sus necesidades de negocio y desafíos técnicos
+* Usar tu perspicacia técnica y obsesión por el cliente, manejarás discusiones técnicas a pesar de incidentes, compensaciones  gestión de riesgo
+* Consultar con un rango de compañeros desde desarrolladores hasta ejecutivos de alta dirección
+* Colaborar con arquitectos de soluciones de AWS, desarrolladores de negocios, consultores de servicios profesionales y gerentes de cuentas de ventas
+* Encontrar oportunidades de manera proactiva para clientes para ganar valor adicional de AWS
+* Proveer análisis detallados de disrupciones de servicios, métricas, planeamiento prelanzamiento detallado
+* Ser parte de un grupo más amplio de soporte empresarial proveyendo pericia de consultativa post-venta
+* Resolver una variedad de problemas a lo largo de diferentes clientes mientras migran sus cargas de trabajo a la nube
+* Inspirar capacidades de los clientes al manejar talleres, sesiones de mochila marrón, etc
+* Los TAMs están disponibles solamente en el nivel de soporte empresarial 
