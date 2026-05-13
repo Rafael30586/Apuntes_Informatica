@@ -2584,9 +2584,24 @@ AWS Trusted Advisor provee diferentes niveles de revisaciones basándose en tu p
    4. Snapshots públicos de Amazon EBS
    5. Snapshots públicos de Amazon RDS
    6. Uso de IAM - desalienta el uso del acceso root
-   7. Límites de servicio (todos los límites de servicio son gratis)
+   7. Límites de servicio (todas las revisaciones de límites de servicio son gratis)
 * Negocios y empresas
  - Todas las revisaciones de Trusted Advisor
+
+------------------------------
+Acuerdos de nivel de servicio (Service level agreements)
+
+También conocidos como SLA
+Un SLA es un compromiso formal sobre el nivel esperado de servicio entre el cliente y el proveedor. Cuando un nivel de servicio no se logra y si el cliente cumple con sus obligaciones bajo SLA, el cliente será elegible para recibir la compensación, por ejemplo, créditos de servicio o financieros
+
+¿Qué es un indicador de nivel de servicio (SLI)?
+Una métrica o medida que indica que medida de rendimiento un cliente está recibiendo en un momento dado. Un SLI podría ser tiempo de actividad, rendimiento, disponibilidad, throughput, latencia, tasa de error, durabilidad, correctitud
+
+¿Qué es un objetivo de nivel de servicio (SLO)?
+El objetivo que el proveedor ha acordado en cumplir
+SLOs son representados como un porcentaje objetivo específico por un período
+
+Un ejemplo de porcentaje objetivo es disponibilidad SLA de 99,99% en un período de 3 meses   
 	
 
 
