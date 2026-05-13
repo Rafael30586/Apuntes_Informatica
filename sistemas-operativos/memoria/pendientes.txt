@@ -1,2 +1,4 @@
 paging y segmentation (técnicas de gestión de memoria)
 pagefiles y swapfiles
+page y segment
+segment table y page table
