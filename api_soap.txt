@@ -36,3 +36,27 @@ Un mensaje SOAP es un paquete de datos basado en XML que consta de tres partes p
 * Sobre: Define el inicio y el final del mensaje SOAP y encapsula otros elementos SOAP. Este sobre SOAP contiene la carga útil de la llamada a la API.
 * Cabecera: Contiene información específica de la aplicación, como tokens de autenticación, marcas de tiempo y otros metadatos.
 * Cuerpo: El contenedor principal del contenido del mensaje, que incluye los datos XML reales que representan la solicitud o la respuesta. El cuerpo sigue un esquema y una ruta específicos, lo que garantiza que la estructura del documento XML se ajusta al formato XML definido.
+
+-------------------------
+Aspectos técnicos y desarrollo
+
+* Lenguajes de programación: Java es un lenguaje de programación muy utilizado para crear servicios web SOAP, debido a su sólido ecosistema y a su amplio soporte de bibliotecas.
+* Formato de los datos: Los mensajes SOAP suelen estar formateados en XML, aunque pueden incluir otros tipos de datos como HTML y texto sin formato dentro de la carga útil XML.
+* Peticiones HTTP: SOAP utiliza métodos HTTP estándar como POST y a veces GET para transmitir mensajes, aunque no utiliza métodos como PUT con tanta frecuencia como las API REST.
+
+----------------------
+Retos y consideraciones
+
+Aunque las API SOAP son potentes, vienen con su conjunto de retos:
+
+* Complejidad: Manejar SOAP y sus estándares puede ser más complejo que otros formatos como JSON utilizado en las API REST.
+* Rendimiento: XML, que utiliza SOAP, suele requerir más ancho de banda en comparación con otros formatos ligeros.
+* Gestión de errores: SOAP proporciona mecanismos para una sólida gestión de errores, permitiendo respuestas de error detalladas que pueden guiar a los desarrolladores en la resolución de problemas.
+
+---------------------
+Conclusión
+
+Las API SOAP han superado la prueba del tiempo, proporcionando medios robustos, seguros y fiables para que las empresas se comuniquen a través de diversos sistemas.
+A pesar del auge de las API REST, SOAP sigue siendo relevante en escenarios donde la seguridad y los contratos formales son una prioridad.
+Comprender las capacidades de SOAP y cómo puede implementarse eficazmente es crucial para los desarrolladores que trabajan en entornos donde se requieren soluciones de nivel empresarial.
+A medida que evoluciona la tecnología, los principios subyacentes a SOAP siguen influyendo en el diseño de API seguras, interoperables y robustas
