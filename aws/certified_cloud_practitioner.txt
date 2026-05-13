@@ -2533,4 +2533,19 @@ Los productos pueden ser ofrecidos como:
 * Plantillas de AWS CloudFormation
 * Ofrecimientos de SaaS
 * Web ACL
-* Reglas AWS WAF   
+* Reglas AWS WAF  
+
+----------------------------
+Facturación consolidada
+
+Es una función de AWS Organizations que te permite pagar múltiples cuentas de AWS con una sola factura
+
+Para facturación AWS trata todas las cuentas en una organización como si fueran una sola cuenta
+
+Podés designar una cuenta maestra (master account) que paga los cobros de todas las otras cuentas miembros (member accounts)
+
+La facturación consolidada se ofrece sin costo adicional
+
+Se puede usar el explorador de costo para visualizar el uso de la facturación consolidada
+
+Podés combinar el uso a lo largo de todas las cuentas en la organización para compartir descuentos 
