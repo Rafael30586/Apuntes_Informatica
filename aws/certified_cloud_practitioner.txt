@@ -2557,7 +2557,37 @@ AWS tiene descuentos en cantidad para muchos servicios. Mientras más usás, má
 
 La facturación consolidada te permite tomar ventaja de los descuentos en cantidad
 
-La facturación consolidada es una característica de AWS Organizations
+La facturación consolidada es una característica de AWS Organizations	
+
+-----------------------------
+AWS Trusted Advisor
+
+AWS Trusted Advisor es una herramienta de recomendación que automáticamente y de manera activa monitorea tu cuenta de AWS para proveer recomendaciones adicionales a lo largo de una serie de categorías
+
+Se puede pensar en AWS Trusted Advisor como una lista automatizada de las mejores prácticas en AWS
+
+Las 5 categorías de AWS Trusted Advisor
+* Optimización de costo - ¿cómo podemos ahorrar dinero?
+* Rendimiento - ¿cómo podemos mejorar el rendimiento?
+* Seguridad - ¿Cómo podemos mejorar la seguridad?
+* Tolerancia a fallos - ¿Cómo podemos prevenir un desastre o pérdida de datos?
+* Límites de servicio - ¿Vamos a llegar al límite máximo para un servicio?
+
+AWS Trusted Advisor provee diferentes niveles de revisaciones basándose en tu plan de soporte de AWS
+
+* Básico y desarrollador
+ - 7 revisaciones de Trusted Advisor
+ - AWS provee las siguientes revisaciones de manera gratuita:
+   1. MFA en cuenta root
+   2. Grupos de seguridad - puertos específicos de lo irrestricto
+   3. Permisos de Amazon S# bucket
+   4. Snapshots públicos de Amazon EBS
+   5. Snapshots públicos de Amazon RDS
+   6. Uso de IAM - desalienta el uso del acceso root
+   7. Límites de servicio (todos los límites de servicio son gratis)
+* Negocios y empresas
+ - Todas las revisaciones de Trusted Advisor
+	
 
 
  
