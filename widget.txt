@@ -1,0 +1,18 @@
+https://www.lenovo.com/ar/es/glosario/widget/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOoqyIjOdc-vDA5SMP-J1Qx_IKnt52X-E--SO0k6jHy1P3-VnGGY6
+
+¿Qué es un widget?
+
+Un widget es una herramienta o pequeña aplicación que puedes añadir a tu sitio web, pantalla de computadora o dispositivo móvil para ofrecer funcionalidades específicas o información en tiempo real. Están diseñados para mejorar tu experiencia al proporcionarte acceso rápido a características útiles o contenido personalizado. 
+
+-----------------------------
+ ¿Cómo funcionan los widgets en sitios web?
+
+Los widgets en sitios web son fragmentos de código que incrustas en las páginas para mostrar funciones específicas. Por ejemplo, un feed de redes sociales, un chatbot o un pronóstico meteorológico. Estos se adaptan al diseño y las necesidades de cada sitio web.
+
+----------------------------
+ Beneficios de los widgets en sitios web
+
+* Interactividad mejorada. Ofrecen un medio para que los visitantes interactúen directamente con el contenido.
+* Acceso rápido. Permiten a los usuarios encontrar funciones útiles sin cambiar de página.
+* Promoción integrada. Ayudan a destacar contenido o secciones clave dentro del sitio web.
+ 
