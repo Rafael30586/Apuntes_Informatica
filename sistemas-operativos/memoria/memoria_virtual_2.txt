@@ -27,7 +27,14 @@ La segmentación y la paginación se diferencian, como modelos de memoria, en la
 Otros métodos de reemplazo de páginas incluyen "first in, first out" (FIFO), algoritmo óptimo y "least recently used (LRU) page replacement":
 * El método FIFO hace que la memoria seleccione el reemplazo para una página que ha estado en la dirección virtual por la mayor cantidad de tiempo
 * El método del algoritmo óptimo selecciona reemplazos de página basado en qué página es poco probable que sea reemplazada después de la mayor cantidad de tiempo; aunque difícil de implementar, esto lleva a menos fallos de página
-* El método de reemplazo de página LRU reemplaza la página que no ha sido usada por la mayor cantidad de tiempo en la memoria principal 
+* El método de reemplazo de página LRU reemplaza la página que no ha sido usada por la mayor cantidad de tiempo en la memoria principal
+
+---------------------------
+¿Cómo gestionar la memoria virtual?
+
+Gestionar la memoria virtual en un sistema operativo puede ser directo, porque hay configuraciones por defecto que determinan la cantidad de espacio de la unidad de almacenamiento para asignar memoria virtual. Esas configuraciones funcionan para la mayoría de las aplicaciones y procesos, pero pueden haber veces en las que sea necesario reiniciar manualmente la cantidad de espacio de unidad de almacenamiento asignado a memoria virtual, por ejemplo, con aplicaciones que dependen de tiempos de respuesta rápidos o cuanbdo la computadora tiene múltiples discos duros o SSDs
+Cuando se reinicia manualmente la memoria virtual, la mínima o máxima cantidad de espacio de unidad de almacenamiento que puede ser usada para memoria virtual debe ser especificada. Asignar muy poco espacio para memoria virtual puede resultar en una computadora a la cual se le acaba la RAM. Si un sistema continuamente necesita más espacio de memoria virtual, podría ser inteligente considerar añadir RAM. Sistemas operativos comunes generalmente le recomendarán a los usuarios no incrementar la memoria virtual más allá de una y media veces la cantidad de RAM.
+Gestionar la memoria virtual difiere en cada sistema operativo. Los profesionales IT deberían entender lo básico en oo que respecta a gestionar memoria física, memoria virtual y direcciones virtuales  
 _____________________________________________
 Continuar resumiendo con el enlace de arriba
 _____________________________________________
