@@ -2548,4 +2548,16 @@ La facturación consolidada se ofrece sin costo adicional
 
 Se puede usar el explorador de costo para visualizar el uso de la facturación consolidada
 
-Podés combinar el uso a lo largo de todas las cuentas en la organización para compartir descuentos 
+Podés combinar el uso a lo largo de todas las cuentas en la organización para compartir descuentos
+
+---------------------------
+Facturación consolidada - descuentos en cantidad (volumen discounts)
+
+AWS tiene descuentos en cantidad para muchos servicios. Mientras más usás, más ahorrás
+
+La facturación consolidada te permite tomar ventaja de los descuentos en cantidad
+
+La facturación consolidada es una característica de AWS Organizations
+
+
+ 
