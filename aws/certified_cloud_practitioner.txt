@@ -2601,8 +2601,54 @@ Una métrica o medida que indica que medida de rendimiento un cliente está reci
 El objetivo que el proveedor ha acordado en cumplir
 SLOs son representados como un porcentaje objetivo específico por un período
 
-Un ejemplo de porcentaje objetivo es disponibilidad SLA de 99,99% en un período de 3 meses   
+Un ejemplo de porcentaje objetivo es disponibilidad SLA de 99,99% en un período de 3 meses 
+
+-----------------------------------
+Acuerdos de nivel de servicio de AWS  
 	
+DynamoDB SLA
+AWS hará esfuerzos comercialmente razonables para hacer que DynamoDB esté disponible con porcentaje de tiempo de actividad mensual para cada región de AWS, durante cualquier ciclo de facturación mensual, de por lo menos 99,999% si aplica la Global Tables SLA, o por lo menos un 99.99% si aplica la Standard SLA
 
+En el caso de que DynamoDB no cumpla con el compromiso del servicio, serás elegible para recibir un crédito de servicio 
 
- 
+* Global Tables SLA
+  - PAM: menor que 99,999% pero igual o mayor que 99,0% | PCS: 10%
+  - PAM: menor que 99,0% pero igual o mayor que 95,0%   | PCS: 25%
+  - PAM: menor que 95%                                  | PCS 100%
+* Standard SLA
+  - PAM: menor que 99,99% pero igual o mayor que 99,0%  | PCS: 10%
+  - PAM: menor que 99,0% pero igual o mayor que 95,0%  	| PCS: 25%
+  - PAM: menor que 95,0%                                | PCS: 100%
+
+Referencias:
+PAM --> porcentaje activo mensual (monthly uptime percentage)
+PCS --> porcentaje de crédito de servicio (Service credit percentage)
+
+SLAs de cómputo
+* Amazon Elastic Compute Cloud (Amazon EC2)
+* Amazon Elastic Book Store (Amazon EBS)
+* Amazon Elastic Container Service (Amazon ECS)
+* AWS Fargate para Amazon ECS y Amazon EKS
+
+AWS realiza dos compromisos SLA para los servicios incluidos:
+1. Un SLA de nivel regional que rige servicios incluidos desplegados a lo largo de múltiples AZs o regiones y
+2. Una SLA de nivel instancia que rige instancias EC2 de Amazon individualmente
+
+* SLA de nivel regional
+  - PAM: menor que 99,999% pero igual o mayor que 99,0% | PCS: 10%
+  - PAM: menor que 99,0% pero igual o mayor que 95,0%   | PCS: 30%
+  - PAM: menor que 95%                                  | PCS 100%
+* SLA de nivel instancia
+  - PAM: menor que 99,999% pero igual o mayor que 99,0% | PCS: 10%
+  - PAM: menor que 99,0% pero igual o mayor que 95,0%   | PCS: 30%
+  - PAM: menor que 95%                                  | PCS 100%
+
+SLA de RDS (de bases de datos relacionales)
+AWS hará esfuerzos comercialmente razonables para hacer que las instancias multi-AZ estén disponibles con u n porcentaje activo por mes de al menos 99,95% durante cualquier ciclo de facturación mensual
+
+En el caso de que Amazon RDS no cumpla con el compromiso de porcentaje activo mensual, serás elegible para recibir un crédito de servicio como se describe abajo
+
+- PAM: menor que 99,999% pero igual o mayor que 99,0% | PCS: 10%
+- PAM: menor que 99,0% pero igual o mayor que 95,0%   | PCS: 30%
+- PAM: menor que 95%                                  | PCS 100%
+     
