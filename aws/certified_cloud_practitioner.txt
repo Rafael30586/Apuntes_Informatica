@@ -2660,4 +2660,15 @@ Muestra el estado general de los servicios de AWS
 
 Un ícono y detalles indicarán el estado de cada servicio de AWS
 
+-----------------------
+Panel de salud personal de AWS
+
+Provee alertas y guía para eventos de AWS que podrían afectar tu entorno
+
+Todos los clientes de AWS pueden acceder al panel de salud personal
+
+Este panel muestra eventos recientes para ayudarte a gestionar eventos activos, y muestra notificaciones proactivas para que puedas planear actividades programadas
+
+Usá estas alertas pera notificarte sobre cambios que pueden afectar tus recursos de AWS, y luego seguí la guía para diagnosticar y resolver problemas 
+
      
