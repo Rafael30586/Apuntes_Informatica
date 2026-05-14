@@ -52,7 +52,18 @@ Las ventajas de usar la memoria virtual incluyen las siguientes:
 * Los datos pueden ser movidos automáticamente
 * Páginas en el proceso original pueden ser compartidas durante el system call fork que crea una copia de sí mismo
 
-Además de estos beneficios, en un entorno computarizado virtual, los administradores pueden usar técnicas de gestión de memoria virtual para asignar memoria adicional a una máquina virtual a la cual se le han acabado los recursos. Tales tácticas de gestión de virtualización pueden mejorar el rendimiento y la flexibilidad de gestión de máquinas virtuales 
+Además de estos beneficios, en un entorno computarizado virtual, los administradores pueden usar técnicas de gestión de memoria virtual para asignar memoria adicional a una máquina virtual a la cual se le han acabado los recursos. Tales tácticas de gestión de virtualización pueden mejorar el rendimiento y la flexibilidad de gestión de máquinas virtuales
+
+-----------------------
+¿Cuáles son las limitaciones de usar memoria virtual?
+
+Aunque el uso de memoria virtual tiene sus beneficios, también viene con algunas compensaciones dignas de considerar, como las siguientes:
+* Las aplicaciones corren más lento si se ejecutan desde la memoria virtual
+* Los datos deben ser mapeados entre memoria virtual y física, lo que requiere soporte extra de hardware para traducción de direcciones y puede también afectar el rendimiento
+* El tamaño del almacenamiento virtual está limitado por la cantidad de almacenamiento secundario, así como el "addressinmg scheme" con  la computadora
+* Thrashing puede ocurrir si no hay RAM suficiente, lo que hace que la computadora trabaje más lento
+* Puede tomar tiempo cambiar entre aplicaciones cuando se usa memoria virtual
+* La memoria virtual reduce la cantidad de espacio disponible en disco
 
 _____________________________________________
 Continuar resumiendo con el enlace de arriba
