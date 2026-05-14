@@ -2651,4 +2651,13 @@ En el caso de que Amazon RDS no cumpla con el compromiso de porcentaje activo me
 - PAM: menor que 99,999% pero igual o mayor que 99,0% | PCS: 10%
 - PAM: menor que 99,0% pero igual o mayor que 95,0%   | PCS: 30%
 - PAM: menor que 95%                                  | PCS 100%
+
+
+--------------------------
+Panel de salud de servicio (Service health dashboard)
+
+Muestra el estado general de los servicios de AWS
+
+Un ícono y detalles indicarán el estado de cada servicio de AWS
+
      
