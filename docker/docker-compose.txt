@@ -6,19 +6,19 @@ services: --> seguido de los servicios van los nombres que les queremos asignar 
 
 <nombre>: --> va después de services y es el nombre que va a tener el contenedor 
 
-build: <ruta> --> va después del nombre de algunos contenedores e indica la ruta en la que se encuentra el dockerfile, si es en el directorio raíz va un punto
+build: <ruta> --> va después del nombre de algunos servicios e indica la ruta en la que se encuentra el dockerfile, si es en el directorio raíz va un punto
 
-ports: /salto de línea /tabulación - <"puerto_anfitrión>:<puerto_contenedor"> --> va después del nombre de los contenedores y es para los puertos del anfitrión y del contenedor respectivamente
+ports: /salto de línea /tabulación - <"puerto_anfitrión>:<puerto_contenedor"> --> va después del nombre de los servicios y es para los puertos del anfitrión y del contenedor respectivamente
 
 links: /salto de línea /tabulación - <contenedor> --> es para vincular el contenedor a otro contendor de la red
 
-image: <imagen> --> va después del nombre de el contenedor de, por ejemplo, una base de datos, es la imagen a partir de la cual se construye un contenedor, generalmente, de base de datos
+image: <imagen> --> va después del nombre del servicio de, por ejemplo, una base de datos, es la imagen a partir de la cual se construye un contenedor, generalmente, de base de datos
 
-environment: /salto de línea /tabulación - <variable>=<valor> --> va después del nombre de un contenedor, sirve para configurar las variables de entorno
+environment: /salto de línea /tabulación - <variable>=<valor> --> va después del nombre de un servicio, sirve para configurar las variables de entorno
 
 volumes: /salto de línea /tabulación <nombre> --> va al mismo nivel que servicios. Es para trabajar con docker volumes
 
-volumes: /salto de línea /tabulación - <nombre>:<ruta> --> trabaja en conjunto con el anterior. Va después del contenedor que corresponda, generalmente de una base de datos. El nombre es el mismo que en el del volumes anterior. La ruta es adonde se guarda la información dentro del contenedor. La ruta para mongoDB es /data/db, para MySQL es /var/lib/mysql, para postgres es /var/lib/postgresql/data 
+volumes: /salto de línea /tabulación - <nombre>:<ruta> --> trabaja en conjunto con el anterior. Va después del servicio que corresponda, generalmente de una base de datos. El nombre es el mismo que en el del volumes anterior. La ruta es adonde se guarda la información dentro del contenedor. La ruta para mongoDB es /data/db, para MySQL es /var/lib/mysql, para postgres es /var/lib/postgresql/data 
 
 context <ruta>: sigue después de build y es para la ruta del dockerfile en caso de que queramos, por alguna razón, trabajar con un dockerfile que se llame distinto
 
@@ -26,8 +26,26 @@ dockerfile <nombre>: va a la misma altura de context. Es para cuando queremos tr
 
 Cuando trabajamos con Docker compose no hace falta configurar una red, docker compose se encarga de crear una
 
-depends_on: /salto de línea /tabulación - "<contenedor>" --> va después del nombre del contendor. Sirve para cuando un contenedor depende de otro, por ejemplo, un backend en java no puede ejecutarse si la base de datos no está todavía en ejecución
+depends_on: /salto de línea /tabulación - <servicio> --> va después del nombre del servicio. Sirve para cuando un servicio depende de otro, por ejemplo, un backend en java no puede ejecutarse si la base de datos no está todavía en ejecución
 
 networks: /salto de línea /tabulación - <red> --> va después del nombre del contenedor. Sirve para colocar el contenedor en la red que queramos
 
-En Docker compose podemos trabajar con variables de entorno. En el archivo .yml las variables se usan así: ${<variable>}. Una manera de establecer las variables es hacerlo en la terminal, por ejemplo, en Windows hacer: set <variable>=<valor> , de esta manera, cuando ejecutemos el archivo de Docker compose, los campos del archivo .yml se llenarán con los valores que tiene las variables. Ejemplo: en Docker compose puede aparecer el siguiente campo --> MONGO_DB_USERNAME: ${MONGO_ADMIN_USER} , pero en la terminal debemos primero establecer el valor de la variable así --> set MONGO_ADMIN_USER=rafael
+En Docker compose podemos trabajar con variables de entorno. En el archivo .yml las variables se usan así: ${<variable>}. Una manera de establecer las variables es hacerlo en la terminal, por ejemplo, en Windows hacer: set <variable>=<valor> , de esta manera, cuando ejecutemos el archivo de Docker compose, los campos del archivo .yml se llenarán con los valores que tiene las variables. Ejemplo: en Docker compose puede aparecer el siguiente campo --> MONGO_DB_USERNAME: ${MONGO_ADMIN_USER} , pero en la terminal debemos primero establecer el valor de la variable así --> set MONGO_ADMIN_USER=Rafael
+
+container_name: <nombre> --> va después del servicio y sirve para darle el nombre que queramos al contenedor resultante
+
+condition: <condición>: va después del servicio que va después de depends_on y sirve para establecer una condición que deben cumplir ciertos servicios para que otros ejecuten, por ejemplo, condition: service_healthy
+
+restart: <opción> --> va después del nombre de una servicio, por ejemplo, restart: always
+
+healthcheck: --> va después de un servicio, generalmente, de bases de datos. Sirve para confirmar si un contenedor está en buen estado para que otro que dependa de él se pueda ejecutar correctamente
+
+test: <comandos...> --> va después de healthcheck, por ejemlo, test: ["CMD-SHELL", "mysql -u root -p123456 -e 'SELECT 1'"]
+
+interval: <segundos> --> va después de healthcheck, por ejemplo, interval: 5s
+
+timeout: <segundos> --> va después de healthcheck, por ejemplo, timeout: 5s
+
+retries: <cantidad> --> va después de healthcheck, por ejemplo, retires: 20
+
+ 
