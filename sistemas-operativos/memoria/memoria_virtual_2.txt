@@ -34,7 +34,26 @@ Otros métodos de reemplazo de páginas incluyen "first in, first out" (FIFO), a
 
 Gestionar la memoria virtual en un sistema operativo puede ser directo, porque hay configuraciones por defecto que determinan la cantidad de espacio de la unidad de almacenamiento para asignar memoria virtual. Esas configuraciones funcionan para la mayoría de las aplicaciones y procesos, pero pueden haber veces en las que sea necesario reiniciar manualmente la cantidad de espacio de unidad de almacenamiento asignado a memoria virtual, por ejemplo, con aplicaciones que dependen de tiempos de respuesta rápidos o cuanbdo la computadora tiene múltiples discos duros o SSDs
 Cuando se reinicia manualmente la memoria virtual, la mínima o máxima cantidad de espacio de unidad de almacenamiento que puede ser usada para memoria virtual debe ser especificada. Asignar muy poco espacio para memoria virtual puede resultar en una computadora a la cual se le acaba la RAM. Si un sistema continuamente necesita más espacio de memoria virtual, podría ser inteligente considerar añadir RAM. Sistemas operativos comunes generalmente le recomendarán a los usuarios no incrementar la memoria virtual más allá de una y media veces la cantidad de RAM.
-Gestionar la memoria virtual difiere en cada sistema operativo. Los profesionales IT deberían entender lo básico en oo que respecta a gestionar memoria física, memoria virtual y direcciones virtuales  
+Gestionar la memoria virtual difiere en cada sistema operativo. Los profesionales IT deberían entender lo básico en lo que respecta a gestionar memoria física, memoria virtual y direcciones virtuales  
+
+---------------------------
+¿Cuales son los beneficios de usar la memoria virtual?
+
+Las ventajas de usar la memoria virtual incluyen las siguientes:
+* Puede manejar el doble de direcciones que la memoria principal
+* Permite que más aplicaciones sean usadas a la vez
+* Libera a las aplicaciones de gestionar memoria compartida y salva a los usuarios de tener que añadir módulos de memoria cuando elñ espacio de RAM se acaba
+* Puede incrementar la velocidad cuando solo u n segmento de un programa es necesitado para ejecución
+* Incrementa la seguridad por el aislamiento de memoria
+* Permite que aplicaciones más grandes corran simultáneamente
+* Asignar memoria es relativamente barato
+* No necesita fragmentación externa
+* El uso de CPU es efectivo para gestionar cargas de trabajo de partición lógicas
+* Los datos pueden ser movidos automáticamente
+* Páginas en el proceso original pueden ser compartidas durante el system call fork que crea una copia de sí mismo
+
+Además de estos beneficios, en un entorno computarizado virtual, los administradores pueden usar técnicas de gestión de memoria virtual para asignar memoria adicional a una máquina virtual a la cual se le han acabado los recursos. Tales tácticas de gestión de virtualización pueden mejorar el rendimiento y la flexibilidad de gestión de máquinas virtuales 
+
 _____________________________________________
 Continuar resumiendo con el enlace de arriba
 _____________________________________________
