@@ -1,6 +1,9 @@
 listeners en jakarta EE o java EE
-Crear repositorio de git a partir del espacio de trabajo de eclipse
+// Crear repositorio de git a partir del espacio de trabajo de eclipse
 comprobar el funcionamiento de clases como Session, Cookie, HttpServlet, HttpServletRequest y HttpServletReponse
+Probar de visualizar el contenido de las cabeceras de las solicitudes, por ejemplo, relacionadas a la autenticación
 Comprobar el funcionamiento de los filtros
 Estudiar la clase ServletContext
 Experimentar con la etiqueta context-param en el web.xml
+Realizar inserciones de registros en una base de datos en un proyecto web dinámico
+Probar de usar JavaScript en páginas web dinámicas

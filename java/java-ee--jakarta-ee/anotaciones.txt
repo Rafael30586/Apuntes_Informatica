@@ -9,3 +9,5 @@ Cuando trabajamos en un proyecto en Maven con un arquetipo webapp, puede pasar q
 Cuando trabajamos en un proyecto en Maven, puede ocurrir que si queremos empaquetar la aplicación no se reconozcan a los paquetes de jakarta. En este caso, lo que hay que hacer es usar esta dependencia: https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api/6.1.0
 
 A veces puede ocurrir que tomcat no arranque por culpa de un solo proyecto y que no podamos usarlo para el resto de los proyectos. Para que vuelva a funcionar hay que quitar el proyecto de la parte de abajo de Eclipse que dice servers 
+
+A la respuesta HTTP de los servlets se les puede añadir una cookie. Cuando realicemos una solicitud al endpoint correspondiente podremos ver a la cookie en el navegador haciendo document.cookie en la consola. Podremos ver a esta cookie siempre y cuando no haya expirado el tiempo y además mientras nos mantengamos dentro del dominio, es decir, por ejemplo, no podremos ver a esta cookie al ingresar a algún sitio web como Facebook o Google, solo dentro del dominio de nestra aplicación
