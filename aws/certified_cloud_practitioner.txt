@@ -2682,4 +2682,48 @@ AWS Trust & Safety es un grupo que específicamente se encarga de abusos ocurrie
 * Contenido prohibido de anfitrión: tenés evidencia de que recursos de AWS están siendo usados para hospedar o distribuir contenido prohibido, tal como contenido ilegal o contenido con copyright sin el consentimiento del dueño del copyright
 * Distribución de malware: tenés evidencia de que recursos de AWS están siendo usados para distribuir software que fue creado de manera consciente para comprometer o causar daño a computadoras o máquinas en las cuales está instalado
 
-El soporte de AWS no trata con los tickets de abuso. Necesitás contactar a abuse@amazonaws.com o llenar el formulario de abuso en AWS de informe de Amazon      
+El soporte de AWS no trata con los tickets de abuso. Necesitás contactar a abuse@amazonaws.com o llenar el formulario de abuso en AWS de informe de Amazon
+
+-----------------------
+Categoría gratuita de AWS (Free tier)
+
+Te permite usar AWS sin costo
+* Por los primeros 12 meses de ingreso (signup)
+* O utilización gratuita hasta cierto límite mensual para siempre
+
+Servidor web EC2
+t2.micro 750 horas por mes por un año
+
+Base de datos RDS (MySQL o Postgres)
+t2.db.micro 750 horas por mes por 1 año
+
+Balanceador de carga ELB
+750 horas por mes por un año
+
+Amazon CloudFront Homepage video
+transferencia de datos de 50GB en total por un año
+
+Amazon Connect número de peaje gratis
+90 minutos de tiempo de llamada por un mes por un año
+
+Amazon ElasticCache
+cache.t3.micro 750 horas por mes por un año
+
+Amazon ElasticSearch búsqueda de texto completo
+750 horas por mes por un año
+
+Campaña punto de alfiler (PinPoint) / emails de marketing
+500 usuarios localizados por mes por un año
+
+SES correos electrónicos enviados por tu aplicación web
+62000 emails por mes para siempre
+
+AWS CodePipeline CI/CD
+1 pipeline gratis
+
+AWS CodeBuild código de construcción
+100 minutos de construcción por mes para siempre
+
+AWS Lambda cómputo serverless
+1 millón de solicitudes por mes
+3,2 millones de segundos  de tiempo de cómputo por mes    
