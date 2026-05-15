@@ -65,6 +65,17 @@ Aunque el uso de memoria virtual tiene sus beneficios, también viene con alguna
 * Puede tomar tiempo cambiar entre aplicaciones cuando se usa memoria virtual
 * La memoria virtual reduce la cantidad de espacio disponible en disco
 
+-------------------------
+Memoria virtual vs memoria física
+
+Al comparar memoria virtual y física, la mayor distinción que comúnmente se hace se relaciona a la velocidad. RAM es considerablemente más rápida que la memoria virtual, pero tiende a ser más cara
+Cuando una computadora requiere almacenamiento, RAM es el primer recurso en ser usado. La memoria virtual, que es más lenta, se usa solamente cuando la RAM está llena
+
+https://www.techtarget.com/rms/onlineimages/whatis-virtual%20_vs_physical_memory-f.png
+
+Los usuarios pueden añadir RAM activamente a una computadora al comprar e instalar más chips de RAM, como módulos de memoria dual in-line (DIMMs). Añadir RAM es útil si las ralentizaciones del sistema se deben a intercambios de memoria ocurriendo muy a menudo. La cantidad de RAM depende de lo que está instalado en la computadora. La memoria virtual, por otro lado, está limitada por el tamaño del disco duro o SSD de la computadora. Las configuraciones de la memoria virtual pueden, a menudo, ser controladas a través del sistema operativo.
+Además, la RAM usa técnicas de intercambio, mientras que la memoria virtual usa paginación. Mientras la memoria física se limita al tamaño del chip de la RAM, la memoria virtual se limita por el tamaño del disco duro o SDD. RAM tiene también acceso directo al CPU, meintras la memoria virtual no.
+
 _____________________________________________
 Continuar resumiendo con el enlace de arriba
-_____________________________________________
+_____________________________________________	
