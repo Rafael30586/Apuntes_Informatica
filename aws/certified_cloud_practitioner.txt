@@ -2671,4 +2671,15 @@ Este panel muestra eventos recientes para ayudarte a gestionar eventos activos, 
 
 Usá estas alertas pera notificarte sobre cambios que pueden afectar tus recursos de AWS, y luego seguí la guía para diagnosticar y resolver problemas 
 
-     
+-----------------------------
+Abuso de AWS
+
+AWS Trust & Safety es un grupo que específicamente se encarga de abusos ocurriendo en la plataforma AWS por los siguientes problemas:
+* Spam: Recibís emails no deseados de una dirección IP de AWS, o recursos de AWS están siendo usados para hacer spam de sitios web o foros
+* Escaneo de puertos: tus registros (logs) muestran que una o más direcciones IP de AWS están enviando paquetes a múltiples puertos en tu servidor. También creés que esto es un intento de descubrir puertos no asegurados
+* Ataques de denegación de servicio (DoS): tus registros (logs) muestran que una o más IPs de AWS están siendo usadas para desbordar puertos en tus recursos con paquetes. También creés que es un intento de abrumar o romper tu servidor o el software corriendo en tu servidor
+* Intentos de intrusión: tus logs muestran que una o más IPs de AWS están siendo usadas para iniciar sesión en tus recursos
+* Contenido prohibido de anfitrión: tenés evidencia de que recursos de AWS están siendo usados para hospedar o distribuir contenido prohibido, tal como contenido ilegal o contenido con copyright sin el consentimiento del dueño del copyright
+* Distribución de malware: tenés evidencia de que recursos de AWS están siendo usados para distribuir software que fue creado de manera consciente para comprometer o causar daño a computadoras o máquinas en las cuales está instalado
+
+El soporte de AWS no trata con los tickets de abuso. Necesitás contactar a abuse@amazonaws.com o llenar el formulario de abuso en AWS de informe de Amazon      
