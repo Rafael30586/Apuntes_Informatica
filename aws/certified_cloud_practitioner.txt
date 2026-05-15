@@ -2727,3 +2727,15 @@ AWS CodeBuild código de construcción
 AWS Lambda cómputo serverless
 1 millón de solicitudes por mes
 3,2 millones de segundos  de tiempo de cómputo por mes    
+
+------------------------
+Créditos de AWS
+
+Los créditos promocionales de AWS son el equivalente a dólares en la plataforma de AWS. Los créditos de AWS pueden ganarse de varias maneras:
+* Uniéndose al programa AWS Activate Startup
+* Ganando hackatones
+* Participando en encuestas
+
+Los créditos de AWS generalmente tiene una fecha de expiración unida a ellos
+
+Los créditos de AWS pueden ser usados para la mayoría de los servicios pero hay excepciones en las cuales los créditos de AWS no pueden ser usados, por ejemplo, comprar un dominio vía Route53
