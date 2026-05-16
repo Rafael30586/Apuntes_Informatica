@@ -1,0 +1,14 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 439, 440
+
+Ley de Ohm
+
+La relación entre voltaje, corriente y resistencia se resume en un enunciado llamado ley de Ohm. Ohm descubrió que la corriente en un circuito es directamente proporcional al voltaje impreso a través del circuito, y es inversamente proporcional a la resistencia del circuito. Es decir:
+
+Corriente = voltaje / resistencia
+
+Amperes = volts / ohms
+
+-------------------------
+Ley de Ohm y choques eléctricos
+
+¿Qué causa el choque eléctrico en el ser humano, la corriente o el voltaje? Los efectos dañinos del choque son causados por la corriente que pasa por el organismo. La resistencia del organismo depende de su condición, y va desde 100 ohms si está empapado con agua salina, hasta unos 50000 ohms si la piel está muy seca. Si tocamos los dos electrodos de un acumulador con los dedos secos, cerrando el circuito de una mano a la otra, nuestra resistencia aproximada será de 100000 ohms. Normalmente, no podremos sentir la corriente que producen 12 volts o 24 volts, solo con los dedos. Si la piel está mojada, los 24 volts pueden ser muy desagradables.  
