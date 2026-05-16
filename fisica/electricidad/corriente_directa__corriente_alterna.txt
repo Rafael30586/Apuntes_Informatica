@@ -1,0 +1,7 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 442
+
+Corriente directa y corriente alterna
+
+La corriente eléctrica puede ser cd o ca. La cd es la corriente directa, que es el flujo de cargas en una dirección. Un acumulador produce corriente directa en un circuito, porque sus terminales tiene siempre el mismo signo: la terminal positiva siempre es positiva y la terminal negativa siempre es negativa. Los electrones fluyen de la terminal negativa, que los repele, hacia la terminal positiva, que los atrae, y siempre se mueven por el circuito en la misma dirección. Aun cuando la corriente se haga en impulsos desiguales, mientras los electrones se muevan solo en una dirección será cd.
+La corriente alterna es lo que su nombre implica. Los electrones en el circuito se mueven primero en una dirección, y después en dirección contraria, alternando de aquí para allá con respecto a posiciones relativamente fijas. Esto se hace alternando la polaridad del voltaje en el generador o en la fuente de voltaje. En Estados Unidos, casi todos los circuitos comerciales de ca implican voltajes y corrientes que alternan a una frecuencia de 60 ciclos por segundo. Es corriente con frecuencia de 60Hz.
+En todo el mundo, la mayoría de los circuitos residenciales y comerciales son de ca, porque el voltaje de la energía eléctrica se puede aumentar con facilidad, para transmitirlo a grandes distancias con poca pérdida térmica, y después se baja hasta los voltajes relativamente seguros con que se consume la energía.
