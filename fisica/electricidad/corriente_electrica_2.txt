@@ -1,0 +1,7 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 437
+
+Corriente eléctrica
+
+La corriente es el flujo de carga eléctrica. En circuitos de alambres conductores metálicos, los electrones forman el flujo de la carga. Es porque uno o más electrones de cada átomo del metal tienen libertad de movimiento por toda la red de átomos. Esos portadores de carga se llaman electrones de conducción. Sin embargo, en los fluidos conductores, como en un acumulador de automóvil, los iones positivos suelen formar el flujo de la carga eléctrica.
+La tasa del flujo eléctrico se mide en amperes. Una ampere es una tasa de flujo igual a un coulomb de carga por segundo. Por ejemplo, en un alambre que conduzca 5 amperes pasan 5 coulombs de carga por cualquier área transversal del alambre cada segundo. 
+Es interesante observar  que un conductor de corriente no tiene carga eléctrica. Bajo condiciones ordinarias, los electrones de conducción, negativos, pasan por la red de átomos formada por núcleos atómicos con varga positiva. Hay entonces tantos protones como electrones en el conductor. Si un alambre conduce corriente o no, su carga neta normal es cero en cualquier momento.  
