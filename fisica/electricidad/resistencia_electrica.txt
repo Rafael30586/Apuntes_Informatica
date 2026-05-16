@@ -1,0 +1,6 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 439
+
+Resistencia eléctrica
+
+Sabemos que una batería o un acumulador de algún tipo es el impulsor, primer móvil y fuente de voltaje en un circuito eléctrico. La corriente que se maneje no solo depende de su voltaje, sino también de la resistencia eléctrica que ofrece el conductor al paso de la carga. La resistencia de un alambre depende de su grosor y su longitud, así como de su conductividad. Los alambres gruesos tienen menos resistencia que los delgados. Los alambres más largos tienen más resistencia que los más cortos. El alambre de cobre tiene menos resistencia que el de acero, si tienen las mismas medidas. La resistencia eléctrica también depende de la temperatura. Cuanto mayor sea la agitación de los átomos dentro del conductor, será mayor la resistencia que presente el flujo de carga. Para la mayoría de los conductores, mayor temperatura equivale a mayor resistencia. La resistencia de algunos materiales llega a ser cero a muy bajas temperaturas. Son los superconductores.
+La resistencia eléctrica se exprese en unidades llamadas ohms. 
