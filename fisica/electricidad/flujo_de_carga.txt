@@ -1,0 +1,6 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 436
+
+Flujo de carga
+
+Cuando los extremos de un conductor eléctrico están a distintos potenciales eléctricos, es decir, que hay entre ellos una diferencia de potencial, la carga pasa de uno a otro extremo. El flujo de carga persiste mientras haya una diferencia de potencial. Si no hay diferencia de potencial no fluye la carga. 
+Para obtener un flujo continuo de carga en un conductor, se deben hacer ciertos arreglos para mantener una diferencia de potencial mientras la carga fluye de un extremo a otro. El caso análogo al flujo del agua de un tanque elevado a uno más bajo. El agua pasará por un tubo que conecte los tanques sólo mientras haya una diferencia en el nivel de agua. El flujo de agua en el tubo cesará cuando se iguales las presiones en cada extremo. Es posible obtener un flujo continuo si se mantiene la diferencia en niveles de agua y, en consecuencia, entre las presiones de agua, usando una bomba adecuada.
