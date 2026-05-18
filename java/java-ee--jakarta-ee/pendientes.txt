@@ -6,4 +6,4 @@ Comprobar el funcionamiento de los filtros
 Estudiar la clase ServletContext
 Experimentar con la etiqueta context-param en el web.xml
 Realizar inserciones de registros en una base de datos en un proyecto web dinámico
-Probar de usar JavaScript en páginas web dinámicas
+Probar de usar JavaScript y CSS en páginas web dinámicas
