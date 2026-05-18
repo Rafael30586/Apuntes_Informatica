@@ -388,11 +388,11 @@ En Flow control hay varios protocolos: Stop and wait; go back n; selective repea
 ---------------------------
 Stop and wait
 * El emisor envía un paquete de datos
-* El receptor envía un reconocimiento después de recibir el paquete
+* El receptor envía un reconocimiento al emisor después de recibir el paquete
 * El emisor enviará otro paquete solo si recibe el reconocimiento proveniente del receptor
 
 Problemas que pueden presentarse:
-* ¿qué pasa si el paquete enviado por el emisor se perdió por temas de ruido (noise)? el receptor se queda esperando por el paquete y el emisor se queda esperando por el reconocimiento, entonces se produce deadlock
+* ¿Qué pasa si el paquete enviado por el emisor se perdió por temas de ruido (noise)? el receptor se queda esperando por el paquete y el emisor se queda esperando por el reconocimiento, entonces se produce deadlock
 * ¿Qué pasa si el paquete es recibido por el receptor pero el reconocimiento se pierde? (tener en cuenta que también es un paquete y podría perderse por ruido) el emisor se queda esperando infinitamente por el reconocimiento
 * ¿Qué pasa si hay un retardo en el reconocimiento? el emisor puede "creer" que el reconocimiento recibido es por otro paquete
 
@@ -417,3 +417,46 @@ El transmisión delay del reconocimiento es mucho menor que el del paquete enviad
 El cálculo del tiempo total es:
 TT =~ Td(mensaje) + 2Pd
 Se desprecia el transmisión delay del reconocimiento por ser muy pequeño en comparación 
+
+eficiencia = tiempo útil / tiempo total . Esta eficiencia se percibe con respecto al emisor. Tiempo útil hace referencia al tiempo en el cual el emisor estuvo trabajando, es decir, el transmission delay, ya que es el único momento en el que el emisor trabaja. Hay que tener en cuenta durante la demora de propagación, el que trabaja es el medio de transferencia
+
+La eficiencia de stop and wait es:
+* Td(f) / (Td(f)+ 2Pd) --> f es por frame, que vendría a ser el mensaje
+* 1 / [(Td(f)/Td(f)) + 2Pd/Td(f)]
+* 1 / 1 + 2(Pd/Td)
+* Si decimos que Pd/Td = a --> 1 / (1 + 2a) --> es una fórmula aproximada, no es exacta
+
+El tiempo total es también conocido como "round trip time" (RTT), por que va y luego vuelve (el paquete de datos va y el reconocimiento es lo que vuelve)
+
+A eficiencia se lo puede llamar de otras formas también: line utilization, link utilization o sender utilization
+
+throughput: ancho de banda efectivo, utilización de ancho de banda o máxima tasa de datos posible.
+
+Throughtput = tamaño del mensaje / RTT . Es la cantidad de bits transmitidos en un "round trip time" 
+
+Tarea: encontrar la relación entre thoughput, eficiencia y ancho de banda 
+
+Mi respuesta: mientras más grande sea el ancho de banda, mayor es el throughput, porque mientras más grande es el ancho de banda, menor es el tiempo total, y mientras menor sea el tiempo total o RTT, más grande es el throughput. Mientras más grande sea el ancho de banda, menor es la eficiencia, porque el ancho de banda es inversamente proporcional al transmisión delay y, mientras este últimos es más grande, mayor será la eficiencia. De esto se deduce que el throughput es mayor mientras menor es la eficiencia
+
+La respuesta del video: throughput = eficiencia x ancho de banda . Me equivoqué ya que throughput es mayor mientras mayor es la eficiencia
+
+Ejercicio: tenemos 500 paquetes y la probabilidad de que un paquete se pierda es de 0,2 (el enlace teniendo error es 0,2). ¿Cuántas transmisiones se requerirá usando stop and wait? Encontrar la fórmula general y la específica
+
+Pregunta: Para obtener la máxima eficiencia posible ¿conviene que el enlace sea más corto o más largo?
+¿conviene que la tasa de transmisión sea más baja o más alta?
+¿conviene que el tamaño del paquete sea más chico o más grande?
+
+Mi repuesta: mientras mayor es el Td, mayor es la eficiencia, o sea, mientras más largo sea el enlace, mayor será la eficiencia;
+ancho de banda y eficiencia son inversamente proporcionales, por lo que se necesitará poco ancho de banda para obtener mejor eficiencia; el tamaño del mensaje aumenta el throughput, que a su vez, es directamente proporcional a la eficiencia, por lo que un mensaje mayor dará más eficiencia
+
+La primera está mal porque hay que ver el propagation delay; las otras dos están bien
+
+Uno de los mayores problemas que tiene stop and wait es que se puede enviar un solo paquete a la vez. Enviar más de un paquete a la vez podría aumentar la eficiencia. El problema está en que si el emisor tiene un tamaño de ventana (window size) de 1, solo puede almacenar un paquete, y si intenta enviar varios paquetes a la vez, si alguno de esos envíos fallara, los paquetes se perderían para siempre porque no tiene a donde almacenarlos. ¿Cómo se puede solucionar el problema? incrementando el tamaño de ventana. Si, por ejemplo, el emisor tiene un tamaño de ventana de 4, podrá enviar 4 paquetes a la vez, y cuando llegue el primer reconocimiento, el emisor podrá deshacerse del primer paquete enviado y cambiar la ubicación de la ventana para almacenar otro paquete (podría ser el paquete 5 por ejemplo, y el 1 ya no estaría almacenado porque ya se envió, sería eliminado del buffer)
+
+|1 2 3 4| 5 6 7 8 --> la ventana primero va desde 1 a 4 (el emisor tiene copia de cada uno de esos mensajes en el buffer hasta que llegue el reconcimiento)
+
+|2 3 4 5| 6 7 8 --> una vez llegó el reconocimiento del primero se borra su copia del buffer y la ventana se traslada hasta el paquete 5
+
+|3 4 5 6| 7 8 --> cuando se recibe el reconocimiento de que el paquete 2 se ha recibido, la ventana se vuelve a correr y el paquete 2 se borra del lado del emisor
+
+Este concepto de ventana es conocido como ventana corrediza o sliding window. Con la ayuda de este concepto se pueden implementar los protocolos que siguen
