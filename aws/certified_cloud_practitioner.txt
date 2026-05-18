@@ -2777,5 +2777,12 @@ Puede ser fácilmente gestionado desde el panel de AWS Budgtes o vía API de Bud
 Podés tener una lista de presupuestos; podés ver tu historialde presupuestos y descargarlo como un CSV
 
 Los primeros dos presupuestos son gratis
-Cada presupuesto cuesta 0,02 USD por día ~0,60 USD / mes    
+Cada presupuesto cuesta 0,02 USD por día ~0,60 USD / mes
+
+-------------------------
+AWS Budget Reports
+
+Se usa junto con AWS Budgets para crear y enviar informes diarios, semanales y mensuales para monitorear el rendimiento de AWS Budget que será enviado por Email a direcciones específicas
+
+AWS Budget Reports sirve como un modo más conveniente de estar en los más alto de los informes ya que son enviados a tu correo electrónico en lugar de iniciar sesión en la consola de gestión de AWS   
 
