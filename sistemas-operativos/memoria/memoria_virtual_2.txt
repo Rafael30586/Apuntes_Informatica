@@ -86,6 +86,12 @@ La primera aparente real instancia de un sistema de memoria virtual vino de la u
 En 1961, la primera computadora comercial con memoria virtual fue lanzada por Burroughs Corp. Esta versión de memoria virtual usaba segmentación en lugar de paginación
 En 1969, investigadores de IBM que los sistemas de overlay de memoria virtual funcionaban mejor que los sistemas manuales previos. Mainframes y minicomputadoras en los 1970s generalmente usaban memoria virtual. La tecnología de memoria virtual no fue incluida en las primeras PCs porque los desarrolladores creían que quedarse sin memoria no sería un problema con esas máquinas. Se demostró que esa presunción era incorrecta. Intel introdujo memoria virtual en el modo protegido del procesador 80286 en 1982 y soporte para paginación cuando el 80386 llegó en 1985. La memoria virtual es una parte importante de la familia de SOs de Microsoft
 
+-----------------------
+El futuro de la memoria virtual
+
+Considerando las maneras en que los sistemas computacionales están siendo usados hoy en día, tales como análisis de datos y IA, hay altas probabilidades de que haya una gran necesidad de tener recursos de memoria que puedan adaptarse y escalar para direccionar requerimientos de computación
+Entre los importantes desarrollos de memoria virtual que presagian un futuro fuerte son el uso de computación en la nube para incrementar las capacidades de la memoria virtual, tecnologías de memoria no volátil más rápidas, incremento del uso de IA para mejorar la funcionalidad y seguridad de la memoria, y avances en tecnología de computación cuántica para mejorar el rendimiento de la memoria virtual 
+
 _____________________________________________
 Continuar resumiendo con el enlace de arriba
 _____________________________________________	
