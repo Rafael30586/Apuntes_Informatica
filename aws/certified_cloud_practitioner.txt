@@ -2757,3 +2757,25 @@ Al unirte a APN podés ser:
 * Podés obtener de vuelta créditos de AWS promocionales
 * Podés tener oportunidades únicas de charlas en los canales de marketing oficiales de AWS. Por ejemplo, blogs, webinars
 * Ser parte de APN es un requerimiento para ser un sponsor con puesto de vendedor en eventos de AWS
+
+---------------------
+AWS Budgets
+
+AWS Budgtes te da la habilidad de establecer alertas si te excedés o estás alcanzando tu presupuesto definido
+
+Creá presupuestos de costo, uso o reservación
+
+Puede ser rastreado a niveles mensuales, trimestrales o anuales con un comienzo personalizable y fechas finales
+
+Las alertas soportan reservaciones EC2, RDS, Redshift y ElasticCache
+
+AWS Budgets puede ser usado para predecir costos pero es limitado en comparación a explorador de costos o hacer tu análisis con AWS Cost e informes de uso junto con herramientas de inteligencia de negocios
+
+"Budget based on a fixed cost or plan your upfront based on your chosen level"
+Puede ser fácilmente gestionado desde el panel de AWS Budgtes o vía API de Budgets
+
+Podés tener una lista de presupuestos; podés ver tu historialde presupuestos y descargarlo como un CSV
+
+Los primeros dos presupuestos son gratis
+Cada presupuesto cuesta 0,02 USD por día ~0,60 USD / mes    
+
