@@ -2784,5 +2784,17 @@ AWS Budget Reports
 
 Se usa junto con AWS Budgets para crear y enviar informes diarios, semanales y mensuales para monitorear el rendimiento de AWS Budget que será enviado por Email a direcciones específicas
 
-AWS Budget Reports sirve como un modo más conveniente de estar en los más alto de los informes ya que son enviados a tu correo electrónico en lugar de iniciar sesión en la consola de gestión de AWS   
+AWS Budget Reports sirve como un modo más conveniente de estar en los más alto de los informes ya que son enviados a tu correo electrónico en lugar de iniciar sesión en la consola de gestión de AWS 
+
+-------------------------
+Informes de costo y uso de AWS (CUR)
+
+Generar una hoja de cálculo detallada, permitiéndote analizar mejor y entender tus costos de AWS
+
+Se coloca los informes en S3
+Se puede usar Athena para transformar el informe en una base de datos consultable
+Se puede usar QuickSight para visualizar tus datos de facturación como grafos   
+Podés elegir la granularidad de tus datos al seleccionar por hora, día o mes
+El informe contendrá etiquetas de asignación de costos
+Los datos de CUR se almacenan en un CSV (GZIP) o "parque format" en tu bucket de S3 seleccionado  
 
