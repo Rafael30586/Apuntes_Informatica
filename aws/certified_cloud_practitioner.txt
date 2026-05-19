@@ -2834,3 +2834,16 @@ Se puede usar "forecasting" para obtener una idea de futuros costos
 Elegís si querés ver tus datos a un nivel diario o mensual de granularidad
 
 Podés usar filtros y agrupación para entender mejor tus datos
+
+-------------------------
+API de precios de AWS
+
+Con AWS podés acceder de manera programática a información sobre precios para obtener el último ofrecimiento de precio para servicios
+
+Hay dos versiones de esta API
+* Query API - la API de servicio de precio vía JSON
+* Batch API - la API de lista de precios vía HTML
+
+También podés suscribirte a Amazon SNS para obtener alertas cuando los precios por los servicios cambian
+
+Los precios de AWS cambian periódicamente, como cuando AWS baja precios, cuando nuevas instancias son lanzadas o cuando nuevos servicios son introducidos
