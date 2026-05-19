@@ -1,0 +1,17 @@
+https://www.theknowledgeacademy.com/blog/paging-in-operating-system/
+
+Paginación en sistemas operativos
+
+¿Alguna vez te has preguntado porqué tus programas puede ser lentos incluso con la RAM suficiente? ¿o como es que tu computadora no se congela cuando tenés varias aplicaciones corriendo al mismo tiempo? la clave está en el concepto llamado paginación en sistemas operativos. Tener comprensión sobre paginación es esencial para individuos entrando en el terreno de la programación o gestión de sistemas. Es necesario para optimizar uso de memoria y multitareas fluido.
+
+--------------------------
+¿Qué es paginación?
+
+Paginación es un método de gestión de memoria esencial que conecta la memoria física de una computadora a su memoria virtual. Divide a la memoria en secciones más pequeñas llamadas páginas, permitiendo a los procesos extraer los datos necesarios sin tener que cargar todo a la RAM simultáneamente. Este método toma ventaja de la velocidad de la RAM mientras usa el almacenamiento mayor de la memoria secundaria como discos duros o SSDs.
+Cuando un proceso requiere una página que no está en la RAM, el sistema operativo lo busca de la memoria virtual
+Esto asegura rendimiento de sistema óptimo, incluso si el requerimiento de memoria sobrepasa la capacidad de la RAM. El sistema operativo gestiona efectivamente el uso de memoria y asegura que los procesos corran de manera fluida al cargar y descargar inteligentemente páginas
+La paginación mejora la gestión de memoria e incrementa el rendimiento general del sistema al decrementar la ocurrencia de fallas de página. Al utilizar técnicas como reemplazo de página en SO y almacenando páginas usadas con frecuencia en RAM, el sistema reduce interrupciones y mejora el rendimiento, permitiendo operación fluida de múltiples aplicaciones sin afectar la velocidad de la computadora
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________

@@ -1,0 +1,28 @@
+https://www.geeksforgeeks.org/operating-systems/page-replacement-algorithms-in-operating-systems/
+
+Algoritmos de reemplazo de páginas
+
+En un sistema operativo que usa paginación, un algoritmo de reemplazo de página es necesario cuando ocurre un fallo de página y ningún marco de página libre está disponible. En este caso, una de las existentes páginas en memoria debe ser reemplazada con una nueva página.
+
+El gestor de memoria virtual lleva a cabo esto al:
+1. Seleccionar una página víctima usando un algoritmo de reemplazo de página
+2. Haciendo a su entrada de page table como "no presente"
+3. Si la página fue modificada (sucia), escribiéndola de nuevo en disco antes del reemplazo
+
+La eficiencia de un algoritmo de reemplazo de página afecta directamente a la tasa de fallo de página, lo que en algún momento afecta el rendimiento del sistema
+
+----------------------
+Técnicas comunes de reemplazo de página
+* First in first out (FIFO)
+* Reemplazo de página óptimo
+* Menos usada recientemente (LRU)
+* Más usada recientemente (MRU)
+
+------------------------------
+1. First in first out (FIFO)
+
+Este es el algoritmo de reemplazo de página más simple. En este algoritmo, el sistema operativo rastrea todas las páginas en la memoria en la cola, la página más vieja está enfrente de la cola. Cuando una página necesita ser reemplazada, la página en el frente de la cola es seleccionada para ser quitada
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________ 
