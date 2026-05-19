@@ -2847,3 +2847,18 @@ Hay dos versiones de esta API
 También podés suscribirte a Amazon SNS para obtener alertas cuando los precios por los servicios cambian
 
 Los precios de AWS cambian periódicamente, como cuando AWS baja precios, cuando nuevas instancias son lanzadas o cuando nuevos servicios son introducidos
+
+-------------------------------------------------------------------------------------------------------------------------------
+Seguridad
+--------------------------------------------------------------------------------------------------------------------------------
+
+Defensa en profundidad
+
+Las 7 capas de seguridad
+1. Datos: acceso a datos de clientes y negocios, y encriptación para proteger datos
+2. Aplicación: las aplicaciones están seguras y libres de vulnerabilidades de seguridad
+3. Cómputo: acceso a máquinas virtuales (puertos, on-premise, nube)
+4. Red: limitar comunicación entre recursos usando segmentación y controles de acceso
+5. Perímetro: protección de denegación distribuida de servicio (DDoS) para filtrar ataques a gran escala antes de que causen una denegación de servicio a usuarios
+6. Identidad y acceso: controlar acceso a infraestructura y control de cambios
+7. Física: limitar el acceso a un datacenter solo a personal autorizado
