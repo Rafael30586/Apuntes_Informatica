@@ -2798,3 +2798,15 @@ Podés elegir la granularidad de tus datos al seleccionar por hora, día o mes
 El informe contendrá etiquetas de asignación de costos
 Los datos de CUR se almacenan en un CSV (GZIP) o "parque format" en tu bucket de S3 seleccionado  
 
+--------------------------
+Etiquetas de asignación de costos
+
+Son metadatos opcionales que pueden ser vinculados a un recurso de AWS para que, cuando generes un informe de costo y uso, puedas usar esos datos para analizar mejor tus datos
+
+Tenés que activar las etiquetas que quieras para mostrar en el informe
+
+Hay dos tipos de etiquetas:
+* definidas por el usuario
+  - por ejemplo Project
+* generadas por AWS
+  - por ejemplo aws:createdBy
