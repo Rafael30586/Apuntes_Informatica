@@ -2821,3 +2821,16 @@ Primero necesitás activar las alertas de facturación
 Luego vas a CloudWatch Alarm y podés elegir facturación como tu métrica
 
 Las alarmas de facturación son mucho más flexibles que AWS Budgets e ideales para casos de uso más complejos para monitorear gastos y uso
+
+----------------------
+AWS Cost Explorer
+
+Te permite visualizar, entender y gestionar tus costos y uso de AWS a lo largo del tiempo
+
+Los informes por defecto te ayudan a gana percepción en tus manejadores de costo y tendencias de uso
+
+Se puede usar "forecasting" para obtener una idea de futuros costos
+
+Elegís si querés ver tus datos a un nivel diario o mensual de granularidad
+
+Podés usar filtros y agrupación para entender mejor tus datos
