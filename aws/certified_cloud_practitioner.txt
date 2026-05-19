@@ -2810,3 +2810,14 @@ Hay dos tipos de etiquetas:
   - por ejemplo Project
 * generadas por AWS
   - por ejemplo aws:createdBy
+
+-------------------------
+Alarmas/alertas de facturación
+
+Podés crear tus propias alarmas en CloudWatch Alarmas para monitorear gastos. Se las llama comúnmente alarmas d4e facturación
+
+Primero necesitás activar las alertas de facturación
+
+Luego vas a CloudWatch Alarm y podés elegir facturación como tu métrica
+
+Las alarmas de facturación son mucho más flexibles que AWS Budgets e ideales para casos de uso más complejos para monitorear gastos y uso
