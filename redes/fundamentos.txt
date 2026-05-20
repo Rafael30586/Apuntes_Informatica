@@ -381,7 +381,7 @@ Resolución
 ¿Por qué estudiar Flow control?
 El control de flujo coordina la cantidad de datos que pueden ser enviados antes de recibir "reconocimiento" (acknowledgement). Este reconocimiento es un tipo especial de mensaje que el receptor le envía al emisor para "avisarle" que ha recibido lo que el emisor envió.
 A veces ocurre que el emisor le envía datos al receptor (estos datos son procesados por el receptor y esto lleva tiempo), y estos datos podrían ser enviados a gran velocidad y que el buffer queue se llene, por lo que muchos paquetes pueden empezar a "caer" (el receptor no llegaría a recibirlos). Por todo esto el receptor debe ser capaz de enviar un mensaje al emisor de los paquetes lo están abrumando, para que reduzca la velocidad. Hay que tener en cuenta que el receptor tiene une velocidad limitada a la cual puede procesar paquetes. 
-
+	
 
 En Flow control hay varios protocolos: Stop and wait; go back n; selective repeat
 
@@ -453,10 +453,43 @@ La primera está mal porque hay que ver el propagation delay; las otras dos están
 
 Uno de los mayores problemas que tiene stop and wait es que se puede enviar un solo paquete a la vez. Enviar más de un paquete a la vez podría aumentar la eficiencia. El problema está en que si el emisor tiene un tamaño de ventana (window size) de 1, solo puede almacenar un paquete, y si intenta enviar varios paquetes a la vez, si alguno de esos envíos fallara, los paquetes se perderían para siempre porque no tiene a donde almacenarlos. ¿Cómo se puede solucionar el problema? incrementando el tamaño de ventana. Si, por ejemplo, el emisor tiene un tamaño de ventana de 4, podrá enviar 4 paquetes a la vez, y cuando llegue el primer reconocimiento, el emisor podrá deshacerse del primer paquete enviado y cambiar la ubicación de la ventana para almacenar otro paquete (podría ser el paquete 5 por ejemplo, y el 1 ya no estaría almacenado porque ya se envió, sería eliminado del buffer)
 
-|1 2 3 4| 5 6 7 8 --> la ventana primero va desde 1 a 4 (el emisor tiene copia de cada uno de esos mensajes en el buffer hasta que llegue el reconcimiento)
+|1 2 3 4| 5 6 7 8 --> la ventana primero va desde 1 a 4 (el emisor tiene copia de cada uno de esos mensajes en el buffer hasta que llegue el reconocimiento)
 
 |2 3 4 5| 6 7 8 --> una vez llegó el reconocimiento del primero se borra su copia del buffer y la ventana se traslada hasta el paquete 5
 
 |3 4 5 6| 7 8 --> cuando se recibe el reconocimiento de que el paquete 2 se ha recibido, la ventana se vuelve a correr y el paquete 2 se borra del lado del emisor
 
 Este concepto de ventana es conocido como ventana corrediza o sliding window. Con la ayuda de este concepto se pueden implementar los protocolos que siguen
+
+El tamaño de ventana del protocolo stop and wait es 1
+
+El máximo tamaño de ventana posible es de 1 + 2a (no estoy seguro de donde proviene la a, por ahí proviene de las ecuaciones de antes)
+
+---------------------------
+Protocolo de sliding window
+
+En este protocolo se envían w paquetes en lugar de uno, siendo w el tamaño de ventana del emisor
+
+* GB-N: significa "go back-n"
+* n es el tamaño de ventana, por ejemplo GB-5 significaría que el emisor tiene un tamaño de ventana de 5
+* El receptor tiene un tamaño de ventana de 1
+
+Ejemplo
+* Supongamos que tenemos GB-5, esto significaría que el tamaño de ventana del emisor es 5
+* Se quieren enviar los paquetes: 0 1 2 3 4 5 6 7
+* La ventana sería: |0 1 2 3 4| 5 6 7
+* Supongamos que se quieren enviar 5 paquetes de una vez, se reciben 0, 1, 2 y 4 pero se pierde 3 por ruido
+* Se envía un reconocimiento por 0, 1 y 2
+* Ahora la ventana estaría así: 0 1 2 |3 4 5 6 7|
+* 0, 1 y 2 se eliminarán del lado del emisor
+* El paquete 4 se elimina del lado del receptor de manera silenciosa
+* Al cambiarse la ventana también se enviaron los paquetes 5, 6 y 7, pero también son descartados por el receptor de manera silenciosa
+* El receptor tiene que descartar a los paquetes posteriores porque tiene un tamaño de ventana de solo 1
+* El receptor ha recibido los primeros paquetes y los ha enviado uno por uno a las capas superiores
+* Las capas superiores no reciben los paquetes fuera de orden
+* El emisor va a esperar por el reconocimiento del paquete 3 para correr más la ventana
+* Por estas razones hay un temporizador y cuando el tiempo se termina, el emisor vuelve a enviar el paquete 3 junto con toda la ventana
+* Es muy importante aclarar, como se ha dicho antes, que el receptor no puede recibir los paquetes fuera de orden
+* El temporizador es mantenido solo por el primer paquete de la ventana, esto es así porque si no se recibe el primer paquete de la ventana, todos los otros paquetes de la misma ventana son descartados silenciosamente por el receptor	
+
+Selective Repeat, a diferencia de go back-n tiene, en el receptor, un tamaño de ventana mayor que uno, por lo cual, el temporizador funciona de una manera diferente    
