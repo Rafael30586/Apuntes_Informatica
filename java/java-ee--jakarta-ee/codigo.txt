@@ -83,3 +83,15 @@ Estos símbolos <% %> nos sirven para escribir código java en el JSP y se llama
 Cuando usamos request.getAttribute() en nuestro JSP, tendremos que hacer una refundición, ya que el método devuelve un objeto de clase Object
 
 Cuando creamos un listener, podemos usar la anotación @WebListener en la clase	
+
+El método init() de los filtros se llama solo una vez en todo el ciclo de vida del filtro
+
+A las respuestas HTTP que producen los servlets se les puede asignar el "content type" con el método setContentType que implementan de la interfaz ServletResponse
+
+A los filtros que creamos debemos asignarles una url o un servlet, no hacen falta los dos. Si queremos que un filtro se ejecute antes que determinado servlet, mapeamos al filtro con la url del servlet
+
+La solicitud y la respuesta atraviesan el filtro, llegan al servlet y después vuelven a pasar por el filtro. Lo que escribamos después del método doFilter se ejecutará después de que la solicitud y la respuesta pasen por el servlet y vuelvan al filtro 
+
+El método init de los filtros se ejecuta una vez cuando ponemos la aplicación en ejecución. El método destroy se ejecuta cuando detenemos la aplicación
+
+Cuando utilizamos la etiqueta filter-mapping en el archivo web.xml, podemos utilizar un atributo llamado dispatcher que tiene valores enumerados (el enum en la API de jakarta aparece como DispatcherType). Esos valores enumerados son: RESQUEST, solo cuando una solicitud viene directamente del cliente; ASYNC, solo cuando la solicitud asíncrona viene del cliente; FORWARD, solo cuando la solicitud ha sido reenviada a un componente; INCLUDE, solo cuando la solicitud ha sido procesada por un componente que ha sido incluido; ERROR, solo cuando la solicitud está siendo procesada con el mecanismo de error de página. El DispatcherType sirve para limitar el alcance del filtro
