@@ -31,6 +31,15 @@ En esta situación, la memoria principal se parte en 16 marcos, con cada uno sie
 
 Ejemplo 2: asignación de páginas no-contigua
 Asuma de que en el escenario 1, los procesos P2 y P4 pasan al estado de espera, resultando en 8 marcos vacantes. En el caso 2, hay un nuevo proceso introducido, P5, con un tamaño de 8kB (equivalente a 8 páginas), que está en la cola de listo (ready queue). Como la paginación permite que las páginas se almacenen en varias ubicaciones de memoria, los 8 marcos discontinuos que quedan de P2 y P4 pueden ser utilizados. Como resultado, las 8 páginas de P5 se distribuyen entre los espacios disponibles, demostrando asignación no contigua
+
+------------------------------
+Métodos de paginación
+
+1) Asignación contigua de páginas
+Las páginas de un proceso son almacenadas en marcos de memoria secuenciales n asignación contigua. Esta técnica asegura que las páginas sean ordenadas en marcos secuenciales, simplificando su accesibilidad y organización. Aún así, esto puede resultar en fragmentación, restringiendo la versatilidad de la utilización de memoria cuando los marcos son tomados
+
+2) Asignación de páginas no contigua
+Las páginas de un proceso pueden ser almacenadas en cualquier marco, no necesariamente en orden, con la asignación no contigua. Esta técnica mejora la eficiencia de memoria al utilizar marcos disponibles dispersos, disminuyendo los problemas de fragmentación. Provee mayor flexibilidad y efectividad, permitiendo que operaciones se realicen sin bloques de memoria contiguos
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
 ____________________________________________
