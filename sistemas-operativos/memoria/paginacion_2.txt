@@ -22,6 +22,15 @@ Los address spaces, tanto lógicos como físicos, son separados en páginas y ma
 El CPU descompone la dirección en un número de página y un page offset. El número de página indica las páginas en el address space lógico, y el page offset indica la ubicación dentro de la página. Este plan involucra partir la memoria física en un número de marco y un frame offset
 El número de marco indica el marco con los datos necesarios en el address space físico. Si hay 2^20 marcos, con cada marco teniendo un tamaño de 4kB, el número de marco necesitaría 8 bits. El frame offset se usa para apuntar con precisión el byte exacto o palabra dentro de un marco y necesita 12 bits cuando cada marco tiene 4kB de tamaño 
 Una dirección física puede ser expresada como (número de marco cambiado a la izquierda por el número de bits en frame offset) "plus frame Offset", utilizando operaciones "bitwise left shift". Paginación utiliza Translation Lookaside Buffer (TLB), una memoria rápida y asociativa, para traducir rápidamente las direcciones. Cada entrada TLB tiene una etiqueta y un valor; son registradas juntas y retornan el valor si la etiqueta es encontrada. Esta configuración mejora la paginación y mejora el rendimiento general del sistema 
+
+----------------------
+Ejemplo para entender paginación en sistemas operativos
+
+Ejemplo 1: Asignación contigua de páginas
+En esta situación, la memoria principal se parte en 16 marcos, con cada uno siendo de un tamaño de 1kB. La memoria secundaria tiene 4 procesos: P1, P2, P3 y P4, cada uno ocupando 4kB. La división de cada proceso en 4 páginas de 1kB permite que una página se acomode en cada marco. Comenzando con todos los marcos vacíos, las páginas están asignadas de manera secuencial, encajando precisamente en los 16 marcos
+
+Ejemplo 2: asignación de páginas no-contigua
+Asuma de que en el escenario 1, los procesos P2 y P4 pasan al estado de espera, resultando en 8 marcos vacantes. En el caso 2, hay un nuevo proceso introducido, P5, con un tamaño de 8kB (equivalente a 8 páginas), que está en la cola de listo (ready queue). Como la paginación permite que las páginas se almacenen en varias ubicaciones de memoria, los 8 marcos discontinuos que quedan de P2 y P4 pueden ser utilizados. Como resultado, las 8 páginas de P5 se distribuyen entre los espacios disponibles, demostrando asignación no contigua
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
 ____________________________________________
