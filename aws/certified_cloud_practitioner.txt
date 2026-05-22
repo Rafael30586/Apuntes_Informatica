@@ -2892,4 +2892,15 @@ Encriptación
 La práctica y estudio de técnicas para asegurar la comunicación en la presencia de terceros llamados adversarios
 
 ¿Qué es la encriptación?
-Es el proceso de codificar (rascado) información usando una clave y un cifrado para almacenar datos sensibles en un formato ininteligible a modo de protección. Una encriptación toma texto plano y produce texto cifrado  
+Es el proceso de codificar (rascado) información usando una clave y un "cypher" para almacenar datos sensibles en un formato ininteligible a modo de protección. Una encriptación toma texto plano y produce texto cifrado
+
+-----------------------
+Cyphers
+
+¿Qué es un "cypher"?
+Es un algoritmo que lleva a cabo encriptación o desencriptación. Cypher es sinónimo de "code"
+
+¿Qué es un texto cifrado?
+El texto cifrado es el resultado de encriptación llevada a cabo en texto plano vía un algoritmo
+
+  
