@@ -1,4 +1,4 @@
-https://www.theknowledgeacademy.com/blog/paging-in-operating-system/
+	
 
 Paginación en sistemas operativos
 
@@ -36,10 +36,30 @@ Asuma de que en el escenario 1, los procesos P2 y P4 pasan al estado de espera, 
 Métodos de paginación
 
 1) Asignación contigua de páginas
-Las páginas de un proceso son almacenadas en marcos de memoria secuenciales n asignación contigua. Esta técnica asegura que las páginas sean ordenadas en marcos secuenciales, simplificando su accesibilidad y organización. Aún así, esto puede resultar en fragmentación, restringiendo la versatilidad de la utilización de memoria cuando los marcos son tomados
+Las páginas de un proceso son almacenadas en marcos de memoria secuenciales en asignación contigua. Esta técnica asegura que las páginas sean ordenadas en marcos secuenciales, simplificando su accesibilidad y organización. Aún así, esto puede resultar en fragmentación, restringiendo la versatilidad de la utilización de memoria cuando los marcos son tomados
 
 2) Asignación de páginas no contigua
-Las páginas de un proceso pueden ser almacenadas en cualquier marco, no necesariamente en orden, con la asignación no contigua. Esta técnica mejora la eficiencia de memoria al utilizar marcos disponibles dispersos, disminuyendo los problemas de fragmentación. Provee mayor flexibilidad y efectividad, permitiendo que operaciones se realicen sin bloques de memoria contiguos	
+Las páginas de un proceso pueden ser almacenadas en cualquier marco, no necesariamente en orden, con la asignación no contigua. Esta técnica mejora la eficiencia de memoria al utilizar marcos disponibles dispersos, disminuyendo los problemas de fragmentación. Provee mayor flexibilidad y efectividad, permitiendo que operaciones se realicen sin bloques de memoria contiguos
+
+----------------------
+Beneficios de la paginación
+
+La paginación permite a los sistemas operativos optimizar el uso de memoria física, llevando a rendimiento de sistema mejorado. Algunos de los beneficios principales son:
+
+1) Minimiza la fragmentación externa
+Con la paginación, el sistema operativo hace un mejor uso de la memoria al transferir páginas sin usar al disco y trayéndolas de vuelta cuando es necesario
+
+2) Habilita cambio de páginas eficiente	
+El sistema operativo intercambia páginas sin preocupación por la fragmentación, dándole prioridad a las páginas usadas con menor frecuencia
+
+3) Facilita el soporte para memoria virtual
+Cada proceso obtiene su propio address space con memoria virtual, incluso si la memoria física no puede retener todos los procesos a la vez
+
+4) Mejora la utilización de la memoria
+Mejora el rendimiento al minimizar los períodos de inactividad del CPU durante la carga de disco y almacenando páginas comúnmente usadas en memoria 
+
+5) Simplifica la gestión de memoria
+La paginación simplifica el proceso de gestión al monitorear solo las páginas en memoria en lugar del address space completo del proceso
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
 ____________________________________________
