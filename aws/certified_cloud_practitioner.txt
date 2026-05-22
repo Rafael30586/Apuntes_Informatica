@@ -2903,4 +2903,16 @@ Es un algoritmo que lleva a cabo encriptación o desencriptación. Cypher es sin
 ¿Qué es un texto cifrado?
 El texto cifrado es el resultado de encriptación llevada a cabo en texto plano vía un algoritmo
 
+-----------------------
+Claves criptográficas
+
+¿Qué es una clave criptográfica?
+Una clave es una variable usada en conjunción con un algoritmo de encriptación para encriptar y desencriptar datos
+
+¿Qué es la encriptación simétrica?
+La misma clave se usa para codificar y decodificar. Por ejemplo, Advanced Encryption Standard (AES)
+
+¿Qué es la encriptación asimétrica?
+Dos claves son usadas. Una para codificar y otra para decodificar, por ejemplo: Rivest-Shamir-Adleman (rsa)
+
   
