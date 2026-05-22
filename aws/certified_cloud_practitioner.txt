@@ -2915,4 +2915,23 @@ La misma clave se usa para codificar y decodificar. Por ejemplo, Advanced Encryp
 ¿Qué es la encriptación asimétrica?
 Dos claves son usadas. Una para codificar y otra para decodificar, por ejemplo: Rivest-Shamir-Adleman (rsa)
 
+-----------------------
+Hashing y salting
+
+¿Qué es una función de hashing?
+Es una función que acepta valores de un tamaño arbitrario y lo mapea a una estructura de datos de tamaño fijo. El hashing puede reducir el tamaño del valor almacenado
+
+El hashing es un proceso unidireccional y es determinista
+Una función determinista devuelve siempre la misma salida para la misma entrada
+
+Hashing de contraseñas
+Las funciones de hash se usan para almacenar contraseñas en bases de datos para que la contraseña no resida en texto plano
+
+Para autenticar un usuario, cuando el s7uaurio ingresa la contraseña, se hashea, y el hash es comparado con el hash almacenado. si coinciden entones el usuario ha iniciado sesión exitosamente
+
+Funciones de hash populares son MD5, SHA256 Y Bcrypt
+Si un atacante sabe que función estás usando y roba tu base de datos, podría enumerar un diccionario de contraseñas y determinar la contraseña
+
+"Salting" contraseñas
+Un "salt" es una cadena de caracteres aleatoria no conocida por el atacante que la función hash acepta para mitigar la naturaleza determinista de las funciones hash
   
