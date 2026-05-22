@@ -2885,3 +2885,11 @@ Vulnerabilidades
 ¿Qué es una vulnerabilidad?
 Un hoyo o debilidad en la aplicación, que puede ser una defecto de diseño o un bug de implementación, eso permite que un atacante cause daño a las partes interesadas de una aplicación	
 
+--------------------------
+Encriptación
+
+¿Qué es la criptografía?
+La práctica y estudio de técnicas para asegurar la comunicación en la presencia de terceros llamados adversarios
+
+¿Qué es la encriptación?
+Es el proceso de codificar (rascado) información usando una clave y un cifrado para almacenar datos sensibles en un formato ininteligible a modo de protección. Una encriptación toma texto plano y produce texto cifrado  
