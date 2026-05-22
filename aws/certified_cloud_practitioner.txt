@@ -2878,3 +2878,10 @@ La tríada CIA fue mencionada por primera vez en una publicación NIST de 1977
 Se han hecho esfuerzos para expandir y modernizar o sugerir alternativas a la tríada CIA:
   * (1998) seis elementos atómicos de información, por ejemplo: confidencialidad, posesión, integridad, autenticidad, disponibilidad y utilidad
   * (2004) Principios de ingeniería NIST para seguridad de tecnología de información - 33 principios de seguridad
+
+--------------------------
+Vulnerabilidades
+
+¿Qué es una vulnerabilidad?
+Un hoyo o debilidad en la aplicación, que puede ser una defecto de diseño o un bug de implementación, eso permite que un atacante cause daño a las partes interesadas de una aplicación	
+
