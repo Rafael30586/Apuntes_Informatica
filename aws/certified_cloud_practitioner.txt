@@ -2862,3 +2862,19 @@ Las 7 capas de seguridad
 5. Perímetro: protección de denegación distribuida de servicio (DDoS) para filtrar ataques a gran escala antes de que causen una denegación de servicio a usuarios
 6. Identidad y acceso: controlar acceso a infraestructura y control de cambios
 7. Física: limitar el acceso a un datacenter solo a personal autorizado
+
+--------------------------
+Confidencialidad, integridad, disponibilidad (CIA)
+
+Esta tríada es un modelo que describe los fundamentos a principios de seguridad y su relación de compensación
+
+Confidencialidad: es un componente de privacidad que se implementa para proteger nuestros datos de gente no autorizada. En la práctica esto puede ser usando claves criptográficas para encriptar nuestros datos, y usando claves para encriptar nuestras claves (encriptación de envoltura) 	  
+
+Integridad: manteniendo y asegurando la precisión y completitud de los datos sobre su ciclo de vida entero. En la práctica usando bases de datos complacientes a ACID para transacciones válidas. Utilizando módulos de seguridad de hardware con pruebas de entrometimiento (HSM)
+
+Disponibilidad: La información necesita hacerse disponible cuando se la necesita en la práctica: alta disponibilidad, mitigando DDoS, acceso de desencriptación
+
+La tríada CIA fue mencionada por primera vez en una publicación NIST de 1977
+Se han hecho esfuerzos para expandir y modernizar o sugerir alternativas a la tríada CIA:
+  * (1998) seis elementos atómicos de información, por ejemplo: confidencialidad, posesión, integridad, autenticidad, disponibilidad y utilidad
+  * (2004) Principios de ingeniería NIST para seguridad de tecnología de información - 33 principios de seguridad
