@@ -15,4 +15,23 @@ Los widgets en sitios web son fragmentos de código que incrustas en las página
 * Interactividad mejorada. Ofrecen un medio para que los visitantes interactúen directamente con el contenido.
 * Acceso rápido. Permiten a los usuarios encontrar funciones útiles sin cambiar de página.
 * Promoción integrada. Ayudan a destacar contenido o secciones clave dentro del sitio web.
+
+----------------------------
+¿Se pueden personalizar los widgets?
+
+Sí, puedes personalizarlos para que coincidan con el diseño de tu sitio web o app. Puedes ajustar colores, fuentes y disposición, aunque las opciones dependerán de la plataforma o proveedor de widgets. Recuerda que la personalización podría no estar disponible en todas las regiones. 
+
+----------------------------
+ Widgets para dispositivos móviles
+
+Los widgets en móviles, como en dispositivos iOS o Android™, suelen ofrecer accesos directos desde la pantalla de inicio o bloqueo. Los más comunes incluyen reproductores de música, calendarios, actualizaciones de redes sociales y widgets meteorológicos.
+
+----------------------------
+ Uso de widgets en otros dispositivos
+
+No solo están en sitios web o móviles. También puedes encontrarlos en smartwatches, televisores inteligentes y más. Mejoran la experiencia ofreciendo acceso directo a funciones específicas de cada dispositivo.  
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________
  

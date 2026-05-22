@@ -39,7 +39,7 @@ Métodos de paginación
 Las páginas de un proceso son almacenadas en marcos de memoria secuenciales n asignación contigua. Esta técnica asegura que las páginas sean ordenadas en marcos secuenciales, simplificando su accesibilidad y organización. Aún así, esto puede resultar en fragmentación, restringiendo la versatilidad de la utilización de memoria cuando los marcos son tomados
 
 2) Asignación de páginas no contigua
-Las páginas de un proceso pueden ser almacenadas en cualquier marco, no necesariamente en orden, con la asignación no contigua. Esta técnica mejora la eficiencia de memoria al utilizar marcos disponibles dispersos, disminuyendo los problemas de fragmentación. Provee mayor flexibilidad y efectividad, permitiendo que operaciones se realicen sin bloques de memoria contiguos
+Las páginas de un proceso pueden ser almacenadas en cualquier marco, no necesariamente en orden, con la asignación no contigua. Esta técnica mejora la eficiencia de memoria al utilizar marcos disponibles dispersos, disminuyendo los problemas de fragmentación. Provee mayor flexibilidad y efectividad, permitiendo que operaciones se realicen sin bloques de memoria contiguos	
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
 ____________________________________________

@@ -492,4 +492,8 @@ Ejemplo
 * Es muy importante aclarar, como se ha dicho antes, que el receptor no puede recibir los paquetes fuera de orden
 * El temporizador es mantenido solo por el primer paquete de la ventana, esto es así porque si no se recibe el primer paquete de la ventana, todos los otros paquetes de la misma ventana son descartados silenciosamente por el receptor	
 
-Selective Repeat, a diferencia de go back-n tiene, en el receptor, un tamaño de ventana mayor que uno, por lo cual, el temporizador funciona de una manera diferente    
+Selective Repeat, a diferencia de go back-n tiene, en el receptor, un tamaño de ventana mayor que uno, por lo cual, el temporizador funciona de una manera diferente 
+
+Ejercicio de ejemplo: en GB-3 si cada quinto paquete se pierde y tenemos que enviar 10 paquetes ¿Cuántas transmisiones hacen falta?
+
+Tarea, hacer el ejercicio utilizando la explicación del profesor   

@@ -1,0 +1,3 @@
+https://notes.kodekloud.com/docs/Advanced-Bash-Scripting/Streams/File-descriptors/page
+
+Resumir lo del enlace

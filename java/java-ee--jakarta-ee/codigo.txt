@@ -95,3 +95,5 @@ La solicitud y la respuesta atraviesan el filtro, llegan al servlet y después v
 El método init de los filtros se ejecuta una vez cuando ponemos la aplicación en ejecución. El método destroy se ejecuta cuando detenemos la aplicación
 
 Cuando utilizamos la etiqueta filter-mapping en el archivo web.xml, podemos utilizar un atributo llamado dispatcher que tiene valores enumerados (el enum en la API de jakarta aparece como DispatcherType). Esos valores enumerados son: RESQUEST, solo cuando una solicitud viene directamente del cliente; ASYNC, solo cuando la solicitud asíncrona viene del cliente; FORWARD, solo cuando la solicitud ha sido reenviada a un componente; INCLUDE, solo cuando la solicitud ha sido procesada por un componente que ha sido incluido; ERROR, solo cuando la solicitud está siendo procesada con el mecanismo de error de página. El DispatcherType sirve para limitar el alcance del filtro
+
+Un solo filtro puede mapearse a más de un servlet si así lo deseamos

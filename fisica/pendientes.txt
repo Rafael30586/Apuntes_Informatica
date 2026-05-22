@@ -5,3 +5,6 @@
 // Potencia
 Superficie equipotencial
 // Fuerza
+energía potencial
+condensador
+diodo
