@@ -1,4 +1,4 @@
-Física conceptual - 10ma edición - Paul G Hewitt - páginas 448
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 448, 449
 
 Circuitos eléctricos
 
@@ -14,7 +14,22 @@ Este circuito de ejemplo ilustra las siguientes características importantes de 
 2. A esta corriente se opone la resistencia del primer dispositivo, la del segundo, la del tercero, etc. Entonces, la resistencia total al paso de la corriente por el circuito es igual a la suma de las resistencias individuales a lo largo de la trayectoria del circuito.
 3. La corriente en el circuito es numéricamente igual al voltaje suministrado por la fuente, dividido entre la resistencia total del circuito. Esto es congruente con la ley de Ohm
 4. El voltaje total aplicado a través de un circuito en serie se divide entre los dispositivos o componentes individuales del circuito, de tal manera que la suma de las "caídas de voltaje" a través de cada componente sea igual al voltaje total suministrado por la fuente. Esto es consecuencia de que la cantidad de energía suministrada a la corriente total es igual a la suma de las energías suministradas para cada dispositivo eléctrico
-5. La caída de voltaje a través de cada dispositivo es proporcional a su resistencia: también la ley de Ohm se apli8cac por separado a cada dispositivo. Esto es consecuencia del hecho de que se use más energía para mover una unidad de carga a través de una resistencia grande que en una resistencia pequeña
+5. La caída de voltaje a través de cada dispositivo es proporcional a su resistencia: también la ley de Ohm se aplica por separado a cada dispositivo. Esto es consecuencia del hecho de que se use más energía para mover una unidad de carga a través de una resistencia grande que en una resistencia pequeña
 
 Es fácil ver la principal desventaja de un circuito en serie: si falla un componente, cesa la corriente en todo el circuito. Algunas bombillas para árbol de navidad, poco costosas, se conectan en serie. Cuando una se funde afecta a todas las demás.
-LA mayoría de los circuito se conectan de tal manera que es posible hacer trabajar varios aparatos eléctricos en forma independiente. Por ejemplo, en tu hogar se puede apagar o encender una bombilla, sin afectar el funcionamiento de las demás, o de otros aparatos eléctricos. Eso se debe a que esos componentes no están conectados en serie, sino en paralelo
+La mayoría de los circuito se conectan de tal manera que es posible hacer trabajar varios aparatos eléctricos en forma independiente. Por ejemplo, en tu hogar se puede apagar o encender una bombilla, sin afectar el funcionamiento de las demás, o de otros aparatos eléctricos. Eso se debe a que esos componentes no están conectados en serie, sino en paralelo
+
+-------------------
+Circuitos en paralelo
+
+Imaginemos un circuito en el que tres bombillas están conectadas en paralelo en un circuito, cada una con un interruptor y hay un fuente voltaje en el circuito. Se dice que los dispositivos conectados con los dos mismo puntos de un circuito eléctrico (llamemos a estos puntos A y B) están conectados en paralelo. 
+
+https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj9ErhFxiYeyXL-R8XfPay8SQLEG1agrgqbuUHc5WlDMnM9XauoFyLoalzKHuBtyuKB8nhMwnbDNWHvuCtrmlpms7jPiQCkb3vP-dDDvqMt0XuJPbQr63adPTbOd11z-OxSXWHFoOcUbE/s1600/Dibujo.jpg
+
+El trayecto de la corriente de una terminal de la batería a la otra se completa si solo una bombilla está encendida. En la ilustración, el circuito se ramifica en las tres trayectorias separadas de los dos puntos que conectan a las tres lámparas. Una interrupción en cualesquiera de las trayectorias no interrumpe el flujo de cargas en las otras trayectorias. Cada dispositivo funciona en forma independiente de los demás. 
+El circuito de la imagen ilustra las siguientes características principales de las conexiones en paralelo:
+
+1. Cada dispositivo conecta los mismos dos puntos A y B del circuito. En consecuencia, el voltaje es igual a través de cada dispositivo
+2. La corriente total en el circuito se divide entre las ramas en paralelo. Como el voltaje a través de cada rama es el mismo, la cantidad de corriente en cada rama es inversamente proporcional a la resistencia de la misma; la ley de Ohm se aplica por separado a cada ramal
+3. La corriente total en el circuito es igual a la suma de las corrientes en sus ramas paralelas. Esta suma es igual a la corriente en la batería o a otra fuente de voltaje
+4. A medida que aumenta la cantidad de ramas en paralelo, disminuye la resistencia total del circuito. La resistencia total baja con cada trayectoria que se agregue entre dos puntos cualesquiera del circuito. Esto significa que la resistencia total del circuito es menor que la resistencia de cualquier rama individual 
