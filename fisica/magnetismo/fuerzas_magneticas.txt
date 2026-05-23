@@ -1,0 +1,5 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 442
+
+Fuerzas magnéticas
+
+La fuerza entre dos partículas cargadas cualesquiera, depende de la magnitud de su carga y de la distancia que las separa, como indica la ley de Coulomb. Sin embargo, la ley de Coulomb no es todo cuando las partículas con carga se mueven entre sí. En este caso, la fuerza entra las partículas cargadas depende también de su movimiento, en una forma complicada. Se ve que, además de la fuerza que llamamos eléctrica, hay una fuerza debida al movimiento de las partículas cargadas que llamaremos fuerza magnética. La fuente de la fuerza magnética es el movimiento de partículas con carga, por lo general electrones. Las fuerzas tanto eléctrica como magnética son en realidad distintos aspectos del mismo fenómeno de electromagnetismo.
