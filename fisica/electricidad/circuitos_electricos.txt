@@ -1,0 +1,5 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 448
+
+Circuitos eléctricos
+
+Cualquier trayectoria a lo largo de la cual pasen los electrones es un circuito. Para que haya un flujo continuo de electrones debe haber un circuito completo, sin interrupciones. El interruptor eléctrico que se puede abrir o cerrar para cortar o dejar pasar el flujo de energía es el que hace la interrupción. La mayoría de los circuitos tienen más de un dispositivo que recibe la energía eléctrica. Esos dispositivos se suelen conectar en el circuito en una de dos formas: en serie o en paralelo. Cuando se conectan en serie, forman una sola trayectoria para el flujo de los electrones entre las terminales del acumulador, generador o contacto de pared (que solo es una extensión de las anteriores terminales). Cuando se conectan en paralelo forman ramales, y cada ramal es una trayectoria separada para el flujo de electrones. Las conexiones en serie y en paralelo tienen su propias características.
