@@ -1,0 +1,14 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 446
+
+Potencia eléctrica
+
+A menos que esté en un superconductor, una carga que se mueve por un circuito emite energía. Esa energía puede hacer que el circuito se caliente, o que haga girar un motor. La rapidez con la que la energía eléctrica se convierte en otra forma, como energía mecánica, calor o luz, se llama potencia eléctrica, la cual es igual al producto de la corriente por el voltaje:
+
+Potencia = corriente x voltaje
+
+Si el voltaje se expresa en volts y la corriente en amperes, la potencia se expresa en watts. Entonces, en forma dimensional:
+
+watts = amperes x volts
+
+Si una bombilla de 120 watts funciona en un circuito de 120 volts, tomará una corriente de 1 ampere (120 watts = 1 ampere x 120 volts). Esta relación es práctica para conocer el costo de la energía que suele ser de algunos centavos por kilowatt-hora, dependiendo del lugar. 
+En un lugar donde la energía cueste 5 centavos por kilowatt-hora, una bombilla eléctrica de 100 watts puede funcionar durante 10 horas, a un costo de 5 centavos. El funcionamiento de un tostador o una plancha, que toman más corriente y en consecuencia mucho más energía, cuesta 10 veces más 
