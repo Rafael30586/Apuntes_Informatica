@@ -76,7 +76,12 @@ La sobrecarga de page table es la memoria utilizada por page tables en paginaci�
 La paginación añade complejidad al sistema, haciendo la implementación y el debugging más desafiante
 
 4) Sobrecarga incrementada
-La paginación introduce sobrecarga ya que el sistema operativo debe rastrear que páginas están en memoria o en disco, potencialmente reduciendo rendimiento, especialmente con discos lentos 
+La paginación introduce sobrecarga ya que el sistema operativo debe rastrear que páginas están en memoria o en disco, potencialmente reduciendo rendimiento, especialmente con discos lentos
+
+-----------------------
+Conclusión
+
+En conclusión, entender paginación en el sistema operativo es un paso crucial en dominar como funciona la gestión de memoria. Al seguir los conceptos explicados en este artículo, tenés una sólida comprensión sobre como la paginación optimiza el uso de memoria física, minimiza la fragmentación y permite ejecución de procesos eficiente. De todas formas, paginación excesiva puede llevar a thrashing en el SO, donde el sistema usa más tiempo cambiando páginas que ejecutando procesos.   
 
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
