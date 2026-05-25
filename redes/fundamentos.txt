@@ -496,4 +496,47 @@ Selective Repeat, a diferencia de go back-n tiene, en el receptor, un tamaño de 
 
 Ejercicio de ejemplo: en GB-3 si cada quinto paquete se pierde y tenemos que enviar 10 paquetes ¿Cuántas transmisiones hacen falta?
 
-Tarea, hacer el ejercicio utilizando la explicación del profesor   
+Tarea, hacer el ejercicio utilizando la explicación del profesor
+
+Realicé el ejercicio obteniendo un resultado incorrecto, pero cuando exscuché la explicación del profesor entendí perfectamente cual fue el error
+
+----------------------
+El reconocimiento de parte del receptor puede ser independiente o acumulativo:
+* En el caso del reconocimiento independiente, por cada paquete enviado por el emisor, debe haber un reconocimiento de parte del receptor. Este tipo de reconocimiento es utilizado por stop and wait
+* En el caso del reconocimiento acumulativo, se produce un reconocimiento por toda la ventana completa, de esta manera si, por ejemplo, el emisor tiene un tamaño de ventana de 4, se envía de parte del receptor un solo reconocimiento por cada 4 paquetes recibidos disminuyendo así el tráfico. Este tipo de reconocimiento funciona mejor para GB-N. Nota: lo que no me queda claro es si el receptor necesita también tener un tamaño de ventana como el del emisor, aunque si es para GB-N debería ser 1
+
+El tiempo que le toma al reconocimiento llegar al emisor debe ser siempre menor al del temporizador por obvias razones
+
+La suma del tamaño de ventana del emisor y del receptor debe ser menor o igual que la secuencia de números disponible (no sé a qué se refiere con secuencia de números disponible)
+
+Fórmula para GB-N:
+ 
+Ws + Wr <= Av
+
+* donde Ws es el tamaño de ventana del emisor, Wr es el tamaño de ventana del receptor y Av es la secuencia de números disponible
+* En GB-N, el tamaño de ventana del receptor es de 1, por lo tanto:
+
+Ws + 1 <= Av
+
+N <= Av - 1
+---------
+
+Fórmula para Selective repeat
+
+* El tamaño de ventana del receptor es igual que el del emisor, entonces
+
+N + N <= Av
+
+N <= Av/2
+---------
+
+En el protocolo selective repeat, el receptor puede recibir paquetes sin la necesidad de que estén ordenados, a diferencia de los protocolos anteriores
+
+En el protocolo GB-N, el temporizador solo está disponible para el primer paquete de la ventana. En selective repeat el temporizador se mantiene para todos los paquetes
+
+NAK --> not akcnowledgement
+
+Por lo que entendí, el emisor va a lanzar un NAK dependiendo del paquete que no se ha recibido de toda la ventana. Si el paquete que no se ha recibido es el 3, se enviará NAK3 al emisor y este buscará en su ventana a cual de los paquetes corresponde para reenviarlo al receptor
+
+
+
