@@ -96,4 +96,8 @@ El método init de los filtros se ejecuta una vez cuando ponemos la aplicación 
 
 Cuando utilizamos la etiqueta filter-mapping en el archivo web.xml, podemos utilizar un atributo llamado dispatcher que tiene valores enumerados (el enum en la API de jakarta aparece como DispatcherType). Esos valores enumerados son: RESQUEST, solo cuando una solicitud viene directamente del cliente; ASYNC, solo cuando la solicitud asíncrona viene del cliente; FORWARD, solo cuando la solicitud ha sido reenviada a un componente; INCLUDE, solo cuando la solicitud ha sido procesada por un componente que ha sido incluido; ERROR, solo cuando la solicitud está siendo procesada con el mecanismo de error de página. El DispatcherType sirve para limitar el alcance del filtro
 
-Un solo filtro puede mapearse a más de un servlet si así lo deseamos
+Un solo filtro puede mapearse a más de un servlet si así lo deseamos. Si hacemos esto, se producirá una cadena de filtros. El objeto de la solicitud (ServletRequest) atravesará los filtros en un orden que dependerá de como los hayamos escrito en el archivo web.xml. Inlfuirá el orden en el cual hayamos colocado a los filtros pero también el tipo de mapeo que hayamos realizado: el mapeo a una URL tiene prioridad sobre el mapeo a un servlet
+
+Utilizando la anotación @WebServlet se puede mapear un servlet a más de una UR de la siguiente manera: @WebServlet({"/url1","/url2"})
+
+Podemos mapear un filtro a todas las urls de la aplicación si colocamos "/*" en el url-pattern del mapeo del filtro en el archivo web.xml
