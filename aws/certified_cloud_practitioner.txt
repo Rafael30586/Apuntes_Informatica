@@ -2971,4 +2971,50 @@ TLS 1.0 y 1.1 están desaprobados. TLS 1.2 y 1.3 son la mejor práctica actual
 
 SSL (secure sockets layer)
 Es un protocolo de encriptación para la integridad de datos entre dos o más aplicaciones de computadora.
-SSL 1.0, 2.0 y 3.0 están desdaprobadas
+SSL 1.0, 2.0 y 3.0 están desaprobadas
+
+----------------------
+Programas de cumplimiento comunes
+
+Programas de cumplimiento
+Es un conjunto de políticas y procedimientos internos de una compañía para cumplir con leyes, reglas y regulaciones o para sostener la reputación del negocio
+
+Health Insurance Portability and Accountability Act: es una legislación de Estados Unidos que provee privacidad de datos y provisión de seguridad para proteger información médica
+
+The Payment Card Industry Data Security Standard: Es para cuando vendés cosas en línea y necesitás manejar información de tarjeta de crédito
+
+International Organization for Standarization (ISO) / International Electrotechnical Commission
+ISO/IEC 27001 - guía de implementación de control
+ISO/IEC 27017 - enfoque mejorado en seguridad en la nube
+ISO/IEC 27018 - protección de datos personales en la nube, por ejemplo PII
+ISO/IEC 27701 - marco de trabajo de sistema de gestión de la privacidad de la información (PIMS)
+* Explica controles y procesos para gestionar la privacidad de datos y proteger PII
+
+System and Organization Controls (SOC)
+SOC 1 - 18 estándares e informes en la efectividad de controles internos (SSAE) en una organización de servicio
+* Relevante para su control interno de cliente sobre informes financieros (ICRF)
+SOC 2 - evalúa controles internos, políticas y procedimientos que se relacionan directamente a la seguridad de un sistema a una organización de servicio
+SOC 3- un informe basado en los criterios de servicios de confianza que puede ser distribuidos de forma gratuita
+
+Payment Card Industry Data Security Standard (PCI DSS)
+Un conjunto de estándares de seguridad diseñados para asegurar que todas las compañías que acepten, procesen, almacenen o transmitan información de tarjeta de crédito mantengan un entorno seguro
+
+Federal Information Processing Standard (FIPS) 140-2
+Estándar de los gobiernos de Estados Unidos y Canadá que especifica los requerimientos de seguridad para módulos criptográficos que protegen información sensible
+
+Personal Health Information Protection Act (PHIPA)
+Una ley provincial de Ontario (Canadá) que regula información de salud protegida de los pacientes
+
+Health Insurance Portability and Accountability Act (HIPAA)
+
+Cloud Security Alliance (CSA) STAR Certification
+Evaluación independiente de terceros de una postura de seguridad de un proveedor de nube
+
+Federal Risk and Authorization Management Program (FedRAMP)
+Enfoque estandarizado del gobierno de Estados Unidos a autorizaciones de seguridad para ofrecimientos de servicio en la nube
+
+Criminal Justice Information Services (CJIS)
+Cualquier estado de USA o agencia local que quiera acceso a la base de datos CJIS del FBI se requiere para adherir a la política de seguridad de CJIS
+
+General Data Protection Regulation (GDPR)
+Una ley de privacidad europea. Impone nuevas reglas en compañías, agencias de gobierno, sin fines de lucro, y otras organizaciones que ofrecen bienes y servicios a gente en la unión europea, o que recolectan y analizan datos vinculados a residentes de la unión europea  	 	
