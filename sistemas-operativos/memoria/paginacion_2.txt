@@ -1,4 +1,4 @@
-	
+https://www.theknowledgeacademy.com/blog/paging-in-operating-system/	
 
 Paginación en sistemas operativos
 
@@ -44,7 +44,7 @@ Las páginas de un proceso pueden ser almacenadas en cualquier marco, no necesar
 ----------------------
 Beneficios de la paginación
 
-La paginación permite a los sistemas operativos optimizar el uso de memoria física, llevando a rendimiento de sistema mejorado. Algunos de los beneficios principales son:
+La paginación permite a los sistemas operativos optimizar el uso de memoria física, llevando a un rendimiento de sistema mejorado. Algunos de los beneficios principales son:
 
 1) Minimiza la fragmentación externa
 Con la paginación, el sistema operativo hace un mejor uso de la memoria al transferir páginas sin usar al disco y trayéndolas de vuelta cuando es necesario
@@ -60,6 +60,24 @@ Mejora el rendimiento al minimizar los períodos de inactividad del CPU durante 
 
 5) Simplifica la gestión de memoria
 La paginación simplifica el proceso de gestión al monitorear solo las páginas en memoria en lugar del address space completo del proceso
+
+------------------------
+Desventajas de la paginación
+
+La paginación puede usar la memoria física de manera efectiva. Aún así, introduce complejidad al sistema operativo y puede llevar a instancias de fallo de página. Aunque las ventajas son generalmente más grandes que las desventajas, algunas desventajas importantes incluyen:
+
+1) Problemas de fragmentación interna
+La paginación puede causar fragmentación interna, porque la última página de un proceso podría no ser utilizada completamente, desperdiciando memoria. 
+
+2) Sobrecarga de page table
+La sobrecarga de page table es la memoria utilizada por page tables en paginación, lo cual es sustancial. Page tables multinivel y super-páginas asisten en reducir este problema
+
+3) Complejidad en la implementación
+La paginación añade complejidad al sistema, haciendo la implementación y el debugging más desafiante
+
+4) Sobrecarga incrementada
+La paginación introduce sobrecarga ya que el sistema operativo debe rastrear que páginas están en memoria o en disco, potencialmente reduciendo rendimiento, especialmente con discos lentos 
+
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
 ____________________________________________
