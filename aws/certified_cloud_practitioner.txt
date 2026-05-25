@@ -2934,4 +2934,24 @@ Si un atacante sabe que función estás usando y roba tu base de datos, podría 
 
 "Salting" contraseñas
 Un "salt" es una cadena de caracteres aleatoria no conocida por el atacante que la función hash acepta para mitigar la naturaleza determinista de las funciones hash
-  
+	
+
+---------------------
+Firmas digitales 
+
+¿Qué es una firma digital?
+Es un sistema matemático para verificar la autenticidad de mensajes digitales o documentos
+
+Una firma digital nos da evidencia de "manoseo"
+* ¿Alguien modificó los datos?
+* ¿Son estos datos del emisor esperado?
+
+Hay tres algoritmos para firmas digitales:
+* Generación de clave: genera una clave pública y una privada
+* Firmado (signing): el proceso de generar una firma digital con una clave privada y mensaje ingresado
+* Verificación de firmado: verificar la autenticidad del mensaje con una clave pública 
+
+SSH usa una clave pública y una clave privada para autorizar el acceso remoto a una máquina remota, por ejemplo, máquina virtual. Es común usar RSA. ssh-keygen es una comando bien conocido para generar una clave pública y una privada
+
+¿Qué es el firmado de código?
+Cuando usás tu firma digital para asegurar de que tu código de computadora no ha sido manoseado 
