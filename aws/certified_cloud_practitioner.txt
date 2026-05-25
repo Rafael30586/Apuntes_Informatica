@@ -2954,4 +2954,21 @@ Hay tres algoritmos para firmas digitales:
 SSH usa una clave pública y una clave privada para autorizar el acceso remoto a una máquina remota, por ejemplo, máquina virtual. Es común usar RSA. ssh-keygen es una comando bien conocido para generar una clave pública y una privada
 
 ¿Qué es el firmado de código?
-Cuando usás tu firma digital para asegurar de que tu código de computadora no ha sido manoseado 
+Cuando usás tu firma digital para asegurar de que tu código de computadora no ha sido manoseado
+
+--------------------
+Encriptación in-transit vs at-rest
+
+Encriptación in-transit
+Datos que están seguros cuando nos movemos entre diferentes ubicaciones. Algoritmos: TLS, SSL
+
+Encriptación at-rest
+Los datos están seguros cuando residen en el almacenamiento o en la base de datos. Algoritmos: AES, RSA
+
+TLS (transport layer security)
+Es un protocolo de encriptación para la integridad de datos entre dos o más aplicaciones de computadora comunicándose
+TLS 1.0 y 1.1 están desaprobados. TLS 1.2 y 1.3 son la mejor práctica actual
+
+SSL (secure sockets layer)
+Es un protocolo de encriptación para la integridad de datos entre dos o más aplicaciones de computadora.
+SSL 1.0, 2.0 y 3.0 están desdaprobadas
