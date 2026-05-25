@@ -1,0 +1,4 @@
+Puntero: es una variable que almacena la dirección de memoria de otra variable
+
+En c, el nombre de un array es un puntero al primer elemento del array
+

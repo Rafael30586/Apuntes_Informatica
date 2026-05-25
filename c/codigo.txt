@@ -1,0 +1,9 @@
+Supongamos que tenemos unas variables que declaramos así:
+
+int variable = 10;
+int *puntero = &variable;
+
+Podemos imprimir los siguientes valores:
+
+printf("%p", puntero) --> imprime la dirección de memoria que almacena el puntero
+printf("%d", *puntero) --> imprime el valor al que apunta el puntero, que en este caso sería 10. A este procedimiento se lo llama en inglés "dereference"
