@@ -13,3 +13,10 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250905174850032251/Page_tAB
 Para rastrear a donde está almacenada cada página en memoria, el sistema operativo usa una page table. Esta tabla muestra la conexión entre los números de páginas lógicos y los marcos de página físicos (lugares reales en RAM)
 
 Nota: La MMU usa la page table para convertir direcciones lógicas a direcciones físicas, para que el programa pueda acceder a los datos correctos en memoria
+
+------------------------
+Paginación en gestión de memoria
+
+La paginación aborda desafíos comunes en la asignación y administración eficiente de la memoria. ¿por qué la paginación es una técnica de gestión de memoria necesaria?:
+* La memoria no está siempre disponible en un solo bloque: los programas generalmente necesitan más memoria de la que hay en un bloque contiguo de memoria. La paginación divide la memoria en piezas más pequeñas de tamaño fijo, haciendo que sea más fácil asignar espacios libres dispersos
+* El tamaño de los procesos puede incrementarse o decrementar: los programas no necesitan ocupar memoria continua, por lo que pueden crecer dinámicamente sin la necesidad de ser movidos   
