@@ -52,6 +52,36 @@ Algunos ejemplos: point to point, bus, anillo, estrella, árbol, malla. También p
 Modelos de OSI
 permite la comunicación entre diferentes dispositivos aunque tengan diferente arquitectura. Es un marco de trabajo conceptual para crear una red de arquitectura robusta e interoperable. No es un protocolo, es un marco de trabajo. Trabaja como una arquitectura en capas.
 
+------------------------------------------------------------------------------------------------------------------------------
+Direccionamiento IP y subnetting
+------------------------------------------------------------------------------------------------------------------------------
+
+Números binarios: compuestos por 1s y 0s, por ejemplo:
+
+000 --> 0
+001 --> 1
+010 --> 2
+011 --> 3
+
+_ _ _ _ --> de izquierda a derecha 2^3, 2^2, 2^1 y 2^0
+
+por ejemplo: 1000 es --> 1 * 2^3 + 0 * 2^3 + 0 * 2^3 + 0 * 2^3 = 8
+
+Por alguna razón, el tipo del video explica que, al número obtenido con la fórmula anterior, hay que restarle 1, pero no explica porqué, por ejemplo , si tenemos 1 1 1 1 1 1 1 1, hay que hacer (2^8) - 1, que daría 255. Por lo tanto, el rango que se puede obtener con 8 bits es de 0 a 255
+
+Si tenemos 0 0 0 0 0 0 0 0, nos da 0
+Si tenemos 0 0 0 0 0 0 0 1, nos da 1
+Si tenemos 0 0 0 0 0 0 1 1, nos da 3
+Si tenemos 0 0 0 0 0 1 1 1, nos da 7
+Si tenemos 0 0 0 0 1 1 1 1, nos da 15
+
+En la tabla anterior vamos subiendo de acuerdo a la fórmula (2^n) - 1
+
+De izquierda a derecha se puede hacer diferente. Por ejemplo, tenemos el número binario 11110000, podemos entonces a 255, que es el valor máximo que se puede alcanzar en 8 bits, restarle los valores de los bits vacíos, que serían: 2^0 + 2^1 + 2^2 + 2^3 = 15. Entonces el resultado final es 255 - 15 = 240
+ 
+
+-------------------
+
 Direcciones IP
 Son direcciones lógicas de 32 bits. Están compuestas por 4 octetos. Cada octeto tiene 8 bits.
 Dirección IP --> ---.---.---.---

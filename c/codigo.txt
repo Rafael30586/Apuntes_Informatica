@@ -20,4 +20,12 @@ printf("%d",*puntero); // imprime 95
 Cuando le sumamos o restamos números enteros a un puntero que apunta a un valor de un array, este puntero se mueve posiciones dentro del array, no importa de qué tipo sea, si el array es de char, de int, de double, etc. En un array de char, el puntero se mueve 1 posición de memoria, en un array de int, el puntero se mueve 4 posiciones de memoria, etc
 
 ---------------------
-Si tenemos dos punteros, uno que apunta a la posición 1 de un array y otro que apunta a la posición 4 del mismo array, podemos restarlos para que nos de como resultado, la distancia en elementos que hay entre un puntero y el otro
+Si tenemos dos punteros, uno que apunta a la posición 1 de un array y otro que apunta a la posición 4 del mismo array, podemos restarlos para que nos de como resultado la distancia en elementos que hay entre un puntero y el otro
+
+---------------------
+
+Podemos crear punteros que apunten hacia otro puntero, por ejemplo:
+
+int numero = 10;
+int *puntero1 = &numero;
+int **puntero2 = &puntero1;

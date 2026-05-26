@@ -1,0 +1,20 @@
+https://dev.to/sebastianmarines/understanding-linuxs-file-descriptors-a-deep-dive-into-21-and-redirection-4g5h
+
+----------------------------------------------------------------------------------------------------------------------------
+Entendiendo los descriptores de archivos de Linux
+----------------------------------------------------------------------------------------------------------------------------
+
+Descriptores de archivos o file descriptors
+
+Un descriptor de archivos es la abstracción de Unix para un stream input/output: un archivo, una conexión de red, una pipe (un canal de comunicación entre procesos), una terminal, etc
+
+Todo proceso tiene normalmente 3 descriptores de archivos que se abren por defecto y son heredados del proceso padre (generalmente la shell)
+
+* Standard input: tiene un valor de 0; stdin
+* Standard output: tiene un valor de 1; stdout
+* Standard error: tiene un valor de 2; stderr
+
+Cuando un proceso abre un archivo (recordá que todo en Unix es un archivo, incluyendo dispositivos como la terminal, sockets, pipes, etc), el kernel le asigna un descriptor de archivos. El descriptor de archivos en un valor entero que identifica de manera única al archivo para el proceso
+Internamente, el kernel mantiene una tabla de descriptores de archivos para cada proceso. Esta tabla se llama tabla de descriptores de archivos. Cada entrada en la tabla contiene información sobre el archivo, como el file offset, las banderas de estado del archivo, etc
+Cuando un proceso abre un archivo, el kernel retorna el descriptor de archivo más bajo disponible. Esto significa que el primer archivo abierto por un proceso tendrá el descriptor de archivo 3, el segundo tendrá descriptor de archivo 4, y así sucesivamente 
+

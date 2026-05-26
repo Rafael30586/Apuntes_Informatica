@@ -101,3 +101,7 @@ Un solo filtro puede mapearse a más de un servlet si así lo deseamos. Si hacem
 Utilizando la anotación @WebServlet se puede mapear un servlet a más de una UR de la siguiente manera: @WebServlet({"/url1","/url2"})
 
 Podemos mapear un filtro a todas las urls de la aplicación si colocamos "/*" en el url-pattern del mapeo del filtro en el archivo web.xml
+
+Para configurar filtros en la aplicación, se puede usar la anotación @WebFilter, que tiene muchos atributos: filterName (string), value (String[]), urlPatterns (String[]), dispatcherTypes (dispatcherType[]), servletNames (String[]), displayName (String), description (String), asyncSupported (boolean), initParams (WebInitParam[]), smallIcon (String), largeIcon (String). El atributo value o urlPatterns es obligatorio, el resto son opcionales
+
+Cuando utilizamos la anotación @WebFilter, no podemos establecer el orden de los filtros usando anotaciones. El orden de los filtros es determinado por el nombre de la clase en orden alfabético y NO por lo que coloquemos en filterName
