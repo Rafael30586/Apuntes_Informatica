@@ -7,3 +7,17 @@ Podemos imprimir los siguientes valores:
 
 printf("%p", puntero) --> imprime la dirección de memoria que almacena el puntero
 printf("%d", *puntero) --> imprime el valor al que apunta el puntero, que en este caso sería 10. A este procedimiento se lo llama en inglés "dereference"
+
+--------------------
+Si a una puntero que apunta a un array se le suma un número entero (como 2 o 3 por ejemplo), el puntero se moverá dicha cantidad de posiciones. Ejemplo:
+
+int numeros = {30,12,95,61,90,27};
+int *puntero = números;
+printf("%d",*puntero); // imprime 30
+puntero = puntero + 2;
+printf("%d",*puntero); // imprime 95
+
+Cuando le sumamos o restamos números enteros a un puntero que apunta a un valor de un array, este puntero se mueve posiciones dentro del array, no importa de qué tipo sea, si el array es de char, de int, de double, etc. En un array de char, el puntero se mueve 1 posición de memoria, en un array de int, el puntero se mueve 4 posiciones de memoria, etc
+
+---------------------
+Si tenemos dos punteros, uno que apunta a la posición 1 de un array y otro que apunta a la posición 4 del mismo array, podemos restarlos para que nos de como resultado, la distancia en elementos que hay entre un puntero y el otro
