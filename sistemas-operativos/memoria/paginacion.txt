@@ -19,4 +19,19 @@ Paginación en gestión de memoria
 
 La paginación aborda desafíos comunes en la asignación y administración eficiente de la memoria. ¿por qué la paginación es una técnica de gestión de memoria necesaria?:
 * La memoria no está siempre disponible en un solo bloque: los programas generalmente necesitan más memoria de la que hay en un bloque contiguo de memoria. La paginación divide la memoria en piezas más pequeñas de tamaño fijo, haciendo que sea más fácil asignar espacios libres dispersos
-* El tamaño de los procesos puede incrementarse o decrementar: los programas no necesitan ocupar memoria continua, por lo que pueden crecer dinámicamente sin la necesidad de ser movidos   
+* El tamaño de los procesos puede incrementarse o decrementar: los programas no necesitan ocupar memoria continua, por lo que pueden crecer dinámicamente sin la necesidad de ser movidos 
+
+------------------------
+Terminologías asociadas con control de memoria
+
+* Address space lógico o address space virtual: se refiere al conjunto de todas las direcciones lógicas posibles que un proceso puede generar durante su ejecución
+* Address space físico: se refiere al rango total de direcciones disponibles en la RAM de la computadora
+
+------------------------
+Características importantes de la paginación
+
+* Mapeo de dirección lógica a dirección física: la paginación divide el address space lógico de un proceso a páginas de tamaño fijo. Cada página mapea a un marco en memoria física, permitiendo gestión de memoria flexible
+* Página fija y tamaño de marco: Páginas y marcos tienen el mismo tamaño fijo. Esto simplifica la gestión de memoria y mejora el rendimiento del sistema
+* Entradas de page table: Cada página lógica está representada por una page table entry (PTE). Una PTE almacena el número de marco correspondiente y bits de control
+* Número de entradas de page table: La page table tiene una entrada por cada página lógica. Así, su tamaño iguala el número de páginas en el address space del proceso
+* Page table almacenado en la memoria principal: La page table es mantenida en la memoria principal. Esto puede añadir sobrecarga cuando los procesos son sacados o ingresados 
