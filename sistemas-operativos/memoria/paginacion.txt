@@ -1,1 +1,15 @@
 https://www.geeksforgeeks.org/operating-systems/paging-in-operating-system/
+
+Paginación 
+
+La paginación es una técnica de gestión de memoria en la cual un proceso es dividido en bloques de tamaño fijo llamados páginas, y la memoria física se divide en marcos (frames) del mismo tamaño. Las páginas son cargadas desde la memoria secundaria a la memoria principal según la necesidad.
+* Un proceso no necesita ser almacenado en lugares contiguos de memoria
+* El proceso entero no necesita ser cargado a la memoria principal de una vez; solo las páginas requeridas son cargadas bajo demanda.
+ Esto permite utilización eficiente de la memoria y soporta la ejecución de programas grandes
+* La asignación de memoria se simplifica porque la memoria se gestiona en páginas y marcos de tamaño fijo  
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250905174850032251/Page_tABLE.webp
+
+Para rastrear a donde está almacenada cada página en memoria, el sistema operativo usa una page table. Esta tabla muestra la conexión entre los números de páginas lógicos y los marcos de página físicos (lugares reales en RAM)
+
+Nota: La MMU usa la page table para convertir direcciones lógicas a direcciones físicas, para que el programa pueda acceder a los datos correctos en memoria
