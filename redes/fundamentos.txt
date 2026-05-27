@@ -78,6 +78,30 @@ Si tenemos 0 0 0 0 1 1 1 1, nos da 15
 En la tabla anterior vamos subiendo de acuerdo a la fórmula (2^n) - 1
 
 De izquierda a derecha se puede hacer diferente. Por ejemplo, tenemos el número binario 11110000, podemos entonces a 255, que es el valor máximo que se puede alcanzar en 8 bits, restarle los valores de los bits vacíos, que serían: 2^0 + 2^1 + 2^2 + 2^3 = 15. Entonces el resultado final es 255 - 15 = 240
+
+Conviene acordarse de memoria esta tabla sobre las potencias de 2:
+
+2^0 -> 1
+2^1 -> 2
+2^2 -> 4
+2^3 -> 8
+2^4 -> 16
+2^5 -> 32
+2^6 -> 64
+2^7 -> 128
+2^8 -> 256
+
+-----------------
+* Si tenemos 1 bit, podemos tener dos (2^1) posibilidades: 0 y 1 
+* Si tenemos 2 bits, podemos tener cuatro (2^2) direcciones: 00 , 01 , 10 , 11
+* Con 3 bits podemos formar 8 (2^3) direcciones: 000 , 001 , 010, 011, 100, 101, 110, 111
+* Con n bits podemos formar 2^n direcciones
+
+¿Qué pasa si fijamos el primer bit?
+* Si fijamos el primer bit para dirección de 2 bits, el primer bit podría ser siempre 0 y tendríamos dos direcciones posibles: 01 y 00. Si fijamos el primer bit en 1, tenemos que también hay dos direcciones posibles: 10 y 11. Cuando fijamos el primer bit, el conjunto total de direcciones se divide en dos subconjuntos. Podemos utilizar la misma lógica de fijar el primer bit de un conjunto de direcciones de 3 bits y tendremos dos subconjuntos de 4 direcciones cada uno
+* Si fijamos los dos primeros bits de 3 bits, tendremos que los bits fijados pueden ser 00, 01, 10 y 11, entonces, tendremos 4 subconjuntos de de dos direcciones, por ejemplo, uno de los subconjuntos es 111 y 110 (los dos primeros bits fijados son 11, y el tercer bit que no es fijado puede ser 0 o 1)
+* Si fijamos los 3 primeros bits, obtendremos 8 subconjuntos
+* Dicho todo esto, si tenemos n bits y fijamos los bits iniciales (los llamaremos k), entonces el número total de subconjuntos será 2^k, y el tamaño de cada subconjunto 2^(n-k)
  
 
 -------------------
