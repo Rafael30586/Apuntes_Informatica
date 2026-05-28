@@ -3078,4 +3078,37 @@ Una benchmark muy popular que podés correr es de CIS (Center for Internet Secur
 Distributed Denial of Service (DDoS)
 
 ¿Qué es un ataque DDoS?
-Es un intento malicioso de interrumpir el tráfico normal al inundar un sitio web con grandes cantidades de tráfico falso  
+Es un intento malicioso de interrumpir el tráfico normal al inundar un sitio web con grandes cantidades de tráfico falso 
+
+---------------------
+AWS Shield
+
+Es un servicio de protección de DDoS gestionado que protege aplicaciones corriendo en AWS
+
+Cuando enrutás tu tráfico a través de Route53 o CloudFront estás usando AWS Shield Standard
+
+Te protege contra ataques de capas 3, 4 y 7 
+
+Hay dos planes para AWS Shield: Shield Standard (gratis) y Shield Advanced (3000 dólares al año)
+
+Shield Standard: 
+* protección contra ataques DDoS comunes
+* Acceder a herramientas y mejores prácticas para construir un arquitectura DDoS resiliente
+* Disponible automáticamente en todos los servicios AWS
+
+Shield advanced: 
+* protección adicional contra ataques más grandes y sofisticados
+* Disponible en:
+  - Amazon Route 53
+  - Amazon CloudFront
+  - Elastic Load Balancing
+  - AWS Global Accelerator
+  - Elastic IP (Amazon EC1 y Network Load Balancer)
+* Características notables:
+  - Visibilidad en informes en capas 3, 4 y 7
+  - Acceso a grupo y soporte (con soporte empresarial o de negocio)
+  - DDoS protección de costo
+  - Viene con SLA
+
+Ambos planes se integran con el firewall de aplicación web de AWS (WAF) para darte portección de capa 7
+	 
