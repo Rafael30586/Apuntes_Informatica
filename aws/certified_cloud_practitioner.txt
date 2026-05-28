@@ -3051,3 +3051,7 @@ Actividades prohibidas:
 
 Para otros eventos simulados vas a necesitar enviar una solicitud a AWS. Una respuesta podría tomar hasta 7 días
 	 
+---------------------
+AWS Artifact
+
+Es un portal de autoservicio para acceso bajo demanda a informes de cumplimiento de AWS
