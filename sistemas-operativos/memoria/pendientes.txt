@@ -3,3 +3,5 @@ pagefiles y swapfiles
 page y segment
 segment table y page table
 logical memory vs phisical memory
+Word
+bitwise left shift operation

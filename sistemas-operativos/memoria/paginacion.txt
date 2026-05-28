@@ -35,3 +35,49 @@ Características importantes de la paginación
 * Entradas de page table: Cada página lógica está representada por una page table entry (PTE). Una PTE almacena el número de marco correspondiente y bits de control
 * Número de entradas de page table: La page table tiene una entrada por cada página lógica. Así, su tamaño iguala el número de páginas en el address space del proceso
 * Page table almacenado en la memoria principal: La page table es mantenida en la memoria principal. Esto puede añadir sobrecarga cuando los procesos son sacados o ingresados 
+
+----------------
+Funcionamiento de la paginación
+
+Cuando un proceso solicita memoria, el sistema operativo asigna uno o más "page frames" al proceso y mapea las páginas lógicas del proceso a las "pages frames" físicas. Cuando un programa corre, sus páginas son cargadas en marcos disponibles en la memoria física.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250109113209275879/paging.webp
+
+Cada programa tiene un page table, que el sistema operativo usa para rastrear a donde cada página es almacenada en memoria física. Cuando un programa accede a datos, el sistema usa esta tabla para convertir la dirección del programa a una dirección de memoria física
+
+Pasos involucrados en la paginación:
+* Paso 1, dividir la memoria: lógica -> páginas , física -> marcos (frames)
+* Paso 2, asignar páginas: cargar páginas a marcos disponibles
+* Paso 3, page table: mapear páginas lógicas a marcos físicos
+* Paso 4, traducir dirección: convertir dirección lógica a dirección física
+* Paso 5, Encargarse de fallas de página: cargar páginas faltantes del disco
+* Paso 6, Correr programa: el CPU usa la page table durante la ejecución 
+
+Si el address space lógico = 128 M palabras (words) = 128 x 2^20 = 2^7 x 2^20 = 2^27 palabras
+Entonces la dirección lógica = log2(2^27) = 27 bits
+Si el address space físico = 16 M palabras = 16 x 2^20 = 2^4 x 2^20 = 2^24 palabras
+Entonces la dirección física = log2(2^24) = 24 bits
+
+El mapeo de dirección virtual a física lo hace la MMU, que es un dispositivo de hardware y este mapeo es conocido como la técnica de paginación
+* El address space físico se divide conceptualmente en un número de bloques de tamaño fijo, llamados marcos
+* El address space lógico también es partido en bloques de tamaño fijo, llamados páginas
+* Tamaño de página = tamaño de marco
+
+Ejemplo
+* Dirección física = 12 bits, entonces el address space físico = 4 K palabras
+* Dirección lógica = 13 bits, entonces el address space lógico = 8 K palabras
+* Tamaño de página = tamaño de marco = 1 K palabras (suposición)
+
+Número de marcos = address space físico / tamaño de marco = 4K / 1K = 4 = 2^2
+Número de páginas = address space lógico / tamaño de página = 8K / 1K = 2^3
+
+La dirección generada por el CPU se divide en:
+1. Número de página(p): Número de bits requeridos para representar las páginas address space lógico o número de página
+2. Offset de página(d): Número de bits requeridos para representar una palabra particular en un página de address space lógico o número de palabra de una página u offset de página
+
+Una dirección física se divide en dos partes principales:
+1. Número de marco(f): número de bits requeridos para representar el marco address space físico o <no se entiende lo que dice>
+2. Offset del marco(d): Número de bits requeridos para representar una palabra particular en un marco o tamaño de marco de address space físico o número de palabra de un marco u offset de marco
+
+Dirección física = (número de marco << número de bits en el offset del marco) + offset del marco
+<< representa una operación bitwise left shift
