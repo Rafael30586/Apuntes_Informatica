@@ -61,4 +61,11 @@ En este ejemplo el array se llama saludos y almacena 3 funciones: saludo, saludo
 
 saludos[1](); 
  
+-----------------------
+Funciones callback
 
+Son funciones que son pasadas como argumento a otra función. En C, las funciones callback son implementadas usando punteros función. Por ejemplo:
+
+void ejecutarCallback(void (*callback)){
+  callback();
+}
