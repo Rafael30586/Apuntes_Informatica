@@ -29,3 +29,36 @@ Podemos crear punteros que apunten hacia otro puntero, por ejemplo:
 int numero = 10;
 int *puntero1 = &numero;
 int **puntero2 = &puntero1;
+
+-----------------------
+Existen en C los punteros función o function pointers que, en lugar de apuntar a una variable, apuntan a una función. Esto significa que almacena la dirección de una función, permitiéndote llamar a la función usando un puntero. Ejemplo:
+
+int (*puntero) (int ,int);
+
+En este caso estamos creando un puntero que guarda la dirección de memoria de una función que retorna un entero y tiene dos parámetros enteros. Podemos asignarle una función así:
+
+puntero = sumar;
+
+o
+
+puntero = &sumar;
+
+Siendo "sumar" una función que hemos creado. Para llamar a la función a través del puntero podemos hacer así:
+
+int suma = puntero(12,56);
+
+o
+
+int suma = (*puntero)(12,56);
+
+Nota: El nombre de una función en sí mismo apunta al comienzo de su código en memoria. Eso quiere decir que el nombre de una función actúa como un puntero; declarar un puntero función simplemente te da una variable que puede almacenar esa dirección.
+------------------
+En C se puede crear arrays de funciones, por ejemplo:
+
+void (*saludos[3])() = {saludo,saludo2,saludo3};
+
+En este ejemplo el array se llama saludos y almacena 3 funciones: saludo, saludo2 y saludo3. Para llamar, por ejemplo, a saludo2 a través del array se hace así:
+
+saludos[1](); 
+ 
+
