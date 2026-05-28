@@ -3072,4 +3072,10 @@ Podés llevar a cabo evaluaciones de red y de anfitrión
 * Correr una evaluación para tu objetivo de evaluación
 * Revisar tus hallazgos y remediar problemas de seguridad
 
-Una benchmark muy popular que podés correr es de CIS (Center for Internet Security) que tiene 699 revisaciones  
+Una benchmark muy popular que podés correr es de CIS (Center for Internet Security) que tiene 699 revisaciones
+
+------------------------
+Distributed Denial of Service (DDoS)
+
+¿Qué es un ataque DDoS?
+Es un intento malicioso de interrumpir el tráfico normal al inundar un sitio web con grandes cantidades de tráfico falso  
