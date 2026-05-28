@@ -3018,3 +3018,36 @@ Cualquier estado de USA o agencia local que quiera acceso a la base de datos CJI
 
 General Data Protection Regulation (GDPR)
 Una ley de privacidad europea. Impone nuevas reglas en compañías, agencias de gobierno, sin fines de lucro, y otras organizaciones que ofrecen bienes y servicios a gente en la unión europea, o que recolectan y analizan datos vinculados a residentes de la unión europea  	 	
+
+------------------------
+Prueba de penetración (penetration testing)
+
+¿Qué es el penetration testing o pen testing?
+Es un ciberataque simulado autorizado en una computadora, llevado a cabo para evaluar la seguridad del sistema
+
+El pen testing está permitido en AWS
+
+Los servicios permitidos son:
+* Instancias EC2
+* NAT gateways
+* Elastic Load Balancers
+* Amazon RDS
+* Amazon CloudFront
+* Amazon Aurora
+* Amazon API Gateways
+* AWS Lambda y funciones Lambda Edge
+* Recursos Amazon Lightsail
+* Entornos de Amazon Elastic Beanstalk
+
+Actividades prohibidas:
+* DNS zone walking vía zonas alojadas de Amazon route 53
+* Sujetos a políticas de prueba de simulación DDOS
+  - Denial of service (DoS)
+  - Distributed Denial of Service (DDoS)
+  - DoS simulado, DDoS simulado
+* Port flooding
+* Protocol flooding
+* Request flooding (login request flooding, API request flooding)
+
+Para otros eventos simulados vas a necesitar enviar una solicitud a AWS. Una respuesta podría tomar hasta 7 días
+	 
