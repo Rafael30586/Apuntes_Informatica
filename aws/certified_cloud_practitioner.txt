@@ -3051,7 +3051,25 @@ Actividades prohibidas:
 
 Para otros eventos simulados vas a necesitar enviar una solicitud a AWS. Una respuesta podría tomar hasta 7 días
 	 
----------------------
+---------------------------
 AWS Artifact
 
 Es un portal de autoservicio para acceso bajo demanda a informes de cumplimiento de AWS
+
+---------------------------
+AWS Inspector
+
+¿Qué es Hardening?
+Es el acto de eliminar tantos riesgos de seguridad como sea posible. Hardening es común para máquinas virtuales donde ejecutás una colección de revisaciones de seguridad conocido como una "security benchmark"
+
+AWS Inspector corre una "security benchmark" contra instancias EC2 específicas
+
+Podés ejecutar una variedad de security benchmarks
+
+Podés llevar a cabo evaluaciones de red y de anfitrión
+
+* Instalar el agente AWS en tus instancias EC2
+* Correr una evaluación para tu objetivo de evaluación
+* Revisar tus hallazgos y remediar problemas de seguridad
+
+Una benchmark muy popular que podés correr es de CIS (Center for Internet Security) que tiene 699 revisaciones  
