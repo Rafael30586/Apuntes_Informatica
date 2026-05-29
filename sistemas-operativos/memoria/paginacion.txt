@@ -1,4 +1,4 @@
-https://www.geeksforgeeks.org/operating-systems/paging-in-operating-system/
+	
 
 Paginación 
 
@@ -81,3 +81,14 @@ Una dirección física se divide en dos partes principales:
 
 Dirección física = (número de marco << número de bits en el offset del marco) + offset del marco
 << representa una operación bitwise left shift
+
+-------------------------
+Implementación de paginación con hardware
+
+La implementación con hardware de la page table puede hacerse usando registros dedicados. Pero el uso del registro para la page table es satisfactorio solo si la page table es pequeña. Si la page table contiene un número grande de entradas entonces podemos usar TLB (translation look-aside buffer), una caché de hardware especial, pequeña y de rápida búsqueda
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250905173215055621/page_table_tlb.webp
+
+* El TLB es asociativo, memoria a alta velocidad
+* Cada entrada en TLB consiste en dos partes: una etiqueta y un valor
+* Cuando esta memoria es usada, entonces un item es comparado con todas las etiquetas simultáneamente. Si el item es encontrado, entonces el valor correspondiente es retornado
