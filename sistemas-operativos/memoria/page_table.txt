@@ -1,1 +1,10 @@
 https://www.tutorialspoint.com/operating_system/os_page_table.htm
+
+¿Qué es una page table?
+
+Una page table es una estructura de datos dentro del sistema operativo que mapea direcciones lógicas y direcciones físicas. Almacena otra información sobre cada página, como si está en memoria o en disco, si es de solo lectura o de lectura y escritura, y así sucesivamente. Esta información ayudará al sistema operativo a encontrar fácilmente la ubicación de una página en la memoria principal cuando se la necesite. La siguiente imagen muestra la estructura y entradas de una page table simple: 
+
+https://www.tutorialspoint.com/operating_system/images/page_table.jpg
+
+El propósito principal de una page table es el de rastrear el mapeo entre direcciones lógicas usadas por un programa y las direcciones físicas en la memoria de la computadora. Cuando un programa trata de acceder a una ubicación de memoria en la RAM, el CPU primero revisa la page table para ver el mapeo almacenado para la correspondiente dirección lógica. Si la página ya está en memoria, el CPU puede acceder directamente a ella.
+Una falla de página ocurrirá si la página no está en memoria. En tales casos, el sistema operativo necesita cargar la página del disco a la memoria y luego actualizar la page table
