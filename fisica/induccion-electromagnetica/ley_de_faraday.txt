@@ -1,0 +1,7 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 478
+
+Ley de Faraday
+
+La inducción electromagnética se resume en la ley de Faraday, que establece que: el voltaje inducido en una bobina es proporcional al producto del número de vueltas de la bobina por la rapidez con la que el campo magnético cambia dentro de esas vueltas.
+La cantidad de corriente producida por la inducción electromagnética no solo depende del voltaje inducido, sino también de la resistencia de la bobina y del circuito con el que está conectada. Por ejemplo, podemos introducir y sacar un imán en una espira cerrada de caucho, e introducirlo y sacarlo en una espira cerrada de cobre. El voltaje inducido en cada caso es igual, siempre que las espiras tengan el mismo tamaño y el imán se mueva con la misma rapidez. Pero la corriente en cada caso es muy distinta. Los electrones en el caucho sienten el mismo campo eléctrico que los del cobre, pero su enlace con los átomos fijos evitan el movimiento de cargas que sucede con tanta libertad en el cobre
+Hemos descrito dos formas en las que se puede inducir voltaje en una espira de alambre: moviendo la espira cerca del imán, o moviendo un imán cerca de la espira. Hay una tercera forma: cambiar la corriente en una espira cercana. En los tres casos se da el mismo ingrediente esencial: cambiar el campo magnético en la espira
