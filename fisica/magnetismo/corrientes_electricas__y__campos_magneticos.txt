@@ -1,0 +1,6 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 464
+
+Corrientes eléctricas y campos magnéticos
+
+Como una carga en movimiento produce un campo magnético, una corriente de cargas también produce un campo magnético. El campo magnético que rodea un alambre que conduce corriente se puede visualizar colocando una serie de brújulas en torno a un conductor y haciendo pasar por él una corriente. Las brújulas se alinean con el campo magnético producido por la corriente, y muestran que el campo tiene un patrón de círculos concéntricos en torno al alambre. Cuando la corriente cambia de dirección, las brújulas se voltean, indicando que cambia también la dirección del campo magnético.
+Si el alambre se curva y forma una espira, las líneas de campo magnético se concentran en el interior de ella. Si se forma otra espira más a continuación de la primera, se duplica la concentración de líneas de campo magnético. Entonces, la intensidad del campo magnético en esta región aumenta conforme se incrementa la cantidad de espiras. La intensidad del campo magnético es apreciable cuando se forma una bobina, es decir, cuando se juntan muchas vueltas de un conductor con corriente.  
