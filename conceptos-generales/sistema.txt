@@ -1,0 +1,11 @@
+https://aotgu.eco.catedras.unc.edu.ar/sistemas-de-organizacion-y-contexto/un-sistema-abierto/que-entendemos-por-sistema/
+
+¿Qué entendemos por sistema?
+
+Un sistema es un conjunto de partes o elementos (subsistemas) relacionados entre sí mediante una cadena de actividades que buscan alcanzar un objetivo planteado. Reciben entradas del medio en forma de datos, energía, información, y proveen salidas al entorno en carácter de información, materia, etc. De esta manera, los elementos que caracterizan a los sistemas son:
+1. Un conjunto de elementos, partes u órganos componentes del sistema, esto es, subsistemas
+2. Los elementos se interrelacionan de manera dinámica, hay interacción e interdependencia; forman una red de comunicación y relaciones en función de su dependencia recíproca
+3. Desarrollan una actividad o función; operación, actividad o proceso del sistema
+4. Con el fin de lograr uno o más objetivos o propósitos que constituyen la finalidad para la que fue creado el sistema
+
+De la naturaleza de la organización como sistema abierto nos interesa estudiar, además, sus parámetros: entrada, salida, procesamiento, retroalimentación y ambiente.  
