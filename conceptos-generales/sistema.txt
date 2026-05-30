@@ -8,4 +8,15 @@ Un sistema es un conjunto de partes o elementos (subsistemas) relacionados entre
 3. Desarrollan una actividad o función; operación, actividad o proceso del sistema
 4. Con el fin de lograr uno o más objetivos o propósitos que constituyen la finalidad para la que fue creado el sistema
 
-De la naturaleza de la organización como sistema abierto nos interesa estudiar, además, sus parámetros: entrada, salida, procesamiento, retroalimentación y ambiente.  
+De la naturaleza de la organización como sistema abierto nos interesa estudiar, además, sus parámetros: entrada, salida, procesamiento, retroalimentación y ambiente.
+
+----------------------------------
+Imaginemos un hospital como ejemplo
+
+¿Cuáles serían las entradas o los inputs? Todos los insumos y materiales que el hospital compra para realizar o continuar con su normal operatoria
+Si lo vemos como proceso productivo, de un servicio, ¿Cuáles serían las entradas? el principal componente al sistema productivo del hospital es el paciente, propiamente dicho
+¿A qué se le llamaría operación o procesamiento? la atención con el médico especialista, los estudios que el paciente debería realizarse, etc; forman parte del proceso de procesamiento
+¿Cuál es el output o salida? la salida del sistema es el paciente en un nuevo estado, es decir, con un diagnóstico dado de su enfermedad y/o curado y/o con tratamientos a seguir
+¿Dónde puede visualizarse el concepto de retroalimentación? en cada una de las partes del proceso. Cada estudio que se va realizando  vuelve al sistema en forma de información. Una vez que se estudian los resultados, se toman nuevas decisiones, por ejemplo, la realización de otros estudios, el consumo de alguna modificación  específica o un cambio de tratamiento
+
+Siguiendo el ejemplo, es posible observar que los estudios solicitados al paciente involucran a distintos subsistemas del sistema total (laboratorio, diagnóstico por imágenes, traumatología, clínica médica, etc) y que el análisis de cada uno de ellos también evoca al concepto de sistema abierto. Por ejemplo, en el sistema de diagnóstico por imágenes, tenemos una entrada (el pedido del médico y el paciente), un procesamiento (el estudio propiamente dicho), salidas (la información suministrada por el informe del médico del estudio realizado), y feedback (los comentarios del médico de cabecera con el radiólogo)   
