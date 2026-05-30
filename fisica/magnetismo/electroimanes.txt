@@ -1,0 +1,6 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 465
+
+Electroimanes
+
+Una bobina de alambre que conduce corriente es un electroimán. La intensidad de un electroimán aumenta tan solo con aumentar la corriente que pasa por la bobina. Los electroimanes industriales adquieren mayor intensidad cuando en el interior de la bobina hay una pieza de hierro. Los dominios magnéticos en el hierro son inducidos a alinearse y aumentan el campo. Para los electroimanes extremadamente poderosos, como los que se usan para controlar haces de partículas cargadas en los aceleradores de altas energías no se usa el hierro, porque a partir de cierto momento, todos sus dominios quedan alineados y ya no aumenta la intensidad. 
+Los electroimanes con la potencia suficiente para levantar automóviles se ven con frecuencia en los depósitos de chatarra. La intensidad de esos electroimanes se limita por el calentamiento de las bobinas conductoras de corriente (por su resistencia eléctrica) y por la saturación del alineamiento de los dominios en el núcleo. Los imanes más poderosos, sin núcleo de hierro, usan bobinas superconductoras a través de las cuales fluye con facilidad una corriente eléctrica muy grande 
