@@ -1,0 +1,5 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 466
+
+Fuerza magnética sobre partículas con carga en movimiento
+
+Una partícula cargada en reposo no interacciona con un campo magnético estático. Pero si la partícula cargada se mueve en un campo magnético, se hace evidente el carácter magnético de una carga en movimiento. Sufre una fuerza desviadora. La fuerza es máxima cuando la partícula se mueve en dirección perpendicular a la de las líneas del campo magnético. Con otros ángulos, la fuerza disminuye y se vuelve cero cuando las partículas se mueven paralelas a las líneas del campo. En cualquier caso, la dirección de la fuerza siempre es perpendicular a las líneas del campo magnético y a la velocidad de la partícula cargada. Así, una carga en movimiento se desvía cuando cruza un campo magnético, pero no se desvía cuando viaja en dirección paralela al campo.
