@@ -1,0 +1,7 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 467
+
+Fuerza magnética sobre conductores con corriente eléctrica
+
+La simple lógica indica que si una partìcula cargada que se mueve a través de un campo magnètico està sometida a una fuerza desviadora, entonces una corriente de partículas cargadas que se mueve a través de un campo magnètico también siente una fuerza desviadora. Si las partículas están en un conductor, cuando responden a la fuerza desviadora, el alambre también será empujado.
+Si se invierte la dirección de la corriente, la fuerza desviadora actúa en dirección contraria. La fuerza es máxima cuando la corriente es perpendicular a las líneas del campo magnètico. La dirección de la fuerza no es a lo largo de las líneas de campo magnètico, ni a lo largo de la dirección de la corriente. La fuerza es perpendicular tanto a las lìneas de campo como a la corriente. Es una fuerza lateral.
+Vemos que así como un conductor con corriente desvía una brújula, un imán desviará a un conductor con corriente eléctrica. El descubrimiento de tales relaciones complementarias entre la electricidad y el magnetismo causó gran excitación, porque casi de inmediato las personas comenzaron a dominar la fuerza electromagnética para fines útiles, con grandes sensibilidades en los medidores eléctricos y con grandes fuerzas en los motores eléctricos.
