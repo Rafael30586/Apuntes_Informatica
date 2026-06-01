@@ -1,0 +1,15 @@
+https://www.geeksforgeeks.org/java/web-container-and-web-application-project-setup-in-java/G
+
+Contenedor web y configuración de proyecto de aplicación web en java
+
+Un contenedor web es un componente de un servidor web que interactúa con los servlets de java. Este procesa las solicitudes al servlet solicitado mientras se revisa los derechos de acceso requeridos de la URL
+
+https://media.geeksforgeeks.org/wp-content/uploads/20230927232242/Web-Container.png
+
+El funcionamiento es como sigue:
+1. El cliente web solicita una URL al servidor web
+2. El contenedor web en el servidor la mapea al servlet solicitado
+3. El servlet carga los métodos y funciones
+4. El servlet procesa la respuesta al contenedor, quien finalmente alcanza al cliente a través del servidor
+
+  
