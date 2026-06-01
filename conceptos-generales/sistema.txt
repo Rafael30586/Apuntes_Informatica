@@ -1,5 +1,7 @@
 https://aotgu.eco.catedras.unc.edu.ar/sistemas-de-organizacion-y-contexto/un-sistema-abierto/que-entendemos-por-sistema/
 
+https://aotgu.eco.catedras.unc.edu.ar/sistemas-de-organizacion-y-contexto/un-sistema-abierto/propiedades-de-los-sistemas/
+
 ¿Qué entendemos por sistema?
 
 Un sistema es un conjunto de partes o elementos (subsistemas) relacionados entre sí mediante una cadena de actividades que buscan alcanzar un objetivo planteado. Reciben entradas del medio en forma de datos, energía, información, y proveen salidas al entorno en carácter de información, materia, etc. De esta manera, los elementos que caracterizan a los sistemas son:
@@ -19,4 +21,8 @@ Si lo vemos como proceso productivo, de un servicio, ¿Cuáles serían las entra
 ¿Cuál es el output o salida? la salida del sistema es el paciente en un nuevo estado, es decir, con un diagnóstico dado de su enfermedad y/o curado y/o con tratamientos a seguir
 ¿Dónde puede visualizarse el concepto de retroalimentación? en cada una de las partes del proceso. Cada estudio que se va realizando  vuelve al sistema en forma de información. Una vez que se estudian los resultados, se toman nuevas decisiones, por ejemplo, la realización de otros estudios, el consumo de alguna modificación  específica o un cambio de tratamiento
 
-Siguiendo el ejemplo, es posible observar que los estudios solicitados al paciente involucran a distintos subsistemas del sistema total (laboratorio, diagnóstico por imágenes, traumatología, clínica médica, etc) y que el análisis de cada uno de ellos también evoca al concepto de sistema abierto. Por ejemplo, en el sistema de diagnóstico por imágenes, tenemos una entrada (el pedido del médico y el paciente), un procesamiento (el estudio propiamente dicho), salidas (la información suministrada por el informe del médico del estudio realizado), y feedback (los comentarios del médico de cabecera con el radiólogo)   
+Siguiendo el ejemplo, es posible observar que los estudios solicitados al paciente involucran a distintos subsistemas del sistema total (laboratorio, diagnóstico por imágenes, traumatología, clínica médica, etc) y que el análisis de cada uno de ellos también evoca al concepto de sistema abierto. Por ejemplo, en el sistema de diagnóstico por imágenes, tenemos una entrada (el pedido del médico y el paciente), un procesamiento (el estudio propiamente dicho), salidas (la información suministrada por el informe del médico del estudio realizado), y feedback (los comentarios del médico de cabecera con el radiólogo)
+
+_______________________________________
+Seguir resumiendo con el segundo enlace
+_______________________________________   

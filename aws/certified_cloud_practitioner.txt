@@ -3159,6 +3159,11 @@ AWS site-to-site VPN: conecta de manera segura una red on-premise o "Branch offi
 AWS Client VPN: conecta usuarios de manera segura a AWS o redes on-premise
 
 ¿Qué es IPSec?
-Es un conjunto de protocolos seguro de red que autentica y encripta paquetes de datos para proveer comunicación encriptada y segura entre dos computadoras a lo largo de la red de protocolos de internet. Se usa en VPNs  
+Es un conjunto de protocolos seguro de red que autentica y encripta paquetes de datos para proveer comunicación encriptada y segura entre dos computadoras a lo largo de la red de protocolos de internet. Se usa en VPNs
+
+-------------------
+AWS WAF
+
+AWS Web Application Firewall (WAF) protege tus aplicaciones web de explotaciones web comunes  
  	
 	 

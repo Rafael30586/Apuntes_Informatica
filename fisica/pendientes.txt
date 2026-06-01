@@ -8,3 +8,5 @@ Superficie equipotencial
 energía potencial
 condensador
 diodo
+bobina
+espira

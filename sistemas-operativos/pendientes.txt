@@ -29,3 +29,4 @@ Big endian vs Little endian
 profundizar en datagram socket vs stream socket
 Windows services
 thrashing
+preemtive y non-preemptive

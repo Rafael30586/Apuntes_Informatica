@@ -8,3 +8,34 @@ https://www.tutorialspoint.com/operating_system/images/page_table.jpg
 
 El propósito principal de una page table es el de rastrear el mapeo entre direcciones lógicas usadas por un programa y las direcciones físicas en la memoria de la computadora. Cuando un programa trata de acceder a una ubicación de memoria en la RAM, el CPU primero revisa la page table para ver el mapeo almacenado para la correspondiente dirección lógica. Si la página ya está en memoria, el CPU puede acceder directamente a ella.
 Una falla de página ocurrirá si la página no está en memoria. En tales casos, el sistema operativo necesita cargar la página del disco a la memoria y luego actualizar la page table
+
+------------------------
+Datos almacenados en page table
+
+La page table almacena información importante sobre cada página en la memoria virtual. Esto ayudará al sistema operativo a gestionar la memoria eficientemente. Lo que sigue son los datos clave almacenados en una page table:
+
+1. Número de marco: el número de marco se usa para identificar la ubicación física de una página en la RAM. Por cada página en la memoria virtual, hay un correspondiente marco (frame) en la memoria principal. La page table almacena el número de marco para cada página, lo que ayuda al sistema operativo a localizar la página en RAM cuando se la necesita.
+El número de bits requeridos para cada número de marco puede ser calculado usando la fórmula:
+
+número de marcos = tamaño de la memoria física / tamaño de marco
+
+número de bits por número de marco = log2(número de marcos)
+
+Por ejemplo, si el tamaño de la memoria física es 64 MB y el tamaño de marco es de 4 KB, entonces el número de marcos será 16384. Por lo tanto, el número de bits requeridos por cada número de marco será 14
+
+2. Bit válido/inválido: El bit válido/inválido se usa para indicar si una página está actualmente cargada en la memoria física o no. Si el bit es establecido como válido (1), significa que la página está en memoria y puede ser accedida. Si el bit está como inválido (0), significa que la página no está en memoria. El bit se usa para revisar si el fallo de página ocurrirá o no. Lo que significa que si un programa trata de acceder a una página que está marcada como inválida, entonces el fallo de página ocurrirá
+
+3. Bits de protección: Los bits de protección se usan para describir los permisos de acceso para una página. Estos bits determinan si una página puede ser leída, escrita o ejecutada por un programa. Bits de protección comunes incluyen:
+* Lectura (R) - indica que la página puede ser leída
+* Escritura (W) - indica que se puede escribir en la página
+* Ejecución (X) - indica que la página puede ser ejecutada como código
+
+Estos bits previenen de acceso no autorizado de páginas de memoria por diferentes procesos. Por ejemplo, un página que contenga código no debería ser escribible, y una página conteniendo datos no debería ser ejecutable
+
+4. Bit de referencia: el bit de referencia se usa por algoritmos de reemplazo de página para rastrear si una página ha sido accedida recientemente. Cuando una página es accedida, el bit de referencia se establece en 1. Esta información ayuda al sistema operativo y los algoritmos de reemplazo de página a tomar decisiones sobre que páginas reemplazar cuando un error de página ocurre. Las páginas que han sido accedidas recientemente (con el bit de referencia en 1) son menos propensas a ser reemplazadas comparadas con las páginas que no han sido accedidas recientemente (con el bit de referencia en 0)
+
+5. Bit de chaché: El bit de caché se usa para indicar si una página puede ser cacheada en la caché del CPU o no
+* Si el bit de caché está en 1 --> la página puede ser cacheada
+* Si el bit de caché está en 0 --> la página no puede ser cacheada
+
+Este bit es importante para optimización de rendimiento. Las páginas que son accedidas frecuentemente  

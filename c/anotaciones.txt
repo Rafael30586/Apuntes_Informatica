@@ -8,3 +8,13 @@ Uniones o unions
 Son muy parecidas a las estructuras en el sentido de que pueden almacenar miembros de diferentes datos, pero hay algunas diferencias:
 * E una estructura, cada miembro tiene si propia memoria
 * En una unión, todos los miembros comparten la misma memoria, lo que significa que podés utilizar uno de los valores a la vez
+
+-------------------------
+Cuando creamos estructuras en C, el compilador podrá añadir bytes extra de padding entre los miembros
+Esto se hace para hacer que el programa ejecute más rápido en la computadora, porque la mayoría de los CPUs leen datos más eficientemente si están alineados apropiadamente en memoria
+Rara vez debemos preocuparnos por esto a menos que trabajemos con memoria de bajo nivel o formateo de archivos
+Padding significa que el compilador a veces añade espacios vacíos dentro de la estructura para mayor velocidad
+
+______________________________________________
+Seguir resumiendo sobre padding en estructuras
+______________________________________________
