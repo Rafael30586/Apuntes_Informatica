@@ -3148,5 +3148,17 @@ Macie tiene una veriedad de alertas
 * Acceso sospechoso
 
 Macie identificará tus usuarios con mayor riesgo que podrían llevar a un compromiso (compromise)
+
+----------------------
+AWS VPN
+
+AWS VPN te permite establecer un túnel privado y seguro desde tu red o dispositivo hasta la red global de AWS
+
+AWS site-to-site VPN: conecta de manera segura una red on-premise o "Branch office site" a VPC
+
+AWS Client VPN: conecta usuarios de manera segura a AWS o redes on-premise
+
+¿Qué es IPSec?
+Es un conjunto de protocolos seguro de red que autentica y encripta paquetes de datos para proveer comunicación encriptada y segura entre dos computadoras a lo largo de la red de protocolos de internet. Se usa en VPNs  
  	
 	 
