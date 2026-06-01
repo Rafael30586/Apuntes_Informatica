@@ -4,3 +4,5 @@ https://medium.com/@newbie42/what-is-web-container-application-server-and-web-se
 
 Servlet: es cualquier clase de java que pueda aceptar una solicitud, procesarla y devolver una respuesta. Los servlets son clases de java ejecutadas en el servidor y se usan para generar páginas web dinámicas. Todos los servlets se registran a sí mismos con contenedores servlet
 
+Servlet/Contenedor web: Una parte del servidor web es responsable de gestionar todos los servlets en el sistema. Ejemplo: Tomcat, Grizzly o Jetty. En el inicio del sistema, el contenedor de servlet crea un objeto de ServletContext. El rol de este objeto es recordar todos los servlets, filtros y escuchadores asociados con la aplicación web. El ServletContext vive mientras el contenedor esté activo
+En cada nueva solicitud del cliente, el contenedor de servlets crea nuevos objetos HttpServletRequest y HttpServletResponse y los pasa al método service() del servlet 
