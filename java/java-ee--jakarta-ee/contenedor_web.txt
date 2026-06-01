@@ -12,4 +12,9 @@ El funcionamiento es como sigue:
 3. El servlet carga los métodos y funciones
 4. El servlet procesa la respuesta al contenedor, quien finalmente alcanza al cliente a través del servidor
 
+--------------------------
+Contenedor Tomcat
+
+Tomcat es un contenedor de servlets de código abierto que incorpora varias APIs y especificaciones java. Envía y recibe datos a través del servidor. ¿Pero que pasa si necesitamos un sitio dinámico que haga uso de datos dinámicos? entonces necesitamos una adición de servlets a HTTP. Esta integración de HTTP y servlets java constituye Tomcat
+
   
