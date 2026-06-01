@@ -2,3 +2,9 @@ Puntero: es una variable que almacena la dirección de memoria de otra variable
 
 En c, el nombre de un array es un puntero al primer elemento del array
 
+------------------------------
+Uniones o unions
+ 
+Son muy parecidas a las estructuras en el sentido de que pueden almacenar miembros de diferentes datos, pero hay algunas diferencias:
+* E una estructura, cada miembro tiene si propia memoria
+* En una unión, todos los miembros comparten la misma memoria, lo que significa que podés utilizar uno de los valores a la vez

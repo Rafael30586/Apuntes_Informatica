@@ -69,3 +69,13 @@ Son funciones que son pasadas como argumento a otra función. En C, las funcione
 void ejecutarCallback(void (*callback)){
   callback();
 }
+
+---------------------
+typedef
+
+La palabra typedef te permite crear un nuevo nombre (como un alias) para un tipo ya existente. Esto puede hacer que declaraciones complejas sean más fáciles de leer, y tu código más fácil de mantener. Por ejemplo, en lugar de siempre escribir float, podemos crear un nuevo tipo llamado "temperatura" para hacer al código más claro. También se puede usar con estructuras, por ejemplo:
+
+typedef struct {
+  char brand[30];
+  int year;
+} Car;
