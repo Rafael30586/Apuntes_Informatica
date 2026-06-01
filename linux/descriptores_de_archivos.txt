@@ -17,4 +17,14 @@ Todo proceso tiene normalmente 3 descriptores de archivos que se abren por defec
 Cuando un proceso abre un archivo (recordá que todo en Unix es un archivo, incluyendo dispositivos como la terminal, sockets, pipes, etc), el kernel le asigna un descriptor de archivos. El descriptor de archivos en un valor entero que identifica de manera única al archivo para el proceso
 Internamente, el kernel mantiene una tabla de descriptores de archivos para cada proceso. Esta tabla se llama tabla de descriptores de archivos. Cada entrada en la tabla contiene información sobre el archivo, como el file offset, las banderas de estado del archivo, etc
 Cuando un proceso abre un archivo, el kernel retorna el descriptor de archivo más bajo disponible. Esto significa que el primer archivo abierto por un proceso tendrá el descriptor de archivo 3, el segundo tendrá descriptor de archivo 4, y así sucesivamente 
+Vemos el siguiente programa escrito en C:
+
+#include<stdio.h>
+int main(){
+  fprintf(stdout, "Estoy escribiendo en stdout\n");
+  fprintf(stderr, "Estoy escribiendo en stderr\n");
+}
+
+Si compilamos este programa y lo ejecutamos, imprime ambos mensajes en la terminal, ¿pero por qué será?
+
 
