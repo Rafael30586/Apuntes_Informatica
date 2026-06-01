@@ -27,4 +27,10 @@ int main(){
 
 Si compilamos este programa y lo ejecutamos, imprime ambos mensajes en la terminal, ¿pero por qué será?
 
+---------------------------
+Inspeccionando los inspectores de archivos para un proceso
 
+Para inspeccionar los descriptores de archivos para un proceso, podemos usar el sistema de archivos /proc. Este sistema de archivos es un sistema de archivos virtual que provee información sobre el sistema y los procesos corriendo en él. Está usualmente montado en  /proc
+Contiene un directorio para cada proceso corriendo en el sistema. El nombre del directorio es el ID del proceso. Por ejemplo, el directorio para el proceso actual es /proc/self
+Cada directorio contiene un montón de información sobre el proceso, pero nos interesa el directorio fd. Este directorio contiene un symlink o enlace simbólico para cada descriptor de archivos abierto por un proceso. El nombre del enlace simbólico es el número del descriptor de archivos y el objetivo es el descriptor de archivo al que está apuntando 
+El bash tiene 3 descriptores de archivos abiertos por defecto: 0, 1 y 2. Todos ellos están apuntando al mismo archivo. Este es la terminal donde el proceso está corriendo
