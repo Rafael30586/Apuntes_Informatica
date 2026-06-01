@@ -9,4 +9,5 @@ Realizar inserciones de registros en una base de datos en un proyecto web dinám
 Probar de usar JavaScript y CSS en páginas web dinámicas
 Preguntar a chatGPT sobre cómo hacer que una aplicación desarrollada con jakarta produzca respuestas HTTP con un body que sea un json
 EAR
-Cambiar el orden de los filtrops y servlets en el archivo web.xml para ver si los filtros se ejecutan en el orden que corresponde
+// Cambiar el orden de los filtros y servlets en el archivo web.xml para ver si los filtros se ejecutan en el orden que corresponde
+// EJB
