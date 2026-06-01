@@ -11,4 +11,6 @@ Servidor de aplicación: Un contenedor web como Apache Tomcat o jetty implementa
 Con frameworks de java livianos como spring y hibernate, no necesitamos un servidor de aplicaciones completo. Un contenedor web como Tomcat puede ser usado en su lugar con solo agregar los jars de bibliotecas requeridos al classpath
 
 Servidor Web/HTTP: un servidor web es software que ayuda a entregar contenido web (páginas web) a los clientes (por ejemplo, navegadores web) a través de internet usando el protocolo HTTP. Un servidor HTTP puede encargarse solo de archivos HTML y no puede ejecutar servlets o JSP. Ejemplos: Apache HTTP server, NGINX
+
+Diferencia entre contenedor servlet/web, servidor de aplicación y servidor web/HTTP: un servidor HTTP puede manejar solamente archivos HTML. Un contenedor web o contenedor de servlet puede manejar servlets y JSPs. Un servidor de aplicación contiene un contenedor web y un contenedor EJB y puede manejar servlets, JSPs y EJBs. Los EJBs solo pueden ser desplegados en servidores de aplicación, pero no en contenedores web. Spring y hibernate son alternativas livianas a EJBs y pueden ser desplegados en un contenedor web
 	 
