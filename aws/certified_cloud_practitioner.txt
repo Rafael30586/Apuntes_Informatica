@@ -3110,5 +3110,18 @@ Shield advanced:
   - DDoS protección de costo
   - Viene con SLA
 
-Ambos planes se integran con el firewall de aplicación web de AWS (WAF) para darte portección de capa 7
+Ambos planes se integran con el firewall de aplicación web de AWS (WAF) para darte protección de capa 7
+
+------------------------
+AWS Guard Duty
+
+¿Qué es IDS/IPS?
+Sistema de detección de intrusión y sistema de protección contra intrusión. Un dispositivo o aplicación de software que monitorea una red o sistema por actividad maliciosa o violaciones de políticas
+
+Guard Duty: es un servicio de detección de amenazas que monitorea continuamente por actividades maliciosas o sospechosas y comportamiento no autorizado. Usa Machine learning para analizar los siguientes registros (logs) de AWS:
+* CloudTrail Logs
+* VPC Flow Logs
+* DNS logs
+
+Te va a avisar sobre hallazgos que podés automatizar una respuesta a incidente vía eventos de CloudWatch con servicios de terceros	
 	 
