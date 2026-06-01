@@ -8,5 +8,7 @@ Servlet/Contenedor web: Una parte del servidor web es responsable de gestionar t
 En cada nueva solicitud del cliente, el contenedor de servlets crea nuevos objetos HttpServletRequest y HttpServletResponse y los pasa al método service() del servlet
 
 Servidor de aplicación: Un contenedor web como Apache Tomcat o jetty implementa la especificación de JSP y servlet de java EE. No implementa especificaciones EJB. Por eso no podemos desplegar y ejecutar aplicaciones EJB en un contendor de servlet. En su lugar, necesitamos un servidor de aplicaciones completo. Un servidor de aplicaciones contiene un contenedor EJB así como también un contenedor de servlet e implementa todas las especificaciones requeridas de java EE. Por ejemplo: Glassfish application server.
-Con frameworks de java livianos como spring y hibernate, no necesitamos un servidor de aplicaciones completo.
+Con frameworks de java livianos como spring y hibernate, no necesitamos un servidor de aplicaciones completo. Un contenedor web como Tomcat puede ser usado en su lugar con solo agregar los jars de bibliotecas requeridos al classpath
+
+Servidor Web/HTTP: un servidor web es software que ayuda a entregar contenido web (páginas web) a los clientes (por ejemplo, navegadores web) a través de internet usando el protocolo HTTP. Un servidor HTTP puede encargarse solo de archivos HTML y no puede ejecutar servlets o JSP. Ejemplos: Apache HTTP server, NGINX
 	 
