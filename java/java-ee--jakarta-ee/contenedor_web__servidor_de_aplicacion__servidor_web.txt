@@ -1,0 +1,6 @@
+https://medium.com/@newbie42/what-is-web-container-application-server-and-web-server-83c537d8c50
+
+¿Qué es un contenedor web, servidor de aplicación y servidor web?
+
+Servlet: es cualquier clase de java que pueda aceptar una solicitud, procesarla y devolver una respuesta. Los servlets son clases de java ejecutadas en el servidor y se usan para generar páginas web dinámicas. Todos los servlets se registran a sí mismos con contenedores servlet
+
