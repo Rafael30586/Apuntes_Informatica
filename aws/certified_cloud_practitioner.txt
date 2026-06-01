@@ -3123,5 +3123,30 @@ Guard Duty: es un servicio de detección de amenazas que monitorea continuamente
 * VPC Flow Logs
 * DNS logs
 
-Te va a avisar sobre hallazgos que podés automatizar una respuesta a incidente vía eventos de CloudWatch con servicios de terceros	
+Te va a avisar sobre hallazgos que podés automatizar una respuesta a incidente vía eventos de CloudWatch con servicios de terceros
+
+-------------------------
+Amazon Macie
+
+Es un servicio completamente gestionado que continuamente monitorea la actividad de acceso a datos S3 por anomalías, y genera alertas detalladas cuando detecta riesgo de acceso no autorizado o fugas de datos inadvertidas
+
+Macie funciona usando machine learning para azalizar registros de CloudTrail
+
+Macie tiene una veriedad de alertas
+* Acceso anónimo
+* Cumplimiento de configuración
+* Pérdida de credenciales
+* Conformidad de datos
+* Hospedaje de archivos
+* Enumeración de identidad
+* Pérdida de información
+* Anomalía de ubicación
+* Permisos de apertura
+* Escalada de privilegios
+* Ransomware
+* Ruptura de servicio
+* Acceso sospechoso
+
+Macie identificará tus usuarios con mayor riesgo que podrían llevar a un compromiso (compromise)
+ 	
 	 
