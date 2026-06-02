@@ -1,0 +1,59 @@
+Cuando trabajamos con java EE o jakarta EE debemos tener en cuenta que hay diferentes versiones de servlets
+
+1. Versiones principales de la especificación servlet
+
+* Servlet 2.x (java EE antiguo)
+  - Estas versiones fueron muy utilizadas en aplicaciones empresariales de principios de los 2000
+  - Características importantes:
+    # Configuración mediante web.xml
+    # Sin anotaciones
+    # Sin soporte moderno para AJAX o programación asíncrona
+
+* Servlet 3.0 (java EE 6)
+  - Fue una de las actualizaciones más importantes
+  - Introdujo:
+    # Anotaciones @WebServlet
+    # Eliminación de gran parte del web.xml
+    # Carga dinámica de componentes
+    # Mejor integración con frameworks
+
+* Servlet 3.1 (java EE 7)
+  - Agregó:
+    # I/O no bloqueante
+    # Mejoras para aplicaciones de alto rendimiento
+  - Fue especialmente útil para aplicaciones con muchas conexiones simultáneas
+
+* Servlet 4.0 (java EE 8)
+  - Agregó soporte para:
+    # HTTP/2
+    # Mejor manejo de conexiones modernas
+  - Es la última versión bajo el nombre java EE
+  
+2. El cambio a jakarta EE
+En 2017, Oracle transfirió java EE a la Eclipse Foundation
+A partir de entonces java EE pasó a llamarse jakarta EE y las especificaciones continuaron evolucionando
+
+* Servlet 5.0 (jakarta EE 9)
+  - Acá ocurrió el cambio más visible
+    # Antes (java EE) --> import javax.servlet.http.HttpServlet;
+    # Después (jakarta EE) --> import jakarta.servlet.http.HttpServlet;
+
+* Servlet 6.0 (jakarta EE 10)
+  - Es la versión actual utilizada por servidores como:
+    # Apache Tomcat 10.1
+    # Eclipse Jetty
+    # WildFly
+  - Características:
+    # Compatibilidad con java moderno
+    # Limpieza de APIs obsoletas
+    # Mejor alineación con jakarta EE 10
+
+3. Relación entre Tomcat y las versiones de Servlet
+
+Tomcat  |   Servlet  |  Plataforma
+  7        3.0          java EE 6
+  8        3.1          java EE 7
+  9        4.0          java EE 8
+  10.0     5.0          jakarta EE 9
+  10.1     6.0          jakarta EE 10
+  11       6.1          jakarta EE 11       
