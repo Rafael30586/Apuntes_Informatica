@@ -130,12 +130,11 @@ Clase C: NID = 24; HID = 8
 NID es network ID y HID es host ID
 
 -------------------
-Acá viene una explicación del profesor que no entendí bien:
 
 * Una dirección IP es de 32 bits
-* Fijamos el primer bit. Al hacer esto, tenemos dos subconjuntos que son 2^32 / 2 = 2^31 . Por alguna razón llama al primer subconjunto "clase A"
-* Con el subconjunto restante del punto anterior, se fija el segundo bit (hay que tener en cuenta que el primer bit es el mismo para todas las direcciones). Al fijar el segundo bit se forman dos subconjuntos, de los cuales uno de ellos tiene el segundo bit como cero y, por alguna razón, el tipo del video dice que esta es la clase B
-* Con el subconjunto restante del punto anterior se fija otro bit (el tercero de la dirección total), formándose dos subconjuntos, de los cuales uno tiene como primeros bits 110 y el otro tiene 111. El que tiene 110 mes la clase C
+* Fijamos el primer bit. Al hacer esto, tenemos dos subconjuntos que son 2^32 / 2 = 2^31 . El primer subconjunto es la clase A
+* Con el subconjunto restante del punto anterior, se fija el segundo bit (hay que tener en cuenta que el primer bit es el mismo para todas las direcciones). Al fijar el segundo bit se forman dos subconjuntos, de los cuales uno de ellos tiene el segundo bit como cero. Es la clase B
+* Con el subconjunto restante del punto anterior se fija otro bit (el tercero de la dirección total), formándose dos subconjuntos, de los cuales uno tiene como primeros bits 110 y el otro tiene 111. El que tiene 110 es la clase C
 * Del subconjunto restante anterior (tiene los 3 primeros bits como 111), se fija el cuarto bit de la dirección total, quedando un subconjunto con los primeros bits 1110 y el otro con 1111. El subconjunto 1110 es la clase D y el 1111 es la clase E
 * El resultado queda así: la clase A tiene el primer bit fijado 0; la clase B tiene los primeros dos bits fijados en 10: la clase C tiene los tres primeros bits fijados en 110; la clase D tiene los primeros bits fijados 1110; y la clase E tiene los primeros bits fijados 1111. La clase A tiene un total de 2^31 direcciones posibles, la clase B tiene 2^30, la clase C tiene 2^29, la clase D tiene 2^28 y la clase E tiene 2^27
 
@@ -162,6 +161,48 @@ Loopback testing
 Sirve para comprobar si una computadora dentro de una red es capaz de recibir paquetes de información de otras computadoras.
 
 -----------------------------------
+Clase B
+
+* Tiene los dos primeros bits fijados en 1 0
+* El NID son los dos primeros octetos de la dirección IP
+* El total de redes es 2^(6+8) = 2^14
+* Hay 16 bits para el HID, lo cual significa que pueden haber 2^16 - 2 direcciones en cada red (se excluyen los puros 1s y puros0s)
+* Los NID pueden ir desde 128.0 hasta 191.255 . Esto se puede razonar de lo visto anteriormente	
+
+------------------------------------
+Clase C
+
+* Los primeros 3 octetos son para el NID y el último para el HID
+* De lo anterior se puede saber que la cantidad de anfitriones posibles en una red es 2^8 - 2
+* La cantidad de redes posibles es 2^21
+
+----------------------------
+Clase D
+
+* Tiene los primeros bits fijados 1 1 1 0
+* No hay tal cosa como NID o HID para esta clase
+* Hay 2^28 direcciones posibles
+* Es para multicasting
+
+----------------------------
+Clase E
+
+
+* Tiene los primeros bits fijados 1 1 1 1
+* Tampoco hay HID ni NID para esta clase
+* Hay 2^28 direcciones posibles
+* Tiene propósitos de investigación
+
+--------------------------
+Trucos para identificar direcciones IP según clase
+
+Clase A: el primer octeto va desde 1 hasta 126
+Clase B: el primer octeto va desde 128 hasta 191
+Clase C: el primer octeto va desde 192 hasta 223
+Clase D: el primer octeto va desde 224 hasta 239
+Clase E: el primer octeto va desde 240 hasta 255
+
+--------------------------
 
 Protocolos
 Son reglas predefinidas entre el emisor y el receptor para que haya sincronización entre ambos. Es necesario que haya sincronización porque si no la hay pueden perderse datos, por ejemplo, si el emisor envía 100Mb pero el receptor solo puede recibir 30Mb se perdería información.
