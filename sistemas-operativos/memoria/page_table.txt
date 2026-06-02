@@ -39,3 +39,9 @@ Estos bits previenen de acceso no autorizado de páginas de memoria por diferent
 * Si el bit de caché está en 0 --> la página no puede ser cacheada
 
 Este bit es importante para optimización de rendimiento. Las páginas que son accedidas frecuentemente  
+
+6. Bit sucio (dirty bit): el bit sucio se usa para indicar si una página ha sido modificada desde que fue cargada en memoria
+* Bit sucio está en 1 --> la página ha sido modificada
+* Bit sucio está en 0 --> la página no ha sido modificada
+
+Esta información es importante para algoritmos de reemplazo de página. Si la página con el bit sucio establecido en 1 es seleccionada para reemplazo, debe ser escrita de vuelta en el disco antes de ser reemplazada. Esto asegura que ningún cambio hecho en la página se pierda
