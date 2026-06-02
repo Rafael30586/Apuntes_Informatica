@@ -3166,4 +3166,20 @@ AWS WAF
 
 AWS Web Application Firewall (WAF) protege tus aplicaciones web de explotaciones web comunes  
  	
-	 
+Escribí tus propias reglas para permitir o denegar tráfico basado en los contenidos de las solicitudes HTTP
+
+Usá un conjunto de reglas de un AWS Security Partner confiable en el mercado de reglas de WS WAF
+
+WAF puede ser ligado a CloudFront o un balanceador de carga de aplicación
+
+Protegé aplicaciones web de ataques cubiertos en el top 10 OWASP ataques más peligrosos:
+1 Inyección
+2 Autenticación rota
+3 Exposición de datos sensibles
+4 Entidades externas XML (XXE)
+5 Acceso de control roto
+6 Configuraciones fallidas de seguridad
+7 Cross Site Scripting (XSS)
+8 Deserialización insegura
+9 Usar componentes con vulnerabilidades conocidas
+10 Logging y monitoreo insuficiente	 
