@@ -45,3 +45,14 @@ Este bit es importante para optimización de rendimiento. Las páginas que son a
 * Bit sucio está en 0 --> la página no ha sido modificada
 
 Esta información es importante para algoritmos de reemplazo de página. Si la página con el bit sucio establecido en 1 es seleccionada para reemplazo, debe ser escrita de vuelta en el disco antes de ser reemplazada. Esto asegura que ningún cambio hecho en la página se pierda
+
+-------------------------
+Tipos de page tables
+
+Dependiendo de la arquitectura y requerimientos del sistema, hay varios tipos de page tables usadas en sistemas operativos. Algunos de los tipos comunes incluyen:
+
+1. Page table de un solo nivel (single level page table): en una page table de un solo nivel, hay una sola tabla que mapea todas las páginas de un proceso a sus correspondientes marcos en la memoria física. Este tipo de page table es fácil de implementar. Pero puede no ser conveniente para sistemas con address spaces grandes, porque la page table se puede volver muy grande y consumir un montón de memoria
+
+2. Page table multi-nivel: En una page table multi-nivel, la page table se divide en múltiples niveles. Cada nivel contiene una page table más pequeña que mapea a una porción del address space. Esta estructura jerárquica ayuda a reducir el tamaño de la page table y la hace más manejable. El tipo más común de página multi-nivel es la page table de dos niveles
+
+3. Page table invertida: En una page table invertida, hay una sola page table para todo el sistema. Cada entrada en la tabla corresponde a un marco en la memoria física. La entrada contiene información sobre qué página está actualmente almacenada en ese marco. Además el ID del proceso al que la página pertenece. Este tipo de page table es más eficiente en lo que respecta a memoria, porque reduce la cantidad de memoria necesitada para almacenar page tables para múltiples procesos. Aún así, puede ser más lento para acceder, porque el sistema necesita buscar a través de la tabla para encontrar la página correspondiente para una dirección lógica dada
