@@ -3182,4 +3182,38 @@ Protegé aplicaciones web de ataques cubiertos en el top 10 OWASP ataques más p
 7 Cross Site Scripting (XSS)
 8 Deserialización insegura
 9 Usar componentes con vulnerabilidades conocidas
-10 Logging y monitoreo insuficiente	 
+10 Logging y monitoreo insuficiente
+
+---------------------
+Módulo de seguridad de hardware (HSM)
+
+Es una pieza de hardware diseñada para almacenar claves de encriptación
+HSM mantiene claves en memoria y nunca las escribe en disco
+
+Federal Information Processing Standard (FIPS)
+Estándar de los gobiernos de Estados Unidos y Canadá que especifican los requerimientos de seguridad para módulos criptográficos que protegen información sensible
+
+HSMs que son multi-inquilino son obedientes a FIPS 140-2 nivel 2
+(múltiples clientes aislados virtualmente en un HSM)
+Por ejemplo: AWS KMS
+
+HSMs que son de un solo inquilino son obedientes a FIPS 140-2 nivel 3
+(un solo cliente en un HSM dedicado)
+Por ejemplo: AWS CloudHSM
+
+-----------------------
+AWS Key Management Service (AWS KMS)
+
+Es un servicio gestionado que hace que sea fácil crear y controlar las claves de encriptación usadas para encriptar tus datos
+
+* KMS es un HSM multi-inquilino
+* Muchos servicios de AWS están integrados para usar KMS para encriptar tus datos con un simple checkbox
+* KMS usa encriptación de envoltura
+
+Encriptación de envoltura o envelope encryption
+Cuando encriptás tus datos, estos están protegidos, pero tenés que proteger tu clave de encriptación
+
+Cuando encriptás tu clave de datos con una clave maestra como una capa adicional de seguridad
+ 
+
+ 	 
