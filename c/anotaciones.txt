@@ -15,6 +15,40 @@ Esto se hace para hacer que el programa ejecute más rápido en la computadora, 
 Rara vez debemos preocuparnos por esto a menos que trabajemos con memoria de bajo nivel o formateo de archivos
 Padding significa que el compilador a veces añade espacios vacíos dentro de la estructura para mayor velocidad
 
-______________________________________________
-Seguir resumiendo sobre padding en estructuras
-______________________________________________
+Veamos la siguiente estructura simple:
+
+struct Ejemplo{
+  char a; // 1 byte
+  int b;  // 4 byte
+  char c; // 1 byte
+}
+
+int main(){
+  prinf("Tamaño de la estructura: %zu bytes\n", sizeof(struc Ejemplo));
+}
+
+Esperarías a que el tamaño sea 1 + 4 + 1 = 6 bytes , pero imprimirá 12 bytes. ¿Por qué? el compilador añade bytes de padding para que el miembro "b" empiece en una dirección de memoria que sea múltiplo de 4. Esto ayuda al CPU a leer más rápido. Así es como la memoira está asignada:
+
+Miembro  |  Bytes  |  Notas
+a           1       alamacenado primero
+padding     3       añadido para que b empiece en un múltiplo de 4
+b           4       alineado a límite de 4 bytes
+c           1       siguiente en alamcenarse
+padding     3       añadido para hacer que el tamaño total sea múltiplo de 4
+
+¿Cómo reducir el padding? 
+El padding depende del orden de los miembros en la estructura. Si agrupás tipos más grandes primero, podés hacer que la estructura sea más chica:
+
+struct Ejemplo{
+  int b; // 4 bytes
+  char a; // 1 byte
+  char c; // 1 byte
+}
+
+En este caso la estructura es solo de 8 bytes en lugar de 12, porque se necesita menos padding
+
+¿Por qué es importante?
+* El padding ayuda a que los programas corran más rápido al mantener los datos alineados en memoria 
+* Puede hacer que la estructura sea más grande de lo esperado
+* Reordenar los miembros puede reducir el tamaño total
+* Nota: rara vez necesitás preocuparte por esto a menos que trabajes con memoria de bajo nivel o formateo de archivos 
