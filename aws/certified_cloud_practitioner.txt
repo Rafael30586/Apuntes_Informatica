@@ -3214,6 +3214,22 @@ Encriptación de envoltura o envelope encryption
 Cuando encriptás tus datos, estos están protegidos, pero tenés que proteger tu clave de encriptación
 
 Cuando encriptás tu clave de datos con una clave maestra como una capa adicional de seguridad
+
+---------------------------
+CloudHSM
+
+Es un HSM de un solo inquilino como servicio que automatiza aprovisionamiento, parcheo de software, alta disponibilidad y backups
+
+AWS CloudHSM te permite generar y usar claves de encriptación en un hardware validado FIPS 140-2 nivel 3
+
+Construido sobre estándares de la industria HSM para integrar con:
+* PKCS#11
+* Java Cryptography Extensions (JCE)
+* Bibliotecas Microsoft CryptoNG (CNG)
+
+Podés también transferir tus claves a otras soluciones HSM comerciales para hacer más fácil migrar claves en o a fuera de AWS
+
+Configurar AWS KMS para usar cluster AWS CloudHSM como un almacenamiento de clave personalizada más que el almacenamiento de clave KMS
  
 
  	 
