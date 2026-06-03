@@ -1,0 +1,6 @@
+https://www.geeksforgeeks.org/operating-systems/preemptive-and-non-preemptive-scheduling/
+
+Planificación preemptive y non-preemptive
+
+La planificación del CPU en sistemas operativos es el método de seleccionar que proceso en la cola de listos se ejecutará en el CPU después. Apunta a utilizar el procesador eficientemente mientras se minimizan los tiempos de respuesta espera. Al determinar un orden de ejecución óptimo, la planificación del CPU mejora el rendimiento general del sistema, soporta multitareas fluido, y mejora la experiencia de usuario	
+La planificación puede ser clasificada en dos tipos: preemptive y non-preemptive
