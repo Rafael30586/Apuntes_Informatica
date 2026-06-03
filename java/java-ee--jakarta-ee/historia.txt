@@ -1,0 +1,9 @@
+J2EE, Java EE, Jakarta: Estas tres terminologías se refieren a lo mismo. Hacen referencia a un conjunto de especificaciones. 
+
+Enero de 1996 --> se lanza la primera versión de java. Las especificaciones de java web (como los servlets) forman parte del núcleo de java
+
+Diciembre 1999 --> se lanza java 2. La especificación empresarial es sacada del núcleo de java y nombrado como J2EE ( java 2 platform Enterprise edition)
+
+Mayo 2006 --> se lanza java 5. J2EE se renombra a Java EE
+
+Septiembre 2017 --> Oracle decide darle los derechos de la especificación empresarial a la Eclipse Foundation, pero Oracle todavía es dueña de la marca java, por lo que la Eclipse Foundation no puede usar el nombre java. La comunidad votó para que se llame jakarta. Java EE es renombrado a Jakarta EE.  A partir de acá los java servlets empiezan a llamarse jakarta servlets
