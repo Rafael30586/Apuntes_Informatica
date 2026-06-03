@@ -52,3 +52,21 @@ En este caso la estructura es solo de 8 bytes en lugar de 12, porque se necesita
 * Puede hacer que la estructura sea más grande de lo esperado
 * Reordenar los miembros puede reducir el tamaño total
 * Nota: rara vez necesitás preocuparte por esto a menos que trabajes con memoria de bajo nivel o formateo de archivos 
+
+------------------------
+Asignar memoria (allocate memory)
+
+El proceso de reservar memoria es llamado asignación (allocation). Al manera de asignar memoria depende del tipo de memoria
+C tiene dos tipos de memoria: memoria estática y memoria dinámica
+
+1. Memoria estática
+La memoria estática se reserva para variables antes de que el programa corra. La asignación de memoria estática se conoce también como asignación de memoria en tiempo de compilación. 
+C automáticamente asigna memoria para cada variable cuando el programa es compilado. Por ejemplo, si creás un array de números enteros de 20 estudiantes, C reservará espacio para 20 elementos, lo cual es típicamente 80 bytes. Pero puede ser que la cantidad de estudiantes sea menos de la esperada, por ejemplo, solo 12 estudiantes, entonces se ha malgastado el espacio de 8 elementos. Como no sos capaz de cambiar el tamaño del array, te quedás con una cantidad innecesaria de espacio reservado. Para tener mejor control de memoria asignada, se puede usar memoria dinámica
+
+2. Memoria dinámica
+La memoria dinámica es memoria que es asignada después de que el programa empieza su ejecución.	La asignación de memoria dinámica puede ser también nombrada como asignación de memoria en tiempo de ejecución.
+A diferencia de la memoria estática, tenés control total sobre cuanta memoria es usada a la vez. Podés escribir código para determinar cuanta memoria necesitás y asignarla
+La memoria dinámica no pertenece a una variable, puede ser accedida solamente con punteros
+Para asignar memoria dinámica, podés usar las funciones malloc() o calloc(). Es necesario incluir la cabecera <stdlib.h> para usarlas. Estas funciones asignan algo de memoria y retornan un puntero a su dirección
+La función malloc() tiene un parámetro, tamaño, que especifica cuanta memoria asignar, medida en bytes
+La función calloc() tiene dos parámetros: cantidad (amount), que especifica la cantidad de ítems para asignar; tamaño (size), que especifica el tamaño de cada item medido en bytes  

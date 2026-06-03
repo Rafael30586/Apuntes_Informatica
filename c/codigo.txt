@@ -79,3 +79,42 @@ typedef struct {
   char brand[30];
   int year;
 } Car;
+
+----------------------
+Reasignación de memoria
+
+Si la cantidad de memoria que asignamos con malloc() o calloc() no es suficiente, podemos reasignar memoria para hacerla más grande
+La reasignación reserva una cantidad diferente de memoria (generalmente mayor) mientras mantiene los datos almacenados en ella
+Podés cambiar el tamaño de memoria asignada con la función realloc()
+La función realloc() tiene dos parámetros:
+* el primero es un puntero a la memoria que se quiere redimensionar
+* el segundo especifica el nuevo tamaño de la memoria asignada, medido en bytes
+
+Ejemplo:
+int *ptr2 = realloc(ptr1, size);
+
+La función realloc() trata de redimensionar la memoria en ptr1 y retornar la misma dirección de memoria. Si no puede redimensionar la memoria en la dirección actual entonces asignará memoria en una dirección diferente y devolverá la nueva dirección en su lugar
+
+Nota: Cuando realloc() retorna una dirección de memoria diferente, la memoria en la dirección original ya no está reservada y no es seguro usarla. Cuando la reasignación está hecha es bueno asignar el nuevo puntero a la variable previa para que el viejo puntero ya no pueda ser usado por accidente
+
+La función realloc() retorna un puntero NULL si no es capaz de asignar más memoria. Esto es poco probable, pero es bueno tenerlo en mente cuando necesitás que tu código sea a prueba de fallos
+
+Ejemplo de como se revisa un posible puntero NULL:
+
+int *ptr1, *ptr2;
+
+// Allocate memory
+ptr1 = malloc(4);
+
+// Attempt to resize the memory
+ptr2 = realloc(ptr1, 8);
+
+// Check whether realloc is able to resize the memory or not
+if (ptr2 == NULL) {
+  // If reallocation fails
+  printf("Failed. Unable to resize memory");
+} else {
+  // If reallocation is successful
+  printf("Success. 8 bytes reallocated at address %p \n", ptr2);
+  ptr1 = ptr2;  // Update ptr1 to point to the newly allocated memory
+} 
