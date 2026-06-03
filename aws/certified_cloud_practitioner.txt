@@ -3230,8 +3230,10 @@ Construido sobre estándares de la industria HSM para integrar con:
 Podés también transferir tus claves a otras soluciones HSM comerciales para hacer más fácil migrar claves en o a fuera de AWS
 
 Configurar AWS KMS para usar cluster AWS CloudHSM como un almacenamiento de clave personalizada más que el almacenamiento de clave KMS
- 
------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Estudio de variación
+------------------------------------------------------------------------------------------------------------------------------------------
 Know your initialisms
 
 IAM: Identity and Acces Management
@@ -3268,4 +3270,17 @@ RAM: AWS Resource Manager
 ACM: Amazon Certificate Manager
 PoLP: Principle of Least Privilege
 IoT: Internet opf things
-RI: Reserved instances 	 	 
+RI: Reserved instances 	
+
+------------------------------------
+AWS Config VS AWS AppConfig
+
+AWS Config
+* Es una herramienta de gobernanza para cumplimiento como código (CoC)
+* Podés crear reglas que revisarán si los recursos están configurados de la manera que querés que estén
+* Si un recurso se desvía de la configuración esperada sos notificado o AWS Config puede corregir la configuración al estado deseado
+
+AWS AppConfig
+* Se usa para automatizar el proceso de desplegar cambios variables de configuración de aplicación a tu aplicación web
+* Podés escribir un validador para asegurarte que la variable cambiada no romperá tu aplicación web
+* Podés monitorear despliegues y automatizar integraciones para atrapar errores o rollback 	 
