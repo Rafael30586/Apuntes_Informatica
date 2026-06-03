@@ -1,0 +1,44 @@
+Plataforma: Java EE 5, Java SE 5
+Versión de API servlet: Java servlet 2.5
+Lanzamiento: Septiembre de 2005
+Especificación: JSR 154
+Versión de Tomcat: 6.0.x (archivada)
+Cambios importantes de API servlet: Requiere java SE 5
+
+Plataforma: Java EE 6, Java SE 6
+Versión de API servlet: Java servlet 3.0
+Lanzamiento: Diciembre de 2009
+Especificación: JSR 315
+Versión de Tomcat: 7.0.x 
+Cambios importantes de API servlet: "Pluggability", facilidad de desarrollo, servlet asincrónico, seguridad, subida de archivos
+
+Plataforma: Java EE 7
+Versión de API servlet: Java servlet 3.1
+Lanzamiento: Mayo de 2013
+Especificación: JSR 340
+Versión de Tomcat: 8.0.x o 8.5.x
+Cambios importantes de API servlet: I/O no bloqueante, mecanismo de evolución de protocolo HTTP (Websocket)
+
+Plataforma: Java EE 8
+Versión de API servlet: Java servlet 4.0
+Lanzamiento: Septiembre de 2017
+Especificación: JSR 369
+Versión de Tomcat: 9.0.x
+Cambios importantes de API servlet: HTTP/2
+
+Plataforma: Jakarta EE 8
+Versión de API servlet: Jakarta servlet 4.0.3
+Lanzamiento: 13 de agosto de 2019
+Especificación: 4.0
+Versión de Tomcat: 10.0.x 
+Cambios importantes de API servlet: Renombrado
+
+Plataforma: Jakarta EE 9
+Versión de API servlet: Jakarta servlet 5.0.0 M1
+Lanzamiento: 12 de junio de 2020
+Especificación: 5.0
+Versión de Tomcat: 10.0.x 
+Cambios importantes de API servlet: API movida del paquete javax.servlet a jakarta.servlet
+
+
+
