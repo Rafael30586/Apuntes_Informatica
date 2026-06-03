@@ -3231,5 +3231,41 @@ Podés también transferir tus claves a otras soluciones HSM comerciales para ha
 
 Configurar AWS KMS para usar cluster AWS CloudHSM como un almacenamiento de clave personalizada más que el almacenamiento de clave KMS
  
+-----------------------
+Know your initialisms
 
- 	 
+IAM: Identity and Acces Management
+S3: Simple Storage Service
+SWF: Simple Workflow Service
+SNS: Simple Notification Service
+SQS: Simple Queue Service
+SES: Simple Email Service
+SSM: Simple Systems Manager
+RDS: Relational Database Service
+VPC: Virtual Private Cloud
+VPN: Virtual Private Network
+CFN: CloudFormation
+WAF: Web Application Firewall
+MQ: Amazon ActiveMQ
+ASG: Auto Scaling Groups
+TAM: Technical Account Manager
+ELB: Elastic Load Balancer
+ALB: Application Load Balancer
+NLB: Network Load Balancer
+GWLB: Gateway Load Balancer
+CLB: Classic Load Balancer
+EC2: Elastic Cloud Compute
+ECS: Elastic Container Service
+ECR: Elastic Container Repository
+EBS: Elastic Block Storage
+EFS: Elastic File Storage
+EMR: Elastic MApReduce
+EB: Elastic Beanstalk
+ES: ElasticSearch
+EKS: Elastic Kubernetes Service
+MSK: Managed Kafka Service
+RAM: AWS Resource Manager
+ACM: Amazon Certificate Manager
+PoLP: Principle of Least Privilege
+IoT: Internet opf things
+RI: Reserved instances 	 	 
