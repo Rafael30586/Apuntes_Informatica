@@ -4,3 +4,25 @@ Planificación preemptive y non-preemptive
 
 La planificación del CPU en sistemas operativos es el método de seleccionar que proceso en la cola de listos se ejecutará en el CPU después. Apunta a utilizar el procesador eficientemente mientras se minimizan los tiempos de respuesta espera. Al determinar un orden de ejecución óptimo, la planificación del CPU mejora el rendimiento general del sistema, soporta multitareas fluido, y mejora la experiencia de usuario	
 La planificación puede ser clasificada en dos tipos: preemptive y non-preemptive
+
+----------------------
+Planificación preemptive
+
+En la planificación preemptive, el sistema operativo puede interrumpir un proceso en ejecución para asignar el CPU a otro proceso, generalmente debido a reglas de prioridad o políticas de "time-sharing". Un proceso podrá ser movido del estado running al estado ready antes de finalizar
+
+Ejemplos: Round Robin, Shortest remaining time first (SRTF), priority scheduling (preemptive version)
+
+Ventajas:
+* Evita que un proceso monopolice el CPU
+* Mejor tiempo promedio de respuesta en sistemas multi-usuario
+* Ampliamente usado en sistemas operativos modernos (Windows, Linux, MacOS)
+
+Desventajas:
+* Más complejo de implementar
+* Mayor sobrecarga por context switching
+* Puede causar starvation de procesos de baja prioridad
+* Riesgo de problemas de concurrencia si es "preempted" durante acceso de recursos compartidos
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________

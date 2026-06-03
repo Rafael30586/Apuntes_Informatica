@@ -1,0 +1,1 @@
+CPU burst vs I/O burst
