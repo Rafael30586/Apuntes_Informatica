@@ -3283,4 +3283,26 @@ AWS Config
 AWS AppConfig
 * Se usa para automatizar el proceso de desplegar cambios variables de configuración de aplicación a tu aplicación web
 * Podés escribir un validador para asegurarte que la variable cambiada no romperá tu aplicación web
-* Podés monitorear despliegues y automatizar integraciones para atrapar errores o rollback 	 
+* Podés monitorear despliegues y automatizar integraciones para atrapar errores o rollback
+
+-----------------------------
+SNS vs SQS
+
+Ambos conectas aplicaciones vía mensajes. Son para integración de aplicaciones
+
+SNS
+* Simple Notification Service
+* Pasa mensajes, por ejemplo PubSub
+* Envía notificaciones a suscriptores de asuntos vía múltiples protocolos, por ejemplo: HTTP, Email, SQS, SMS
+* SNS generalmente se usa para enviar emails en texto plano que son gatillados vía otros servicios de AWS. El mejor ejemplo de esto son las alarmas de facturación
+* Puede volver a intentar en el caso de fallos por HTTPS
+* Muy bueno para webhooks, simples emails internos, gatillando funciones lambda 
+
+SQS
+* Simple Queue Service
+* Encola mensajes. Entrega garantizada
+* Coloca mensajes en una cola. Las aplicaciones tiran de la cola usando AWS SDK
+* Podés retener un mensaje por hasta 14 días. Podés enviarlos en orden secuencial o en paralelo. Podés asegurarte de que solo un mensaje es enviado. Podés asegurarte de que los mensajes son entregados al menos una vez
+* Muy bueno para tareas atrasadas, encolando emils
+
+ 	 
