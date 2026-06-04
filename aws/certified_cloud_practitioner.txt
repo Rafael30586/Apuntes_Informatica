@@ -3336,4 +3336,13 @@ Direct Connect: Una conexión dedicada de fibra óptica desde tu datacenter a AW
 
 Amazon Connect: Call center as a service. Obtené un número gratis, acepta llamadas entrantes y salientes, establecé sistemas de teléfono automatizados. Es un sistema de voz interactivo
 
-Madia Connect: Es la nueva versión de Elastic Transcoder, convierte videos a diferentes tipos de videos. Supongamos que tenés 1000 videos y necesitás pasarlos a diferentes formatos de video, tal vez necesités aplicar marcas de agua o insertar una introducción al principio de cada video 		 
+Madia Connect: Es la nueva versión de Elastic Transcoder, convierte videos a diferentes tipos de videos. Supongamos que tenés 1000 videos y necesitás pasarlos a diferentes formatos de video, tal vez necesités aplicar marcas de agua o insertar una introducción al principio de cada video
+
+--------------------
+Elastic Transcoder vs MediaConvert
+
+Ambos servicios sirven para transcodificar videos
+
+Elastic Transcoder: la manera vieja. Fue el servicio original de transcodificación. Puede tener APIs programáticas o flujos de trabajo no disponibles en MediaConvert. Existe debido a clientes legacy que todavía usan la plataforma. Transcodifica videos a formato de streaming
+
+AWS Elemental MediaConvert: la nueva manera. Es un servicio de transcodificación más robusto que puede llevar a cabo varias operaciones durante la transcodificación. También transcodifica videos a formato de streaming; incrusta imágenes; inserta clips de videos; extrae datos de leyenda; tiene una UI robusta 		 
