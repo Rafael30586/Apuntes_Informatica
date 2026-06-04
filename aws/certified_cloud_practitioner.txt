@@ -3325,4 +3325,15 @@ Ambas son herramientas de seguridad y llevan a cabo auditorías
 
 Amazon Inspector: Audita una sola instancia EC2 que hayas seleccionado. Genera un informe de una larga lista de verificaciones de seguridad
 
-Trusted Advisor: No genera un informe en PDF. Te da un visión holística de recomendaciones a lo largo de múltiples servicios y mejores prácticas. Por ejemplo: tenés puertos abiertos en estos grupos de seguridad. Deberías activar MFA en tu cuenta root cuando usás trusted advisor	 
+Trusted Advisor: No genera un informe en PDF. Te da un visión holística de recomendaciones a lo largo de múltiples servicios y mejores prácticas. Por ejemplo: tenés puertos abiertos en estos grupos de seguridad. Deberías activar MFA en tu cuenta root cuando usás trusted advisor
+
+----------------------
+Connect Name Services
+
+Tienen "Connect" en el nombre pero no están relacionados ni tienen una funcionalidad similar
+
+Direct Connect: Una conexión dedicada de fibra óptica desde tu datacenter a AWS. Apunta a empresas grandes con su propio datacenter y necesitan una conexión muy rápida y privada directamente a AWS. Si necesitás una conexión segura necesitás aplicar una conexión VPN AWS sobre Direct Connect
+
+Amazon Connect: Call center as a service. Obtené un número gratis, acepta llamadas entrantes y salientes, establecé sistemas de teléfono automatizados. Es un sistema de voz interactivo
+
+Madia Connect: Es la nueva versión de Elastic Transcoder, convierte videos a diferentes tipos de videos. Supongamos que tenés 1000 videos y necesitás pasarlos a diferentes formatos de video, tal vez necesités aplicar marcas de agua o insertar una introducción al principio de cada video 		 
