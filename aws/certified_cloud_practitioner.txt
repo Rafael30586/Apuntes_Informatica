@@ -3305,4 +3305,15 @@ SQS
 * Podés retener un mensaje por hasta 14 días. Podés enviarlos en orden secuencial o en paralelo. Podés asegurarte de que solo un mensaje es enviado. Podés asegurarte de que los mensajes son entregados al menos una vez
 * Muy bueno para tareas atrasadas, encolando emils
 
- 	 
+----------------------
+SNS vs SES vs PinPoint vs Workmail
+
+Todos estos servicios envían emails
+
+SNS o Simple Notification Service: es para emails internos y prácticos. Enviá notificaciones a suscriptores de temas vía múltiples protocolos, por ejemplo: HTTP, Email, SQS, SMS. SNS generalmente se usa para enviar emails en texto plano el cual es gatillado vía otros servicios de AWS. El mejor ejemplo de esto son alarmas de facturación. La mayoría de las preguntas del examen estarán hablando sobre SNS porque un montón de servicios pueden gatillar SNS para notificaciones
+
+SES o Simple Email Service: Emails transaccionales. Emails que deberían ser gatillados basados en acciones "in-app": signup, reinicio de contraseña, facturas. Envía emails HTML, SNS no puede. Puede recibir emails entrantes. Puede crear plantillas de email. Nombre de dominio personalizado. Monitorear tu reputación de email
+
+Amazon PinPoint: Emails promocionales. Emails para marketing. Creá emails de campaña. Segmentá tus contactos. Creá rutas de clientes vía emails. Pruebas de email A/B
+
+Amazon Workmail: es un cliente web de emails. Similar a Gmail o Outlook. Creá emails de compañías, leé, escribí y enviá emails desde un cliente web dentro de la consola sde gestión de AWS	 
