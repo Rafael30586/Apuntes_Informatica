@@ -23,6 +23,21 @@ Desventajas:
 * Puede causar starvation de procesos de baja prioridad
 * Riesgo de problemas de concurrencia si es "preempted" durante acceso de recursos compartidos
 
-____________________________________________
-Continuar resumiendo con el enlace de arriba
-____________________________________________
+------------------------
+Planificación non-preemptive
+
+En la planificación non-preemptive, una vez un proceso comienza a usar el CPU, corre hasta que finaliza o se mueve a un estado de espera. El sistema operativo no puede forzosamente llevarse el CPU
+
+Ejemplos:
+* First Come First Serve (FCFS)
+* Shortest Job First (SJF)
+* Priority scheduling (versión non-preemptive)
+
+Ventajas:
+* Es fácil de implementar e un sistema operativo. Se usaba en Windows 3.11 y las primeras macOS
+* Tiene carga mínima de planificación
+* Se usan menos recursos computacionales
+
+Desventajas:
+* Un proceso de larga duración o malicioso puede ocupar el CPU por un largo tiempo, retrasando a otros procesos
+* Ya que la planificación round-robin no puede ser aplicada, el tiempo de respuesta promedio se vuelve alto (pobre), especialmente para procesos cortos
