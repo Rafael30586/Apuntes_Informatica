@@ -1,4 +1,20 @@
-Cuando creamos un servlet, este es una clase de java que hereda de HttpServlet 
+Cuando creamos un servlet, este es una clase de java que hereda de HttpServlet
+
+-----------------------------
+En el archivo web.xml, podemos usar una etiqueta llamada welcome-file-list, dentro de la cual hay otra etiqueta anidad llamada welcome-file. En esta última podemos colocar el nombre de un archivo (puede ser un HTML o un JSP) que será el que se reproducirá en pantalla si enviamos una solicitud desde el navegador a la ruta raíz de la aplicación. Por ejemplo:
+
+<welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+ </welcome-file-list>
+
+Aparentemente, el que está primero en la lista tiene prioridad
+
+---------------------------------
 
 En un servlet podemos crear un método que tenga como parámetros un HttpServletRequest y HttpServletResponse. Estas son la solicitud y la respuesta que se le hacen al servlet respectivamente. 
 
