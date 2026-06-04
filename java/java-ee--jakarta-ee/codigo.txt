@@ -15,6 +15,7 @@ En el archivo web.xml, podemos usar una etiqueta llamada welcome-file-list, dent
 Aparentemente, el que está primero en la lista tiene prioridad
 
 ---------------------------------
+En el archivo web.xml podemos mapear un servlet a todas las url de la aplicación colocando /* en donde dice url-pattern
 
 En un servlet podemos crear un método que tenga como parámetros un HttpServletRequest y HttpServletResponse. Estas son la solicitud y la respuesta que se le hacen al servlet respectivamente. 
 
@@ -27,6 +28,16 @@ Los servlets se pueden mapear a un endpoint gracias a la etiqueta servlet-mappin
 En un servlet podemos usar los métodos doGet y doPost, que son para solicitudes get y post respectivamente. Amobs tienen los parámetros HttpServletRequest y HttpServletResponse. También tenemos el método service que acepta los mismos parámetros y también se puede usar para solicitudes
 
 Podemos hacer que un servlet llame a otro servlet con el método getRequestDispatcher() (acepta como argumento el nombre del servlet al que queremos llamar) de la solicitud que devuelve un objeto RequestDispatcher. Luego con este objeto podemos usar el método forward() que acepta la solicitud y la respuesta como argumento
+
+---------------------
+Cuando usamos la anotación @WebServlet para mapear un servlet a una url, podemos hacerlo de varias maneras: la primera es, simplemente colocar el nombre de la url entre comillas y entre los paréntesis de la anotación; otra manera es colocando "value" dentro de los paréntesis e igualarlo a la url; la última manera es similar a la anterior, pero colocando "urlPatterns" en lugar de value. Ejemplo:
+
+@WebServlet("/hola")
+@WebServlet(value = "/hola")
+@WebSErvlet(urlPatterns = "/hola")
+
+Cabe aclarar que en urlPatterns se puede colocar una array de endpoints, por ejemplo, urlPatterns = {"/hola","/buen-dia"}, aunque esto del array también funciona para la primera de las tres opciones
+-----------------------
 
 Podemos pasar cookies de un servlet a otro gracias a la clase Cookie del paquete jakarta.servlet.http . Las cookies se asignan a la respuesta del servlet con el método addCookie(). Luego podemos obtener las cookies de una respuesta gracias al método getCookies() que nos devuelve un array de Cookies
 
@@ -112,7 +123,7 @@ El método init de los filtros se ejecuta una vez cuando ponemos la aplicación 
 
 Cuando utilizamos la etiqueta filter-mapping en el archivo web.xml, podemos utilizar un atributo llamado dispatcher que tiene valores enumerados (el enum en la API de jakarta aparece como DispatcherType). Esos valores enumerados son: RESQUEST, solo cuando una solicitud viene directamente del cliente; ASYNC, solo cuando la solicitud asíncrona viene del cliente; FORWARD, solo cuando la solicitud ha sido reenviada a un componente; INCLUDE, solo cuando la solicitud ha sido procesada por un componente que ha sido incluido; ERROR, solo cuando la solicitud está siendo procesada con el mecanismo de error de página. El DispatcherType sirve para limitar el alcance del filtro
 
-Un solo filtro puede mapearse a más de un servlet si así lo deseamos. Si hacemos esto, se producirá una cadena de filtros. El objeto de la solicitud (ServletRequest) atravesará los filtros en un orden que dependerá de como los hayamos escrito en el archivo web.xml. Inlfuirá el orden en el cual hayamos colocado a los filtros pero también el tipo de mapeo que hayamos realizado: el mapeo a una URL tiene prioridad sobre el mapeo a un servlet
+Un solo servlet mapearse a más de un filtroí lo deseamos. Si hacemos esto, se producirá una cadena de filtros. El objeto de la solicitud (ServletRequest) atravesará los filtros en un orden que dependerá de como los hayamos escrito en el archivo web.xml. Influirá el orden en el cual hayamos colocado a los filtros pero también el tipo de mapeo que hayamos realizado: el mapeo a una URL tiene prioridad sobre el mapeo a un servlet
 
 Utilizando la anotación @WebServlet se puede mapear un servlet a más de una UR de la siguiente manera: @WebServlet({"/url1","/url2"})
 
