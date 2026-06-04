@@ -3316,4 +3316,13 @@ SES o Simple Email Service: Emails transaccionales. Emails que deberían ser gat
 
 Amazon PinPoint: Emails promocionales. Emails para marketing. Creá emails de campaña. Segmentá tus contactos. Creá rutas de clientes vía emails. Pruebas de email A/B
 
-Amazon Workmail: es un cliente web de emails. Similar a Gmail o Outlook. Creá emails de compañías, leé, escribí y enviá emails desde un cliente web dentro de la consola sde gestión de AWS	 
+Amazon Workmail: es un cliente web de emails. Similar a Gmail o Outlook. Creá emails de compañías, leé, escribí y enviá emails desde un cliente web dentro de la consola de gestión de AWS
+
+-------------------------
+Amazon Inspector vs Amazon Trusted Advisor
+
+Ambas son herramientas de seguridad y llevan a cabo auditorías
+
+Amazon Inspector: Audita una sola instancia EC2 que hayas seleccionado. Genera un informe de una larga lista de verificaciones de seguridad
+
+Trusted Advisor: No genera un informe en PDF. Te da un visión holística de recomendaciones a lo largo de múltiples servicios y mejores prácticas. Por ejemplo: tenés puertos abiertos en estos grupos de seguridad. Deberías activar MFA en tu cuenta root cuando usás trusted advisor	 
