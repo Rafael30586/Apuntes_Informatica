@@ -3360,4 +3360,30 @@ Genera un informe de seguridad que se basa en frameworks de conformidad global c
 
 Amazon Inspector
 ¿Cómo sabemos que esta instancia EC2 es segura? probalo
-Corre un script que analiza tu instancia EC2, luego genera un informe en PDF diciéndote que revisaciones de seugirdad pasaron 		 
+Corre un script que analiza tu instancia EC2, luego genera un informe en PDF diciéndote que revisaciones de seguridad pasaron
+
+----------------------------------
+ELB vs ALB vs NLB vs GWLB vs CLB
+
+Elastic Load Balancer (ELB) tiene 4 diferentes tipos posibles de balanceadores de carga
+
+Application Load Balancer (ALB) 
+* Opera en capa 7, HTTP/S
+* Tiene reglas de enrutamiento
+  - Creá reglas para cambiar el enrutamiento basado en información encontrada en una solicitud HTTP/S
+* Podés ligar un AWS WAF
+
+Network Load Balancer (NLB)
+* Opera en capa 3 y 4, TCP y UDP
+* Es para cuando se necesita rendimiento extremo para tráfico TCP y TLS
+* Capaz de encargarse de millones de solicitudes por segundo mientras se mantiene latencia ultra baja
+* Optimizado para patrones de tráfico volátil y repentino mientras se usa una sola dirección IP estática por Zona de disponibilidad
+
+Gateway Load Balancer (GWLB)
+* Cuando necesitás desplegar una flota de dispositivos virtuales de terceros que soporten GENEVE
+
+Classic Load Balancer (CLB)
+* Opera en capas 3,4 y 7
+* Hecho para aplicaciones construidas dentro de la EC2-Classic network
+* No usa "Target Groups"
+* Se retira en el 15 de agosto de 2022 		 
