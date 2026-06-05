@@ -37,8 +37,8 @@ CPSs:
 - Private tier: OpenStack (Rackspace), Apache CloudStack, *Vmware vSphere.
 
 Un proveedor de servicios en la nube puede tener cientos de servicio en la nube que están agrupados en varios tipos de servicios. Los cuatro tipos de servicios cloud más comunes para infraestructura como un servicio (IaaS) serían:
-- computar: una computadora virtual en la que puede correr una aplicación, programas y código.
-- redes: podría ser una red virtual que defina concexiones de internet o aislamientos de red entre servicios o saliente al internet.
+- cómputo: una computadora virtual en la que puede correr una aplicación, programas y código.
+- redes: podría ser una red virtual que defina conexiones de internet o aislamientos de red entre servicios o saliente al internet.
 - almacenamiento: podría ser un disco duro virtual que almacena archivos.
 - bases de datos: podría ser una base de datos virtual pata guardar datos de reportes o una base de datos para una aplicación web de propósito general.
 

@@ -1,0 +1,6 @@
+https://www.coursera.org/articles/software-as-a-service?campaignid=21239613742&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&creativeid=&assetgroupid=6501905150&targetid=&extensionid=&placement=&gad_source=1&gad_campaignid=21320925518
+
+¿Qué es software as a service?
+
+Software as a service se refiere a acceder a software basado en la nube a través de internet, como Netflix, Zoom y Google Docs, en lugar de vía descarga local. 
+Software as a service (SaaS) es una manera de proveer software a través de internet para uso. En lugar de descargar e instalar programas en tu computadora, los abrís a través de un sitio web o una aplicación de celular. SaaS está generalmente disponible a través de suscripción, lo que quiere decir que tenés que pagar para usar el software por un cierto período de tiempo. El modelo es popular porque es fácil de usar, accesible y no requiere que los usuarios se encarguen de las actualizaciones o mantenimiento.
