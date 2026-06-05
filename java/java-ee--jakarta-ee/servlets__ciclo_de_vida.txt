@@ -1,0 +1,11 @@
+Ciclo de vida de los servlets
+
+* Supongamos que primero un usuario realiza una solicitud mediante un cliente como el navegador
+* Tomcat "revisa" el mapeo que hay entre la url y un servlet y se crea una instancia de dicho servlet. Por ahora el objeto no puede atender a solicitudes HTTP
+* La instancia de servlet llama al método init() y se transforma en el servlet propiamente dicho
+* Luego se llama al método service() y se le pasa un hilo (en tomcat hay un thread pool).Si un hilo del thread pool está disponible, lo asociará con la solicitud. Si el método service recibe una solicitud GET, llamará al método doGet(). Si el método service() recibe una solicitud POST, llamará a doPost(). De manera análoga, se podrá llamar a métodos doPut(), doDelete(), etc. El método service() es llamado por cada solicitud que llega al servlet
+* Se llama al método destroy(). Este método nos da la oportunidad de "limpiar" recursos, por ejemplo, supongamos que abrimos una conexión a base de datos, con el método destroy() podemos cerrar la conexión. Luego de que el método destroy() es llamado, la instancia del servlet será marcada para la recolección de basura.
+
+Notas: 
+La creación de la instancia, los llamados a los métodos init() y destroy() se realizan solo una vez en el ciclo de vida del servlet;
+Las instancias de servlets son creadas solo si se reciben solicitudes  
