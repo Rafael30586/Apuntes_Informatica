@@ -1,1 +1,6 @@
 https://www.ebsco.com/research-starters/computer-science/abstraction-computer-science
+
+Abstracción (computación)
+
+En computación, abstracción es una estrategia para gestionar detalles complejos de sistemas computacionales. Involucra la simplificación de instrucciones que el usuario  da a un sistema computacional de manera tal que diferentes sistemas, pueden llenar los espacios vacíos al suministrar los niveles de complejidad que están faltando de las instrucciones. Por ejemplo, más que ingresar números binarios, en la mayoría de los casos un sistema computacional tendrá una capa de abstracción que le permite traducir números decimales a formato binario.
+El concepto principal de la abstracción que es oculta los detalles complejos del sistema subyacente, como el escritorio de una computadora o el menú gráfico de un smartphone ocultan la complejidad involucrada en organizar y acceder a los muchos programas y archivos contenidos. Incluso el control más simple de un auto (frenos, pedal de gas, volante) son en cierto sentido abstractos, por los elementos complejos involucrados en convertir la energía mecánica aplicada a ellos en señales eléctricas y acciones mecánicas que gobiernan los movimientos del auto  
