@@ -1,0 +1,14 @@
+https://www.techtarget.com/whatis/definition/interrupt
+
+¿Qué es un interrupt?
+
+Un interrupt es una señal emitida por un dispositivo ligado a una computadora o desde un programa en la computadora. Necesita que el sistema operativo se detenga y averigue que hacer después. Un interrupt detiene temporalmente o termina un servicio o un proceso. La mayoría de los dispositivos I/O tienen una "bus control line" llamada "Interrupt Service Routine" (ISR) para este propósito
+Una señal interrupt podría ser planeada (es decir, específicamente solicitada por un programa) o podría no ser planeada (es decir, causada por un evento que podría no estar relacionado a un programa que está corriendo actualmente en el sistema)
+Hoy en día, casi todos los sistemas computacionales son conducidos por interrupts. Lo que esto significa es que siguen la lista de instrucciones de computadora en un programa y ejecutan las instrucciones hasta que llegan al final o hasta que sienten una señal interrupt
+Si el último evento ocurre, la computadora reanuda ejecutar el programa actual o comienza a ejecutar otro programa. En cualquier caso, deberá detener las operaciones mientras se decide la siguiente acción. Para hacer esto y trabajar en otros programas, el sistema operativo pausa en operaciones
+Cuando el procesador del dispositivo maneja interrupts, le informa al dispositivo que envía la señal que la solicitud de interrupt (IRQ) ha sido reconocida. Luego el dispositivo para de enviar la señal IRQ
+Un sistema operativo generalmente incluye código llamado "interrupt handler" para priorizar interrupts y almacenarlos en una cola si más de uno está esperando para ser manejado. También tiene un programa de planificación que determina el próximo programa que obtiene el control  
+
+_________________________________________
+Seguir resumiendo con el enlace de arriba
+_________________________________________

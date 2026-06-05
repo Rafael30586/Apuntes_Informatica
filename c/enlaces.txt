@@ -1,0 +1,2 @@
+Enlace sobre listas enlazadas
+https://www.learn-c.org/en/Linked_lists 

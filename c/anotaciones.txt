@@ -69,4 +69,54 @@ A diferencia de la memoria estática, tenés control total sobre cuanta memoria 
 La memoria dinámica no pertenece a una variable, puede ser accedida solamente con punteros
 Para asignar memoria dinámica, podés usar las funciones malloc() o calloc(). Es necesario incluir la cabecera <stdlib.h> para usarlas. Estas funciones asignan algo de memoria y retornan un puntero a su dirección
 La función malloc() tiene un parámetro, tamaño, que especifica cuanta memoria asignar, medida en bytes
-La función calloc() tiene dos parámetros: cantidad (amount), que especifica la cantidad de ítems para asignar; tamaño (size), que especifica el tamaño de cada item medido en bytes  
+La función calloc() tiene dos parámetros: cantidad (amount), que especifica la cantidad de ítems para asignar; tamaño (size), que especifica el tamaño de cada item medido en bytes 
+
+-------------------------
+Fugas de memoria
+
+Una fuga de memoria ocurre cuando la memoria es asignada pero nunca liberada
+Si una fuga de memoria ocurre en un buble o en una función que es llamada frecuentemente, podría tomar mucha memoria y causar que la computadora se ralentice
+Hay un riesgo de fuga de memoria si un puntero a memoria dinámica se pierde antes de que la memoria pueda ser liberada. Esto puede ocurrir accidentalmente, por lo que es importante ser cuidadoso rastrear los punteros de memoria dinámica
+Los siguientes son algunos ejemplos de como un puntero a memoria dinámica podría perderse
+
+Ejemplo 1
+El puntero se sobre-escribe
+
+int x = 5;
+int *ptr;
+ptr = calloc(2, sizeof(*ptr));
+ptr = &x;
+ 
+En este ejemplo, después de que el puntero se cambia para apuntar a x, la memoria asignada por calloc() ya no puede ser accedida
+
+
+Ejemplo 2
+El puntero solo dentro de la función
+
+void myFunction() {
+  int *ptr;
+  ptr = malloc(sizeof(*ptr));
+}
+
+int main() {
+  myFunction();
+  printf("The function has ended");
+  return 0;
+}
+
+En este ejemplo, la memoria que fue asignada dentro de la función permanece asignada luego de que la función termina pero ya no puede ser accedida. Una manera de prevenir este problema es liberar memoria antes de que la función termine
+
+Ejemplo 3
+El puntero se pierde cuando la reasignación falla
+
+int* ptr;
+ptr = malloc(sizeof(*ptr));
+ptr = realloc(ptr, 2*sizeof(*ptr)); 
+
+Si realloc() es incapaz de reasignar memoria retornará un puntero a NULL y la memoria original permanecerá reservada
+En este ejemplo, si realloc() falla entonces el puntero NULL se asigna a la variable ptr, sobre-escribiendo la dirección de memoria original para que ya no pueda ser accedida
+
+-------------------------
+NULL es un "puntero null", un puntero que apunta a nada
+Te ayuda a evitar usar punteros que están vacíos o son inválidos
+Muchas funciones en C retornan NULL cuando algo va mal. Por ejemplo, fopen() retorna NULL si el archivo no puede ser abierto, y malloc() retorna NULL si la asignación de memoria falla. 

@@ -1,2 +1,4 @@
 File descriptors
 stdin stdout stderr
+/proc file system
+symlink (enlace simbólico)

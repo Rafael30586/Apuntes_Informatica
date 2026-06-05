@@ -1,6 +1,6 @@
 sistema de anillos en CPUs, ring 0 y ring 3 principalmente
 // proceso padre, child process
-page tables
+// page tables
 segment tables
 memoria virtual o virtual memory
 CPU-bound processes I/O bound processes
@@ -20,7 +20,7 @@ GNU
 priority inversión
 // threads
 buffer
-critical section (relacionado a procesos, hilos, semáforos y mutex)
+// critical section (relacionado a procesos, hilos, semáforos y mutex)
 data inconcistency
 local procedures y procedure calls
 stubs en sistemas distribuidos
@@ -29,4 +29,4 @@ Big endian vs Little endian
 profundizar en datagram socket vs stream socket
 Windows services
 thrashing
-preemtive y non-preemptive
+// preemtive y non-preemptive

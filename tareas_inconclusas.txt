@@ -1,2 +1,3 @@
 Sistemas (en la carpeta de conceptos generales)
 Descriptores de archivos (en la carpeta de Linux)
+Abstracción en computación

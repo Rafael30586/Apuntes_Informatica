@@ -118,3 +118,20 @@ if (ptr2 == NULL) {
   printf("Success. 8 bytes reallocated at address %p \n", ptr2);
   ptr1 = ptr2;  // Update ptr1 to point to the newly allocated memory
 } 
+
+------------------------
+Liberación de memoria
+
+Cuando ya no necesitás un bloque de memoria deberías liberarlo. 
+La memoria dinámica permanece reservada hasta que es liberada o hasta que el programa termina
+Una vez la memoria es liberada puede ser usada por otros programas o incluso podrá ser asignada a otra parte de tu programa
+Para liberar memoria se usa la función free(), la cual tiene un puntero como parámetro
+
+int *ptr;
+ptr = malloc(sizeof(*ptr));
+
+free(ptr);
+ptr = NULL
+
+Nota: Se considera buena práctica establecer un puntero en NULL después de liberar la memoria para que no la vuelvas a usar por accidente
+Si continuás usando memoria después de que fue liberada podrías corromper datos de otros programas o incluso otra parte de tu propio programa 

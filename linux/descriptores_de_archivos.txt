@@ -14,7 +14,7 @@ Todo proceso tiene normalmente 3 descriptores de archivos que se abren por defec
 * Standard output: tiene un valor de 1; stdout
 * Standard error: tiene un valor de 2; stderr
 
-Cuando un proceso abre un archivo (recordá que todo en Unix es un archivo, incluyendo dispositivos como la terminal, sockets, pipes, etc), el kernel le asigna un descriptor de archivos. El descriptor de archivos en un valor entero que identifica de manera única al archivo para el proceso
+Cuando un proceso abre un archivo (recordá que todo en Unix es un archivo, incluyendo dispositivos como la terminal, sockets, pipes, etc), el kernel le asigna un descriptor de archivos. El descriptor de archivos es un valor entero que identifica de manera única al archivo para el proceso
 Internamente, el kernel mantiene una tabla de descriptores de archivos para cada proceso. Esta tabla se llama tabla de descriptores de archivos. Cada entrada en la tabla contiene información sobre el archivo, como el file offset, las banderas de estado del archivo, etc
 Cuando un proceso abre un archivo, el kernel retorna el descriptor de archivo más bajo disponible. Esto significa que el primer archivo abierto por un proceso tendrá el descriptor de archivo 3, el segundo tendrá descriptor de archivo 4, y así sucesivamente 
 Vemos el siguiente programa escrito en C:
@@ -34,3 +34,6 @@ Para inspeccionar los descriptores de archivos para un proceso, podemos usar el 
 Contiene un directorio para cada proceso corriendo en el sistema. El nombre del directorio es el ID del proceso. Por ejemplo, el directorio para el proceso actual es /proc/self
 Cada directorio contiene un montón de información sobre el proceso, pero nos interesa el directorio fd. Este directorio contiene un symlink o enlace simbólico para cada descriptor de archivos abierto por un proceso. El nombre del enlace simbólico es el número del descriptor de archivos y el objetivo es el descriptor de archivo al que está apuntando 
 El bash tiene 3 descriptores de archivos abiertos por defecto: 0, 1 y 2. Todos ellos están apuntando al mismo archivo. Este es la terminal donde el proceso está corriendo
+
+_________________________________________
+Continuar resumiendo lo del enlace de arriba
