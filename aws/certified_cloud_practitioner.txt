@@ -3345,4 +3345,19 @@ Ambos servicios sirven para transcodificar videos
 
 Elastic Transcoder: la manera vieja. Fue el servicio original de transcodificación. Puede tener APIs programáticas o flujos de trabajo no disponibles en MediaConvert. Existe debido a clientes legacy que todavía usan la plataforma. Transcodifica videos a formato de streaming
 
-AWS Elemental MediaConvert: la nueva manera. Es un servicio de transcodificación más robusto que puede llevar a cabo varias operaciones durante la transcodificación. También transcodifica videos a formato de streaming; incrusta imágenes; inserta clips de videos; extrae datos de leyenda; tiene una UI robusta 		 
+AWS Elemental MediaConvert: la nueva manera. Es un servicio de transcodificación más robusto que puede llevar a cabo varias operaciones durante la transcodificación. También transcodifica videos a formato de streaming; incrusta imágenes; inserta clips de videos; extrae datos de leyenda; tiene una UI robusta
+
+--------------------------
+AWS Artifact vs Amazon Inspector
+
+Ambos compilan informes en PDF
+
+AWS Artifact
+¿Por qué un empresa debería confiar en AWS?
+Genera un informe de seguridad que se basa en frameworks de conformidad global como:
+* Service Organization Control (SOC)
+* Payment Card Industry (PCI)
+
+Amazon Inspector
+¿Cómo sabemos que esta instancia EC2 es segura? probalo
+Corre un script que analiza tu instancia EC2, luego genera un informe en PDF diciéndote que revisaciones de seugirdad pasaron 		 
