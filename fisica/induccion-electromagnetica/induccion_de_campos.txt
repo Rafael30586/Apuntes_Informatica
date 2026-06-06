@@ -1,0 +1,14 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 488
+
+Inducción de campos
+
+La inducción electromagnética explica la inducción de voltajes y corrientes. En realidad, los campos más básicos son la raíz tanto de los voltajes como de las corrientes. La perspectiva moderna de la inducción electromagnética señala que los campos eléctricos y magnéticos son inducidos. Tales campos, a la vez, producen los voltajes que hemos examinado. La inducción se lleva a cabo esté presente o no un alambre conductor, o cualquier medio material. En este sentido más general, la ley de Faraday establece que:
+
+Un campo eléctrico es inducido en cualquier región del espacio en la que un campo magnético cambie a través del tiempo
+
+Hay un segundo efecto, que es una extensión de la ley de Faraday, excepto en que se intercambian los papeles de los campos eléctrico y magnético. Se trata de una de las múltiples simetrías de la naturaleza. Dicho efecto fue enunciado por el físico inglés James Clerk Maxwell, en la década de 1860, y se conoce como la contraparte de Maxwell a la ley de Faraday:
+
+Se induce un campo magnético en cualquier región del espacio en la que un campo eléctrico cambie a través del tiempo
+
+En cada caso, la magnitud del campo inducido es proporcional a la rapidez con la que cambia el campo que induce. Los campos magnético y eléctrico inducidos son perpendiculares entre sí
+Maxwell se dio cuenta del vínculo entre las ondas electromagnéticas y la luz. Si las cargas eléctricas se ponen a vibrar en el rango de frecuencias que coincida con el de la luz visible, ¡las ondas producidas serán luminosas! Maxwell descubrió que la luz visible tan sólo son ondas electromagnéticas en el rango de frecuencias a las cuales es sensible el ojo
