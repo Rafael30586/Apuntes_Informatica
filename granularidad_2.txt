@@ -1,0 +1,6 @@
+https://es.locationiq.com/glossary/granularity
+
+Granularidad
+
+La granularidad es un concepto utilizado en los sistemas de información geográfica para referirse al grado de detalle o precisión de los datos del sistema. Viene determinada por el nivel de resolución al que se almacenan los datos y por la precisión de los datos que se miden.
+Por ejemplo, los datos con una granularidad baja solo registrarán la ubicación general de un elemento, como el estado o la provincia la que pertenece. Los datos con una granularidad alta proporcionarán datos más detallados, como la dirección de una calle o las coordenadas GPS. 

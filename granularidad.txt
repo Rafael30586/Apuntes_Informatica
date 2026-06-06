@@ -1,0 +1,6 @@
+https://es.wikipedia.org/wiki/Granularidad
+
+Granularidad
+
+La granularidad (también llamada granulosidad) es el grado en que un material o sistema está compuesto de piezas distinguibles, gránulos o granos (metafóricamente). Puede referirse al grado en que se subdivide una entidad más grande, o al grado en que grupos de entidades más pequeñas e indistinguibles se han unido para convertirse en entidades distinguibles más grandes.
+En almacenamiento de datos, se refiere a la especificidad a la que se define un nivel de detalle en una tabla, es decir, si hablamos de una jerarquía de granularidad empieza por la jerarquía más alta de la jerarquía, siendo la granularidad mínima, el nivel más bajo.
