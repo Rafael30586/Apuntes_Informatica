@@ -1,0 +1,15 @@
+https://www.coursera.org/articles/iaas-vs-paas-vs-saas?campaignid=21239613742&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&creativeid=&assetgroupid=6501905150&targetid=&extensionid=&placement=&gad_source=1&gad_campaignid=21320925518
+
+¿Qué es IaaS?
+
+IaaS, también conocido como servicios de infraestructura de la nube, te permite alquilar infraestructura IT, como servidores físicos y virtuales, almacenamiento y redes. Alquilás estos recursos de un proveedor de la nube en una base de "pay-as-you-go"
+IaaS te otorga la flexibilidad de utilizar recursos específicos cuando los necesitás sin ser dueño de la infraestructura ni pagar una gran cantidad de capital por adelantado. Hace que los recursos de computación sean bajo demanda y disponibles para vos para alquilar para dirigir cambios periódicos en el uso
+Si sos parte de una compañía joven y en crecimiento, podés usar IaaS como ventaja para evitar pagar costos elevados por adelantado para recursos de computación. Puede también salvarte de mantener y gestionar tu propia infraestructura IT, ahorrándole a tu compañía tiempo y dinero
+Mientras tu negocio crece, podés cambiar el hardware y software específicos que alquilás para atender adecuadamente tus necesidades crecientes. Compañías experimentando crecimiento rápido pueden también beneficiarse de IaaS porque tienen la flexibilidad de cambiar los recursos usados mientras el negocio crece
+Los proveedores de IaaS más notables ofrecen típicamente servicios de infraestructura en la nube confiables y pueden construir una sensación de confianza con sus clientes. Los mejores proveedores tienen muchos recursos disponibles para atender a cada necesidad de negocio que puedas tener para ayudar a tu compañía a crecer con mínima fricción. Algunos de los proveedores de IaaS mas comúnmente usados y confiables son:
+* Digital Ocean
+* Amazon Web Services
+* Google Compute Engine (GCE)
+* Linode
+* Microsoft Azure
+* IBM Cloud
