@@ -1,1 +1,15 @@
 https://www.coursera.org/articles/iaas-vs-paas-vs-saas?campaignid=21239613742&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&creativeid=&assetgroupid=6501905150&targetid=&extensionid=&placement=&gad_source=1&gad_campaignid=21320925518
+
+¿Qué es PaaS? 
+
+Es un servicio de computación en la nube que te permite, como desarrollador, tener control total de una plataforma bajo demanda sin tener que preocuparte por gestionar y mantener la infraestructura subyacente de la plataforma "on-premise". Por ejemplo, podés construir tu propia aplicación web para tu negocio usando la plataforma proveída por PaaS
+En el modelo PaaS, solo sos responsable de gestionar datos y los recursos de la aplicación, mientras el proveedor de la nube third-party matiene los servidores, redes, almacenamiento, bases de datos y sistema operativo. La ventaja principal de PaaS es que te permite crear rápidamente aplicaciones completamente personalizadas sin la molestia de gestionar la infraestructura subyacente en la que estás trabajando
+Los desarrolladores tienden a usar PaaS porque les ayuda a organizar los flujos de trabajo de múltiples desarrolladores que estarían trabajando en el mismo proyecto. PaaS te otorga la habilidad de personalizar completamente tus aplicaciones a las especificaciones exactas que estás buscando
+Como no tenés que gestionar la infraestructura subyacente, PaaS tiende a tener buen costo. Pagás por este tipo servicio de la nube según el uso
+Algunos de los proveedores de PaaS más comúnmente usados y confiables son:
+* Google App Engine
+* AWS Elaqstic Beanstalk
+* Oracle Cloud PaaS
+* Microsoft Azure App Service
+* Heroku
+* EngienYard 
