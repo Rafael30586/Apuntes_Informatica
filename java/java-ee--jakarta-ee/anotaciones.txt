@@ -14,4 +14,6 @@ A la respuesta HTTP de los servlets se les puede añadir una cookie. Cuando real
 
 A las cookies que añadimos a una respuesta podemos asignarle un "path". Esto sirve para que la cookie, una vez producida por una solicitud, esté presente solamente en la ruta de nuestra aplicación que indiquemos
 
-
+¿Qué es un java bean? Es una clase de java que debería seguir las siguientes convenciones: debe tener un constructor sin parámetros; debe ser serializable, o sea, hay que implementar la interfaz Serializable; debe tener setters y getters.
+Ventajas de los java beans: las propiedades y métodos pueden ser expuestos a otra aplicación; provee facilidad para returilizar componentes de software
+Desventajas: los java beans son mutables, por lo que no pueden tener las ventajas de los objetos inmutables; crear métodos setter y getter para cada propiedad de manera separada puede llevar a código spaghetti 
