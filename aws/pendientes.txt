@@ -1,6 +1,7 @@
-Platform as a service
+// Platform as a service
 Data warehouse
 CIDR range
-om-premise
+// on-premise
 message system o sistema de mensajería
 Gobernanza
+pay as you go

@@ -1,0 +1,22 @@
+https://www.digitalroute.com/resources/glossary/payg/
+
+Pay-as-you-go (PAYG)
+
+PAYG es un modelo de precio que permite pago por productos o servicios al momento de la compra o previo al uso. Les provee a los usuarios con la libertad de pagar por lo que necesitan, eliminando la necesidad de pagos por adelantado o contratos a largo plazo
+Este modelo de pago permite a los individuos ejercer mejor control sobre sus gastos y uso, asegurando que solo paguen por lo que realmente utilizan
+
+-------------------------
+PAYG vs basado en uso/basado en consumo
+
+Estos modelos de precio son similares en el sentido de que ambos involucran clientes pagando basándose en el uso de un producto o servicio. De todas maneras, hay algunas diferencias entre ambos modelos
+
+PAYG
+* Estructura de costo: Determinado por otros factores además del uso, como tarifas planas, cobros de una sola vez o tarifas de suscripción
+* Estructura de precio: Podría involucrar categorías o paquetes de precios predefinidos, donde los usuarios pagan una cantidad fija por niveles específicos de acceso o uso
+* Relación entre costo y uso: el costo y el uso podrían no tener una correlación directa, ya que los precios pueden estar basados en varios factores o paquetes
+
+Basado en uso/basado en consumo
+* Estructura de costo: refleja directamente el costo por consumo, generalmente a través de una tasa base y cobros adicionales por el volumen o duración del uso
+* Estructura de precio: típicamente basado en unidades incrementales de uso, como por minuto, por kilovatio-hora o por evento de uso
+* Relación entre costo y uso: costo y uso son directos y proporcionales. Mientras un usuario más usa un producto o servicio, más elevado será el costo
+ 

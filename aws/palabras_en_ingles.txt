@@ -1,4 +1,6 @@
 on-premise
 pay-as-you-go
 upfront --> por adelantado
-address -> dirigirse, atender	
+address -> dirigirse, atender
+require --> necesitar, pedir
+expense --> gasto	
