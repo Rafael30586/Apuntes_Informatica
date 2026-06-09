@@ -3,4 +3,6 @@ pay-as-you-go
 upfront --> por adelantado
 address -> dirigirse, atender
 require --> necesitar, pedir
-expense --> gasto	
+expense --> gasto
+one-time charge --> cargo único
+flat fees	

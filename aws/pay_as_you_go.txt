@@ -19,4 +19,9 @@ Basado en uso/basado en consumo
 * Estructura de costo: refleja directamente el costo por consumo, generalmente a través de una tasa base y cobros adicionales por el volumen o duración del uso
 * Estructura de precio: típicamente basado en unidades incrementales de uso, como por minuto, por kilovatio-hora o por evento de uso
 * Relación entre costo y uso: costo y uso son directos y proporcionales. Mientras un usuario más usa un producto o servicio, más elevado será el costo
+
+-------------------------
+¿Cuáles son los casos de uso del modelo PAYG?
+
+Software-as-a-service (SaaS), otorgan flexibilidad y escalabilidad a los clientes; Computación en la nube, adoptada por proveedores como AWS y Microsoft Azure; APIs y microservicios, los clientes pagan por el volumen de llamadas a APIs o el uso de microservicios específicos; telecomunicaciones, se ofrecen precios de PAYG para servicios móviles en donde los clientes pagan basándose en el número de minutos, textos o datos que usan; servicios de utilidad, como proveedores de agua y electricidad
  
