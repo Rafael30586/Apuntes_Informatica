@@ -16,3 +16,4 @@ supernet mask
 servicios conection-less vs connection-oriented
 Hamming distance
 XOR gate
+sesión

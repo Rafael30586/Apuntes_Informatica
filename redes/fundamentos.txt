@@ -264,8 +264,52 @@ Ejemplos de direcciones IP
 255.255.255.255 --> dirección de boradcast limitado
 100.255.255.255 --> dirección de broadcast directo
 
+-----------------------------------
+
 Subnetting
-Es el proceso de dividir una red grande en varias subredes más pequeñas. Es útil porque el mantenimiento y la administración se vuelven más fáciles. También provee seguridad porque las redes están aisladas entre sí. Como desventaja, la identificación se vuelve un poco más compleja, ya que, para identificar un anfitrión de alguna red hay que seguir más pasos: identificar la red, luego la subred, después el anfitrión y por último, el puerto. Además, es más costoso porque hacen falta más dispositivos, como, por ejemplo, switches. Otra posible desventaja es que hace falta un administrador de redes experimentado. 
+Es el proceso de dividir una red grande en varias subredes más pequeñas. Es útil porque el mantenimiento y la administración se vuelven más fáciles. También provee seguridad porque las redes están aisladas entre sí. Como desventaja, la identificación se vuelve un poco más compleja, ya que, para identificar un anfitrión de alguna red hay que seguir más pasos: identificar la red, luego la subred, después el anfitrión y por último, el puerto. Además, es más costoso porque hacen falta más dispositivos, como, por ejemplo, switches. Otra posible desventaja es que hace falta un administrador de redes experimentado.
+
+Como hemos visto antes, en una red, dos direcciones IP no se pueden usar (se "desperdician"): la que tiene todos 0s en el HID y la que tiene todos 1s en el HID. Cuando se arman subredes, se "desperdician" dos direcciones IP por cada subred
+
+¿Cómo se crean las subredes? se crean "pidiendo" bits del HID. Supongamos que tenemos 3 bits en una red que representan el NID. Se pueden formar 2^3 = 8 redes. Si se le pide al HID 1 bit nos queda el subnet ID que, para este ejemplo, sería de 2^4 = 16.
+Ejemplo:
+* Tenemos una red de IP 200.200.200.0
+* Supongamos que queremos crear 4 subredes. Tenemos que "pedir" 2 bits, porque 2^2 = 4
+* Las cuatro subredes tienen las siguientes secuencias de bits para en el subnet ID: 0 0, 0 1, 1 0 y 11
+* Un ejemplo de dirección ip de esta red podría tener un NID de 200.200.200, un SID de 0 0 y un HID de 0 0 0 0 0 1. Este sería el primer anfitrión de la primera subred  
+* ¿Cuantos anfitriones podemos tener en cada subred? 2^6 - 2 = 62
+* Como se puede ver en este ejemplo el SID, a diferencia del NID y del HID, sí puede estar formado por puros 0s o 1d
+
+Supongamos que queremos crear 512 subredes ¿Cuantos bits hay que pedir?
+Respuesta: 9 bits porque 2^9 = 512 
+
+Una forma de representar el SID es calculando a cuanto equivalen los bits de la subred, por ejemplo, para la red 200.200.200.0, la podemos dividir en 4 subredes, para lo cual habría que pedir 2 bits del HID. La primera subred tendría 0 0, que equivale a 0 en cualquier caso; el segundo SID sería 0 1, que son los dos bits de la izquierda del cuarto octeto de la dirección IP, el 1 están en el 7mo lugar del octeto, que equivale a 2^6 = 64 (64 sería el SID); la misma lógica hay que seguir para las subredes faltantes: una tiene un SID de 2^7 = 128 y la otra uno de (2^7) + (2^6) = 192
+
+Para calcular la DBA (direct broadcast address) de una subred, simplemente hay que llenar el HID de puros 1s, por ejemplo, para la sub red 128 (los bits pedidos para la subred serían 1 y 0 del cuarto octeto de la dirección) del ejemplo anterior, tenemos que la dirección de la red es 200.200.200.0, el primer anfitrión de la subred tendría una dirección que sería 200.200.200.129, y la DBA sería 200.200.200.191 (el cuarto octeto sería, en binario, 1 0 1 1 1 1 1 1)
+
+-----------------------
+Máscara de subred o subnet mask
+
+Los 1s representan el NID más el HID, y los 0s representan el HID
+
+Ejercicio de ejemplo: tenemos un NID que es 200.200.200.0; una máscara de subred que es 255.255.255.192. Averiguar ¿Cuál es el número de bits pedidos del HID? ¿Número de subredes? ¿anfitriones por subred?
+
+Mi respuesta:
+* La máscara de subred en binario sería 11111111.11111111.11111111.11000000
+* La cantidad de bits pedidos del HID son 2
+* La cantidad de subredes es 2^2 = 4
+* La cantidad de anfitriones por subred es 2^6 - 2 = 62
+* Es correcta
+
+Otro ejercicio: Tenemos un NID de 200.200.200.0, una máscara de subred de 255.255.255.44 . Averiguar ¿número de bits pedidos? ¿número de subredes? ¿cantidad de anfitriones por subred?
+
+Mi respuesta:
+* La máscara de subred en binario sería: 11111111.11111111.11111111.00101100
+* 3 bits pedidos
+* 8 subredes posibles
+* 30 anfitriones por subred
+* La respuesta es correcta
+* Este ejercicio demuestra que los bits pedidos para la subred no necesariamente deben ser contiguos 
 
 ----------------------------------------------------------------------------------------------------------------------
 Control de errores
