@@ -16,7 +16,10 @@ Una sesión web incluye toda la información que podría ser relevante durante l
 Típicamente hay un tiempo límite para las sesiones web, después de la cual se le acabará el tiempo a la sesión. Este tiempo máximo depende de la implementación. Por ejemplo, sesiones web en Google analytics expiran luego de 30 minutos de inactividad; la posterior actividad de usuario será tratada como una nueva sesión
 Los sitios web y aplicaciones web con muchos usuarios frecuentemente cachean sesiones web, para que puedan ser recuperadas más rápido y de manera más eficiente
 
- 
+---------------------------
+¿Por qué usar sesiones web?
+
+Las sesiones web permiten al sitio web tener memoria a corto plazo sobre la actividad del usuario. Las sesiones de corto plazo le dan a los sitios web y aplicaciones web la suficiente "memoria" para construir experiencias atrapantes y personalizadas durante el curso de una visita de usuario, sin almacenar demasiada información que es irrelevante en el largo plazo
 
 __________________________________
 Continuar resumiendo lo del enlace
