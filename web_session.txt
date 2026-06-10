@@ -21,6 +21,9 @@ Los sitios web y aplicaciones web con muchos usuarios frecuentemente cachean ses
 
 Las sesiones web permiten al sitio web tener memoria a corto plazo sobre la actividad del usuario. Las sesiones de corto plazo le dan a los sitios web y aplicaciones web la suficiente "memoria" para construir experiencias atrapantes y personalizadas durante el curso de una visita de usuario, sin almacenar demasiada información que es irrelevante en el largo plazo
 
-__________________________________
-Continuar resumiendo lo del enlace
-__________________________________
+----------------------
+Sesiones web vs cookies
+
+Aunque las cookies y las sesiones almacenan información sobre el usuario, sus funciones son diferentes en la práctica
+Las cookies son archivos de texto que se usan para autenticar y rastrear visitantes a un sitio web, y que solo se almacenan en la máquina del usuario. El tiempo de vida de una cookie es típicamente mucho más largo que el de una sesión web, en el orden de meses o incluso años. Las cookies son la manera en que los sitios web almacenan información de usuario de largo plazo que debería ser preservada: por ejemplo, automáticamente logueando al usuario cuando llega al sitio web o llenando automáticamente un formulario con detalles de usuario
+En contraste, las sesiones web están dirigidas a almacenar información sobre las actividades más recientes del usuario. Las sesiones web son almacenadas en el servidor, lo que previene que usuarios maliciosos las editen. Tanto las sesiones web como las cookies pueden ser usadas combinadas para rastrear el comportamiento a corto plazo y a largo plazo del usuario 
