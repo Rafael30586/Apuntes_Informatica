@@ -1,0 +1,10 @@
+https://www.iberdrola.com/conocenos/nuestro-modelo-innovacion/data-center
+
+¿Qué es y como funciona un centro de procesamiento de datos?
+
+Los centros de procesamiento de datos son instalaciones especialmente diseñadas para alojar sistemas informáticos y equipos de telecomunicaciones, así como para almacenar, procesar y distribuir grandes cantidades de datos de manera eficiente y segura. Normalmente alojan un buen número de servidores, tanto de procesamiento como de almacenamiento y redes, para poder ofrecer así servicios como copias de seguridad y recuperación de datos que permita a sus propietarios proteger sus archivos contra la pérdida de cualquier tipo
+Un CPD típico está compuesto por una serie de componentes clave que trabajan en conjunto para proporcionar los servicios de procesamiento de datos. Estos componentes se incluyen en varias grandes ramas: 
+* Computación: Estos recursos son los motores de los centros de datos y se refieren a varios tipos de servidores con distintos grados de memoria interna y una potencia de procesamiento variable
+* Almacenamiento: Acá nos encontramos con dispositivos de almacenamiento en bloque como pueden ser por ejemplo los discos duros o las unidades físicas y loas dispositivos de almacenamiento de archivos conectados a la red 
+* Redes: En esta categoría se recogen los componentes encargados de la conexión entre el exterior y el centro de datos, a alta velocidad y con una conectividad confiable y rápida, como cables, conmutadores, enrutadores, etc  
+* Seguridad: Debido a que estos almacenan datos sensibles y críticos, la seguridad es una preocupación fundamental que va desde la informática, en forma de firewalls, sistemas de detección y prevención de intrusiones (IDS/IPS), cifrado de datos, etc, a la más física con controles de acceso y de prevención de problemas como caídas de tensión o desastres naturales

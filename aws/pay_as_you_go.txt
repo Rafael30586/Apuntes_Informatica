@@ -24,4 +24,22 @@ Basado en uso/basado en consumo
 ¿Cuáles son los casos de uso del modelo PAYG?
 
 Software-as-a-service (SaaS), otorgan flexibilidad y escalabilidad a los clientes; Computación en la nube, adoptada por proveedores como AWS y Microsoft Azure; APIs y microservicios, los clientes pagan por el volumen de llamadas a APIs o el uso de microservicios específicos; telecomunicaciones, se ofrecen precios de PAYG para servicios móviles en donde los clientes pagan basándose en el número de minutos, textos o datos que usan; servicios de utilidad, como proveedores de agua y electricidad
- 
+
+-------------------------
+¿Cuáles son los beneficios del modelo PAYG?
+
+* Eficiencia en costo
+Este modelo tiene muy buen costo porque permite a los negocios cobrar a los clientes exactamente por lo que consumen. Esto ayuda a elminar costos innecesarios asociados con recursos o servicios no usados
+
+* Flexibilidad
+Provee a los clientes con flexibilidad al permitirles pagar por recursos y servicios que necesitan y cuando los necesitan. Este modelo es particularmente útil para clientes con patrones de uso variable o para aquellos buscando probar un servicio antes de comprometerse a un plan más grande
+
+* Justicia
+La naturaleza directa del modelo promueve justicia ya que a los clientes se les cobra por los recursos y servicios que utilizan. Esto ayuda a crear una estructura de precio más equitativa comparado con suscripciones fijas o pagos por adelantado
+
+* Escalabilidad
+Los negocios pueden fácilmente escalar su uso de recursos y servicios basándose en la demanda. Esta e4scalabilidad permite a las organizaciones alinea5r sus costos con sus verdaderas necesidades, asegurando asignación eficiente de recursos   
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________ 
