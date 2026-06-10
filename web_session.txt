@@ -1,0 +1,23 @@
+https://redisson.pro/glossary/web-session.html
+
+¿Qué es una sesión web?
+
+Una sesión web es la cantidad de tiempo que un usuario utiliza navegando un sitio web; desde el momento en que llegan al sitio web, hasta el momento que dejan el sitio
+
+------------------------
+¿Cómo funcionan las sesiones web?
+
+En la práctica, una sesión web consiste en los datos o archivos que persisten a través del uso de un sitio web o aplicación web. Estos recursos son identificados con un id de sesión. Al navegador del usuario se le es dado este id al empezar una nueva sesión, y este id es intercambiado durante cada comunicación subsecuente entre el navegador y el servidor
+Una sesión web incluye toda la información que podría ser relevante durante la visita del usuario. Dependiendo del propósito del sitio web o aplicación web, esto podría incluir datos como:
+* Las páginas que el usuario ha visto
+* Los detalles de contacto que el usuario ha ingresado en un formulario
+* Los ítems en el carrito de compras del usuario
+
+Típicamente hay un tiempo límite para las sesiones web, después de la cual se le acabará el tiempo a la sesión. Este tiempo máximo depende de la implementación. Por ejemplo, sesiones web en Google analytics expiran luego de 30 minutos de inactividad; la posterior actividad de usuario será tratada como una nueva sesión
+Los sitios web y aplicaciones web con muchos usuarios frecuentemente cachean sesiones web, para que puedan ser recuperadas más rápido y de manera más eficiente
+
+ 
+
+__________________________________
+Continuar resumiendo lo del enlace
+__________________________________
