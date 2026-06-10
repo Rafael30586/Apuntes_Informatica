@@ -1,0 +1,6 @@
+https://www.computerhope.com/jargon/f/flush.htm
+
+Flush
+
+1. En memoria, flush describe el vaciamiento de los contenidos de memoria o un buffer
+2. Un flush de caché es cuando la caché del CPU se vacía

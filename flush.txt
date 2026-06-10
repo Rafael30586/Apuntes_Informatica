@@ -1,0 +1,7 @@
+https://www.quora.com/What-Is-a-flush-operation-in-computer-science
+
+¿Qué es una operación flush en computación?
+
+Las aplicaciones generalmente no escriben en el almacenamiento (hdd, ssd, etc). Escriben en buffers en memoria. Flush escribe la información guardada en estos buffers al almacenamiento
+Esto se hace por cuestiones de eficiencia de tu computadora. Muchas veces en sistemas UNIX/Linux los archivos temporales se crean con propósitos de aplicación. Estos archivos temporales son borrados cuando la aplicación cierra. Por lo que en muchos casos estos archivos temporales viven brevemente en un buffer y nunca son escritos en el almacenamiento
+Pero a veces, como en bases de datos, querés asegurarte de que los datos vayan al almacenamiento. En estos caso podés "flush" los buffers para que un fallo en la energía no deje los datos en un estado cuestionable 	

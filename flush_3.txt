@@ -1,0 +1,3 @@
+https://www.sololearn.com/en/Discuss/2361556/what-is-a-flush
+
+Un flush de buffer es la transferencia de datos de un área de almacenamiento temporal a la memoria permanente de la computadora. Por ejemplo, si hacemos cambios en un archivo, los cambios que vemos en una pantalla de computadora son almacenados temporalmente en un buffer
