@@ -17,3 +17,16 @@ A las cookies que añadimos a una respuesta podemos asignarle un "path". Esto si
 ¿Qué es un java bean? Es una clase de java que debería seguir las siguientes convenciones: debe tener un constructor sin parámetros; debe ser serializable, o sea, hay que implementar la interfaz Serializable; debe tener setters y getters.
 Ventajas de los java beans: las propiedades y métodos pueden ser expuestos a otra aplicación; provee facilidad para returilizar componentes de software
 Desventajas: los java beans son mutables, por lo que no pueden tener las ventajas de los objetos inmutables; crear métodos setter y getter para cada propiedad de manera separada puede llevar a código spaghetti 
+
+Podemos crear páginas privadas si creamos JSPs dentro de la carpeta WEB-INF. Se puede acceder a estas páginas solo si utilizamos getRequestDispatcher() y luego forward() desde otro JSP o servlet
+
+Al trabajar con JSPs, podemos trabajar con dos modelos: 1) el JSP actúa como vista y como controlador 2) Un servlet actúa como controlador recibiendo las solicitudes y un JSP sería la vista (respuesta). De estos dos modelos, el mejor es el 2 porque hay separación de responsabilidades
+
+JSP actions: Son acciones que usan construcciones en sintaxis XML para controlar el comportamiento del motor de servlet. Podés insertar un archivo de manera dinámica, reutilizar componentes de java beans, enviar al usuario a otra página o generar HTML para el plugin de java. Más información acá: https://www.tutorialspoint.com/jsp/jsp_actions.htm 
+Las JSPO actions no se usan demasiado, pueden estar en aplicaciones legacy
+
+La clase HttpSession nos sirve para mantener una sesión, y esto es muy importante porque HTTP es un protocolo stateless. Se mantiene un estado conversacional gracias al contenedor web (Tomcat). Tomcat mantiene el id de la sesión, y este id apunta a una colección con datos del usuario. La sesión se mantiene vía una cookie que es construida a partir de los datos que almacena tomcat. La sesión produce una cookie que se llama JSESSIONID, y que tiene como valor el id mencionado anteriormente. Cuando se hagan solicitudes a otros servlets, estas solicitudes llevarán a la cookie en la cabecera. Cuando un nuevo cliente inicie sesión, tomcat establecerá un id para este usuario y almacenará sus datos. Luego construirá otra cookie diferentes que enviará al nuevo cliente	 
+
+Cuando se produce una sesión, se crea una cookie que es de atributo HttpOnly = true y se llama JSESSIONID, la cual no puede ser accedida con JavaScript, aparentemente, por razones de seguridad, pero sì aparece en la parte de red en el navegador
+
+Cuando establecemos atributos a una cookie, estos atributos no pueden tener nombres inventados. Los atributos pueden ser Domain, Path, Max-Age, etc
