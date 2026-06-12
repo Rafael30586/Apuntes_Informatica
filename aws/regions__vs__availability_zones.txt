@@ -18,6 +18,12 @@ AWS Local Zones
 Las AZs no deberían ser confundidas con Local Zones, la cuales son una extensión de una región. Las local zones te permiten elegir zonas geográficas más específicas, como Boston o Los Angeles. No están diseñadas para crear redundancia de carga de trabajo. Su propósito principal es el de aumentar el rendimiento al hospedar cargas de trabajo en un área local específica. Esto puede minimizar la latencia en situaciones en las cuales los usuarios están concentrados en un área geográfica particular
 
 -------------------------
-AWS Wavelength zones
+AWS Wavelength Zones
 
 Son infraestructura de AWS hospedada en datacenters de proveedores de telecomunicaciones. Minimizan la latencia para cargas de trabajo que necesitan para conectarse a redes móviles, lo cual es valioso para casos de uso como despliegue de dispositivos IoT que dependen de redes móviles para la conectividad, y para streaming de video a dispositivos móviles. De todas formas, las wavelength zones no se usan típicamente para hospedar aplicaciones estándar 
+
+-----------------------
+AWS Outposts
+
+AWS outposts es una oferta de nube privada on-premise que permite a los clientes construir nubes híbridas al desplegar servicios de AWS a los propios sitios de los clientes. Las cargas de trabajo hospedadas en outposts son viculadas a una región y zona de disponibilidad. Pero como las cargas de trabajo no residen en un datacenter de AWS, no obtenés las mismas garantías de disponibilidad que vienen con las AZs estándar. Amazon considera un entorno Outpost como una extensión de la AZ asociada con ella, no una parte de la AZ 
+

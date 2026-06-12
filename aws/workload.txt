@@ -1,0 +1,8 @@
+https://www.ibm.com/think/topics/workload
+
+¿Què es una carga de trabajo?
+
+Una carga de trabajo o workload, en el sentido màs general, es la cantidad de tiempo y recursos de computación que un sistema o una red toma para completar una tarea o generar una salida (output). Se refiere a la demanda total de sistema de todos los usuarios y procesos en un momento dado.
+En IT, el tèrmino ha evolucionado continuamente y se ha vuelto cargado de significado, particularmente con el surgimiento de la computación en la nube. En general, carga de trabajo se usa para referirse a una tarea o proceso computacional y a la computación, almacenamiento, memoria y recursos de red que la tarea requiere
+En el contexto de la computaciòn en la nube, carga de trabajo se refiere a cualquier servicio, aplicación o capacidad que consume recursos basados en la nube. En este contexto de la nube, máquinas virtuales, bases de datos, aplicaciones, microservicios, nodos y màs son considerados cargas de trabajo
+Las cargas de trabajo pueden ir desde simples tareas, como ejecutar una aplicación, a operaciones complejas, como procesar anlaìticas de datos a gran escala o correr un paquete de aplicaciones interconectadas. La gestión de cargas de trabajo es un aspecto crítico de la optimización de recursos IT, impactando directamente el rendimiento del sistema, costo, estabilidad y el éxito de las operaciones de negocio

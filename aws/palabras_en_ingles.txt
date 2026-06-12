@@ -5,4 +5,5 @@ address -> dirigirse, atender
 require --> necesitar, pedir
 expense --> gasto
 one-time charge --> cargo único
-flat fees	
+flat fees
+workload	
