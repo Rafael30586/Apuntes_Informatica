@@ -309,8 +309,22 @@ Mi respuesta:
 * 8 subredes posibles
 * 30 anfitriones por subred
 * La respuesta es correcta
-* Este ejercicio demuestra que los bits pedidos para la subred no necesariamente deben ser contiguos 
+* Este ejercicio demuestra que los bits pedidos para la subred no necesariamente deben ser contiguos
 
+Otro ejercicio: se nos da una red clase C y queremos 15 subredes y 20 anfitriones por cada subred ¿Cómo se haría?
+* Una dirección clase C tiene 8 bits para el HID
+* Para obtener 15 subredes podríamos pedir 4  bits, quedando 4 bits para el HID, que corresponde a 14 anfitriones
+* Mi respuesta es que no se puede hacer
+* Mi respuesta es correcta
+
+Supongamos que tenemos una red clase C y queremos dividirla en tres subredes: 2 subredes con 60 anfitriones y una subred con 120 anfitriones ¿Es esto posible? Sí. Si directamente pedimos dos bits del HID obtendremos 4 subredes de 62 anfitriones, por lo cual esta estrategia no funcionará porque necesitamos una subred que tenga 120 anfitriones. ¿Qué podemos hacer entonces? pedir un solo bit para obtener dos subredes de 126 anfitriones. Una de las subredes podría tener el primer bit fijado del HID en 0 y la otra subred el mismo bit en 1. Pero esto no termina acá, lo que se puede hacer ahora es fijar un segundo bit para la subred que tiene el primer bit fijado en 1 y así obtener dos subredes a partir de esta. Entonces tenemos 3 subredes como resultado: la primera con el primer bit fijado en 0; la segunda con los dos primeros bits fijados en 10; y la última con los primeros dos bits fijados en 11. Entonces tenemos una subred que puede alojar 126 anfitriones y otras dos subredes que pueden tener 62 anfitriones.
+
+Ejercicio: Se nos da una máscara de subred que es igual a 255.255.255.240, averiguar cual de las siguientes direcciones corresponde al DBA: a) 200.56.78.31 b) 200.56.78.15 c) 200.56.78.10 d) 200.56.78.47
+
+Desarrollo y respuesta:
+* La máscara de subred en binario es: 1111111.1111111.11111111.11110000
+* La respuestas correctas son la a, la b y la d. La c no puede ser DBA de ninguna subred
+* Mi respuesta es correcta. Las DBAs, para ser correctas, deben tener los últimos 4 bits como 1s para este ejercicio
 ----------------------------------------------------------------------------------------------------------------------
 Control de errores
 -----------------------------------------------------------------------------------------------------------------------
