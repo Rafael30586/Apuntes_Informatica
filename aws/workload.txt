@@ -6,3 +6,14 @@ Una carga de trabajo o workload, en el sentido màs general, es la cantidad de t
 En IT, el tèrmino ha evolucionado continuamente y se ha vuelto cargado de significado, particularmente con el surgimiento de la computación en la nube. En general, carga de trabajo se usa para referirse a una tarea o proceso computacional y a la computación, almacenamiento, memoria y recursos de red que la tarea requiere
 En el contexto de la computaciòn en la nube, carga de trabajo se refiere a cualquier servicio, aplicación o capacidad que consume recursos basados en la nube. En este contexto de la nube, máquinas virtuales, bases de datos, aplicaciones, microservicios, nodos y màs son considerados cargas de trabajo
 Las cargas de trabajo pueden ir desde simples tareas, como ejecutar una aplicación, a operaciones complejas, como procesar anlaìticas de datos a gran escala o correr un paquete de aplicaciones interconectadas. La gestión de cargas de trabajo es un aspecto crítico de la optimización de recursos IT, impactando directamente el rendimiento del sistema, costo, estabilidad y el éxito de las operaciones de negocio
+
+-----------------------
+Cargas de trabajo vs aplicaciones
+
+El "tèrmino" carga de trabajo generalmente se usa de manera intercambiable con "aplicación". Aunque tanto cargas de trabajo como aplicaciones son componentes integrales e interconectados de cualquier infraestructura IT (y las aplicaciones pueden ser consideradas cargas de trabajo), atienden a diferentes propósitos
+Las aplicaciones son programas o grupos de programas, diseñados para ayudar a los usuarios finales llevar a cabo tareas específicas y atender a ciertas necesidades de negocio. Cargas de trabajo se refieren a las demandas de procesamiento de esas tareas. En otras palabras, las cargas de trabajo energizan aplicaciones. De todas formas, es importante enfatizar que una carga de trabajo no es necesariamente exclusiva de una sola aplicación. Muchas cargas de trabajo llevan a cabo tareas a lo largo de aplicaciones
+Además, el ciclo de vida de las aplicaciones tiende a cambiar cuando hace falta cambio o cuando tecnologías màs avanzadas emergen. De todas formas, las cargas de trabajo cambian basadas en factores de infraestructura, como rendimiento de sistema, tràfico de usuario, asignación de recursos y necesidades de procesamiento
+
+____________________________________________
+Hay màs para resumir con el enlace de arriba
+____________________________________________
