@@ -1,0 +1,18 @@
+Autodidacta Océano Color 4 - Física II - páginas 950
+
+Generadores eléctricos. Fuerza electromotriz
+
+Se consideran ahora dos cuerpos unidos por medio de un hilo conductor. Si se quiere que circule una corriente a través de este, es preciso que entre los dos cuerpos, es decir, entre los extremos del conductor, exista una diferencia de potencial, de tal modo que, en cuanto esta diferencia desaparezca deje de circular la corriente a través del conductor
+Si esta corriente se quiere mantener indefinidamente, es preciso poner en contacto los dos cuerpos mediante un aparato que mantenga invariable la diferencia de potencial entre ellos. El aparato que realiza esta misión se denomina generador eléctrico y los cuerpos entre los que el generador mantiene constante la diferencia de potencial reciben el nombre de polos o bornes
+Para que un generador consiga mantener fija la diferencia de potencial es preciso que consuma energía, la cual se le puede suministrar en diversas formas: mecánica (salto de agua); calorífica (central térmica); radiactiva (central nuclear); química (pila), etc. Según esto, se puede definir un generador eléctrico como todo aparato que transforma cualquier tipo de energía en energía eléctrica
+Fuerza electromotriz de un generador es la energía, de cualquier clase, que consume para transportar la energía de un culombio de uno a otro de sus bornes con objeto de mantener la diferencia de potencial que existe entre ellas 
+La fuerza electromotriz se representa por la letra E y se abrevia f.e.m
+Según se ha definido, la expresión matemática de la fuerza electromotriz de un generador es:
+
+E = L / q
+
+De esta expresión se deduce que su unidad es el voltio. La f.e.m de un generador se mide por la diferencia de potencial en voltios entre sus bornes.
+La resistencia interna de un generador se pone de manifiesto al considerar que la f.e.m y la diferencia de potencial entre sus bornes son realmente conceptos distintos
+
+
+ 

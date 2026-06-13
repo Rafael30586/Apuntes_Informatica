@@ -1,4 +1,4 @@
-Autodidacta Océano Color 4 - Física II - páginas 949, 950
+Autodidacta Océano Color 4 - Física II - páginas 949
 
 No todos los circuitos pueden resolverse mediante asociaciones de resistencia en serie o en paralelo. Existen circuitos más complicados en los que es necesario ayudarse de nuevas reglas. Gustav Robert Kirchoff propuso unas reglas para el estudio de estas leyes. Antes de enunciarlas, hay que definir tres conceptos muy utilizados: nudo, malla y rama:
 * Nudo es un punto de circuito donde se unen tres (o más) conductores
