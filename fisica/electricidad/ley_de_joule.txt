@@ -1,0 +1,36 @@
+Autodidacta Océano Color 4 - Física II
+
+Ley de Joule
+
+Experimentalmente se comprueba que todo conductor recorrido por una corriente eléctrica sufre un calentamiento.
+Este fenómeno, conocido con el nombre de efecto Joule, viene regulado por la ley del mismo nombre, cuyo enunciado es: la energía absorbida por un conductor al ser recorrido por una corriente eléctrica se transforma íntegramente en calor.
+Para obtener la expresión matemática de la ley de Joule es necesario conocer que, al transformarse el trabajo en calor, cada julio da lugar a 0,24 calorías
+
+1 julio = 0,24 calorías
+
+Considerando que L = V . I . t
+
+y que:
+
+V = I . R
+
+sustituyendo, resulta:
+
+L = V . I . t = (I . R) . I . t = R . I^2 . t julios
+
+y como, según lo anteriormente expuesto:
+
+Q (en cal) = 0,24 L (en J)
+
+resulta:
+
+Q = 0,24 L = 0,24 R . I^2 . t cal
+Q = 0,24 R . I^2 . t cal
+
+De esta fórmula se deducen fácilmente las leyes de Joule:
+* El calor desarrollado por un corriente es directamente proporcional al cuadrado de la intensidad de la misma
+* El calor es proporcional a la resistencia del conductor
+* El calor es proporcional al tiempo que dura la corriente
+
+Las aplicaciones del efecto Joule son muchas y entre algunas de ellas se pueden citar: calefacción, lámparas de incandescencia, fusibles, arco eléctrico
+
