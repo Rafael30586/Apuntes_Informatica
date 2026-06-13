@@ -1,0 +1,23 @@
+Autodidacta Océano Color 4 - Física II - páginas 949, 950
+
+No todos los circuitos pueden resolverse mediante asociaciones de resistencia en serie o en paralelo. Existen circuitos más complicados en los que es necesario ayudarse de nuevas reglas. Gustav Robert Kirchoff propuso unas reglas para el estudio de estas leyes. Antes de enunciarlas, hay que definir tres conceptos muy utilizados: nudo, malla y rama:
+* Nudo es un punto de circuito donde se unen tres (o más) conductores
+* Malla es cualquier trayectoria cerrada
+* Rama es toda trayectoria entre nudos
+
+Así las leyes de Kirchoff se enuncian de la siguiente manera:
+1) En todo nudo, la suma algebraica de las intensidades, considerando positivas las que entran y negativas las que salen, es igual a 0
+sumatoria I = 0
+2) En toda malla, la suma algebraica de las caídas de tensión es igual a la suma algebraica de las fuerzas electromotrices intercaladas en ella
+sumatoria I . R = sumatoria E
+
+El uso de esta ley exige una correcta interpretación de los signos, tanto de las caídas de tensión I . R, como de las fuerzas electromotrices E; para ello, se fija arbitrariamente un sentido de recorrido de la malla, bien sea a favor o en contra de las agujas del reloj. Una vez elegido el sentido, se tienen en cuenta las siguientes normas:
+* Una caída de tensión es positiva cuando se recorre la resistencia en el sentido de la corriente, y negativa en caso contrario
+* Una fuerza electromotriz es positiva cuando se atraviesa la pila entrando por el polo negativo y saliendo por el positivo, y negativa en caso contrario
+
+Para llevar a cabo el cálculo de un circuito mediante las leyes de Kirchoff, se sigue el proceso que a continuación se detalla
+A) Se fija arbitrariamente el sentido de la corriente en cada una de las ramas. No tiene importancia equivocarse en esta fijación inicial, ya que el verdadero sentido quedará determinado por el signo que resulte en el cálculo. Si una intensidad  resulta positiva es que el sentido previamente fijado era correcto; lo contrario ocurre si la intensidad resulta negativa
+B) Se aplica la primera ley de Kirchoff a todos los nudos, excepto a uno
+C) Se aplica la segunda ley a las mallas. Para ello después de haber fijado un sentido de giro, se recorre toda la malla, evaluando las caídas de tensión y las fuerzas electromotrices que van apareciendo
+D) Se resuelven las ecuaciones obtenidas 
+
