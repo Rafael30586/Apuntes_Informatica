@@ -1,0 +1,19 @@
+Física conceptual - 10ma edición - Paul G Hewitt - páginas 417
+
+Carga
+
+Cargamos eléctricamente las cosas al transferir electrones de un lugar a otro. Lo podemos hacer por contacto físico, como cuando se frotan entre sí las sustancias, o simplemente cuando se tocan. También podemos redistribuir la carga de un objeto poniéndole cerca un objeto cargado. A esto se le llama inducción
+
+-------------------------
+
+Carga por fricción y por contacto
+
+Todos estamos familiarizados con los efectos eléctricos que produce la fricción. Podemos peinarnos frente a un espejo en una habitación oscura para ver y oír las chispas. 
+Los electrones pueden pasar de un material a otro con un simple toque. Por ejemplo, cuando se toca un objeto neutro con una varilla con carga negativa, algunos electrones pasarán al objeto neutro. A este método de carga se le llama carga por contacto. Si el objeto tocado es buen conductor, los electrones se difundirán a todas partes de su superficie, porque se repelen entre sí. Si es un mal conductor, será necesario tocar varios lugares del objeto con la varilla cargada para obtener una distribución de carga más o menos uniforme
+
+----------------------
+Carga por inducción
+
+Si acercás un objeto cargado a una superficie conductora, harás que se muevan los electrones en la superficie del material, aunque no haya contacto físico. 
+En las tormentas con relámpagos hay carga por inducción. La parte inferior de las nubes tiene carga negativa, que induce una carga positiva sobre la superficie de la tierra que esté debajo de ella. Benjamín Franklin fue quien primero demostró que el relámpago es un fenómeno eléctrico, cuando realizó su célebre experimento de elevar un cometa durante una tormenta. El relámpago es una descarga eléctrica entre una nube y el suelo, con carga opuesta, o entre partes de nubes con carga opuesta. 
+Franklin también determinó que la carga pasa con facilidad hacia puntas metálicas afiladas o desde ellas, y diseñó el primer pararrayos. Si una varilla se coloca sobre un edificio y se conecta con el terreno, la punta del pararrayos atrae electrones del aire, evitando que se acumule una gran cantidad de carga positiva por inducción. Esta "fuga" continua de carga evita una acumulación de carga que de otra forma produciría una descarga súbita entre la nube y el edificio. Por consiguiente, la finalidad principal del pararrayos es evitar que suceda una descarga del relámpago. Si por alguna razón no escapa suficiente carga del aire a la varilla, y aún así cae el rayo, será atraído al pararrayos y llegará directo al suelo, sin dañar al edificio. El objetivo principal del pararrayos es evitar incendios causados por relámpagos 
