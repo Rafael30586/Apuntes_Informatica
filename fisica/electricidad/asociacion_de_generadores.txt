@@ -1,0 +1,25 @@
+Autodidacta Océano Color 4 - Física II - páginas 952
+
+Asociación de generadores
+
+Cuando varios generadores se conectan entre sí, el conjunto se comporta como si fuera un generador único. La fuerza electromotriz de este conjunto se denomina fuerza electromotriz de la asociación
+Se consideran dos formas de asociación de generadores: en paralelo y en serie
+
+----------------------
+Asociación en paralelo
+
+Aunque en este tipo de asociación pueden emplearse generadores de diferentes características, se considerará únicamente el caso en que todos ellos sean iguales
+La asociación de generadores en paralelo se realiza uniendo por un lado todos los polos positivos y por otro lado todos los polos negativos
+La fuerza electromotriz de la asociación es igual a la correspondiente a cada uno de ellos, mientras que la resistencia interna equivale a r/n, siendo r la resistencia interna de cada generador y n el número de ellos que se encuentran conectados
+La ley de Ohm, aplicada a un circuito formado por varios generadores conectados en paralelo, toma la forma:
+
+I = (E . n) / R . n + r
+
+---------------------
+Asociación en serie
+
+La asociación de generadores en serie se realiza uniendo el polo negativo del primero con el positivo del segundo, el negativo del segundo con el positivo del tercero y así sucesivamente
+La fuerza electromotriz de la asociación es igual a la suma de las fuerzas electromotrices de cada uno de ellos; así mismo, la resistencia interna de la asociación es igual a la suma de las resistencias internas de cada uno de los generadores
+La ley de Ohm, aplicada a un circuito formado por varios generadores conectados en serie, toma la forma:
+
+I = sumatoria E / (R + sumatoria r)
