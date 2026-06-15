@@ -325,6 +325,41 @@ Desarrollo y respuesta:
 * La máscara de subred en binario es: 1111111.1111111.11111111.11110000
 * La respuestas correctas son la a, la b y la d. La c no puede ser DBA de ninguna subred
 * Mi respuesta es correcta. Las DBAs, para ser correctas, deben tener los últimos 4 bits como 1s para este ejercicio
+
+-------------------------
+CIDR
+
+* Usa la notación con barra ("/")
+* Tenemos a.b.c.d/n , siendo n el NID o máscarad de subred
+* Si tenemos una dirección IP, n equivale al NID y 32 - n sería la parte del HID. La cantidad de direcciones posibles sería de 2^(32-n), y la cantidad de anfitriones de 2^(32-n) - 2
+* Para encontrar la primera dirección establecemos todos los bits del HID en 0 . Si establecemos esos mismo bits en 1, encontraremos la última dirección
+* Hay algunas reglas para CIDR que deben seguirse: cuando un cliente quiere un bloque de direcciones IP, IANA o el proveedor ISP creará un bloque y los asignará al cliente. Con respecto a las reglas: todas las direcciones IP del bloque deben ser contiguas; el tamaño del bloque debe ser una potencia de 2 (2, 4, 8, 32, 1024, etc); la primera dirección IP del bloque debe ser divisible por el tamaño del bloque ¿cómo sabemos esto?, si el tamaño del bloque es 2^k, los últimos k bits de la primera dirección IP deben ser 0s, los {últimos k bits de la dirección IP son el resto, y los n-k bits son el cociente
+* La primera dirección IP del bloque debe ser usada como el id del bloque
+
+Ejercicio: tenemos un bloque que va desde 100.100.100.64 hasta 100.100.100.127 . Determinar si es un bloque CIDR válido
+
+Mi desarrollo y respuesta
+* Desde la primera dirección hasta la última hay 64 direcciones, por lo cual es una potencia de 2 (2^6)
+* Todas las direcciones del bloque son contiguas
+* Los bits del últimos octeto son 0 1 0 0 0 0 0 0, los últimos k bits son 0s
+* Es un bloque CIDR válido
+* La respuesta es correcta
+
+Continuemos trabajando con el ejemplo del ejercicio anterior:
+* El tamaño del bloque es de 2^6 = 64
+* Hay 6 bits para el HID y 26 bits para el NID
+* A la hora de representar el bloque se hace así: 100.100.100.64/26 . El número que está a continuación de la barra (en este caso el 26), representa los bits del NID 
+
+Otro ejercicio: Tenemos las direcciones desde 100.100.100.128 hasta 100.100.100.255 ¿es un bloque CIDR válido?
+
+Mi desarrollo y respuesta:
+* Son un total de 255 - 128 + 1 = 128 direcciones IP. 128 es una potencia de 2 (2^7)
+* Son direcciones IP contiguas
+* El último octeto en binario sería 1 0 0 0 0 0 0 0 . Los últimos k bits (7) son 0s
+* Hay 32 - 7 = 25 bits para el NID
+* Es un bloque CIDR válido y se escribe 100.100.100.128/25
+* La respuesta es correcta
+
 ----------------------------------------------------------------------------------------------------------------------
 Control de errores
 -----------------------------------------------------------------------------------------------------------------------

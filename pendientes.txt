@@ -11,5 +11,7 @@ WSDL
 especificaciones, por ejemplo, jakarta, Ecmascript
 bitwise operations
 thread pool
-granularidad
+// granularidad
+URL rewriting
+cross site forgery
 

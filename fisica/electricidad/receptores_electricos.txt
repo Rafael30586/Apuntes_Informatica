@@ -1,0 +1,20 @@
+Autodidacta Océano Color 4 - Física II - páginas 953, 954
+
+Receptores eléctricos
+
+Un receptor eléctrico es todo dispositivo, aparato o máquina capaz de transformar la energía eléctrica que recibe en cualquier otra clase de energía
+Hay distintos tipos de receptores eléctricos en función del tipo de energía que se puede obtener de ellos por transformación de la energía eléctrica que reciben: térmicos, lumínicos, electroquímicos y mecánicos
+Los receptores térmicos son dispositivos en los que se transforma la energía en calor. Se conocen muchos ejemplos: estufas, calentadores, planchas, hornillos, secadores, etc. E definitiva, todo aparato que posee resistencia eléctrica es un receptor térmico. Se fundan en el efecto Joule
+Los receptores lumínicos son aparatos son aparatos que reciben energía eléctrica y la transforman en luz. Toda clase de lámparas son ejemplos característicos de este tipo de receptores
+Los receptores electroquímicos son los que transforman la energía eléctrica en energía química, dando lugar a reacciones químicas. De este tipo son las células electrolíticas
+Un receptor mecánico es una máquina que transforma la energía eléctrica en energía mecánica. De este tipo son los motores eléctricos, que pueden ser de corriente continua o de corriente alterna
+Al igual que el generador, el receptor tiene dos características propias: la fuerza contraelectromotriz y la resistencia interna
+Fuerza contraelectromotriz E' consumida por el motor en un segundo y por unidad de intensidad
+
+E'=L/(I . t) 
+
+El nombre de la fuerza contraelectromotriz procede de que su sentido es opuesto a la tensión de alimentación del motor. Con frecuencia suele abreviarse escribiendo f.c.e.m
+
+_____________________________________________
+Continuar resumiendo de las páginas de arriba
+_____________________________________________

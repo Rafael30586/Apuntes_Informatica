@@ -1,3 +1,9 @@
 Sistemas (en la carpeta de conceptos generales)
 Descriptores de archivos (en la carpeta de Linux)
 Abstracción en computación
+Serializable en carpeta de java
+point of presence (en la carpeta de AWS)
+Edge locations (en la carpeta de AWS)
+Cabeceras HTTP (en la carpeta de redes)
+Receptores eléctricos (en la carpeta de electricidad en física)
+Ondas electromagnéticas (en la carpeta luz en física)

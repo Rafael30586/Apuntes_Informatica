@@ -120,3 +120,9 @@ En este ejemplo, si realloc() falla entonces el puntero NULL se asigna a la vari
 NULL es un "puntero null", un puntero que apunta a nada
 Te ayuda a evitar usar punteros que están vacíos o son inválidos
 Muchas funciones en C retornan NULL cuando algo va mal. Por ejemplo, fopen() retorna NULL si el archivo no puede ser abierto, y malloc() retorna NULL si la asignación de memoria falla. 
+
+-------------------
+Si construimos una linked list en C debemos tener en cuenta que head es un puntero que apunta al primer nodo de la lista, no es un nodo persé. Según chatGPT head no forma parte de los nodos de la lista, es simplemente una variable externa que permite acceder al primer nodo
+
+-------------------
+Cuando compilamos un archivo .c es posible elegir el nombre del archivo resultante antes de la compilación, por ejemplo: gcc programa.c -o mi_aplicacion.exe
