@@ -105,7 +105,15 @@ Cuando colocamos una etiqueta "a" en un JSP para que sirva de enlace, podemos co
 
 El protocolo HTTP tiene caché, lo que puede resultar en que el usuario entre a páginas que necesiten autenticación sin estar autorizado, por ejemplo, hacer logout y luego apretar el botón de ir para atrás en el navegador y que nos lleve a una página para la cual ya no tenemos autorización por no estar autenticados. Para evitar esto se puede colocar esta pieza de código en algunos JSPs, response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); Nota: esto sirve con la versión 1.1 de HTTP, si estamos trabajando en la versión 1.0 de HTTP, hay que agregar además, la siguiente línea de código: response.setHeader("Pragma", "no-cache");
 
-Estos símbolos <% %> nos sirven para escribir código java en el JSP y se llaman scripplets
+<%! %> Estos símbolos nos permiten declarar variables de instancia y métodos
+
+Estos símbolos <% %> nos sirven para escribir código java en el JSP y se llaman scripplets. Todo lo que escribamos será insertado en el método _jspService(), por lo que las variables declaradas serán variables locales. Cualquier código que sea posible de meter en un método puede ser colocado en el scripplet, por lo que no podemos declarar métodos, ya que, en java, un método no puede ser declarado dentro de otro método
+
+Los símbolos <%= %>  (se llaman expresssion) permiten envolver lo que coloquemos entre ellos en el método out.print bajo el método _jspService(). Por ejemplo, si colocamos una variables dentro de los símbolos hará los siguiente: out.print(variable)
+
+Page directive: es una directiva que permite importar clases, ejemplo de uso <%@ page import="java.time.LocalDateTime" %>
+
+Include directive: permite insertar archivos jsp en otros archivos jsp, parecido a como se trabaja con componentes en React y Angular. Podemos, por ejemplo, que un JSP sea una header e insertarlo en otro JSP que tenga el contenido principal	
 
 Cuando usamos request.getAttribute() en nuestro JSP, tendremos que hacer una refundición, ya que el método devuelve un objeto de clase Object
 
