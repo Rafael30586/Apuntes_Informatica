@@ -386,6 +386,20 @@ Mi desarrollo y respuesta:
 * El DBA es 167.199.143.255
 * Las respuestas son correctas excepto por la del último anfitrión que es 167.199.143.254
 
+--------------------------
+Subnetting en CIDR
+
+* Para crear subredes usando CIDR, se hace de una forma similar al classfull addressing: pidiendo bits del HID
+* Cuando expresamos las subredes con la notación CIDR hay que colocar después de la barra la cantidad de bits del NID más los bits del SID, por ejemplo, si tenemos inicialmente 100.100.100.14/25 y luego creamos dos subredes pidiendo un bit del HID, los bloques de direcciones que cada subred tendrán /26
+* También se puede hacer "variable length subnetting" (VLSM) como en el classfull addressing
+
+Ejercicio: tenemos 200.10.11.144/27 . Encontrar el cuarto octeto de la última dirección IP de la red que puede ser asignada a un anfitrión
+
+Mi desarrollo y resultado:
+* 5 bits de la dirección son para el HID
+* Hay que sumar los bits 128 + 16 + 8 + 4 + 2 = 158
+* Elo último octeto de la dirección del último anfitrión es 158
+ 
 ----------------------------------------------------------------------------------------------------------------------
 Control de errores
 -----------------------------------------------------------------------------------------------------------------------
