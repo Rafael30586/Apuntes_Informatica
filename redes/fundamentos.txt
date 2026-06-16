@@ -333,7 +333,7 @@ CIDR
 * Tenemos a.b.c.d/n , siendo n el NID o máscarad de subred
 * Si tenemos una dirección IP, n equivale al NID y 32 - n sería la parte del HID. La cantidad de direcciones posibles sería de 2^(32-n), y la cantidad de anfitriones de 2^(32-n) - 2
 * Para encontrar la primera dirección establecemos todos los bits del HID en 0 . Si establecemos esos mismo bits en 1, encontraremos la última dirección
-* Hay algunas reglas para CIDR que deben seguirse: cuando un cliente quiere un bloque de direcciones IP, IANA o el proveedor ISP creará un bloque y los asignará al cliente. Con respecto a las reglas: todas las direcciones IP del bloque deben ser contiguas; el tamaño del bloque debe ser una potencia de 2 (2, 4, 8, 32, 1024, etc); la primera dirección IP del bloque debe ser divisible por el tamaño del bloque ¿cómo sabemos esto?, si el tamaño del bloque es 2^k, los últimos k bits de la primera dirección IP deben ser 0s, los {últimos k bits de la dirección IP son el resto, y los n-k bits son el cociente
+* Hay algunas reglas para CIDR que deben seguirse: cuando un cliente quiere un bloque de direcciones IP, IANA o el proveedor ISP creará un bloque y los asignará al cliente. Con respecto a las reglas: todas las direcciones IP del bloque deben ser contiguas; el tamaño del bloque debe ser una potencia de 2 (2, 4, 8, 32, 1024, etc); la primera dirección IP del bloque debe ser divisible por el tamaño del bloque ¿cómo sabemos esto?, si el tamaño del bloque es 2^k, los últimos k bits de la primera dirección IP deben ser 0s, los últimos k bits de la dirección IP son el resto, y los n-k bits son el cociente
 * La primera dirección IP del bloque debe ser usada como el id del bloque
 
 Ejercicio: tenemos un bloque que va desde 100.100.100.64 hasta 100.100.100.127 . Determinar si es un bloque CIDR válido
@@ -359,6 +359,32 @@ Mi desarrollo y respuesta:
 * Hay 32 - 7 = 25 bits para el NID
 * Es un bloque CIDR válido y se escribe 100.100.100.128/25
 * La respuesta es correcta
+
+Otro ejercicio: Tenemos 100.100.100.68/27 . Hay que encontrar: número de direcciones, rango de direcciones IP, id del bloque, primer anfitrión, último anfitrión, DBA
+
+Mi desarrollo y respuesta:
+* Como es /27 significa que los últimos 5 bits están reservados para los anfitriones
+* El último octeto en binario es: 0 1 0 0 0 1 0 0  
+* El bloque está compuesto por 2^2 = 4 anfitriones
+* Son 4 direcciones IP en total
+* El rango de direcciones IP va desde 100.100.100.68 hasta 100.100.100.71
+* El id del bloque es 100.100.100.68
+* El primer anfitrión es 100.100.100.68
+* El último anfitrión es 100.100.100.68
+* No sé como encontrar el DBA
+* El ejercicio está mal resuelto por problemas de interpretación
+
+Otro ejercicio: Los mismo que el anterior pero para 167.199.128.3/20
+
+Mi desarrollo y respuesta:
+* Los primeros 20 bits son el NID, por lo que los 12 últimos bits son el HID (el último octeto más los cuatro bits de la derecha del tercer octeto)
+* Son 2^12 = 4096 direcciones en total
+* El rango de direcciones va desde 167.199.128.0 hasta 167.199.143.255
+* El id del bloque es 167.199.128.0
+* El primer anfitrión es 167.199.128.1
+* El último anfitrión es 167.199.142.255
+* El DBA es 167.199.143.255
+* Las respuestas son correctas excepto por la del último anfitrión que es 167.199.143.254
 
 ----------------------------------------------------------------------------------------------------------------------
 Control de errores
