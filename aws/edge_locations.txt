@@ -1,1 +1,44 @@
 https://www.geeksforgeeks.org/devops/aws-edge-locations/
+
+AWS Edge locations
+
+Son integrales a la infraestructura global de Amazon Web services permitiendo la entrega de contenido y aplicaciones con baja latencia y alto rendimiento. Funcionando como datacenters en el borde de la red estos lugares cachean contenido, procesan datos y traen los servicios de la nube más cerca de los usuarios finales
+
+¿Qué son las Edge locations de AWS?
+
+Las Edge locations son datacenters estratégicamente posicionados localizados alrededor del mundo diseñados para optimizar la entrega de contenido y aplicaciones. Sirven como point of presence (PoP) para los servicios de AWS permitiendo que los datos sean servidos de la ubicación más cercana al usuario final lo que reduce significativamente la latencia
+
+-------------------------
+¿Cómo funcionan las Edge locations de AWS?
+
+Entrega de contenido
+Las Edge locations de AWS trabajan junto con el CDN de AWS Cloudfront. Cuando un usuario solicita contenido, Cloudfront lo extrae de la Edge location más cercana y minimiza el tiempo de viaje
+
+Caché
+El contenido frecuentemente accedido es cacheado en las Edge locations permitiendo a los usuarios extraerlo rápidamente sin la necesidad de acceder al servidor de origen. Esto mejora los tiempos de carga y reduce el esfuerzo del servidor
+
+Procesamiento de datos
+Con AWS Lambda@Edge, los desarrolladores pueden correr código en respuesta a los eventos generados por el procesamiento de datos en tiempo real y personalización de contenido de Cloudfront antes de que llegue al usuario
+
+----------------------------
+Significado de las AWS Edge locations
+* Latencia reducida: Al servir contenido desde lugares más cercanos a los usuarios finales, las AWS Edge locations reducen latencia significativamente resultando en tiempos de carga más rápidos para las aplicaciones y sitios web       
+* Tiempos de carga mejorados: Cacheando en los bordes asegura que los usuarios experimenten acceso rápido a contenido frecuentemente solicitado llevando a rendimiento mejorado y satisfacción de usuario
+* Experiencia de usuario mejorada: Las aplicaciones que aprovechan Edge locations pueden proveer la experiencia impecable y responsiva que es crucial para mantener el compromiso y satisfacción del usuario
+
+------------------------
+Beneficios de uso de AWS Edge locations
+* Alcance global: Las Edge locations están distribuidas globalmente asegurando que el contenido esté disponible para los usuarios sin importar su ubicación geográfica
+* Escalabilidad: Pueden encargarse de alzas en el tráfico sin comprometer el rendimiento haciéndolos ideales para aplicaciones con demanda variable
+* Bueno costo: Al reducir la carga de los servidores de origen y minimizar la transferencia de datos, las Edge locations pueden ayudar a optimizar las expensas operacionales generales
+
+----------------------------
+Casos de uso de AWS Edge locations en aplicaciones del mundo real
+* Content delivery network (CDN): Las AWS Edge locations juegan un rol central en la entrega de contenido a través de Amazon CloudFront. Negocios como Netflix, Hulu y Disney+ dependen de AWS para entregar contenido de alta calidad bajo demanda a las audiencias globales asegurando una experiencia de streaming fluida
+* E-commerce: Para plataformas e-commerce como Amazon y shoppify las AWS Edge locations aseguran que las imágenes de productos, datos de usuario y funcionalidades de carrito de compras carguen con rapidez mejorando la experiencia de compra al reducir tiempos de carga de páginas y mejorando el rendimiento durante temporadas de tráfico elevado
+* Streaming en vivo media online: Las AWS Edge locations permiten streaming en vivo de baja latencia para eventos deportivos, conciertos y noticias. Plataformas como Twitch y YouTube usan AWS para entregar contenido de streaming de video de alta calidad con el mínimo buffering o retraso, incluso a las audiencias grandes y dispersas
+* Video juegos: Para plataformas de video juegos online las AWS Edge locastions son esenciales para reducir latencia asegurando que los jugadores experimenten interacciones fluidas y en tiempo real sin lag. Las compañías de video juegos usan Edge locations para entregar parches para juegos, actualizaciones y contenido descargable de manera eficiente 
+*IoT y Edge computing: Con el surgimiento de los dispositivos IoT, las AWS Edge locations ayudan a procesar datos más cerca de donde son generados. Esto es crítico para industrias como la salud, automotor y ciudades inteligentes donde el análisis de datos en tiempo real se requiere para la toma de decisiones  	
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________

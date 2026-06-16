@@ -9,4 +9,4 @@ Un point of presence es un punto o lugar físico donde dos o más redes o dispos
 
 Cada point of presence tiene una única dirección IP. Un PoP funciona como un facilitador para el flujo de datos entre puntos finales. Cuando un usuario final trata de acceder a algo online, el dispositivo envía datos al PoP más cercano. El PoP envía los datos a través de otras redes hasta que llega a destino. Como tales, los PoPs son críticos en controlar el flujo de tráfico de red. Un PoP generalmente incluye routers, servidores y switches
 Un ISP tiene más de un PoP en internet. El número de PoPs que un ISP o proveedor de servicio online tiene es a veces usado como medida de su tamaño o tasa de crecimiento. Mientras más PoPs tiene un servicio, más largo es su alcance
-Un PoP podría residir es un espacio alquilado, del cual el trasportador de telecomunicaciones (como Verizon o AT&T)al cual el ISP se conecta es dueño
+Un PoP podría residir en un espacio alquilado, del cual el trasportador de telecomunicaciones (como Verizon o AT&T)al cual el ISP se conecta es dueño
