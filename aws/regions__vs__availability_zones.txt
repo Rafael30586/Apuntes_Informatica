@@ -3,7 +3,7 @@ https://www.techtarget.com/searchcloudcomputing/tip/Understand-AWS-Regions-vs-Av
 ¿Qué es una región de AWS?
 
 Un a región de AWS es un grupo de datacenters en un área geográfica específica, como el oeste de Europa o el noreste de Estados Unidos
-Cada región de AWS incluye múltiples zonas de disponibilidad (AZ). De todas formas, cada AZ está restringida a una región específica de AWS. Poidés usar múltiples AZs dentro de una región, pero no podés usar la misma AZ a lo largo de múltiples regiones
+Cada región de AWS incluye múltiples zonas de disponibilidad (AZ). De todas formas, cada AZ está restringida a una región específica de AWS. Podés usar múltiples AZs dentro de una región, pero no podés usar la misma AZ a lo largo de múltiples regiones
 Es la mejor práctica elegir una región que está geográficamente cerca de los usuarios; esto reduce latencia porque los datos alcanzan a los usuarios más rápido
 Además, las organizaciones deberían asegurarse de que la región que elijan se alinee con cualquier regla de obediencia que necesiten cumplir. Por ejemplo, los reguladores podrían requerir que los datos residan en un país específico
 

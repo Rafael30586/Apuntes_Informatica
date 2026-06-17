@@ -7,4 +7,5 @@ expense --> gasto
 one-time charge --> cargo único
 flat fees
 workload
-seamless -> sin costura, impecable, fluido	
+seamless -> sin costura, impecable, fluido
+cloud-native	

@@ -1,0 +1,21 @@
+https://www.ionos.com/digitalguide/server/know-how/cloud-elasticity/
+
+Elasticidad en la nube
+
+Se refiere a como los recursos IT se adaptan a los requerimientos del sistema en tiempo real. Las compañías pueden responder de manera rápida y efectiva al incremento temporal en demanda en sus servidores sin la necesidad de comprometerse a un plan de la nube que aprovisione de más recursos de los que la compañía típicamente necesitaría
+
+-------------------------- 
+
+¿Por qué es importante la elasticidad en la nube?
+
+Un número cada vez más grande de compañías está subcontratando parte de sus capacidades IT a una nube. La elasticidad en la nube es el aprovisionamiento y deaprovisionamiento automático de recursos desde una datacenter cuando la demanda de un cliente se incrementa o decrece. Esto permite a los recursos de la nube, incluyendo recursos de computación, almacenamiento y memoria, a ser rápidamente reasignados cuando la demanda cambia. Este ajuste dinámico es una función típica de servicios en la nube modernos, que pueden ser escalados según la necesidad
+Recursos de computación como CPU, RAM, ancho de banda  de salida/entrada, y almacenamiento puede ser aumentado o disminuido según la necesidad, sin interrumpir el desempeño del sistema
+
+---------------------------
+
+¿Qué es la elasticidad en la computación en la nube?
+
+Un servicio elástico en la nube te permite usar más poder de cómputo y almacenamiento según la necesidad, y liberarlos de nuevo cuando la capacidad adicional ya no es requerida. El proceso de elasticidad debe ocurrir rápido y de manea automática. Un retraso en escalar podría llevar a sobrecargas del servidor y tiempos sin servicio. En cambio, si una escalada para abajo se retrasa, los servidores permanecerían sin usar, lo cual desperdiciaría presupuesto de la nube. Cuando un proveedor de la nube ajusta la asignación de recursos a cargas de trabajo dinámicas, permitiendo el uso de más o menos recursos, el servicio es tenido en cuenta como una nube elástica. Las plataformas de nube elástica son generalmente sistemas clud-native específicamente designados para adaptarse de manera fluida a cargas de trabajo cambiantes sin intervención manual
+El grado de elasticidad de la nube depende de que tan rápido un proveedor de la nube puede asignar diferentes recursos en respuesta a requerimientos de cliente cambiantes. Ofrecer esta opción dinámica es una ventaja enorme. Antes de la era de computación en la nube, el servidor y la arquitectura del conductor tenían que ser expandidas para responder a alzas repentinas en demanda por ancho de banda e infraestructura. Este enfoque de manejar alzas en demanda requería grandes inversiones financieras por adelantado en hardware, data centers, energía y ancho de banda de red
+Esto ya no es un problema gracias a la elasticidad en la nube y soluciones de hospedaje en la nube accesibles. La capacidad puede incrementarse o disminuirse según la necesidad. Esto elimina los costos por adelantado y tiempo de instalación asociados con métodos tradicionales de establecer una infraestructura IT y de aplicación en sitio
+
