@@ -19,3 +19,16 @@ Un servicio elástico en la nube te permite usar más poder de cómputo y almace
 El grado de elasticidad de la nube depende de que tan rápido un proveedor de la nube puede asignar diferentes recursos en respuesta a requerimientos de cliente cambiantes. Ofrecer esta opción dinámica es una ventaja enorme. Antes de la era de computación en la nube, el servidor y la arquitectura del conductor tenían que ser expandidas para responder a alzas repentinas en demanda por ancho de banda e infraestructura. Este enfoque de manejar alzas en demanda requería grandes inversiones financieras por adelantado en hardware, data centers, energía y ancho de banda de red
 Esto ya no es un problema gracias a la elasticidad en la nube y soluciones de hospedaje en la nube accesibles. La capacidad puede incrementarse o disminuirse según la necesidad. Esto elimina los costos por adelantado y tiempo de instalación asociados con métodos tradicionales de establecer una infraestructura IT y de aplicación en sitio
 
+-----------------------------
+¿Cuáles son las ventajas de la elasticidad en la nube?
+
+* Escalabilidad fácil
+* Costos menores: Las compañías pueden reducir sus presupuestos de IT al evitar inversiones en infraestructura IT. Usandeo el modelo pay-as-you-go para elasticidad en la nube significa que solo se te cobra por los recursos que usás
+* Mayor redundancia: los equipos IT pueden aprovechar soluciones de back-up y recuperación más flexibles, confiables de mejor costo con recursos de computación externos accesibles
+* Más capacidad
+* Gestión más fácil
+* Alta disponibilidad y confiabilidad: Los recursos son aprovisionados automáticamente en segundo plano sin que el usuario final se de cuenta
+* Agilidad incrementada
+* Productividad incrementada
+* Flexibilidad incrementada con cambios en cargas de trabajo 
+

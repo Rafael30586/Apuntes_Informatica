@@ -4,4 +4,5 @@ CIDR range
 // on-premise
 message system o sistema de mensajería
 Gobernanza
-pay as you go
+// pay as you go
+redundancy
