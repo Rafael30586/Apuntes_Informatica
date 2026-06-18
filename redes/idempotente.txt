@@ -1,0 +1,19 @@
+https://developer.mozilla.org/en-US/docs/Glossary/Idempotent
+
+Idempotente
+
+Un método HTTP es idempotente si el efecto deseado em el servidor de realizar una sola solicitud es el mismo que el de hacer varias solicitudes idénticas.
+La especificación HTTP define a varios métodos HTTP y su semántica, lo que incluye si son idempotentes o no. Todos los métodos seguros son idempotentes, así como también PUT y DELETE. Los métodos POST y PATCH no están garantizados de ser idempotentes
+Un cliente puede reintentar una solicitud de manera segura que utiliza un método idempotente, por ejemplo, en casos de que hay dudas en cuanto a si la solicitud llegó al servidor. Si múltiples solicitudes idénticas llegan al servidor, mientras el método sea idempotente, no hay ningún daño
+La especificación HTTP solo define la idempotencia en términos del efecto deseado del cliente en el servidor. Por ejemplo, una solicitud POST intenta enviar datos al servidor, mientras que una solicitud DELETE intenta borrar un recurso del servidor. En la práctica, recae en el servidor el asegurarse de que las rutas que expone adhieran a estas semánticas
+
+Nota: Aunque los servidores son animados a adherir a las semánticas dispuestas por la especificación HTTP, la especificación no obliga. Nada previene a un servidor de exponer un endpoint no idempotente bajo un método HTTP idempotente, aunque los clientes podrán sorprenderse
+
+Tener en cuenta que:
+* Que una solicitud sea con un método idempotente no significa que la solicitud no tiene efectos colaterales en el servidor, solo que el cliente no intentó ninguna: por ejemplo, el servidor podría registrar la hora en que la solicitud es recibida
+* La respuesta devuelta por cada solicitud podría ser distinta: por ejemplo, la primera llamada de un DELETE podría devolver un 200, mientras que solicitudes sucesivas podrían devolver 404
+
+Ejemplos
+* GET /pageX HTTP/1.1 es idempotente, porque es un método seguro (de solo lectura). Llamadas sucesivas podrían retornar diferentes datos al cliente, si los datos del servidor han sido actualizados entretanto
+* POST /add_row HTTP/1.1 no es idempotente; si es llamado varias veces, añade varias filas
+* DELETE /idX/delete HTTP/1.1 es idempotente, incluso aunque el estado retornado vcambie entre solicitudes

@@ -399,7 +399,34 @@ Mi desarrollo y resultado:
 * 5 bits de la dirección son para el HID
 * Hay que sumar los bits 128 + 16 + 8 + 4 + 2 = 158
 * Elo último octeto de la dirección del último anfitrión es 158
- 
+
+---------------------
+Supernetting
+
+* El supernetting se puede hacer con classfull o classless adressing
+
+Ejemplo de classfull adressing:
+* Tenemos 200.96.86.0 , 200.96.87.0 , 200.96.88.0 y 200.96.89.0
+* ¿Cuáles son las condiciones del supernetting: 1) Revisar si los bloques son contiguos 2) El número de bloques que quieras combinar deben ser una potencia de 2 3) El tamaño de la super-red debe ser divisible por el primer id de bloque
+* Tener en cuenta que las redes de este ejemplo son de clase C
+* ¿Son bloques contiguos? sí, van desde 200.96.86.0 hasta 200.96.89.255
+* ¿Es la cantidad de bloques una potencia de 2? sí, son 4 bloques (2^2)
+* ¿Es el tamaño de la super-red divisible por el primer id de bloque? El HID en cada red es de 8 bits . Hacemos 2^8 x 4 = 2^10 . Necesitamos 10 0s contiguos . El primer id del primer bloque es 200.96.86.0 , que sería en binario (parcialmente) 200.96.01010110.00000000 . Hay 9 0s contiguos (menos que 10) por lo cual no se puede hacer una super-red a partir de estos 4 bloques
+
+Otro ejemplo:
+* Tenemos las redes 198.47.32.0 , 198.47.33.0 , 198.47.34.0 y 198.47.35.0
+* Los 4 bloques son contiguos
+* Son 4 bloques, una potencia de dos
+* Son 2^8 direcciones en cada bloque y son cuatro bloques, por lo que son 2^8 x 4 = 2^10 . El primer id de bloque es 198.47.00100000.00000000 . Se necesitan 10 bits en 0 a la derecha y hay 13
+* Se puede hacer una super-red con este bloque
+* El id de bloque de esta super-red será 198.47.32.0
+* La máscara de super-red será 255.255.252.0
+
+Diferencias entre máscara de subred y máscara de super-red
+* En la máscara de subred, la cantidad de 1s es mayor o igual que el NID. En la máscara de super-red la cantidad de 1s es menor que el NID
+* La máscara de subred es siempre aplicable a una sola red. La máscara de super-red es aplicable a dos o más redes
+* En el subnetting pedimos bits del HID. En el supernetting pedimos del NID 
+
 ----------------------------------------------------------------------------------------------------------------------
 Control de errores
 -----------------------------------------------------------------------------------------------------------------------
@@ -837,5 +864,26 @@ NAK --> not akcnowledgement
 
 Por lo que entendí, el emisor va a lanzar un NAK dependiendo del paquete que no se ha recibido de toda la ventana. Si el paquete que no se ha recibido es el 3, se enviará NAK3 al emisor y este buscará en su ventana a cual de los paquetes corresponde para reenviarlo al receptor
 
+------------------------------------------------------------------------------------------------------------------------------------------------
+Cabeceras de IPv4
+------------------------------------------------------------------------------------------------------------------------------------------------
+Cuando un mensaje es enviado desde la capa de aplicación, eventualmente llega a la capa de transporte, en la cual se le agrega una cabecera, y este mensaje ahora recibe el nombre de segmento (segment). Luego el mensaje pasa a la capa 3 en donde se le agrega otra cabecera y el mensaje pasa a llamarse datagram. En esta sección se hablará de la cabecera del datagram
 
+En las cabeceras del datagram tenemos una llamada version (4 bits), que indica si es IPv4 o IPv6. Para IPv4 los bits son 0100 y para IPv6 0110. Luego tenemos la longitud de la cabecera que también es de 4 bits. También está servicios (8 bits) y longitud total (16 bits) 
+
+En la próxima fila de las cabeceras tenemos el número de identificación (16 bits), flag (3 bits) y fragmentation offset (13 bits)
+
+En la tercera fila tenemos TLL (8 bits), protocolo (8 bits) y header checksum (16 bits)
+
+En la cuarta fila tenemos la dirección IP de origen (32 bits)
+
+En la quinta fila tenemos la dirección IP destino (32 bits)
+
+Como se puede observar, cada fila de las cabeceras tiene 32 bits (4 bytes)
+
+Estas cinco filas deben estar sí o sí en toda cabecera de los datagrams. Son un total de 20 bytes (el tamaño mínimo de la cabeceras de un datagram). Hay otras filas que son opcionales. El máximo tamaño que puede alcanzar las cabeceras de un datagram es de 60 bytes
+
+En al primera fila está la longiutud de las cabeceras que, como ya se ha diho, tiene 4 bits. 4 bits pueden representar desde 0 hasta 15. Pero debemos tener en cuenta que las cabeceras van desde los 20 bytes a los 60 bytes. ¿Qué se hace entonces? se establece un factor de escala, que es 4, y multiplicamos el número de los bits por ese factor. Por ejemplo, si el HL (longitud de cabeceras) tiene un valor de 0110, en decimal sería 6 y, si lo multiplicamos por 4, nos da 24, por lo que el tamaño real de las cabeceras sería de 24 bytes, aunque el HL marque 0110, que equivale a 6 en decimal
+
+En la parte de services, los primeros 3 bits son bits de precedencia (presedence bits), también llamados bits de prioridad (priority bits). Los próximos 4 bits representarán el tipo de servicios. El último bit no se usa. Los priority bits indican cual es la prioridad del paquete. Esto es importante porque puede ocurrir que haya una congestión del router y haya que descartar algunos datagrams, entonces los datagrams con menor prioridad serán descartados. Para el caso del tipo de servicio, solo uno de los cuatro bits puede ser un 1 (no podemos tener valores como 1100, 0110 o 0011, pero sí podemos tener valores como 0100, 1000 o 0001), y cada uno de esos cuatro bits tiene un significado especial. Los tipos de servicios se suelen representar cada uno con una letra: D, T, R y C. D indica mínimo retraso (minmun delay); T indica maximun throughput; R siginfica high reliability; C significa minimun wcost
 
