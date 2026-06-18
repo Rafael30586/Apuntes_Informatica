@@ -1,0 +1,25 @@
+https://www.geeksforgeeks.org/software-engineering/post-redirect-get-prg-design-pattern/
+
+Patrón de diseño PRG (POST/Redirect/GET)
+
+Introducción
+
+PRG es uno de muchos patrones de diseño usados en desarrollo web. Se usa para evitar el reenvío de un formulario causado por recargar la misma página web luego de enviar el formulario. Remueve la redundancia de contenido para fortalecer el SEO y hacer al sitio web más amigable para el usuario. Es usado por tiendas en línea confiables y otros sitios web robustos que tiene  como objetivo ser amigables para el usuario
+
+--------------------------
+Problema  
+
+Cuando tratamos de enviar un formulario web entonces una solicitud HTTP POST es enviada al servidor. El servidor procesa la solicitud y envía una respuesta al cliente con el código de respuesta 2XX. Cuando tratamos de refrescar/recargar la página web, el/ella envía sin querer otra solicitud HTTP POST al servidor con los mismos datos que antes. Esto podría causar resultados no deseados, como compras web duplicadas
+
+Funcionamiento interno
+
+https://media.geeksforgeeks.org/wp-content/uploads/20200403143342/problem1.png
+
+----------------------
+Solución
+
+Para evitar este problema muchos desarrolladores web usan el patrón PRG, en lugar de retornar una página web directamente, el POST retorna una redirección a otra página web o a la misma dependiendo de los requerimientos
+
+Funcionamiento interno
+
+https://media.geeksforgeeks.org/wp-content/uploads/20200403160213/sol5.png 
