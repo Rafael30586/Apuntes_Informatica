@@ -6,4 +6,27 @@ La redundancia en diseño de sistemas es la práctica de añadir componentes o p
 * Asegura la continuidad del sistema al usar servidores de respaldo, copias de datos, o conexiones de red
 * Protege datos críticos al almacenar duplicados en la nube o almacenamiento externo
 * Reduce el impacto de fallos de red, software o hardware
-* Ayuda a prevenir desorganizaciones y mejora la confiabilidad general delo sistema 
+* Ayuda a prevenir desorganizaciones y mejora la confiabilidad general del sistema 
+
+------------------------
+Tipos de redundancia
+
+1. Redundancia de hardware
+Para garantizar la disponibilidad de sistema cuando hay algún fallo, la redundancia de hardware involucra replicar componentes de hardware esenciales
+Ejemplo: los datos están almacenados de manera redundante en varios discos duros en un setup RAID (Redundat array of independent disks). Loas datos pueden ser recuperados de otras unidades en caso de que una falle
+
+2. Redundancia de software
+Para garantizar la operación continua, la redundancia de software depende de varias instancias de una aplicación o servicio corriendo de manera concurrente
+Ejemplo: Balanceadores de carga de software se usan frecuentemente por servidores web para dividir solicitudes entrantes entre varias instancias de servidor. El balanceador de carga re enruta el tráfico a servidores que están en buenas condiciones en caso de que uno falle
+
+3. Redundancia de datos
+La redundancia de datos involucra almacenar los mismos datos en múltiples ubicaciones o usando técnicas de replicación para asegurar laq disponibilidad de los datos
+Ejemplo: la replicación de bases de datos crea redundancia copia de bases de datos a lo largo de múltiples servidores. Si un servidor falla, otro puede continuar sirviendo los mismo datos
+
+4. Redundancia de redes
+La redundancia de redes provee múltiples caminos o conexiones de red para asegurar la disponiblidad de red y tolerancia a fallos.
+Ejemplo: Enrutamiento BGP (border Gateway protocol) usa múltiples caminos de red para re enrutar tráfico en caso de fallos de red, asegurando que los datos fluyan
+
+5. Redundancia geográfica
+Para proteger en contra de desastres naturales o apagones que son inusuales para una región dada, la redundancia geográfica involucra instalar sistemas redundantes o datacenters en varias regiones geográficas
+Ejemplo: un servicio en la nube global mantiene centros de datos en múltiples continentes para asegurar la disponibilidad de servicio incluso en el caso de un desastre regional 
