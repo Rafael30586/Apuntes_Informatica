@@ -24,9 +24,20 @@ La redundancia de datos involucra almacenar los mismos datos en múltiples ubica
 Ejemplo: la replicación de bases de datos crea redundancia copia de bases de datos a lo largo de múltiples servidores. Si un servidor falla, otro puede continuar sirviendo los mismo datos
 
 4. Redundancia de redes
-La redundancia de redes provee múltiples caminos o conexiones de red para asegurar la disponiblidad de red y tolerancia a fallos.
+La redundancia de redes provee múltiples caminos o conexiones de red para asegurar la disponibilidad de red y tolerancia a fallos.
 Ejemplo: Enrutamiento BGP (border Gateway protocol) usa múltiples caminos de red para re enrutar tráfico en caso de fallos de red, asegurando que los datos fluyan
 
 5. Redundancia geográfica
 Para proteger en contra de desastres naturales o apagones que son inusuales para una región dada, la redundancia geográfica involucra instalar sistemas redundantes o datacenters en varias regiones geográficas
 Ejemplo: un servicio en la nube global mantiene centros de datos en múltiples continentes para asegurar la disponibilidad de servicio incluso en el caso de un desastre regional 
+
+--------------------------
+Redundancia pasiva y activa
+
+1. Redundancia activa
+Cuando dos o más entidades están llevando a cabo la misma tarea simultáneamente, esto es conocido como redundancia activa. Para mantener todo yendo de manera fluida, las otras intervienen inmediatamente si una de ellas es incapaz de llevar a cabo la tarea
+Ejemplo: pensá en un sitio web con dos servidores trabajando juntos. Ambos muestran el sitio web a la gente. Si un servidor tiene un problema, el otro servidor toma el mando para asegurarse de que el sitio web continúe corriendo sin problemas
+
+2. Redundancia pasiva
+La redundancia pasiva es similar a tener un respaldo que está inactivo hasta que se lo necesita. Permanece en silencio en segundo plano, listo para entrar y asistir cuando un problema surge
+ejemplo: En redes de computadoras, podés tener un router de respaldo. El respaldo no hace nada hasta que el router principal tiene un problema. Cuando uno falla, el router de respaldo empieza a funcionar para mantener a la red conectada	
