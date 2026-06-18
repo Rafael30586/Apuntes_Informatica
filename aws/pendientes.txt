@@ -1,6 +1,5 @@
 // Platform as a service
 Data warehouse
-CIDR range
 // on-premise
 message system o sistema de mensajería
 Gobernanza

@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/system-design/redundancy-system-design/
+
+Redundancia en diseño de sistemas
+
+La redundancia en diseño de sistemas es la práctica de añadir componentes o proceso de respaldo para que un sistema continúe funcionando incluso cuando algunas partes fallen. Mejora la confiabilidad y disponibilidad al reducir el tiempo de inactividad durante fallos. La redundancia funciona como un plan de respaldo, donde recursos de repuesto toman el mando cuando los principales dejan de funcionar
+* Asegura la continuidad del sistema al usar servidores de respaldo, copias de datos, o conexiones de red
+* Protege datos críticos al almacenar duplicados en la nube o almacenamiento externo
+* Reduce el impacto de fallos de red, software o hardware
+* Ayuda a prevenir desorganizaciones y mejora la confiabilidad general delo sistema 
