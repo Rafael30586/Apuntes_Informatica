@@ -43,15 +43,27 @@ Cabe aclarar que en urlPatterns se puede colocar una array de endpoints, por eje
 
 Podemos pasar cookies de un servlet a otro gracias a la clase Cookie del paquete jakarta.servlet.http . Las cookies se asignan a la respuesta del servlet con el método addCookie(). Luego podemos obtener las cookies de una respuesta gracias al método getCookies() que nos devuelve un array de Cookies
 
+Cuando le asignamos un valor a una cookie, debemos tener en cuenta que no todos los caracteres son válidos, por ejemplo, no pueden tener espacios vacíos
+
 Con la etiqueta context-param en el archivo web.xml podemos establecer parámetros que son compartidos por todos los servlets
 
 Con las clases ServletConfig y ServletContext podemos trabajar con parámetros definidos en el archivo web.xml. Con servletContext trabajamos con parámetros compartidos por todos los servlets y con ServletConfig trabajamos con parámetros específicos de cada servlet. Estos parámetros específicos se establecen con la etiqueta init-param dentro de la etiqueta servlet. Para obtener una instancia de ServerContext y ServerConfig se utilizan los métodos getServletContext y getServerConfig respectivamente, que son heredados por la clase HttpServlet de la clase GenericServlet
 
 No es necesario utilizar el archivo web.xml para hacer mapeos entre servlets y endpoints, en su lugar se pueden usar anotaciones, por ejemplo, la anotación @WebServlet("/<endpoint>") en el servlet sirve para asignar un endpoint al servlet
 
-Cuando trabajamos con jsp podemos escribir código java en los mismos encerrando dicho código entre <%  %> . Lo que está ancerrado entre esos símbolos se llama scriptlet y sería en un servlet lo que está en el método service. Si queremos que parte de nuestro código en el JSP esté fuera del método service, usamos <%! %> (se llama declaration). Para importar paquetes usamos la etiqueta <%@ import=<paquete> %> (se llama directive). Si se quiere importar varios paquetes o clases, se separa los impórts por una coma. También se puede usar la etiqueta expresion para guardar lo que quweramos en el método out.print(), se usa <%= <variable> %> 
+Cuando trabajamos con jsp podemos escribir código java en los mismos encerrando dicho código entre <%  %> . Lo que está encerrado entre esos símbolos se llama scriptlet y sería en un servlet lo que está en el método service. Si queremos que parte de nuestro código en el JSP esté fuera del método service, usamos <%! %> (se llama declaration). Para importar paquetes usamos la etiqueta <%@ import=<paquete> %> (se llama directive). Si se quiere importar varios paquetes o clases, se separa los impórts por una coma. También se puede usar la etiqueta expresion para guardar lo que quweramos en el método out.print(), se usa <%= <variable> %> 
 
 Con jsp viene por defecto un objeto llamado request, del cual podemos obtener los argumentos con el método getParameter(), y el objeto out, que nos permite usar el método print() para imprimir valores de variables
+
+JSP expression language: podemos colocar código java en el JSP usando ${}. Puede reemplazar a los scripplets en algunas ocasiones. Cuando usamos expression language, podemos utilizar objetos establecidos como atributos. Estos objetos pueden venir del propio JSP cuando usamos scripplets o también de otro servlet cuando hace requestDispatcher().forward() al JSP
+
+En el JSP expression language hay objetos implícitos. Son los siguientes: pageScope, requestScope, sessionScope, applicationScope, param, paramValues, header, headerValues, cookie, initParam, pageContext. Más información sobre esto en: https://www.tutorialspoint.com/jsp/jsp_expression_language.htm y acá también https://www.youtube.com/watch?v=EkW6fC2b0Ok&list=PLGTrAf5-F1YIX68uT78FFtA3R3zajVFJz&index=60 . Normalmente, los objetos implícitos de EL retornan un map. Cuando queremos obtener el valor de algún atributo de un objeto implícito usamos un punto, por ejemplo ${para.name} . Además del punto se pueden usar corchetes, por ejemplo, ${requestScope["foo.bar"]} .   
+
+En JSP EL hay palabras reservadas: and, or, not, eq, ne, It, gt, le, ge, true, false, null, instanceof, empty, div, mod
+
+En JSP EL, los valores null se tratan de una manera muy particular cuando usamos operadores. Cuando usamos operadores aritméticos, los valores null de la operación tendrán un valor de 0, y cuando usemos operadores lógicos, los valores null tendrán un valor de false. Por ejemplo, 100 * x = 0 , suponiendo que x es igual a null. Otro ejemplo, true && x = false , si x es igual a null
+
+En JSP se pueden usar los mismos operadores que normalmente usamos en java: *, /, %, &&, etc
 
 Si queremos que un formulario llame a un jsp, simplemente tenemos que poner en la parte de action el nombre del archivo jsp en lugar de poner un endpoint
 
