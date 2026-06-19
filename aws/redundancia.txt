@@ -40,4 +40,24 @@ Ejemplo: pensá en un sitio web con dos servidores trabajando juntos. Ambos mues
 
 2. Redundancia pasiva
 La redundancia pasiva es similar a tener un respaldo que está inactivo hasta que se lo necesita. Permanece en silencio en segundo plano, listo para entrar y asistir cuando un problema surge
-ejemplo: En redes de computadoras, podés tener un router de respaldo. El respaldo no hace nada hasta que el router principal tiene un problema. Cuando uno falla, el router de respaldo empieza a funcionar para mantener a la red conectada	
+Ejemplo: En redes de computadoras, podés tener un router de respaldo. El respaldo no hace nada hasta que el router principal tiene un problema. Cuando uno falla, el router de respaldo empieza a funcionar para mantener a la red conectada	
+
+-----------------------------
+Rol de balanceo de carga en la redundancia
+
+Los balanceadores de carga juegan un rol crucial en la redundancia al asegurar que múltiples servidores o recursos sean utilizados de manera efectiva. Esto ayuda a mejorar la fiabilidad y asegura que si un servidor falla, otro puede tomar el mando de manera fluida, manteniendo al sistema operacional y reduciendo tiempo de inactividad
+Ejemplos:
+* Una aplicación web distribuyendo solicitudes de usuario a lo largo de múltiples servidores web
+* Un servidor DNS usando el algoritmo round-robin de balanceo de carga para distribuir solicitudes a múltiples direcciones IP para un solo dominio
+
+------------------------------
+Mecanismos de conmutación por error (failover mechanisms)
+
+Los mecanismos de conmutación por error son esenciales para asegurar servicio ininterrumpido, cuando un componente dentro de un sistema de redundancia falla. Esos mecanismos detectan fallos automáticamente y cambian a un componente redundante
+Ejemplos:
+* Conmutación por error de servidor (server failover): Cuando un servidor web falla, un balanceador de carga redirecciona el tráfico a un servidor de respaldo
+* Conmutación por error de base de datos (database failover): en agrupaciones de bases de datos, un fallo de servidor de base de datos gatilla la promoción de servidor en espera rol principal
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________
