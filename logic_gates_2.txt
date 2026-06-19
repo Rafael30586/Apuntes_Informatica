@@ -1,0 +1,13 @@
+https://www.techtarget.com/whatis/definition/logic-gate-AND-OR-XOR-NOT-NAND-NOR-and-XNOR
+
+¿Qué son las puertas lógicas?
+
+Una puerta lógica es un dispositivo que funciona como bloque de construcción para circuitos digitales. Las puertas lógicas llevan a cabo funciones lógicas básicas fundamentales para circuitos digitales. La mayoría de los dispositivos electrónicos que usamos hoy en día tiene alguna forma de puerta lógica en ellos. 
+Las puertas lógicas pueden ser usadas, por ejemplo, en electrónica digital como smartphones y tablets o dispositivos de memoria. Comúnmente usados en circuitos integrados (IC), las puertas lógicas son también bloques de construcción cruciales para componentes eléctricos y electrónicos como contadores (counters), procesadores, resistencias, transistores y diodos.
+
+
+--------------------------
+¿Cómo funcionan las puertas lógicas?
+
+En un circuito, una puerta lógica funciona basada en una combinación de señales digitales de sus entradas. La mayoría de las puertas lógicas tienen dos entradas y una salida. Aplicando álgebra booleana, la puerta lleva a cabo alguna operación lógica en las entradas para tomar una decisión y producir un una salida en binario. En cualquier momento, toda terminal está en una de dos condiciones binarias: verdadero (alto) o falso (bajo). Falso se representa como 0 y verdadero como 1.
+Pensá en una puerta lógica como un interruptor de luz, donde en una posición, la salida es apagado (0) y la otra (1). Dependiendo del tipo de puerta lógica usada y la combinación de las entradas, la salida en binario será diferente. En una puerta AND, la salida será 1 si ambas entradas son 1. Un puerta OR producirá una salida de 1 si solo una de las entradas es 1. Combinando múltiples puertas lógicas en un IC se pueden crear  diferentes combinaciones de salidas para diferentes combinaciones de entradas 
