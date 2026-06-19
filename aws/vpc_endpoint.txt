@@ -1,0 +1,21 @@
+https://www.geeksforgeeks.org/devops/aws-vpc-endpoint/
+
+AWS VPC endpoint
+
+Aunque tus recursos estén en una subred privada, tendrían que ir a través de internet o usar una puerta de entrada NAT para alcanzar los servicios de AWS. Esto incrementa el costo, riesgos de seguridad y ralentizaciones de conexiones. Para resolver estos problemas, tenemos AWS VPC.
+Con AWS VPC endpoint, tu aplicación se puede conectar a los servicios de AWS de manera segura y privada sin usar internet, una puerta de entrada NAT, VPN o Direct Connect. Ahora, todo permanecerá dentro de la red de AWS, lo que los hace más rápido, más seguro y más barato. Es una gran manera de mejorar tu setup de la nube, espacialmente para negocios que necesitan fuerte rendimiento y seguridad
+
+---------------------------
+Casos de uso de VPC endpoints
+
+1. Reducción de costos
+Si usás servicios de AWS como S3 o DynamoDB sin VPC endpoints, su tráfico irá a través de puertas de entrada NAT, puertas de entrada de internet, o VPNs, lo cual incrementará tus costos de infraestructura o transferencia de datos. Al usar VPC endpoints, podés reducir estos cobros extra, lo cual te ahorrará el tener que ir por puertas de entrada NAT, puertas de entrada de internet o VPNs que van a incrementar tus costos de infraestructura o transferencia de datos. Al usar VPC endpoints, podés reducir estos cobros extra
+
+2. Seguridad incrementada
+Tus aplicaciones pueden comunicarse de manera privada dentro de tu red de AWS, lo cual reducirá su exposición a la internet pública. Esto reduce el riesgo de ciber amenazas como ataques DDoS, intercepción de datos o acceso no autorizado y provee un entorno de nube más seguro
+
+3. Rendimiento mejorado
+Los endpoints VPC conectan tu VPC directamente a servicios de AWS sin enviar tráfico a través de internet o redes externas. Esto ayuda a tu aplicación a correr más rápido debido a menos retraso. Esta reducción en latencia mejora el rendimiento de la aplicación, haciéndolo ideal para aplicaciones en tiempo real, cargas de trabajo de big data y servicios web de mucho tráfico
+
+4. Configuración simple
+Podés integrar automáticamente AWS VPC endpoints con políticas IAM, grupos de seguridad y route tables, lo que provee control de acceso fluidp sin la necesidad de cambios grandes en tu red 

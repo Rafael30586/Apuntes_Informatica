@@ -64,7 +64,8 @@ Pruebas y validación para redundancia
 Las pruebas y validación son críticos para asegurar que los mecanismos de redundancia funcionen como se espera. Estos incluyen:
 * Prueba de redundancia: simular fallos para verificar que los componentes redundantes y mecanismos de conmutación por error funcionan correctamente
 * Prueba de validación: asegurando que la sincronización y consistencia de datos se mantengan en sistemas redundantes
-* Prueba de carga: evaluando como el sistema rinde bajo cargas pesadas para identificar cuellos de botellas potenciales y asegurar que el balanceo de carga es efectivo	 
+* Prueba de carga: evaluando como el sistema rinde bajo cargas pesadas para identificar cuellos de botellas potenciales y asegurar que el balanceo de carga es efectivo
+	 
 
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
