@@ -63,7 +63,20 @@ En JSP EL hay palabras reservadas: and, or, not, eq, ne, It, gt, le, ge, true, f
 
 En JSP EL, los valores null se tratan de una manera muy particular cuando usamos operadores. Cuando usamos operadores aritméticos, los valores null de la operación tendrán un valor de 0, y cuando usemos operadores lógicos, los valores null tendrán un valor de false. Por ejemplo, 100 * x = 0 , suponiendo que x es igual a null. Otro ejemplo, true && x = false , si x es igual a null
 
-En JSP se pueden usar los mismos operadores que normalmente usamos en java: *, /, %, &&, etc
+En JSP EL se pueden usar los mismos operadores que normalmente usamos en java: *, /, %, &&, etc
+
+-------------------------
+JSP actions
+
+forward: sirve para llamar a otra página web y enviarle atributos del JSP de origen. Los atributos pueden ser utilizados en el JSP destino mediante el objeto implícito request o, si usamos EL, param 
+
+include: sirve para incluir el contenido de otro archivo jsp en el jsp que usa la acción. Hay algunas reglas: la página incluida no cambia el código de estado ni establece cabeceras; el contenedor de servlets incluye la respuesta (no el código fuente) de la página incluida; la respuesta de la página incluida es insertada en la jsp actual en la posición de la jsp action (position-sensitive); si la URL de la página incluida empieza con barra (/), el contenedor de servlets va a interpretar a la página como relativa a la ruta de contexto de la aplicación web, si la URL empieza sin una barra, el contenedor va a tratar a la página como relativa a la página jsp actual; el valor de la URL de la página puede ser una expresión en tiempo de ejecución que se mide como un string; el contenedor de servlets va a lanzar una excepción si no puede encontrar la página incluida
+La include action se parece mucho a la directiva include, pero tiene algunas diferencias:
+* La directiva incluye el recurso en tiempo de traducción (cuando el JSP es transformado en servlet, lo que solo ocurre una vez), la action incluye el recurso en tiempo de solicitud
+* La directiva es mejor para páginas estáticas, la action es mejor para páginas dinámicas
+* La directiva incluye el contenido original en el servlet generado, la action llama al método inlcude   
+
+-------------------------
 
 Si queremos que un formulario llame a un jsp, simplemente tenemos que poner en la parte de action el nombre del archivo jsp en lugar de poner un endpoint
 

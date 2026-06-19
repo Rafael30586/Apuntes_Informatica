@@ -10,4 +10,62 @@ Las puertas lógicas pueden ser usadas, por ejemplo, en electrónica digital com
 ¿Cómo funcionan las puertas lógicas?
 
 En un circuito, una puerta lógica funciona basada en una combinación de señales digitales de sus entradas. La mayoría de las puertas lógicas tienen dos entradas y una salida. Aplicando álgebra booleana, la puerta lleva a cabo alguna operación lógica en las entradas para tomar una decisión y producir un una salida en binario. En cualquier momento, toda terminal está en una de dos condiciones binarias: verdadero (alto) o falso (bajo). Falso se representa como 0 y verdadero como 1.
-Pensá en una puerta lógica como un interruptor de luz, donde en una posición, la salida es apagado (0) y la otra (1). Dependiendo del tipo de puerta lógica usada y la combinación de las entradas, la salida en binario será diferente. En una puerta AND, la salida será 1 si ambas entradas son 1. Un puerta OR producirá una salida de 1 si solo una de las entradas es 1. Combinando múltiples puertas lógicas en un IC se pueden crear  diferentes combinaciones de salidas para diferentes combinaciones de entradas 
+Pensá en una puerta lógica como un interruptor de luz, donde en una posición, la salida es apagado (0) y la otra (1). Dependiendo del tipo de puerta lógica usada y la combinación de las entradas, la salida en binario será diferente. En una puerta AND, la salida será 1 si ambas entradas son 1. Un puerta OR producirá una salida de 1 si solo una de las entradas es 1. Combinando múltiples puertas lógicas en un IC se pueden crear  diferentes combinaciones de salidas para diferentes combinaciones de entradas.
+
+-----------------------------
+Puertas lógicas básicas
+
+Hay 7 puertas lógicas básicas: AND, OR, XOR, NOT, NAND, NOR y XNOR
+
+--------------------------------
+Puerta AND
+
+La puerta AND produce una salida de verdadero solo si ambas entradas son verdaderas. Sino la salida es falsa
+
+https://www.techtarget.com/rms/onlineimages/diagram1-f.png 
+
+--------------------------
+Puerta OR
+
+En la puerta OR, la cual es la más ampliamente utilizada en circuitos lógicos en dispositivos digitales y componentes, la salida es verdadera si una o ambas entradas son verdaderas
+
+https://www.techtarget.com/rms/onlineimages/diagram2-f.png
+
+-----------------------------
+Puerta XOR
+
+La salida es verdadera si cualquiera de las entradas es verdadera pero no ambas. La salida es falsa si ambas entradas son falsas o ambas entradas son verdaderas. Dicho de otra manera, la salida es verdadera si ambas entradas son distintas y es falsa si ambas entradas son iguales
+
+https://www.techtarget.com/rms/onlineimages/diagram3-f.png
+
+------------------------------
+Puerta NOT
+
+Un convertidor (inverter) lógico, a veces llamado puerta NOT para diferenciarlo de otros tipos de dispositivos convertidores electrónicos. Tiene una sola entrada. Una puerta NOT revierte la puerta lógica. Si la entrada de la puerta es 1, entonces la salida es 0. Si la entrada es 0, la salida es 1.
+
+https://www.techtarget.com/rms/onlineimages/diagram4-f.png
+
+---------------------------------
+Puerta NAND
+
+El AND negado, o NAND, opera como un AND seguido de un NOT. 
+
+https://www.techtarget.com/rms/onlineimages/diagram5-f.png
+
+------------------------------
+Puerta NOR
+
+Es una combinación de la puerta OR seguido por un convertidor. La salida es verdadera si ambas entradas son falsas
+
+https://www.techtarget.com/rms/onlineimages/diagram6-f.png
+
+------------------------
+Puerta XNOR
+
+La puerta XNOR o NOR exclusiva es una combinación de una puerta XOR seguida de un convertidor
+
+https://www.techtarget.com/rms/onlineimages/diagram7-f.png
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________

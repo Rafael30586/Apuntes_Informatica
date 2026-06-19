@@ -1,0 +1,20 @@
+https://thecodest.co/en/dictionary/routine-and-subroutine/
+
+Rutina y subrutina: definición y diferencias  clave
+
+Rutina y subrutina son dos conceptos esenciales en programación que generalmente se usan de manera indistinta. Aún así, tienen diferencias. 
+
+------------------------------------
+¿Qué es una rutina?
+
+Una rutina es un bloque de código que lleva a cabo una tarea específica o un conjunto de tareas. Es una unidad de código auto-contenida que puede ser ejecutada múltiples veces. Las rutinas son generalmente usadas para dividir programas grandes en partes más manejables y pequeñas. Pueden ser llamadas desde otras partes del programa o ejecutarse de manera independiente
+Las rutinas son comúnmente usadas para llevar a cabo tareas repetitivas como operaciones de entrada/salida, manejo de errores y validación de datos. Pueden ser también usadas para encapsular algoritmos complejos o lógica de negocio. Las rutinas pueden ser escritas en cualquier lenguaje de programación y pueden ser utilizadas en cualquier tipo de programa, desde aplicaciones de escritorio hasta aplicaciones web
+
+---------------------------
+¿Qué es una subrutina?
+
+Una subrutina es un tipo de rutina diseñada para llevar a cabo una tarea específica y retornar un valor al programa que la llama. Las subrutinas son también conocidas como funciones, métodos o procedimientos. Se usan para dividir programas complejos en partes más pequeñas y manejables que pueden ser reutilizadas en otras partes del programa.
+Las subrutinas se usan con frecuencia para llevar a cabo cálculos, manipulación de datos, o llevar a cabo otras tareas que requieren un conjunto específico de instrucciones. Pueden ser llamadas desde otras partes del programa o ejecutarse de manera independiente. Las subrutinas pueden escribirse en cualquier lenguaje de programación y pueden utilizarse en cualquier tipo de programa, desde aplicaciones de escritorio hasta aplicaciones web
+
+ 
+
