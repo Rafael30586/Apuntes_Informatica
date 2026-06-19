@@ -56,7 +56,15 @@ Mecanismos de conmutación por error (failover mechanisms)
 Los mecanismos de conmutación por error son esenciales para asegurar servicio ininterrumpido, cuando un componente dentro de un sistema de redundancia falla. Esos mecanismos detectan fallos automáticamente y cambian a un componente redundante
 Ejemplos:
 * Conmutación por error de servidor (server failover): Cuando un servidor web falla, un balanceador de carga redirecciona el tráfico a un servidor de respaldo
-* Conmutación por error de base de datos (database failover): en agrupaciones de bases de datos, un fallo de servidor de base de datos gatilla la promoción de servidor en espera rol principal
+* Conmutación por error de base de datos (database failover): en agrupaciones de bases de datos, un fallo de servidor de base de datos gatilla la promoción de servidor en espera a rol principal
+
+--------------------------
+Pruebas y validación para redundancia
+
+Las pruebas y validación son críticos para asegurar que los mecanismos de redundancia funcionen como se espera. Estos incluyen:
+* Prueba de redundancia: simular fallos para verificar que los componentes redundantes y mecanismos de conmutación por error funcionan correctamente
+* Prueba de validación: asegurando que la sincronización y consistencia de datos se mantengan en sistemas redundantes
+* Prueba de carga: evaluando como el sistema rinde bajo cargas pesadas para identificar cuellos de botellas potenciales y asegurar que el balanceo de carga es efectivo	 
 
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
