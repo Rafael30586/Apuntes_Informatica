@@ -1,0 +1,16 @@
+Autodidacta Océano Color 3 - Física I - páginas 957
+
+Acción de un campo magnético sobre una carga en movimiento
+
+Si en la fórmula de la inducción magnética, se despeja F:
+
+B = F / (q . v) --> F = B . q . v
+
+se obtiene una expresión que permite calcular el módulo de la fuerza ejercida por un campo magnético sobre una carga en movimiento
+
+F = B . q . v
+
+La fuerza ejercida por un campo magnético sobre una carga que se mueve perpendicularmente a las líneas de fuerza es igual al producto que resulta de multiplicar la inducción magnética por la carga y por la velocidad
+La dirección de esta fuerza es perpendicular al plano determinado por las direcciones del campo y de la velocidad, y en cuanto al sentido, viene determinado por la regla de la mano izquierda. Colocando el dedo medio de la mano izquierda en el sentido de la velocidad y el dedo índice en el sentido de las líneas de fuerza, el dedo pulgar señala al sentido de la fuerza que actúa sobre la carga en movimiento
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn9rC8YzPhWn60NfChSatxe0xGKNuRQk3FfQ&s
