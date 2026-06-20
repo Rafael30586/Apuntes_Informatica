@@ -1,0 +1,20 @@
+Autodidacta Océano Color 4 - Física II - páginas 955, 956
+
+Campo magnético
+
+Una carga eléctrica crea a su alrededor un campo eléctrico. Si la carga se mueve produce además un campo magnético. Se sabe también que toda carga eléctrica que se mueve en el seno de un campo magnético experimenta una fuerza. Es decir, si se tienen dos cargas eléctricas móviles, no solo están sometidas a las fuerzas electrostáticas que se ejercen mutuamente debidas a su carga, sino que además entre ellas actúan otras fuerzas electromagnéticas que dependen de los valores de las cargas y de las velocidades de estas. En una región del espacio se dirá que existe un campo magnético cuando al penetrar en ella una carga móvil experimenta una fuerza que depende de la velocidad de la carga
+Al igual que los campos eléctricos, los campos magnéticos se pueden materializar mediante líneas de fuerza, que pueden presentar distintas formas, según sea el agente creador del campo
+Cuando se trata del campo magnético creado por un imán, las líneas de fuerza salen del polo norte y vuelven al polo sur. Y es en las proximidades de estos polos donde más apretadas se encuentran las líneas de fuerza y, como consecuencia, donde con mayor intensidad se manifiestan los fenómenos magnéticos
+
+https://unicrom.com/wp-content/uploads/campo-magnetico-iman.png
+
+Del mismo modo que en un campo eléctrico, y por análogas razones, las líneas de fuerza de un campo magnético son líneas continuas que no se cortan entre sí
+La fuerza que actúa sobre una carga positiva q, que se desplaza dentro de un campo magnético, perpendicularmente a las líneas de fuerza y con una velocidad v, depende del valor de la carga, de su velocidad y de una característica específica del campo, denominada inducción magnética
+Inducción magnética de un campo, en un punto del mismo, es la fuerza que actúa sobre una unidad de carga positiva que se desplaza, perpendicularmente a las líneas de fuerza, con una unidad de velocidad. Se representa por B
+Si sobre una carga positiva q, que se desplaza perpendicularmente a las líneas de fuerza de una campo magnético con una velocidad v, actúa una fuerza F, la inducción magnética del campo, esto es, la fuerza que actúa sobre una unidad de carga y por unidad de velocidad, viene determinada por la fórmula
+
+B = F / (q . v)   
+
+La unidad de inducción magnética en el sistema internacional se denomina tesla. Tesla es la inducción de un campo magnético en el que una carga de un culombio que se desplaza perpendicularmente a las líneas de fuerza con una velocidad de 1 m/s se ve sometida a una fuerza de 1 newton. Se representa por T
+
+tesla = newton / (culombio . metro/segundo)
