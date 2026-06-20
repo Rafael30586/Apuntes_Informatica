@@ -1,0 +1,18 @@
+Autodidacta Océano Color 4 - Física II - páginas 958
+
+Flujo magnético
+
+Es el número total de líneas de fuerza que atraviesan una superficie. 
+Considerando que las líneas de fuerza de un campo magnético se hallan tanto más apretadas cuanto mayor es la inducción, el flujo que atraviesa una superficie S, colocada perpendicularmente a las líneas de fuerza, es directamente proporcional a la inducción B y a la superficie S
+En consecuencia, tomando la unidad como valor de la constante de proporcionalidad, el flujo magnético a través de una superficie colocada perpendicularmente a las líneas de fuerza viene dado por la fórmula:
+
+flujo magnético = B . S
+
+Si, por el contrario, la superficie no es perpendicular a las líneas de fuerza, la fórmula del flujo magnético sería:
+
+flujo magnético = B . S . cos (A)
+
+donde A es el ángulo formado por las líneas de fuerza con la normal a la superficie S
+La unidad de flujo magnético en el sistema internacional se denomina weber. Weber es el flujo magnético que atraviesa una superficie de 1 m^2, situada perpendicularmente a las líneas de fuerza, en un campo cuya inducción magnética es un tesla. Se representa por Wb
+
+weber = tesla . metro cuadrado
