@@ -15,3 +15,12 @@ Componentes clave
 * Origen: Esta es la fuente de confianza de tu contenido. Es el servidor donde los archivos originales son almacenados, como un Amazon S3 bucket, Elastic Load Balancer (ELB), instancia EC2 o servidor HTTP/S personalizado
 * Edge Location: Este es un centro de datos en una red global, estratégicamente ubicado en ciudades importantes globalmente para cachear copias de tu contenido
 * Distribución: Esta es la configuración principal que le dice a CloudFront como entregar contenido, incluyendo reglas de cacheo, procedencias y configuraciones de seguridad 
+
+------------------------
+Beneficios clave de CDNs
+
+* Rendimiento de sitio web mejorado: reduce latencia de red al cachear contenido cerca del usuario final, haciendo que las cargas de páginas sean más rápidas 
+* Fiabilidad mejorada: Distribuye tráfico web a lo largo de múltiples "Edge servers", previniendo fallas incluso si los servidores individuales experimentan cortes
+* Escalabilidad: Absorben subidas repentinas en tráfico de usuario durante eventos como lanzamientos de productos o nuevos ciclos sin sobrecargar procedencias
+* Seguridad avanzada: Mitiga ataques DDoS y encripta comunicación usando SSL/TLS
+* Buen costo: minimiza tarifas de ancho de banda desde servidores de procedencia al servir contenido cacheado directamente desde el borde  		
