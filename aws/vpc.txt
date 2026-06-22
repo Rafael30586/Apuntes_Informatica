@@ -6,7 +6,7 @@ Con Amazon Virtual Private Cloud (Amazon VPC), puede lanzar recursos de AWS en u
 En el siguiente diagrama se muestra una VPC de ejemplo. La VPC tiene una subred en cada zona de disponibilidad de la región, instancias de EC2 en cada subred y una puerta de enlace de Internet para permitir la comunicación entre los recursos en su VPC y la Internet.
 
 https://docs.aws.amazon.com/images/vpc/latest/userguide/images/how-it-works.png
-
+	
 ---------------------------------------
 Características
 
