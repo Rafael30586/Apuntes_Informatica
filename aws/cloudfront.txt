@@ -8,3 +8,10 @@ AWS CloudFront es el CDN de alto rendimiento de Amazon diseñado para acelerar l
 * Se integra directamente con AWS WAF y AWS Shield para aprovechamiento web y protección DDoS
 * Optimiza aceleración de API y rendimiento de aplicación dinámica sumada a contenido estático
 * Soporta ejecución de código serverless en Edge locations usando funciones de CloudFront o Lambda@Edge
+
+---------------------
+Componentes clave
+
+* Origen: Esta es la fuente de confianza de tu contenido. Es el servidor donde los archivos originales son almacenados, como un Amazon S3 bucket, Elastic Load Balancer (ELB), instancia EC2 o servidor HTTP/S personalizado
+* Edge Location: Este es un centro de datos en una red global, estratégicamente ubicado en ciudades importantes globalmente para cachear copias de tu contenido
+* Distribución: Esta es la configuración principal que le dice a CloudFront como entregar contenido, incluyendo reglas de cacheo, procedencias y configuraciones de seguridad 
