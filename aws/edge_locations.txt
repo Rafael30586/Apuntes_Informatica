@@ -1,4 +1,4 @@
-https://www.geeksforgeeks.org/devops/aws-edge-locations/
+	https://www.geeksforgeeks.org/devops/aws-edge-locations/
 
 AWS Edge locations
 

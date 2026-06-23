@@ -119,7 +119,7 @@ La infraestructura global de AWS está hecha de los siguientes recursos:
 * 102 zonas de disponibilidad
 * 115 lugares de conexión directa
 * más de 550 puntos de presencia
-* 35 zonas locales o Lcal zones
+* 35 zonas locales o Local zones
 * 29 wavelength zones
 Ejemplo: en la región de US oeste (Oregon) hay 4 zonas de disponibilidad.
 

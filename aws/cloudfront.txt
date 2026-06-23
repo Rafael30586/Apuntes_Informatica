@@ -2,7 +2,7 @@ https://www.geeksforgeeks.org/devops/aws-cloudfront/
 
 AWS CloudFront: CDN Cloud Service
 
-AWS CloudFront es el CDN de alto rendimiento de Amazon diseñado para acelerar la entrega de contenido web estático y dinámico para usuario alrededor del mundo. CloudFront cachea archivos en una red global de datacenters. Esto reduce la latencia dramáticamente y mejora tiempos de carga
+AWS CloudFront es el CDN de alto rendimiento de Amazon diseñado para acelerar la entrega de contenido web estático y dinámico para usuarios alrededor del mundo. CloudFront cachea archivos en una red global de datacenters. Esto reduce la latencia dramáticamente y mejora tiempos de carga
 * CloudFront entrega contenido de la Edge location más cercana para reducir tiempos de respuesta
 * Emplea cientas de Edge locations y cachés de borde regional a lo largo de ciudades importantes
 * Se integra directamente con AWS WAF y AWS Shield para aprovechamiento web y protección DDoS

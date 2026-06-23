@@ -1,0 +1,23 @@
+https://www.nops.io/glossary/what-is-aws-global-accelerator/
+
+¿Qué es AWS global Accelerator?
+
+Es un servicio de red que mejora la disponibilidad y rendimiento de aplicaciones con usuarios globales al enrutar tráfico de usuario a través de la vasta infraestructura global de Amazon web services
+Usa la red global de AWS para direccionar el tráfico al punto final más cercano y saludable basado en revisaciones de salud y ubicación geográfica. Esto ayuda a reducir latencia de internet, mejorar velocidades de transferencia e incrementar la fiabilidad de acceso de aplicaciones
+
+https://www.nops.io/wp-content/uploads/2024/08/aws-global-accelerator.png
+
+-------------------------
+Puntos clave
+
+* AWS Accelerator soporta dos tipos de aceleradores:
+  - Acelerador estándar: mejora la disponibilidad de tus aplicaciones de internet globalmente al direccionar tráfico a los largo de la red de AWS al punto final regional más cercano
+  - Acelerador de enrutamiento personalizado: Los aceleradores de enrutamiento personalizado permiten que el tráfico de usuario específico sea designado a múltiples puntos finales dentro de una subred VPC, apuntando a direcciones IP privadas
+
+https://www.nops.io/wp-content/uploads/2024/08/aws-global-img.png
+
+* El acelerador global personalizado enruta tráfico al puerto e instancia designados
+* AWS global accelerator provee direcciones IP estáticas como puntos de entrada fijos para tu aplicación, reduciendo la complejidad asociada con gestionar varias direcciones IP a lo largo de diferentes regiones de AWS y zonas de disponibilidad. 
+* Soporta varios tipos de puntos finales como balanceadores de carga de red, balanceadores de carga de aplicación, instancias EC2 y direcciones IP elásticas a lo largo de una o múltiples regiones de AWS	
+* Podés usarlo para controlar la proporción de tráfico dirigida a cada punto final dentro de un grupo de puntos finales al asignar pesos a lo largo de los puntos finales
+* Por defecto, AWS global Accelerator ofrece dos direcciones IP estáticas, o 4 direcciones (2 IPv4 y 2 IPv6) para configuraciones doble-pila. Los usuarios pueden también traer sus propias direcciones IP (BYOIP). Estas IP sirven como puntos de entrada consistentes para tus aplicaciones y permanecen con tu acelerador mientras exista, incluso si el acelerador está desactivado  	

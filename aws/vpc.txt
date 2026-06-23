@@ -27,7 +27,7 @@ Use una conexión de emparejamiento de VPC para enrutar el tráfico entre los re
 Copie el tráfico de red desde las interfaces de red y envíelo a dispositivos de seguridad y monitoreo para una inspección profunda de paquetes.
 * Puertas de enlace de tránsito
 Use una puerta de enlace de tránsito, que actúa como un concentrador central, para enrutar el tráfico entre sus VPC, las conexiones de VPN y las conexiones de Direct Connect.
-* gs de flujo de VPC
+* Logs de flujo de VPC
 Los registros de flujo capturan información acerca del tráfico IP entrante y saliente de las interfaces de red en su VPC.
-* nexiones de VPN
+* Conexiones de VPN
 Conecte sus VPC a las redes en las instalaciones mediante AWS Virtual Private Network (Site-to-Site VPN).
