@@ -35,4 +35,22 @@ https://www.nops.io/wp-content/uploads/2024/08/aws-global-edge.png
 
 3) Optimización de puntos finales: el servicio selecciona el punto final óptimo entre las opciones de configuración tales como balanceadores de carga de red, balanceadores de carga de aplicación o instancias EC2 a lo largo de múltiples regiones de AWS. Esta decisión se basa en factores como puntos finales de salud y proximidad geográfica para minimizar latencia
 
-4) Procesamiento de solicitud y respuesta: El punto final elegido procesa la solicitud de usuario. La respuesta luego enrutada a través de global Accelerator al usuario, optimizando el camino de entrega para velocidad/fiabilidad   
+4) Procesamiento de solicitud y respuesta: El punto final elegido procesa la solicitud de usuario. La respuesta luego enrutada a través de global Accelerator al usuario, optimizando el camino de entrega para velocidad/fiabilidad 
+
+----------------------------
+Casos de uso para AWS Global Accelerator
+
+* Escalado simple de red para aplicaciones: mientras el uso de aplicaciones se incrementa, también aumenta la demanda por direcciones IP y puntos finales. AWS Global Accelerator te ayuda a escalar tu red de manera eficiente al asociar tus recursos regionales (como balanceadores de carga e instancias EC2) a direcciones IPv4 e IPv6 estáticas
+
+* Aplicaciones de baja latencia como VoIP, video juegos, streaming, etc
+
+* Disponibilidad, recuperación de desastres y resiliencia: Global Accelerator asegura que tu red permanezca disponible a lo largo de múltiples regiones de AWS y zonas de red independientes, aumentando la recuperación ante desastres. Automáticamente re-enruta el tráfico a una región secundaria si la principal falla. 
+
+* Seguridad y prevención DDoS
+
+----------------------------
+AWS Global Accelerator vs CloudFront
+
+AWS Global Accelerator y Amazon CloudFront cumplen con roles distintos pero complementarios en gestionar tráfico de aplicaciones. Mientras Global Accelerator optimiza el enrutamiento de tráfico al punto final de AWS más cercano para minimizar latencia y mejorar rendimiento,  CloudFront es un CDN que cachea contenido más cercano a los usuarios para reducir tiempos de respuesta y costos de ancho de banda. Elegir entre ellos depedne de si tu prioridad es reducir latencia para contenido dinámico con Global Accelerator o mejorar la velocidad de entrega de contenido con CloudFront  
+
+  	 
