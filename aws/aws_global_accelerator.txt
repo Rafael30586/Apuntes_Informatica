@@ -21,3 +21,18 @@ https://www.nops.io/wp-content/uploads/2024/08/aws-global-img.png
 * Soporta varios tipos de puntos finales como balanceadores de carga de red, balanceadores de carga de aplicación, instancias EC2 y direcciones IP elásticas a lo largo de una o múltiples regiones de AWS	
 * Podés usarlo para controlar la proporción de tráfico dirigida a cada punto final dentro de un grupo de puntos finales al asignar pesos a lo largo de los puntos finales
 * Por defecto, AWS global Accelerator ofrece dos direcciones IP estáticas, o 4 direcciones (2 IPv4 y 2 IPv6) para configuraciones doble-pila. Los usuarios pueden también traer sus propias direcciones IP (BYOIP). Estas IP sirven como puntos de entrada consistentes para tus aplicaciones y permanecen con tu acelerador mientras exista, incluso si el acelerador está desactivado  	
+
+--------------------------
+¿Cómo funciona AWS Global Accelerator?
+
+https://www.nops.io/wp-content/uploads/2024/08/end-user-request.png
+
+1) El usuario realiza una solicitud: cuando el usuario realiza una solicitud, se dirige hacia las IPs estáticas de AWS Global Accelerator, que sirven como puntos de entrada fijos a las aplicaciones
+
+2) Enrutamiento de tráfico: AWS Global Accelerator procesa la solicitud, aprovechando la red global de AWS. Accede a la ubicación geográfica de los puntos finales de aplicación más cercanos para determinar el camino más eficiente para enrutar tráfico
+
+https://www.nops.io/wp-content/uploads/2024/08/aws-global-edge.png
+
+3) Optimización de puntos finales: el servicio selecciona el punto final óptimo entre las opciones de configuración tales como balanceadores de carga de red, balanceadores de carga de aplicación o instancias EC2 a lo largo de múltiples regiones de AWS. Esta decisión se basa en factores como puntos finales de salud y proximidad geográfica para minimizar latencia
+
+4) Procesamiento de solicitud y respuesta: El punto final elegido procesa la solicitud de usuario. La respuesta luego enrutada a través de global Accelerator al usuario, optimizando el camino de entrega para velocidad/fiabilidad   
