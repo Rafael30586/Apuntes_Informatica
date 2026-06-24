@@ -213,7 +213,7 @@ El propósito de las Local zones es apoyar aplicaciones de alta demanda sensible
 WaveLength zones
 Permiten "edge-computing" en redes 5G.
 Las aplicaciones tendrán ultra baja latencia.
-AWS se ha asociado con varias comapañìas para utilizar redes 5G (Verizon, Vodafone, SK telecom, etc).
+AWS se ha asociado con varias compañìas para utilizar redes 5G (Verizon, Vodafone, SK telecom, etc).
 Creàs una subred atada a una weblength zone y luego podès lanzar máquinas virtuales al borde de las redes 5G objetivo.
 
 Data residency o residencia de datos
@@ -270,7 +270,7 @@ Un solutions architect necesita siempre considerar los siguinetes factores de ne
 * Costo: cuanto va a costar.
 
 Alta disponibilidad
-Es la habilidad de que un servicio permanezca disponible asegurando que no hayan ningún punto de fallos y asegurar cierto nivel de desampeño.
+Es la habilidad de que un servicio permanezca disponible asegurando que no hayan ningún punto de fallos y asegurar cierto nivel de desempeño.
 Asegurar tus cargas de trabajo a través de múltiples AZs asegura que si una o dos AZs dejan de estar disponibles, el servicio o aplicaciones permanezca disponible.
 Elastic Load Balancer: Un load balancer o balanceador de carga permite distribuir el tráfico a múltiples servidores en uno o más datacenter. Si un datacenter o servidor deja de estar disponible, el load balancer va a enrutar el tráfico solo a datacenters disponibles con servidores.
 
@@ -425,7 +425,7 @@ Es posbile desactivar Access keys.
 Las Access keys son almacenadas en la ruta ~/.aws/credentials
 
 Documentación de AWS
-Es una larga colección de documentación técnica sobtre como usar los servicios de AWS.
+Es una larga colección de documentación técnica sobre como usar los servicios de AWS.
 Enlace: https://docs.aws.amazon.com/
 
 -------------------------------------------------------------------------------------------------------

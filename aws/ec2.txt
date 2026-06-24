@@ -1,0 +1,12 @@
+https://es.wikipedia.org/wiki/Amazon_EC2
+
+Amazon EC2
+
+EC2 permite a los usuarios alquilar computadores virtuales en los cuales pueden ejecutar sus propias aplicaciones. Este tipo de servicio supone un cambio en el modelo informático al proporcionar capacidad informática con tamaño modificable en la nube, pagando por la capacidad utilizada. En lugar de comprar o alquilar un determinado procesador para utilizarlo varios meses o años, en EC2 se alquila la capacidad por horas.
+
+--------------------------------
+Características
+
+Amazon EC2 se apoya en las tecnologías de virtualización, permitiendo utilizar gran variedad de sistemas operativos a través de sus interfaces de servicios web, personalizarlos, gestionar permisos de acceso a la red y ejecutar tantos sistemas como desee.
+EC2 permite el despliegue escalable de aplicaciones proveyendo un servicio Web a través del cual un usuario puede montar una Imagen de Máquina Amazon para crear una máquina virtual, llamada por Amazon "instancia", la cual contendrá cualquier software deseado. Un usuario puede crear, lanzar y finalizar instancias de servidor tanto como necesite, pagando por hora por servidor activo, de ahí el término "elástico". EC2 provee a los usuarios control sobre localizaciones geográficas de instancias que permiten la optimización de latencia y altos niveles de redundancia.
+Amazon EC2 posee una interfaz de servicios web para iniciar y configurar el servicio. Proporciona un control completo de los recursos y reduce el tiempo de arranque de sus servidores, lo que permite escalar recursos rápidamente según las necesidades del usuario. Asimismo, provee herramientas de recuperación de datos y fuerte aislamiento frente a otros procesos realizados en sus máquinas. 

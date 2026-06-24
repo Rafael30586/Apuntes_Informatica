@@ -3,3 +3,5 @@ https://www.geeksforgeeks.org/devops/what-is-direct-connect-in-aws/
 AWS Direct connect
 
 AWS direct connect permite una conexión dedicada y directa entre tu red interna y AWS, evitando a los proveedores de servicio de internet para un enlace más seguro y rápido. Este setup usa un cable Ethernet de fibra óptica de alta velocidad que conecta directamente desde el router de tu red a un router de AWS Direct Connect en una ubicación de AWS. Con esta conexión dedicada, podés crear interfaces virtuales para acceder a servicios de AWS, como Amazon S3 o Amazon VPC de una manera simplificada 
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260110120903916368/what_is_aws_direct_connect_.webp	
