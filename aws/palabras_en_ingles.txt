@@ -9,4 +9,5 @@ flat fees
 workload
 seamless -> sin costura, impecable, fluido
 cloud-native
-dual-stack -> doble pila . Término usado en informática que hace referencia a que un dispositivo de red soporta los protocolos 	IPv4 e IPv6	
+dual-stack -> doble pila . Término usado en informática que hace referencia a que un dispositivo de red soporta los protocolos 	IPv4 e IPv6
+expedite --> facilitar	

@@ -11,11 +11,10 @@ https://www.nops.io/wp-content/uploads/2024/08/aws-global-accelerator.png
 Puntos clave
 
 * AWS Accelerator soporta dos tipos de aceleradores:
-  - Acelerador estándar: mejora la disponibilidad de tus aplicaciones de internet globalmente al direccionar tráfico a los largo de la red de AWS al punto final regional más cercano
+  - Acelerador estándar: mejora la disponibilidad de tus aplicaciones de internet globalmente al direccionar tráfico a lo largo de la red de AWS al punto final regional más cercano
   - Acelerador de enrutamiento personalizado: Los aceleradores de enrutamiento personalizado permiten que el tráfico de usuario específico sea designado a múltiples puntos finales dentro de una subred VPC, apuntando a direcciones IP privadas
 
-https://www.nops.io/wp-content/uploads/2024/08/aws-global-img.png
-
+	
 * El acelerador global personalizado enruta tráfico al puerto e instancia designados
 * AWS global accelerator provee direcciones IP estáticas como puntos de entrada fijos para tu aplicación, reduciendo la complejidad asociada con gestionar varias direcciones IP a lo largo de diferentes regiones de AWS y zonas de disponibilidad. 
 * Soporta varios tipos de puntos finales como balanceadores de carga de red, balanceadores de carga de aplicación, instancias EC2 y direcciones IP elásticas a lo largo de una o múltiples regiones de AWS	

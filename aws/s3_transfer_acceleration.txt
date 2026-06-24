@@ -1,0 +1,13 @@
+https://www.geeksforgeeks.org/devops/aws-s3-transfer-acceleration/
+
+AWS S3 transfer Acceleration
+
+Es una característica diseñada para facilitar el proceso de subir y bajar objetos hacia y desde Amazon S3. Al aprovechar el CDN de CloudFront, S3 transfer Acceleration optimiza velocidades de transferencia de datos, ofreciendo una experiencia eficiente y consistente para usuarios de todo el mundo
+
+Funcionamiento de AWS S3 Aceleration
+1. Edge locations: AWS CloufdFront utiliza una red global de edge locations distribuidas estratégicamente posicionadas para reducir latencia y mejorar velocidades de transferencia de datos
+2. Rutas optimizadas: S3 Transfer Acceleration automáticamente selecciona las rutas más rápidas y más optimizadas para transferencia de datos basado en la ubicación geográfica del usuario y la Edge location más cercana
+3. Paralelización: la aceleración de la transferencia funciona de manera óptima cuando se usa con subidas multipartes, maximizando uso de ancho de banda y minimizando tiempos de transferencia
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260115123130051314/geeksforgeeks_bucket.webp
+
