@@ -894,3 +894,36 @@ Número de identificación: también conocido como número de datagram. Todo datagra
 Flag: tiene 3 bits. El primer bit no se usa. El segundo bit se llama DF y el tercero MF. DF es por don't fragment y MF es por more fragment. Si el DF está en uno, significa que el router no debe fragmentar el paquete, aun cuando no tenga la capacidad de procesarlo. Luego de recibir el paquete, el router enviará al emisor un mensaje ICMP. El MF tiene que ver con que cuando un paquete se recibe por el router, si el MF está en 1, significa que más fragmentos vienen en camino, es decir, el fragmento que tiene el MF en 1 no es el último fragmento. Si el MF está en 0 significa que el fragmento es el último o el único. Si un paquete tiene 300 bytes de datos y 20 bytes de cabeceras y además es fragmentado porque el router tiene, por ejemplo, un MTU de 120 bytes, entonces el paquete se fragmentará en tres, cada fragmento con 100 bytes de datos y 20 bytes de cabeceras. Nótese que ahora la eficiencia es menor porque hay que transmitir un total de 360 bytes en lugar de 320
 
 Fragmentation offset: número de bytes de datos adelante de este fragmento en el paquete. Por ejemplo, si tenemos los tres fragmentos de 120 datos del ejemplo anterior, el primer fragmento no tendrá datos delante de él, el segundo paquete tendrá 100 (no contamos la cabecera porque no son los datos) y el tercer paquete tendrá 200 bytes adelante de él. Los valores de fragmentation offset pueden ir desde 0 hasta 2^13 - 1 (8191)
+
+TTL (time to live): son 8 bits. Es para limitar la máxima cantidad de saltos visitados por un datagram. Esto es para evitar un bucle infinito. Un loop infinito podría ocurrir si por error un paquete se envía entre varios routers de manera cíclica. Gracias a TTL, cada vez que un paquete pasa por un router, el TTL baja en 1; cuando TTL baja hasta 0 el paquete se descarta y se enviará una mensaje ICMP (es como un mensaje de error) al emisor del paquete. Esto es importante porque si no existiera TTL y los paquetes pudieran estar reenviándose infinitamente entre varios routers, habría congestión y mal uso de recursos. El TTL se decrementa solo si se toca la capa de red (la capa 3 del modelo de OSI), por ejemplo, un router produciría un decremento porque trabaja en capa 3. Si algún intermediario llegara solo a la capa 1, entonces en este caso el TTL no se decrementa
+
+Protocolo: son 8 bits. Esta cabecera nos dice que protocolo está encapsulado en el paquete IP , por ejemplo, cuando está en 1 es para ICMP; si es 2 es IGMP; si es 17 es UDP; si es 6 es TCP. Esto es muy importante porque, por ejemplo, si un paquete tiene el protocolo en 6 no debería ser descartado, ya que TCP es un protocolo muy confiable. El orden de prioridad de protocolos es el siguiente: ICMP > IGMP > UDP > TCP . Este orden establece cuales son los paquetes que tenderán a descartarse primero, siendo ICMP el que más fácil sea de descartar
+
+Header Checksum: es de 16 bits. Esta cabecera funciona así: los datos del paquete se dividen en partes de tamaño k:
+
+0111 | 1011 | 1100 | 0000 | 0110
+
+Cada una de esas partes se pasa a decimal, que en este caso sería
+
+7 | 11 | 12 | 0 | 6
+
+Se los suma a todos: 7 + 11 + 12 + 0 + 6 = 36 . Si tan solo uno de los bits del paquete cambia, el checksum es distinto. El receptor recibirá los datos juntos con el checksum, y además calculará el checksum de los datos recibidos. Si el cheksum es diferente al recibido significa que ha ocurrido un error. Aparentemente, el checksum se calcula solo a partir de las cabeceras porque la parte completa es cubierta en el checksum de TCP (No lo entendí del todo). Hay que tener en cuenta que las cabeceras cambian con cada paso del paquete por cada router, porque cambia el TTL
+
+IP origen y IP destino: la IP de origen o source IP se mantiene igual durante todo el recorrido del datagram. La IP destino también permanece sin cambiar
+
+Cuando un datagram se envía desde un origen hacia un destino, algunas de las cabeceras cambian en el recorrido:
+* No cambian: versión, services, número de identificación, DF, Protocolo, IP origen, IP destino
+* Tal vez cambian: MF, Longitud total, HL, opciones, fragmentation offset
+* Cambian: TTL, header checksum	 
+
+Las filas opcionales de las cabeceras de un datagram (también llamada parte variable) pueden llegar a 40 bytes y son las siguientes:
+* Strict source routing: el emisor determina el camino exacto que un paquete debe seguir. Si hay algún problema en el camino, un router le envía un ICMP al emisor
+* Loose source routing: El emisor determina a que router debe ir el paquete pero luego este último decide que camino seguir luego. Es menos rígido que strict route
+* Record routing: El paquete guarda información sobre los routers por los cuales ha pasado. Puede registrar hasta nueve direcciones de routers
+* Time stamp: se usa para calcular el retraso (delay) del paquete. Se registra la hora en que el paquete entra al router y la hora en que sale
+* Padding: Para entender el padding hay que tener en cuenta que es un espacio en bytes que se le puede llegar a agregar al HL ¿en qué caso?, si la cantidad de bytes divido 4 (el factor de HL) nos da un decimal, a este no lo podríamos expresar en binario, entonces se agrega una cantidad de bytes al HL de manera tal que al dividirlo por cuatro dé un número entero, por ejemplo, si el HL tiene 30 bytes y lo dividimos por 4, entonces obtendremos un 7,5 que no podemos expresar en binario, entonces hacemos un cálculo: si 30 bytes son 7,5, entonces ¿a cuantos bytes equivale el valor de 8, que es un número entero? a 32 bytes. En este caso se estarían estableciendo 2 bytes de padding para que los 30 iniciales se transformen en 32 que, a su vez, equivalen a 8 si lo dividimos por el factor (4)
+
+
+Volviendo al fragmentation offset, al igual que el HL tiene un factor de conversión. El factor es 8, por lo que, por ejemplo, si queremos saber el fragmentation offset de un paquete que tiene por delante otro paquete con 800 bytes de datos, el fragmentation offset del paquete que viene por detrás será de 800/8 = 100
+
+-----------------------------------

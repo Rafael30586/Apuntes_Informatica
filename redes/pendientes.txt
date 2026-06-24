@@ -18,3 +18,4 @@ Hamming distance
 XOR gate
 sesión
 latencia
+ICMP
