@@ -927,3 +927,13 @@ Las filas opcionales de las cabeceras de un datagram (también llamada parte vari
 Volviendo al fragmentation offset, al igual que el HL tiene un factor de conversión. El factor es 8, por lo que, por ejemplo, si queremos saber el fragmentation offset de un paquete que tiene por delante otro paquete con 800 bytes de datos, el fragmentation offset del paquete que viene por detrás será de 800/8 = 100
 
 -----------------------------------
+TCP y UDP
+
+Protocolos Connectionless vs Connection oriented: 
+* En el caso de connection oriented, todos los paquetes enviados por el emisor a un receptor están lógicamente relacionados entre sí
+* Para el caso de connectionless, los paquetes enviados desde el emisor al receptor son independientes, no están lógicamente relacionados entre sí
+* Para ambos tipos de protocolos, es importante aclarar que no se están hablando de una relación física entre los nodos, sino, la conexión lógica que hay entre los paquetes
+* En el caso de connection oriented, un conexión lógica debe establecerse primero entre los dos nodos. A esta fase se la llama "setup phase". Luego de esta fase, los paquetes que van desde un nodo a otro están relacionados entre sí y son transmitidos; a esta fase se le llama "transfer phase". Luego viene la "teardown phase" que es cuando la conexión se termina
+* En los protocolos connection oriented, los paquetes son enviados en orden
+* En los protocolos connectionless, los paquetes pueden recibirse en cualquier orden
+
