@@ -937,3 +937,11 @@ Protocolos Connectionless vs Connection oriented:
 * En los protocolos connection oriented, los paquetes son enviados en orden
 * En los protocolos connectionless, los paquetes pueden recibirse en cualquier orden
 
+-------------------------
+Servicios de capa de transporte
+
+La capa de transporte es responsable de la comunicación proceso a proceso o puerto a puerto. La capa de transporte permite entregar a paquetes al proceso apropiado
+
+En la capa de transporte hay protocolos connectionless y connection oriented. Un ejemplo de protocolo connection oriented es TCP. TCP es conocido como un protocolo confiable. Un ejemplo de protoclo connectionless es UDP. Es considerado no confiable, pero es rápido y produce menos sobrecarga
+
+Los servicios clave de la capa de transporte son el control de flujo y el control de errores. Además la confiabilidad 
