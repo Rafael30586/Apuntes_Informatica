@@ -55,6 +55,7 @@ Cuando trabajamos con jsp podemos escribir código java en los mismos encerrando
 
 Con jsp viene por defecto un objeto llamado request, del cual podemos obtener los argumentos con el método getParameter(), y el objeto out, que nos permite usar el método print() para imprimir valores de variables
 
+-----------------------
 JSP expression language: podemos colocar código java en el JSP usando ${}. Puede reemplazar a los scripplets en algunas ocasiones. Cuando usamos expression language, podemos utilizar objetos establecidos como atributos. Estos objetos pueden venir del propio JSP cuando usamos scripplets o también de otro servlet cuando hace requestDispatcher().forward() al JSP
 
 En el JSP expression language hay objetos implícitos. Son los siguientes: pageScope, requestScope, sessionScope, applicationScope, param, paramValues, header, headerValues, cookie, initParam, pageContext. Más información sobre esto en: https://www.tutorialspoint.com/jsp/jsp_expression_language.htm y acá también https://www.youtube.com/watch?v=EkW6fC2b0Ok&list=PLGTrAf5-F1YIX68uT78FFtA3R3zajVFJz&index=60 . Normalmente, los objetos implícitos de EL retornan un map. Cuando queremos obtener el valor de algún atributo de un objeto implícito usamos un punto, por ejemplo ${para.name} . Además del punto se pueden usar corchetes, por ejemplo, ${requestScope["foo.bar"]} .   
@@ -75,6 +76,12 @@ La include action se parece mucho a la directiva include, pero tiene algunas dif
 * La directiva incluye el recurso en tiempo de traducción (cuando el JSP es transformado en servlet, lo que solo ocurre una vez), la action incluye el recurso en tiempo de solicitud
 * La directiva es mejor para páginas estáticas, la action es mejor para páginas dinámicas
 * La directiva incluye el contenido original en el servlet generado, la action llama al método inlcude   
+
+useBean:
+* Se usa para localizar o instanciar un bean
+* Los beans tienen un id que identifica a la instancia
+* Los beans tienen un alcance que puede ser: page, request, session o application
+* Además de lo anterior, los beans tienen class, type, beanName
 
 -------------------------
 
