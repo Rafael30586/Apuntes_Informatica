@@ -1,0 +1,12 @@
+https://www.freecodecamp.org/news/database-normalization-1nf-2nf-3nf-table-examples/
+
+¿Qué es la normalización de bases de datos?
+
+La normalización de bases de datos es un principio de diseño para organizar datos de una manera consistente y organizada
+Ayuda a evitar redundancia y mantener la integridad de la base de datos. También ayuda a eliminar características no deseadas con inserción, borrado y actualización
+
+¿Cual es el propósito de la normalización?
+
+El principal propósito de la normalización de bases de datos es evitar complejidades, eliminar duplicados y organizar datos de una manera consistente
+En la normalización, los datos son divididos en varias tablas vinculados entre sí con relaciones
+Los administradores de bases de datos son capaces de lograr estas relaciones al usar claves primarias, claves foráneas y claves compuestas
