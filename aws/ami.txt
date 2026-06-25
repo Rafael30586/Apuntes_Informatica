@@ -1,1 +1,13 @@
 https://www.geeksforgeeks.org/cloud-computing/what-is-amazon-machine-image-ami/
+
+¿Qué es amazon machine image (AMI)?
+
+Una AMI es una plantilla que contiene configuración de software (sistema operativo, servidor de aplicación y aplicaciones) requerida para lanzar una instancia EC2. No podés lanzar una instancia EC2 si especificar una
+* Toda instancia EC2, ya sea una o miles, comienza como un clon de la AMI seleccionada
+* Toda AMI empaqueta una plantilla raíz de volumen, permisos de lanzamiento y un mapeo de dispositivo de bloqueo
+* Las AMIs existen en una sola región de AWS y deben ser explícitamente copiadas para ser usadas en otras
+* Las AMIs son creadas, registradas, copiadas y des-registradas. Des-registrar no elimina automáticamente el snapshot de EBS subyacente
+* AMIs vienen de Amazon, el mercado de AWS, la comunidad o tus propias versiones personalizadas
+
+https://media.geeksforgeeks.org/wp-content/uploads/20230720114310/AWS-ami.png 
+
