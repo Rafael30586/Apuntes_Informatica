@@ -9,5 +9,17 @@ Una AMI es una plantilla que contiene configuración de software (sistema operat
 * Las AMIs son creadas, registradas, copiadas y des-registradas. Des-registrar no elimina automáticamente el snapshot de EBS subyacente
 * AMIs vienen de Amazon, el mercado de AWS, la comunidad o tus propias versiones personalizadas
 
-https://media.geeksforgeeks.org/wp-content/uploads/20230720114310/AWS-ami.png 
+https://media.geeksforgeeks.org/wp-content/uploads/20230720114310/AWS-ami.png
+
+
+------------------------
+Componentes clave
+
+* Root volumen template: una captura (snapshot) del volumen raíz (típicamente EBS) conteniendo el sistema operativo y todo el software instalado
+* Permisos de lanzamiento (launch permissions): controla que cuentas de AWS están autorizadas para usar AMI para lanzar instancias
+* Block device mapping: especifica que volúmenes (raíz y cualquier almacenamiento adicional) está ligados a la instancia en el lanzamiento 
+
+____________________________________________
+Hay más para resumir con el enlace de arriba
+____________________________________________
 

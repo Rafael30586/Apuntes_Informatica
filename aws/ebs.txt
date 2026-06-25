@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/devops/introduction-to-aws-elastic-block-storeebs/
+
+AWS Elastic Block Store (EBS)
+
+Es un servicio de almacenamiento persistente y de alto rendimiento diseñado para usarse con EC2. Funciona como un disco duro virtual para instancias EC2. Está diseñado para cargas de trabajo que requieren baja latencia, IOPS alto y almacenamiento durable
+* Almacenamiento persistente  que permanece disponible incluso después de que una instancia EC2 se detiene o termina
+* Entrega baja latencia y alto IOPS para cargas de trabajo transaccionales
+* Replica datos automáticamente dentro de la misma zona de disponibilidad
+* Soporta volúmenes elásticos para redimensión dinámica para ajuste de renidmiento

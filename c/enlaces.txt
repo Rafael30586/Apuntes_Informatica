@@ -1,2 +1,6 @@
 Enlace sobre listas enlazadas
-https://www.learn-c.org/en/Linked_lists 
+https://www.learn-c.org/en/Linked_lists
+
+Enlaces sobre árboles binarios
+https://www.scaler.com/topics/binary-tree-in-c/
+https://www.naukri.com/code360/library/binary-tree-in-c 

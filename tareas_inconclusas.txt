@@ -3,9 +3,10 @@ Descriptores de archivos (en la carpeta de Linux)
 Abstracción en computación
 Serializable en carpeta de java
 Cabeceras HTTP (en la carpeta de redes)
-Receptores eléctricos (en la carpeta de electricidad en física)
 Ondas electromagnéticas (en la carpeta luz en física)
-VPC (carpeta de AWS)
 NAT Gateway (carpeta de AWS)
 internet Gateway (carpeta de AWS)
 logic gates
+EBS (carpeta de AWS)
+AMI (carpeta de AWS)
+Volúmenes (carpeta de AWS)

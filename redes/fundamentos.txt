@@ -945,3 +945,11 @@ La capa de transporte es responsable de la comunicación proceso a proceso o puer
 En la capa de transporte hay protocolos connectionless y connection oriented. Un ejemplo de protocolo connection oriented es TCP. TCP es conocido como un protocolo confiable. Un ejemplo de protoclo connectionless es UDP. Es considerado no confiable, pero es rápido y produce menos sobrecarga
 
 Los servicios clave de la capa de transporte son el control de flujo y el control de errores. Además la confiabilidad 
+
+------------------------
+Dirección de socket
+
+Es una dirección IP con un número de puerto, por ejemplo, 200.23.56.8:69
+
+---------------------
+Cabeceras de TCP
