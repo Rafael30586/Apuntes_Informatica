@@ -6,4 +6,14 @@ Es un servicio de almacenamiento persistente y de alto rendimiento diseñado par
 * Almacenamiento persistente  que permanece disponible incluso después de que una instancia EC2 se detiene o termina
 * Entrega baja latencia y alto IOPS para cargas de trabajo transaccionales
 * Replica datos automáticamente dentro de la misma zona de disponibilidad
-* Soporta volúmenes elásticos para redimensión dinámica para ajuste de renidmiento
+* Soporta volúmenes elásticos para redimensión dinámica para ajuste de rendimiento
+
+---------------------------
+Características clave
+
+* Volúmenes elásticos: Modificar tipo de almacenamiento, capacidad y rendimiento dinámicamente sin tiempo de inactividad
+* Capturas (snapshots) incrementales: las capturas de EBS son respaldos incrementales almacenados internamente en Amazon S3
+* Rápida recuperación de captura: quita el retraso de inicialización y entrega volúmenes completamente aprovisionados inmediatamente luego de la recuperación
+* EBS multi-acople: acopla un volumen io1 o io2 a múltiples instancias EC2 en la misma zona de disponibilidad
+* Alta durabilidad: provee almacenamiento altamente durable con niveles de durabilidad desde 99,8% hasta 99,999% dependiendo del tipo de volumen
+* Encriptación nativa: Encripta datos en descanso, en tránsito y volúmenes acoplados usando AWS Key Management Service (KMS)
