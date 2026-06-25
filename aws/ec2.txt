@@ -23,3 +23,9 @@ Pasos para crear una instancia EC2
 5- Añadir etiquetas
 6- Configurar grupo de seguridad
 7- Reseña 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+https://www.youtube.com/watch?v=w9kgSlYNL4A&list=PLwyXYwu8kL0wg9R_VMeXy0JiK5_c70IrV&index=11
+
+Las instancias EC2 pueden detenerse (stop) o terminarse (terminate). Cuando elegimos detener una instancia EC2, se "apaga" temporalmente la instancia para usarla después y se guarda el volumen EBS; no hay cobros por cómputo pero pagarás por el uso de EBS. Cuando decidimos terminar con la instancia, la borra permanentemente y también borra los volúmenes EBS; ya no te cobran por nada relacionado a dicha instancia
