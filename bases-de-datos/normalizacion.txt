@@ -1,12 +1,64 @@
 https://www.freecodecamp.org/news/database-normalization-1nf-2nf-3nf-table-examples/
+https://www.youtube.com/watch?v=GFQaEYEc8_8&list=PLH4-9MlhMdT2PON3DPn9YECtFHJe1_YwK&index=4
 
 ¿Qué es la normalización de bases de datos?
 
 La normalización de bases de datos es un principio de diseño para organizar datos de una manera consistente y organizada
 Ayuda a evitar redundancia y mantener la integridad de la base de datos. También ayuda a eliminar características no deseadas con inserción, borrado y actualización
 
+----------------------------------------
 ¿Cual es el propósito de la normalización?
 
 El principal propósito de la normalización de bases de datos es evitar complejidades, eliminar duplicados y organizar datos de una manera consistente
 En la normalización, los datos son divididos en varias tablas vinculados entre sí con relaciones
 Los administradores de bases de datos son capaces de lograr estas relaciones al usar claves primarias, claves foráneas y claves compuestas
+
+
+---------------------------------
+Las bases de datos normalizadas tienen las siguientes características:
+* Son más fáciles de entender
+* Es más fácil mejorarlas o extenderlas
+* Están protegidas contra anomalías de inserción, de actualización y de borrado
+
+-------------------------------
+Primera forma normal - 1NF
+
+Para que una tabla esté normalizada no debe haber un orden correcto de los registros, estos podrían ser extraídos de la tabla en cualquier order. Supongamos que tenemos una tabla llamada members_of_the_beattles y extraemos el nombre de todos lo registros como sigue:
+
+SELECT Member_Name
+FROM Member_Of_The_Beatles
+
+Los nombres podrían ser extraídos en cualquier orden. Si, por ejemplo, estuvieran ordenados en la tabla en base a su altura, estaríamos hablando de una tabla no normalizada. No hay tal cosa como orden de filas en una tabla normalizada. Dicho de otra forma, cuando se usa el orden de los registros para transmitir información, estamos hablando de una tabla no normalizada 
+
+En lugar de tener a los miembros de los Beatles en una tabla ordenados por altura, lo que se puede hacer es crear una nueva columna en la tabla que contenga la altura de cada uno
+
+Otra forma de violar la primera forma normal es tener registros con datos mezclados a ambiguos, como tener una columna numérica, pero que algunos registros tengas un cadena de caracteres en esta columna. Por ejemplo, si tenemos la altura de los Beatles en una columna expresada en cm, no puede uno de ellos decir "entre 168 y 171"
+
+Una celda no debería guardar más de una valor. A esto se le llama atomicidad
+
+Otra cosa que debe haber en una tabla en la primera forma normal es un clave primaria, que es una columna o grupo de columnas que identifican a una fila dentro de la tabla. Esto ayuda a prevenir que hayan duplicados, por ejemplo, en la tabla de los Beatles, podemos hacer que su nombre sea la clave primaria
+
+Supongamos que tenemos una tabla sobre juegos de rol en donde está cada jugador y su inventario. Supongamos que se nos presenta en un primer momento de la siguiente manera:
+
+Player_ID | Inventory
+jdog21    | 2 amulets, 2 rings
+gila19    | 18 copper coins
+trev73    | 3 shields, 5 arrows, 30 copper coins, 7 rings
+
+Lo que vemos en la parte de Inventory se llama "repeating groups". Cada fila contiene potencialmente diferentes tipos de ítems. Se podría representar el inventario como un string pero es una mala idea porque no habría una forma fácil de hacer consultas, por ejemplo, si quisiéramos saber que personaje tiene más de 10 monedas de cobre, sería muy complicado saberlo con una consulta. Tampoco sería buena idea hacer los siguiente:
+
+Player_ID | Quantity_1 | Item_Type_1 | Quantity_2 | Item_type_2 | Quantity_3 | Item_Type_3 | Qunatity_4 | Item_Type_4
+jdog21    | 2          | amulets     | 4          | rings       |            |             |            |
+gila19    | 18         | copper coins|            |             |            |             |            |
+trev73    | 3          | shields     | 5          | arrows      | 30         | copper coins| 7          | rings
+
+ya que podrían haber como 100 tipos de objetos, y la tabla sería interminable. Almacenar un grupo de datos repetidos en una sola fila viola la primera forma normal. Para arreglar la tabla anterior, se puede hacer así:
+
+Player_ID | Item_Type    | Item_Quantity
+jdog21      amuletes       2 
+jdog21      rings          4
+gila19      copper coins   18
+trev73      shields        3
+trev73      arrows         5
+trev73      copper coins   30
+trev73      rings          7
