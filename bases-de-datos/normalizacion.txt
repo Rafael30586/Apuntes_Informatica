@@ -62,3 +62,39 @@ trev73      shields        3
 trev73      arrows         5
 trev73      copper coins   30
 trev73      rings          7
+
+-------------------------
+Segunda forma normal
+
+En la segunda forma normal cada atributo no-clave debe depender de la clave primaria completa (a completa se hacer referencia a que podría ser una clave primario compuesta)
+
+Supongamos que queremos mejorar la tabla anterior agregando una campo que se llama rating y que pueda tener valores de beginner, intermediate y advanced, para saber cual es la categoría de cada jugador:
+
+Player_ID | Item_Type    | Item_Quantity | Rating
+jdog21      amuletes       2               Intermediate
+jdog21      rings          4               Intermediate
+gila19      copper coins   18              Beginner
+trev73      shields        3               Advanced
+trev73      arrows         5               Advanced
+trev73      copper coins   30              Advanced
+trev73      rings          7               Advanced
+
+Supongamos que gila19 pierde todas sus monedas, entonces tendríamos que borrar la fila de gila19. Si quisiéramos hacer una consulta a la tabla para saber cual es la categoría de gila19, no podríamos porque ya no está en la tabla. Este es un ejemplo de una anomalía de borrado (deletion anomaly). Supongamos que jdog21 aumenta su categoría a avanzado; tendríamos que actualizar dos filas pero, por accidente, podríamos actualizar solo una de las filas, lo cual daría lugar a una anomalía de actualización (update anomaly), porque tendríamos que jdog21 es intermedio y avanzado. Supongamos que un nuevo jugador aparece llamado tina42 pero, como no tiene objetos, no aparece en la tabla; esto se conoce como anomalía de inserción (insertion anomaly)
+
+En la tabla de jugadores, la clave primaria está formada por los campos Player_ID y Item_Type, mientras que Item_Quantity y Rating atributos que no son claves (non-key attributes). En la tabla de jugadores, la cantidad de ítems depende de la clave completa pero la de categoría solo depende de una parte de la clave: el ID de jugador. Para arreglar esto hay que hacer una tabla solo para jugadores en lugar de agregar la columna de Rating a la tabla:
+
+Player_ID | Player_Rating    
+jdog21      Intermediate
+gila19      Beginner
+trev73      Advanced
+
+y la otra tabla se deja igual que antes:
+
+Player_ID | Item_Type    | Item_Quantity
+jdog21      amuletes       2 
+jdog21      rings          4
+gila19      copper coins   18
+trev73      shields        3
+trev73      arrows         5
+trev73      copper coins   30
+trev73      rings          7
