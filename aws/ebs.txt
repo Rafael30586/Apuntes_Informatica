@@ -30,6 +30,17 @@ Tipos de volúmenes de Amazon EBS
 * HDD de throughput optimizado (st1): idóneo paqra cargas de trabajo eccedidas frecuentemente y de throughput intensivo como MapReduce, Kafka, procesamiento de logs y almacenamiento de datos. Provee un burst throughput de hasta 500 MB/s
 * Cold HDD (sc1): La opción de almacenamiento de menor costo, diseñado para conjuntos de datos grandes y accedidos con poca frecuencia con capacidades burst throughput de hasta 250 MB/s
 
+--------------------------------
+Capacidades avanzadas de EBS
+
+1) EBS multi-attach
+Aunque los volúmenes estándar de EBS están limitados a una instancia EC2, podés activar multi-attach en volúmenes de IOPS aprovisionados (io1 e io2). Esto permite a un volumen ser acoplado concurrentemente 16 instacias EC2 nitro-based en la misma zona de disponibilidad. Esta característica requiere sistemasd e archivos agrupados (como GSF2 o OCFS2) para coordinar acciones de escrituras seguras cooncurrentes
+
+2) EBS en bases de datos y aplicaciones gestionadas. EBS opera como un alamcén de datos vital persistente a lo largo de servicios de bases de datos nativos de AWS y disposiciones de infraestructura:
+* Bases de datos autogestionadas: sirve como almacenamiento de bases de datos altamente persistente (MySQL, PostGreSQL) acoplado a instancias EC2 individuales
+* Servicios de AWS gestionados: Funciona como cimiento de almacenamiento persistente subyacente corriendo detrás de Amazon RDS y Amazon DocumentDB
+* Almacenamiento de contenedores: provee montaje de volúmenes durables y persistentes para cargas de trabajo contenerizadas y con estado gestionadas por Amazon EKS y ECS  
+
 
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
