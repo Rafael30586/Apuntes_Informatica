@@ -17,3 +17,20 @@ Características clave
 * EBS multi-acople: acopla un volumen io1 o io2 a múltiples instancias EC2 en la misma zona de disponibilidad
 * Alta durabilidad: provee almacenamiento altamente durable con niveles de durabilidad desde 99,8% hasta 99,999% dependiendo del tipo de volumen
 * Encriptación nativa: Encripta datos en descanso, en tránsito y volúmenes acoplados usando AWS Key Management Service (KMS)
+
+--------------------------
+Tipos de volúmenes de Amazon EBS
+
+1) Volúmenes de unidades de estado sólido (SSD). Diseñados para cargas de trabajo de bases de datos que requieren IOPS altos y rendimiento de baja latencia
+* SSD de propósito general (gp3): el tipo de volumen por defecto. Ofrece latencia de 1 digito de milisegundos con una base de referencia de 3000 IOPS y un thoughput de 125 MB/s. El rendimiento puede escalar hasta 16000 IOPS y thoguhput de 1000 MB/s independientemente de la capacidad de almacenamiento
+* SSD de IOPS aprovisionados (io2 Block Express): Hecho para bases de datos de alto rendimiento y críticas (Oracle, SAP, HANA). Entrega hasta 256000 IOPS, 4000 MB/s de thoughput por volumen y 99,9999% de durabilidad
+* SSD de IOPS aprovisionados (io1): Volumen legacy de alto rendimiento. Entrega hasta 64000 IOPS y 1000 MB de thoughput por volumen. Diseñado para llevar a cabo dentro del 10 % de IOPS provisionados 99,9% del tiempo
+
+2) Volúmenes de disco duro (HDD). Optimizados para cargas de trabajo de streaming de datos grandes y secuenciales donde el throughput es valorado sobre IOPS. Los volúmenes respaldados por HDD no pueden ser usados como "boot volumes"
+* HDD de throughput optimizado (st1): idóneo paqra cargas de trabajo eccedidas frecuentemente y de throughput intensivo como MapReduce, Kafka, procesamiento de logs y almacenamiento de datos. Provee un burst throughput de hasta 500 MB/s
+* Cold HDD (sc1): La opción de almacenamiento de menor costo, diseñado para conjuntos de datos grandes y accedidos con poca frecuencia con capacidades burst throughput de hasta 250 MB/s
+
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________
