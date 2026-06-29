@@ -66,7 +66,7 @@ trev73      rings          7
 -------------------------
 Segunda forma normal
 
-En la segunda forma normal cada atributo no-clave debe depender de la clave primaria completa (a completa se hacer referencia a que podría ser una clave primario compuesta)
+En la segunda forma normal cada atributo no-clave debe depender de la clave primaria completa (a completa se hace referencia a que podría ser una clave primario compuesta). Además, la base de datos debe estar en primera forma normal
 
 Supongamos que queremos mejorar la tabla anterior agregando una campo que se llama rating y que pueda tener valores de beginner, intermediate y advanced, para saber cual es la categoría de cada jugador:
 
@@ -98,3 +98,37 @@ trev73      shields        3
 trev73      arrows         5
 trev73      copper coins   30
 trev73      rings          7
+
+-----------------------------
+Tercera forma normal
+
+En la tercera forma normal, todo atributo no-clave en una tabla debe depender de la clave, la clave completa y nada más que la clave. No puede haber dependencias parciales transitivas 
+
+Veámoslo con ejemplos. Supongamos que queremos mejorar la tabla de jugadores añadiendo una nueva columna que indique el nivel de habilidad del jugador
+
+Player_ID | Player_Rating | Player_Skill_Level   
+jdog21      Intermediate    4
+gila19      Beginner        3
+trev73      Advanced        8
+tina42      Beginner        1
+
+El nivel de habilidad del jugador está relacionado al player_rating: 1, 2 y 3 es para beginner; 4 5 y 6 es para intermediatde; y 7 8 y 9 es para advanced. En este caso Player_Skill_Level depende de Player_ID; Player_Rating también depende de Player_ID pero indirectamente, ya que, en realidad, depende de manera directa de Player_Skill_Level. Hay que tener en cuneta que si se modifica el Player_Skill_Level de un jugador, puede que también deba modificarse el Player_Rating del jugador, esta es una dependencia transitiva. Para arreglar la tabla puede retirarse la parte de Player_Rating y dejar la Player_Skill, y hacer una tabla de Player_Skill_Levels por otro lado
+
+Player_ID | Player_Skill_Id   
+jdog21       4
+gila19       3
+trev73       8
+tina42       1
+
+Player_Skill_Level | Player__Rating
+1                    beginner	
+2                    beginner
+3                    beginner
+4                    intermediate
+5                    intermediate
+6                    intermediate
+7                    advanced
+8                    advanced
+9                    advanced
+
+Generalmente, cuando se ha normalizado una base de datos hasta este punto, está completamente normalizada, pero hay excepciones que necesitan de la cuarta o quinta forma normal
