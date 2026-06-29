@@ -39,9 +39,8 @@ Aunque los volúmenes estándar de EBS están limitados a una instancia EC2, pod
 2) EBS en bases de datos y aplicaciones gestionadas. EBS opera como un alamcén de datos vital persistente a lo largo de servicios de bases de datos nativos de AWS y disposiciones de infraestructura:
 * Bases de datos autogestionadas: sirve como almacenamiento de bases de datos altamente persistente (MySQL, PostGreSQL) acoplado a instancias EC2 individuales
 * Servicios de AWS gestionados: Funciona como cimiento de almacenamiento persistente subyacente corriendo detrás de Amazon RDS y Amazon DocumentDB
-* Almacenamiento de contenedores: provee montaje de volúmenes durables y persistentes para cargas de trabajo contenerizadas y con estado gestionadas por Amazon EKS y ECS  
-
-
+* Almacenamiento de contenedores: provee montaje de volúmenes durables y persistentes para cargas de trabajo contenerizadas y con estado gestionadas por Amazon EKS y ECS
+	  
 ____________________________________________
-Continuar resumiendo con el enlace de arriba
+Hay más para resumir en el enlace de arriba
 ____________________________________________

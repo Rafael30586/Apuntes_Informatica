@@ -4,4 +4,6 @@ Data warehouse
 message system o sistema de mensajería
 Gobernanza
 // pay as you go
-redundancy
+// redundancy
+infraestructura as code
+terraform

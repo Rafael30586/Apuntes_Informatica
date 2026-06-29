@@ -2,3 +2,18 @@ https://www.geeksforgeeks.org/cloud-computing/aws-ebs-elastic-block-store-snapsh
 
 AWS EBS (Elastic Block Store) snapshot
 
+EBS snapshots son respaldos (backups) incrementales y "point in time" de volúmenes de Amazon EBS. Mientras que los volúmenes EBS están bloqueados a una zona de disponibilidad específica, sus snapshots se almacenan de manera redundante en Amazon S3 a lo largo de una región entera de AWS, haciéndolos altamente disponibles y clave para recuperación de desastres
+
+-----------------------------
+Modelos de respaldo de snapshot incremental
+
+EBS snapshots utilizan un modelo de almacenamiento de bloque incremental para ahorrar costos y reducir tiempo de backup
+* Backup inicial: El primer snapshot de un volumen es una copia completa de todos los bloques de datos actualmente escritos en el volumen
+* Backups subsecuentes: Cualquier snapshot subsecuente del mismo volumen solo copia los bloques de datos que han cambiado desde el backup precedente
+* Cadenas autogestionadas: cuando borrás un snapshot, solo los bloques de datos únicos a ese snapshot específico son removidos. Los bloques referenciados por snapshots más viejos o más nuevos en la cadena son preservados automáticamente
+
+https://media.geeksforgeeks.org/wp-content/uploads/20260608134057954870/volume_1_15_gib_.webp
+
+____________________________________________
+Hay más para resumir con el enlace de arriba
+____________________________________________
