@@ -132,3 +132,74 @@ Player_Skill_Level | Player__Rating
 9                    advanced
 
 Generalmente, cuando se ha normalizado una base de datos hasta este punto, está completamente normalizada, pero hay excepciones que necesitan de la cuarta o quinta forma normal
+
+----------------------
+Cuarta forma normal
+
+Dependencias multivaluadas en una tabla deben ser dependencias multivaluadas en la clave
+
+Supongamos que existe un servicio para diseñar casas para aves llamado DesigMyBirdHouse.com . En esta página se puede elegir entre diferentes modelos. Además, cada modelo está disponible en diferentes colores y estilos:
+
+Modelo "Tweety" - Colores disponibles: amarillo, azul - Estilos disponibles: Bungalow, Duplex
+Modelo "Metro" - Colores disponibles: marrón, gris - Estilos disponibles: High-Rise, Modular
+Modelo "Prairie" - Colores disponibles: marrón, beige - Estilos disponibles: Bungalow, Schoolhouse
+
+Una manera de hacer la tabla es colocar todas las posibles combinaciones en la misma:
+
+Modelo   | Color    | Estilo
+Tweety     amarillo   Bungalow
+Tweety     amarillo   Duplex
+Tweety     azul       Bungalow
+Tweety     azul       Duplex
+Metro      marrón     High-Rise 
+Metro      marrón     Modular
+Metro      gris       High-Rise
+Metro      gris       Modular
+Prairie    marrón     Bungalow
+Prairie    marrón     SchoolHose
+Prairie    beige      Bungalow
+Prairie    beige      Schoolhouse
+
+Esta tabla está en tercer forma normal. La clave primaria consiste en las tres columnas. Supongamos que queremos agregar el color verde para el modelo Prairie, esto significaría que tenemos que agregar dos filas: uno para bungalow y otro para schoolhouse. Si por accidente solo añadimos la verde bungalow, tendremos una inconsistencia de datos, los colores deberían ser independientes del estilo. Cada modelo tiene un conjunto de colores disponibles. Esta es un tipo de dependencia multivaluada
+
+{ modelo } -->> { Color }
+
+Además, cada modelo tiene un conjunto de estilo disponibles
+
+{ modelo } -->> { estilo }
+
+Como modelo no es la clave primaria, la tabla no está en la cuarta forma normal. Para que si esté en la cuarta forma normal, se puede realizar dos tablas de la siguiente manera
+
+Tabla Modelo_Colores_Disponibles
+
+Modelo | Color
+Tweety   amarillo
+Tweety   azul
+Metro    marrón
+Metro    gris
+Prairie  marrón
+Prairie  beige
+
+Tabla Modelo_Estilos_Disponibles
+
+Modelo | Estilo
+Tweety   Bungalow
+Tweety   Duplex
+Metro    High-Rise
+Metro    Modular
+Prairie  Bungalow
+Prairie  Schholhouse
+
+Entonces, si queremos agregar el color verde para el modelo prairie, simplemente agregamos el color verde para el modelo Prairie en la tabla Modelo_Colores_Disponibles 
+
+Tabla Modelo_Colores_Disponibles
+
+Modelo | Color
+Tweety   amarillo
+Tweety   azul
+Metro    marrón
+Metro    gris
+Prairie  marrón
+Prairie  beige
+Prairie  Verde
+
