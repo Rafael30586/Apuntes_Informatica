@@ -1,0 +1,20 @@
+https://www.datacamp.com/es/tutorial/aws-lightsail
+
+Amazon LightSail
+
+Es un servicio en la nube de Amazon que ofrece redes, bases de datos, almacenamiento, y alojamiento VPS a un precio fijo mensual
+Es perfecto para desarrolladores, startups y empresas que quieran lanzar aplicaciones a bajo coste sin la complejidad de gestionar instancias EC2
+
+------------------------
+Características de AWS LightSail
+
+Una de las características más destacadas de AWS LightSail es como simplifica el alojamiento en la nube sin comprometer la potencia
+Acá hay algunas características de LightSail:
+* Fácil configuración
+* Precios previsibles
+* Pilas preconfiguradas: LightSail ofrece modelos de SO y aplicaciones listos para usar como WordPress, LAMP, Node.js y Ubuntu, perfectos para configurar rápidamente un entorno de pruebas
+* Red integrada: Dispone de funciones como equilibrio de carga, IPs estáticas y gestión de DNS, por lo que no tendrás que preocuparte de complejas configuraciones de red
+* Escalabilidad: Si tus necesidades crecen, también puede hacerlo tu infraestructura. Podés actualizar tu instancia de LightSail o pasar a EC2 para obtener más flexibilidad y potencia
+* Copias de seguridad automatizadas: Tus datos están seguros gracias a las instancias automáticas, que te permiten restaurar versiones anteriores siempre que lo necesites. Se recomienda activar esta función para evitar la pérdida inesperada de datos
+* Compatibilidad con API y CLI
+* Bases de datos gestionadas: Podés alojar bases de datos como MySQL o PostgreSQL con el servicio incorporado de LightSail. No es necesario configurar una base de datos desde cero: solo tenés que elegir la que prefieras y empezar a utilizarla inmediatamente 
