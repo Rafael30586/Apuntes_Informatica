@@ -953,3 +953,65 @@ Es una dirección IP con un número de puerto, por ejemplo, 200.23.56.8:69
 
 ---------------------
 Cabeceras de TCP
+
+Primera fila: Dirección de puerto de origen; dirección de puerto de destino. Cada uno de 16 bits. La fila total es de 32 bits
+
+Segunda fila: número de secuencia (32 bits)
+
+Tercera fila: número de reconocimiento (acknowledgement number)
+
+Cuarta fila: longitud de cabeceras o header length (HL) de 4 bits; reserva (6 bits); flag bits: urgent pointer, ackknowledgement, push flag, reset, send flag, finish flag (6 bits en total); tamaño de ventana (16 bits)
+
+Quinta fila: checksum (16 bits); urgent pointer (16 bits)
+
+Como se puede observar, cada fila es de 4 bytes (32 bits) y, todas las filas sumadas, dan 20 bytes
+
+Hay filas adicionales que son opcionales y pesan 40 bytes en total
+
+Byte numbering: el protocolo TCP, a diferencia del IP, es orientado a bytes (IP es orientado a paquetes). Esto quiere decir que se le asigna un número único a cada byte de datos. No se comienza en 0, se comienza en un número al azar. Esto de asignar un número a cada byte es para ayudar a mantener orden y asegurar una entrega confiable en cada conexión TCP (TCP es muy estricto en confiabilidad, ni un byte debe perderse). Para esto sirve la segunda fila de las cabeceras (número de secuencia). El número de secuencia contiene el número del primer byte del segmento. El rango será desde 0 hasta 2^32 - 1 , aunque como se ha dicho antes, se empieza de un número aleatorio. La determinación del número aleatorio ocurre durante el "conecction setup". Tanto el emisor como el receptor empieza con un número aleatorio. Por ejemplo, un segmento tiene 5 bytes, y al primer byte se le asigna el 1010, entonces al segundo se le asigna el 1011, al tercero el 1012, al cuarto el 1013 y al quinto el 1014, pero el único que aparece en la cabecera es el primero (1010); el segundo segmento de 5 bytes empezará desde 1015 (se puede calcular el número de secuencia del segundo segmento sumando el número de secuencia del primer segmento más la cantidad de bytes que tiene)
+Wrap around time: el número de secuencia de los bytes puede, en algún momento, superar a 2^32 - 1 ¿qué sucede entonces? al próximo byte se le asigna el 0, es decir, empieza el conteo de vuelta.  Wrap around time es el tiempo gastado en usar todos los números de la secuencia. El instructor dice que el wrap around time es inversamente proporcional al ancho de banda, y la fórmula es (2^32)/X . Teniendo en cuenta que el ancho de banda es de X bytes/seg . Esto tiene sentido porque, mientras más rápida sea la transmisión de datos, menos tiempo se gastará en utilizar los números de la secuencia
+
+Tiempo de vida de un segmento TCP: 180 segundos (3 minutos). Este es la máxima cantidad de tiempo que se espera que le tome a un segmento llegar a destino. Es una cantidad fija, no depende del ancho de banda ni ninguna otra magnitud
+
+Hay algo a tener en cuenta que relaciona a wrap around time y el tiempo de vida de un segmento. Si el wrap around time es menor que el tiempo de vida de una segmento, hay riesgo de bytes con el mismo número de secuencia, lo cual puede llevar a confusión. Si el wrap around time es mayor al tiempo de vida de un segmento, este riesgo no existe
+
+Número de reconocimiento: Si el receptor recibió el byte que llamaremos x de manera exitosa del emisor, entonces define x+1 como el número de reconocimiento. Ocurrirá algo llamado "piggyback" que , en este contexto, es el receptor enviando datos al emisor de que recibió el byte x y enviando información de que solicita el byte x+1 . No estoy seguro de haber entendido del todo lo que dijo el profesor
+
+Longitud de cabeceras (HL): es de 4 bits, puede ir desde 5 a 15. Como pasa con el HL de IPv4, también hay un factor que es el 4, por ejemplo, si HL es 10, entonces significa que el tamaño de las cabeceras es 4 x 10 = 40
+
+Checksum: a diferencia de IPv4, el checksum se hace con los datos más las cabeceras, y algo más: la pseudo-cabecera IP. La pseudo-cabecera IP es una forma minimalista de la cabecera de IP, incluye: la IP de origen, la IP destino, reserved, protocolo y longitud. Checksum es importante para el control de errores
+
+Tamaño de ventana o ventana de aviso (advertisement window): esto es muy importante para el control de flujo. Son los bytes que el receptor ha reservado para los datos entrantes. Es una cabecera de 16 bits, lo que quiere decir que el máximo tamaño del tamaño de ventana puede ser de 65535. El tamaño de ventana no es un valor estático, cambia de manera dinámica en función de lo que el emisor envía. ¿qué ocurre si el receptor le comunica al emisor que tiene un tamaño de ventana de 0 bytes? el emisor seguirá "preguntando" al receptor cual es su tamaño de ventana después de un tiempo (este tiempo se llama "persistent time"), el emisor le envía al receptor un segmento llamado "probe" (solo contiene 1 byte), también tiene un número de secuencia que nunca es reconocido. El probe sirve para que el receptor reenvíe el reconocimiento que se ha perdido
+
+flags:
+* Urgent pointer: No es lo mismo hablar de urgent flag que de urgent pointer, urgent flag es un valor (puede ser 1 o 0); la urgent flag debe estar en 1 para que el urgent pointer sea considerado. Urgent pointer indica la posición del último byte de datos urgentes, al enviar este valor al número de secuencia. Ejemplo: si el urgent pointer está en 5 bytes, entonces se considera que los primeros 5 bytes de los datos son urgentes, estos bytes necesitan ser tratados de manera especial, son datos que necesitan atención inmediata. Urgent flag es una de las control flags
+* Acknowledgement flag: usada para reconocer la recepción de datos o paquetes de sincronización
+* Push flag: Cuando esta flag está activada, los datos son enviados inmediatamente a través de la red. Este no es el comportamiento por defecto del protocolo TCP ya que, cuando se reciben bytes, se espera a que vengan más de las capas superiores para poder formar un segmento relativamente grande y después enviarlo a través de la red. Supongamos que se recibe un byte con esta flag activada, entonces este byte se enviará inmediatamente a través de la red, pero si la flag no está activada, se esperará a que se bajen más bytes y formar un segmento más grande. La push flag está activada cuando el envío inmediato de datos es requerido. El comportamiento por defecto de TCP minimiza el tráfico en la red, generalmente conviene juntar más bytes y enviarlos por la red para que haya menos sobrecarga y menos tráfico
+* Reset flag: Se usa para abortar una conexión TCP. Puede ser enviado por el receptor cuando un paquete llega de manera no esperada o cuando hay algún error en la conexión TCP. Puede ser que el paquete recibido haya llegado con alguna anomalía
+* Syn flag: para sincronizar número de secuencia durante la conexión
+* Fin flag: para terminar la conexión
+
+Three way handshake
+Para entenderlo, tengamos en cuenta lo siguiente:
+* Tenemos un proceso en el cliente y la capa de transporte del cliente. Además tenemos la capa de transporte del servidor y el proceso del servidor
+* passive open: el servidor está en una estado pasivo y el cliente, que está activo, enviará una solicitud al servidor para establecer una conexión. El servidor reconocerá la solicitud y establecerá la conexión
+* Primero, desde el cliente, se envía un paquete con un número de secuencia aleatorio, por ejemplo 8000, y además se establece la Syn flag en 1. La capa de transporte del cliente le va a solicitar a la capa de transporte del servidor que se quiere establecer una conexión
+* Luego el servidor enviará un paquete con otro número aleatorio, por ejemplo 15000, con el reconocimiento del próximo byte esperado, que en este caso sería 8001. Este paquete tiene las flags acknowledgement y syn en 1. Además, el receptor enviará su tamaño de ventana, que podría ser de 5000
+* Luego el cliente enviará un reconocimiento de que ha recibido el mensaje del servidor con el número de secuencia 8001, que es el que solicitó el servidor. La flag acknowledgement va a estar en 1 y el número de reconocimiento será 15001
+
+Para ponerle fina una conexión se hace lo siguiente:
+* El cliente envía un paquete con la flag fin en 1
+* El servidor contesta con un paquete que tiene los flags fin y acknowledgement en 1
+* Luego el cliente contesta con un mensaje que tiene el acknowledgement en 1
+* Syn se usa para establecer una conexión y fin para terminar una conexión
+
+Explicación en más detalle sobre el fin de la conexión:
+* El cliente envía un paquete al servidor con los flags fin y acknowledgement en 1. Se puede representar al número de reconocimiento como "y" y un número de secuencia representado como "x". Este reconocimiento ocurre porque antes de ponerle fin a la conexión, tuvo que haber un paquete recibido de parte del servidor por la conexión que ha estado activa 
+* Luego el servidor contesta con un número de secuencia y y con el reconocimiento x+1. Las flags acknowledgement y fin en 1
+* Luego el cliente enviará un número de secuencia x+1 y reconocimiento y+1. No hace falta estyablecer el flag fin en 1, solo el acknowledgement
+
+En resumen:
+* Para establecer conexión hay que seguir la siguiente secuencia: syn --> syn + ack --> ack
+* Para terminar la conexión: fin --> fin + ack --> ack
+* El número de secuenica es genrado aleatoriamente
+* reconocimiento: próximo paquete esperado
