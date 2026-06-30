@@ -18,3 +18,9 @@ Acá hay algunas características de LightSail:
 * Copias de seguridad automatizadas: Tus datos están seguros gracias a las instancias automáticas, que te permiten restaurar versiones anteriores siempre que lo necesites. Se recomienda activar esta función para evitar la pérdida inesperada de datos
 * Compatibilidad con API y CLI
 * Bases de datos gestionadas: Podés alojar bases de datos como MySQL o PostgreSQL con el servicio incorporado de LightSail. No es necesario configurar una base de datos desde cero: solo tenés que elegir la que prefieras y empezar a utilizarla inmediatamente 
+
+------------------------
+¿En qué se diferencia AWS LightSail de AWS EC2?
+
+AWS LightSail simplifica el alojamiento en la nube ofreciendo un servicio VPS gestionado, mientras que AWS EC2 proporciona un control más granular sobre las máquinas virtuales, las redes y el almacenamiento
+EC2 es ideal para arquitecturas complejas y aplicaciones a gran escala, mientras que LightSail es más adecuado para proyectos más pequeños que requieren un despliegue rápido y precios predecibles  
