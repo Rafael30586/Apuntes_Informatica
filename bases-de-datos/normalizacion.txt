@@ -188,7 +188,7 @@ Tweety   Duplex
 Metro    High-Rise
 Metro    Modular
 Prairie  Bungalow
-Prairie  Schholhouse
+Prairie  Schoolhouse
 
 Entonces, si queremos agregar el color verde para el modelo prairie, simplemente agregamos el color verde para el modelo Prairie en la tabla Modelo_Colores_Disponibles 
 
@@ -203,3 +203,70 @@ Prairie  marrón
 Prairie  beige
 Prairie  Verde
 
+---------------------------
+Quinta forma normal
+
+La tabla (que debe estar en cuarta forma normal) no puede ser descriptible como un resultado lógico de unir otras tablas
+
+Supongamos que hay tres marcas de helados con diferentes sabores:
+
+Frosty´s --> vainilla, chocolate, frutilla, menta con chips de chocolate
+Alpine --> vainilla, rum raisin
+Ice Queen --> vainilla, frutilla, menta con chips de chocolate
+
+Supongamos que queremos armar una tabla con los gustos de helados por persona. A Jason le gusta solamente las marcas Frosty´s y Alpine y solo le gustan los sabores vainilla y chocolate; A Suzy le gusta solamente las marcas Alpine y Ice Queen, y solo le gusta los sabores rum raisin, menmta con chips de chocolate y frutilla. Entonces podríamos armar la siguiente tabla:
+
+Helados_Preferidos_Por_Persona
+
+Persona | Marca     | Sabor
+Jason     Frosty´s    Vainilla
+Jason     Frosty´s    Chocolate
+Jason     Alpine      Vainilla
+Suzy      Alpine      Run raisin
+Suzy      Ice Queen   Menta con chips de chocolate
+Suzy      Ice Queen   Frutilla
+
+¿Qué pasa si los gustos de las personas cambian? por ejemplo, a Suzy ahora le gusta la marca Frosty´s. Habría que agregar dos filas
+
+Helados_Preferidos_Por_Persona
+
+Persona | Marca     | Sabor
+Jason     Frosty´s    Vainilla
+Jason     Frosty´s    Chocolate
+Jason     Alpine      Vainilla
+Suzy      Alpine      Run raisin
+Suzy      Ice Queen   Menta con chips de chocolate
+Suzy      Ice Queen   Frutilla
+Suzy      Frosty´s    Frutilla
+Suzy      Frosty´s    Menta con chips de chocolate
+
+Como son dos filas, al actualizar la tabla podríamos olvidarnos de una de ellas, lo cual llevaría a una inconsistencia. En su lugar se podría hacer tres tablas:
+
+Sabores_Disponibles_Por_Marca
+
+Marca    | Sabor
+Frosty´s   Vainilla
+Frosty´s   Frutilla
+Frosty´s   Menta con chips de chocolate
+Alpine     Vainilla
+Alpine     Rum Raisin
+Ice Queen  Vainilla
+Ice Queen  Frutilla
+Ice Queen  Menta con chips de chocolate
+
+Marcas_Preferidas_Por_Persona
+
+Persona | Marca
+Jason     Frosty´s
+Jason     Alpine
+Suzy      Alpine
+Suzy      Ice Queen
+
+Sabores_Preferidos_Por_Persona
+
+Persona | Sabor
+Jason     Vainilla 
+Jason     Chocolate
+Suzy      Rum Raisin
+Suzy      Menta con chips de chocolate
+Suzy      Frutilla
