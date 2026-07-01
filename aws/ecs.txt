@@ -1,0 +1,7 @@
+https://www.netapp.com/es/learn/aws-cvo-blg-aws-ecs-in-depth-architecture-and-deployment-options/
+
+¿Qué es AWS ECS?
+
+Amazon Elastic Container Service es un servicio de orquestación de contenedores basado en la nube y totalmente gestionado. Te permite ejecutar tus aplicaciones. Te permite ejecutar tus aplicaciones en la nube sin tener que configurar ni mantener infraestructura.
+Para asegurarte de que las demandas de capacidad se satisfacen de forma óptima y mantener el máximo rendimiento, podés configurar Amazon ECS para que evalúe y supervise continuamente los procesos de memoria y CPU. Estos datos pueden ayudarte a determinar una estrategia de despliegue óptima para cada contenedor. Además, podés aprovechar ECS para escalar contenedores y lanzar actualizaciones cuando lo necesites
+ECS admite la integración con varios servicios y funciones útiles de AWS, incluyendo AWS IAM, AWS EBS y AWS ELB

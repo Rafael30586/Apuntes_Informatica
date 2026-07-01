@@ -1,0 +1,1 @@
+https://www.geeksforgeeks.org/system-design/managed-services-vs-self-hosted-services-in-system-design/
