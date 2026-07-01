@@ -18,7 +18,30 @@ AWS Tasks y programación
 
 Una tarea es una instancia de una definición de tarea que se ejecuta en un cluster. Después de crear una definición de tarea para tu aplicación en Amazon ECS, podés especificar el número de tareas que se ejecutarán en tu cluster
 El programador de tareas de Amazon ECS se encarga de colocar tareas en un cluster. Hay dos estrategias principales de programación:
-* La estrategia REPLICA coloca un número deseado de tareas en tu cluster y mantiene este número de tareas, restaurándolas si algunas fallas
+* La estrategia REPLICA coloca un número deseado de tareas en tu cluster y mantiene este número de tareas, restaurándolas si algunas fallan
 * LA estrategia DAEMON coloca una tarea en cada instancia de contenedor activa que cumpla los criterios relevantes
 
-https://images.contentstack.io/v3/assets/blt8710a579a77cafed/blt1e24e3ed31dd8357/69dd2218b3e9c9fb9b73bde8/picture1-aug-29-2021-11-41-40-49-am_tcm19-133813.png?width=1920&format=avif&disable=upscale	 
+https://images.contentstack.io/v3/assets/blt8710a579a77cafed/blt1e24e3ed31dd8357/69dd2218b3e9c9fb9b73bde8/picture1-aug-29-2021-11-41-40-49-am_tcm19-133813.png?width=1920&format=avif&disable=upscale
+
+-----------------------
+Cluster AWS ECS
+
+Un cluster de Amazon ECS es una agrupación lógica de servicios, cada uno compuesto por una o más tareas. La primera vez que usás Amazon .ECS, se crea un cluster predeterminado. Podés crear clusters adicionales en tu cuenta para lograr el aislamiento de recursos para diferentes cargas de trabajo o proyectos
+Existen dos formas de ejecutar recursos de cluster: en instancias EC2 o a través de Amazon Fargate
+
+------------------------
+Opciones de implementación de AWS ECS: EC2 vs Fargate
+
+ECS puede utilizar instancias  de EC2 para ejecutar contenedores. Las instancias EC2 se impleentan como parte del servicio Amazon EC2 y se "registran" en un cluster ECS definido, lo que significa que EC2 puede usar esas instancias para implementar contenedores. Podés ejecutar un cluster ECS dentro de una VPC existente, haciéndolo accesible a los recursos de AWS existentes que se ejecutan en esa VPC
+Una forma alternativa de desplegar contenedores ECS es con Amazon Fargate. Fargate elimina la necesidad de aprovisionar, configurar y administrar instancias EC2, permitiendo que AWS administre las instancias EC2 por vos
+Con Fargate no tenés que gestionar servidores, pero debés asegurarte de que las definiciones de tareas sean sin estado. Actualmente, no podés adjuntar un volumen de almacenamiento al contenedor definido en el trabajo
+Esto significa que si usás Fargate como almacenamiento persistente, tendrás que usar servicios de almacenamiento externos como S3 o RDS
+Usá ECS con EC2 cuando:
+* Toda tu infraestructura se ejecuta en AWS
+* Ya definiste la VPC y las subredes
+* Tenés procesos existentes para el aprovisionamiento y la gestión de instancias EC2
+* Las aplicaciones requieren almacenamiento persistente conectado directamente
+Usá ECS Fargate cuando:
+* No tenés una VPC existente
+* Tenés algunos recursos ejecutándose en Amazon y algunos en otros entornos de la nube
+* Las aplicaciones son apátridas o no requieren volúmenes de almacenamiento conectados directamente 
