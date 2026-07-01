@@ -16,4 +16,5 @@ URL rewriting
 cross site forgery
 MFA (multi-factor authenticatrion)
 IOPS (es una métrica para dispositivos de almacenamiento)
+throughput en discos duros o SSDs
 
