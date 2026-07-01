@@ -999,7 +999,7 @@ Para entenderlo, tengamos en cuenta lo siguiente:
 * Luego el servidor enviará un paquete con otro número aleatorio, por ejemplo 15000, con el reconocimiento del próximo byte esperado, que en este caso sería 8001. Este paquete tiene las flags acknowledgement y syn en 1. Además, el receptor enviará su tamaño de ventana, que podría ser de 5000
 * Luego el cliente enviará un reconocimiento de que ha recibido el mensaje del servidor con el número de secuencia 8001, que es el que solicitó el servidor. La flag acknowledgement va a estar en 1 y el número de reconocimiento será 15001
 
-Para ponerle fina una conexión se hace lo siguiente:
+Para ponerle fin a una conexión se hace lo siguiente:
 * El cliente envía un paquete con la flag fin en 1
 * El servidor contesta con un paquete que tiene los flags fin y acknowledgement en 1
 * Luego el cliente contesta con un mensaje que tiene el acknowledgement en 1
@@ -1011,7 +1011,19 @@ Explicación en más detalle sobre el fin de la conexión:
 * Luego el cliente enviará un número de secuencia x+1 y reconocimiento y+1. No hace falta estyablecer el flag fin en 1, solo el acknowledgement
 
 En resumen:
-* Para establecer conexión hay que seguir la siguiente secuencia: syn --> syn + ack --> ack
+* Para establecer una conexión hay que seguir la siguiente secuencia: syn --> syn + ack --> ack
 * Para terminar la conexión: fin --> fin + ack --> ack
-* El número de secuenica es genrado aleatoriamente
-* reconocimiento: próximo paquete esperado
+* El número de secuencia es generado aleatoriamente
+* Reconocimiento: próximo paquete esperado
+
+Información opcional en las cabeceras TCP (40 bytes)
+* Timestamp
+* Extensión de tamaño de ventana
+* Padding
+
+Syn Flooding attack
+* Un cliente envía un paquete con syn activado a un servidor
+* El servidor envía el paquete ack + syn como respuesta al cliente
+* El problema es que en esta forma de ataque, el cliente no está interesado en hacer conexión. El servidor se quedará esperando por la respuesta (reconocimiento) pero la respuesta nunca llega
+* Los atacadores maliciosos envías muchas solicitudes de tipo syn al servidor utilizando IPs de origen falsas, por lo que cada segmento parece provenir de un cliente distinto
+* El servidor asigna recursos mientras espera por los paquetes de reconocimiento de los supuestos clientes (nunca llegan). De esta manera se agotan los recursos del servidor y, cuando vengan solicitudes de clientes reales, no podrán ser atendidas. Es lo que se llama denial of service
