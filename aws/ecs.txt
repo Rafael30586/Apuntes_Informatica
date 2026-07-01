@@ -11,4 +11,14 @@ Definiciones de tareas de AWS ECS
 
 Para preparar tu aplicación para que se ejecute en Amazon ECS, necesitás crear una definición de tarea. Una definición de tarea es un archivo de texto (en formato JSON) que describe uno o más contenedores (hasta 10) que forman tu aplicación 
 La definición del trabajo puede especificar varios parámetros para tu aplicación en contenedores. Por ejemplo, podés usar estos parámetros para indicar qué contenedores ejecutar, qué puertos deben estar abiertos, qué volúmenes de datos deben usarse, qué modo de red Docker usar y los roles de IAM
-Casi todo lo que podés ejecutar en un comando de Docker de línea de comandos se puede definir usando definiciones de tareas ECS. 
+Casi todo lo que podés ejecutar en un comando de Docker de línea de comandos se puede definir usando definiciones de tareas ECS.
+
+------------------------
+AWS Tasks y programación
+
+Una tarea es una instancia de una definición de tarea que se ejecuta en un cluster. Después de crear una definición de tarea para tu aplicación en Amazon ECS, podés especificar el número de tareas que se ejecutarán en tu cluster
+El programador de tareas de Amazon ECS se encarga de colocar tareas en un cluster. Hay dos estrategias principales de programación:
+* La estrategia REPLICA coloca un número deseado de tareas en tu cluster y mantiene este número de tareas, restaurándolas si algunas fallas
+* LA estrategia DAEMON coloca una tarea en cada instancia de contenedor activa que cumpla los criterios relevantes
+
+https://images.contentstack.io/v3/assets/blt8710a579a77cafed/blt1e24e3ed31dd8357/69dd2218b3e9c9fb9b73bde8/picture1-aug-29-2021-11-41-40-49-am_tcm19-133813.png?width=1920&format=avif&disable=upscale	 
