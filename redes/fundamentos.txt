@@ -1027,3 +1027,14 @@ Syn Flooding attack
 * El problema es que en esta forma de ataque, el cliente no está interesado en hacer conexión. El servidor se quedará esperando por la respuesta (reconocimiento) pero la respuesta nunca llega
 * Los atacadores maliciosos envías muchas solicitudes de tipo syn al servidor utilizando IPs de origen falsas, por lo que cada segmento parece provenir de un cliente distinto
 * El servidor asigna recursos mientras espera por los paquetes de reconocimiento de los supuestos clientes (nunca llegan). De esta manera se agotan los recursos del servidor y, cuando vengan solicitudes de clientes reales, no podrán ser atendidas. Es lo que se llama denial of service
+
+Control de congestión
+* Cuando el emisor envía más paquetes de los que el receptor puede procesar, algunos de los paquetes son descartados. En este proceso el medio de transmisión se tensa. Si el medio de transmisión colapsa, el sistema entero colapsa
+* La congestión hace referencia a un estado de la red en el cual el tráfico de mensajes se vuelve tan grande que ralentiza el tiempo de respuesta de la red
+* El control de congestión incluirá técnicas o mecanismos que pueden prevenir la congestión antes de que ocurra o remover condiciones luego de que han ocurrido
+* Entonces se puede prevenir la congestión, o reaccionar luego de que ha ocurrido
+* ¿Cómo hará TCP para gestionar el control de congestión? Tengamos en cuenta que el responsable principal de la congestión es el emisor, ya que este envía los paquetes tan rápido que el receptor no puede procesarlos. TCP soluciona el problema de la congestión al reducir el tamaño de ventana del emisor. TCP utiliza una combinación de protocolos GB y NSR para proveer confiabilidad
+* El tamaño de ventana del emisor es determinado por dos factores: el tamaño de ventana del receptor; y el tamaño de ventana de congestión
+* El tamaño de ventana del emisor debe ser menor o igual al del receptor; el tamaño de ventana del emisor debe ser también, menor o igual a la ventana de congestión
+* Hay que tener en cuenta que cuando algunos paquetes son descartados por, por ejemplo, problemas con los tamaños de ventana, el emisor no recibirá el reconocimiento de los paquetes descartados por parte del emisor y deberá retransmitirlos, lo que causará mayor congestión
+* Los tamaños de ventana del receptor y el de congestión son dinámicos, cambian con el tiempo  
