@@ -12,4 +12,16 @@ Características de AWS Fargate
 * Precio pay-as-you-go: Solo pagás por el cómputo y recursos de memoria usados por tus contenedores. Esto permite operaciones de mejor costo
 * Integración sin problemas con ECS y EKS: Fargate funciona sin problemas con Amazon ECS y EKS, permitiéndote utilizar servicios de AWS familiares para orquestación de contenedores
 * Escalado automático: Fargate ajusta automáticamente tus recursos basándose en las necesidades de tu aplicación, escalando para arriba o para abajo dependiendo del tráfico y la demanda
-* Seguridad y cumplimiento: AWS Fargate se integra con servicios de AWS security como IAM y VPC para asegurar que tus aplicaciones estén seguras y tus datos protegidos 
+* Seguridad y cumplimiento: AWS Fargate se integra con servicios de AWS security como IAM y VPC para asegurar que tus aplicaciones estén seguras y tus datos protegidos
+
+---------------------
+Componentes de AWS Fargate
+
+* Clusters: Los clusters son grupos lógicos donde las tareas y servicios en Fargate están organizados
+* Definiciones de tareas: son archivos de configuración donde los usuarios definen los contenedores y sus settings para la aplicación. Funcionan como cianotipos para la aplicación Fargate,  especificando varios parámetros para los contenedores
+* Tareas: Una tarea es la instancia en ejecución de una definición de tareas. Los usuarios pueden crear múltiples tareas de la misma deficnión de tareas en un cluster, corriendo una sola tarea o múltiples tareas al mismo tiempo
+* Servicios: Los servicios en Fargate gestionan y corren tareas. Pueden correr múltiples tareas simultáneamente y reemplazar tareas si fallan o se detienen, de acuerdo a la definición de tarea
+
+___________________________________________
+Hay más para resumir en el enlace de arriba
+___________________________________________
