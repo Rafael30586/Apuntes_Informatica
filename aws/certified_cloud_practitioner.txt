@@ -493,7 +493,7 @@ es un servicio de orquestación de contenedores que soporta contenedores de Dock
 Elastic Container Regisitry (ECR)
 Es un repositorio para imágenes de contenedores. Para lanzar contenedores necesitás una imagen. Un repositorio es un almacenamiento que tiene control de versiones.
 ECS Fargate
-Es un servicio de orquestación de contenedores serveless. Es como ECS, pagás on-demand por cada contenedor en ejecución (con ECS tenés que mantener un servidor EC2 corriendo incluso si no tenés contendores ejecutándose). AWS gestiona el servidor subyacente para que no tengas que escalar o mejorar el servidor EC2.
+Es un servicio de orquestación de contenedores serverless. Es como ECS, pagás on-demand por cada contenedor en ejecución (con ECS tenés que mantener un servidor EC2 corriendo incluso si no tenés contendores ejecutándose). AWS gestiona el servidor subyacente para que no tengas que escalar o mejorar el servidor EC2.
 Elastic Kubernetes Service (EKS)
 Es un servicio de kubernetes completamente gestionado. Kubernetes (K8) es un software de código abierto que fué creado por Google y es generalmente un estándar para gestión de microsevicios. Es para cuando necesitás ejecutar kubernetes como servicio.
 

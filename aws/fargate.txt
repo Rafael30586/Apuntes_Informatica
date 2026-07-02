@@ -1,0 +1,6 @@
+https://www.geeksforgeeks.org/devops/introduction-to-aws-fargate/
+
+¿Qué es AWS Fargate?
+
+AWS Fargate es un servicio completamente gestionado que te permite correr aplicaciones en contenedores en AWS sin tener que gestionar los servidores o clusters subyacentes. Ya sea que estés usando ECS o EKS, Fargate abstrae la gestión de infraestructura y te permite enfocarte en desarrollar y desplegar tus aplicaciones
+Con Fargate, solo pagás por los recursos y contenedores que usás (CPU y memoria), y AWS aprovisiona automáticamente la infraestructura apropiada para vos. Esto hace que AWS Fargate de buen costo y eficiente para desarrolladores y negocios que estèn buscando simplificar la gestión de contenedores
