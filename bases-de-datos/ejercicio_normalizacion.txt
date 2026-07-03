@@ -1,11 +1,12 @@
-Normalizar la siguiente base de datos
+Normalizar la siguiente base de datos:
 
 N° de pedido | Fecha      | Cliente   | Teléfono  | Dirección       | Producto1 | Precio1 | Cantidad1 | Producto2 | Precio2 | Cantidad2 | Vendedor
 1001          01/07/2026   Juan Pérez   3511234567 Córdoba            Mouse       20        2           Teclado     45        1           Ana
 1002          02/07/2026   María Gómez  3519876543 Villa Carlos Paz   Monitor     250       1           NULL        NULL      NULL        Pedro
 1003          02/07/2026   Juan Pérez   3511234567 Córdoba            Auriculares 35        1           Mouse       20        1           Ana
 
-El primer error que encuentro es que varias columnas distintas para diferentes productos. Eso se arregla así:
+-----------------------------------------------------------------------------------------------------------------------------------------
+El primer error que encuentro es que hay varias columnas distintas para diferentes productos. Eso se arregla así:
 
 N° de pedido | Fecha      | Cliente   | Teléfono  | Dirección       | Producto    | Precio | Cantidad | Vendedor
 1001          01/07/2026   Juan Pérez   3511234567 Córdoba            Mouse         20       2          Ana
@@ -14,5 +15,31 @@ N° de pedido | Fecha      | Cliente   | Teléfono  | Dirección       | Product
 1001          01/07/2026   Juan Pérez   3511234567 Córdoba            Teclado       45       1          Ana
 1003          02/07/2026   Juan Pérez   3511234567 Córdoba            Mouse         20       1          Ana
 
-Desde mi punto de vista, la base de datos ya está en primera forma normal. El número de pedido es la clave primaria
+-----------------------------------------------------------------------------------------------------------------------------------------
+Desde mi punto de vista, la base de datos ya está en primera forma normal. La clave primaria es una clave compuesta, formada por Número de pedido y producto. No conviene que cliente forme parte de la clave primaria porque cada pedido le corresponde siempre a un cliente. Ahora tenemos campos que no dependen de la clave primaria completa, por lo que todavía no está en segunda forma normal. Fecha y cliente dependen solo de número de pedido, mientras que precio depende de producto. Conviene hacer una nueva tabla de productos
+
+Tabla de pedidos_productos
+
+N° de pedido | Producto    | Cantidad  
+1001           Mouse          2        
+1002           Monitor        1        
+1003           Auriculares    1        
+1001           Teclado        1        
+1003           Mouse          1        
+
+Tabla de productos
+
+Producto    | Precio 
+Mouse         20       
+Monitor       250
+Auriculares   35
+Teclado       45
+
+Tabla de pedidos
+
+N° de pedido | Fecha      | Cliente    | Teléfono   | Dirección        | Vendedor
+1001           01/07/2026   Juan Pérez   3511234567   Córdoba            Ana
+1002           02/07/2026   María Gómez  3519876543   Villa Carlos Paz   Pedro
+1003           02/07/2026   Juan Pérez   3511234567   Córdoba            Ana
+
 

@@ -1,1 +1,3 @@
-Tomar apuntes de este video: https://www.youtube.com/watch?v=GFQaEYEc8_8
+Normalizar una base de datos:
+* Crear una tabla en la cual el campo cantidad dependa de la clave primaria completa
+* Preguntarle a chatGPT si la tabla de productos_vendido es correcta
