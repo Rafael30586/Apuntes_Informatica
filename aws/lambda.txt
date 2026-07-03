@@ -7,3 +7,11 @@ AWS Lambda es un servicio de cómputo serverless que corre tu código solo cuand
 * La facturación se basa en el número de solicitudes y la duración de la ejecución en milisegundos, sin cobro cuando el código está corriendo
 * Lambda escala desde un puñado de solicitudes diarias hasta miles por segundo sin cambios de configuración  
 * Soporta Python, Node.js, Java, Ruby, .NET y runtimes personalizados
+
+--------------------------
+Beneficios de AWS Lambda
+
+* Reduce complejidad operacional al manejar la infraestructura automáticamente
+* Mejora la productividad del desarrollador y aumenta la velocidad de entrega de proyectos
+* Permite innovación rápida sin grandes inversiones por adelantado
+* Soporta aplicaciones cloud-native y event-driven
