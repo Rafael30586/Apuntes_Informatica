@@ -1,1 +1,17 @@
 https://aws.amazon.com/es/ecr/
+
+Elastic Container Registry
+
+Fácil de implementar
+
+Envíe imágenes de contenedores a Amazon ECR sin necesidad de instalar o escalar la infraestructura, y extraiga imágenes mediante cualquier herramienta de administración.
+
+---------------------------------
+Uso compartido y descarga altamente seguros
+
+Comparta y descargue imágenes de forma segura a través del protocolo seguro de transferencia de hipertexto (HTTPS) con cifrado automático y controles de acceso.
+
+------------------------------
+Funcionamiento
+
+Amazon Elastic Container Registry (Amazon ECR) es un registro de contenedores completamente administrado que ofrece alojamiento de alto rendimiento, lo que permite utilizar imágenes de aplicaciones y artefactos de forma confiable en cualquier lugar.
