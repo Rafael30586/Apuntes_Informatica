@@ -10,7 +10,7 @@ El primer error que encuentro es que hay varias columnas distintas para diferent
 
 N° de pedido | Fecha      | Cliente   | Teléfono  | Dirección       | Producto    | Precio | Cantidad | Vendedor
 1001          01/07/2026   Juan Pérez   3511234567 Córdoba            Mouse         20       2          Ana
-1002          02/07/2026   María Gómez  3519876543 Villa Carlos Paz   Monitor       250      1          Pedro
+1002          02/07/2026   María Gómez	  3519876543 Villa Carlos Paz   Monitor       250      1          Pedro
 1003          02/07/2026   Juan Pérez   3511234567 Córdoba            Auriculares   35       1          Ana
 1001          01/07/2026   Juan Pérez   3511234567 Córdoba            Teclado       45       1          Ana
 1003          02/07/2026   Juan Pérez   3511234567 Córdoba            Mouse         20       1          Ana
@@ -42,4 +42,37 @@ N° de pedido | Fecha      | Cliente    | Teléfono   | Dirección        | Vend
 1002           02/07/2026   María Gómez  3519876543   Villa Carlos Paz   Pedro
 1003           02/07/2026   Juan Pérez   3511234567   Córdoba            Ana
 
+--------------------------------------------------------------------------------------------------------------------------------
+La base de datos ya está en segunda forma normal. Ahora el problema está en que los campos teléfono y dirección de la tabla de pedidos, dependen de un atributo no-clave (cliente), por lo tanto, la base de datos no está en la tercera forma normal. Podría hacer una tabla de clientes
 
+Tabla de clientes
+
+Cliente    | Teléfono  | Dirección
+Juan Pérez   3511234567  Córdoba
+María Gómez  3519876543  Villa Carlos Paz
+
+Tabla de pedidos
+
+N° de pedido | Fecha      | Cliente    | Vendedor
+1001           01/07/2026   Juan Pérez   Ana
+1002           02/07/2026   María Gómez  Pedro
+1003           02/07/2026   Juan Pérez   Ana
+
+Tabla de pedidos_productos
+
+N° de pedido | Producto    | Cantidad  
+1001           Mouse          2        
+1002           Monitor        1        
+1003           Auriculares    1        
+1001           Teclado        1        
+1003           Mouse          1        
+
+Tabla de productos
+
+Producto    | Precio 
+Mouse         20       
+Monitor       250
+Auriculares   35
+Teclado       45
+
+Ahora la base de datos está en la tercer forma normal
