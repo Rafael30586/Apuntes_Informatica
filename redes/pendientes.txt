@@ -1,21 +1,22 @@
-clases de direcciones IP, por ejemplo, clase A
-protocolo ARP
+// clases de direcciones IP, por ejemplo, clase A
+// protocolo ARP
 En direcciones IP hay algo llamado NID y HID, siendo network ID y host ID respectivamente
-VLSM o variable length subnet masking
-CIDR: notación, CIDR blocks (¿ejercicios para determinar si un bloque de direcciones IP es válido)
+// VLSM o variable length subnet masking
+// CIDR: notación, CIDR blocks (¿ejercicios para determinar si un bloque de direcciones IP es válido)
 broadcast domain
 default Gateway
 Bitwise AND operation
 Access control lists o ACLs
-ISP
+// ISP
 IANA
-Ejercicios de subnetting en classfull addressing y CIDR
+// Ejercicios de subnetting en classfull addressing y CIDR
 routing table
 routing
-supernet mask
-servicios conection-less vs connection-oriented
+// supernet mask
+// servicios conection-less vs connection-oriented
 Hamming distance
 XOR gate
 sesión
 latencia
 ICMP
+TCP congestion policy

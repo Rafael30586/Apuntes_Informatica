@@ -1,0 +1,7 @@
+https://www.sciencedirect.com/topics/computer-science/congestion-window
+
+TCP mantiene una variable de estado para cada conexión, llamada CongestionWindow, que es usada por la fuente para limitar cuantos datos pueden estar en tránsito en un tiempo dado. La CongestionWindow es la contraparte de congestión de control de la advertisment window en el control de flujo
+
+___________________________________________
+Hay muchísimo más para resumir en el enlace
+___________________________________________

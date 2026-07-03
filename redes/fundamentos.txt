@@ -1038,3 +1038,10 @@ Control de congestión
 * El tamaño de ventana del emisor debe ser menor o igual al del receptor; el tamaño de ventana del emisor debe ser también, menor o igual a la ventana de congestión
 * Hay que tener en cuenta que cuando algunos paquetes son descartados por, por ejemplo, problemas con los tamaños de ventana, el emisor no recibirá el reconocimiento de los paquetes descartados por parte del emisor y deberá retransmitirlos, lo que causará mayor congestión
 * Los tamaños de ventana del receptor y el de congestión son dinámicos, cambian con el tiempo  
+
+Políticas de congestión de TCP
+* En estas políticas tenemos tres fases: la primera fase es slow start phase (incremento exponencial); la segunda es congestion avoidance phase (incremento aditivo); y la congestion detection phase
+* En la fase slow start, el tamaño de ventana del emisor comienza en 1 MSS (maximun segment size). Se dice que es un comienzo lento porque empezamos con 1 MSS, pero el incremento es exponencial porque después pasa a ser 2 MSS, luego 4 MSS, después 8 MSS, luego 16 MSS, y así sucesivamente. El tamaño de ventana se va incrementando a medida que se reciben reconocimientos
+* Límite (threshold): (máximo segmento TCP que la ventana del receptor puede alojar)/2 . La fase slow start llega hasta este valor
+* Luego de la fase slow start viene la fase congestion avoidance, el incremento de MSS se vuelve lineal. Llega hasta la máxima capacidad del receptor, que sería el threshold x 2
+* Luego, en la fase congestion detection, el MSS se mantiene constante 
