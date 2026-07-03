@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/devops/introduction-to-aws-lambda/
+
+AWS Lambda
+
+AWS Lambda es un servicio de cómputo serverless que corre tu código solo cuando es gatillado por un evento, escala automáticamente y cobra solo por milisegundos de tiempo de ejecución utilizados. Sus funciones clave son:
+* Las funciones Lambda permanecen inactivas y no cuestan nada hasta que son gatilladas por un evento de otro servicio o punto final de AWS
+* La facturación se basa en el número de solicitudes y la duración de la ejecución en milisegundos, sin cobro cuando el código está corriendo
+* Lambda escala desde un puñado de solicitudes diarias hasta miles por segundo sin cambios de configuración  
+* Soporta Python, Node.js, Java, Ruby, .NET y runtimes personalizados
