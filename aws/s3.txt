@@ -1,0 +1,26 @@
+https://www-geeksforgeeks-org.translate.goog/devops/introduction-to-aws-simple-storage-service-aws-s3/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc&_x_tr_hist=true
+
+AWS Simple storage service (AWS S3)
+
+Amazon S3 es un servicio de almacenamiento de objetos escalable usado para almacenar y recuperar datos de cualquier lugar en internet. Almacena datos como objetos adentro de baldes y soporta capacidad de almacenamiento virtualmente ilimitada con alta durabilidad, seguridad y disponibilidad. Amazon S3 también provee múltiples clases de almacenamiento para optimizar costo basado en patrones de datos
+
+-------------------------------
+Arquitectura
+
+S3 utiliza una arquitectura no jerárquica que permite al servicio escalar virtualmente de manera infinita. Los componentes (building blocks) fundamentales son contenedores lógicos y las unidades de datos almacenadas en ellos:
+
+1. Balde (bucket)
+Es un contenedor de objetos con las siguientes características:
+* Namespace global: los nombres de los baldes deben ser únicos a lo largo de todas las cuentas de AWS globales (como un nombre DNS)
+* Específicas de la región: Creás un balde en una región específica (por ejemplo: us-east-1), y tus datos nuca dejan esa región a menos que los muevas explícitamente
+
+2. Objeto
+La entidad fundamental almacenada en S3, consiste de:
+* Clave: el nombre del objeto (por ejemplo fotos/vacaciones.jpg)
+* Valor: Los datos propiamente dichos (bytes)
+* Metadatos: Pares nombre-valor describiendo al objeto (por ejemplo: Content-Type:image/jpeg) 
+* Tamaño: Los objetos pueden ir desde 0 bytes hasta 5 terabytes
+
+____________________________________________
+Hay más para resumir con el enlace de arriba
+____________________________________________
