@@ -1,0 +1,50 @@
+Normalizar la siguiente base de datos
+
+Inscripción | Fecha     | Alumno      | Email          | Teléfono   | Curso         | Precio | Profesor    | Aula
+1             01/07/2026  Juan Pérez    juan@email.com   3511234567   Java Básico     500      Laura Gómez   A1	
+2             02/07/2026  María López   maria@email.com  3519876543   Python          650      Carlos Ruiz   B2
+3             03/07/2026  Juan Pérez    juan@email.com   3511234567   Bases de datos  700      Laura Gómez   A1
+4             04/07/2026  Pedro Díaz    pedro@email.com  3514567890   Java básico     500      Laura Gómez   A1
+
+---------------------------------------
+Se me ocurre que la clave primaria es inscripción, alumno, curso (es una clave compuesta). Según chatGPT, solo inscripción es la clave primaria, ya que, en la medida de lo posible, hay que simplificar al máximo a la clave primaria. En este caso inscripción no necesita de alumno ni de curso para ser una clave primaria. Dicho esto, la base de datos está en segunda forma normal porque para violar la segunda forma normal hace falta sí o sí una clave primaria compuesta. Hay varias dependencias transitivas, por lo que todavía falta llevar a la base de datos a la tercer forma normal
+
+Tabla de alumnos
+
+Alumno     | Email          | Teléfono
+Juan Pérez   juan@email.com   3511234567
+María López  maria@email.com  3519876543
+Pedro Díaz   pedro@email.com  3514567890
+
+Tabla de cursos
+
+Curso          | Precio | Profesor    | Aula
+Java básico      500      Laura Gómez   A1
+Python           650      Carlos Ruiz   B2
+Bases de datos   700      Laura Gómez   A1
+
+Tabla de inscripciones
+
+Inscripción | Fecha      | Alumno     | Curso
+1             01/07/2026   Juan Pérez   Java básico
+2             02/07/2026   María López  Python
+3             03/07/2026   Juan Pérez   Bases de datos  
+4             04/07/2026   Pedro Díaz   Java básico
+
+Según chatGPT, conviene descomponer la tabla de cursos ya que los profesores usan el mismo aula, lo que significa que aula depende de profesor, por lo tanto, aún queda una dependencia transitiva
+
+Tabla de cursos
+
+Curso          | Precio | Profesor    
+Java básico      500      Laura Gómez   
+Python           650      Carlos Ruiz   
+Bases de datos   700      Laura Gómez 
+
+Tabla de profesores
+
+Profesor    | Aula
+Laura Gómez   A1
+Carlos Ruiz   B2
+
+
+
