@@ -1,0 +1,5 @@
+https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html
+
+¿Qué es Amazon Elastic File System?
+
+Amazon Elastic File System provee almacenamiento de archivos serverless, completamente elástico para que puedas compartir archivos sin proveer o gestionar capacidad de almacenamiento y rendimiento. Amazon EFS está construido para escalar bajo demanda a petabytes sin interrumpir aplicaciones, creciendo y encogiéndose automáticamente mientras añadís o removés archivos. Como Amazon EFS tiene una interfaz simple, podés crear y configurar sistemas de archivos rápido y fácilmente. El servicio gestiona toda la infraestructura de archivos por vos, lo que significa que podés evitar la complejidad de desplegar, parchear y mantener complejas configuraciones de sistemas de archivos 

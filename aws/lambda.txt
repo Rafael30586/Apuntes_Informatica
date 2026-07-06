@@ -15,3 +15,7 @@ Beneficios de AWS Lambda
 * Mejora la productividad del desarrollador y aumenta la velocidad de entrega de proyectos
 * Permite innovación rápida sin grandes inversiones por adelantado
 * Soporta aplicaciones cloud-native y event-driven
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________

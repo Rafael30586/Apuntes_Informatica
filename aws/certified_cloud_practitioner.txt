@@ -504,7 +504,7 @@ Es un servicio de funciones serverless. Podés ejecutar código sin gestionar se
 ---------------
 Servicios de computación de alto rendimiento
 
-The Nitro System: Una combinación de hardware dedicado e hipervisor liviano que permite innovación más rápida y seguridad mejorada. Todas los tipos de instancias EC2 usan el Nitro System
+The Nitro System: Una combinación de hardware dedicado e hipervisor liviano que permite innovación más rápida y seguridad mejorada. Todos los tipos de instancias EC2 usan el Nitro System
 * Nitro cards: tarjetas especializadas para VPC, EBS y tarjeta controladora.
 * Nitro security chips: integrados en la placa madre. Protege los recursos de hardware.
 * Nitro hypervisor: memoria de hipervisor liviana y rendimiento tipo bare metal de asignación de CPU.
