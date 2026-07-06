@@ -1,0 +1,41 @@
+Ejercicio biblioteca
+Una biblioteca lleva el siguiente registro de préstamos en una sola tabla:
+
+Préstamo | Fecha préstamo | Fecha devolución | Socio      | DNI      | Teléfono   | Libro                 | ISBN          | Autor        | Editorial  | Empleado  
+1          01/07/2026       10/07/2026         Juan Pérez   30111222   3511234567   El Principito           9781234567890   Antoine...     Planeta      María
+2          02/07/2026       09/07/2026         Ana Gómez    28999888   3517778888   1984                    9789876543210   George Orwell  Debolsillo   Carlos
+3          05/07/2026       12/07/2026         Juan Pérez   30111222   3511234567   Rebelión en la granja   9781111111111   George Orwell  Debolsillo   María
+4          07/07/2026       15/07/2026         Luis Díaz    33444555   3519990000   1984                    9789876543210   George Orwell  Debolsillo   María
+
+Reglas del negocio
+
+Cada préstamo corresponde a un único libro.
+Cada libro tiene un ISBN único.
+Un socio puede pedir muchos libros a lo largo del tiempo.
+Un empleado puede registrar muchos préstamos.
+
+Mi trabajo
+
+Como si fueras un diseñador de bases de datos, responde estas preguntas:
+
+1. ¿Cuál es la clave primaria?
+2. ¿La tabla está en 1FN?
+3. ¿Está en 2FN?
+4. ¿Está en 3FN?
+5. ¿Qué dependencias funcionales encuentras?
+6. ¿Qué tablas crearías?
+
+Un desafío adicional
+
+No te conformes con decir "esto va en otra tabla". Intenta escribir el esquema completo, indicando para cada tabla:
+
+nombre,
+clave primaria,
+claves foráneas,
+y, si es una clave compuesta, cuáles son sus atributos.
+
+-----------------------------------
+------------------------------------
+Intento de resolución
+
+La base de datos ya está en la primera forma normal. La clave primaria es Préstamo. También está en segunda forma normal porque la clave primaria no es compuesta
