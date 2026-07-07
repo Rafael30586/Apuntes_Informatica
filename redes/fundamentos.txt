@@ -1051,3 +1051,20 @@ Temporizadores (timers): TCP usa varios temporizadores para asegurar que retraso
 * Keep alive timer: Se usa para detectar y cerrar las conexiones inactivas. El servidor revisa de manera periódica si la conexión está activa o no. Si no hay respuesta dentro del tiempo establecido, enviará 10 mensajes "probe" (como máximo) que estarán separados por 75 segundos. Si no hay respuesta después de estos probes, asumirá que el cliente está "colgado" (down) y terminará la conexión
 * Persistent timer: este se usa en el caso de un tamaño de ventana de 0. Si el emisor "pregunta" por el tamaño de ventana al receptor y este responde 0, el emisor enviará solo un byte de datos (un probe) para preguntar al receptor sobre su tamaño de ventana actual. El emisor no se rendirá y esperará a que el persistent timer termine para volver a enviar un probe 
 * Acknowledgement timer: este se usa para enviar reconocimientos acumulativos con la ayuda del piggybacking (envío de datos más reconocimiento). Cuando el segmento llega, comienza el temporizador del reconocimiento, si cuando este temporizador está funcionando llegan paquetes al receptor, este envía un reconocimiento acumulativo por todos los paquetes recibidos
+
+------------------------------
+UDP
+
+Es un protocolo connectionless, es decir, los paquetes enviados son independientes el uno del otro. El receptor puede recibir los paquetes fuera de orden. Este protocolo no garantiza fiabilidad. Este protocolo se usa por su simplicidad, por su baja sobrecarga. Proporciona comunicación entre procesos usando direccionamiento IP y números de puerto (sockets)
+En UDP, los paquetes se llaman datagrams, a diferencia de TCP. Tiene un cabecera de 8 bytes, y el resto serán los datos. 
+En las cabeceras hay dos filas, cada una de 4 bytes. En la primera fila está el puerto de origen y el puerto destino. En la segunda fila está la longitud total y checksum (opcional)
+
+Ventajas de UDP:
+* Baja sobrecarga. Más rápido que TCP
+* Comunicación rápida. Es para aplicaciones que no requieren una interacción muy fuerte entre emisor y receptor
+* No hay numeración en los paquetes, por lo que el receptor puede recibirlos fuera de orden 
+
+Desventajas de UDP:
+* No tiene mecanismos de control de flujo, control de errores, control de congestión. Se basa en un simple checksum para comprobar errores, e incluso esos es opcional
+
+UDP es preferible para interacciones en tiempo real	
