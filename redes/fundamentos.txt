@@ -1067,4 +1067,8 @@ Ventajas de UDP:
 Desventajas de UDP:
 * No tiene mecanismos de control de flujo, control de errores, control de congestión. Se basa en un simple checksum para comprobar errores, e incluso esos es opcional
 
-UDP es preferible para interacciones en tiempo real	
+UDP es preferible para interacciones en tiempo real
+
+------------------------------
+Protocolos basados en TCP: HTTP, FTP, SMTP, POP
+Protocolos basados en UDP: DNS, SNMP, TFTP, NFS, RIP, DHCP	
