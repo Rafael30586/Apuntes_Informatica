@@ -1008,7 +1008,7 @@ Para ponerle fin a una conexión se hace lo siguiente:
 Explicación en más detalle sobre el fin de la conexión:
 * El cliente envía un paquete al servidor con los flags fin y acknowledgement en 1. Se puede representar al número de reconocimiento como "y" y un número de secuencia representado como "x". Este reconocimiento ocurre porque antes de ponerle fin a la conexión, tuvo que haber un paquete recibido de parte del servidor por la conexión que ha estado activa 
 * Luego el servidor contesta con un número de secuencia y y con el reconocimiento x+1. Las flags acknowledgement y fin en 1
-* Luego el cliente enviará un número de secuencia x+1 y reconocimiento y+1. No hace falta estyablecer el flag fin en 1, solo el acknowledgement
+* Luego el cliente enviará un número de secuencia x+1 y reconocimiento y+1. No hace falta establecer el flag fin en 1, solo el acknowledgement
 
 En resumen:
 * Para establecer una conexión hay que seguir la siguiente secuencia: syn --> syn + ack --> ack
@@ -1045,3 +1045,9 @@ Políticas de congestión de TCP
 * Límite (threshold): (máximo segmento TCP que la ventana del receptor puede alojar)/2 . La fase slow start llega hasta este valor
 * Luego de la fase slow start viene la fase congestion avoidance, el incremento de MSS se vuelve lineal. Llega hasta la máxima capacidad del receptor, que sería el threshold x 2
 * Luego, en la fase congestion detection, el MSS se mantiene constante 
+
+Temporizadores (timers): TCP usa varios temporizadores para asegurar que retrasos excesivos no se produzcan durante las comunicaciones
+* Time wait timer: previene problemas con paquetes que llegan tarde después de que la conexión se termina. Se usa para terminación de conexión TCP. El temporizador comienza después de enviar el último reconocimiento para segundo FIN y cerrando conexión. Luego de que una conexión TCP se cierra, es posible que haya datagrams que todavía están tratando de llegar a través de la red para acceder al puerto cerrado. El temporizador callado (quiet timer) previene que el puerto recién cerrado se abra y reciba los últimos datagrams. El temporizador callado generalmente es establecido a dos veces el tiempo de vida de un segmento (el mismo valor que el campo time-to-live en la cabecera IP), asegurando que todos los segmentos todavía llegando al puerto cerrado sean descartados
+* Keep alive timer: Se usa para detectar y cerrar las conexiones inactivas. El servidor revisa de manera periódica si la conexión está activa o no. Si no hay respuesta dentro del tiempo establecido, enviará 10 mensajes "probe" (como máximo) que estarán separados por 75 segundos. Si no hay respuesta después de estos probes, asumirá que el cliente está "colgado" (down) y terminará la conexión
+* Persistent timer: este se usa en el caso de un tamaño de ventana de 0. Si el emisor "pregunta" por el tamaño de ventana al receptor y este responde 0, el emisor enviará solo un byte de datos (un probe) para preguntar al receptor sobre su tamaño de ventana actual. El emisor no se rendirá y esperará a que el persistent timer termine para volver a enviar un probe 
+* Acknowledgement timer: este se usa para enviar reconocimientos acumulativos con la ayuda del piggybacking (envío de datos más reconocimiento). Cuando el segmento llega, comienza el temporizador del reconocimiento, si cuando este temporizador está funcionando llegan paquetes al receptor, este envía un reconocimiento acumulativo por todos los paquetes recibidos
