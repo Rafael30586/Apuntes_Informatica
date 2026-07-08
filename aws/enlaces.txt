@@ -1,0 +1,7 @@
+Partition key y sort key en dynamoDB: https://aws.amazon.com/es/blogs/database/choosing-the-right-dynamodb-partition-key/
+
+WCU y RCU en DynamoDB: https://aws.plainenglish.io/understanding-dynamodb-wcu-and-rcu-ae9650c6ddab
+
+Encryption at rest: https://www.imperva.com/learn/data-security/data-at-rest/
+
+data warehouse: https://aws.amazon.com/what-is/data-warehouse/
