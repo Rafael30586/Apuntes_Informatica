@@ -926,8 +926,9 @@ Las filas opcionales de las cabeceras de un datagram (también llamada parte vari
 
 Volviendo al fragmentation offset, al igual que el HL tiene un factor de conversión. El factor es 8, por lo que, por ejemplo, si queremos saber el fragmentation offset de un paquete que tiene por delante otro paquete con 800 bytes de datos, el fragmentation offset del paquete que viene por detrás será de 800/8 = 100
 
------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 TCP y UDP
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Protocolos Connectionless vs Connection oriented: 
 * En el caso de connection oriented, todos los paquetes enviados por el emisor a un receptor están lógicamente relacionados entre sí
@@ -1072,3 +1073,24 @@ UDP es preferible para interacciones en tiempo real
 ------------------------------
 Protocolos basados en TCP: HTTP, FTP, SMTP, POP
 Protocolos basados en UDP: DNS, SNMP, TFTP, NFS, RIP, DHCP	
+
+-------------------------------------------------------------------------------------------------------------------------------
+Capa de enlace de datos
+-------------------------------------------------------------------------------------------------------------------------------
+
+La capa de enlace de datos está dividida en dos partes: LLC y MAC. LLC es responsable de control de errores y control de flujo, mientras que MAC es responsable del control de acceso
+
+Hay múltiples protocolos de acceso: protocolos de acceso aleatorio; protocolos de control de acceso; protocolos de acceso centralizado
+
+Los protocolos de acceso aleatorio incluyen Aloha, CSMA, CSMA-CD, CSMA-CA
+
+Los protocolos de control de acceso son: Reservación, votación (polling) y token passing
+
+Los protocolos de acceso centralizado son: FDMA, CDMA y TDMA
+
+Enlaces: estos pueden ser point-to-point y broadcast. En el primero tenemos un emisor y un receptor, mientras que en el segundo podemos tener varios emisores y varios receptores. El enlace broadcast es compartido. En los enlaces broadcast pueden darse el caso de colisiones, que ocurre cuando un nodo le envía un mensaje a otro y este choca con otro mensaje de otro nodo dirigido hacia otro nodo. Estas colisiones son un problema porque pueden causar corrupción de bits
+
+https://www.gatevidyalay.com/wp-content/uploads/2018/09/Broadcast-Link-1.png
+
+-----------------------------
+Protocolos de acceso aleatorio (RAP)
