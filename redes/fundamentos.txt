@@ -1094,3 +1094,7 @@ https://www.gatevidyalay.com/wp-content/uploads/2018/09/Broadcast-Link-1.png
 
 -----------------------------
 Protocolos de acceso aleatorio (RAP)
+En este protocolo cualquier estación puede enviar datos en cualquier momento
+
+En acceso aleatorio, ninguna estación es superior a la otra, todas las estaciones conectadas al enlace tienen la misma prioridad, igual capacidad y ninguna estación tiene control sobre otra (una estación no puede evitar que otra estación envíe datos). Si más de una estación intenta enviar datos se pueden producir colisiones, y los frames pueden destruirse o modificarse (corromperse). En los protocolos de acceso aleatorio, no hay un orden en el que las estaciones envían datos, por eso el nombre, cualquier estación puede acceder al canal de manera aleatoria. Cada estación compite por el canal
+
