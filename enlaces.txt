@@ -1,3 +1,7 @@
 https://www.cs.cornell.edu/courses/cs3410/2024fa/notes/interrupt.html --> enlace muy importante para resumir material sobre computación
 
 https://librosgratis.dev/
+
+Principios SOLID: https://www.freecodecamp.org/news/what-are-the-solid-principles-in-csharp/
+
+Observabilidad vs monitoreo: https://aws.amazon.com/es/compare/the-difference-between-monitoring-and-observability/

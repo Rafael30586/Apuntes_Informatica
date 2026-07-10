@@ -735,7 +735,7 @@ Servicios de red empresariales/híbridos
 ------------
 Virtual private cloud (VPC) y subredes
 
-Virtual Private Network (VPC): es una sección lógicamente aislada de la red de AWS a domde podés lanzar tus recursos de AWS. Elegís un rango de IPs usando rango CIDR
+Virtual Private Network (VPC): es una sección lógicamente aislada de la red de AWS a don	de podés lanzar tus recursos de AWS. Elegís un rango de IPs usando rango CIDR
 
 Las subredes necesitan tener un rango más pequeño de CIDR que el VPC
 

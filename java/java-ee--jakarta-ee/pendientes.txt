@@ -2,11 +2,11 @@ listeners en jakarta EE o java EE
 // Crear repositorio de git a partir del espacio de trabajo de eclipse
 comprobar el funcionamiento de clases como Session, Cookie, HttpServlet, HttpServletRequest y HttpServletReponse
 Probar de visualizar el contenido de las cabeceras de las solicitudes, por ejemplo, relacionadas a la autenticación
-Comprobar el funcionamiento de los filtros
+// Comprobar el funcionamiento de los filtros
 // Estudiar la clase ServletContext
 Experimentar con la etiqueta context-param en el web.xml
-Realizar inserciones de registros en una base de datos en un proyecto web dinámico (podría preguntarle a chatGPT sobre como se hace en JDBC)
-Probar de usar JavaScript y CSS en páginas web dinámicas
+// Realizar inserciones de registros en una base de datos en un proyecto web dinámico (podría preguntarle a chatGPT sobre como se hace en JDBC)
+* Probar de usar JavaScript y CSS en páginas web dinámicas
 Preguntar a chatGPT sobre cómo hacer que una aplicación desarrollada con jakarta produzca respuestas HTTP con un body que sea un json
 EAR
 // Cambiar el orden de los filtros y servlets en el archivo web.xml para ver si los filtros se ejecutan en el orden que corresponde

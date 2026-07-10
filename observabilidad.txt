@@ -1,0 +1,5 @@
+https://sematext.com/glossary/three-pillars-of-observability/
+
+¿Qué son los tres pilares de la observabilidad?
+
+Los tres pilares de la observabilidad son los logs, métricas y trazas, tres tipos de salidas de datos que te dan completa visibilidad sobre el estado de tu sistema, infraestructura híbrida o aplicaciones. Pueden ayudar a determinar como falló tu sistema y rastrear problemas de vuelta al origen. Juntos, los tres pilares pueden mejorar la salida de equipos devops y mejorar la usabilidad de un sistema para usuarios finales

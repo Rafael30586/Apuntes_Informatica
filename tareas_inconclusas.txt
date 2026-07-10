@@ -7,7 +7,6 @@ Ondas electromagnéticas (en la carpeta luz en física)
 NAT Gateway (carpeta de AWS)
 internet Gateway (carpeta de AWS)
 logic gates
-Amazon ECS (carpeta de AWS)
 Serverless (carpeta de AWS)
 self managed (carpeta de AWS)
-Amazon ECR (carpeta de AWS)
+AWS Lambda (carpeta de AWS)

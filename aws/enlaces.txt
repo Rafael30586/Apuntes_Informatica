@@ -5,3 +5,5 @@ WCU y RCU en DynamoDB: https://aws.plainenglish.io/understanding-dynamodb-wcu-an
 Encryption at rest: https://www.imperva.com/learn/data-security/data-at-rest/
 
 data warehouse: https://aws.amazon.com/what-is/data-warehouse/
+
+data lakes y data warehouses: https://lovelytics.com/es/post/que-es-un-data-lake/?hsa_acc=7486748770&hsa_cam=23456461823&hsa_grp=194646546194&hsa_ad=792552304047&hsa_src=g&hsa_tgt=kwd-337421380203&hsa_kw=data%20lake&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23456461823

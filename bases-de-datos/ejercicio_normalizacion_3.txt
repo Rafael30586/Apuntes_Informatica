@@ -38,4 +38,28 @@ y, si es una clave compuesta, cuáles son sus atributos.
 ------------------------------------
 Intento de resolución
 
-La base de datos ya está en la primera forma normal. La clave primaria es Préstamo. También está en segunda forma normal porque la clave primaria no es compuesta
+La base de datos ya está en la primera forma normal. La clave primaria es Préstamo. También está en segunda forma normal porque la clave primaria no es compuesta. Ahora hay que llevarla a tercera forma normal. Los campos DNI y teléfono dependen de socio; los campos libro, autor y editorial dependen de ISBN. Entonces podemos hacer una tabla de socios y una de libros
+
+Tabla de socios (clave primaria -> DNI)
+
+Nombre      | DNI      | Teléfono
+Juan Pérez   30111222   3511234567
+Ana Gómez    28999888   3517778888
+Luis Díaz    33444555   3519990000
+
+Tabla de libros (clave primaria -> ISBN)
+
+ISBN          | Título                 | Autor         | Editorial
+9781234567890   El principito           Antoine...      Planeta
+9789876543210   1984                    George Orwell   Debolsillo
+9781111111111   Rebelión en la granja   George Orwell   Debolsillo
+
+Tabla de préstamos (clave primaria -> préstamo ; llaves foráneas -> DNI_Socio , ISBN_Libro )
+
+Préstamo | Fecha préstamo | Fecha devolución | Empleado | DNI_Socio | ISBN_Libro
+1          01/07/2026       10/07/2026         María      30111222    9781234567890
+2          02/07/2026       09/07/2026         Carlos     28999888    9789876543210
+3          05/07/2026       12/07/2026         María      30111222    9781111111111
+4          07/07/2026       15/07/2026         María      33444555    9789876543210
+
+
