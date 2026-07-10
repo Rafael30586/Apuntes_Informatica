@@ -3,3 +3,17 @@ https://sematext.com/glossary/three-pillars-of-observability/
 ¿Qué son los tres pilares de la observabilidad?
 
 Los tres pilares de la observabilidad son los logs, métricas y trazas, tres tipos de salidas de datos que te dan completa visibilidad sobre el estado de tu sistema, infraestructura híbrida o aplicaciones. Pueden ayudar a determinar como falló tu sistema y rastrear problemas de vuelta al origen. Juntos, los tres pilares pueden mejorar la salida de equipos devops y mejorar la usabilidad de un sistema para usuarios finales
+
+-------------------------------
+Logs
+
+Archivos de logs son los registros históricos de tus sistemas. Tienen una marca de tiempo y generalmente vienen en binario, texto plano o formato estructurado. Logs estructurados pueden combinar texto con metadatos para facilitar consultas más rápidas
+Los administradores primero ven los logs de sistema para ver que salió mal en caso de errores  y mal funcionamiento del sistema. Los logs rastrean eventos y pueden detectar actividad anómala, como brechas de seguridad en los balanceadores de carga o sistemas de cacheo de tu estructura. Además, puede ayudar a contestar "quien, que , cuando y como" los recursos han sido accedidos 
+
+Beneficios de los logs
+
+Los logs son típicamente usados para hacer debugging y solución de problemas pero pueden dar más beneficios
+* Alerta y monitoreo: podés establecer alertas en logs específicos o patrones de logging para notificar a los usuarios antes de que sean afectados. Además, gracias a las funciones de monitoreo, los ingenieros pueden manejar datos de eventos vía búsqueda y servicios comisariados
+* Gestión de recursos y solución de problemas: los datos de logs se usan por los admins para monitorear eventos de logs y patrones a lo largo de sistemas, monitorear anomalías en tiempo real o inactividad para evaluar la salud del sistema, detectar problemas de configuración rendimiento, resolver problemas de análisis de datos y análisis de causa raíz
+* Cumplimiento de regulaciones y SIEM: automatizando colección de datos de logs, análisis, y correlación de sistemas de seguridad y dispositivos numerosos ayudan a los departamentos de IT cumplir con regulaciones y mejorar productividad. Sistemas SIEM gestionan logs, alertas, análisis en tiempo real y flujo de trabajo
+* Analíticas de negocio: datos de negocio vitales, como salud de procesos de negocio, acuerdos de nivel de servicio de clientes (SLAs), ingresos por hora  

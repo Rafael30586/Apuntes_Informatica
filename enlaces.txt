@@ -5,3 +5,5 @@ https://librosgratis.dev/
 Principios SOLID: https://www.freecodecamp.org/news/what-are-the-solid-principles-in-csharp/
 
 Observabilidad vs monitoreo: https://aws.amazon.com/es/compare/the-difference-between-monitoring-and-observability/
+
+Obervabilidad: https://sematext.com/glossary/three-pillars-of-observability/		
