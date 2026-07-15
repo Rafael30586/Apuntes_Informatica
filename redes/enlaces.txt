@@ -1,3 +1,5 @@
 https://www.uobabylon.edu.iq/eprints/publication_11_2629_1448.pdf
 
-protocolo aloha: https://www.tutorialspoint.com/data_communication_computer_network/aloha_protocol.htm
+protocolo aloha 
+* https://www.tutorialspoint.com/data_communication_computer_network/aloha_protocol.htm
+* https://www.scaler.com/topics/aloha-in-computer-network/

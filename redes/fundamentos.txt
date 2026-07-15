@@ -1114,4 +1114,12 @@ Pure Aloha:
 * Las desventaja de este algoritmo es que sufre de un efecto llamado capture effect. Este efecto es que las probabilidades de ganar de la estación ganadora se van incrementando mucho a medida que hay más colisiones
 * Otra desventaja de este algoritmo es el tiempo de vulnerabilidad, que es el rango de tiempo en el que la colisión toma lugar. El tiempo de vulnerabilidad es el transmisión delay del paquete x 2
 * Throughput para Pure Aloha --> S = G x e^(-2G) . G = número de paquetes generados en 1 transmisión delay . El Thrpughput es muy importante porque es algo que siempre queremos maximizar
-* Si un paquete es generado por la red en dos veces el tiempo de transmisión, entonces no habrá colisión. Esto es a lo que se refiere el tiempo de vulnerabilidad. Si no hay colisiones alcanzaremos el máximo throughput 
+* Si un paquete es generado por la red en dos veces el tiempo de transmisión, entonces no habrá colisión. Esto es a lo que se refiere el tiempo de vulnerabilidad. Si no hay colisiones alcanzaremos el máximo throughput
+
+Slotted Aloha:
+* El tiempo del canal compartido entre las estaciones es dividido en intervalos discretos (moderados) a los que se llama time slot. Se crean ranuras temporales
+* Slotted Aloha no es totalmente aleatorio como pure aloha
+* Las estaciones pueden transmitir los datos en cualquier ranura temporal. Las estaciones deben comenzar la transmisión desde el principio de la ranura temporal. Si no se acierta al principio de la ranura entonces la estación debe esperar al comienzo de la próxima ranura temporal
+* Las colisiones pueden ocurrir si dos estaciones diferentes envían los datos al comienzo de la misma ranura temporal
+* El tiempo de vulnerabilidad es igual al transmisión delay
+* Throughput --> S = G x e^(-G) . El máximo throughput es 36,8%   
