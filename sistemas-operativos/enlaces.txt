@@ -6,3 +6,14 @@ https://www.educative.io/answers/what-is-the-critical-section-problem-in-operati
 https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/
 https://www.baeldung.com/cs/remote-vs-local-procedure-calls
 https://www.geeksforgeeks.org/operating-systems/inter-process-communication-ipc/
+
+Producer consumer problema: 
+https://www.tutorialspoint.com/operating_system/os_producer_consumer_problem.htm
+https://www.geeksforgeeks.org/operating-systems/producer-consumer-problem-using-semaphores-set-1/
+
+Race conditions:
+https://www.geeksforgeeks.org/operating-systems/race-condition-in-operating-systems/
+
+Critical section:
+https://www.geeksforgeeks.org/operating-systems/critical-section-in-synchronization/
+https://www.tutorialspoint.com/operating_system/os_critical_section_problem.htm

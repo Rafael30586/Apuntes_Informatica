@@ -1099,7 +1099,7 @@ AWS Identity and Access Management (IAM)
 
 AWS no tiene controles de identidad listos para usar que sean inteligentes, por lo cual se considera que AWS no tiene una oferta zero trust para clientes, por lo que servicios de terceros deben ser usados
 
-AWS CloudTrail: rastrea todas las llmadas de APIs
+AWS CloudTrail: rastrea todas las llamadas de APIs
 Amazon GuardDuty: detecta actividad sospechosa o maliciosa basado en CloudTrail y otros logs
 Amazon Detective: usado para analizar, investigar e identificar rápidamente problemas de seguridad (puede ingerir hallazgos de Guard Duty)
 

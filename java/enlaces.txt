@@ -5,3 +5,9 @@ https://www.campusmvp.es/recursos/post/java-que-es-el-classpath-y-como-lo-ajusto
 https://www.javamadesoeasy.com/2017/04/solve-error-source-folder-is-not-java.html
 https://stackoverflow.com/questions/79915064/the-format-of-the-maven-plugins-in-the-pom-xml/79922307#79922307
 https://en.wikipedia.org/wiki/Eclipse_(software)
+
+Palabra reservada volatile:
+https://www.datacamp.com/es/doc/java/volatile
+
+Palabra reservada synchronized:
+https://www.datacamp.com/doc/java/synchronized

@@ -1,2 +1,3 @@
 * Control de concurrencia en bases de datos
+  - Traducir enlace sobre niveles de aislamiento
 * Transacciones

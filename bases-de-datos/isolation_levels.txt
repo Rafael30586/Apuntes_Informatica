@@ -10,3 +10,7 @@ Acá es en donde los niveles de asilamiento de transacciones entran en juego. El
 Una transacción es una secuencia de operaciones ejecutadas como una única unidad de trabajo. En bases de datos relacionales, las transacciones siguen los principios ACID: atomicidad, consistencia, aislamiento y durabilidad
 El aislamiento determina que tan independientes son las transacciones entre sí mientras corren de manera concurrente. En sistemas reales, un aislamiento completo puede reducir rendimiento, mientras que el bajo aislamiento puede introducir errores lógicos. Por lo tanto, las bases de datos proveen diferentes niveles de aislamiento que equilibran correctitud y rendimiento
 Antes de explorar cada nivel, es importante entender los principales problemas de concurrencia que están diseñados para prevenir
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________

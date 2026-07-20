@@ -13,4 +13,5 @@ dual-stack -> doble pila . Término usado en informática que hace referencia a 
 expedite --> facilitar
 data warehouse --> almacenamiento de datos
 bare metal server --> son servidores dedicados alquilados por un solo inquilino
-serverless	
+serverless
+constraint --> restricción	

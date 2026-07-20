@@ -1123,3 +1123,13 @@ Slotted Aloha:
 * Las colisiones pueden ocurrir si dos estaciones diferentes envían los datos al comienzo de la misma ranura temporal
 * El tiempo de vulnerabilidad es igual al transmisión delay
 * Throughput --> S = G x e^(-G) . El máximo throughput es 36,8%   
+
+Comparación entre pure aloha y soltted aloha: pure aloha tiene la ventaja de la simplicidad de la implementación, mientras que slotted aloha otorga la ventaja de reducir el número de colsiones. Slotted aloha reduce las colisiones a la mitad y duplica el throughput
+
+CSMA:
+* Son siglas de carrier-sense multiple Access
+* Es un protocolo diseñado para disminuir las probabilidades de colisiones
+* Es un protocolo de control de acceso al medio en el cual un nodo verifica la ausencia de tráfico antes de transmitir en un medio compartido. Un transmisor intenta determinar si existe otra transmisión en progreso antes de iniciar una transmisión usando un mecanismo de escucha de señal portadora. Intenta detectar la presencia de una señal portadora de otro nodo antes de intentar transmitir. Si una señal es detectada, el nodo espera a que la transmisión en progreso finalice antes de iniciar su propia transmisión. A pesar de todo lo dicho, las probabilidades de colisión existen
+* Métodos persistentes: son métodos que usan las estaciones antes de enviar paquetes para evitar colisiones. Los métodos persistenes son: 1-persistent, non-persistent y p-persistent
+* 1-persisten: la estación estará continuamente sintiendo el canal compartido para ver si hay tráfico. Una vez el canal esté inactivo, la estación enviará el paquete. Las probabilidades de colisión son altas. Puede pasar que dos estaciones, A y B, estén sintiendo el canal compartido todo el tiempo y en el momento que lo sientan inactivo, ambos enviarán un paquete al mismo tiempo provocando una colisión. Es un método muy usado por Ethernet LAN
+* Non-persistent: una estación que quiere enviar un paquete sentirá el canal compartido. Si el canal compartido está ocupado esperará por una cantidad aleatoria de tiempo para sentir otra vez el canal compartido. Todas las estaciones esperarán por cantidades aleatorias de tiempo, por lo cual, será poco probable que dos estaciones envíen datos al mismo tiempo, disminuyendo así las probabilidades de colisiones. El problema de este método es que se reduce la eficiencia en comparación con 1-persistent, porque el canal compartido está sin utilizar varias veces por distintas cantidades de tiempo
