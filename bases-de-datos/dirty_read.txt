@@ -1,0 +1,11 @@
+https://www.geeksforgeeks.org/sql/dbms-dirty-read-in-sql/
+
+Dirty Read
+
+Una dirty read en SQL ocurre cuando una transacción lee datos que han sido modificados por otra transacción, pero todavía no han sido confirmados. En otras palabras, una transacción lee datos no confirmados desde otra transacción, lo cual puede generar resultados incorrectos o inconsistentes
+Por ejemplo, considerá dos transacciones T1 y T2. T1 modifica una fila en una tabla y comienza la transacción, pero no la confirma. Mientras tanto, T2 trata de leer la misma fila antes de que T1 confirme los cambios. Si a T2 se le permite leer los datos no confirmados, resultará en una dirty read, llevando potencialmente a resultados incorrectos o inconsistentes
+
+--------------------------------------
+--------------------------------------
+--------------------------------------
+https://www.tutorialspoint.com/dbms/dbms_dirty_read_problem.htm

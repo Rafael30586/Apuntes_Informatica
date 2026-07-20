@@ -3,3 +3,12 @@ https://www.freecodecamp.org/news/database-normalization-1nf-2nf-3nf-table-examp
 
 Notación de chen
 https://creately.com/guides/chen-notation-in-erd/
+
+Non-repeatable read
+https://dotnettutorials.net/lesson/non-repeatable-read-concurrency-problem/
+
+Phantom read
+https://www.tutorialspoint.com/dbms/dbms_phantom_read_problem.htm
+
+Isolation levels:
+https://codefinity.com/blog/Isolation-Levels-in-Databases-Explained

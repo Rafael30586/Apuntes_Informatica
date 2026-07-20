@@ -1,0 +1,11 @@
+https://www.geeksforgeeks.org/dbms/transaction-in-dbms/
+
+Transacciones en DBMS
+
+Una transacción se refiere a una secuencia de una o más operaciones (como lectura, escritura, actualización o borrado) llevado a cabo en la base de datos como una singular unidad de trabajo
+* Una transacción asegura que todas las operaciones se completan o ninguna es aplicada (confirmación o rollback)
+* Mantiene la integridad, consistencia y fiabilidad de la base de datos
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250114175524058001/transaction_1.webp
+
+Todos los tipos de operaciones de acceso a base de datos que son retenidos entre el comienzo y fin de la declaración de las transacciones son consideradas como una sola transacción lógica. Durante la transacción la base de datos es inconsistente. Solo una vez que la base de datos es confirmada el estado es cambiado de un estado consistente a otro

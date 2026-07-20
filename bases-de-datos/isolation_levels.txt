@@ -1,0 +1,6 @@
+https://codefinity.com/blog/Isolation-Levels-in-Databases-Explained
+
+Niveles de aislamiento en bases de datos explicados
+
+Cuando múltiples usuarios interactúan con una base de datos al mismo tiempo, mantener la consistencia de datos se vuelve un desafío serio. Imaginá miles de transacciones actualizando balances, colocando órdenes o modificando registros simultáneamente. Sin el aislamiento apropiado, los datos pueden volverse fácilmente inconsistentes, corruptos o lógicamente incorrectos
+Acá es en donde los niveles de asilamiento de transacciones entran en juego. El asilamiento define como y cuando los cambios hechos por un transacción se vuelven visibles para otros. Afecta directamente el comportamiento, rendimiento y correctitud de datos del sistema. Entender los niveles de aislamiento es esencial para desarrolladores backend, ingenieros de bases de datos y arquitectos de sistema que construyan sistemas fiables y escalables
