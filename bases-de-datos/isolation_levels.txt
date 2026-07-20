@@ -4,3 +4,9 @@ Niveles de aislamiento en bases de datos explicados
 
 Cuando múltiples usuarios interactúan con una base de datos al mismo tiempo, mantener la consistencia de datos se vuelve un desafío serio. Imaginá miles de transacciones actualizando balances, colocando órdenes o modificando registros simultáneamente. Sin el aislamiento apropiado, los datos pueden volverse fácilmente inconsistentes, corruptos o lógicamente incorrectos
 Acá es en donde los niveles de asilamiento de transacciones entran en juego. El asilamiento define como y cuando los cambios hechos por un transacción se vuelven visibles para otros. Afecta directamente el comportamiento, rendimiento y correctitud de datos del sistema. Entender los niveles de aislamiento es esencial para desarrolladores backend, ingenieros de bases de datos y arquitectos de sistema que construyan sistemas fiables y escalables
+
+¿Qué es aislamiento de transacciones?
+
+Una transacción es una secuencia de operaciones ejecutadas como una única unidad de trabajo. En bases de datos relacionales, las transacciones siguen los principios ACID: atomicidad, consistencia, aislamiento y durabilidad
+El aislamiento determina que tan independientes son las transacciones entre sí mientras corren de manera concurrente. En sistemas reales, un aislamiento completo puede reducir rendimiento, mientras que el bajo aislamiento puede introducir errores lógicos. Por lo tanto, las bases de datos proveen diferentes niveles de aislamiento que equilibran correctitud y rendimiento
+Antes de explorar cada nivel, es importante entender los principales problemas de concurrencia que están diseñados para prevenir
