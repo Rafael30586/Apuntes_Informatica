@@ -20,6 +20,21 @@ Una non-repeatable read ocurre cuando una transacción lee la misma fila dos vec
 Una lectura fantasma aparece cuando una transacción consulta un conjunto de filas coincidiendo con una condición, y otra transacción inserta o borra filas que coinciden con esa condición antes de que la primera transacción finalice
 Estas anomalías definen las diferencias entre los diferentes niveles de aislamiento
 
+-------------------------------
+Read uncommitted
+
+Read uncommitted es el nivel de aislamiento más bajo. Las transacciones pueden ver los cambios hechos por otras transacciones incluso si esos cambios no están confirmados todavía
+Por ejemplo, la transacción A actualiza el crédito de un usuario de 100 a 50 pero todavía no lo ha confirmado. La transacción B lee el crédito y ve 50. Si la transacción A hace rollback, el crédito retorna a 100, pero la transacción B ya uso datos incorrectos. Esta es una clásica lectura sucia
+Este nivel ofrece máximo rendimiento porque prácticamente no hay restricciones de cierre, pero sacrifica correctitud de datos. En la práctica, la mayoría de las bases de datos modernas no permiten lecturas sucias incluso si este nivel está seleccionado
+
+----------------------------
+Read committed
+
+Read commited previene de lecturas sucias. Una transacción solo puede ver datos que han sido confirmados por otras transacciones 
+Por ejemplo, la transacción A actualiza el precio de un producto pero no confirma. La transacción B intenta leer ese producto. En lugar de ver el valor sin confirmar, espera o lee la última versión confirmada
+De todas formas,  non-repeateble reads pueden aún ocurrir. Suponga que la transacción B lee el crédito de un usuario como 100. Mientras tanto, la transacción A lo actualiza a 120 y confirma. Si la transacción B lee el crédito otra vez, ahora lee 120. La misma consulta produjo resultados diferentes dentro de la misma transacción
+Read committed es el nivel de aislamiento por defecto en muchas bases de datos, incluyendo PostgreSQL y Oracle. Provee un buen equilibrio entre consistencia y rendimiento
+
 
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
