@@ -1131,5 +1131,28 @@ CSMA:
 * Es un protocolo diseñado para disminuir las probabilidades de colisiones
 * Es un protocolo de control de acceso al medio en el cual un nodo verifica la ausencia de tráfico antes de transmitir en un medio compartido. Un transmisor intenta determinar si existe otra transmisión en progreso antes de iniciar una transmisión usando un mecanismo de escucha de señal portadora. Intenta detectar la presencia de una señal portadora de otro nodo antes de intentar transmitir. Si una señal es detectada, el nodo espera a que la transmisión en progreso finalice antes de iniciar su propia transmisión. A pesar de todo lo dicho, las probabilidades de colisión existen
 * Métodos persistentes: son métodos que usan las estaciones antes de enviar paquetes para evitar colisiones. Los métodos persistenes son: 1-persistent, non-persistent y p-persistent
-* 1-persisten: la estación estará continuamente sintiendo el canal compartido para ver si hay tráfico. Una vez el canal esté inactivo, la estación enviará el paquete. Las probabilidades de colisión son altas. Puede pasar que dos estaciones, A y B, estén sintiendo el canal compartido todo el tiempo y en el momento que lo sientan inactivo, ambos enviarán un paquete al mismo tiempo provocando una colisión. Es un método muy usado por Ethernet LAN
+* 1-persistent: la estación estará continuamente sintiendo el canal compartido para ver si hay tráfico. Una vez el canal esté inactivo, la estación enviará el paquete. Las probabilidades de colisión son altas. Puede pasar que dos estaciones, A y B, estén sintiendo el canal compartido todo el tiempo y en el momento que lo sientan inactivo, ambos enviarán un paquete al mismo tiempo provocando una colisión. Es un método muy usado por Ethernet LAN
 * Non-persistent: una estación que quiere enviar un paquete sentirá el canal compartido. Si el canal compartido está ocupado esperará por una cantidad aleatoria de tiempo para sentir otra vez el canal compartido. Todas las estaciones esperarán por cantidades aleatorias de tiempo, por lo cual, será poco probable que dos estaciones envíen datos al mismo tiempo, disminuyendo así las probabilidades de colisiones. El problema de este método es que se reduce la eficiencia en comparación con 1-persistent, porque el canal compartido está sin utilizar varias veces por distintas cantidades de tiempo
+* P-persistent: el sistema tiene una ranura temporal igual o mayor que el tiempo de propagación. Es un sistema que usa las ventajas tanto de 1-persistent como de non-persistent. Cuando la estación está lista para enviar los datos, primero revisa el canal; si el canal está ocupado: la estación espera por la próxima ranura temporal; si el canal está inactivo: la estación va a transmitir el paquete con probabilidad p y esperará a la siguiente ranura temporal con probabilidad q = p - 1; repite hasta que: el paquete es transmitido exitosamente u otra estación empiece a transmitir (causando que la estación espere y reintentar después)
+
+https://media.geeksforgeeks.org/wp-content/uploads/20200705141247/ppersitent-660x400.png
+
+CSMA/CD:
+* Supongamos que ocurre una colisión en tiempo de vulnerabilidad. Se detecta la colisión cuando ha ocurrido y se detiene la transmisión
+* CD es por colission detection
+* CSMA no especifica que debe hacerse en el caso de colisiones
+* Cuando el primer byte de un paquete está corrompido como consecuencia de una colisión, los paquetes restantes están destinados a estar corruptos, las estaciones que han enviado los paquetes no pueden hacer nada para salvarlos. Lo que se hace con CSMA/CD es detectar cuando ha ocurrido la colisión y evitar enviar el paquete. En CSMA/CD, la transmisión del paquete y la detección de colisión se realizan simultáneamente. Es un proceso continuo. El emisor tiene dos puertos: uno para enviar los datos y el segundo es para detección de colisiones. Si se detecta una colisión el emisor para de enviar datos. Como hay un puerto dedicado a la detección de colisiones no hace falta reconocimientos. Si no se detecta una colisión se garantiza que el paquete será recibido por el receptor. Si no se detectan colisiones, no hay necesidad por parte del emisor de mantener una copia del paquete
+
+Jam signal: Supongamos que hay múltiples estaciones conectadas entre sí. Si ocurre una colisión en algún lugar, las otras estaciones se enterarán de que la colisión ha ocurrido mediante la jam signal. Esta señal será enviada a todas las estaciones
+
+Fórmula para tener en cuenta:
+Td(frame) >= Pd(frame) + Td(jam) + Pd(jam)
+Referencias -> Td = transmission delay ; Pd = propagation delay
+Se puede simplificar la fórmula quitando el Td de la jam signal, ya que la jam signal tiene un tamaño mucho menor que el frame
+Td(frame) >= 2xPd
+También se puede hacer los siguiente teniendo en cuenta que Td = L/B
+L >= Bx(2Pd)
+Esta fórmula es aproximada y muy importante. Para que la fórmula sea exacta hay que sumar el Td de la jam signal
+L >= Bx(2Pd + Td(jam))
+El mínimo tamaño de frame para detectar colisiones en CSMA/CD es:
+L = B x (2Pd + Td(jam))

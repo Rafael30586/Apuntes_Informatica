@@ -3,3 +3,6 @@ https://www.uobabylon.edu.iq/eprints/publication_11_2629_1448.pdf
 protocolo aloha 
 * https://www.tutorialspoint.com/data_communication_computer_network/aloha_protocol.htm
 * https://www.scaler.com/topics/aloha-in-computer-network/
+
+CSMA/CD
+https://www.lenovo.com/ar/es/glosario/csmacd/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOopF0c04eRKDdrBy127zeC09_vJDrbBaRv_gOSnIE84Qe36vl5B8
