@@ -35,6 +35,31 @@ Por ejemplo, la transacción A actualiza el precio de un producto pero no confir
 De todas formas,  non-repeateble reads pueden aún ocurrir. Suponga que la transacción B lee el crédito de un usuario como 100. Mientras tanto, la transacción A lo actualiza a 120 y confirma. Si la transacción B lee el crédito otra vez, ahora lee 120. La misma consulta produjo resultados diferentes dentro de la misma transacción
 Read committed es el nivel de aislamiento por defecto en muchas bases de datos, incluyendo PostgreSQL y Oracle. Provee un buen equilibrio entre consistencia y rendimiento
 
+------------------------
+Repeatable read
+
+Repeatable read asegura que si una transacción lee una fila, será siempre la misma versión de esa fila por la duración de la transacción
+Por ejemplo, la transacción A lee una orden con una cantidad de 200. La transacción B actualiza esa orden a 250 y confirma. Si la transacción lee la misma orden otra vez, todavía ve 200 hasta que completa. Esto elimina los non-repeatable reads
+De todas formas, las lecturas fantasma puede ocurrir dependiendo de la implementación de la base de datos. Por ejemplo, la transacción A selecciona todas las órdenes con el estado "pendiente". La transacción B inserta una nueva orden pendiente y confirma. Si la transacción A corre la misma consulta otra vez, podría llegar a ver la nueva fila
+En el motor InnoDB de MySQL, repeatable read también previenen lecturas fantasma usando gap locking. En PostgreSQL, la prevención fantasma es manejada de forma diferente usando mecanismos MVCC
+Repeatable read provee una consistencia más fuerte pero podría incrementar la sobrecarga de cierre (locking) y reducir concurrencia 
+
+-------------------------
+Serializable
+
+Serializable es el nivel de aislamiento más alto. Garantiza comportamiento equivalente a transacciones corriendo una después de la otra de manera secuencial, incluso si se ejecutan de manera concurrente. 
+Por ejemplo, dos usuarios tratan de transferir dinero a la misma cuenta al mismo tiempo. Bajo niveles de aislamiento más bajos, ambas transacciones podrían leer el mismo crédito y salirse del presupuesto. Bajo el nivel de aislamiento serializable, la base de datos asegura que una transacción se completa primero, y la segunda opera en datos actualizados o falla y reintenta
+Este nivel previene de lecturas sucias, non-repeatable reads y lecturas fantasma. De todas formas, puede reducir de manera significativa el throughput porque requiere cierre estricto o mecanismos de control de concurrencia avanzada
+Srializable se usa generalmente en sistemas financieros o lógica de negocio crítica donde la correctitud absoluta es más importante que el desempeño
+
+--------------------------
+¿Cómo hacen las bases de datos para implementar aislamiento?
+
+Las bases de datos modernas usan generalmente mecanismos de cerrado o MVCC (multi-version concurrency control) 
+El cerrado bloquea otras transacciones de modificar o leer ciertos datos. Aunque es conceptualmente simple, un cerrado excesivo puede reducir el desempeño
+MVCC trabaja de manera diferente. En lugar de bloquear lectores, mantiene múltiples versiones de las filas. Cada transacción ve una foto consistente de la base de datos. PostgreSQL se fía fuertemente en MVCC, mientras que MySQL InnoDB combina MVCC con cerrado
+Entender como tu base de datos específica implementa aislamiento es crucial porque el comportamiento puede ser un poco diferente a través de los sistemas 
+
 
 ____________________________________________
 Continuar resumiendo con el enlace de arriba
