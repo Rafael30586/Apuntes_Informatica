@@ -1080,11 +1080,11 @@ Capa de enlace de datos
 
 La capa de enlace de datos está dividida en dos partes: LLC y MAC. LLC es responsable de control de errores y control de flujo, mientras que MAC es responsable del control de acceso
 
-Hay múltiples protocolos de acceso: protocolos de acceso aleatorio; protocolos de control de acceso; protocolos de acceso centralizado
+Hay múltiples protocolos de acceso: protocolos de acceso aleatorio; protocolos de acceso controlado; protocolos de acceso centralizado
 
 Los protocolos de acceso aleatorio incluyen Aloha, CSMA, CSMA-CD, CSMA-CA
 
-Los protocolos de control de acceso son: Reservación, votación (polling) y token passing
+Los protocolos de de acceso controlado son: Reservación, votación (polling) y token passing
 
 Los protocolos de acceso centralizado son: FDMA, CDMA y TDMA
 
@@ -1156,3 +1156,14 @@ Esta fórmula es aproximada y muy importante. Para que la fórmula sea exacta hay 
 L >= Bx(2Pd + Td(jam))
 El mínimo tamaño de frame para detectar colisiones en CSMA/CD es:
 L = B x (2Pd + Td(jam))
+
+----------------------------
+Protocolos de acceso controlado
+
+Polling:
+* En este protocolo tenemos un nodo central (en los protocolos de acceso aleatorio no había una autoridad). Una estación es la principal (primary station) y las otras son secundarias (secondary stations)
+* No hay colisiones
+* Supongamos que un nodo secundario s1 quiere enviar datos a otro nodo secundario s3. El nodo primario P hará una votación, les preguntará a cada nodo secundario si quieren enviar datos. Cuando le pregunte al nodo s1, este le enviará los datos a P, y luego P le enviará esos datos a s3. Cuando P le pregunte a s2 si quiere enviar datos, s2 le contestará con un NAK (que no quiere enviar datos). Cuando P quiera enviar datos, puede hacerlo de manera directa. P se asegurará de que cuando un nodo quiera enviar datos primero le pregunte a P
+* Explicación de lo anterior en más detalle: P le enviará un poll a s2, y este le contestará con un NAK. Luego P le enviará un poll a s1, este le enviará a P los datos y P le enviará a s1 un reconocimiento. Luego P no enviará los datos directamente a s3, P le enviará a s3 un SEL (de que está seleccionado, estate listo para recibir los datos), s3 contestará con un reconocimiento de que está listo para recibir los datos, P le enviará los datos y s3 le enviará el reconocimiento de que ha recibido los datos
+* Así funciona, las estaciones secundarias no se comunican directamente, lo hacen a través de la estación principal
+* La topología que se suelte utilizar para este protocolo es la de la estrella

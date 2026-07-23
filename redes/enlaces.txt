@@ -6,3 +6,5 @@ protocolo aloha
 
 CSMA/CD
 https://www.lenovo.com/ar/es/glosario/csmacd/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOopF0c04eRKDdrBy127zeC09_vJDrbBaRv_gOSnIE84Qe36vl5B8
+
+Protocolos de acceso múltiple
