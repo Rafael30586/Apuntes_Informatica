@@ -17,3 +17,51 @@ En un proceso en cascada, hay que completar cada fase del proyecto antes de pasa
 La metodología en cascada es un flujo de trabajo de gestión de proyectos bien definido. Como si fuera una cascada de agua, cada fase del proceso desciende de forma secuencial a lo largo de cinco fases (requisitos, diseño, implementación, verificación y mantenimiento).
 
 A diferencia de otros métodos, como la metodología ágil, el método en cascada no da margen para la flexibilidad. Se debe terminar una fase antes de empezar la siguiente y el equipo no puede avanzar hasta que resuelva todos los problemas que pudiera haber. Además, como se describe en nuestra guía de introducción a la gestión de proyectos, el equipo no puede abordar los errores ni la deuda técnica una vez ha pasado a la siguiente fase del proyecto.
+
+---------------------------
+¿Cuáles son las fases de la metodología en cascada?
+
+Requisitos
+
+La fase de requisitos indica lo que debe hacer el sistema. En esta fase, se determina el alcance del proyecto, desde las obligaciones empresariales hasta las necesidades de los usuarios. Esto te ofrece una visión general y panorámica de todo el proyecto. En los requisitos se debe especificar lo siguiente:
+* Los recursos necesarios para el proyecto.
+* En qué trabajará cada miembro del equipo y en qué fase.
+* Un cronograma para todo el proyecto, en el que se detalle la duración de cada fase. 
+* Los detalles de cada fase del proceso. 
+
+Diseño
+
+Una vez reunidos todos los requisitos, es hora de pasar a la fase de diseño. En ella los diseñadores desarrollan soluciones que cumplen con los requisitos. En esta fase, los diseñadores se ocupan de estas tareas:
+* Crear planificaciones e hitos del proyecto.
+* Determinar las entregas exactas.  
+* Crear diseños o planos para las entregas. 
+Las entregas pueden ser software o productos físicos. Por ejemplo, los diseñadores determinan la arquitectura del sistema y los casos prácticos del software. En el caso de un producto físico, determinan las especificaciones exactas de producción. 
+
+Implementación
+
+Una vez finalizado y aprobado el diseño, es el momento de implementarlo. El equipo de diseño entrega las especificaciones a los desarrolladores para crear el producto.
+Para ello, los desarrolladores llevan a cabo estas tareas:
+* Crear un plan de implementación.
+* Recopilar los datos o investigaciones necesarios para el desarrollo.
+* Asignar tareas específicas y recursos entre el equipo. 
+En esta fase puede que descubras que hay partes del diseño que no se pueden implementar. Si es un problema grave, debes dar un paso atrás y volver a la fase de diseño.
+
+Verificación
+
+Una vez que los desarrolladores programen el diseño, es hora del control de calidad. Es importante realizar pruebas en todos los casos prácticos para garantizar una buena experiencia de usuario, ya que no querrás publicar un producto con errores.
+El equipo de control de calidad también tiene estas tareas: 
+* Escribir casos de prueba.
+* Documentar todos los errores y fallos que hay que corregir.
+* Probar los diferentes aspectos de uno en uno.
+* Determinar qué métricas de control de calidad se van a rastrear.
+* Cubrir diversos entornos y casos prácticos.
+
+Mantenimiento
+
+Tras la publicación del producto, puede que los desarrolladores tengan que corregir errores. Además, los clientes informan al personal de soporte de cualquier incidencia que surja. Depende del equipo atender esas solicitudes y publicar versiones actualizadas del producto.
+Como puedes ver, cada fase depende de la que le precede. Esto apenas da margen para errores entre fases o dentro de ellas.
+Por ejemplo, si una parte interesada quiere añadir un requisito cuando estás en la fase de verificación, tendrás que volver a examinar todo tu proyecto. Eso podría significar tirarlo todo por la borda y empezar de nuevo.
+
+____________________________________________
+Hay más para resumir con el enlace de arriba
+____________________________________________
