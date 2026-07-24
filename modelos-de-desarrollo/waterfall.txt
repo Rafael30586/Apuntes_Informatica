@@ -1,0 +1,19 @@
+https://www.atlassian.com/es/agile/project-management/waterfall-methodology
+
+Metodología en cascada
+
+Principales conclusiones
+
+* La metodología en cascada es un enfoque de gestión de proyectos lineal y secuencial con distintas fases y una progresión rígida.
+* Funciona bien con proyectos que tienen requisitos bien definidos y resultados predecibles, pero carecen de flexibilidad de cambio.
+* Los puntos fuertes de esta metodología son la estructura clara, la documentación y la planificación inicial, pero puede haber dificultades para innovar e intercambiar comentarios.
+* Opta por la metodología en cascada para proyectos con requisitos fijos y considera la ágil para los que requieran una mayor adaptabilidad y enfoque en el cliente.
+
+En un proceso en cascada, hay que completar cada fase del proyecto antes de pasar a la siguiente. Es bastante rígido y lineal. El método se basa en gran medida en todos los requisitos y en la labor de reflexión realizada antes de empezar.
+
+------------------------
+¿Qué es la metodología en cascada?
+
+La metodología en cascada es un flujo de trabajo de gestión de proyectos bien definido. Como si fuera una cascada de agua, cada fase del proceso desciende de forma secuencial a lo largo de cinco fases (requisitos, diseño, implementación, verificación y mantenimiento).
+
+A diferencia de otros métodos, como la metodología ágil, el método en cascada no da margen para la flexibilidad. Se debe terminar una fase antes de empezar la siguiente y el equipo no puede avanzar hasta que resuelva todos los problemas que pudiera haber. Además, como se describe en nuestra guía de introducción a la gestión de proyectos, el equipo no puede abordar los errores ni la deuda técnica una vez ha pasado a la siguiente fase del proyecto.
