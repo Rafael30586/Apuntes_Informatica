@@ -1,0 +1,26 @@
+https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/que-es-innodb/
+
+InnoDB: ¿el mejor motor de al­ma­ce­na­mie­n­to para MySQL?
+
+Si un sitio web grande va muy lento, a menudo se debe a que su te­c­no­lo­gía de bases de datos no está op­ti­mi­za­da. El orden es la mitad de la batalla ―esto se aplica tanto al mundo físico como al digital. Si los registros de datos crecen co­n­s­ta­n­te­me­n­te, se necesita un sistema de gestión de bases de datos o SGBD adecuado. Uno de estos SGBD es MySQL, que permite procesar, almacenar y preservar grandes ca­n­ti­da­des de datos.
+En el al­ma­ce­na­mie­n­to de los datos en MySQL, InnoDB desempeña un papel im­po­r­ta­n­te. InnoDB es un su­b­si­s­te­ma de al­ma­ce­na­mie­n­to que ha pre­va­le­ci­do sobre otros motores de al­ma­ce­na­mie­n­to en los últimos años, sobre todo gracias a su mayor re­n­di­mie­n­to y fia­bi­li­dad. Aquí te contamos qué es InnoDB, qué de­s­ve­n­ta­jas tiene y en qué se distingue del su­b­si­s­te­ma de memoria MyISAM.
+
+-----------------------------
+¿En qué consiste InnoDB?
+
+InnoDB ha pasado de ser un su­b­si­s­te­ma de al­ma­ce­na­mie­n­to al motor de al­ma­ce­na­mie­n­to de propósito general para MySQL. Su gran fia­bi­li­dad, incluso a muy alto re­n­di­mie­n­to, ha llevado a MySQL a hacer de InnoDB el motor de al­ma­ce­na­mie­n­to pre­de­te­r­mi­na­do en las versiones 5.6 y po­s­te­rio­res.
+
+Nota
+MySQL es una base de datos de código abierto que permite el uso de di­fe­re­n­tes motores de al­ma­ce­na­mie­n­to. Esto ofrece mucha fle­xi­bi­li­dad a las bases de datos para el al­ma­ce­na­mie­n­to web. Además de InnoDB y su pre­de­ce­sor oficial, MyISAM, existen otros motores, como Be­r­ke­le­y­DB, CSV, NDB o Federated Engine.
+
+Como sistema de gestión de bases de datos, MySQL garantiza que los datos se puedan almacenar, indexar y consultar en una tabla. Si, por ejemplo, se debe leer un gran número de pequeñas ca­n­ti­da­des de datos, como ocurre con los sitios web o las apli­ca­cio­nes, o si es necesario procesar los datos de forma segura para realizar tra­n­sac­cio­nes, este programa ofrece la solución adecuada. InnoDB, que pro­po­r­cio­na a MySQL el motor de al­ma­ce­na­mie­n­to necesario, se comporta como un módulo que se puede integrar en el software de forma flexible. Sin embargo, MySQL determina siempre cómo se almacenan los datos de una base de datos.
+
+Nota
+Las bases de datos consisten en tablas a las que se asigna un motor de al­ma­ce­na­mie­n­to concreto, como InnoDB, en el momento de crearlas.
+
+La mayoría de los motores almacenan los datos en soportes de datos o los guardan en la memoria principal para un acceso rápido. InnoDB permite que las tra­n­sac­cio­nes de datos se realicen de forma aislada entre sí: solo cuando una tra­n­sac­ción se completa, se escribe en el medio de al­ma­ce­na­mie­n­to co­rre­s­po­n­die­n­te. Así no se producen accesos in­co­m­ple­tos a bases de datos creadas.
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________
+

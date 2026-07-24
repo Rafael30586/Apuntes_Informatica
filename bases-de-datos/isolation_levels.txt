@@ -58,9 +58,17 @@ Srializable se usa generalmente en sistemas financieros o lógica de negocio cr�
 Las bases de datos modernas usan generalmente mecanismos de cerrado o MVCC (multi-version concurrency control) 
 El cerrado bloquea otras transacciones de modificar o leer ciertos datos. Aunque es conceptualmente simple, un cerrado excesivo puede reducir el desempeño
 MVCC trabaja de manera diferente. En lugar de bloquear lectores, mantiene múltiples versiones de las filas. Cada transacción ve una foto consistente de la base de datos. PostgreSQL se fía fuertemente en MVCC, mientras que MySQL InnoDB combina MVCC con cerrado
-Entender como tu base de datos específica implementa aislamiento es crucial porque el comportamiento puede ser un poco diferente a través de los sistemas 
+Entender como tu base de datos específica implementa aislamiento es crucial porque el comportamiento puede ser un poco diferente a través de los sistemas
 
+-----------------------------
+Eligiendo el nivel de aislamiento correcto
 
-____________________________________________
-Continuar resumiendo con el enlace de arriba
-____________________________________________
+No hay un nivel de aislamiento que sea el mejor de manera universal. La decisión correcta depende de los requerimientos del negocio
+Si el rendimiento es crítico re inconsistencias ocasionales son aceptables, Read committed es generalmente suficiente. Para reportar sistemas o flujos de trabajo que requieren datos estables durante la ejecución, repeatable read podría ser más apropiado. Para operaciones financieras, gestión de inventario, o sistemas de banca, serializable asegura máxima seguridad
+En sistemas distribuidos o de alta carga, aislamiento muy estricto puede crear cuellos de botella. Por lo tanto, los arquitectos generalemte combinan aislamiento apropiado con resguardo a nivel aplicación, rewintentos y cerrado optimista
+
+-----------------------------
+Conclusión
+
+Los niveles de aislamiento definen como las transacciones concurrentes interactúan en un sistema de bases de datos. Desde read uncommitted hasta serializable, cada nivel representa un intercambio entre rendimiento y consistencia
+Entender lecturas sucias, non-repeatable reads y lecturas fantasma te ayuda a diseñar sistemas predecibles bajo carga. Elegir el correcto nivel de aislamiento no es solamente un detalle de configuración de base de datos, es una decisión que 8impacta directamente la escalabilidad, correctitud y confianza de usuario 
