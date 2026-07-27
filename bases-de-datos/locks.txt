@@ -7,3 +7,22 @@ Definición: un lock es una variable asignada a cualquier item de datos para ras
 Un lock de base de datos existe para prevenir que dos o más usuarios de bases de datos lleven a cabo cualquier cambio en el mismo item de datos al mismo tiempo. Por lo tanto, es correcto interpretar esta técnica como un medio de acceso de sincronización, lo cual está en claro contraste frente a otros conjuntos de protocolos como los que usan marcas de tiempo y macras de tiempo multiversión.
 
 https://media.geeksforgeeks.org/wp-content/uploads/20210618200738/Lock11-660x284.jpg
+
+-----------------------------
+Locks binarios
+
+Un lock binario es una variable capaz de almacenar solo dos posibles valores: 1 (representando un estado bloqueado) o un 0 (representando un estado desbloqueado). Este lock está usualmente asociado con cada item en la base de datos (tal vez a nivel tabla, nivel fila o a nivel de la base de datos entera)
+
+https://media.geeksforgeeks.org/wp-content/uploads/20210618191530/BinaryLock.jpg
+
+¿Debería el item X ser desbloqueado?, entonces un objeto correspondiente lock(X) retornaría un valor de 0. Por lo que, en el instante en el que un usuario/sesión empieza a actualizar el contenido del item X, lock(X) es establecido al valor de 1. Debido a esto, por lo que dura una consulta de actualización, ningún otro usuario accederá al item X, no escribir ni leer
+
+Méritos de los locks binarios:
+* Son simples de implementar ya que son efectivamente mutuamente exclusivos y establecen aislamiento perfectamente
+* Los locks binarios demandan menos del sistema ya que este último solo mantiene un registro de los items bloqueados. El sistema es el subsistema gestor de lock que es una característica de todos los DBMS de hoy
+
+Desvantajas de los locks binarios
+* Son altamente restrictivos
+* Ni siquiera permiten lectura de contenidos del item X. Como resultado, no se usan comercialmente
+
+ 
