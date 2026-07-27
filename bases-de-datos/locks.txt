@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/dbms/types-of-locks-in-concurrency-control/
+
+Tipos de locks en control de concurrencia
+
+Las demandas comerciales para asegurar funcionalidad fluida y servidores run-time eficientes, hacen que sea muy importante para diseñadores de bases de datos elaborar sistemas y código que evite claramente cualquier tipo de consistencia en transacciones multi-usuario. Este artículo dará una introducción adecuada a la clásica arquitectura de bloqueo que fue propuesta e implementada por la comunidad de desarrolladores de bases de datos
+Definición: un lock es una variable asignada a cualquier item de datos para rastrear el estado de ese item para que el aislamiento y la no-interferencia esté asegurada durante transacciones concurrentes
+Un lock de base de datos existe para prevenir que dos o más usuarios de bases de datos lleven a cabo cualquier cambio en el mismo item de datos al mismo tiempo. Por lo tanto, es correcto interpretar esta técnica como un medio de acceso de sincronización, lo cual está en claro contraste frente a otros conjuntos de protocolos como los que usan marcas de tiempo y macras de tiempo multiversión.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20210618200738/Lock11-660x284.jpg
