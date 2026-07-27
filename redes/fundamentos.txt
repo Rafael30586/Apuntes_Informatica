@@ -1167,3 +1167,24 @@ Polling:
 * Explicación de lo anterior en más detalle: P le enviará un poll a s2, y este le contestará con un NAK. Luego P le enviará un poll a s1, este le enviará a P los datos y P le enviará a s1 un reconocimiento. Luego P no enviará los datos directamente a s3, P le enviará a s3 un SEL (de que está seleccionado, estate listo para recibir los datos), s3 contestará con un reconocimiento de que está listo para recibir los datos, P le enviará los datos y s3 le enviará el reconocimiento de que ha recibido los datos
 * Así funciona, las estaciones secundarias no se comunican directamente, lo hacen a través de la estación principal
 * La topología que se suelte utilizar para este protocolo es la de la estrella
+* La desventaja de este protocolo es que si la estación primaria falla, todo el sistema se viene abajo
+
+Reservation:
+* Una estación necesita hacer una reserva antes de enviar datos
+* El tiempo es dividido en intervalos
+* En cada intervalo una frame de reserva precede a la frame de datos enviada en el intervalo
+* Si hay N estaciones en el sistema, entonces hay N mini-ranuras de reserva en el frame de reserva. Cada estación tiene su propia mini-ranura
+* La estación que ha hecho la reserva puede enviar sus frames de datos luego del tiempo de reserva
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250925113834074319/protocol_3.webp
+
+Token passing
+* Todas las estaciones están conectadas lógicamente entre sí formando un anillo, por lo que se usa la topología de anillo
+* Se utiliza un tipo especial de frame llamado token
+* Una estación puede enviar datos solo si tiene el token. Luego de que los datos hayan sido enviados, el token se pasa a otra estación
+* El token se irá moviendo a través de la red en forma de anillo estación por estación, revisando cuando pasa si alguna estación tiene datos para enviar
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250925114003107022/protocol_4.webp
+
+* Esta es la mejor técnica para broadcasting
+* No hay reconocimientos porque no existe el concepto de colisión, por lo que se está seguro de que el paquete de datos llegará a destino
