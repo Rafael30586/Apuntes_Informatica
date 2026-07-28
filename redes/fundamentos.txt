@@ -1188,3 +1188,11 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250925114003107022/protocol
 
 * Esta es la mejor técnica para broadcasting
 * No hay reconocimientos porque no existe el concepto de colisión, por lo que se está seguro de que el paquete de datos llegará a destino
+
+--------------------------------
+Protocolos de acceso centralizado
+
+TDMA:
+* El tiempo del enlace es dividido en ranuras de tamaño fijo llamadas ranuras temporales
+* Las ranuras de tiempo son asignadas a estaciones de forma round robin. Cada estación debe enviar los datos en la ranura temporal que le corresponda. El en intervalo de tiempo 1, la estación 1 tiene la oportunidad de enviar datos, en el intervalo de tiempo 2 la estación 2 tiene la oportunidad de enviar datos, y así sucesivamente
+* El problema acá es que si llega una ranura de tiempo que le corresponda, por ejemplo, a la estación 3, pero esta estación no tiene datos para enviar, entonces esa ranura temporal se estaría mal gastando. A veces las ranuras de estación de malgastan porque la estación que le corresponde no tiene nada que enviar. Acá hay una reducción en la eficiencia

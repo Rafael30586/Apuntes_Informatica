@@ -9,3 +9,6 @@ https://www.lenovo.com/ar/es/glosario/csmacd/?orgRef=https%253A%252F%252Fwww.goo
 
 Controled Access protocols
 https://www.geeksforgeeks.org/computer-networks/controlled-access-protocols-in-computer-network/
+
+dirección APIPA
+https://www.cbtnuggets.com/blog/technology/networking/what-is-automatic-private-ip-addressing-apipa
