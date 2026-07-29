@@ -12,3 +12,9 @@ https://www.geeksforgeeks.org/computer-networks/controlled-access-protocols-in-c
 
 dirección APIPA
 https://www.cbtnuggets.com/blog/technology/networking/what-is-automatic-private-ip-addressing-apipa
+
+protocolo QUIC
+https://www.geeksforgeeks.org/javascript/quic-protocol/
+
+flooding
+https://www.techtarget.com/searchnetworking/definition/flooding
