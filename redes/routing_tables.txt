@@ -1,0 +1,7 @@
+https://www.techtarget.com/searchnetworking/definition/routing-table
+
+¿Qué es una routing table?
+
+Una routing table es un conjunto de reglas, generalmente vistas en formato de tabla, que se usan para determinar a donde los paquetes de datos que viajan por una red IP serán dirigidos. Esta tabla se almacena generalmente en la RAM de dispositivos de envío, como routers y switches de red
+En redes de computadoras, cada routing table es única y funciona como un mapa de direcciones para redes. Almacena el origen e IP destino de los dispositivos de enrutamiento en la forma de prefijos junto con las direcciones de default gateway e información de enrutamiento correspondiente
+Las routing tables típicamente se actualizan dinámicamente a través de protocolos de enrutamiento de red. Pero a veces los administradores de redes podrían añadir entradas estáticas de manera manual

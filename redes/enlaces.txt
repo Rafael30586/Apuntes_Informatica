@@ -18,3 +18,8 @@ https://www.geeksforgeeks.org/javascript/quic-protocol/
 
 flooding
 https://www.techtarget.com/searchnetworking/definition/flooding
+
+routing tables
+https://www.geeksforgeeks.org/computer-networks/routing-tables-in-computer-network/
+https://www.techtarget.com/searchnetworking/definition/routing-table
+https://www.coursera.org/articles/routing-table
