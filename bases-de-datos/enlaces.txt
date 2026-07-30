@@ -21,3 +21,9 @@ https://www.geeksforgeeks.org/dbms/what-is-multi-version-concurrency-control-mvc
 
 Locks
 https://www.geeksforgeeks.org/dbms/lock-based-concurrency-control-protocol-in-dbms/
+
+cierres compartidos y cierres exclusivos
+https://www.geeksforgeeks.org/dbms/difference-between-shared-lock-and-exclusive-lock/
+
+b-trees e índices
+https://builtin.com/data-science/b-tree-index

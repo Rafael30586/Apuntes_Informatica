@@ -1,0 +1,3 @@
+explain <consulta> --> muestra datos sobre la consulta 
+
+explain analyze <consulta> --> muestra más datos sobre la consulta como ,por ejemplo, el tiempo que le toma realizar la operación

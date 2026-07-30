@@ -21,8 +21,21 @@ Méritos de los locks binarios:
 * Son simples de implementar ya que son efectivamente mutuamente exclusivos y establecen aislamiento perfectamente
 * Los locks binarios demandan menos del sistema ya que este último solo mantiene un registro de los items bloqueados. El sistema es el subsistema gestor de lock que es una característica de todos los DBMS de hoy
 
-Desvantajas de los locks binarios
+Desventajas de los locks binarios
 * Son altamente restrictivos
 * Ni siquiera permiten lectura de contenidos del item X. Como resultado, no se usan comercialmente
+
+---------------------------
+Locks compartidos o exclusivos
+
+El incentivo reinando estos tipos de cierres es la naturaleza restrictiva de los cierres binarios. Acá estamos en presencia de cierres que permiten que otras transacciones hagan consultas de lectura ya que la consulta READ es no conflictiva. De todas formas, si una transacción demanda una consulta de escritura en el item X, entonces a la transacción se le debe dar acceso exclusivo al item X. Ergo, requerimos un tipo de cierre multi-modo que es lo que son los cierres compartidos/exclusivos. También son conocidos como Read/write locks
+A diferencia de los cierres binarios, los read/write locks pueden ser establecidos en tres valores, SHARED, EXCLUSIVE o UNLOCKED. Por tanto, nuestro cierre, es decir Lock(X), reflejará uno de los siguientes valores
+
+1. READ-LOCKED: Si una transacción solo requiere de leer los contenidos del item X y el cierre solo permite lectura. También es conocido como cierre compartido
+2. WRITE-LOCKED: Si una transacción necesita actualizar o escribir el item X, el cierre deberá restringir todas las otras transacciones y proveer acceso exclusivo a la transacción actual. Así, estos cierres se conocen como cierres exclusivos
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________
 
  

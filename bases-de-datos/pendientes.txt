@@ -2,3 +2,7 @@
   - Trabajar sobre locks en bases de datos. Este enlace puede servir: https://www.geeksforgeeks.org/dbms/types-of-locks-in-concurrency-control/
 * Transacciones
 * Motores de almacenamiento en sistemas gestores de bases de datos
+* Índices
+  - b-tres y b+trees
+  - crear una base de datos grande con la ayuda de chatGPT y probar el desempeño de las consultas con índices y sin índices
+  - tipos de índices
