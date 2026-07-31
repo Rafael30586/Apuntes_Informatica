@@ -5,3 +5,24 @@ https://www.techtarget.com/searchnetworking/definition/routing-table
 Una routing table es un conjunto de reglas, generalmente vistas en formato de tabla, que se usan para determinar a donde los paquetes de datos que viajan por una red IP serán dirigidos. Esta tabla se almacena generalmente en la RAM de dispositivos de envío, como routers y switches de red
 En redes de computadoras, cada routing table es única y funciona como un mapa de direcciones para redes. Almacena el origen e IP destino de los dispositivos de enrutamiento en la forma de prefijos junto con las direcciones de default gateway e información de enrutamiento correspondiente
 Las routing tables típicamente se actualizan dinámicamente a través de protocolos de enrutamiento de red. Pero a veces los administradores de redes podrían añadir entradas estáticas de manera manual
+
+--------------------------
+¿Cómo funciona una routing table?
+
+El propósito principal de una routing table es ayudar a los routers a concretar decisiones efectivas de enrutamiento
+Cuando una paquete es enviado a través de un router para ser enviado a un anfitrión en otra red, el router consulta la routing table para encontrar la dirección IP del dispositivo destino y el mejor camino para alcanzarlo. El paquete es luego dirigido a un router vecino (o el próximo salto listado en la tabla) hasta que llegue al destino final
+De acuerdo a AWS, para manejar el tráfico de red, un router consulta sus routing tables millones de veces cada segundo
+
+-------------------------
+Entradas de las routing tables
+
+Cada routing table podría contener diferentes entradas e información, como direcciones IPv4 o IPv6. Pero los campos principales de todas las routing tables permanecen iguales
+Las siguientes son las principales entradas de una routing table:
+* Destino: Esta es la dirección IP del destino final del paquete
+* Máscara de subred
+* Gateway: Este es el próximo salto, o la dirección IP del dispositivo vecino al cual el paquete es enviado
+* Interfaz: Los routers usan típicamente interfaces de Ethernet para conectarse con otros dispositivos en la misma red, como eth0 o eth1, e interfaces seriales para conectarse a WANs de afuera. La routing table lista la interfaz de red de entrada, también conocida como interfaz saliente, que el dispositivo debería usar al enviar el paquete al próximo salto 
+
+_________________________________________
+Seguir resumiendo con el enlace de arriba
+_________________________________________

@@ -1,0 +1,9 @@
+https://www.lenovo.com/us/en/glossary/what-is-a-hop/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOorX3yFj2VWC4LfmorzjJzENU-V6c-OkNFpMpcdVEJ8N51L-BNgf
+
+¿Qué es un salto en redes de computadoras?
+
+Salto o hop es un término comúnmente utilizado en el contexto de redes de computadoras. Se refiere al movimiento de datos entre dos dispositivos de red. Cuando enviás información desde tu computadora a un servidor u otro dispositivo, no viaja en línea recta. En su lugar, realiza una serie de saltos, pasando a través de múltiples routers y nodos de red para alcanzar su destino
+
+_________________________________________
+Seguir resumiendo con el enlace de arriba
+_________________________________________ 
