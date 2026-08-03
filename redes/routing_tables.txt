@@ -23,6 +23,8 @@ Las siguientes son las principales entradas de una routing table:
 * Gateway: Este es el próximo salto, o la dirección IP del dispositivo vecino al cual el paquete es enviado
 * Interfaz: Los routers usan típicamente interfaces de Ethernet para conectarse con otros dispositivos en la misma red, como eth0 o eth1, e interfaces seriales para conectarse a WANs de afuera. La routing table lista la interfaz de red de entrada, también conocida como interfaz saliente, que el dispositivo debería usar al enviar el paquete al próximo salto 
 
+
+
 _________________________________________
 Seguir resumiendo con el enlace de arriba
 _________________________________________

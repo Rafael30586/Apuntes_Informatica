@@ -4,6 +4,22 @@ https://www.lenovo.com/us/en/glossary/what-is-a-hop/?orgRef=https%253A%252F%252F
 
 Salto o hop es un término comúnmente utilizado en el contexto de redes de computadoras. Se refiere al movimiento de datos entre dos dispositivos de red. Cuando enviás información desde tu computadora a un servidor u otro dispositivo, no viaja en línea recta. En su lugar, realiza una serie de saltos, pasando a través de múltiples routers y nodos de red para alcanzar su destino
 
-_________________________________________
-Seguir resumiendo con el enlace de arriba
-_________________________________________ 
+¿por qué los datos viajan en saltos?
+
+Los datos viajan en saltos para navegar a través de infraestructura de red compleja eficientemente. Cada salto representa un punto en el que los datos son transferidos desde un segmento de red a otro. Los routers, que determinan el mejor camino para la transmisión de datos, juegan un rol crucial en estos saltos. Al dividir el viaje en saltos, los datos pueden seguir la ruta más óptima y alcanzar su destino de manera confiable.
+
+¿Cómo controlar el número de saltos que dan tus datos?
+
+Lamentablemente, no tenés control directo sobre el número de saltos que dan tus datos. Las decisiones de enrutamiento son hechas por routers en el camino, basadas en las condiciones actuales de red y el camino más eficiente disponible. De todas maneras, los protocolos y tecnologías de red apuntar a optimizar estas rutas de manera automática, asegurando que tus datos tomen el camino más corto y rápido posible
+
+¿Cómo afectan el número de saltos a la velocidad de internet?
+
+Un número más bajo de saltos contribuye a velocidades de internet más altas. Cada salto introduce un pequeño retraso mientras los datos se mueven a través de los routers y las conexiones de red. Por tanto, minimizar el número de saltos ayuda a reducir la latencia, proveyendo una experiencia más rápida y fluida al acceder a sitios web, contenido de streaming u  otras actividades online
+
+¿Qué rol juegan las herramientas traceroute al entender saltos?
+
+Traceroute es una herramienta útil para entender los saltos que dan tus datos. Al ejecutar el comando traceroute, podés ver los routers específicos y sus direcciones IP que tus datos traspasan para alcanzar el destino. Esta información ayuda a diagnosticar problemas de red, identificar cuellos de botella y evaluar la eficiencia del camino 
+
+____________________________________________
+Hay más para resumir con el enlace de arriba
+____________________________________________ 
