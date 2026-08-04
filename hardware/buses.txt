@@ -1,0 +1,8 @@
+https://www.geeksforgeeks.org/computer-organization-architecture/what-is-a-computer-bus/
+
+¿Qué es un bus de computadora?
+
+Un bus de computadora es un sistema de comunicación usado para transferir datos entre componentes dentro de una computadora o entre diferentes computadoras. Es importante para minimizar el número de conexiones necesitadas al centralizar la comunicación sobre caminos compartidos
+* Consiste en conexiones físicas como alambres, circuitos o cables
+* Componentes como CPU, memoria y dispositivos I/O se conectan a través de un bus
+* Simplifica la transferencia de datos y mejora la eficiencia

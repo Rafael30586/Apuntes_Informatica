@@ -1,0 +1,4 @@
+Buses
+https://www.geeksforgeeks.org/computer-organization-architecture/what-is-a-computer-bus/
+https://thecrazydev.com/blogs/what-is-buses-in-computer
+https://thecrazydev.com/blogs/what-is-address-bus-data-bus-control-bus-in-computer
