@@ -6,3 +6,35 @@ Un bus de computadora es un sistema de comunicación usado para transferir datos
 * Consiste en conexiones físicas como alambres, circuitos o cables
 * Componentes como CPU, memoria y dispositivos I/O se conectan a través de un bus
 * Simplifica la transferencia de datos y mejora la eficiencia
+
+----------------------------
+Tipos de buses
+
+https://media.geeksforgeeks.org/wp-content/uploads/20250908120805620638/cpu.webp
+
+1. Address bus
+
+Una colección de alambres utilizados para identificar una ubicación particular en la memoria principal. En otras palabras, la información usada para describir las ubicaciones en memoria viaja por el address bus
+
+* El address bus transporta direcciones de memoria a las cuales el procesador quiere acceder para leer o escribir datos
+* El address bus es unidireccional
+* El tamaño del address bus cuantas ubicaciones de memoria únicas pueden ser dirigidas
+
+Ejemplo:
+* Un sistema con un address bus de 4 bits puede dirigir 2^4 = 16 bytes de memoria
+
+2. Data bus
+
+Una colección de alambres a través de los cuales los datos son transmitidos desde una parte de la computadora a otra. Puede ser pensado como una autopista en la cual los datos viajan dentro de una computadora
+
+* El principal objetivo del data bus es la transferencia de datos entre el microprocesador a dispositivos de entrada/salida o memoria 
+* El data bus transfiere instrucciones viniendo del procesador o yendo a este
+* El data bus es bidireccional porque los datos pueden fluir en cualquier dirección del CPU a la memoria o de la memoria al CPU
+* El tamaño del bus determina cuantos datos pueden ser transmitidos a la vez
+
+3. Control bus
+
+Lleva control y señales de timing entre el CPU y otros dispositivos de la computadora. Se usa para gestionar y coordinar operaciones como lectura, escritura y solicitudes de interrupción
+
+* El principal propósito del control bus es transmitir señales de control del CPU a dispositivos de entrada/salida y recibir señales de respuesta de ellos
+* El control bus puede contener tanto líneas unidireccionales como bidireccionales, dependiendo del tipo de señales de control
