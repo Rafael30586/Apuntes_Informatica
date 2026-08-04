@@ -21,9 +21,11 @@ Las siguientes son las principales entradas de una routing table:
 * Destino: Esta es la dirección IP del destino final del paquete
 * Máscara de subred
 * Gateway: Este es el próximo salto, o la dirección IP del dispositivo vecino al cual el paquete es enviado
-* Interfaz: Los routers usan típicamente interfaces de Ethernet para conectarse con otros dispositivos en la misma red, como eth0 o eth1, e interfaces seriales para conectarse a WANs de afuera. La routing table lista la interfaz de red de entrada, también conocida como interfaz saliente, que el dispositivo debería usar al enviar el paquete al próximo salto 
+* Interfaz: Los routers usan típicamente interfaces de Ethernet para conectarse con otros dispositivos en la misma red, como eth0 o eth1, e interfaces seriales para conectarse a WANs de afuera. La routing table lista la interfaz de red de entrada, también conocida como interfaz saliente, que el dispositivo debería usar al enviar el paquete al próximo salto
+* Métrica: Esta entrada asigna un valor a cada ruta disponible a una red específica. El valor asegura que el router pueda elegir el camino más efectivo. En algunos casos, la métrica es el número de routers que un paquete de datos debe cruzar antes de llegar a la dirección destino. Si existen múltiples rutas a la misma red destino, el camino con la métrica más baja tiene precedencia
+* Rutas: esto incluye subredes directamente conectadas, subredes indirectas que no están conectadas al dispositivo pero pueden ser accedidas a través de uno o más saltos, y rutas por defecto para usar ciertos tipos de tráfico cuando falta información
 
-
+https://www.techtarget.com/rms/onlineimages/routing_table-f.jpg 
 
 _________________________________________
 Seguir resumiendo con el enlace de arriba

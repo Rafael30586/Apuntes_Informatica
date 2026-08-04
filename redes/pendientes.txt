@@ -21,3 +21,5 @@ latencia
 ICMP
 TCP congestion policy
 * hops
+IPSec
+IPv6
