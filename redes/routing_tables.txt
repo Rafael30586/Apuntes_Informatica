@@ -25,7 +25,22 @@ Las siguientes son las principales entradas de una routing table:
 * Métrica: Esta entrada asigna un valor a cada ruta disponible a una red específica. El valor asegura que el router pueda elegir el camino más efectivo. En algunos casos, la métrica es el número de routers que un paquete de datos debe cruzar antes de llegar a la dirección destino. Si existen múltiples rutas a la misma red destino, el camino con la métrica más baja tiene precedencia
 * Rutas: esto incluye subredes directamente conectadas, subredes indirectas que no están conectadas al dispositivo pero pueden ser accedidas a través de uno o más saltos, y rutas por defecto para usar ciertos tipos de tráfico cuando falta información
 
-https://www.techtarget.com/rms/onlineimages/routing_table-f.jpg 
+https://www.techtarget.com/rms/onlineimages/routing_table-f.jpg
+
+-------------------------
+¿Cómo funciona el enrutamiento en redes? 
+
+Un paquete de red debe dar varios pasos para alcanzar su destino:
+
+1. Una computadora envía un paquete a un router: Similar a las direcciones en un paquete postal, un dispositivo que envía (como una computadora) conecta direcciones IP a paquetes de datos y los envía a un router. Esto ayuda al router a determinar las mejores rutas para transportar los paquetes a su destino. Una computadora se conecta típicamente a una LAN para enviar paquetes mientras el router puede enviar paquetes entre diferentes LANs y WANs
+
+2. El router recibe el paquete: una vez el router recibe el paquete, lo analiza contra sus routing tables internas para determinar el camino más eficiente por el cual enviar el paquete. El objetivo del router es enviar el paquete al router más cercano al destino final
+
+3. El router enruta el paquete: es poco probable que el router inicial enviará el paquete directamente a destino. Mira a la routing table para enviar al paquete al próximo salto. La routing table mantiene la cuenta de saltos baja al proveer al router con la ruta más efectiva. La cuenta final de saltos es la cantidad de veces que un paquete va de un router al otro hasta que llega a destino
+
+4. El proceso se repite: en el próximo salto, otro router toma el mando y repite el mismo proceso de determinar a donde enviar el paquete mirando a sus routing tables internas. Este proceso se repite varias veces antes de que el paquete llegue a destino. El proceso de enrutamiento podría sonar largo, pero es extremadamente rápido debido a los protocolos de enrutamiento involucrados
+
+5. El paquete llega a destino: Una vez un paquete ha llegado a un router que reside en la misma red que la dirección IP destino, es enrutado directamente al dispositivo o servidor al cual fue intencionado
 
 _________________________________________
 Seguir resumiendo con el enlace de arriba
