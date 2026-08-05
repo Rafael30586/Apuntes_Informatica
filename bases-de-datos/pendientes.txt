@@ -6,3 +6,5 @@
   - b-tres y b+trees
   - crear una base de datos grande con la ayuda de chatGPT y probar el desempeño de las consultas con índices y sin índices
   - tipos de índices
+  - índices clustered y non-clustered
+  - analizar este video https://www.youtube.com/watch?v=ITcOiLSfVJQ&t=112s

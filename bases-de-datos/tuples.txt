@@ -1,0 +1,12 @@
+https://www.geeksforgeeks.org/dbms/tuple-in-dbms/
+
+Tupla en DBMS
+
+Una tupla hace referencia a una fila en una tabla relacional. Almacena los datos para un registro específico.
+
+-----------------------
+Tipos de tuplas
+
+1. Tuplas físicas: se refiere a como una tupla está almacenada en memoria o en disco en forma binaria o codificada. Existe en el nivel físico de la base de datos; está almacenada como una secuencia de bytes o bloques de disco; podría incluir metadatos internos como ID, punteros a otras tuplas, números de ranura, etc
+
+2. Tuplas lógicas: Una tupla lógica es la representación abstracta de nivel usuario de una fila en una relación. Es lo que los usuarios ven y con lo que trabajan usando SQL. Existe en el nivel lógico de la base de datos; representa los datos en términos de atributos y valores; es independiente de como está almacenada en disco 

@@ -1,0 +1,1 @@
+tupla: es la fila de una tabla en una base de datos
