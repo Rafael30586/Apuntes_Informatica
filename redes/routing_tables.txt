@@ -42,6 +42,26 @@ Un paquete de red debe dar varios pasos para alcanzar su destino:
 
 5. El paquete llega a destino: Una vez un paquete ha llegado a un router que reside en la misma red que la dirección IP destino, es enrutado directamente al dispositivo o servidor al cual fue intencionado
 
-_________________________________________
-Seguir resumiendo con el enlace de arriba
-_________________________________________
+-----------------------------
+Tipos de enrutamiento: enrutamiento estático y enrutamiento dinámico
+
+El enrutamiento es el proceso de seleccionar el camino ideal a una red y los routers usan la información ingresada en una routing table para determinar la mejor ruta. Esencialmente, hay dos métodos de construir y mantener una routing table: enrutamiento estático y enrutamiento dinámico
+
+Comparativa
+Enrutamiento estático:
+* Una ruta preconfigurada al destino
+* Los ingenieros deben reconfigurar para hacer cambios de ruta
+* Una routing table más pequeña con solo una entrada para cada destino
+* No usa protocolos o algoritmos para ruta preconfigurada
+* Requiere menos tiempo de cómputo y ancho de banda
+* Mejor seguridad
+* Utilizado en redes más pequeñas con menos routers y arquitectura de red no cambiante  
+Enrutamiento dinámico:
+* Múltiples rutas disponibles a destino
+* Algoritmos actualizan automáticamente con cambios de ruta preferenciales
+* Los routers emiten routing tables enteras para identificar la ruta disponible
+* Algoritmos de vector de distancia (RIP, IGRP) y algoritmos de estado de enlace (OSPF, IS-IS) ajustan rutas
+* Requiere más cómputo y ancho de banda
+* Menor seguridad
+* Usado en redes más grandes y en redes que cambian con frecuencia
+
