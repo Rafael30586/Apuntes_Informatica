@@ -25,8 +25,11 @@ https://www.geeksforgeeks.org/dbms/lock-based-concurrency-control-protocol-in-db
 cierres compartidos y cierres exclusivos
 https://www.geeksforgeeks.org/dbms/difference-between-shared-lock-and-exclusive-lock/
 
-índices prinmary key vs clustered index
+índices primary key vs clustered index
 https://voluntarydba.com/2012/10/02/the-primary-key-vs-the-clustered-index/
 
 b-trees e índices
 https://builtin.com/data-science/b-tree-index
+
+claves de bases de datos
+https://www.geeksforgeeks.org/dbms/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/

@@ -8,3 +8,10 @@
   - tipos de índices
   - índices clustered y non-clustered
   - analizar este video https://www.youtube.com/watch?v=ITcOiLSfVJQ&t=112s
+* Claves o keys:
+  - candidate keys
+  - super keys
+  - alternate key
+  - surrogate key
+  - natural key
+* schemas

@@ -1,0 +1,11 @@
+https://www.geeksforgeeks.org/dbms/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/
+https://en.wikipedia.org/wiki/Superkey
+https://en.wikipedia.org/wiki/Candidate_key
+
+Claves en bases de datos
+
+Super keys
+
+En el modelo de datos relacional, una superkey es cualquier conjunto de atributos que identifica de manera única a una tupla en una relación. Como los valores de las superkeys son únicos, las tuplas con el mismo valor de superkey deben también tener el mismo valor de los atributos no-clave. Los atributos no-clave son dependientes funcionalmente de la superkey
+El conjunto de todos los atributos es siempre una superkey (la superkey trivial). Las tuplas en una relación son únicas por definición, con duplicados removidos luego de cada operación, entonces el conjunto de todos los atributos siempre tiene un único valor para cada tupla. Una candidate key es una superkey que no puede ser reducida a una superkey más simple removiendo un atributo
+Por ejemplo, en una tabla de empleados con los atributos employeeID, name, job y departmentID, si los valores de emplaoyeeID son únicos, entonces employeeID combinado con cualquiera de los otros atributos puede identificar de manera única a tuplas en la tabla. Cada combinación {employeeID}, {employeeID, name}, {employeeID, name, job} es una superkey. {employeeID} es una candidate key, porque ningún subconjunto de sus atributos es también una superkey. {employeeID, name, job, departmentID} es la superkey tribvial
