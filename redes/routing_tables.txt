@@ -65,3 +65,14 @@ Enrutamiento dinámico:
 * Menor seguridad
 * Usado en redes más grandes y en redes que cambian con frecuencia
 
+----------------------------
+Ventajas y desventajas del enrutamiento estático
+
+* Un administrador de red crea manualmente, gestiona y actualiza entradas de routing tables estáticas
+* Las entradas para dispositivos de red estáticos no cambian a menos que un administrador de red las modifique manualmente
+* Las entradas estáticas proveen un nivel de control granular sobre el enrutamiento, ya que cada ruta se configura manualmente para conectividad total
+* Para redes grandes, se vuelve prácticamente imposible añadir una entrada manual por cada ruta
+* El enrutamiento estático ahorra ancho de banda y sobrecarga porque los routers no comparten rutas estáticas
+* El enrutamiento estático no es tolerante a fallos. Cualquier cambio en la infraestructura de la red, como la adición de una nueva red o un enlace cayéndose, no son actualizados manualmente y requieren intervención manual 
+* En un entorno estático, si un enlace se vuelve no disponible, los routers no tiene la opción de automáticamente cambiar a una ruta mejor
+* Las rutas estáticas siempre tienen una distancia administrativa (AD) de 1, a la cual se le da preferencia sobre las rutas dinámicas, a menos que AD se modifique. Un AD modificado se conoce como ruta estática flotante
