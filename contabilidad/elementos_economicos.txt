@@ -5,3 +5,51 @@ Elementos económicos y sus características (con ejemplos)
 Los elementos económicos corresponden a todos los componentes que afectan o tienen influencia en la economía y su desarrollo. Bienes, servicios, mercados y consumidores son algunos elementos y conceptos vitales en la economía
 De manera generalizada suele afirmarse que la economía está basada únicamente en el capital y quienes lo intercambian. Sin embargo, existen varios conceptos importantes adicionales ligados al sistema económico
 Debido a la interacción entre ellos, un sistema económico puede sustentarse en el tiempo. La constante oferta y demandas de bienes y servicios es quizás el principal motor que impulsa a los intercambios comerciales en el mundo
+
+-------------------------------------
+Elementos principales del sistema económico y sus características
+
+Normalmente los sistemas económicos tienen tamaños ya establecidos que se limitan a un país en particular, aunque existen excepciones presentadas en formas de tratados económicos donde los gobiernos fijan las reglas para el ejercicio comercial.
+A pesar de esta limitante, algunos elementos como los mercados tienen un alcance continental y en ocasiones incluso global. 
+Debido al alto número de clientes que puede tener una empresa de alcance mundial, se han creado divisiones que diferencian algunas zonas económicas de otras para una mejor organización.
+
+* Necesidades
+
+Son aquellos recursos o estados de los que carece un individuo o grupo de personas y a los que le gustaría poder acceder. Las necesidades humanas pueden ser de distinto tipo: fisiológicas, de seguridad y protección, emocionales, sociales, de entretenimiento, etc.
+Ejemplo: Una necesidad básica y fisiológica sería poder disponer de agua potable para calmar la sed, mientras que una necesidad más elaborada sería conseguir likes en una foto de Instagram.
+
+* Bienes
+
+Dentro del contexto económico, un bien es toda aquella mercancía o infraestructura (como un edificio) que tiene valor monetario.
+Los bienes son de muchas índoles, ya que pueden ser casi cualquier objeto como edificios, automóviles, productos y cualquier otra entidad con equivalencia beneficiosa en forma de dinero.
+También puede entenderse como bien a un artículo o producto destinado a la venta para la posterior obtención de una ganancia.
+Ejemplo: Un coche, comida, material escolar, una tablet, un aparato de aire acondicionado, una báscula, un smartphone, un helicóptero o una mansión son ejemplos de bienes.
+
+* Servicios
+
+Los servicios son aquellas actividades capaces de satisfacer la necesidad de un consumidor. Por conveniencia se llama servicio a la mayoría de elementos necesarios para la vida diaria, como la electricidad, agua potable, gas, transporte, telefonía e internet.
+Un servicio corresponde a prácticamente cualquier actividad que incluya un intercambio económico de algún tipo a cambio de cubrir una necesidad, como puede serlo el soporte técnico, la jardinería o el correo.
+Ejemplo: Un servicio de antirrobo de una empresa de seguridad es un contrato activo para proteger un hogar o empresa.
+
+* Consumidores
+
+Toda aquella entidad que necesite un bien o demande un servicio es un consumidor dentro del sistema económico.
+Son parte vital de cualquier economía al representar la “demanda” de bienes y servicios a cambio de dinero que la “oferta” debe satisfacer para generar ganancias.
+Ejemplo: Desde el bebé que necesita leche hasta Bill Gates degustando una cena en el mejor restaurante de Nueva York. Todos nos convertimos en consumidores de bienes o servicios desde el momento en que cubrimos la necesidad.
+Mercado
+
+Un mercado es el contexto donde se llevan a cabo transacciones comerciales y actividades económicas.
+Usualmente los mercados se denotan dependiendo de la zona que abarquen. Pueden existir mercados regionales, nacionales o continentales.
+Ejemplo: El mercado de abastos de una ciudad que incluya pescadería, frutería, carnicería y semillería.
+
+* Empresas
+
+Son la contraparte de los consumidores, ya que si estos son los que demandan bienes y servicios, las empresas son quienes se ocupan de ofertarlos.
+En cualquier economía del mundo el papel de las empresas es protagónico, son además las encargadas de transformar las materias primas en bienes de consumo final, por lo que son una fuente importante de empleo.
+Ejemplo: Endesa es una empresa de electricidad que cubre gran parte de la demanda nacional de España. Produce un servicio básico que cubre las necesidades de los consumidores (hogares y empresas, entre otros). 
+
+* Gobiernos
+
+Los gobiernos son quienes regulan y administran los sistemas económicos de cada país mediante el establecimiento de ciertos lineamientos y reglas.
+Cuando los gobiernos se presentan al ejercicio económico en forma de empresa, se crea la empresa pública, cuya actividad principal no es solo ganar dinero sino brindar facilidades al consumidor.
+Ejemplo: Bien conocidos son los aranceles aprobados por Donald Trump hacia los productos europeos y asiáticos. Con esa estrategia económica el gobierno estadounidense busca apoyar al producto local.
