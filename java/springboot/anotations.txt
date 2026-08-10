@@ -1,0 +1,34 @@
+@Autowired: se puede usar en atributos, constructores y setters. Permite la inyección de dependencias
+@Repository: se utiliza en la capa de persistencia de la aplicación para interactuar con la base de datos. La clase que tiene esta anotación funciona como puente entre la lógica de negocio y la capa de base de datos
+@Service
+@RestController
+@Controller
+@Component
+@JsonProperty
+@RequestMapping
+@GetMapping
+@PostMapping
+@DeleteMapping
+@PutMapping
+@PatchMapping
+@PathVariable
+@RequestParam
+
+Jakarta.persistence
+@Entity
+@Table
+@Id
+@GeneratedValue
+@Column
+@ElementCollection
+@ManyToMany
+@ManyToOne
+@OneToOne
+@JoinTable
+@Enumerated
+
+
+Lombok
+@Getter
+@Setter
+@AllArgsConstructor
