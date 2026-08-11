@@ -1206,3 +1206,4 @@ El enrutamiento del protocolo IPv4 es un enrutamiento estático. Pero también exi
 
 Enrutamiento dinámico
 
+* Distance vector routing: se modifica la routing table del router basándose en el conocimiento de los nodos vecinos
