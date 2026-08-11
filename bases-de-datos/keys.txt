@@ -1,6 +1,7 @@
 https://www.geeksforgeeks.org/dbms/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/
 https://en.wikipedia.org/wiki/Superkey
 https://en.wikipedia.org/wiki/Candidate_key
+https://www.geeksforgeeks.org/sql/sql-alternate-key/
 
 Claves en bases de datos
 
@@ -17,4 +18,19 @@ Es cualquier conjunto de columnas que tenga una única combinación de valores e
 Una candidate key es una super key que no contiene una más pequeña. Por lo tanto una relación puede tener múltiples candidate keys. Por lo tanto, una relación puede tener múltiples claves candidatas, cada una con un número diferente de atributos
 Las columnas de una clave candidata se llaman atributos principales (prime attributes), y una columna que no se halla en ninguna clave candidata se llama atributo no principal (non-prime attributes)
 Hay una dependencia funcional entre la clave candidata y los atributos en la relación
-Las superclaves de una relación son todas las maneras en las que podemos identificar una fila. Las claves candidatas son el mínimo subconjunto de cada superclave 
+Las superclaves de una relación son todas las maneras en las que podemos identificar una fila. Las claves candidatas son el mínimo subconjunto de cada superclave
+Las claves candidatas se llaman así porque son candidatas a ser claves primarias
+
+------------------------
+Alternate key
+
+Es una clave candidata que no ha sido elegida como clave primaria pero puede identificar de manera única a una fila. Cuando múltiples atributos pueden identificar de manera única a las filas, solo una es elegida como clave primaria. Los atributos únicos restantes funcionan como alternate keys. 
+
+------------------
+Surrogate key vs natural key
+
+Una clave es una columna o grupo de columnas en un sistema gestor de bases de datos que identifica de manera única a cada fila en una tabla. Las dos tipos de claves son las naturales y las sustitutas
+* Clave natural: también llamadas business keys. Es una columna o grupo de columnas que se genera a partir de los datos de la tabla. El DNI o el email de una persona serían claves naturales
+* Clave sustituta: Una columna que no es generada de los datos en la base de datos es conocida como clave sustituta. El DBMS genera el identificador único por vos. En tablas de bases de datos, las claves sustitutas suelen ser usadas como claves primarias. La clave sustituta suele ser invisible para el usuario de la aplicación según algunas bibliografías. Un ejemplo de clave sustituta suele ser el típico id que genera la base de datos para cada nueva fila 
+
+
