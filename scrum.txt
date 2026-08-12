@@ -1,0 +1,14 @@
+https://www.youtube.com/watch?v=WZ8U_NHVdhI&list=PLGWvsfb6zLrI&index=1
+
+Scrum
+
+Es una forma de trabajo que se emplea para el desarrollo ágil de software. Se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente, en equipo y obtener el mejor resultado posible de proyectos. Permite lograr el objetivo de la mejora conmtinua
+
+------------------------
+Roles 
+
+* Product owner: Provee las reglas y requerimientos de negocio. Es el representante del cliente y ayuda con el relevamiento de necesidades. No necesariamente tiene que ser la persona que sea dueña como tal del producto. Puede ser una persona del equipo de desarrollo o puede ser parte del cliente
+* Scrum master: Es quien lidera al equipo y se encarga de que se cumplan las reglas y ceremonias del marco de scrum. Divide tareas y objetivos, establece fechas y trata de que las mismas se cumplan. Un Project manager puede ser scrum master
+* Equipo de sistemas y desarrollo: Está compuesto por los analistas funcionales, QAs, desarrolladores y todo miembro que colabore con el proceso de desarrollo de software, su implementación productiva y futuro mantenimiento
+* Usuarios finales: son quienes harán uso del proyecto una vez terminado. Generalmente son quienes llevan a cabo las pruebas de usuario de las funcionalidades desarrolladas y dan validación de si cumplen o no con los requerimientos planteados
+* Stakeholders: son los sponsors del proyecto (ponen dinero). En algunos casos son el cliente final del desarrollo como también pueden ser colaboradores "económicos" o patrocinadores que ayudan financieramente con el proyecto con el fin de obtener renombre o cierta retribución a cambio

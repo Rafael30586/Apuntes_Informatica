@@ -2,3 +2,18 @@ Buses
 https://www.geeksforgeeks.org/computer-organization-architecture/what-is-a-computer-bus/
 https://thecrazydev.com/blogs/what-is-buses-in-computer
 https://thecrazydev.com/blogs/what-is-address-bus-data-bus-control-bus-in-computer
+
+Program counter
+https://www.lenovo.com/es/es/glossary/program-counter/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOopfp9B0-D3LPyzjYrr2ZYKO9kijKoG9CtDs3sswRHVrmLVXCx9Y
+
+Registers
+https://www.totalphase.com/blog/2023/05/what-is-register-in-cpu-how-does-it-work/
+
+Cache de CPU
+https://hardzone.es/tutoriales/rendimiento/memoria-cache-procesador-como-funciona/
+
+Stack pointer
+https://www.techtarget.com/whatis/definition/stack-pointer
+
+MMU
+https://es.wikipedia.org/wiki/Unidad_de_gesti%C3%B3n_de_memoria

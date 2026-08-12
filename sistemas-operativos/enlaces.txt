@@ -17,3 +17,15 @@ https://www.geeksforgeeks.org/operating-systems/race-condition-in-operating-syst
 Critical section:
 https://www.geeksforgeeks.org/operating-systems/critical-section-in-synchronization/
 https://www.tutorialspoint.com/operating_system/os_critical_section_problem.htm
+
+Busy waiting:
+https://www.geeksforgeeks.org/operating-systems/busy-waiting-in-os/
+
+soluciones de sincronización de procesos basadas en software:
+https://www.geeksforgeeks.org/gate/software-based-solutions/
+
+inversión de prioridad
+https://www.geeksforgeeks.org/operating-systems/priority-inversion/
+
+operaciones atómicas
+https://www.geeksforgeeks.org/operating-systems/atomic-operations-in-os/
