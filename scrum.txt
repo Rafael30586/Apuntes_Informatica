@@ -12,3 +12,10 @@ Roles
 * Equipo de sistemas y desarrollo: Está compuesto por los analistas funcionales, QAs, desarrolladores y todo miembro que colabore con el proceso de desarrollo de software, su implementación productiva y futuro mantenimiento
 * Usuarios finales: son quienes harán uso del proyecto una vez terminado. Generalmente son quienes llevan a cabo las pruebas de usuario de las funcionalidades desarrolladas y dan validación de si cumplen o no con los requerimientos planteados
 * Stakeholders: son los sponsors del proyecto (ponen dinero). En algunos casos son el cliente final del desarrollo como también pueden ser colaboradores "económicos" o patrocinadores que ayudan financieramente con el proyecto con el fin de obtener renombre o cierta retribución a cambio
+
+-------------------------
+Diccionario
+
+* Sprint: es un período de tiempo corto y fijo en el que se desarrolla, prueba y entrega un incremento de software funcional. Suele ser un período de una semana o dos como mucho. En este período se desarrollan funcionalidades, se prueban y entregan. Ejemplo de incremento: cambiar un menú que está dispuesto de manera horizontal para que esté de manera vertical, luego se establece si el incremento se puede realizar en un sprint o en dos
+* Product backlog: es una lista priorizada de todas las funcionalidades, requisitos, mejoras y arreglos que se planea incluir en el producto. Lo de lista priorizadas hace referencia a que algunas tareas son más importantes que otras, hay que tomar siempre las tareas de prioridad alta
+* User story: una breve descripción de una funcionalidad del producto desde la perspectiva del usuario o cliente. Ejemplo: yo como usuario quiero poder ingresar a la plataforma de cursos y poder acceder al curso que quiero. La usar story es desde la perspectiva del usuario y en cada una de estas historias puede haber varias funcionalidades, en el ejemplo dado hay un login y otras funcionalidades
