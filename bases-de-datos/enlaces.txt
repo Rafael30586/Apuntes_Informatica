@@ -33,3 +33,6 @@ https://builtin.com/data-science/b-tree-index
 
 claves de bases de datos
 https://www.geeksforgeeks.org/dbms/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/
+
+write ahead logging
+https://www.geeksforgeeks.org/operating-systems/journaling-or-write-ahead-logging/

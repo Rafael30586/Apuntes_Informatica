@@ -33,4 +33,11 @@ Una clave es una columna o grupo de columnas en un sistema gestor de bases de da
 * Clave natural: también llamadas business keys. Es una columna o grupo de columnas que se genera a partir de los datos de la tabla. El DNI o el email de una persona serían claves naturales
 * Clave sustituta: Una columna que no es generada de los datos en la base de datos es conocida como clave sustituta. El DBMS genera el identificador único por vos. En tablas de bases de datos, las claves sustitutas suelen ser usadas como claves primarias. La clave sustituta suele ser invisible para el usuario de la aplicación según algunas bibliografías. Un ejemplo de clave sustituta suele ser el típico id que genera la base de datos para cada nueva fila 
 
+----------------------
+Composite key vs simple key
+
+La clave compuesta consiste en más de un atributo y la clave simple en uno solo
+
+
+
 

@@ -23,3 +23,6 @@ routing tables
 https://www.geeksforgeeks.org/computer-networks/routing-tables-in-computer-network/
 https://www.techtarget.com/searchnetworking/definition/routing-table
 https://www.coursera.org/articles/routing-table
+
+packet switching
+https://www.geeksforgeeks.org/computer-networks/packet-switching-and-delays-in-computer-network/

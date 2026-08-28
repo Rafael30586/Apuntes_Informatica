@@ -14,7 +14,9 @@ thread pool
 // granularidad
 URL rewriting
 cross site forgery
-MFA (multi-factor authenticatrion)
+MFA (multi-factor authentication)
 IOPS (es una métrica para dispositivos de almacenamiento)
 throughput en discos duros o SSDs
+Teorema de CAP
+Blob storage
 
