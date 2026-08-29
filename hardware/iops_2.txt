@@ -1,0 +1,15 @@
+https://www.techtarget.com/it-infrastructure/definition/IOPS-input-output-operations-per-second
+
+IOPS (operaciones de entrada/salida por segundo)
+
+Es la unidad estándar de medición para el máximo número de lecturas/escrituras a ubicaciones en el almacenamiento no contiguas. 
+Puesto de una manera simple, IOPS es una medida de la velocidad de escritura/lectura de un dispositivo de almacenamiento. 
+Un valor más alto de IOPS indica mejor rendimiento y acceso a datos más rápido para el dispositivo de almacenamiento. Aunque el valor no hace referencia al volumen de datos procesados por el dispositivo
+Junto con la tasa de transferencia, que mide que tan rápido los datos son transferidos de ubicaciones de almacenamiento contiguas, los IOPS pueden usarse para medir el rendimiento del almacenamiento. Mientras que la tasa de transferencia se mide en bytes, IOPS se mide como número entero
+
+--------------------------
+IOPS, latencia y throughput 
+
+El throughput mide cuantas unidades de información un sistema puede procesar en un período de tiempo. Puede referirse al número de operaciones E/S por segundo pero se mide típicamente en bytes por segundo
+La latencia mide el tiempo entre emitir una solicitud y recibir la respuesta. Respecto de IOPS, la latencia es una medida de la longitud de tiempo que toma una sola solicitud E/S a ser completada desde el punto de vista de la aplicación
+Por sí solos, IOPS, latencia y throughput no pueden proveer una medida precisa del rendimiento del dispositivo de almacenamiento. Pero combinando y evaluando las tres medidas se puede proveer un mejor indicador de rendimiento, especialmente si otros factores son tomados en cuenta, como la profundidad de cola (queue depth), tamaño de bloque de datos o rendimiento de carga de trabajo
