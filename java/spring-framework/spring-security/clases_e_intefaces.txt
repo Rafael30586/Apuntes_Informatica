@@ -1,2 +1,12 @@
 HttpSecurity
-SwecurityFilterChain
+SecurityFilterChain
+AuthenticationProvider
+DaoAuthenticationProvider
+AuthenticationManager
+AuthenticationConfiguration
+UserDetailsService: tiene un método muy importante que es loadByUserName(), que recibe un nombre de usuario como argumento y devuelve un objeto que es una implementación de UserDetails. Cuando sobreescribimos el método debemos usarlo para extraer de la base de datos los datos del usuario de acuerdo a su nombre y asignaler al objeto UserDetails datos como los roles y permisos (GrantedAuthorities)
+User: implementa la interfaz UserDetails
+UserDetails
+NoOpPasswordEncoder
+SimpleGrantedAuthority
+BcryptPasswordEncoder

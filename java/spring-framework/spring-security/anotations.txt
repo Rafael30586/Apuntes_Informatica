@@ -1,1 +1,3 @@
 @EnableWebSecurity
+@EnableMethodSecurity: permite la utilización de  @PreAuthorize
+@PreAuthorize: Recibe argumentos como hasAuthority() o denyAll()

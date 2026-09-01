@@ -1,1 +1,7 @@
 Cuando usamos el método httpBasic en el objeto HttpSecurity estamos agregando un esquema de autenticación muy básico en el cual se envía el usuario y la contraseña en cada solicitud HTTP. El cliente codifica las credenciales en base64 y las incluye en las cabeceras en el apartado Authorization. No es la forma más segura de implementar esto. Para comprobar su funcionamiento con postman se utiliza BasicAtuh. Postman enviará el usuario y la contraseña en las cabeceras de cada solicitud
+
+Cuando hacemos que la gestión de la sesión sea stateless puede ser que el formulario de login no funcione como esperamos. Esto es así porque al ser stateless, las credenciales deben enviarse con las solicitudes en lugar de que se cree una cookie con el sessionID. Funciona bien si usamos postman
+
+Cuando cargamos la lista de permisos y de roles de un usuario guardado en base de datos para asignarlos a un objeto UserDetails, necesitamos concatenarle al rol el string ROLE_ . Esto es así porque si no lo hacemos, spring security entenderá que la SimpleGrantedAuthority es un permiso. El objeto User (es una implementación de UserDetails) tendrá una lista de GrantedAuthorities, de las cuales algunas serán roles y otros permisos
+
+Para implementar JWT se pueden usar las bibliotecas jjt-api , jjwt-impl y jjwt-jackson , todas ellas del groupId io.jsonwebtoken
