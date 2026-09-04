@@ -13,6 +13,12 @@
 @PatchMapping
 @PathVariable
 @RequestParam
+@Qualifier
+@Primary
+@ResponseBody
+@Bean
+@Value
+@Configuration: indica que la clase declara uno o más métodos con @Bean
 
 Jakarta.persistence
 @Entity
@@ -32,3 +38,8 @@ Lombok
 @Getter
 @Setter
 @AllArgsConstructor
+
+
+Jakarta.validation-api
+@Valid
+@NotBlank

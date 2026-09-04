@@ -1,0 +1,1 @@
+A los métodos de las clase RestController podemos darles parámetros del tipo HttpServletRequest como ocurre con los métodos doGet y doPost en los servlets en jakarta

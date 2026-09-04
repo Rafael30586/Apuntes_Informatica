@@ -1,0 +1,1 @@
+Para realizar validaciones se puede utilizar la biblioteca jakarta.validation-api del groupId jakarta.validation

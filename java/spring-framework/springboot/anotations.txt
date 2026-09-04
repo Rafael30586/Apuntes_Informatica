@@ -1,0 +1,1 @@
+@CrossOrigin: permite traer datos de la API desde un frontend que esté en otro dominio o número de puerto

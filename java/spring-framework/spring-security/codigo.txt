@@ -4,4 +4,6 @@ Cuando hacemos que la gestión de la sesión sea stateless puede ser que el form
 
 Cuando cargamos la lista de permisos y de roles de un usuario guardado en base de datos para asignarlos a un objeto UserDetails, necesitamos concatenarle al rol el string ROLE_ . Esto es así porque si no lo hacemos, spring security entenderá que la SimpleGrantedAuthority es un permiso. El objeto User (es una implementación de UserDetails) tendrá una lista de GrantedAuthorities, de las cuales algunas serán roles y otros permisos
 
-Para implementar JWT se pueden usar las bibliotecas jjt-api , jjwt-impl y jjwt-jackson , todas ellas del groupId io.jsonwebtoken
+Para implementar JWT se pueden usar las bibliotecas jjwt-api , jjwt-impl y jjwt-jackson , todas ellas del groupId io.jsonwebtoken
+
+GitHub y Google son proveedores de identidad. Por eso es que podemos utilizarlos con oauth2

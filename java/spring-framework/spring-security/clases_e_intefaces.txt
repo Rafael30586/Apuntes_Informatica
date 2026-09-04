@@ -10,3 +10,4 @@ UserDetails
 NoOpPasswordEncoder
 SimpleGrantedAuthority
 BcryptPasswordEncoder
+OncePerRequestFilter
