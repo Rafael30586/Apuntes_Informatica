@@ -1,0 +1,38 @@
+https://www.geeksforgeeks.org/operating-systems/disk-scheduling-algorithms/
+
+Algoritmos de planificación del disco
+
+Los algoritmos de planificación del disco gestionan como los datos se leen y se escriben en el disco de una computadora. Estos algoritmos ayudan a determinar el orden en el cual las solicitudes de escritura y lectura del disco son procesadas
+* La planificación del disco se conoce también como planificación E/S
+* Los propósitos principales de la planificación de disco son de optimizar el rendimiento de operaciones de disco, reducir el tiempo que toma acceder a datos y mejorar la eficiencia general del sistema
+* Métodos comunes de planificación de disco incluyen First-Come, First-Served (FCFS), Shortest Seek Time First (SSTF), SCAN, C-SCAN, LOOK y C-LOOK
+
+-------------------
+Importancia de la planificación de disco en el sistema operativo
+
+* Múltiples solicitudes E/S podrán llegar por diferentes procesos y solo una solicitud de E/S puede ser atendida a la vez por el controlador del disco. Así  otras solicitudes E/S necesitan esperar en la cola de espera y necesitan ser programadas
+* Dos o más solicitudes podrán estar lejos entre sí por lo que esto puede resultar en mayor movimiento del brazo del disco
+* Los discos duros son una de las partes más lentas de una computadora por lo que necesitan ser accedidas de manera eficiente
+
+----------------------
+Características de la planificación de disco
+
+* Tiempo de búsqueda (seek time): es el tiempo que toma mover una brazo de disco para rastrear a donde los datos están ubicados
+* Latencia rotacional: es el tiempo que toma para el sector deseado rotar bajo la cabeza de lectura/escritura
+* Tiempo de transferencia: es el tiempo que toma leer o escribir datos, dependiendo de la velocidad del disco y el tamaño de datos
+
+Tiempo de acceso de disco = tiempo de búsqueda + latencia rotacional + tiempo de transferencia
+Tiempo total de búsqueda = movimiento total de cabeza * tiempo de búsqueda
+
+Tiempo de respuesta de discos
+* Tiempo de respuesta: es el tiempo en que una solicitud espera antes de que su operación de E/S comience
+* Tiempo de respuesta promedio: el tiempo de espera promedio de todas las solicitudes
+* varianza en tiempo de respuesta: es cuanto difieren los tiempos de espera individuales con respecto al promedio
+
+-----------------------
+Objetivos de los algoritmos de planificación del disco
+* Minimizar tiempo de búsqueda
+* Maximizar throughput
+* Minimizar latencia
+* Asegurar "equidad"
+* Eficiencia en utilización de recursos

@@ -1,0 +1,3 @@
+Algoritmos de planificación del disco
+https://www.geeksforgeeks.org/operating-systems/disk-scheduling-algorithms/
+https://www.scaler.com/topics/disk-scheduling-algorithms/
