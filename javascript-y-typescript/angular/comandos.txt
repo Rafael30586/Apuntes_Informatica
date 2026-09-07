@@ -1,0 +1,9 @@
+npm install -g @angular/cli@<versión> --> sirve para instalar el CLI de Angular 16
+
+npm unistall -g @angular/cli --> desinstala todas las versiones de Angular CLI
+
+ng new <nombre> --> crea un proyecto de Angular según el nombre que elijamos
+
+ng generate module <nombre> --> crea un módulo según el nombre que indiquemos
+
+ng g m <nombre> --> idem al anterior
