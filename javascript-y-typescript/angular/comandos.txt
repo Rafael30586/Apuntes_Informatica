@@ -7,3 +7,19 @@ ng new <nombre> --> crea un proyecto de Angular según el nombre que elijamos
 ng generate module <nombre> --> crea un módulo según el nombre que indiquemos
 
 ng g m <nombre> --> idem al anterior
+
+ng generate component <nombre> --> crea un componente
+
+ng g c <nombre> --> idem al anterior
+
+npm start --> ejecuta el proyecto
+
+ng generate service <nombre> --> crea un servicio
+
+ng g s <nombre> --> idem al anterior
+
+ng generate directive <nombre> --> crea una directiva
+
+ng g d <nombre> --> idem al anterior
+
+Nota: cuando se crean componentes, servicios o directivas en Angular que tengan un nombre con más de una palabra, conviene separar las palabras por un guión medio, por ejemplo: ng g c un-componente

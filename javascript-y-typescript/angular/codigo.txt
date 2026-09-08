@@ -1,0 +1,9 @@
+{{ variable }} --> se utiliza para mostrar el valor de una variable del componente en la plantilla
+
+<button (click)="decrementar()">Decrementar</button> --> ejemplo de cómo se utilizan los eventos. En este caso el evento es click y se llama al método decrementar del componente que puede modificar algún atributo
+
+El decorador @Input() sirve para que un atributo de un componente reciba datos de un componente padre
+
+El decorador @Output sirve para que un componente le envíe datos a una componente padre
+
+Cuando se utilizan servicios, estos pueden inyectarse en los componentes vía inyección de dependencias. Una de las formas de hacerlo es por constructor
