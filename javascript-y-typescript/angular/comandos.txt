@@ -23,3 +23,7 @@ ng generate directive <nombre> --> crea una directiva
 ng g d <nombre> --> idem al anterior
 
 Nota: cuando se crean componentes, servicios o directivas en Angular que tengan un nombre con más de una palabra, conviene separar las palabras por un guión medio, por ejemplo: ng g c un-componente
+
+ng generate pipe <nombre> --> crea un pipe
+
+ng g p <nombre> --> idem al anterior

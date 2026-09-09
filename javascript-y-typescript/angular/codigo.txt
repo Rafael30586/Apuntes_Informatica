@@ -7,3 +7,7 @@ El decorador @Input() sirve para que un atributo de un componente reciba datos d
 El decorador @Output sirve para que un componente le envíe datos a una componente padre
 
 Cuando se utilizan servicios, estos pueden inyectarse en los componentes vía inyección de dependencias. Una de las formas de hacerlo es por constructor
+
+Para utilizar Bootstrap en angular hay que instalarlo con los comandos que aparecen en la página oficial de Bootstrap. Luego, hay que editar el archivo angular.json de manera tal que en la parte de styles y script coloquemos la ubicación de los archivos bootstrpa.min.css y Bootstrap.bundle.min.js respectivamente
+
+Cuando queramos agrupar varios elementos HTML en uno podemos usar ngContainer
