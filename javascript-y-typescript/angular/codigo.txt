@@ -10,4 +10,10 @@ Cuando se utilizan servicios, estos pueden inyectarse en los componentes vía in
 
 Para utilizar Bootstrap en angular hay que instalarlo con los comandos que aparecen en la página oficial de Bootstrap. Luego, hay que editar el archivo angular.json de manera tal que en la parte de styles y script coloquemos la ubicación de los archivos bootstrpa.min.css y Bootstrap.bundle.min.js respectivamente
 
-Cuando queramos agrupar varios elementos HTML en uno podemos usar ngContainer
+Cuando queramos agrupar varios elementos HTML en uno podemos usar ngContainer (es similar al fragment de React)
+
+Para trabajar con formularios hay que importar FormsModule (es para formularios de tipo plantilla), y si se quiere trabajar con formularios reactivos debe importarse ReactiveFormsModule
+
+Cuando utilizamos ngDoCheck hay que tener cuidado de no utilizar con este operaciones muy costosas, ya que se ejecuta a cada rato y haría a la aplicación muy lenta
+
+Para conectarse con APIs hay que importar el módulo HttpClientModule
