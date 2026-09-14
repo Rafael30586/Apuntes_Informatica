@@ -1,0 +1,9 @@
+Angular fue creado por Google
+
+Según Gentleman Programming, a partir de Angular 16 se produjo una revolución, enb parte po9r la aparición de los standalone components
+
+Ventajas de Angular: tiene estruc5tura; es robusto; es opinado (la comunidad determina la dirección del framework) 
+
+Desventajas: curva de aprendizaje; no es una buena opción cuando los requerimientos del proyecto son cambiantes; es verborrágico
+
+En AngularJS no existían componentes

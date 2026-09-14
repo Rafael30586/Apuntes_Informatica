@@ -22,8 +22,12 @@ ng generate directive <nombre> --> crea una directiva
 
 ng g d <nombre> --> idem al anterior
 
-Nota: cuando se crean componentes, servicios o directivas en Angular que tengan un nombre con más de una palabra, conviene separar las palabras por un guión medio, por ejemplo: ng g c un-componente
+Nota: cuando se crean componentes, servicios o directivas en Angular que tengan un nombre con más de una palabra, conviene separar las palabras por un guión medio, por ejemplo: ng g c un-componente ; pero cuando hagamos ng new para crear un nuevo proyecto, el nombre de dicho proyecto deberá ir en camel case
 
 ng generate pipe <nombre> --> crea un pipe
 
 ng g p <nombre> --> idem al anterior
+
+npm run build --> transforma la aplicación en código HTML, CSS y JavaScript y lo coloca en la carpeta dist
+
+Cuando creamos servicios o pipes en Angular conviene colocarlos en subcarpetas. Para hacer esto se utiliza, por ejemplo, el comando ng g s servicio/<nombre>
