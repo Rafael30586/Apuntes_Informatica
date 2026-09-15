@@ -1,0 +1,2 @@
+Server side rendering vs Client side rendering
+https://www.arsys.es/blog/que-es-server-side-rendering-ssr-y-cuales-son-sus-ventajas

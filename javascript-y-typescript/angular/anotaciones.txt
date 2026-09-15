@@ -7,3 +7,7 @@ Ventajas de Angular: tiene estruc5tura; es robusto; es opinado (la comunidad det
 Desventajas: curva de aprendizaje; no es una buena opción cuando los requerimientos del proyecto son cambiantes; es verborrágico
 
 En AngularJS no existían componentes
+
+Signals tiene como objetivo reemplazar a RXJS, porque este último se considera muy complicado. Signals se introduce en la versión 
+
+En Angular 17 se vienen los signal components, que son componentes fuera de la NgZone

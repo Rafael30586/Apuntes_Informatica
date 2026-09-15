@@ -19,4 +19,7 @@ Cuando utilizamos ngDoCheck hay que tener cuidado de no utilizar con este operac
 Para conectarse con APIs hay que importar el módulo HttpClientModule
 
 A partir de Angular 17, se puede utilizar el decorador @defer para lazy loading
- 
+
+Cuando musamos directivas, estas tienen que usarse una por etiqueta, por ejemplo, no puedo usar un ngFor y un ngIf en el mismo div 
+
+Para hacer testing en Angular pueden usarse karma y Jasmine, pero jest se ha creado para reemplazarlos

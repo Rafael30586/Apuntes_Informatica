@@ -21,3 +21,5 @@ Standalone components --> son una novedad de Angular 16. Permiten la creación d
 signals --> proveen una manera simple de gestionar y rastrear cambios de estado dentro de una aplicación. Una signal en angular es una variable que puede cambiar su valor a lo largo del tiempo y cualquier cambio en este valor se propagará a las partes de la aplicación que dependen de ella
 
 Angular material --> es una biblioteca de componentes de interfaz de usuario desarrollada por Google. Provee una lista basta de componentes listos para usar (botones, inputs, etc)
+
+NgZone --> es un servicio proveído por Angular que es responsable de detectar y gestionar cambios producidos en la aplicación. Funciona como un contexto de ejecución para código JavaScript en el entorno del browser. NgZone permite a Angular rastrear operaciones asíncronas como eventos de usuario, temporizadores y solicitudes AJAX, y gatilla detección de cambios cuando estas operaciones ocurren. Más información acá: https://medium.com/@undefined96.me/understanding-ngzone-in-angular-managing-change-detection-efficiently-717117d90784
