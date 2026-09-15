@@ -1,0 +1,14 @@
+ChatGPT: Hola ¿a qué se hace referencia en el contexto del desarrollo de software cuando se habla de bootstrap? aclaro que no me refiero al framework de CSS. En una página de traducción se lo traduce como arranque ¿es posible que la palabra esté relacionada al arranque de una aplicación?
+
+En desarrollo de software, Bootstrap está relacionado con el arranque o inicialización de un sistema, aunque el significado exacto depende del contexto. 
+La palabra viene de la expresión inglesa pull oneself up by one's bootstraps. En informática terminó adquiriendo el sentido de iniciar un sistema utilizando un mecanismo mínimo que permite poner en marcha mecanismos más complejos. 
+En aplicaciones cuando se dice "Bootstrap the application" puede significar inicializar la aplicación y dejarla preparada para funcionar
+En cualquier caso existe la idea de que se parte de un mecanismo pequeño y fundamental que permita inicializar o construir un sistema más complejo, por eso se puede encontrar expresiones como:
+* Bootstrap proccess: proceso de arranque
+* Bootstrap code: código de arranque
+* Bootstrap loader/ bootloader: cargador inicial
+* Application Bootstrap: inicialización de una aplicación
+* Bootstrap configuration: configuración inicial
+
+Arranque es una traducción bastante apropiada, especialmente cuando se halba de hardware, sistemas operativos y aplicaciones
+Una distinción útiles que boot y Bootstrap están relacionados, pero no son exactamente sinónimos. Boot suele referirse específicamente al proceso de iniciar una computadora o sistema, mientras que Bootstrap/bootstrapping tiene un sentido más general de iniciar o construir algo a partir de una base mínima 

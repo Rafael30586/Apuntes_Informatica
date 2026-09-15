@@ -11,4 +11,14 @@ Obervabilidad: https://sematext.com/glossary/three-pillars-of-observability/
 Rate limiting
 https://developer.mozilla.org/en-US/docs/Glossary/Rate_limit
 https://www.geeksforgeeks.org/system-design/rate-limiting-in-system-design/
-https://www.cloudflare.com/learning/bots/what-is-rate-limiting/		
+https://www.cloudflare.com/learning/bots/what-is-rate-limiting/
+
+CORS		
+https://developer.mozilla.org/es/docs/Web/HTTP/Guides/CORS
+https://aws.amazon.com/es/what-is/cross-origin-resource-sharing/
+
+Base64
+https://www.freecodecamp.org/news/what-is-base64-encoding/
+
+JWT
+https://www.jwt.io/

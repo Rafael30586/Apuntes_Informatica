@@ -36,3 +36,8 @@ Objetivos de los algoritmos de planificación del disco
 * Minimizar latencia
 * Asegurar "equidad"
 * Eficiencia en utilización de recursos
+
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________

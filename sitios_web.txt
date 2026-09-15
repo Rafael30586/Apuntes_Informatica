@@ -1,0 +1,1 @@
+https://quicktype.io/ --> permite mapear JSON a tipos de otros lenguajes de programación

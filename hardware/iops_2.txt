@@ -12,4 +12,9 @@ IOPS, latencia y throughput
 
 El throughput mide cuantas unidades de información un sistema puede procesar en un período de tiempo. Puede referirse al número de operaciones E/S por segundo pero se mide típicamente en bytes por segundo
 La latencia mide el tiempo entre emitir una solicitud y recibir la respuesta. Respecto de IOPS, la latencia es una medida de la longitud de tiempo que toma una sola solicitud E/S a ser completada desde el punto de vista de la aplicación
-Por sí solos, IOPS, latencia y throughput no pueden proveer una medida precisa del rendimiento del dispositivo de almacenamiento. Pero combinando y evaluando las tres medidas se puede proveer un mejor indicador de rendimiento, especialmente si otros factores son tomados en cuenta, como la profundidad de cola (queue depth), tamaño de bloque de datos o rendimiento de carga de trabajo
+Por sí solos, IOPS, latencia y throughput no pueden proveer una medida precisa del rendimiento del dispositivo de almacenamiento. Pero combinando y evaluando las tres medidas se puede proveer un mejor indicador de rendimiento, especialmente si otros factores son tomados en cuenta, como la profundidad de cola (queue depth), tamaño de bloque de datos o rendimiento de carga de trabajo. Además, midiendo IOPS y latencia puede ayudar a los administradores de red a predecir cuanta carga una red puede soportar sin que el rendimiento se afecte negativamente
+
+
+____________________________________________
+Continuar resumiendo con el enlace de arriba
+____________________________________________
