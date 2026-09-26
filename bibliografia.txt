@@ -1,0 +1,2 @@
+Hardware:
+D. Harris, S. Harris. Digital design and Computer Architecture. 2nd Edition. Elsevier. 2012
