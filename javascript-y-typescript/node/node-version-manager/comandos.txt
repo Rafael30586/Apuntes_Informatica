@@ -1,0 +1,11 @@
+https://www.nvmnode.com/es/cli/
+
+nvm install <versión> --> instala la versión de node que indiquemos
+
+nvm list --> muestra las versiones de node instaladas
+
+nvm ls --> idem al anterior
+
+nvm uninstall <versión> --> desinstala la versión de node que indiquemos
+
+nvm use <versión> --> utiliza la versión de node especificada
