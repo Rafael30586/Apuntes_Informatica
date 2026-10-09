@@ -1,0 +1,1 @@
+node <archivo> --> ejecuta el archivo de JavaScript que indiquemos. El archivo puede estar escrito con su extensión o no, como lo prefiramos, por ejemplo, si tenemos un archivo app.js, podemos hacer node app.js o node app 

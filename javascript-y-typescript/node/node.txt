@@ -1,0 +1,24 @@
+Node permite la ejecución de JavaScript afuera del navegador
+
+----------------------------
+Comparación entre JavaScript del browser y JavaScript de node js:
+* En Node no hay acceso a APIs del browser (no hay DOM, geolocación, fetch, etc) 
+* En Node no hay DOM
+* En node se puede acceder al sistema de archivos, información del sistema operativo, etc
+* En node hay módulos por defecto
+
+--------------------------
+Si abrimos la consola y utilizamos el comando node se abre un REPL. En este REPL podemos hacer cosas relacionadas al lenguaje de programación, como crear variables, usar funciones, etc. Para salir del REPL hacemos ctrol + c
+
+-------------------------
+En node no hay un objeto window como en javascript en el navegador porque no hay una ventana
+
+------------------------
+En Node hay variables globales, podés acceder a ellas desde cualquier lugar de tu aplicación.
+
+* __dirname --> es la ruta a donde está el archivo js
+* __filename --> es la ruta en donde se encuentra el archivo (incluyendo el nombre del archivo)
+* process --> tiene un montón de información sobre la computadora en la que el archivo está funcionando. Es un objeto que tiene muchos atributos y podemos acceder a ellos, por ejemplo, process.version
+
+-----------------------
+En node podemos usar funciones como setTimeout y setInterval

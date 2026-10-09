@@ -1,7 +1,7 @@
 CMS
 Scrum
 CI/CD
-sistemas statefull y stateless
+// sistemas statefull y stateless
 virtual memory vs phisical memory
 single sign-on
 texto cifrado o cyphertext
@@ -15,8 +15,9 @@ thread pool
 URL rewriting
 cross site forgery
 MFA (multi-factor authentication)
-IOPS (es una métrica para dispositivos de almacenamiento)
+// IOPS (es una métrica para dispositivos de almacenamiento)
 throughput en discos duros o SSDs
 Teorema de CAP
 Blob storage
+tty
 
