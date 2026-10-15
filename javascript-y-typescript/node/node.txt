@@ -46,3 +46,16 @@ Cuando utilizamos el módulo fs, tenemos acceso a funciones síncronas y asíncr
 
 ----------------------------
 El archivo package.json es el manifest file de cada proyecto de node. Se encuentra en el directorio raíz. Podemos crearlo de manera manual o utilizando el comando npm init
+
+------------------
+En el archivo package.json hay un campo llamado scripts. Podemos crear un atributo para este campo que se llame start y darle como valor lo que queremos que se ejecute al hacer npm start, por ejemplo, podemos darle a start el valor node app.js, entonces, cuando hagamos npm start será el equivalente a node app.js. Esto sirve para establecer el punto de entrada de la aplicación. En el ejemplo ya dado, el punto de entrada o entrypoint es app.js
+
+En el campo script también se puede colocar un campo llamado dev, que sirve para ejecutar la aplicación con npm run dev
+
+--------------------
+nodemon es una biblioteca para node que permite que los cambios producidos en el código de la aplicación sean escuchados por la aplicación en ejecución, es decir, no es necesario detener la aplicación y volver a ejecutarla para que se vean los cambios hechos en el código
+
+-------------------
+evento loop: permite llevar a cabo e/s no bloqueante por más que JavaScript sea de un solo hilo. Es un tema bastante complejo que puede llevar horas entender bien
+
+Un ejemplo de código no bloqueante es la función readFile del módulo fs. Otro ejemplo es la función setTimeOut que, por más que el segundo argumento sea 0, ejecutará la función callback, en muchos casos, al final
