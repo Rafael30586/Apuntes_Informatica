@@ -1,1 +1,17 @@
-node <archivo> --> ejecuta el archivo de JavaScript que indiquemos. El archivo puede estar escrito con su extensión o no, como lo prefiramos, por ejemplo, si tenemos un archivo app.js, podemos hacer node app.js o node app 
+node <archivo> --> ejecuta el archivo de JavaScript que indiquemos. El archivo puede estar escrito con su extensión o no, como lo prefiramos, por ejemplo, si tenemos un archivo app.js, podemos hacer node app.js o node app
+
+npm i <paquete> --> instala el paquete que indiquemos de manera local, es decir, para el proyecto en el que estemos trabajando. El paquete se agrega a los node_modules y aparece en el package.json en la sección de dependencies
+
+npm install <paquete> --> idem al anterior
+
+npm install -g <paquete> --> instala el paquete que indiquemos de manera global
+
+npm init --> crea una archivo package.json para el proyecto en el que estemos trabajando 
+
+npm uninstall <paquete> --> desinstala el paquete que indiquemos
+
+npm install --> si está el archivo package.json en el directorio, instala los node_modules que correspondan. Es muy útil para cuando descargamos un proyecto de node de GitHub (está en GitHub sin los node_modules) y queremos ejecutarlo en nuestra PC
+
+npm install <paquete> -D --> instala la dependencia como "dev dependency"
+
+npm install <paquete> --save-dev --> idem al anterior

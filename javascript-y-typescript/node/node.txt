@@ -29,3 +29,20 @@ En node todo archivo es un módulo
 -----------------------
 Para exportar el contenido del módulo en el que estamos debemos hacer module.exports = {<variable-o-función>, <variable-o-función-2>, ...}
 Podemos exportar más de una variable o función por módulo. Luego podemos importar el módulo en otro con const <variable> = require(./<nombre-módulo>)
+
+Cuando queremos exportar solo una función, podemos obviar los corchetes, por ejemplo, module.exports = saludo
+
+------------------------
+Podemos importar un módulo que no está exportando nada. Si hacemos esto lograremos que, al ejecutar el módulo que miporta, también se ejecute el módulo importado
+
+------------------------
+En node hay algunos módulos integrados, como por ejemplo: OS, Path, FS y HTTP
+
+En la página oficial de node hay documentación sobre estos módulos: https://nodejs.org/docs/latest/api/
+
+El módulo os sirve para interactuar con el sistema operativo. Se puede extraer información sobre los CPUs lógicos, interfaces de red, memoria, etc
+
+Cuando utilizamos el módulo fs, tenemos acceso a funciones síncronas y asíncronas. Las primeras son código bloqueante, mientras que las segundas son código no bloqueante
+
+----------------------------
+El archivo package.json es el manifest file de cada proyecto de node. Se encuentra en el directorio raíz. Podemos crearlo de manera manual o utilizando el comando npm init
