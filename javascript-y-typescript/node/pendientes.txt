@@ -1,1 +1,2 @@
 * Aprender con w3schools: https://www.w3schools.com/nodejs/nodejs_http.asp
+* Aprender a leer la documentación de node js en https://nodejs.org/docs/latest/api/events.html

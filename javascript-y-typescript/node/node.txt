@@ -59,3 +59,20 @@ nodemon es una biblioteca para node que permite que los cambios producidos en el
 evento loop: permite llevar a cabo e/s no bloqueante por más que JavaScript sea de un solo hilo. Es un tema bastante complejo que puede llevar horas entender bien
 
 Un ejemplo de código no bloqueante es la función readFile del módulo fs. Otro ejemplo es la función setTimeOut que, por más que el segundo argumento sea 0, ejecutará la función callback, en muchos casos, al final
+
+-------------------
+El módulo events sirve para trabajar con eventos
+
+Una clase de este módulo es EventEmitter. Podemos crear variables que apunten a un objeto EventEmitter de la siguiente manera
+
+let customEmitter = new EventEmitter()
+
+luego podemos utilizar algunos métodos, como on y emit. Con el método on le asignamos un nombre a un evento y le pasamos una callback:
+
+customEmitter('respuesta',()=>{
+  console.log('datos recibidos')
+})
+
+Con el método emit podemos producir un evento:
+
+customEmitter.emit('respuesta')
