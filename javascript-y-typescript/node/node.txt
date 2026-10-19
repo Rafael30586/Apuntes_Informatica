@@ -76,3 +76,6 @@ customEmitter('respuesta',()=>{
 Con el método emit podemos producir un evento:
 
 customEmitter.emit('respuesta')
+
+---------------------
+Streams: se usan para leer o escribir de manera secuencial. Hay cuatro tipos de streams: writable, se usa para escribir datos de manera secuencial; readable, usado para leer datos de manera secuencial; duplex, usado para leer y escribir datos de manera secuencial; transform, sirve para modificar los datos mientras se escribe o lee. Muchos módulos integrados implementan streams (tal y como pasa con los eventos). Los streams son un tema avanzado de node
