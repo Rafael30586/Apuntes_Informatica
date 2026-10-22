@@ -1,0 +1,9 @@
+Express está construido sobre Node y más específicamente sobre el módulo http
+
+---------------------
+Express se puede usar para establecer APIs o plantillas con server side rendering
+
+--------------------
+En este framework se usa mucho los middleware, estos están en todos lados. Es obligatorio entender sobre middleware para saber como funciona Express. El middleware está entre medio de la solicitud y la respuesta HTTP:
+
+req => middleware => res
