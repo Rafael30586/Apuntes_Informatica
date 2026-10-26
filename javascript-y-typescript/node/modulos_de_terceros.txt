@@ -1,0 +1,1 @@
+colors --> permite modificar el color de lo que se imprime en consola. Se instala con npm install colors

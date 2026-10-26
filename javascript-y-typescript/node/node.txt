@@ -27,6 +27,9 @@ En node podemos usar funciones como setTimeout y setInterval
 En node todo archivo es un módulo
 
 -----------------------
+Con console.table podemos imprimir datos en forma de tabla, debemos pasarle como argumento un json
+
+-----------------------
 Para exportar el contenido del módulo en el que estamos debemos hacer module.exports = {<variable-o-función>, <variable-o-función-2>, ...}
 Podemos exportar más de una variable o función por módulo. Luego podemos importar el módulo en otro con const <variable> = require(./<nombre-módulo>)
 
