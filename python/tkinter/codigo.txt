@@ -1,0 +1,1 @@
+Para empezar a trabajar con Tkinter hay que crear la raíz --> <variable> = TK()

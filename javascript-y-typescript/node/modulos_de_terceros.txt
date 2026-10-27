@@ -1,1 +1,3 @@
 colors --> permite modificar el color de lo que se imprime en consola. Se instala con npm install colors
+
+nodemon --> sirve para que no tengamos que volver a ejecutar la aplicación de manera manual para poder ver los cambios que hayamos hecho en el código

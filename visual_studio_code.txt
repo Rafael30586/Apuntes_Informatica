@@ -4,3 +4,4 @@ ctrl + shift + (izquierda o derecha) --> selecciona un palabra hacia la izquierd
 ctrl + (izquierda o derecha) --> el cursor avanza de palabra en palabra.
 Re pag y Av ag --> permiten avanzar más rápido hacia arriba y hacia abajo.
 ctrl + (inicio o fin) --> nos lleva al inicio o final del documento.
+alt + flechas --> sirve para mover hacia arriba o hacia abajo la línea de código en la que estamos posicionados

@@ -1,0 +1,1 @@
+Se puede crear variables globales dentro de una función con la palabra reservada global

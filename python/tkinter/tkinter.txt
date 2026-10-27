@@ -1,0 +1,4 @@
+Cada componente de la GUI es un widget (botones, labels, etc)
+
+-----------------------
+Para trabajar con imágenes en tkinter, hay que instalar un paquete llamado pillow haciendo pip install pillow
