@@ -5,3 +5,5 @@ nodemon --> sirve para que no tengamos que volver a ejecutar la aplicación de m
 dotenv --> es para la utilización de variables de entorno en el proyecto
 
 env-var --> sirve para mostrar las variables de entorno según diferentes tipos, por ejemplo, number
+
+json-server --> permite trabajar con una base de datos en memoria
